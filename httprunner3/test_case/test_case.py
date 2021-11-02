@@ -20,9 +20,9 @@ class TestClass:
     def setup_class(self):
         self.deal_with = DataDepend()
         self.validate = Validate()
-        with open(TARGET_PATH, 'r') as f:
-            self.file = json.load(f)
-            f.close()
+        with open(TARGET_PATH, 'r') as file:
+            self.file = json.load(file)
+            file.close()
 
     def test_config_token(self, get_config):
         """
