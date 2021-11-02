@@ -134,16 +134,37 @@ class DataDepend(object):
             value = getattr(objects, func)(self)
         return value
 
-    def image_depend(self, keys, key, replace_data):
-        file_path = os.path.join(FILE_PATH, keys)
-        objects = self.in_getattr_(key)
-        value = self.getattr_(objects, key, open(file_path, 'rb'))
-        return replace_data.replace(r'$' + key + '{' + keys[1] + '}', value.__str__())
+    def image_depend(self, file_name, func, replace_data):
+        """
+        :param file_name: 文件名
+        :param func: 函数
+        :param replace_data: replace_data
+        :return:
+        """
+        file_path = os.path.join(FILE_PATH, file_name)
+        objects = self.in_getattr_(func)
+        value = self.getattr_(objects, func, open(file_path, 'rb'))
+        return replace_data.replace(r'$' + func + '{' + file_name + '}', value.__str__())
+
+
+def file_depend(request_data):
+    """
+    :param request_data: request_data
+    :return:
+    """
+    file_name = request_data['files']['file']
+    file_path = os.path.join(FILE_PATH, file_name)
+    if len(request_data['files']) == 1:
+        request_data['files'] = {'file': open(file_path, 'rb')}
+    else:
+        file_params = {key: (None, value) for key, value in request_data['files'].items() if key != 'file'}
+        file_params.update({'file': (file_name, open(file_path, 'rb'))})
+        request_data['files'] = file_params
+    return request_data['files']
 
 
 if __name__ == '__main__':
     datadepend_ = DataDepend()
-    datadepend_.image_depend('考试封面.jpg', 'base_64', "{'url': '/api/v1/system/file/cropper-upload', 'method': 'POST', 'headers': {'Authorization': 'Bearer__cb4fbe83f03b19163f0b8d39fe347e2f', 'content-type': 'application/x-www-form-urlencoded; charset=UTF-8', 'uri': 'exam/exam'}, 'data': {'image': 'data:image/png;base64,$base_64{考试封面.jpg}'}}")
     datadepend_.dicts['access_token'] = '123'
     print(datadepend_.replace_("{'name': '【普通考试】-人脸识别规则', 'request': {'method': 'GET', 'headers': {'Authorizati"
                                "on': 'Bearer__${access_token}', 'uri': None}, 'params': {'key': '$diy_time{2021, 09, +0"
