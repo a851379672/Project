@@ -1,0 +1,28 @@
+#allure:
+#-   allure_data:
+#      {
+#        'allure_descrption': '',
+#        'allure_suite': '管理端',
+#        'allure_sub_suite': '考试模块',
+#        'allure_feature': '管理端',
+#        'allure_story': '考试模块'
+#      }
+#================================模板================================
+#test:
+#-   name: 【普通试题】-音视频完成规则
+#    request:
+#        url: /api/v1/exam/question-depot
+#        method: POST
+#        headers:
+#          Authorization: Bearer__${access_token}
+#          uri: exam/question-depot
+#        params:
+#            {
+#              'key': 'value'
+#            }
+#    sql_statement:
+#        -  sql:  ['SELECT * FROM exam.t_question WHERE f_question_depot_id = "${questionDepotId}"', 0]
+#    extract:
+#        nationality_id: $..items.[0].id
+#    validate:
+#        -   eq:  [$..redirectUri, 'http://${url}.zhixueyun.com']

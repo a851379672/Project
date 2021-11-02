@@ -1,0 +1,410 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "test_case",
+    "children" : [ {
+      "name" : "【公告配置】——查询公告开放时间",
+      "children" : [ {
+        "name" : "考试公告",
+        "children" : [ {
+          "name" : "【公告配置】——查询公告开放时间",
+          "uid" : "9b416efec520d8df",
+          "parentUid" : "1e1a7544645b6fa25de9fc2922f013cb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1634806844940,
+            "stop" : 1634806845568,
+            "duration" : 628
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "1e1a7544645b6fa25de9fc2922f013cb"
+      }, {
+        "name" : "TestClass",
+        "children" : [ {
+          "name" : "【公告配置】——查询公告开放时间",
+          "uid" : "9b416efec520d8df",
+          "parentUid" : "a5304327f11cf4093b83f191e4a824bb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1634806844940,
+            "stop" : 1634806845568,
+            "duration" : 628
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "a5304327f11cf4093b83f191e4a824bb"
+      } ],
+      "uid" : "ec085a51b373e34b8d0ec76d8e8b5da7"
+    }, {
+      "name" : "test_case",
+      "children" : [ {
+        "name" : "考试公告",
+        "children" : [ {
+          "name" : "【公告配置】——查询公告开放时间",
+          "uid" : "9b416efec520d8df",
+          "parentUid" : "c184ce79661129cbe2b62dfb2ac396ea",
+          "status" : "passed",
+          "time" : {
+            "start" : 1634806844940,
+            "stop" : 1634806845568,
+            "duration" : 628
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "【公告配置】——查询授权组织",
+          "uid" : "ad034fcd049c6c17",
+          "parentUid" : "c184ce79661129cbe2b62dfb2ac396ea",
+          "status" : "passed",
+          "time" : {
+            "start" : 1634806845576,
+            "stop" : 1634806846191,
+            "duration" : 615
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "【公告配置】——查询组织操作类型",
+          "uid" : "a922385cad76047a",
+          "parentUid" : "c184ce79661129cbe2b62dfb2ac396ea",
+          "status" : "passed",
+          "time" : {
+            "start" : 1634806846200,
+            "stop" : 1634806848593,
+            "duration" : 2393
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "【公告配置】——新增公告",
+          "uid" : "11a719ddb4c91975",
+          "parentUid" : "c184ce79661129cbe2b62dfb2ac396ea",
+          "status" : "broken",
+          "time" : {
+            "start" : 1634806848608,
+            "stop" : 1634806849950,
+            "duration" : 1342
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "c184ce79661129cbe2b62dfb2ac396ea"
+      }, {
+        "name" : "TestClass",
+        "children" : [ {
+          "name" : "【公告配置】——查询公告开放时间",
+          "uid" : "9b416efec520d8df",
+          "parentUid" : "e32196e106b138ae507afcfc03f38fef",
+          "status" : "passed",
+          "time" : {
+            "start" : 1634806844940,
+            "stop" : 1634806845568,
+            "duration" : 628
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "【公告配置】——查询授权组织",
+          "uid" : "ad034fcd049c6c17",
+          "parentUid" : "e32196e106b138ae507afcfc03f38fef",
+          "status" : "passed",
+          "time" : {
+            "start" : 1634806845576,
+            "stop" : 1634806846191,
+            "duration" : 615
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "【公告配置】——查询组织操作类型",
+          "uid" : "a922385cad76047a",
+          "parentUid" : "e32196e106b138ae507afcfc03f38fef",
+          "status" : "passed",
+          "time" : {
+            "start" : 1634806846200,
+            "stop" : 1634806848593,
+            "duration" : 2393
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "【公告配置】——新增公告",
+          "uid" : "11a719ddb4c91975",
+          "parentUid" : "e32196e106b138ae507afcfc03f38fef",
+          "status" : "broken",
+          "time" : {
+            "start" : 1634806848608,
+            "stop" : 1634806849950,
+            "duration" : 1342
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_run[api_data5]",
+          "uid" : "5107c5efd0eb5fda",
+          "parentUid" : "e32196e106b138ae507afcfc03f38fef",
+          "status" : "broken",
+          "time" : {
+            "start" : 1634806850230,
+            "stop" : 1634806856751,
+            "duration" : 6521
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_run[api_data6]",
+          "uid" : "9afcf0780240cce7",
+          "parentUid" : "e32196e106b138ae507afcfc03f38fef",
+          "status" : "broken",
+          "time" : {
+            "start" : 1634806856796,
+            "stop" : 1634806858023,
+            "duration" : 1227
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_run[api_data7]",
+          "uid" : "455347df9843b1b5",
+          "parentUid" : "e32196e106b138ae507afcfc03f38fef",
+          "status" : "broken",
+          "time" : {
+            "start" : 1634806858058,
+            "stop" : 1634806861016,
+            "duration" : 2958
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_run[api_data8]",
+          "uid" : "3e24cedff180b179",
+          "parentUid" : "e32196e106b138ae507afcfc03f38fef",
+          "status" : "broken",
+          "time" : {
+            "start" : 1634806861052,
+            "stop" : 1634806862381,
+            "duration" : 1329
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_config_token",
+          "uid" : "fa227c25da5f9b77",
+          "parentUid" : "e32196e106b138ae507afcfc03f38fef",
+          "status" : "passed",
+          "time" : {
+            "start" : 1634807108185,
+            "stop" : 1634807108191,
+            "duration" : 6
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "【公告配置】——查询公告标题",
+          "uid" : "f704286eb789d046",
+          "parentUid" : "e32196e106b138ae507afcfc03f38fef",
+          "status" : "passed",
+          "time" : {
+            "start" : 1634807108199,
+            "stop" : 1634807136834,
+            "duration" : 28635
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "e32196e106b138ae507afcfc03f38fef"
+      }, {
+        "name" : "考试模块",
+        "children" : [ {
+          "name" : "【公告配置】——查询公告标题",
+          "uid" : "f704286eb789d046",
+          "parentUid" : "13a83a65bfa78051c1c46cc965716a3f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1634807108199,
+            "stop" : 1634807136834,
+            "duration" : 28635
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "13a83a65bfa78051c1c46cc965716a3f"
+      } ],
+      "uid" : "749abf87a14fcff92207e6dec8cc2afc"
+    }, {
+      "name" : "【公告配置】——查询授权组织",
+      "children" : [ {
+        "name" : "考试公告",
+        "children" : [ {
+          "name" : "【公告配置】——查询授权组织",
+          "uid" : "ad034fcd049c6c17",
+          "parentUid" : "8dd4f56bbff83aa8a74403973e90dbe0",
+          "status" : "passed",
+          "time" : {
+            "start" : 1634806845576,
+            "stop" : 1634806846191,
+            "duration" : 615
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "8dd4f56bbff83aa8a74403973e90dbe0"
+      }, {
+        "name" : "TestClass",
+        "children" : [ {
+          "name" : "【公告配置】——查询授权组织",
+          "uid" : "ad034fcd049c6c17",
+          "parentUid" : "1d68539a10dc2a4c5e9cf16b6056afd3",
+          "status" : "passed",
+          "time" : {
+            "start" : 1634806845576,
+            "stop" : 1634806846191,
+            "duration" : 615
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "1d68539a10dc2a4c5e9cf16b6056afd3"
+      } ],
+      "uid" : "b1b09c417fb97577b5a074e5a90d8cd0"
+    }, {
+      "name" : "【公告配置】——查询组织操作类型",
+      "children" : [ {
+        "name" : "考试公告",
+        "children" : [ {
+          "name" : "【公告配置】——查询组织操作类型",
+          "uid" : "a922385cad76047a",
+          "parentUid" : "bcf86934f494cd764bd01969452b9c8d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1634806846200,
+            "stop" : 1634806848593,
+            "duration" : 2393
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "bcf86934f494cd764bd01969452b9c8d"
+      }, {
+        "name" : "TestClass",
+        "children" : [ {
+          "name" : "【公告配置】——查询组织操作类型",
+          "uid" : "a922385cad76047a",
+          "parentUid" : "f78dcdcf567c94b572fc73f1705ac1f2",
+          "status" : "passed",
+          "time" : {
+            "start" : 1634806846200,
+            "stop" : 1634806848593,
+            "duration" : 2393
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "f78dcdcf567c94b572fc73f1705ac1f2"
+      } ],
+      "uid" : "3681a6c9680ffa90630cbbe99da139ea"
+    }, {
+      "name" : "【公告配置】——新增公告",
+      "children" : [ {
+        "name" : "考试公告",
+        "children" : [ {
+          "name" : "【公告配置】——新增公告",
+          "uid" : "11a719ddb4c91975",
+          "parentUid" : "440d610287c55965402a845db0ced005",
+          "status" : "broken",
+          "time" : {
+            "start" : 1634806848608,
+            "stop" : 1634806849950,
+            "duration" : 1342
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "440d610287c55965402a845db0ced005"
+      }, {
+        "name" : "TestClass",
+        "children" : [ {
+          "name" : "【公告配置】——新增公告",
+          "uid" : "11a719ddb4c91975",
+          "parentUid" : "e9406ae42fd71684034c66536652897d",
+          "status" : "broken",
+          "time" : {
+            "start" : 1634806848608,
+            "stop" : 1634806849950,
+            "duration" : 1342
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "e9406ae42fd71684034c66536652897d"
+      } ],
+      "uid" : "cd69a503984f371acbe3646069245fb1"
+    }, {
+      "name" : "【公告配置】——查询公告标题",
+      "children" : [ {
+        "name" : "考试模块",
+        "children" : [ {
+          "name" : "【公告配置】——查询公告标题",
+          "uid" : "f704286eb789d046",
+          "parentUid" : "4a83e2c6f9099c68e8ffa53f436f8eda",
+          "status" : "passed",
+          "time" : {
+            "start" : 1634807108199,
+            "stop" : 1634807136834,
+            "duration" : 28635
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "4a83e2c6f9099c68e8ffa53f436f8eda"
+      }, {
+        "name" : "TestClass",
+        "children" : [ {
+          "name" : "【公告配置】——查询公告标题",
+          "uid" : "f704286eb789d046",
+          "parentUid" : "a7ddfec2184ec4841ccd1c5b781031d9",
+          "status" : "passed",
+          "time" : {
+            "start" : 1634807108199,
+            "stop" : 1634807136834,
+            "duration" : 28635
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "a7ddfec2184ec4841ccd1c5b781031d9"
+      } ],
+      "uid" : "5c5236efbfcddc84456022180e780be6"
+    } ],
+    "uid" : "86abcc46617c603d802c3e378b13740e"
+  } ]
+}

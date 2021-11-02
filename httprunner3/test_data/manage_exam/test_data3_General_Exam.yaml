@@ -1,0 +1,154 @@
+allure:
+    {
+      'allure_descrption': '',
+      'allure_suite': '管理端',
+      'allure_sub_suite': '考试模块',
+      'allure_feature': '管理端',
+      'allure_story': '考试模块'
+    }
+test:
+-   name: 【普通考试】——人脸识别规则
+    request:
+        url: /api/v1/system/rule-config/key
+        method: GET
+        headers:
+          Authorization: Bearer__${access_token}
+          uri: exam/exam
+        params:
+            {
+              key: "FACE_CONFIG"
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.status', '1']
+
+-   name: 【普通考试】——生成考试id
+    request:
+        url: /api/v1/exam/exam/virtual-id
+        method: GET
+        headers:
+          Authorization: Bearer__${access_token}
+          uri: exam/exam
+        params:
+    sql_statement:
+    extract:
+        virtualExamId: '$.virtualExamId'
+    validate:
+        -   eq:  ['status_code', '200']
+
+-   name: 【普通考试】——获取所有设备类型
+    request:
+        url: /api/v1/exam/equipment-type/all
+        method: GET
+        headers:
+          Authorization: Bearer__${access_token}
+          uri: exam/exam
+        params:
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['status_code', '200']
+
+-   name: 【普通考试】——考试开始时间
+    request:
+        url: /api/v1/exam/exam/remote-startTime
+        method: GET
+        headers:
+          Authorization: Bearer__${access_token}
+          uri: exam/exam
+        params:
+    sql_statement:
+    extract:
+        currentTime: '$.currentTime'
+    validate:
+        -   eq:  ['$time_stamp{$.afterNoonRemoteTime}', '$time_stamp{$diy_time{*, *, +1, 09, 00, 00}}']
+
+-   name: 【普通考试】——获取推荐标签
+    request:
+        url: /api/v1/system/topic/hot
+        method: GET
+        headers:
+          Authorization: Bearer__${access_token}
+          uri: exam/exam
+        params:
+          {
+            type: 6,
+            limit: 10
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['status_code', '200']
+
+-   name: 【普通考试】——获取授权组织
+    request:
+        url: /api/v1/system/organization/max-grant-organization
+        method: GET
+        headers:
+          Authorization: Bearer__${access_token}
+          uri: exam/exam
+        params:
+          {
+            uri: 'exam/exam'
+          }
+    sql_statement:
+    extract:
+        organizationId: '$.id'
+    validate:
+        -   eq:  ['$.status', '1']
+
+-   name: 【普通考试】——上传考试封面
+    request:
+        url: /api/v1/system/file/simple-upload-auth
+        method: POST
+        headers:
+          Authorization: Bearer__${access_token}
+        params:
+        files:
+          {
+            picSize: 512000,
+            access_token: '${access_token}',
+            file: '考试封面.jpg'
+          }
+    sql_statement:
+    extract:
+        coverPath: '$.path'
+    validate:
+        -   eq:  ['$.msg', 'success']
+
+-   name: 【普通考试】——确认封面图片
+    request:
+        url: /${coverPath}
+        method: GET
+        headers:
+          Authorization: Bearer__${access_token}
+          uri: exam/exam
+        params:
+          {
+            image: 'data:image/png;base64,$base'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['status_code', '200']
+
+-   name: 【普通考试】——提交考试封面
+    request:
+        url: /api/v1/system/file/cropper-upload
+        method: POST
+        headers:
+          Authorization: Bearer__${access_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam
+        data:
+          {
+            image: 'data:image/png;base64,$base_64{考试封面.jpg}',
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.msg', 'success']
+
+
+

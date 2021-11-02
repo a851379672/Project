@@ -1,0 +1,137 @@
+{
+  "uid" : "ddfef60aeedcf51c",
+  "name" : "【公告配置】——取消置顶公告",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "d79ef2ab66480eab68e0fe95f96074ea",
+  "time" : {
+    "start" : 1634806751316,
+    "stop" : 1634806751397,
+    "duration" : 81
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1634806750774,
+      "stop" : 1634806750774,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1634806750490,
+      "stop" : 1634806750774,
+      "duration" : 284
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "be23aad85e03a809",
+      "name" : "log",
+      "source" : "be23aad85e03a809.txt",
+      "type" : "text/plain",
+      "size" : 91
+    }, {
+      "uid" : "9d4d886202b8a228",
+      "name" : "stderr",
+      "source" : "9d4d886202b8a228.txt",
+      "type" : "text/plain",
+      "size" : 1420
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1634806751574,
+      "stop" : 1634806751574,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【公告配置】——取消置顶公告"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试公告"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "12456-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "http://pre-202108-10.zhixueyun.com/api/v1/exam/announcement/remove-top/${noticesId}",
+    "url" : "http://pre-202108-10.zhixueyun.com/api/v1/exam/announcement/remove-top/${noticesId}",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ddfef60aeedcf51c.json",
+  "parameterValues" : [ ]
+}

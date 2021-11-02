@@ -1,0 +1,101 @@
+[ {
+  "uid" : "fa227c25da5f9b77",
+  "name" : "test_config_token",
+  "time" : {
+    "start" : 1634807108185,
+    "stop" : 1634807108191,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f704286eb789d046",
+  "name" : "【公告配置】——查询公告标题",
+  "time" : {
+    "start" : 1634807108199,
+    "stop" : 1634807136834,
+    "duration" : 28635
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "455347df9843b1b5",
+  "name" : "test_run[api_data7]",
+  "time" : {
+    "start" : 1634806858058,
+    "stop" : 1634806861016,
+    "duration" : 2958
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "a922385cad76047a",
+  "name" : "【公告配置】——查询组织操作类型",
+  "time" : {
+    "start" : 1634806846200,
+    "stop" : 1634806848593,
+    "duration" : 2393
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5107c5efd0eb5fda",
+  "name" : "test_run[api_data5]",
+  "time" : {
+    "start" : 1634806850230,
+    "stop" : 1634806856751,
+    "duration" : 6521
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "9b416efec520d8df",
+  "name" : "【公告配置】——查询公告开放时间",
+  "time" : {
+    "start" : 1634806844940,
+    "stop" : 1634806845568,
+    "duration" : 628
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9afcf0780240cce7",
+  "name" : "test_run[api_data6]",
+  "time" : {
+    "start" : 1634806856796,
+    "stop" : 1634806858023,
+    "duration" : 1227
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "11a719ddb4c91975",
+  "name" : "【公告配置】——新增公告",
+  "time" : {
+    "start" : 1634806848608,
+    "stop" : 1634806849950,
+    "duration" : 1342
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "3e24cedff180b179",
+  "name" : "test_run[api_data8]",
+  "time" : {
+    "start" : 1634806861052,
+    "stop" : 1634806862381,
+    "duration" : 1329
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "ad034fcd049c6c17",
+  "name" : "【公告配置】——查询授权组织",
+  "time" : {
+    "start" : 1634806845576,
+    "stop" : 1634806846191,
+    "duration" : 615
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

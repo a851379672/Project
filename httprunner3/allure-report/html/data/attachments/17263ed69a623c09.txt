@@ -1,0 +1,2 @@
+INFO     root:data_depend.py:40 提取变量：noticesId: 731a43b8-f8c5-4e59-abfc-0c7f2e569ff1
+INFO     root:validate.py:55 响应断言： 预期值：'pre公告1' 实际值：'pre公告1', 断言成功!

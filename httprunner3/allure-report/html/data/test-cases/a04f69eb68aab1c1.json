@@ -1,0 +1,137 @@
+{
+  "uid" : "a04f69eb68aab1c1",
+  "name" : "【公告配置】——置顶公告",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "11b0579c56edfc302ffa72c38dc6644c",
+  "time" : {
+    "start" : 1634806751230,
+    "stop" : 1634806751312,
+    "duration" : 82
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1634806750774,
+      "stop" : 1634806750774,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1634806750490,
+      "stop" : 1634806750774,
+      "duration" : 284
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "7a00b0bba062da99",
+      "name" : "log",
+      "source" : "7a00b0bba062da99.txt",
+      "type" : "text/plain",
+      "size" : 91
+    }, {
+      "uid" : "faa2781e5fc989bf",
+      "name" : "stderr",
+      "source" : "faa2781e5fc989bf.txt",
+      "type" : "text/plain",
+      "size" : 1413
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1634806751574,
+      "stop" : 1634806751574,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【公告配置】——置顶公告"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试公告"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "12456-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "http://pre-202108-10.zhixueyun.com/api/v1/exam/announcement/top/${noticesId}",
+    "url" : "http://pre-202108-10.zhixueyun.com/api/v1/exam/announcement/top/${noticesId}",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a04f69eb68aab1c1.json",
+  "parameterValues" : [ ]
+}

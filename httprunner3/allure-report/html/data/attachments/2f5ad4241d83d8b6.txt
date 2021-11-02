@@ -1,0 +1,38 @@
+2021-10-21 17:00:15.130 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : http://pre-202108-10.zhixueyun.com/api/v1/exam/announcement
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__537743497f7da6ef76d10eb3345b3d6d",
+    "uri": "exam/notices",
+    "Content-Length": "223",
+    "Content-Type": "application/x-www-form-urlencoded"
+}
+cookies  : {}
+body     : title=pre%E5%85%AC%E5%91%8A1&description=%E8%BF%99%E9%87%8C%E6%98%AFpre%E5%85%AC%E5%91%8A1&organizationId-text=preer&organizationId=9bcad76a-ba7e-4ace-9f92-f6e086a29cec&startTime=2021-10-21+17%3A0&endTime=2021-10-22+09%3A00
+
+2021-10-21 17:00:15.130 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 500
+headers  : {
+    "Date": "Thu, 21 Oct 2021 09:00:15 GMT",
+    "Content-Length": "47",
+    "Connection": "keep-alive",
+    "Content-Language": "en-US",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : None
+content_type : 
+body     : {
+    "message": "Internal Error",
+    "error": 0,
+    "url": ""
+}
+
+2021-10-21 17:00:15,130 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:42] | INFO: 请检查响应和jsonpath: 'bool' object is not subscriptable

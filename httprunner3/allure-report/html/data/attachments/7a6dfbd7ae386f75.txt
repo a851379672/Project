@@ -1,0 +1,212 @@
+2021-10-21 16:59:10.637 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://prezxy9.zhixueyun.com/oauth/api/v1/auth
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Content-Length": "390"
+}
+cookies  : {}
+body     : key=0J5Zm%2BUKb3i4gKYSpDJeGReXokKz1TeyyXGeeqJTfVxWhOz0DpdFdJmMvNNB8difW98CJNYk%2F1yZ6VYNw30SQtiPAOJLgVrkZolnP78WjJ5gtYuAYtUY3xMUMxcGgnQH2XP%2FbiozhREJBQ9oJe9JKen7YehtDKiILw66buxAGorzXV6l2ChiSflP1Cq9QJomvbgm4oK6k6IfN1R9gDd%2BbA%3D%3D&organization_id=8oQHLQ76uGyWpBoRjG99q9BeEOYGyAcrnJKwZuMyb%2BnTGbKlVRloluSsZWDJNxri&login_method=JZNm%2B1f9txtGtiE0oRMJ1g%3D%3D&username=admin&pword=zxy123456
+
+2021-10-21 16:59:10.638 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Thu, 21 Oct 2021 08:59:11 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "162",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "access_token": "e46f2a224cf64cd03c30ee9dd301a6cc",
+    "state": "/",
+    "redirect_uri": "https://pre-202108-10.zhixueyun.com/admin",
+    "token_type": "Bearer",
+    "expires_in": 3600
+}
+
+2021-10-21 16:59:10,638 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:52] | INFO: 企业管理员登录成功
+2021-10-21 16:59:10.772 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://pre-202108-10.zhixueyun.com/api/v1/system/setting/config
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__e46f2a224cf64cd03c30ee9dd301a6cc"
+}
+cookies  : {}
+body     : None
+
+2021-10-21 16:59:10.772 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Thu, 21 Oct 2021 08:59:11 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "2914",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "redirectUri": "http://pre-202108-10.zhixueyun.com",
+    "shareTemplate": [
+        {
+            "code": "weixin",
+            "content": "绝对有料，小伙伴们赶紧来吧!",
+            "id": "6c61d15f-0d30-4c1c-99d9-6c7e697f91a2",
+            "name": "微信"
+        },
+        {
+            "code": "weibo",
+            "content": "小伙伴们,有好东西啦,快点进来看吧!",
+            "id": "acb041bd-4400-42f8-8bd9-b0f9aca22120",
+            "name": "新浪微搏"
+        },
+        {
+            "code": "bar",
+            "content": "大家一起来围观吧!",
+            "id": "cdb71b83-208d-441c-9e19-76480f09ef6d",
+            "name": "分享到问道"
+        },
+        {
+            "code": "qzone",
+            "content": "空间的内容绝对有料,有兴趣的小伙伴赶紧来吧!",
+            "id": "d67d1c2a-26d0-409b-8ecb-ad36e3108201",
+            "name": "QQ空间"
+        }
+    ],
+    "cloudFileWebUrl": "JWDxv5HwHx5zYZjH/Kh5gvu0Bmquw3u4zuF9IGT0yCMlr7EfTOFNR8InV03mi+Ul",
+    "cloudCdnPreviewAddress": "3gl4+okKFNnUucGfHoGPPmanFb6LkFChIXUrqjj+KqM=",
+    "skin": 1,
+    "isOtherAdmin": true,
+    "resourceConfigs": [
+        {
+            "cdnViewUrl": "3gl4+okKFNnUucGfHoGPPmFbZ+Zzt/Hn4Z4PDWLoRz4=",
+            "courseScormFileUrl": "Uz97fynRi9zyS3nW/VrFD9zo+va9NySKmXyktq6ylRlEbzAyHrO4tbGYllwfXs2d",
+            "courseScormWebUrl": "Uz97fynRi9zyS3nW/VrFDxUp5HPEotnI0DBPhfFnEchecuE2lEpQWe7ddd0N5fRX",
+            "id": "default",
+            "name": "9Su++NUJ2DOFHC4qpCLRZA==",
+            "viewUrl": "Uz97fynRi9zyS3nW/VrFD5l6ncf8kmt4duUmFTx7YyU="
+        }
+    ],
+    "liveSupply": 4,
+    "cdnPreviewAddress": "3gl4+okKFNnUucGfHoGPPmFbZ+Zzt/Hn4Z4PDWLoRz4=",
+    "menuLengthThreshold": "10",
+    "currentUser": {
+        "companyOrganization": {
+            "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+            "name": "preer",
+            "shortName": "preer"
+        },
+        "fullName": "超级管理员",
+        "headPortrait": null,
+        "headPortraitPath": null,
+        "id": "73da8c17-d84a-4698-975e-d18ca5232708",
+        "initSetting": 1,
+        "name": "admin",
+        "organization": {
+            "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+            "name": "preer",
+            "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+        },
+        "rootOrganization": {
+            "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+            "name": "preer"
+        }
+    },
+    "courseToolSwitch": "0",
+    "courseScormFileUrl": "Uz97fynRi9zyS3nW/VrFD9zo+va9NySKmXyktq6ylRlEbzAyHrO4tbGYllwfXs2d",
+    "organization": {
+        "id": "8oQHLQ76uGyWpBoRjG99q9BeEOYGyAcrnJKwZuMyb+nTGbKlVRloluSsZWDJNxri",
+        "name": "M08R6uEL/V6UsLf1NHguZg==",
+        "path": "8oQHLQ76uGyWpBoRjG99q9BeEOYGyAcrnJKwZuMyb+m4tWkZ6oyVZP32kHBItIUQ",
+        "shortName": "preer"
+    },
+    "secureFileSwitch": 1,
+    "defaultOpen": "0",
+    "cloudFileSwitch": 0,
+    "cloudPreviewAddress": "Uz97fynRi9zyS3nW/VrFD94fmeY7Vs/mrunysrW+jps=",
+    "roleLength": 1,
+    "courseScormWebUrl": "Uz97fynRi9zyS3nW/VrFDxUp5HPEotnI0DBPhfFnEchecuE2lEpQWe7ddd0N5fRX",
+    "dashboard": 0,
+    "dataPermission": [
+        {
+            "code": "JOB_TYPE",
+            "deptLevel": 0,
+            "groupLevel": 1,
+            "orgLevel": 0
+        },
+        {
+            "code": "JOB",
+            "deptLevel": 0,
+            "groupLevel": 1,
+            "orgLevel": 0
+        },
+        {
+            "code": "POSITION",
+            "deptLevel": 0,
+            "groupLevel": 1,
+            "orgLevel": 0
+        },
+        {
+            "code": "LECTURER",
+            "deptLevel": 0,
+            "groupLevel": 1,
+            "orgLevel": 0
+        },
+        {
+            "code": "CERTIFICATE",
+            "deptLevel": 0,
+            "groupLevel": 1,
+            "orgLevel": 0
+        },
+        {
+            "code": "TAG",
+            "deptLevel": 0,
+            "groupLevel": 1,
+            "orgLevel": 0
+        },
+        {
+            "code": "COURSE",
+            "deptLevel": 0,
+            "groupLevel": 1,
+            "orgLevel": 0
+        },
+        {
+            "code": "APPROVAL",
+            "deptLevel": 0,
+            "groupLevel": 1,
+            "orgLevel": 0
+        },
+        {
+            "code": "KNOWLEDGE",
+            "deptLevel": 0,
+            "groupLevel": 1,
+            "orgLevel": 0
+        }
+    ],
+    "websiteTitle": "preer1"
+}
+
+2021-10-21 16:59:10,773 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:72] | INFO: 获取企业配置信息成功
+2021-10-21 16:59:10,775 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：access_token: e46f2a224cf64cd03c30ee9dd301a6cc
+2021-10-21 16:59:10,776 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-10-21 16:59:10,776 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationName: preer
+2021-10-21 16:59:10,776 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationPath: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,

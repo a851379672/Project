@@ -1,0 +1,36 @@
+2021-10-21 16:59:11.571 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : DELETE
+url      : http://pre-202108-10.zhixueyun.com/api/v1/exam/announcement/99c2d571-6dfa-45fb-b07c-9f340505b3e6
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__e46f2a224cf64cd03c30ee9dd301a6cc",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "uri": "exam/notices",
+    "Content-Length": "68"
+}
+cookies  : {}
+body     : id=99c2d571-6dfa-45fb-b07c-9f340505b3e6&title=pre%E5%85%AC%E5%91%8A1
+
+2021-10-21 16:59:11.571 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Thu, 21 Oct 2021 08:59:12 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "45",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "id": "99c2d571-6dfa-45fb-b07c-9f340505b3e6"
+}
+
+2021-10-21 16:59:11,571 | D:\PyCharm\project\httprunner3\common\validate.py[line:55] | INFO: 响应断言： 预期值：'99c2d571-6dfa-45fb-b07c-9f340505b3e6' 实际值：'99c2d571-6dfa-45fb-b07c-9f340505b3e6', 断言成功!

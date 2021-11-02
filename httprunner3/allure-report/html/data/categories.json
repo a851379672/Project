@@ -1,0 +1,82 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "TypeError: 'bool' object is not subscriptable",
+      "children" : [ {
+        "name" : "【公告配置】——新增公告",
+        "uid" : "11a719ddb4c91975",
+        "parentUid" : "c592040e2306d463e6685639a7b719af",
+        "status" : "broken",
+        "time" : {
+          "start" : 1634806848608,
+          "stop" : 1634806849950,
+          "duration" : 1342
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c592040e2306d463e6685639a7b719af"
+    }, {
+      "name" : "TypeError: replace() argument 2 must be str, not None",
+      "children" : [ {
+        "name" : "test_run[api_data5]",
+        "uid" : "5107c5efd0eb5fda",
+        "parentUid" : "8f2a75c37cca6ff1170182117e4138d3",
+        "status" : "broken",
+        "time" : {
+          "start" : 1634806850230,
+          "stop" : 1634806856751,
+          "duration" : 6521
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_run[api_data6]",
+        "uid" : "9afcf0780240cce7",
+        "parentUid" : "8f2a75c37cca6ff1170182117e4138d3",
+        "status" : "broken",
+        "time" : {
+          "start" : 1634806856796,
+          "stop" : 1634806858023,
+          "duration" : 1227
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_run[api_data7]",
+        "uid" : "455347df9843b1b5",
+        "parentUid" : "8f2a75c37cca6ff1170182117e4138d3",
+        "status" : "broken",
+        "time" : {
+          "start" : 1634806858058,
+          "stop" : 1634806861016,
+          "duration" : 2958
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_run[api_data8]",
+        "uid" : "3e24cedff180b179",
+        "parentUid" : "8f2a75c37cca6ff1170182117e4138d3",
+        "status" : "broken",
+        "time" : {
+          "start" : 1634806861052,
+          "stop" : 1634806862381,
+          "duration" : 1329
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8f2a75c37cca6ff1170182117e4138d3"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

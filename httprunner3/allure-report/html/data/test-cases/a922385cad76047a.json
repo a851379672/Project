@@ -1,0 +1,171 @@
+{
+  "uid" : "a922385cad76047a",
+  "name" : "【公告配置】——查询组织操作类型",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "7df8eb0507c8bff3fdce0ed425f714aa",
+  "time" : {
+    "start" : 1634806846200,
+    "stop" : 1634806848593,
+    "duration" : 2393
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1634806841924,
+      "stop" : 1634806841924,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1634806841558,
+      "stop" : 1634806841924,
+      "duration" : 366
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "dc10da285f5b315c",
+      "name" : "log",
+      "source" : "dc10da285f5b315c.txt",
+      "type" : "text/plain",
+      "size" : 107
+    }, {
+      "uid" : "c7564e9397871133",
+      "name" : "stderr",
+      "source" : "c7564e9397871133.txt",
+      "type" : "text/plain",
+      "size" : 1257
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1634806862414,
+      "stop" : 1634806862414,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【公告配置】——查询组织操作类型"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试公告"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "37024-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "http://pre-202108-10.zhixueyun.com/api/v1/system/grant/find-organization-operatortype",
+    "url" : "http://pre-202108-10.zhixueyun.com/api/v1/system/grant/find-organization-operatortype",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "c1f9a46be823b62c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634806814939,
+        "stop" : 1634806815037,
+        "duration" : 98
+      }
+    }, {
+      "uid" : "baf8ecf7e4d5a4fc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634806790782,
+        "stop" : 1634806790859,
+        "duration" : 77
+      }
+    }, {
+      "uid" : "b4f4db51794c88f8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634806751069,
+        "stop" : 1634806751141,
+        "duration" : 72
+      }
+    }, {
+      "uid" : "d0e1343cd8061f32",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634806656396,
+        "stop" : 1634806656475,
+        "duration" : 79
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a922385cad76047a.json",
+  "parameterValues" : [ ]
+}

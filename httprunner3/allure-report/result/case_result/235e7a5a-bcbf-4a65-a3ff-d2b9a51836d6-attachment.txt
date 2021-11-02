@@ -1,0 +1,44 @@
+2021-10-21 16:59:50.944 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : http://pre-202108-10.zhixueyun.com/api/v1/exam/announcement
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__03cb0ffcd3fb87416fb3fa18d2772236",
+    "uri": "exam/notices",
+    "Content-Length": "224",
+    "Content-Type": "application/x-www-form-urlencoded"
+}
+cookies  : {}
+body     : title=pre%E5%85%AC%E5%91%8A1&description=%E8%BF%99%E9%87%8C%E6%98%AFpre%E5%85%AC%E5%91%8A1&organizationId-text=preer&organizationId=9bcad76a-ba7e-4ace-9f92-f6e086a29cec&startTime=2021-10-21+16%3A59&endTime=2021-10-22+09%3A00
+
+2021-10-21 16:59:50.944 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Thu, 21 Oct 2021 08:59:51 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "291",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "createMemberId": "73da8c17-d84a-4698-975e-d18ca5232708",
+    "createTime": 1634806791657,
+    "description": "这里是pre公告1",
+    "endTime": 1634864400000,
+    "id": "731a43b8-f8c5-4e59-abfc-0c7f2e569ff1",
+    "organizationId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+    "startTime": 1634806740000,
+    "title": "pre公告1"
+}
+
+2021-10-21 16:59:50,944 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：noticesId: 731a43b8-f8c5-4e59-abfc-0c7f2e569ff1
+2021-10-21 16:59:50,944 | D:\PyCharm\project\httprunner3\common\validate.py[line:55] | INFO: 响应断言： 预期值：'pre公告1' 实际值：'pre公告1', 断言成功!

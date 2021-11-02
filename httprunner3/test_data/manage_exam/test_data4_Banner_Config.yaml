@@ -1,0 +1,218 @@
+allure:
+    {
+      'allure_descrption': '',
+      'allure_suite': '管理端',
+      'allure_sub_suite': '考试模块',
+      'allure_feature': '管理端',
+      'allure_story': '考试模块'
+    }
+test:
+-   name: 【广告配置】——查询广告标题
+    request:
+        url: /api/v1/exam/banner/page
+        method: GET
+        headers:
+          Authorization: Bearer__${access_token}
+          uri: exam/banners
+        params:
+            {
+              page: 1,
+              pageSize: 10
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.recordCount', '1']
+        -   eq:  ['$.items[0].title', 'pre广告']
+
+-   name: 【广告配置】——查询授权组织
+    request:
+        url: /api/v1/system/organization/granted-organization
+        method: GET
+        headers:
+          Authorization: Bearer__${access_token}
+          uri: exam/banners
+        params:
+            {
+              uri: 'exam/banners',
+              supportMore: 'true'
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.[0].status]', '1']
+
+-   name: 【广告配置】——查询组织操作类型
+    request:
+        url: /api/v1/system/grant/find-organization-operatortype
+        method: GET
+        headers:
+          Authorization: Bearer__${access_token}
+          uri: exam/banners
+        params:
+            {
+              uri: 'exam/banners'
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.${organizationId},', '0,1,2,3,4']
+
+-   name: 【广告配置】——上传广告封面
+    request:
+        url: /api/v1/human/file/upload
+        method: POST
+        headers:
+          Authorization: Bearer__${access_token}
+        params:
+        files:
+            {
+              file: '广告封面.jpg'
+            }
+    sql_statement:
+    extract:
+          path: '$.[0].path'
+          attachmentId: '$.[0].id'
+    validate:
+        -   eq:  ['$.[0].filename,', '广告封面.jpg']
+
+-   name: 【广告配置】——获取认证考试
+    request:
+        url: /api/v1/exam/exam/exam-select
+        method: GET
+        headers:
+          Authorization: Bearer__${access_token}
+          uri: exam/banners
+        params:
+            {
+              uri: 'exam/banners',
+              examType: 2,
+              page: 1,
+              pageSize: 10
+            }
+    sql_statement:
+    extract:
+        examUrl: '$.items[0].id'
+    validate:
+        -   eq:  ['$.recordCount,', '1']
+
+-   name: 【广告配置】——广告保存
+    request:
+        url: /api/v1/exam/banner
+        method: POST
+        headers:
+          Authorization: Bearer__${access_token}
+          uri: exam/banners
+        data:
+            {
+              title: '${ent_name}广告1',
+              path: '${path}',
+              attachmentId: '${attachmentId}',
+              url: '${ent_url}/#/exam/exam/exam-detail/${examUrl}',
+              status: 0,
+              organizationId: '${organizationId}'
+            }
+    sql_statement:
+    extract:
+        bannersId: '$.id'
+        bannersTitle: '$.title'
+    validate:
+        -   eq:  ['$.status,', '0']
+
+-   name: 【广告配置】——广告发布
+    request:
+        url: /api/v1/exam/banner/publish/${bannersId}
+        method: PUT
+        headers:
+          Authorization: Bearer__${access_token}
+          uri: exam/banners
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+        data:
+            {
+              id: '${bannersId}',
+              title: '${bannersTitle}'
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.id,', '${bannersId}']
+        -   eq:  ['$.status,', '1']
+
+-   name: 【广告配置】——广告排序
+    request:
+        url: /api/v1/exam/banner/sort/${bannersId}
+        method: PUT
+        headers:
+          Authorization: Bearer__${access_token}
+          uri: exam/banners
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+        data:
+            {
+              id: '${bannersId}',
+              sort: '2',
+              title: '${ent_name}广告2'
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.id,', '${bannersId}']
+        -   eq:  ['$.sort,', '2']
+
+-   name: 【广告配置】——广告撤销
+    request:
+        url: /api/v1/exam/banner/revoke/${bannersId}
+        method: PUT
+        headers:
+          Authorization: Bearer__${access_token}
+          uri: exam/banners
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+        data:
+            {
+              id: '${bannersId}',
+              title: '${bannersTitle}'
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.id,', '${bannersId}']
+        -   eq:  ['$.status,', '0']
+
+-   name: 【广告配置】——广告修改
+    request:
+        url: /api/v1/exam/banner/${bannersId}
+        method: PUT
+        headers:
+          Authorization: Bearer__${access_token}
+          uri: exam/banners
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+        data:
+            {
+              title: '${ent_name}广告2',
+              path: '${path}',
+              attachmentId: '${attachmentId}',
+              id: '${bannersId}',
+              status: 0
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.title,', '${ent_name}广告2']
+        -   eq:  ['$.status,', '0']
+
+-   name: 【广告配置】——广告删除
+    request:
+        url: /api/v1/exam/banner/${bannersId}
+        method: DELETE
+        headers:
+          Authorization: Bearer__${access_token}
+          uri: exam/banners
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+        data:
+            {
+              id: '${bannersId}',
+              title: '${ent_name}广告2'
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.id,', '${bannersId}']

@@ -1,0 +1,137 @@
+{
+  "uid" : "b4f4db51794c88f8",
+  "name" : "【公告配置】——查询组织操作类型",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "7df8eb0507c8bff3fdce0ed425f714aa",
+  "time" : {
+    "start" : 1634806751069,
+    "stop" : 1634806751141,
+    "duration" : 72
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1634806750774,
+      "stop" : 1634806750774,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1634806750490,
+      "stop" : 1634806750774,
+      "duration" : 284
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a7b9a958c6f96ff7",
+      "name" : "log",
+      "source" : "a7b9a958c6f96ff7.txt",
+      "type" : "text/plain",
+      "size" : 107
+    }, {
+      "uid" : "32b10847c48cd52a",
+      "name" : "stderr",
+      "source" : "32b10847c48cd52a.txt",
+      "type" : "text/plain",
+      "size" : 1257
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1634806751574,
+      "stop" : 1634806751574,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【公告配置】——查询组织操作类型"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试公告"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "12456-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "http://pre-202108-10.zhixueyun.com/api/v1/system/grant/find-organization-operatortype",
+    "url" : "http://pre-202108-10.zhixueyun.com/api/v1/system/grant/find-organization-operatortype",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b4f4db51794c88f8.json",
+  "parameterValues" : [ ]
+}
