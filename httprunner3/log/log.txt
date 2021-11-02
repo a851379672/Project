@@ -451,3 +451,920 @@
 2021-11-01 17:22:19,773 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：access_token: 189470cfbfade3858438547ddcb24000
 2021-11-01 17:22:30,773 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:52] | INFO: 企业管理员登录成功
 2021-11-01 17:22:30,955 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:72] | INFO: 获取企业配置信息成功
+2021-11-02 16:29:44,946 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:52] | INFO: 企业管理员登录成功
+2021-11-02 16:29:45,132 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:72] | INFO: 获取企业配置信息成功
+2021-11-02 16:29:45,141 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：access_token: 392c2687f330f837eaa7e402e5bfcde6
+2021-11-02 16:29:45,142 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:29:45,143 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationName: preer
+2021-11-02 16:29:45,143 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationPath: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:29:45,143 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_url: http://pre-202108-10.zhixueyun.com
+2021-11-02 16:29:45,144 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_name: preer
+2021-11-02 16:29:59,197 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:52] | INFO: 企业管理员登录成功
+2021-11-02 16:29:59,343 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:72] | INFO: 获取企业配置信息成功
+2021-11-02 16:29:59,352 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：access_token: ad0a05ff736d4552970df32c4e87091d
+2021-11-02 16:29:59,352 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:29:59,352 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationName: preer
+2021-11-02 16:29:59,353 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationPath: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:29:59,353 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_url: http://pre-202108-10.zhixueyun.com
+2021-11-02 16:29:59,353 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_name: preer
+2021-11-02 16:30:10,646 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:52] | INFO: 企业管理员登录成功
+2021-11-02 16:30:10,807 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:72] | INFO: 获取企业配置信息成功
+2021-11-02 16:30:10,820 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：access_token: 8d8340e847dbe7eb92332cf023fb8a7c
+2021-11-02 16:30:10,821 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:30:10,821 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationName: preer
+2021-11-02 16:30:10,821 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationPath: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:30:10,822 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_url: http://pre-202108-10.zhixueyun.com
+2021-11-02 16:30:10,822 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_name: preer
+2021-11-02 16:30:18,569 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:30:18,649 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:30:18,783 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：questionDepot: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:30:18,784 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec' 实际值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec', 断言成功!
+2021-11-02 16:30:18,873 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:30:18,955 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:30:19,196 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'37' 实际值：'37', 断言成功!
+2021-11-02 16:30:19,270 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:30:19,348 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：virtualExamId: b42924cb-b6f5-4b87-bdfd-f64c6c0dd1ad
+2021-11-02 16:30:19,348 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:30:19,452 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:30:19,533 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：currentTime: 1635841819576
+2021-11-02 16:30:19,541 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1635901200' 实际值：'1635901200', 断言成功!
+2021-11-02 16:30:19,636 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:30:19,729 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:30:19,730 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:30:20,018 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：coverPath: default/M00/00/55/wKgLQGGA9xyAAQXGAALsu96_yEs342.jpg
+2021-11-02 16:30:20,019 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'success' 实际值：'success', 断言成功!
+2021-11-02 16:30:20,409 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:30:20,833 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:30:20,833 | D:\PyCharm\project\httprunner3\common\validate.py[line:58] | INFO: 断言失败：<class 'AssertionError'>
+2021-11-02 16:30:20,960 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:30:21,051 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:30:23,029 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：path: default/M00/00/55/wKgLQGGA9x-AQNZkAAdftfhVfXQ029.jpg
+2021-11-02 16:30:23,030 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：attachmentId: adbf51af-852b-4020-9bb6-ee37792464e0
+2021-11-02 16:30:23,031 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'广告封面.jpg' 实际值：'广告封面.jpg', 断言成功!
+2021-11-02 16:30:23,870 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：examUrl: 66694028-de7d-45e4-929c-5d0769a5d7bb
+2021-11-02 16:30:23,871 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:30:23,968 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：bannersId: 12cf5fdc-0c81-4c45-870d-004b7f90f1b5
+2021-11-02 16:30:23,968 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：bannersTitle: preer广告1
+2021-11-02 16:30:23,969 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 16:30:24,075 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'12cf5fdc-0c81-4c45-870d-004b7f90f1b5' 实际值：'12cf5fdc-0c81-4c45-870d-004b7f90f1b5', 断言成功!
+2021-11-02 16:30:24,076 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:30:24,182 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'12cf5fdc-0c81-4c45-870d-004b7f90f1b5' 实际值：'12cf5fdc-0c81-4c45-870d-004b7f90f1b5', 断言成功!
+2021-11-02 16:30:24,182 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'2' 实际值：'2', 断言成功!
+2021-11-02 16:30:24,286 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'12cf5fdc-0c81-4c45-870d-004b7f90f1b5' 实际值：'12cf5fdc-0c81-4c45-870d-004b7f90f1b5', 断言成功!
+2021-11-02 16:30:24,287 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 16:30:24,383 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer广告2' 实际值：'preer广告2', 断言成功!
+2021-11-02 16:30:24,384 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 16:30:24,477 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'12cf5fdc-0c81-4c45-870d-004b7f90f1b5' 实际值：'12cf5fdc-0c81-4c45-870d-004b7f90f1b5', 断言成功!
+2021-11-02 16:30:24,577 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:30:24,577 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer公告' 实际值：'preer公告', 断言成功!
+2021-11-02 16:30:24,650 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1635901200' 实际值：'1635901200694', 断言成功!
+2021-11-02 16:30:24,782 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:30:24,875 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:30:24,967 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：noticesId: ec4b19b3-4d35-4532-85ca-420ebe0f9625
+2021-11-02 16:30:24,968 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer公告1' 实际值：'preer公告1', 断言成功!
+2021-11-02 16:30:25,061 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:30:25,146 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 16:30:25,241 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer公告2' 实际值：'preer公告2', 断言成功!
+2021-11-02 16:30:25,241 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'这里是preer公告2' 实际值：'这里是preer公告2', 断言成功!
+2021-11-02 16:30:25,332 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'ec4b19b3-4d35-4532-85ca-420ebe0f9625' 实际值：'ec4b19b3-4d35-4532-85ca-420ebe0f9625', 断言成功!
+2021-11-02 16:32:07,775 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:52] | INFO: 企业管理员登录成功
+2021-11-02 16:32:07,911 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:72] | INFO: 获取企业配置信息成功
+2021-11-02 16:32:07,922 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：access_token: cf102446155fee550c4d7ea7e82489dc
+2021-11-02 16:32:07,922 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:32:07,923 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationName: preer
+2021-11-02 16:32:07,923 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationPath: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:32:07,923 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_url: http://pre-202108-10.zhixueyun.com
+2021-11-02 16:32:07,924 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_name: preer
+2021-11-02 16:32:07,995 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:32:08,065 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:32:08,204 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：questionDepot: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:32:08,206 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec' 实际值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec', 断言成功!
+2021-11-02 16:32:08,499 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:32:08,594 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:32:08,788 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'37' 实际值：'37', 断言成功!
+2021-11-02 16:32:08,864 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:32:08,939 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：virtualExamId: 55f44574-7400-4a73-9202-8809cc95b70c
+2021-11-02 16:32:08,939 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:32:09,011 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:32:09,086 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：currentTime: 1635841929132
+2021-11-02 16:32:09,093 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1635901200' 实际值：'1635901200', 断言成功!
+2021-11-02 16:32:09,166 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:32:10,691 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:32:10,691 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:32:12,415 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：coverPath: default/M00/00/55/wKgLQGGA94yAJDi4AALsu96_yEs544.jpg
+2021-11-02 16:32:12,416 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'success' 实际值：'success', 断言成功!
+2021-11-02 16:32:24,272 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:32:52,573 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:52] | INFO: 企业管理员登录成功
+2021-11-02 16:32:52,727 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:72] | INFO: 获取企业配置信息成功
+2021-11-02 16:32:52,738 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：access_token: 98ab04d7348ff96377e85ce07f5be4fb
+2021-11-02 16:32:52,739 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:32:52,739 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationName: preer
+2021-11-02 16:32:52,739 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationPath: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:32:52,740 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_url: http://pre-202108-10.zhixueyun.com
+2021-11-02 16:32:52,741 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_name: preer
+2021-11-02 16:32:53,703 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:32:54,416 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:32:54,894 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：questionDepot: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:32:54,895 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec' 实际值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec', 断言成功!
+2021-11-02 16:32:55,123 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:32:55,449 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:32:55,994 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'37' 实际值：'37', 断言成功!
+2021-11-02 16:32:56,207 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:32:56,654 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：virtualExamId: 42ead08a-1553-406a-9641-4c2583f72799
+2021-11-02 16:32:56,654 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:32:56,939 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:32:57,276 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：currentTime: 1635841977325
+2021-11-02 16:32:57,283 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1635901200' 实际值：'1635901200', 断言成功!
+2021-11-02 16:32:57,903 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:32:58,316 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:32:58,317 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:32:58,961 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：coverPath: default/M00/00/56/wKgLQGGA97qAEj0VAALsu96_yEs210.jpg
+2021-11-02 16:32:58,961 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'success' 实际值：'success', 断言成功!
+2021-11-02 16:33:04,523 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:34:20,426 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:52] | INFO: 企业管理员登录成功
+2021-11-02 16:34:20,589 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:72] | INFO: 获取企业配置信息成功
+2021-11-02 16:34:22,260 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：access_token: e25586f44baf97c1c1ff663ece560213
+2021-11-02 16:34:22,262 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:34:22,262 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationName: preer
+2021-11-02 16:34:22,263 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationPath: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:34:22,263 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_url: http://pre-202108-10.zhixueyun.com
+2021-11-02 16:34:22,263 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_name: preer
+2021-11-02 16:34:25,042 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:34:26,361 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:34:26,494 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：questionDepot: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:34:26,496 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec' 实际值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec', 断言成功!
+2021-11-02 16:34:26,579 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:34:26,668 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:34:26,892 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'37' 实际值：'37', 断言成功!
+2021-11-02 16:34:26,959 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:34:27,036 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：virtualExamId: 5b666ca9-fa92-4c4c-8cbc-e30ea2b0b173
+2021-11-02 16:34:27,036 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:34:27,123 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:34:27,191 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：currentTime: 1635842067240
+2021-11-02 16:34:27,197 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1635901200' 实际值：'1635901200', 断言成功!
+2021-11-02 16:34:27,274 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:34:27,370 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:34:27,371 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:34:27,619 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：coverPath: default/M00/00/56/wKgLQGGA-BOAN3uCAALsu96_yEs966.jpg
+2021-11-02 16:34:27,620 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'success' 实际值：'success', 断言成功!
+2021-11-02 16:34:27,807 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:34:40,479 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:52] | INFO: 企业管理员登录成功
+2021-11-02 16:34:40,626 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:72] | INFO: 获取企业配置信息成功
+2021-11-02 16:34:40,636 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：access_token: aa15138ff14061e1a3cce0765d3cc893
+2021-11-02 16:34:40,636 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:34:40,637 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationName: preer
+2021-11-02 16:34:40,638 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationPath: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:34:40,638 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_url: http://pre-202108-10.zhixueyun.com
+2021-11-02 16:34:40,638 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_name: preer
+2021-11-02 16:34:40,720 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:34:40,794 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:34:40,924 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：questionDepot: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:34:40,925 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec' 实际值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec', 断言成功!
+2021-11-02 16:34:41,022 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:34:41,124 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:34:41,385 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'37' 实际值：'37', 断言成功!
+2021-11-02 16:34:41,473 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:34:41,563 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：virtualExamId: 7cc9be6d-c24d-42f7-811a-2f210b2712d2
+2021-11-02 16:34:41,563 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:34:41,647 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:34:41,731 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：currentTime: 1635842081777
+2021-11-02 16:34:41,743 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1635901200' 实际值：'1635901200', 断言成功!
+2021-11-02 16:34:41,824 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:34:41,923 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:34:41,924 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:34:42,201 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：coverPath: default/M00/00/56/wKgLQGGA-CKAMLlgAALsu96_yEs715.jpg
+2021-11-02 16:34:42,202 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'success' 实际值：'success', 断言成功!
+2021-11-02 16:34:42,405 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:35:40,591 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:52] | INFO: 企业管理员登录成功
+2021-11-02 16:35:40,735 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:72] | INFO: 获取企业配置信息成功
+2021-11-02 16:35:40,745 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：access_token: d958697a4d34476276d5539fe7e11acf
+2021-11-02 16:35:40,746 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:35:40,746 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationName: preer
+2021-11-02 16:35:40,746 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationPath: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:35:40,747 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_url: http://pre-202108-10.zhixueyun.com
+2021-11-02 16:35:40,747 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_name: preer
+2021-11-02 16:35:40,839 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:35:40,918 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:35:41,038 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：questionDepot: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:35:41,039 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec' 实际值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec', 断言成功!
+2021-11-02 16:35:41,129 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:35:41,209 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:35:41,415 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'37' 实际值：'37', 断言成功!
+2021-11-02 16:35:41,485 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:35:41,609 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：virtualExamId: 95289d87-be4c-4f5a-99a1-bc7f4ab31871
+2021-11-02 16:35:41,609 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:35:41,680 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:35:41,755 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：currentTime: 1635842141800
+2021-11-02 16:35:41,761 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1635901200' 实际值：'1635901200', 断言成功!
+2021-11-02 16:35:41,840 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:35:41,934 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:35:41,935 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:35:42,182 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：coverPath: default/M00/00/56/wKgLQGGA-F6AanpgAALsu96_yEs122.jpg
+2021-11-02 16:35:42,183 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'success' 实际值：'success', 断言成功!
+2021-11-02 16:35:42,374 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:36:36,726 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:36:36,727 | D:\PyCharm\project\httprunner3\common\validate.py[line:58] | INFO: 断言失败：<class 'AssertionError'>
+2021-11-02 16:36:36,852 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:36:36,923 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:36:37,291 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：path: default/M00/00/56/wKgLQGGA-JWAClr7AAdftfhVfXQ373.jpg
+2021-11-02 16:36:37,292 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：attachmentId: 34882f33-a38b-4ea7-8ebd-8fe91bb74d73
+2021-11-02 16:36:37,292 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'广告封面.jpg' 实际值：'广告封面.jpg', 断言成功!
+2021-11-02 16:36:37,382 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：examUrl: 66694028-de7d-45e4-929c-5d0769a5d7bb
+2021-11-02 16:36:37,383 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:36:37,468 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：bannersId: ba344a9e-e4b3-4dbd-a85f-ba561ed8756e
+2021-11-02 16:36:37,469 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：bannersTitle: preer广告1
+2021-11-02 16:36:37,469 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 16:36:37,549 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'ba344a9e-e4b3-4dbd-a85f-ba561ed8756e' 实际值：'ba344a9e-e4b3-4dbd-a85f-ba561ed8756e', 断言成功!
+2021-11-02 16:36:37,550 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:36:37,636 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'ba344a9e-e4b3-4dbd-a85f-ba561ed8756e' 实际值：'ba344a9e-e4b3-4dbd-a85f-ba561ed8756e', 断言成功!
+2021-11-02 16:36:37,636 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'2' 实际值：'2', 断言成功!
+2021-11-02 16:36:37,748 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'ba344a9e-e4b3-4dbd-a85f-ba561ed8756e' 实际值：'ba344a9e-e4b3-4dbd-a85f-ba561ed8756e', 断言成功!
+2021-11-02 16:36:37,748 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 16:36:37,834 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer广告2' 实际值：'preer广告2', 断言成功!
+2021-11-02 16:36:37,834 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 16:36:37,917 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'ba344a9e-e4b3-4dbd-a85f-ba561ed8756e' 实际值：'ba344a9e-e4b3-4dbd-a85f-ba561ed8756e', 断言成功!
+2021-11-02 16:36:37,993 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:36:37,993 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer公告' 实际值：'preer公告', 断言成功!
+2021-11-02 16:36:41,568 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1635901200' 实际值：'1635901200116', 断言成功!
+2021-11-02 16:36:41,697 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:36:41,785 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:36:41,887 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：noticesId: 2e8fcc13-0b0f-4336-bf09-2cf9fc649d52
+2021-11-02 16:36:41,888 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer公告1' 实际值：'preer公告1', 断言成功!
+2021-11-02 16:36:41,991 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:36:42,090 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 16:36:42,189 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer公告2' 实际值：'preer公告2', 断言成功!
+2021-11-02 16:36:42,189 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'这里是preer公告2' 实际值：'这里是preer公告2', 断言成功!
+2021-11-02 16:36:42,273 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'2e8fcc13-0b0f-4336-bf09-2cf9fc649d52' 实际值：'2e8fcc13-0b0f-4336-bf09-2cf9fc649d52', 断言成功!
+2021-11-02 16:37:06,196 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:52] | INFO: 企业管理员登录成功
+2021-11-02 16:37:06,365 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:72] | INFO: 获取企业配置信息成功
+2021-11-02 16:37:06,374 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：access_token: bbc1244f1173e1da8218547a33628dd9
+2021-11-02 16:37:06,374 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:37:06,375 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationName: preer
+2021-11-02 16:37:06,376 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationPath: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:37:06,376 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_url: http://pre-202108-10.zhixueyun.com
+2021-11-02 16:37:06,377 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_name: preer
+2021-11-02 16:37:06,453 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:37:06,531 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:37:06,657 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：questionDepot: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:37:06,657 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec' 实际值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec', 断言成功!
+2021-11-02 16:37:06,734 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:37:06,811 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:37:07,018 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'37' 实际值：'37', 断言成功!
+2021-11-02 16:37:07,101 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:37:07,173 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：virtualExamId: 27c2bacb-1df4-44e4-9b96-bb3e3fcf4d8e
+2021-11-02 16:37:07,173 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:37:07,278 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:37:07,368 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：currentTime: 1635842227415
+2021-11-02 16:37:07,376 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1635901200' 实际值：'1635901200', 断言成功!
+2021-11-02 16:37:07,480 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:37:07,634 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:37:07,634 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:37:07,921 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：coverPath: default/M00/00/56/wKgLQGGA-LOAMD1eAALsu96_yEs051.jpg
+2021-11-02 16:37:07,922 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'success' 实际值：'success', 断言成功!
+2021-11-02 16:37:08,118 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:38:32,657 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:52] | INFO: 企业管理员登录成功
+2021-11-02 16:38:32,797 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:72] | INFO: 获取企业配置信息成功
+2021-11-02 16:38:32,807 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：access_token: f8635b711dc6e80bac1f65fb0b826e6c
+2021-11-02 16:38:32,808 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:38:32,808 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationName: preer
+2021-11-02 16:38:32,808 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationPath: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:38:32,809 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_url: http://pre-202108-10.zhixueyun.com
+2021-11-02 16:38:32,809 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_name: preer
+2021-11-02 16:38:32,889 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:38:32,960 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:38:33,089 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：questionDepot: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:38:33,089 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec' 实际值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec', 断言成功!
+2021-11-02 16:38:33,166 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:38:33,259 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:38:33,480 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'37' 实际值：'37', 断言成功!
+2021-11-02 16:38:33,558 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:38:33,627 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：virtualExamId: 9bb089fe-d3b3-4b64-be4a-7e9689e92329
+2021-11-02 16:38:33,627 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:38:33,701 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:38:33,771 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：currentTime: 1635842313820
+2021-11-02 16:38:34,130 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:38:34,219 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:38:34,220 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:38:34,467 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：coverPath: default/M00/00/56/wKgLQGGA-QqAf67UAALsu96_yEs422.jpg
+2021-11-02 16:38:34,467 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'success' 实际值：'success', 断言成功!
+2021-11-02 16:38:34,694 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:38:48,672 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:38:48,672 | D:\PyCharm\project\httprunner3\common\validate.py[line:58] | INFO: 断言失败：<class 'AssertionError'>
+2021-11-02 16:38:48,810 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:38:48,889 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:38:49,271 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：path: default/M00/00/56/wKgLQGGA-RmAW-v5AAdftfhVfXQ780.jpg
+2021-11-02 16:38:49,272 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：attachmentId: f48fce28-9889-472c-8261-38f14751e606
+2021-11-02 16:38:49,272 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'广告封面.jpg' 实际值：'广告封面.jpg', 断言成功!
+2021-11-02 16:38:49,358 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：examUrl: 66694028-de7d-45e4-929c-5d0769a5d7bb
+2021-11-02 16:38:49,359 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:38:49,459 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：bannersId: cc2884dc-a0b2-4ecd-84b1-de659fdd10c0
+2021-11-02 16:38:49,460 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：bannersTitle: preer广告1
+2021-11-02 16:38:49,460 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 16:38:49,544 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'cc2884dc-a0b2-4ecd-84b1-de659fdd10c0' 实际值：'cc2884dc-a0b2-4ecd-84b1-de659fdd10c0', 断言成功!
+2021-11-02 16:38:49,544 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:38:49,625 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'cc2884dc-a0b2-4ecd-84b1-de659fdd10c0' 实际值：'cc2884dc-a0b2-4ecd-84b1-de659fdd10c0', 断言成功!
+2021-11-02 16:38:49,625 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'2' 实际值：'2', 断言成功!
+2021-11-02 16:38:49,706 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'cc2884dc-a0b2-4ecd-84b1-de659fdd10c0' 实际值：'cc2884dc-a0b2-4ecd-84b1-de659fdd10c0', 断言成功!
+2021-11-02 16:38:49,707 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 16:38:49,791 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer广告2' 实际值：'preer广告2', 断言成功!
+2021-11-02 16:38:49,791 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 16:38:49,893 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'cc2884dc-a0b2-4ecd-84b1-de659fdd10c0' 实际值：'cc2884dc-a0b2-4ecd-84b1-de659fdd10c0', 断言成功!
+2021-11-02 16:38:49,970 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:38:49,970 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer公告' 实际值：'preer公告', 断言成功!
+2021-11-02 16:38:50,215 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:38:50,339 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:39:03,342 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:52] | INFO: 企业管理员登录成功
+2021-11-02 16:39:03,497 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:72] | INFO: 获取企业配置信息成功
+2021-11-02 16:39:03,511 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：access_token: ad46cd92d4200e9201a37497aff735a7
+2021-11-02 16:39:03,512 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:39:03,512 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationName: preer
+2021-11-02 16:39:03,513 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationPath: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:39:03,513 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_url: http://pre-202108-10.zhixueyun.com
+2021-11-02 16:39:03,513 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_name: preer
+2021-11-02 16:39:03,584 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:39:03,654 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:39:03,781 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：questionDepot: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:39:03,781 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec' 实际值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec', 断言成功!
+2021-11-02 16:39:03,859 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:39:03,947 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:39:04,165 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'37' 实际值：'37', 断言成功!
+2021-11-02 16:39:04,237 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:39:04,306 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：virtualExamId: 51c94ce6-1129-432b-a696-403961397dbf
+2021-11-02 16:39:04,306 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:39:04,383 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:39:04,456 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：currentTime: 1635842344504
+2021-11-02 16:39:04,797 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:39:04,884 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:39:04,884 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:39:05,127 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：coverPath: default/M00/00/56/wKgLQGGA-SmAIOrmAALsu96_yEs940.jpg
+2021-11-02 16:39:05,127 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'success' 实际值：'success', 断言成功!
+2021-11-02 16:39:05,354 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:39:05,478 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:39:05,478 | D:\PyCharm\project\httprunner3\common\validate.py[line:58] | INFO: 断言失败：<class 'AssertionError'>
+2021-11-02 16:39:05,606 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:39:05,689 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:39:06,092 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：path: default/M00/00/56/wKgLQGGA-SqAXxskAAdftfhVfXQ634.jpg
+2021-11-02 16:39:06,092 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：attachmentId: 9b4673b5-248e-4d3f-9df6-dca4f99721d3
+2021-11-02 16:39:06,094 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'广告封面.jpg' 实际值：'广告封面.jpg', 断言成功!
+2021-11-02 16:39:06,186 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：examUrl: 66694028-de7d-45e4-929c-5d0769a5d7bb
+2021-11-02 16:39:06,187 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:39:06,479 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：bannersId: 11e51e67-a368-44b0-9883-ede4d484f23e
+2021-11-02 16:39:06,479 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：bannersTitle: preer广告1
+2021-11-02 16:39:06,480 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 16:39:06,997 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'11e51e67-a368-44b0-9883-ede4d484f23e' 实际值：'11e51e67-a368-44b0-9883-ede4d484f23e', 断言成功!
+2021-11-02 16:39:06,998 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:39:07,087 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'11e51e67-a368-44b0-9883-ede4d484f23e' 实际值：'11e51e67-a368-44b0-9883-ede4d484f23e', 断言成功!
+2021-11-02 16:39:07,088 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'2' 实际值：'2', 断言成功!
+2021-11-02 16:39:07,178 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'11e51e67-a368-44b0-9883-ede4d484f23e' 实际值：'11e51e67-a368-44b0-9883-ede4d484f23e', 断言成功!
+2021-11-02 16:39:07,178 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 16:39:07,281 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer广告2' 实际值：'preer广告2', 断言成功!
+2021-11-02 16:39:07,282 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 16:39:07,575 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'11e51e67-a368-44b0-9883-ede4d484f23e' 实际值：'11e51e67-a368-44b0-9883-ede4d484f23e', 断言成功!
+2021-11-02 16:39:07,668 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:39:07,669 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer公告' 实际值：'preer公告', 断言成功!
+2021-11-02 16:39:07,899 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:39:07,978 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:39:45,158 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:52] | INFO: 企业管理员登录成功
+2021-11-02 16:39:45,293 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:72] | INFO: 获取企业配置信息成功
+2021-11-02 16:39:45,302 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：access_token: 4e7226502a3611796a4a9818813eee97
+2021-11-02 16:39:45,303 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:39:45,303 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationName: preer
+2021-11-02 16:39:45,304 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationPath: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:39:45,304 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_url: http://pre-202108-10.zhixueyun.com
+2021-11-02 16:39:45,304 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_name: preer
+2021-11-02 16:39:45,378 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:39:45,459 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:39:45,577 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：questionDepot: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:39:45,578 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec' 实际值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec', 断言成功!
+2021-11-02 16:39:45,658 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:39:45,748 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:39:45,968 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'37' 实际值：'37', 断言成功!
+2021-11-02 16:39:46,042 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:39:46,132 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：virtualExamId: 147f43b7-4b95-4995-94e6-6cb588f63b71
+2021-11-02 16:39:46,132 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:39:46,210 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:39:46,280 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：currentTime: 1635842386329
+2021-11-02 16:39:46,288 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1635901200' 实际值：'1635901200', 断言成功!
+2021-11-02 16:39:46,359 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:39:46,448 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:39:46,448 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:39:46,720 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：coverPath: default/M00/00/56/wKgLQGGA-VKAMXuOAALsu96_yEs309.jpg
+2021-11-02 16:39:46,721 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'success' 实际值：'success', 断言成功!
+2021-11-02 16:39:46,890 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:39:47,319 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:39:47,320 | D:\PyCharm\project\httprunner3\common\validate.py[line:58] | INFO: 断言失败：<class 'AssertionError'>
+2021-11-02 16:39:47,457 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:39:47,544 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:39:48,004 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：path: default/M00/00/56/wKgLQGGA-VSAQpx2AAdftfhVfXQ707.jpg
+2021-11-02 16:39:48,005 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：attachmentId: 3e7be282-6d64-4729-8900-0b797ccb8beb
+2021-11-02 16:39:48,006 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'广告封面.jpg' 实际值：'广告封面.jpg', 断言成功!
+2021-11-02 16:39:48,095 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：examUrl: 66694028-de7d-45e4-929c-5d0769a5d7bb
+2021-11-02 16:39:48,095 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:39:48,186 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：bannersId: 39932a14-fd54-476a-886f-34c868685709
+2021-11-02 16:39:48,187 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：bannersTitle: preer广告1
+2021-11-02 16:39:48,187 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 16:39:48,278 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'39932a14-fd54-476a-886f-34c868685709' 实际值：'39932a14-fd54-476a-886f-34c868685709', 断言成功!
+2021-11-02 16:39:48,278 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:39:48,366 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'39932a14-fd54-476a-886f-34c868685709' 实际值：'39932a14-fd54-476a-886f-34c868685709', 断言成功!
+2021-11-02 16:39:48,367 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'2' 实际值：'2', 断言成功!
+2021-11-02 16:39:48,446 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'39932a14-fd54-476a-886f-34c868685709' 实际值：'39932a14-fd54-476a-886f-34c868685709', 断言成功!
+2021-11-02 16:39:48,447 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 16:39:48,537 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer广告2' 实际值：'preer广告2', 断言成功!
+2021-11-02 16:39:48,539 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 16:39:48,643 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'39932a14-fd54-476a-886f-34c868685709' 实际值：'39932a14-fd54-476a-886f-34c868685709', 断言成功!
+2021-11-02 16:39:48,756 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:39:48,757 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer公告' 实际值：'preer公告', 断言成功!
+2021-11-02 16:39:48,832 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1635901200' 实际值：'1635901200876', 断言成功!
+2021-11-02 16:39:48,981 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:39:49,060 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:39:49,137 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：noticesId: 264e0fba-fd03-4a18-b612-3421291815ba
+2021-11-02 16:39:49,137 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer公告1' 实际值：'preer公告1', 断言成功!
+2021-11-02 16:39:49,221 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:39:49,311 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 16:39:49,444 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer公告2' 实际值：'preer公告2', 断言成功!
+2021-11-02 16:39:49,444 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'这里是preer公告2' 实际值：'这里是preer公告2', 断言成功!
+2021-11-02 16:39:49,532 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'264e0fba-fd03-4a18-b612-3421291815ba' 实际值：'264e0fba-fd03-4a18-b612-3421291815ba', 断言成功!
+2021-11-02 16:39:59,222 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:52] | INFO: 企业管理员登录成功
+2021-11-02 16:39:59,363 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:72] | INFO: 获取企业配置信息成功
+2021-11-02 16:39:59,371 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：access_token: 9d053f7359cc3f6c71ef970a8aa62743
+2021-11-02 16:39:59,371 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:39:59,372 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationName: preer
+2021-11-02 16:39:59,372 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationPath: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:39:59,372 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_url: http://pre-202108-10.zhixueyun.com
+2021-11-02 16:39:59,373 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_name: preer
+2021-11-02 16:39:59,444 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:39:59,522 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:39:59,648 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：questionDepot: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:39:59,649 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec' 实际值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec', 断言成功!
+2021-11-02 16:39:59,735 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:39:59,825 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:40:02,375 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'37' 实际值：'37', 断言成功!
+2021-11-02 16:40:02,446 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:40:02,517 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：virtualExamId: 59501efa-1796-450e-87dc-bd87c4d8607c
+2021-11-02 16:40:02,517 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:40:02,593 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:40:02,664 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：currentTime: 1635842402713
+2021-11-02 16:40:05,908 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1635901200' 实际值：'1635901200', 断言成功!
+2021-11-02 16:40:05,990 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:40:06,086 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:40:06,086 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:40:06,325 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：coverPath: default/M00/00/56/wKgLQGGA-WaAfajGAALsu96_yEs783.jpg
+2021-11-02 16:40:06,325 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'success' 实际值：'success', 断言成功!
+2021-11-02 16:40:06,494 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:40:48,933 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:40:48,933 | D:\PyCharm\project\httprunner3\common\validate.py[line:58] | INFO: 断言失败：<class 'AssertionError'>
+2021-11-02 16:40:49,067 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:40:49,147 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:40:49,530 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：path: default/M00/00/56/wKgLQGGA-ZGAG-npAAdftfhVfXQ189.jpg
+2021-11-02 16:40:49,530 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：attachmentId: 0be50743-0593-42b6-97c7-d672948e2cda
+2021-11-02 16:40:49,531 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'广告封面.jpg' 实际值：'广告封面.jpg', 断言成功!
+2021-11-02 16:40:49,628 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：examUrl: 66694028-de7d-45e4-929c-5d0769a5d7bb
+2021-11-02 16:40:49,628 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:40:49,722 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：bannersId: 4ccbff69-dc1e-49bb-a8da-97aa0f7dc6d4
+2021-11-02 16:40:49,722 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：bannersTitle: preer广告1
+2021-11-02 16:40:49,723 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 16:40:49,811 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'4ccbff69-dc1e-49bb-a8da-97aa0f7dc6d4' 实际值：'4ccbff69-dc1e-49bb-a8da-97aa0f7dc6d4', 断言成功!
+2021-11-02 16:40:49,812 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:40:49,912 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'4ccbff69-dc1e-49bb-a8da-97aa0f7dc6d4' 实际值：'4ccbff69-dc1e-49bb-a8da-97aa0f7dc6d4', 断言成功!
+2021-11-02 16:40:49,912 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'2' 实际值：'2', 断言成功!
+2021-11-02 16:40:50,000 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'4ccbff69-dc1e-49bb-a8da-97aa0f7dc6d4' 实际值：'4ccbff69-dc1e-49bb-a8da-97aa0f7dc6d4', 断言成功!
+2021-11-02 16:40:50,000 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 16:40:50,103 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer广告2' 实际值：'preer广告2', 断言成功!
+2021-11-02 16:40:50,103 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 16:40:50,400 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'4ccbff69-dc1e-49bb-a8da-97aa0f7dc6d4' 实际值：'4ccbff69-dc1e-49bb-a8da-97aa0f7dc6d4', 断言成功!
+2021-11-02 16:40:50,498 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:40:50,498 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer公告' 实际值：'preer公告', 断言成功!
+2021-11-02 16:40:53,126 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1635901200' 实际值：'1635901200622', 断言成功!
+2021-11-02 16:40:53,250 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:40:53,337 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:40:53,441 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：noticesId: fa2bf782-01c9-4b79-9260-e7bc6a0e4b2b
+2021-11-02 16:40:53,441 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer公告1' 实际值：'preer公告1', 断言成功!
+2021-11-02 16:40:53,529 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:40:53,616 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 16:40:53,710 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer公告2' 实际值：'preer公告2', 断言成功!
+2021-11-02 16:40:53,711 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'这里是preer公告2' 实际值：'这里是preer公告2', 断言成功!
+2021-11-02 16:40:53,794 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'fa2bf782-01c9-4b79-9260-e7bc6a0e4b2b' 实际值：'fa2bf782-01c9-4b79-9260-e7bc6a0e4b2b', 断言成功!
+2021-11-02 16:41:10,639 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:52] | INFO: 企业管理员登录成功
+2021-11-02 16:41:10,794 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:72] | INFO: 获取企业配置信息成功
+2021-11-02 16:41:10,803 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：access_token: fdf9eb94d1e684a45c05a50870e449db
+2021-11-02 16:41:10,803 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:41:10,804 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationName: preer
+2021-11-02 16:41:10,805 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationPath: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:41:10,805 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_url: http://pre-202108-10.zhixueyun.com
+2021-11-02 16:41:10,805 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_name: preer
+2021-11-02 16:41:10,878 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:41:10,962 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:41:11,094 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：questionDepot: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:41:11,095 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec' 实际值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec', 断言成功!
+2021-11-02 16:41:11,174 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:41:11,256 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:41:11,567 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'37' 实际值：'37', 断言成功!
+2021-11-02 16:41:11,637 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:41:11,718 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：virtualExamId: 221e5dd8-137d-4dd0-9390-1b5c3946715d
+2021-11-02 16:41:11,719 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:41:11,792 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:41:11,857 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：currentTime: 1635842471906
+2021-11-02 16:41:12,209 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:41:12,291 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:41:12,291 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:41:12,574 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：coverPath: default/M00/00/56/wKgLQGGA-aiAWL19AALsu96_yEs075.jpg
+2021-11-02 16:41:12,574 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'success' 实际值：'success', 断言成功!
+2021-11-02 16:41:12,739 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:41:32,185 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:41:32,185 | D:\PyCharm\project\httprunner3\common\validate.py[line:58] | INFO: 断言失败：<class 'AssertionError'>
+2021-11-02 16:41:32,322 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:41:32,394 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:41:33,000 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：path: default/M00/00/56/wKgLQGGA-byAW9rTAAdftfhVfXQ689.jpg
+2021-11-02 16:41:33,000 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：attachmentId: e17910dd-a48c-4eba-b683-fddf9a0d595e
+2021-11-02 16:41:33,001 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'广告封面.jpg' 实际值：'广告封面.jpg', 断言成功!
+2021-11-02 16:41:33,081 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：examUrl: 66694028-de7d-45e4-929c-5d0769a5d7bb
+2021-11-02 16:41:33,082 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:41:33,183 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：bannersId: cd719612-00e3-40df-b7c2-66bd06467a8a
+2021-11-02 16:41:33,184 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：bannersTitle: preer广告1
+2021-11-02 16:41:33,184 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 16:41:33,285 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'cd719612-00e3-40df-b7c2-66bd06467a8a' 实际值：'cd719612-00e3-40df-b7c2-66bd06467a8a', 断言成功!
+2021-11-02 16:41:33,285 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:41:33,376 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'cd719612-00e3-40df-b7c2-66bd06467a8a' 实际值：'cd719612-00e3-40df-b7c2-66bd06467a8a', 断言成功!
+2021-11-02 16:41:33,376 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'2' 实际值：'2', 断言成功!
+2021-11-02 16:41:33,456 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'cd719612-00e3-40df-b7c2-66bd06467a8a' 实际值：'cd719612-00e3-40df-b7c2-66bd06467a8a', 断言成功!
+2021-11-02 16:41:33,456 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 16:41:33,535 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer广告2' 实际值：'preer广告2', 断言成功!
+2021-11-02 16:41:33,535 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 16:41:33,640 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'cd719612-00e3-40df-b7c2-66bd06467a8a' 实际值：'cd719612-00e3-40df-b7c2-66bd06467a8a', 断言成功!
+2021-11-02 16:41:33,726 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:41:33,727 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer公告' 实际值：'preer公告', 断言成功!
+2021-11-02 16:41:33,970 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:41:34,044 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:42:05,968 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:52] | INFO: 企业管理员登录成功
+2021-11-02 16:42:06,103 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:72] | INFO: 获取企业配置信息成功
+2021-11-02 16:42:06,114 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：access_token: f67bd6488f7bd87aca80d99d1430d2d4
+2021-11-02 16:42:06,115 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:42:06,116 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationName: preer
+2021-11-02 16:42:06,116 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationPath: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:42:06,116 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_url: http://pre-202108-10.zhixueyun.com
+2021-11-02 16:42:06,116 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_name: preer
+2021-11-02 16:42:06,222 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:42:06,304 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:42:06,432 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：questionDepot: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:42:06,434 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec' 实际值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec', 断言成功!
+2021-11-02 16:42:06,552 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:42:06,630 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:42:06,835 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'37' 实际值：'37', 断言成功!
+2021-11-02 16:42:06,909 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:42:06,994 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：virtualExamId: 03262d90-82f0-4b2d-a8d9-8259127792f2
+2021-11-02 16:42:06,994 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:42:07,076 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:42:07,158 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：currentTime: 1635842527201
+2021-11-02 16:42:07,168 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1635901200' 实际值：'1635901200', 断言成功!
+2021-11-02 16:42:07,258 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:42:07,351 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:42:07,352 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:42:07,603 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：coverPath: default/M00/00/56/wKgLQGGA-d-AUkuyAALsu96_yEs155.jpg
+2021-11-02 16:42:07,604 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'success' 实际值：'success', 断言成功!
+2021-11-02 16:42:07,807 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:43:19,104 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:52] | INFO: 企业管理员登录成功
+2021-11-02 16:43:19,245 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:72] | INFO: 获取企业配置信息成功
+2021-11-02 16:43:19,255 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：access_token: 61d6c26b71988a2393550f581cf90871
+2021-11-02 16:43:19,255 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:43:19,256 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationName: preer
+2021-11-02 16:43:19,256 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationPath: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:43:19,256 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_url: http://pre-202108-10.zhixueyun.com
+2021-11-02 16:43:19,257 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_name: preer
+2021-11-02 16:43:19,335 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:43:19,414 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:43:19,548 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：questionDepot: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:43:19,549 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec' 实际值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec', 断言成功!
+2021-11-02 16:43:19,637 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:43:19,719 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:43:19,965 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'37' 实际值：'37', 断言成功!
+2021-11-02 16:43:20,033 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:43:20,104 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：virtualExamId: 92e4f2f1-9dc4-4289-972c-6e9e0460fcbc
+2021-11-02 16:43:20,104 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:43:20,174 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:43:20,248 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：currentTime: 1635842600295
+2021-11-02 16:43:23,385 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1635901200' 实际值：'1635901200', 断言成功!
+2021-11-02 16:43:23,462 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:43:23,551 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:43:23,551 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:43:23,805 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：coverPath: default/M00/00/56/wKgLQGGA-iuAETJUAALsu96_yEs435.jpg
+2021-11-02 16:43:23,805 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'success' 实际值：'success', 断言成功!
+2021-11-02 16:43:24,013 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:45:33,671 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:52] | INFO: 企业管理员登录成功
+2021-11-02 16:45:33,815 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:72] | INFO: 获取企业配置信息成功
+2021-11-02 16:45:33,824 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：access_token: f16477b705a48f5f2141c63f18f01b77
+2021-11-02 16:45:33,824 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:45:33,825 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationName: preer
+2021-11-02 16:45:33,825 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationPath: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:45:33,825 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_url: http://pre-202108-10.zhixueyun.com
+2021-11-02 16:45:33,826 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_name: preer
+2021-11-02 16:45:33,897 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:45:33,973 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:45:34,304 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：questionDepot: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:45:34,305 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec' 实际值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec', 断言成功!
+2021-11-02 16:45:34,407 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:45:34,711 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:45:34,897 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'37' 实际值：'37', 断言成功!
+2021-11-02 16:45:34,971 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:45:35,053 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：virtualExamId: e2eb4f47-0743-44d2-9db2-ff8c4f6c0434
+2021-11-02 16:45:35,053 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:45:35,130 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:45:35,202 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：currentTime: 1635842735250
+2021-11-02 16:46:33,011 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1635901200' 实际值：'1635901200', 断言成功!
+2021-11-02 16:46:33,093 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:46:33,179 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:46:33,179 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:46:33,427 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：coverPath: default/M00/00/56/wKgLQGGA-umAW1KyAALsu96_yEs340.jpg
+2021-11-02 16:46:33,428 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'success' 实际值：'success', 断言成功!
+2021-11-02 16:46:33,632 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:52:10,770 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:52:10,770 | D:\PyCharm\project\httprunner3\common\validate.py[line:58] | INFO: 断言失败：<class 'AssertionError'>
+2021-11-02 16:52:10,904 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:52:10,979 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:52:11,346 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：path: default/M00/00/56/wKgLQGGA_DuAX9OQAAdftfhVfXQ954.jpg
+2021-11-02 16:52:11,347 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：attachmentId: 52bdccb4-0f2d-4644-a902-02873fd91f3b
+2021-11-02 16:52:11,348 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'广告封面.jpg' 实际值：'广告封面.jpg', 断言成功!
+2021-11-02 16:52:11,436 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：examUrl: 66694028-de7d-45e4-929c-5d0769a5d7bb
+2021-11-02 16:52:11,437 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:52:11,541 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：bannersId: ba9380fb-d432-466c-9315-e8e83c54cc0c
+2021-11-02 16:52:11,541 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：bannersTitle: preer广告1
+2021-11-02 16:52:11,542 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 16:52:11,625 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'ba9380fb-d432-466c-9315-e8e83c54cc0c' 实际值：'ba9380fb-d432-466c-9315-e8e83c54cc0c', 断言成功!
+2021-11-02 16:52:11,625 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:52:11,703 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'ba9380fb-d432-466c-9315-e8e83c54cc0c' 实际值：'ba9380fb-d432-466c-9315-e8e83c54cc0c', 断言成功!
+2021-11-02 16:52:11,703 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'2' 实际值：'2', 断言成功!
+2021-11-02 16:52:11,790 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'ba9380fb-d432-466c-9315-e8e83c54cc0c' 实际值：'ba9380fb-d432-466c-9315-e8e83c54cc0c', 断言成功!
+2021-11-02 16:52:11,790 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 16:52:11,873 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer广告2' 实际值：'preer广告2', 断言成功!
+2021-11-02 16:52:11,874 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 16:52:12,164 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'ba9380fb-d432-466c-9315-e8e83c54cc0c' 实际值：'ba9380fb-d432-466c-9315-e8e83c54cc0c', 断言成功!
+2021-11-02 16:52:12,256 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:52:12,256 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer公告' 实际值：'preer公告', 断言成功!
+2021-11-02 16:52:12,329 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1635901200' 实际值：'1635901200377', 断言成功!
+2021-11-02 16:52:12,477 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:52:12,563 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:52:12,646 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：noticesId: a9ba53a3-0fe0-43c2-8461-901971434bdc
+2021-11-02 16:52:12,647 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer公告1' 实际值：'preer公告1', 断言成功!
+2021-11-02 16:52:12,952 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:52:13,264 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 16:52:13,351 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer公告2' 实际值：'preer公告2', 断言成功!
+2021-11-02 16:52:13,351 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'这里是preer公告2' 实际值：'这里是preer公告2', 断言成功!
+2021-11-02 16:52:13,435 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'a9ba53a3-0fe0-43c2-8461-901971434bdc' 实际值：'a9ba53a3-0fe0-43c2-8461-901971434bdc', 断言成功!
+2021-11-02 16:53:28,719 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:52] | INFO: 企业管理员登录成功
+2021-11-02 16:53:28,859 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:72] | INFO: 获取企业配置信息成功
+2021-11-02 16:53:28,868 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：access_token: cb4fbe83f03b19163f0b8d39fe347e2f
+2021-11-02 16:53:28,868 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:53:28,868 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationName: preer
+2021-11-02 16:53:28,870 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationPath: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:53:28,870 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_url: http://pre-202108-10.zhixueyun.com
+2021-11-02 16:53:28,870 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_name: preer
+2021-11-02 16:53:28,952 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:53:29,029 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:53:29,165 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：questionDepot: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:53:29,165 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec' 实际值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec', 断言成功!
+2021-11-02 16:53:29,239 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:53:29,335 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:53:29,562 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'37' 实际值：'37', 断言成功!
+2021-11-02 16:53:29,635 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:53:29,721 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：virtualExamId: 0dcb8948-ce95-4e3c-9625-8256d3564a6c
+2021-11-02 16:53:29,721 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:53:29,790 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:53:29,856 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：currentTime: 1635843209906
+2021-11-02 16:53:29,862 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1635901200' 实际值：'1635901200', 断言成功!
+2021-11-02 16:53:29,930 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:53:30,033 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:53:30,034 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:53:30,272 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：coverPath: default/M00/00/56/wKgLQGGA_IqAIWc0AALsu96_yEs428.jpg
+2021-11-02 16:53:30,272 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'success' 实际值：'success', 断言成功!
+2021-11-02 16:53:30,447 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:55:36,859 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:52] | INFO: 企业管理员登录成功
+2021-11-02 16:55:37,009 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:72] | INFO: 获取企业配置信息成功
+2021-11-02 16:55:37,019 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：access_token: 2a07cd4725e499227ca8246fb7c558bf
+2021-11-02 16:55:37,019 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:55:37,019 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationName: preer
+2021-11-02 16:55:37,019 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationPath: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:55:37,020 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_url: http://pre-202108-10.zhixueyun.com
+2021-11-02 16:55:37,021 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_name: preer
+2021-11-02 16:59:14,284 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:52] | INFO: 企业管理员登录成功
+2021-11-02 16:59:14,437 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:72] | INFO: 获取企业配置信息成功
+2021-11-02 16:59:14,452 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：access_token: 5b2b02b5220ccb7dbb0772214d0ea177
+2021-11-02 16:59:14,452 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:59:14,453 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationName: preer
+2021-11-02 16:59:14,454 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationPath: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:59:14,455 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_url: http://pre-202108-10.zhixueyun.com
+2021-11-02 16:59:14,455 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_name: preer
+2021-11-02 16:59:14,532 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:59:14,603 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:59:14,739 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：questionDepot: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 16:59:14,739 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec' 实际值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec', 断言成功!
+2021-11-02 16:59:14,815 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:59:14,896 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:59:15,087 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'37' 实际值：'37', 断言成功!
+2021-11-02 16:59:15,157 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:59:15,236 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：virtualExamId: 5888d8c4-e39a-4486-8ea2-323850aa7248
+2021-11-02 16:59:15,236 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:59:15,310 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:59:15,384 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：currentTime: 1635843555435
+2021-11-02 16:59:15,818 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:59:15,923 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 16:59:15,923 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:59:16,188 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：coverPath: default/M00/00/56/wKgLQGGA_eSAaUUkAALsu96_yEs761.jpg
+2021-11-02 16:59:16,188 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'success' 实际值：'success', 断言成功!
+2021-11-02 16:59:16,387 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 16:59:26,523 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'success' 实际值：'success', 断言成功!
+2021-11-02 16:59:26,601 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:59:26,601 | D:\PyCharm\project\httprunner3\common\validate.py[line:58] | INFO: 断言失败：<class 'AssertionError'>
+2021-11-02 16:59:26,722 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:59:26,795 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 16:59:27,199 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：path: default/M00/00/56/wKgLQGGA_e-APz-3AAdftfhVfXQ903.jpg
+2021-11-02 16:59:27,200 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：attachmentId: b4fe3036-43db-48e6-a6c7-1b2acbb270b6
+2021-11-02 16:59:27,201 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'广告封面.jpg' 实际值：'广告封面.jpg', 断言成功!
+2021-11-02 16:59:27,281 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：examUrl: 66694028-de7d-45e4-929c-5d0769a5d7bb
+2021-11-02 16:59:27,282 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:59:27,362 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：bannersId: a32b0d83-9f63-4a0a-bfed-50cfe8281c93
+2021-11-02 16:59:27,362 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：bannersTitle: preer广告1
+2021-11-02 16:59:27,362 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 16:59:27,461 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'a32b0d83-9f63-4a0a-bfed-50cfe8281c93' 实际值：'a32b0d83-9f63-4a0a-bfed-50cfe8281c93', 断言成功!
+2021-11-02 16:59:27,461 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:59:27,560 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'a32b0d83-9f63-4a0a-bfed-50cfe8281c93' 实际值：'a32b0d83-9f63-4a0a-bfed-50cfe8281c93', 断言成功!
+2021-11-02 16:59:27,561 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'2' 实际值：'2', 断言成功!
+2021-11-02 16:59:27,637 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'a32b0d83-9f63-4a0a-bfed-50cfe8281c93' 实际值：'a32b0d83-9f63-4a0a-bfed-50cfe8281c93', 断言成功!
+2021-11-02 16:59:27,637 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 16:59:27,729 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer广告2' 实际值：'preer广告2', 断言成功!
+2021-11-02 16:59:27,730 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 16:59:27,815 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'a32b0d83-9f63-4a0a-bfed-50cfe8281c93' 实际值：'a32b0d83-9f63-4a0a-bfed-50cfe8281c93', 断言成功!
+2021-11-02 16:59:27,889 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:59:27,890 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer公告' 实际值：'preer公告', 断言成功!
+2021-11-02 16:59:28,242 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 16:59:28,334 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 17:00:32,609 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:52] | INFO: 企业管理员登录成功
+2021-11-02 17:00:32,756 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:72] | INFO: 获取企业配置信息成功
+2021-11-02 17:00:32,767 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：access_token: 7665e77d40f8cd7186a47c06afb18090
+2021-11-02 17:00:32,767 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 17:00:32,767 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationName: preer
+2021-11-02 17:00:32,768 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationPath: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 17:00:32,768 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_url: http://pre-202108-10.zhixueyun.com
+2021-11-02 17:00:32,768 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_name: preer
+2021-11-02 17:00:32,835 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 17:00:32,902 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 17:00:33,043 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：questionDepot: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 17:00:33,044 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec' 实际值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec', 断言成功!
+2021-11-02 17:00:33,118 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 17:00:33,208 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 17:00:33,424 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'37' 实际值：'37', 断言成功!
+2021-11-02 17:00:33,496 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 17:00:33,565 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：virtualExamId: f58ac126-1a72-4291-9809-e006ad201c7c
+2021-11-02 17:00:33,565 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 17:00:33,662 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 17:00:33,734 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：currentTime: 1635843633781
+2021-11-02 17:00:34,097 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 17:00:34,189 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 17:00:34,189 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 17:00:34,418 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：coverPath: default/M00/00/56/wKgLQGGA_jKAZjeLAALsu96_yEs637.jpg
+2021-11-02 17:00:34,419 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'success' 实际值：'success', 断言成功!
+2021-11-02 17:00:34,583 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 17:00:36,179 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 17:00:36,179 | D:\PyCharm\project\httprunner3\common\validate.py[line:58] | INFO: 断言失败：<class 'AssertionError'>
+2021-11-02 17:00:36,310 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 17:00:36,391 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 17:00:36,803 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：path: default/M00/00/56/wKgLQGGA_jSAezaYAAdftfhVfXQ905.jpg
+2021-11-02 17:00:36,804 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：attachmentId: a077d19c-b841-4753-ad2f-2065ade7f59d
+2021-11-02 17:00:36,805 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'广告封面.jpg' 实际值：'广告封面.jpg', 断言成功!
+2021-11-02 17:00:36,890 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：examUrl: 66694028-de7d-45e4-929c-5d0769a5d7bb
+2021-11-02 17:00:36,890 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 17:00:36,983 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：bannersId: e68f6e84-1dd2-47c4-a1df-dbcf8bab49b2
+2021-11-02 17:00:36,984 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：bannersTitle: preer广告1
+2021-11-02 17:00:36,984 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 17:00:37,076 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'e68f6e84-1dd2-47c4-a1df-dbcf8bab49b2' 实际值：'e68f6e84-1dd2-47c4-a1df-dbcf8bab49b2', 断言成功!
+2021-11-02 17:00:37,076 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 17:00:37,161 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'e68f6e84-1dd2-47c4-a1df-dbcf8bab49b2' 实际值：'e68f6e84-1dd2-47c4-a1df-dbcf8bab49b2', 断言成功!
+2021-11-02 17:00:37,161 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'2' 实际值：'2', 断言成功!
+2021-11-02 17:00:37,246 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'e68f6e84-1dd2-47c4-a1df-dbcf8bab49b2' 实际值：'e68f6e84-1dd2-47c4-a1df-dbcf8bab49b2', 断言成功!
+2021-11-02 17:00:37,246 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 17:00:37,338 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer广告2' 实际值：'preer广告2', 断言成功!
+2021-11-02 17:00:37,339 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 17:00:37,436 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'e68f6e84-1dd2-47c4-a1df-dbcf8bab49b2' 实际值：'e68f6e84-1dd2-47c4-a1df-dbcf8bab49b2', 断言成功!
+2021-11-02 17:00:37,572 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 17:00:37,573 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer公告' 实际值：'preer公告', 断言成功!
+2021-11-02 17:00:37,865 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 17:00:37,938 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 17:00:47,563 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:52] | INFO: 企业管理员登录成功
+2021-11-02 17:00:47,725 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:72] | INFO: 获取企业配置信息成功
+2021-11-02 17:00:47,741 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：access_token: 6dec14c5a102467554b7d463feb0d79b
+2021-11-02 17:00:47,741 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 17:00:47,742 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationName: preer
+2021-11-02 17:00:47,743 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationPath: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 17:00:47,743 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_url: http://pre-202108-10.zhixueyun.com
+2021-11-02 17:00:47,744 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_name: preer
+2021-11-02 17:00:47,848 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 17:00:47,932 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 17:00:48,108 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：questionDepot: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 17:00:48,110 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec' 实际值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec', 断言成功!
+2021-11-02 17:00:48,223 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 17:00:48,315 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 17:00:48,524 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'37' 实际值：'37', 断言成功!
+2021-11-02 17:00:48,616 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 17:00:48,702 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：virtualExamId: 73ed1d14-5e8d-407f-b3ce-2fea9c91161d
+2021-11-02 17:00:48,703 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 17:00:48,785 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 17:00:48,865 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：currentTime: 1635843648913
+2021-11-02 17:00:48,874 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1635901200' 实际值：'1635901200', 断言成功!
+2021-11-02 17:00:48,968 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 17:00:49,073 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 17:00:49,074 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 17:00:49,330 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：coverPath: default/M00/00/56/wKgLQGGA_kGAdoYbAALsu96_yEs505.jpg
+2021-11-02 17:00:49,331 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'success' 实际值：'success', 断言成功!
+2021-11-02 17:00:49,623 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 17:00:50,261 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 17:00:50,261 | D:\PyCharm\project\httprunner3\common\validate.py[line:58] | INFO: 断言失败：<class 'AssertionError'>
+2021-11-02 17:00:50,405 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 17:00:50,492 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 17:00:50,870 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：path: default/M00/00/56/wKgLQGGA_kKAIY61AAdftfhVfXQ323.jpg
+2021-11-02 17:00:50,871 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：attachmentId: 98e2b2d7-b8c1-4231-bb21-5ab80e5b82dc
+2021-11-02 17:00:50,872 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'广告封面.jpg' 实际值：'广告封面.jpg', 断言成功!
+2021-11-02 17:00:50,964 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：examUrl: 66694028-de7d-45e4-929c-5d0769a5d7bb
+2021-11-02 17:00:50,965 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 17:00:51,093 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：bannersId: f5deba1c-c3ab-42c9-8344-a8bb7ced65d7
+2021-11-02 17:00:51,094 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：bannersTitle: preer广告1
+2021-11-02 17:00:51,094 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 17:00:51,194 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'f5deba1c-c3ab-42c9-8344-a8bb7ced65d7' 实际值：'f5deba1c-c3ab-42c9-8344-a8bb7ced65d7', 断言成功!
+2021-11-02 17:00:51,194 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 17:00:51,283 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'f5deba1c-c3ab-42c9-8344-a8bb7ced65d7' 实际值：'f5deba1c-c3ab-42c9-8344-a8bb7ced65d7', 断言成功!
+2021-11-02 17:00:51,284 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'2' 实际值：'2', 断言成功!
+2021-11-02 17:00:51,375 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'f5deba1c-c3ab-42c9-8344-a8bb7ced65d7' 实际值：'f5deba1c-c3ab-42c9-8344-a8bb7ced65d7', 断言成功!
+2021-11-02 17:00:51,376 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 17:00:51,462 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer广告2' 实际值：'preer广告2', 断言成功!
+2021-11-02 17:00:51,463 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 17:00:51,542 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'f5deba1c-c3ab-42c9-8344-a8bb7ced65d7' 实际值：'f5deba1c-c3ab-42c9-8344-a8bb7ced65d7', 断言成功!
+2021-11-02 17:00:51,630 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 17:00:51,630 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer公告' 实际值：'preer公告', 断言成功!
+2021-11-02 17:00:51,701 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1635901200' 实际值：'1635901200751', 断言成功!
+2021-11-02 17:00:51,828 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 17:00:51,905 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 17:00:51,998 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：noticesId: 8edc1bb2-3488-45f7-a8e4-de535403e586
+2021-11-02 17:00:51,999 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer公告1' 实际值：'preer公告1', 断言成功!
+2021-11-02 17:00:52,084 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 17:00:52,168 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 17:00:52,248 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer公告2' 实际值：'preer公告2', 断言成功!
+2021-11-02 17:00:52,249 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'这里是preer公告2' 实际值：'这里是preer公告2', 断言成功!
+2021-11-02 17:00:52,344 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'8edc1bb2-3488-45f7-a8e4-de535403e586' 实际值：'8edc1bb2-3488-45f7-a8e4-de535403e586', 断言成功!
+2021-11-02 17:02:32,383 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:52] | INFO: 企业管理员登录成功
+2021-11-02 17:02:32,536 | D:\PyCharm\project\httprunner3\test_case\conftest.py[line:72] | INFO: 获取企业配置信息成功
+2021-11-02 17:02:32,548 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：access_token: c805cb9216b49dda47ee71ce86a917f6
+2021-11-02 17:02:32,549 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 17:02:32,549 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationName: preer
+2021-11-02 17:02:32,549 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationPath: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 17:02:32,550 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_url: http://pre-202108-10.zhixueyun.com
+2021-11-02 17:02:32,550 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：ent_name: preer
+2021-11-02 17:02:32,628 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 17:02:32,705 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 17:02:32,832 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：questionDepot: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2021-11-02 17:02:32,834 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec' 实际值：'9bcad76a-ba7e-4ace-9f92-f6e086a29cec', 断言成功!
+2021-11-02 17:02:32,917 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 17:02:32,997 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 17:02:33,197 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'37' 实际值：'37', 断言成功!
+2021-11-02 17:02:33,265 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 17:02:33,343 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：virtualExamId: 33bd42b6-f2a0-4c8f-9826-02fd8efdea74
+2021-11-02 17:02:33,344 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 17:02:33,422 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 17:02:33,500 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：currentTime: 1635843753547
+2021-11-02 17:02:33,515 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1635901200' 实际值：'1635901200', 断言成功!
+2021-11-02 17:02:33,589 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 17:02:33,680 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+2021-11-02 17:02:33,681 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 17:02:33,938 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：coverPath: default/M00/00/56/wKgLQGGA_qmAe5mLAALsu96_yEs254.jpg
+2021-11-02 17:02:33,939 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'success' 实际值：'success', 断言成功!
+2021-11-02 17:02:34,177 | D:\PyCharm\project\httprunner3\common\validate.py[line:70] | INFO: 响应断言： 预期值：'200' 实际值：'200', 断言成功!
+2021-11-02 17:02:34,295 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'success' 实际值：'success', 断言成功!
+2021-11-02 17:02:34,377 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 17:02:34,378 | D:\PyCharm\project\httprunner3\common\validate.py[line:58] | INFO: 断言失败：<class 'AssertionError'>
+2021-11-02 17:02:34,519 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 17:02:34,594 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 17:02:34,954 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：path: default/M00/00/56/wKgLQGGA_quALzwtAAdftfhVfXQ811.jpg
+2021-11-02 17:02:34,954 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：attachmentId: 2c8caf4c-0e82-4ce2-abf9-1487a1cd7f4e
+2021-11-02 17:02:34,955 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'广告封面.jpg' 实际值：'广告封面.jpg', 断言成功!
+2021-11-02 17:02:35,049 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：examUrl: 66694028-de7d-45e4-929c-5d0769a5d7bb
+2021-11-02 17:02:35,049 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 17:02:35,127 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：bannersId: f6b821e2-7c50-44fd-a827-315c5d8bc55f
+2021-11-02 17:02:35,128 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：bannersTitle: preer广告1
+2021-11-02 17:02:35,128 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 17:02:35,429 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'f6b821e2-7c50-44fd-a827-315c5d8bc55f' 实际值：'f6b821e2-7c50-44fd-a827-315c5d8bc55f', 断言成功!
+2021-11-02 17:02:35,429 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 17:02:35,519 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'f6b821e2-7c50-44fd-a827-315c5d8bc55f' 实际值：'f6b821e2-7c50-44fd-a827-315c5d8bc55f', 断言成功!
+2021-11-02 17:02:35,520 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'2' 实际值：'2', 断言成功!
+2021-11-02 17:02:35,601 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'f6b821e2-7c50-44fd-a827-315c5d8bc55f' 实际值：'f6b821e2-7c50-44fd-a827-315c5d8bc55f', 断言成功!
+2021-11-02 17:02:35,602 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 17:02:35,687 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer广告2' 实际值：'preer广告2', 断言成功!
+2021-11-02 17:02:35,687 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 17:02:35,773 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'f6b821e2-7c50-44fd-a827-315c5d8bc55f' 实际值：'f6b821e2-7c50-44fd-a827-315c5d8bc55f', 断言成功!
+2021-11-02 17:02:35,859 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 17:02:35,860 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer公告' 实际值：'preer公告', 断言成功!
+2021-11-02 17:02:35,948 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1635901200' 实际值：'1635901200990', 断言成功!
+2021-11-02 17:02:36,092 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 17:02:36,185 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0,1,2,3,4' 实际值：'0,1,2,3,4', 断言成功!
+2021-11-02 17:02:36,274 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：noticesId: 14e07ac7-3792-4e84-8400-7c04351effd7
+2021-11-02 17:02:36,275 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer公告1' 实际值：'preer公告1', 断言成功!
+2021-11-02 17:02:36,388 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'1' 实际值：'1', 断言成功!
+2021-11-02 17:02:36,511 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-02 17:02:36,623 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'preer公告2' 实际值：'preer公告2', 断言成功!
+2021-11-02 17:02:36,623 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'这里是preer公告2' 实际值：'这里是preer公告2', 断言成功!
+2021-11-02 17:02:36,732 | D:\PyCharm\project\httprunner3\common\validate.py[line:56] | INFO: 响应断言： 预期值：'14e07ac7-3792-4e84-8400-7c04351effd7' 实际值：'14e07ac7-3792-4e84-8400-7c04351effd7', 断言成功!

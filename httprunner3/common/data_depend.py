@@ -126,12 +126,16 @@ class DataDepend(object):
         :return:
         """
         if func_params:
-            return getattr(objects, func)(objects(), func_params)
+            try:
+                value = getattr(objects, func)(func_params)
+            except TypeError:
+                value = getattr(objects, func)(objects(), func_params)
         else:
-            return getattr(objects, func)(self)
+            value = getattr(objects, func)(self)
+        return value
 
     def image_depend(self, keys, key, replace_data):
-        file_path = os.path.join(FILE_PATH, keys[1])
+        file_path = os.path.join(FILE_PATH, keys)
         objects = self.in_getattr_(key)
         value = self.getattr_(objects, key, open(file_path, 'rb'))
         return replace_data.replace(r'$' + key + '{' + keys[1] + '}', value.__str__())
@@ -139,6 +143,7 @@ class DataDepend(object):
 
 if __name__ == '__main__':
     datadepend_ = DataDepend()
+    datadepend_.image_depend('考试封面.jpg', 'base_64', "{'url': '/api/v1/system/file/cropper-upload', 'method': 'POST', 'headers': {'Authorization': 'Bearer__cb4fbe83f03b19163f0b8d39fe347e2f', 'content-type': 'application/x-www-form-urlencoded; charset=UTF-8', 'uri': 'exam/exam'}, 'data': {'image': 'data:image/png;base64,$base_64{考试封面.jpg}'}}")
     datadepend_.dicts['access_token'] = '123'
     print(datadepend_.replace_("{'name': '【普通考试】-人脸识别规则', 'request': {'method': 'GET', 'headers': {'Authorizati"
                                "on': 'Bearer__${access_token}', 'uri': None}, 'params': {'key': '$diy_time{2021, 09, +0"

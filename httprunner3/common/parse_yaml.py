@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import copy
-import json
 import yaml
 from settings import *
 
@@ -15,9 +14,6 @@ class ReadData(object):
         self.folder = [os.path.join(paths, filename) for paths, files, name in os.walk(TESTCASE_PATH) for filename in
                        files]
         self.file_name = [name for folder in self.folder for path, file, name in os.walk(folder) if name]
-        with open(TARGET_PATH, 'r') as f:
-            self.file = json.load(f)
-            f.close()
 
     def load_data(self):
         """
@@ -62,17 +58,6 @@ class ReadData(object):
         test_data = self.data_separation(load_data)
         return test_data
 
-    def join_url(self, data_):
-        """
-        url拼接环境地址
-        :param: data
-        :return: join_data
-        """
-        for yaml_ in data_:
-            yaml_['request']['url'] = self.file['ent_url'] + yaml_['request']['url']
-        return data_
-
 
 if __name__ == '__main__':
-    print(ReadData().join_url(ReadData().return_data()))
     print(ReadData().return_data())

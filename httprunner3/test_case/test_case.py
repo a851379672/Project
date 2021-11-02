@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import pytest
 import requests
+import json
 
 from conftest import get_config_token
 from common.parse_yaml import ReadData
@@ -18,6 +19,9 @@ class TestClass:
     def setup_class(self):
         self.deal_with = DataDepend()
         self.validate = Validate()
+        with open(TARGET_PATH, 'r') as f:
+            self.file = json.load(f)
+            f.close()
 
     def test_config_token(self, get_config):
         """
@@ -25,7 +29,7 @@ class TestClass:
         """
         get_config_token(get_config, self.deal_with)
 
-    @pytest.mark.parametrize('api_data', ReadData().join_url(ReadData().return_data()))
+    @pytest.mark.parametrize('api_data', ReadData().return_data())
     def test_run(self, api_data):
         """
         :param api_data
@@ -34,6 +38,7 @@ class TestClass:
 
         """数据处理"""
         request_data = eval(self.deal_with.replace_(api_data['request']))
+        request_data['url'] = self.file['ent_url'] + request_data['url']
         if request_data['headers'].get('content-type') and 'urlencoded' in request_data['headers']:
             request_data['data'] = urlencode(request_data['data'])
         if request_data.get('files'):
