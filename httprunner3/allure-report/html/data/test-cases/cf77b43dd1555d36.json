@@ -1,0 +1,137 @@
+{
+  "uid" : "cf77b43dd1555d36",
+  "name" : "【公告配置】——查询授权组织",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "71bf0c6955f11dd1e908cb2af816944f",
+  "time" : {
+    "start" : 1636451242316,
+    "stop" : 1636451242447,
+    "duration" : 131
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1636451226031,
+      "stop" : 1636451226034,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1636451225682,
+      "stop" : 1636451226030,
+      "duration" : 348
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e3d387ea45f16241",
+      "name" : "log",
+      "source" : "e3d387ea45f16241.txt",
+      "type" : "text/plain",
+      "size" : 91
+    }, {
+      "uid" : "b2d13b44476886d2",
+      "name" : "stderr",
+      "source" : "b2d13b44476886d2.txt",
+      "type" : "text/plain",
+      "size" : 1412
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1636451243288,
+      "stop" : 1636451243288,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【公告配置】——查询授权组织"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "5272-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "https://tester1.zhixueyun.com/api/v1/system/organization/granted-organization",
+    "url" : "https://tester1.zhixueyun.com/api/v1/system/organization/granted-organization",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "cf77b43dd1555d36.json",
+  "parameterValues" : [ ]
+}

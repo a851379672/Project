@@ -2,9 +2,10 @@
 import pytest
 import requests
 import json
-
 import data_depend
-from conftest import get_config_token
+
+from conftest import get_config_token  # test_case.py
+# from test_case.conftest import get_config_token  # main.py
 from common.parse_yaml import ReadData
 from common.data_depend import DataDepend
 from common.validate import Validate
@@ -22,7 +23,6 @@ class TestClass:
         self.validate = Validate()
         with open(TARGET_PATH, 'r') as file:
             self.file = json.load(file)
-            file.close()
 
     def test_config_token(self, get_config):
         """
@@ -39,12 +39,12 @@ class TestClass:
 
         """数据处理"""
         request_data = eval(self.deal_with.replace_(api_data['request']))
-        request_data['url'] = self.file['ent_url'] + request_data['url']
+        request_data['url'] = os.path.join(self.file['ent_url'], request_data['url'])
         if request_data.get('files'):
             request_data['files'] = data_depend.file_depend(request_data)
         if request_data['headers'].get('content-type') and 'urlencoded' in request_data['headers']['content-type']:
             request_data['data'] = urlencode(request_data['data'])
-        allure_(api_data)
+        allure_(api_data, self.file['ent_url'])
 
         """日志输出"""
         response = requests.session().request(**request_data)

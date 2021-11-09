@@ -1,0 +1,155 @@
+{
+  "uid" : "3a2df733e603cc0",
+  "name" : "【普通试题】——删除单选题",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "1d92327cace00b5aafee3e164a17d4d3",
+  "time" : {
+    "start" : 1636452479068,
+    "stop" : 1636452479227,
+    "duration" : 159
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1636452472903,
+      "stop" : 1636452472908,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1636452472283,
+      "stop" : 1636452472902,
+      "duration" : 619
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a130d99157fa5909",
+      "name" : "log",
+      "source" : "a130d99157fa5909.txt",
+      "type" : "text/plain",
+      "size" : 161
+    }, {
+      "uid" : "c87294b246363978",
+      "name" : "stderr",
+      "source" : "c87294b246363978.txt",
+      "type" : "text/plain",
+      "size" : 1488
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1636452490813,
+      "stop" : 1636452490813,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【普通试题】——删除单选题"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "18052-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "https://tester1.zhixueyun.com/api/v1/exam/question/${danxuanid}",
+    "url" : "https://tester1.zhixueyun.com/api/v1/exam/question/${danxuanid}",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "4a10888443ddda1f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1636451231551,
+        "stop" : 1636451231686,
+        "duration" : 135
+      }
+    }, {
+      "uid" : "9831b5b137e69c11",
+      "status" : "passed",
+      "time" : {
+        "start" : 1636368886948,
+        "stop" : 1636368887048,
+        "duration" : 100
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3a2df733e603cc0.json",
+  "parameterValues" : [ ]
+}

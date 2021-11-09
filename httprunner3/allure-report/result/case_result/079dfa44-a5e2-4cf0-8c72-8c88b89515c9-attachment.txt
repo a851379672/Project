@@ -1,0 +1,35 @@
+2021-11-09 17:47:12.646 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : DELETE
+url      : https://tester1.zhixueyun.com/api/v1/exam/question/458280d1-8f4b-4839-b784-61bd49e21df6
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__672e5a6280190a72d0e541e75ea533ff",
+    "uri": "exam/question-depot",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "Content-Length": "102"
+}
+cookies  : {}
+body     : id=458280d1-8f4b-4839-b784-61bd49e21df6&name=%E8%AF%95%E9%A2%98%E7%9B%AE%E5%BD%951-%E9%A2%98%E7%9B%AE1
+
+2021-11-09 17:47:12.647 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 09 Nov 2021 09:47:12 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "45",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "id": "458280d1-8f4b-4839-b784-61bd49e21df6"
+}
+
+2021-11-09 17:47:12,647 | D:\PyCharm\project\httprunner3\common\validate.py[line:57] | INFO: 响应断言： 预期值：'458280d1-8f4b-4839-b784-61bd49e21df6' 实际值：'458280d1-8f4b-4839-b784-61bd49e21df6', 断言成功!

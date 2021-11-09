@@ -7,9 +7,9 @@ allure:
       'allure_story': '考试模块'
     }
 test:
--   name: 【普通试题】-获取目录编码
+-   name: 【普通试题】——获取目录编码
     request:
-        url: /api/v1/system/module-code
+        url: api/v1/system/module-code
         method: GET
         headers:
           Authorization: Bearer__${access_token}
@@ -22,9 +22,9 @@ test:
     validate:
        -   eq:  ['status_code', '200']
 
--   name: 【普通试题】-新建试题目录
+-   name: 【普通试题】——新建试题目录
     request:
-        url: /api/v1/exam/question-depot
+        url: api/v1/exam/question-depot
         method: POST
         headers:
           Authorization: Bearer__${access_token}
@@ -33,7 +33,7 @@ test:
             {
               name: '试题目录1',
               organizationId: '${organizationId}',
-              code: '${ent_name}1',
+              code: '${ent_name}_1',
               sequence: 0,
               state: 1,
               authToLower: 0,
@@ -46,9 +46,9 @@ test:
     validate:
        -   eq:  ['$.organizationId', '${organizationId}']
 
--   name: 【普通试题】-查询试题目录
+-   name: 【普通试题】——查询试题目录
     request:
-        url: /api/v1/exam/question-depot
+        url: api/v1/exam/question-depot
         method: GET
         headers:
           Authorization: Bearer__${access_token}
@@ -66,9 +66,9 @@ test:
     validate:
        -   eq:  ['$.[0].name', '试题目录1']
 
--   name: 【普通试题】-查询目录编码
+-   name: 【普通试题】——查询目录编码
     request:
-        url: /api/v1/exam/question-depot/${questionDepotId}
+        url: api/v1/exam/question-depot/${questionDepotId}
         method: GET
         headers:
           Authorization: Bearer__${access_token}
@@ -79,9 +79,9 @@ test:
     validate:
        -   eq:  ['$.state', '1']
 
--   name: 【普通试题】-新增单选题
+-   name: 【普通试题】——新增单选题
     request:
-        url: /api/v1/exam/question
+        url: api/v1/exam/question
         method: POST
         headers:
           Authorization: Bearer__${access_token}
@@ -129,9 +129,9 @@ test:
     validate:
       -   eq:   ['$.type', '1']
 
--   name: 【普通试题】-查询组织试题
+-   name: 【普通试题】——查询组织试题
     request:
-        url: /api/v1/exam/question
+        url: api/v1/exam/question
         method: GET
         headers:
           Authorization: Bearer__${access_token}
@@ -153,9 +153,9 @@ test:
     validate:
       -   eq:  ['$.items.[0].organization.id', '${organizationId}']
 
--   name: 【普通试题】-修改单选题
+-   name: 【普通试题】——修改单选题
     request:
-        url: /api/v1/exam/question/${danxuanid}
+        url: api/v1/exam/question/${danxuanid}
         method: PUT
         headers:
           Authorization: Bearer__${access_token}
@@ -201,9 +201,9 @@ test:
     validate:
        -   eq:   ['$.status', '0']
 
--   name: 【普通试题】-新增多选题
+-   name: 【普通试题】——新增多选题
     request:
-        url: /api/v1/exam/question
+        url: api/v1/exam/question
         method: POST
         headers:
           Authorization: Bearer__${access_token}
@@ -251,9 +251,9 @@ test:
     validate:
       -   eq:   ['$.type', '2']
 
--   name: 【普通试题】-修改多选题
+-   name: 【普通试题】——修改多选题
     request:
-        url: /api/v1/exam/question/${duoxuanid}
+        url: api/v1/exam/question/${duoxuanid}
         method: PUT
         headers:
           Authorization: Bearer__${access_token}
@@ -299,9 +299,9 @@ test:
     validate:
        -   eq:   ['$.status', '0']
 
--   name: 【普通试题】-新增判断题
+-   name: 【普通试题】——新增判断题
     request:
-        url: /api/v1/exam/question
+        url: api/v1/exam/question
         method: POST
         headers:
           Authorization: Bearer__${access_token}
@@ -334,9 +334,9 @@ test:
     validate:
       -   eq:   ['$.type', '3']
 
--   name: 【普通试题】-修改判断题
+-   name: 【普通试题】——修改判断题
     request:
-        url: /api/v1/exam/question/${panduanid}
+        url: api/v1/exam/question/${panduanid}
         method: PUT
         headers:
           Authorization: Bearer__${access_token}
@@ -367,9 +367,9 @@ test:
     validate:
        -   eq:   ['$.status', '0']
 
--   name: 【普通试题】-新增填空题
+-   name: 【普通试题】——新增填空题
     request:
-        url: /api/v1/exam/question
+        url: api/v1/exam/question
         method: POST
         headers:
           Authorization: Bearer__${access_token}
@@ -410,9 +410,9 @@ test:
     validate:
       -   eq:   ['$.type', '4']
 
--   name: 【普通试题】-修改填空题
+-   name: 【普通试题】——修改填空题
     request:
-        url: /api/v1/exam/question/${tiankongid}
+        url: api/v1/exam/question/${tiankongid}
         method: PUT
         headers:
           Authorization: Bearer__${access_token}
@@ -444,9 +444,9 @@ test:
     validate:
        -   eq:   ['$.status', '0']
 
--   name: 【普通试题】-新增问答题
+-   name: 【普通试题】——新增问答题
     request:
-        url: /api/v1/exam/question
+        url: api/v1/exam/question
         method: POST
         headers:
           Authorization: Bearer__${access_token}
@@ -479,9 +479,9 @@ test:
     validate:
       -   eq:   ['$.type', '5']
 
--   name: 【普通试题】-修改问答题
+-   name: 【普通试题】——修改问答题
     request:
-        url: /api/v1/exam/question/${wendaid}
+        url: api/v1/exam/question/${wendaid}
         method: PUT
         headers:
           Authorization: Bearer__${access_token}
@@ -512,9 +512,9 @@ test:
     validate:
        -   eq:   ['$.status', '0']
 
--   name: 【普通试题】-新增阅读理解
+-   name: 【普通试题】——新增阅读理解
     request:
-        url: /api/v1/exam/question
+        url: api/v1/exam/question
         method: POST
         headers:
           Authorization: Bearer__${access_token}
@@ -616,9 +616,9 @@ test:
     validate:
       -   eq:   ['$.type', '6']
 
--   name: 【普通试题】-修改阅读理解题
+-   name: 【普通试题】——修改阅读理解题
     request:
-        url: /api/v1/exam/question/${yuedulijieid}
+        url: api/v1/exam/question/${yuedulijieid}
         method: PUT
         headers:
           Authorization: Bearer__${access_token}
@@ -704,9 +704,9 @@ test:
     validate:
        -   eq:   ['$.status', '0']
 
--   name: 【普通试题】-新增排序题
+-   name: 【普通试题】——新增排序题
     request:
-        url: /api/v1/exam/question
+        url: api/v1/exam/question
         method: POST
         headers:
           Authorization: Bearer__${access_token}
@@ -757,9 +757,9 @@ test:
     validate:
       -   eq:   ['$.type', '8']
 
--   name: 【普通试题】-修改排序题
+-   name: 【普通试题】——修改排序题
     request:
-        url: /api/v1/exam/question/${paixuid}
+        url: api/v1/exam/question/${paixuid}
         method: PUT
         headers:
           Authorization: Bearer__${access_token}
@@ -808,9 +808,9 @@ test:
     validate:
        -   eq:   ['$.status', '0']
 
--   name: 【普通试题】-试题导出
+-   name: 【普通试题】——试题导出
     request:
-        url: /api/v1/system/grant/check-switch
+        url: api/v1/system/grant/check-switch
         method: GET
         headers:
           Authorization: Bearer__${access_token}
@@ -820,9 +820,9 @@ test:
     validate:
        -   eq:  ['(.*)', 'true']
 
--   name: 【普通试题】-删除单选题
+-   name: 【普通试题】——删除单选题
     request:
-        url: /api/v1/exam/question/${danxuanid}
+        url: api/v1/exam/question/${danxuanid}
         method: DELETE
         headers:
           Authorization: Bearer__${access_token}
@@ -837,9 +837,9 @@ test:
     validate:
        -   eq:  ['$.id', '${danxuanid}']
 
--   name: 【普通试题】-删除多选题
+-   name: 【普通试题】——删除多选题
     request:
-        url: /api/v1/exam/question/${duoxuanid}
+        url: api/v1/exam/question/${duoxuanid}
         method: DELETE
         headers:
           Authorization: Bearer__${access_token}
@@ -854,9 +854,9 @@ test:
     validate:
        -   eq:  ['$.id', '${duoxuanid}']
 
--   name: 【普通试题】-删除判断题
+-   name: 【普通试题】——删除判断题
     request:
-        url: /api/v1/exam/question/${panduanid}
+        url: api/v1/exam/question/${panduanid}
         method: DELETE
         headers:
           Authorization: Bearer__${access_token}
@@ -871,9 +871,9 @@ test:
     validate:
        -   eq:  ['$.id', '${panduanid}']
 
--   name: 【普通试题】-删除填空题
+-   name: 【普通试题】——删除填空题
     request:
-        url: /api/v1/exam/question/${tiankongid}
+        url: api/v1/exam/question/${tiankongid}
         method: DELETE
         headers:
           Authorization: Bearer__${access_token}
@@ -888,9 +888,9 @@ test:
     validate:
        -   eq:  ['$.id', '${tiankongid}']
 
--   name: 【普通试题】-删除问答题
+-   name: 【普通试题】——删除问答题
     request:
-        url: /api/v1/exam/question/${wendaid}
+        url: api/v1/exam/question/${wendaid}
         method: DELETE
         headers:
           Authorization: Bearer__${access_token}
@@ -905,9 +905,9 @@ test:
     validate:
        -   eq:  ['$.id', '${wendaid}']
 
--   name: 【普通试题】-删除阅读理解题
+-   name: 【普通试题】——删除阅读理解题
     request:
-        url: /api/v1/exam/question/${yuedulijieid}
+        url: api/v1/exam/question/${yuedulijieid}
         method: DELETE
         headers:
           Authorization: Bearer__${access_token}
@@ -922,9 +922,9 @@ test:
     validate:
        -   eq:  ['$.id', '${yuedulijieid}']
 
--   name: 【普通试题】-删除排序题
+-   name: 【普通试题】——删除排序题
     request:
-        url: /api/v1/exam/question/${paixuid}
+        url: api/v1/exam/question/${paixuid}
         method: DELETE
         headers:
           Authorization: Bearer__${access_token}
@@ -939,25 +939,25 @@ test:
     validate:
        -   eq:  ['$.id', '${paixuid}']
 
--   name: 【普通试题】-试题批量导入
+-   name: 【普通试题】——试题批量导入
     request:
-        url: /api/v1/human/file/upload-excel-file
+        url: api/v1/human/file/upload-excel-file
         method: POST
         headers:
           Authorization: Bearer__${access_token}
         params:
         files:
           {
-            file: '${ent_name}试题导入模板.xlsx'
+            file: '${ent_name}_试题导入模板.xlsx'
           }
     extract:
        fileid_1: $.[0].id
     validate:
-       -   eq:  ['$.[0].filename', '${ent_name}试题导入模板.xlsx']
+       -   eq:  ['$.[0].filename', '${ent_name}_试题导入模板.xlsx']
 
--   name: 【普通试题】-批处理异步导入
+-   name: 【普通试题】——批处理异步导入
     request:
-        url: /api/v1/exam/question/batch-async-import
+        url: api/v1/exam/question/batch-async-import
         method: POST
         headers:
           Authorization: Bearer__${access_token}
@@ -976,25 +976,25 @@ test:
     validate:
        -   eq:  ['status_code', '200']
 
--   name: 【普通试题】-试题批量更新
+-   name: 【普通试题】——试题批量更新
     request:
-        url: /api/v1/human/file/upload-excel-file
+        url: api/v1/human/file/upload-excel-file
         method: POST
         headers:
           Authorization: Bearer__${access_token}
         params:
         files:
           {
-            file: '试题批量更新模板.xlsx'
+            file: '${ent_name}_试题批量更新模板.xlsx'
           }
     extract:
       fileid_2: $.[0].id
     validate:
-       -   eq:  ['$.[0].filename', '试题批量更新模板.xlsx']
+       -   eq:  ['$.[0].filename', '${ent_name}_试题批量更新模板.xlsx']
 
--   name: 【普通试题】-批处理异步更新
+-   name: 【普通试题】——批处理异步更新
     request:
-        url: /api/v1/exam/question/batch-async-update
+        url: api/v1/exam/question/batch-async-update
         method: POST
         headers:
           Authorization: Bearer__${access_token}
@@ -1012,9 +1012,9 @@ test:
     validate:
        -   eq:  ['status_code', '200']
 
--   name: 【普通试题】-点击试题目录修改
+-   name: 【普通试题】——点击试题目录修改
     request:
-        url: /api/v1/exam/question-depot/${questionDepotId}
+        url: api/v1/exam/question-depot/${questionDepotId}
         method: GET
         headers:
           Authorization: Bearer__${access_token}
@@ -1032,9 +1032,9 @@ test:
     validate:
        -   eq:  ['$.id', '${questionDepotId}']
 
--   name: 【普通试题】-提交试题目录修改
+-   name: 【普通试题】——提交试题目录修改
     request:
-        url: /api/v1/exam/question-depot/${questionDepotId}
+        url: api/v1/exam/question-depot/${questionDepotId}
         method: PUT
         headers:
           Authorization: Bearer__${access_token}
@@ -1055,9 +1055,9 @@ test:
     validate:
        -   eq:  ['$.id', '${questionDepotId}']
 
--   name: 【普通试题】-试题目录导出
+-   name: 【普通试题】——试题目录导出
     request:
-        url: /api/v1/exam/question-depot/export
+        url: api/v1/exam/question-depot/export
         method: GET
         headers:
           Authorization: Bearer__${access_token}
@@ -1072,9 +1072,9 @@ test:
     validate:
        -   eq:  ['status_code', '200']
 
--   name: 【普通试题】-查看任务队列
+-   name: 【普通试题】——查看任务队列
     request:
-        url: /api/v1/human/export-task/find-export-tasks
+        url: api/v1/human/export-task/find-export-tasks
         method: GET
         headers:
           Authorization: Bearer__${access_token}
@@ -1093,9 +1093,9 @@ test:
        -   eq:  ['$.items[0].failCount', '0']
        -   eq:  ['$.items[1].failCount', '0']
 
--   name: 【普通试题】-删除队列更新任务
+-   name: 【普通试题】——删除队列更新任务
     request:
-        url: /api/v1/human/export-task/${exportid_1}
+        url: api/v1/human/export-task/${exportid_1}
         method: DELETE
         headers:
           Authorization: Bearer__${access_token}
@@ -1108,9 +1108,9 @@ test:
     validate:
        -   eq:  ['(.*)', '1']
 
--   name: 【普通试题】-删除队列导入任务
+-   name: 【普通试题】——删除队列导入任务
     request:
-        url: /api/v1/human/export-task/${exportid_2}
+        url: api/v1/human/export-task/${exportid_2}
         method: DELETE
         headers:
           Authorization: Bearer__${access_token}
@@ -1123,9 +1123,9 @@ test:
     validate:
        -   eq:  ['(.*)', '1']
 
--   name: 【普通试题】-查询目录试题
+-   name: 【普通试题】——查询目录试题
     request:
-        url: /api/v1/exam/question
+        url: api/v1/exam/question
         method: GET
         headers:
           Authorization: Bearer__${access_token}
@@ -1188,9 +1188,9 @@ test:
     validate:
        -   eq:  ['$.recordCount', '36']
 
--   name: 【普通试题】-发布导入试题
+-   name: 【普通试题】——发布导入试题
     request:
-        url: /api/v1/exam/question/publish
+        url: api/v1/exam/question/publish
         method: POST
         headers:
           Authorization: Bearer__${access_token}
@@ -1205,9 +1205,9 @@ test:
     validate:
        -   eq:  ['$.id', '${timuid1},${timuid2},${timuid3},${timuid4},${timuid5},${timuid6},${timuid7},${timuid8},${timuid9},${timuid10},${timuid11},${timuid12},${timuid13},${timuid14},${timuid15},${timuid16},${timuid17},${timuid18},${timuid19},${timuid20},${timuid21},${timuid22},${timuid23},${timuid24},${timuid25},${timuid26},${timuid27},${timuid28},${timuid29},${timuid30},${timuid31},${timuid32},${timuid33},${timuid34},${timuid35},${timuid36}']
 
--   name: 【普通试题】-删除导入试题
+-   name: 【普通试题】——删除导入试题
     request:
-        url: /api/v1/exam/question/batchDelete
+        url: api/v1/exam/question/batchDelete
         method: POST
         headers:
           Authorization: Bearer__${access_token}
@@ -1220,9 +1220,9 @@ test:
     validate:
       -   eq:  ['status_code', '422']
 
--   name: 【普通试题】-删除试题目录
+-   name: 【普通试题】——删除试题目录
     request:
-        url: /api/v1/exam/question-depot/${questionDepotId}
+        url: api/v1/exam/question-depot/${questionDepotId}
         method: DELETE
         headers:
           Authorization: Bearer__${access_token}

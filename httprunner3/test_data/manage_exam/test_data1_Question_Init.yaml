@@ -7,9 +7,9 @@ allure:
       'allure_story': '考试模块'
     }
 test:
--   name: 【普通试题】-音视频完成规则
+-   name: 【普通试题】——音视频完成规则
     request:
-        url: /api/v1/system/rule-config/key
+        url: api/v1/system/rule-config/key
         method: GET
         headers:
           Authorization: Bearer__${access_token}
@@ -22,9 +22,9 @@ test:
     validate:
         -   eq:  ['$.status', '1']
 
--   name: 【普通试题】-防录屏配置规则
+-   name: 【普通试题】——防录屏配置规则
     request:
-        url: /api/v1/system/rule-config/key
+        url: api/v1/system/rule-config/key
         method: GET
         headers:
           Authorization: Bearer__${access_token}
@@ -37,9 +37,9 @@ test:
     validate:
         -   eq:  ['$.status', '1']
 
--   name: 【普通试题】-查询授权节点
+-   name: 【普通试题】——查询授权节点
     request:
-        url: /api/v1/system/organization/granted-organization
+        url: api/v1/system/organization/granted-organization
         method: GET
         headers:
           Authorization: Bearer__${access_token}
@@ -54,9 +54,9 @@ test:
     validate:
        -   eq: ['$.[0].id', '${organizationId}']
 
--   name: 【普通试题】-查询组织操作类型
+-   name: 【普通试题】——查询组织操作类型
     request:
-        url: /api/v1/system/grant/find-organization-operatortype
+        url: api/v1/system/grant/find-organization-operatortype
         method: GET
         headers:
           Authorization: Bearer__${access_token}
@@ -69,9 +69,9 @@ test:
     validate:
     -   eq:   ['$.${organizationId},', '0,1,2,3,4']
 
--   name: 【普通试题】-查询组织目录
+-   name: 【普通试题】——查询组织目录
     request:
-        url: /api/v1/exam/question-depot
+        url: api/v1/exam/question-depot
         method: GET
         headers:
           Authorization: Bearer__${access_token}
@@ -89,9 +89,9 @@ test:
     validate:
       -   eq:  ['status_code', '200']
 
--   name: 【普通试题】-查询组织试题
+-   name: 【普通试题】——查询组织试题
     request:
-        url: /api/v1/exam/question
+        url: api/v1/exam/question
         method: GET
         headers:
           Authorization: Bearer__${access_token}

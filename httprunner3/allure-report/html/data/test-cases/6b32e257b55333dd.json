@@ -1,0 +1,155 @@
+{
+  "uid" : "6b32e257b55333dd",
+  "name" : "【普通试题】——查询组织试题",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "8a0c0b2e76be789cd06677e6aebacd4c",
+  "time" : {
+    "start" : 1636452475697,
+    "stop" : 1636452475916,
+    "duration" : 219
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1636452472903,
+      "stop" : 1636452472908,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1636452472283,
+      "stop" : 1636452472902,
+      "duration" : 619
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "49082e489d522dd6",
+      "name" : "log",
+      "source" : "49082e489d522dd6.txt",
+      "type" : "text/plain",
+      "size" : 265
+    }, {
+      "uid" : "4225a527eed6c022",
+      "name" : "stderr",
+      "source" : "4225a527eed6c022.txt",
+      "type" : "text/plain",
+      "size" : 21656
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1636452490813,
+      "stop" : 1636452490813,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【普通试题】——查询组织试题"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "18052-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "https://tester1.zhixueyun.com/api/v1/exam/question",
+    "url" : "https://tester1.zhixueyun.com/api/v1/exam/question",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "6499a5ca03a88071",
+      "status" : "passed",
+      "time" : {
+        "start" : 1636451228213,
+        "stop" : 1636451228460,
+        "duration" : 247
+      }
+    }, {
+      "uid" : "2238015f589d0d1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1636368884148,
+        "stop" : 1636368884388,
+        "duration" : 240
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6b32e257b55333dd.json",
+  "parameterValues" : [ ]
+}

@@ -2,6 +2,7 @@ import pymysql
 import re
 import logging
 import json
+import pytest
 
 from settings import *
 
@@ -10,6 +11,7 @@ class MysqlOperate(object):
 
     def __init__(self, sql_statement):
         """
+        读取config.json文件
         :param sql_statement: sql语句
         """
         with open(TARGET_PATH, 'r', encoding="utf-8") as f:
@@ -47,8 +49,11 @@ class MysqlOperate(object):
         if deal_with.replace_(self.sql):
             self.sql = deal_with.replace_(self.sql)
         result = self.judge.handler(self.cursor, self.sql, self.db)
-        assert result == value
-        logging.info(f'sql影响行数: ({result}) 预期影响行数: ({value}) 断言成功!')
+        try:
+            assert result == value
+            logging.info(f'SQL影响行数: ({result}) 预期影响行数: ({value}) 断言成功!')
+        except AssertionError:
+            pytest.xfail(f'SQL断言失败：{AssertionError}')
         self.cursor.close()
         self.db.close()
 

@@ -1,0 +1,47 @@
+2021-11-08 18:54:53.147 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : PUT
+url      : http://pre-202108-10.zhixueyun.com/api/v1/exam/banner/f99678ce-6c0d-44cd-9099-c188e7cbc7b9
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__63dee25121f52d578e31b63d9eae3001",
+    "uri": "exam/banners",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "Content-Length": "195"
+}
+cookies  : {}
+body     : title=preer%E5%B9%BF%E5%91%8A2&path=default%2FM00%2F00%2F59%2FwKgLQGGJAfyAFTW3AAdftfhVfXQ119.jpg&attachmentId=c8065081-6e5a-47a8-9bbb-80c4ef4e9b3c&id=f99678ce-6c0d-44cd-9099-c188e7cbc7b9&status=0
+
+2021-11-08 18:54:53.148 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Mon, 08 Nov 2021 10:54:53 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "463",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "attachmentId": "c8065081-6e5a-47a8-9bbb-80c4ef4e9b3c",
+    "createTime": 1636368892784,
+    "createrId": "73da8c17-d84a-4698-975e-d18ca5232708",
+    "id": "f99678ce-6c0d-44cd-9099-c188e7cbc7b9",
+    "modifyTime": null,
+    "organizationId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+    "path": "default/M00/00/59/wKgLQGGJAfyAFTW3AAdftfhVfXQ119.jpg",
+    "sort": null,
+    "status": 0,
+    "title": "preer广告2",
+    "url": "http://pre-202108-10.zhixueyun.com/#/exam/exam/exam-detail/66694028-de7d-45e4-929c-5d0769a5d7bb"
+}
+
+2021-11-08 18:54:53,148 | D:\PyCharm\project\httprunner3\common\validate.py[line:57] | INFO: 响应断言： 预期值：'preer广告2' 实际值：'preer广告2', 断言成功!
+2021-11-08 18:54:53,148 | D:\PyCharm\project\httprunner3\common\validate.py[line:57] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!

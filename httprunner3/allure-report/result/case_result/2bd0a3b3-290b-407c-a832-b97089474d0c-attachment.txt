@@ -1,0 +1,3 @@
+INFO     root:data_depend.py:40 提取变量：duoxuanid: 5ff31a13-f07a-4024-9d5c-fadcaf64b3dd
+INFO     root:data_depend.py:40 提取变量：duoxuanname: 试题目录1-多选题1
+INFO     root:validate.py:57 响应断言： 预期值：'2' 实际值：'2', 断言成功!

@@ -1,0 +1,31 @@
+2021-11-09 17:47:11.541 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/system/grant/check-switch
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__672e5a6280190a72d0e541e75ea533ff",
+    "uri": "exam/question-depot"
+}
+cookies  : {}
+body     : None
+
+2021-11-09 17:47:11.542 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 09 Nov 2021 09:47:11 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "4",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : True
+
+2021-11-09 17:47:11,542 | D:\PyCharm\project\httprunner3\common\validate.py[line:84] | INFO: 响应断言： 预期值：'true' 实际值：'true', 断言成功!

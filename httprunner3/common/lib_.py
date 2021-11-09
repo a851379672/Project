@@ -1,15 +1,17 @@
 import allure
 import base64
 import hashlib
+import os
 
 
-def allure_(allure_data):
+def allure_(allure_data, ent_url):
     """
-    :param allure_data:
+    :param allure_data: allure_data
+    :param ent_url: ent_url
     :return:
     """
     allure.dynamic.suite(allure_data['allure']['allure_descrption'])
-    allure.dynamic.link(allure_data['request']['url'])
+    allure.dynamic.link(os.path.join(ent_url, allure_data['request']['url']))
     allure.dynamic.sub_suite(allure_data['allure']['allure_sub_suite'])
     allure.dynamic.feature(allure_data['allure']['allure_feature'])
     allure.dynamic.story(allure_data['allure']['allure_story'])

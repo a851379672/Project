@@ -1,0 +1,155 @@
+{
+  "uid" : "b696bbebf13a6068",
+  "name" : "【普通考试】——确认封面图片",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "957d435a68ee797940c3490f278af2c6",
+  "time" : {
+    "start" : 1636452484926,
+    "stop" : 1636452485756,
+    "duration" : 830
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1636452472903,
+      "stop" : 1636452472908,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1636452472283,
+      "stop" : 1636452472902,
+      "duration" : 619
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c86bb349427cee91",
+      "name" : "log",
+      "source" : "c86bb349427cee91.txt",
+      "type" : "text/plain",
+      "size" : 95
+    }, {
+      "uid" : "e6c295068474684",
+      "name" : "stderr",
+      "source" : "e6c295068474684.txt",
+      "type" : "text/plain",
+      "size" : 556798
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1636452490813,
+      "stop" : 1636452490813,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【普通考试】——确认封面图片"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "18052-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "https://tester1.zhixueyun.com/${coverPath}",
+    "url" : "https://tester1.zhixueyun.com/${coverPath}",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "937474d9711d7e6c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1636451238733,
+        "stop" : 1636451239673,
+        "duration" : 940
+      }
+    }, {
+      "uid" : "9db21f19a9c3124",
+      "status" : "passed",
+      "time" : {
+        "start" : 1636368891140,
+        "stop" : 1636368891357,
+        "duration" : 217
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b696bbebf13a6068.json",
+  "parameterValues" : [ ]
+}

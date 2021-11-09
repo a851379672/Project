@@ -9,7 +9,7 @@ allure:
 test:
 -   name: 【广告配置】——查询广告标题
     request:
-        url: /api/v1/exam/banner/page
+        url: api/v1/exam/banner/page
         method: GET
         headers:
           Authorization: Bearer__${access_token}
@@ -23,11 +23,11 @@ test:
     extract:
     validate:
         -   eq:  ['$.recordCount', '1']
-        -   eq:  ['$.items[0].title', 'pre广告']
+        -   eq:  ['$.items[0].title', '${ent_name}广告']
 
 -   name: 【广告配置】——查询授权组织
     request:
-        url: /api/v1/system/organization/granted-organization
+        url: api/v1/system/organization/granted-organization
         method: GET
         headers:
           Authorization: Bearer__${access_token}
@@ -44,7 +44,7 @@ test:
 
 -   name: 【广告配置】——查询组织操作类型
     request:
-        url: /api/v1/system/grant/find-organization-operatortype
+        url: api/v1/system/grant/find-organization-operatortype
         method: GET
         headers:
           Authorization: Bearer__${access_token}
@@ -60,7 +60,7 @@ test:
 
 -   name: 【广告配置】——上传广告封面
     request:
-        url: /api/v1/human/file/upload
+        url: api/v1/human/file/upload
         method: POST
         headers:
           Authorization: Bearer__${access_token}
@@ -78,7 +78,7 @@ test:
 
 -   name: 【广告配置】——获取认证考试
     request:
-        url: /api/v1/exam/exam/exam-select
+        url: api/v1/exam/exam/exam-select
         method: GET
         headers:
           Authorization: Bearer__${access_token}
@@ -98,7 +98,7 @@ test:
 
 -   name: 【广告配置】——广告保存
     request:
-        url: /api/v1/exam/banner
+        url: api/v1/exam/banner
         method: POST
         headers:
           Authorization: Bearer__${access_token}
@@ -121,7 +121,7 @@ test:
 
 -   name: 【广告配置】——广告发布
     request:
-        url: /api/v1/exam/banner/publish/${bannersId}
+        url: api/v1/exam/banner/publish/${bannersId}
         method: PUT
         headers:
           Authorization: Bearer__${access_token}
@@ -140,7 +140,7 @@ test:
 
 -   name: 【广告配置】——广告排序
     request:
-        url: /api/v1/exam/banner/sort/${bannersId}
+        url: api/v1/exam/banner/sort/${bannersId}
         method: PUT
         headers:
           Authorization: Bearer__${access_token}
@@ -160,7 +160,7 @@ test:
 
 -   name: 【广告配置】——广告撤销
     request:
-        url: /api/v1/exam/banner/revoke/${bannersId}
+        url: api/v1/exam/banner/revoke/${bannersId}
         method: PUT
         headers:
           Authorization: Bearer__${access_token}
@@ -179,7 +179,7 @@ test:
 
 -   name: 【广告配置】——广告修改
     request:
-        url: /api/v1/exam/banner/${bannersId}
+        url: api/v1/exam/banner/${bannersId}
         method: PUT
         headers:
           Authorization: Bearer__${access_token}
@@ -201,7 +201,7 @@ test:
 
 -   name: 【广告配置】——广告删除
     request:
-        url: /api/v1/exam/banner/${bannersId}
+        url: api/v1/exam/banner/${bannersId}
         method: DELETE
         headers:
           Authorization: Bearer__${access_token}

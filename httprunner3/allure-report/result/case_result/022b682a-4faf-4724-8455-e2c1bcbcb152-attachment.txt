@@ -1,0 +1,15 @@
+INFO     root:data_depend.py:40 提取变量：yuedulijieid: 16938f87-a670-4e71-b847-5a2c8ab90ae3
+INFO     root:data_depend.py:40 提取变量：yuedulijiename: 试题目录1-阅读裂解题1
+INFO     root:data_depend.py:40 提取变量：yuedulijie_danxuanid: 7cd54e43-51f0-4a64-94a9-869bcad1a620
+INFO     root:data_depend.py:40 提取变量：yuedulijie_danxuanid_1: f32c6484-930f-4b8f-a63f-cd7ea03db590
+INFO     root:data_depend.py:40 提取变量：yuedulijie_danxuanid_2: 9a59c4c8-046f-4db0-9610-7f60abc5dae2
+INFO     root:data_depend.py:40 提取变量：yuedulijie_danxuanid_3: 8b4e594c-0c82-43c0-9394-5ffc1279460c
+INFO     root:data_depend.py:40 提取变量：yuedulijie_danxuanid_4: 9a467a3a-676a-4ab7-a70f-1e65bfc78175
+INFO     root:data_depend.py:40 提取变量：yuedulijie_duoxuanid: 134ff4b6-9d6a-46f2-b9a7-c9e91b2292f4
+INFO     root:data_depend.py:40 提取变量：yuedulijie_duoxuanid_1: d3482774-530e-4d94-8f9b-a4a71eff480f
+INFO     root:data_depend.py:40 提取变量：yuedulijie_duoxuanid_2: a9f7a8e7-a63c-438d-961b-369d4a69aaf1
+INFO     root:data_depend.py:40 提取变量：yuedulijie_duoxuanid_3: 07837779-d937-47e6-a4c5-53586dbb910a
+INFO     root:data_depend.py:40 提取变量：yuedulijie_duoxuanid_4: 3bc4aae7-c019-456c-a22d-1d58964b02f2
+INFO     root:data_depend.py:40 提取变量：yuedulijie_wendaid: aa7e3ffc-dc4d-4188-98e1-5df59b26f366
+INFO     root:data_depend.py:40 提取变量：yuedulijie_wendaid_1: fbd228b3-b10b-4ba2-8162-bfca6dcd00a1
+INFO     root:validate.py:57 响应断言： 预期值：'6' 实际值：'6', 断言成功!

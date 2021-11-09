@@ -1,0 +1,157 @@
+{
+  "uid" : "f699a9d23fbbdee7",
+  "name" : "【广告配置】——查询广告标题",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "fffb3098ba104bbeb19c262ee38b7a2f",
+  "time" : {
+    "start" : 1636452486230,
+    "stop" : 1636452486370,
+    "duration" : 140
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1636452472903,
+      "stop" : 1636452472908,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1636452472283,
+      "stop" : 1636452472902,
+      "duration" : 619
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "bf9689e429b5af57",
+      "name" : "log",
+      "source" : "bf9689e429b5af57.txt",
+      "type" : "text/plain",
+      "size" : 205
+    }, {
+      "uid" : "34fc44cdfb32ca6d",
+      "name" : "stderr",
+      "source" : "34fc44cdfb32ca6d.txt",
+      "type" : "text/plain",
+      "size" : 2134
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1636452490813,
+      "stop" : 1636452490813,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【广告配置】——查询广告标题"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "18052-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "https://tester1.zhixueyun.com/api/v1/exam/banner/page",
+    "url" : "https://tester1.zhixueyun.com/api/v1/exam/banner/page",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "6150cdd3a5a1a3fa",
+      "status" : "skipped",
+      "statusDetails" : "XFAIL reason: 断言失败：<class 'AssertionError'>\n\n_pytest.outcomes.XFailed: 断言失败：<class 'AssertionError'>",
+      "time" : {
+        "start" : 1636451240143,
+        "stop" : 1636451240284,
+        "duration" : 141
+      }
+    }, {
+      "uid" : "c2323285a556c397",
+      "status" : "skipped",
+      "statusDetails" : "XFAIL reason: \n\n_pytest.outcomes.XFailed: <XFailed instance>",
+      "time" : {
+        "start" : 1636368891777,
+        "stop" : 1636368891853,
+        "duration" : 76
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f699a9d23fbbdee7.json",
+  "parameterValues" : [ ]
+}

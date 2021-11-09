@@ -14,7 +14,7 @@ def pytest_addoption(parser):
     添加命令行参数
     """
     parser.addoption(
-        "--config", action="store", default="pre_config.yaml", help="配置文件"
+        "--config", action="store", default="test_config.yaml", help="配置文件"
     )
 
 

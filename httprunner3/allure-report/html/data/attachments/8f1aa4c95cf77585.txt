@@ -1,0 +1,48 @@
+2021-11-09 18:07:56.969 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : PUT
+url      : https://tester1.zhixueyun.com/api/v1/exam/question/bdbd412e-60c9-4287-98f4-9b6de186b53a
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__18e2aca42fbac4d646fa2183166937ac",
+    "uri": "exam/question-depot",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "Content-Length": "756"
+}
+cookies  : {}
+body     : value=%5B%7B%27value%27%3A+%270%27%2C+%27name%27%3A+%270%27%2C+%27type%27%3A+3%7D%5D&content=%E8%AF%95%E9%A2%98%E7%9B%AE%E5%BD%951-%E5%88%A4%E6%96%AD%E9%A2%981&contentText=%E8%AF%95%E9%A2%98%E7%9B%AE%E5%BD%951-%E5%88%A4%E6%96%AD%E9%A2%981&questionAttrs%5B0%5D%5Bvalue%5D=0&questionAttrs%5B0%5D%5Bname%5D=0&questionAttrs%5B0%5D%5Btype%5D=3&score=1000&id=4f796c39-64db-4907-942b-00b49f5d6a79&type=3&questionDepotId=8d06aa9d-7bce-47b8-99cb-407904379417&questionDepot%5Bid%5D=8d06aa9d-7bce-47b8-99cb-407904379417&questionDepot%5Bname%5D=%E8%AF%95%E9%A2%98%E7%9B%AE%E5%BD%951&parsing=%E8%AF%95%E9%A2%98%E8%A7%A3%E6%9E%90&parsingText=%E8%AF%95%E9%A2%98%E8%A7%A3%E6%9E%90&affectedType=1&difficulty=3&organizationId=cc861919-b7fb-4582-b755-48b2eb0e5203&depotEdit=1
+
+2021-11-09 18:07:56.970 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 09 Nov 2021 10:07:57 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "344",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "content": "试题目录1-判断题1",
+    "createTime": 1636452476705,
+    "difficulty": 3,
+    "errorRate": 0,
+    "id": "bdbd412e-60c9-4287-98f4-9b6de186b53a",
+    "markAmount": 0,
+    "questionAttrs": null,
+    "questionDepotId": "8d06aa9d-7bce-47b8-99cb-407904379417",
+    "recoveryCount": 0,
+    "replaceId": "bdbd412e-60c9-4287-98f4-9b6de186b53a",
+    "rightRate": 0,
+    "status": 0,
+    "subs": [],
+    "type": 3
+}
+
+2021-11-09 18:07:56,970 | D:\PyCharm\project\httprunner3\common\validate.py[line:57] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!

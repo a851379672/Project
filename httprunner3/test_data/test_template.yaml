@@ -9,15 +9,16 @@
 #      }
 #================================模板================================
 #test:
-#-   name: 【普通试题】-音视频完成规则
+#-   name: 【普通试题】——音视频完成规则
 #    request:
-#        url: /api/v1/exam/question-depot
+#        url: api/v1/exam/question-depot
 #        method: POST
 #        headers:
 #          Authorization: Bearer__${access_token}
 #          uri: exam/question-depot
 #        params:
 #            {
+#              'key': 'value',
 #              'key': 'value'
 #            }
 #    sql_statement:

@@ -4,235 +4,2020 @@
   "children" : [ {
     "name" : "SZLX",
     "children" : [ {
-      "name" : "10268-MainThread",
+      "name" : "5272-MainThread",
       "children" : [ {
-        "name" : "【公告配置】——新增公告",
-        "uid" : "e132297839b31ad0",
-        "parentUid" : "42d0ef7687355fe7e54caad01d1cf7a1",
-        "status" : "broken",
+        "name" : "【普通试题】——批处理异步导入",
+        "uid" : "49ff6b5a4c7a350a",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
         "time" : {
-          "start" : 1634806815044,
-          "stop" : 1634806815132,
-          "duration" : 88
+          "start" : 1636451233490,
+          "stop" : 1636451233634,
+          "duration" : 144
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "test_run[api_data5]",
-        "uid" : "12f5c6dd8eccfaea",
-        "parentUid" : "42d0ef7687355fe7e54caad01d1cf7a1",
-        "status" : "broken",
+        "name" : "【普通试题】——查询组织操作类型",
+        "uid" : "eace97bbb9d5cbe",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
         "time" : {
-          "start" : 1634806815312,
-          "stop" : 1634806815312,
-          "duration" : 0
+          "start" : 1636451226480,
+          "stop" : 1636451226628,
+          "duration" : 148
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通考试】——提交考试封面",
+        "uid" : "8aae39a2ce1d134f",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451239682,
+          "stop" : 1636451240135,
+          "duration" : 453
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——查询目录编码",
+        "uid" : "31b3cf31560882f",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451227796,
+          "stop" : 1636451227916,
+          "duration" : 120
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "【公告配置】——查询组织操作类型",
-        "uid" : "c1f9a46be823b62c",
-        "parentUid" : "42d0ef7687355fe7e54caad01d1cf7a1",
+        "uid" : "4fb68b0ecfc0e7e5",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
         "status" : "passed",
         "time" : {
-          "start" : 1634806814939,
-          "stop" : 1634806815037,
-          "duration" : 98
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "【公告配置】——查询公告标题",
-        "uid" : "5e5d1627c4a50360",
-        "parentUid" : "42d0ef7687355fe7e54caad01d1cf7a1",
-        "status" : "passed",
-        "time" : {
-          "start" : 1634806814626,
-          "stop" : 1634806814723,
-          "duration" : 97
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "【公告配置】——查询授权组织",
-        "uid" : "1fa839975f7cd2ad",
-        "parentUid" : "42d0ef7687355fe7e54caad01d1cf7a1",
-        "status" : "passed",
-        "time" : {
-          "start" : 1634806814811,
-          "stop" : 1634806814934,
+          "start" : 1636451242453,
+          "stop" : 1636451242576,
           "duration" : 123
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "test_run[api_data8]",
-        "uid" : "91fccf8b4c4c2e5c",
-        "parentUid" : "42d0ef7687355fe7e54caad01d1cf7a1",
-        "status" : "broken",
-        "time" : {
-          "start" : 1634806815350,
-          "stop" : 1634806815350,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_run[api_data7]",
-        "uid" : "1bfc658ff54ba938",
-        "parentUid" : "42d0ef7687355fe7e54caad01d1cf7a1",
-        "status" : "broken",
-        "time" : {
-          "start" : 1634806815338,
-          "stop" : 1634806815338,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_run[api_data6]",
-        "uid" : "8c05fcbae21d8d",
-        "parentUid" : "42d0ef7687355fe7e54caad01d1cf7a1",
-        "status" : "broken",
-        "time" : {
-          "start" : 1634806815325,
-          "stop" : 1634806815325,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_config_token",
-        "uid" : "abe6dd9b9c97b204",
-        "parentUid" : "42d0ef7687355fe7e54caad01d1cf7a1",
+        "name" : "【普通试题】——修改多选题",
+        "uid" : "67b208a61d64a01b",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
         "status" : "passed",
         "time" : {
-          "start" : 1634806814618,
-          "stop" : 1634806814621,
-          "duration" : 3
+          "start" : 1636451228929,
+          "stop" : 1636451229089,
+          "duration" : 160
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "【公告配置】——查询公告开放时间",
-        "uid" : "d55569c2c9f88de3",
-        "parentUid" : "42d0ef7687355fe7e54caad01d1cf7a1",
+        "name" : "【普通试题】——删除阅读理解题",
+        "uid" : "1bda68014e821ea4",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
         "status" : "passed",
         "time" : {
-          "start" : 1634806814728,
-          "stop" : 1634806814804,
-          "duration" : 76
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "42d0ef7687355fe7e54caad01d1cf7a1"
-    }, {
-      "name" : "12456-MainThread",
-      "children" : [ {
-        "name" : "【公告配置】——查询组织操作类型",
-        "uid" : "b4f4db51794c88f8",
-        "parentUid" : "29fd93ccc1f5334c9f7400c5cec3f031",
-        "status" : "passed",
-        "time" : {
-          "start" : 1634806751069,
-          "stop" : 1634806751141,
-          "duration" : 72
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "【公告配置】——查询授权组织",
-        "uid" : "64766be84bf58d6c",
-        "parentUid" : "29fd93ccc1f5334c9f7400c5cec3f031",
-        "status" : "passed",
-        "time" : {
-          "start" : 1634806750943,
-          "stop" : 1634806751064,
-          "duration" : 121
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "【公告配置】——修改公告",
-        "uid" : "9b45144614087b3d",
-        "parentUid" : "29fd93ccc1f5334c9f7400c5cec3f031",
-        "status" : "passed",
-        "time" : {
-          "start" : 1634806751402,
-          "stop" : 1634806751475,
-          "duration" : 73
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "【公告配置】——新增公告",
-        "uid" : "614357f3673276e4",
-        "parentUid" : "29fd93ccc1f5334c9f7400c5cec3f031",
-        "status" : "passed",
-        "time" : {
-          "start" : 1634806751149,
-          "stop" : 1634806751225,
-          "duration" : 76
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_config_token",
-        "uid" : "5270b38db56428d5",
-        "parentUid" : "29fd93ccc1f5334c9f7400c5cec3f031",
-        "status" : "passed",
-        "time" : {
-          "start" : 1634806750775,
-          "stop" : 1634806750777,
-          "duration" : 2
+          "start" : 1636451232654,
+          "stop" : 1636451232810,
+          "duration" : 156
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "【公告配置】——取消置顶公告",
-        "uid" : "ddfef60aeedcf51c",
-        "parentUid" : "29fd93ccc1f5334c9f7400c5cec3f031",
+        "uid" : "d12f32a0d259bbc8",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
         "status" : "passed",
         "time" : {
-          "start" : 1634806751316,
-          "stop" : 1634806751397,
-          "duration" : 81
+          "start" : 1636451242861,
+          "stop" : 1636451243006,
+          "duration" : 145
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_config_token",
+        "uid" : "a8e6fed0323ea5e2",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451226039,
+          "stop" : 1636451226041,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——新增阅读理解",
+        "uid" : "542490a305ceb996",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451230379,
+          "stop" : 1636451230574,
+          "duration" : 195
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——查看任务队列",
+        "uid" : "43cffddff5cdfba9",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451234742,
+          "stop" : 1636451234921,
+          "duration" : 179
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通考试】——生成考试id",
+        "uid" : "7650619e5e07197",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451237173,
+          "stop" : 1636451237296,
+          "duration" : 123
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_run[api_data66]",
+        "uid" : "1d45fba7879bf8cc",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "broken",
+        "time" : {
+          "start" : 1636451242023,
+          "stop" : 1636451242024,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——提交试题目录修改",
+        "uid" : "54ff66daf3d4fd4f",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451234170,
+          "stop" : 1636451234565,
+          "duration" : 395
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——修改公告",
+        "uid" : "6083a6af3cd4d3c4",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451243011,
+          "stop" : 1636451243160,
+          "duration" : 149
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——试题批量导入",
+        "uid" : "6544884fb8f0f907",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451233260,
+          "stop" : 1636451233481,
+          "duration" : 221
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——试题导出",
+        "uid" : "d7a924dd8439d054",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451231421,
+          "stop" : 1636451231545,
+          "duration" : 124
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_run[api_data62]",
+        "uid" : "d6b47a14368c9eb",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "broken",
+        "time" : {
+          "start" : 1636451241969,
+          "stop" : 1636451241969,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——防录屏配置规则",
+        "uid" : "4f76d04ce7efe4b6",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451226175,
+          "stop" : 1636451226325,
+          "duration" : 150
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【广告配置】——查询组织操作类型",
+        "uid" : "c52f21dd1bcdda18",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451241099,
+          "stop" : 1636451241275,
+          "duration" : 176
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——新增单选题",
+        "uid" : "4292cefac276b5ce",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451227923,
+          "stop" : 1636451228205,
+          "duration" : 282
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通考试】——上传考试封面",
+        "uid" : "1df348c3a00ecbdc",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451238014,
+          "stop" : 1636451238724,
+          "duration" : 710
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通考试】——人脸识别规则",
+        "uid" : "854727728b7ce28d",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451236932,
+          "stop" : 1636451237164,
+          "duration" : 232
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——修改判断题",
+        "uid" : "e2a7f8b6a7a405d3",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451229304,
+          "stop" : 1636451229480,
+          "duration" : 176
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——删除问答题",
+        "uid" : "c8ccd390d5e242bd",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451232424,
+          "stop" : 1636451232649,
+          "duration" : 225
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——新建试题目录",
+        "uid" : "f65d7516fb2f62b",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451227268,
+          "stop" : 1636451227643,
+          "duration" : 375
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【广告配置】——查询广告标题",
+        "uid" : "6150cdd3a5a1a3fa",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1636451240143,
+          "stop" : 1636451240284,
+          "duration" : 141
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——修改填空题",
+        "uid" : "f96c02620e7b90e7",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451229713,
+          "stop" : 1636451229893,
+          "duration" : 180
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——查询组织试题",
+        "uid" : "6499a5ca03a88071",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451228213,
+          "stop" : 1636451228460,
+          "duration" : 247
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_run[api_data64]",
+        "uid" : "1dccdf050493e4e6",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "broken",
+        "time" : {
+          "start" : 1636451241997,
+          "stop" : 1636451241997,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_run[api_data61]",
+        "uid" : "ab74ee877e0d60b4",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "broken",
+        "time" : {
+          "start" : 1636451241954,
+          "stop" : 1636451241956,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——删除队列导入任务",
+        "uid" : "6b42de16aaea857a",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451235127,
+          "stop" : 1636451235268,
+          "duration" : 141
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——查询试题目录",
+        "uid" : "f6834bf309ecf294",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451227652,
+          "stop" : 1636451227788,
+          "duration" : 136
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——查询组织试题",
+        "uid" : "e62c4acb5a1748b1",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451226983,
+          "stop" : 1636451227137,
+          "duration" : 154
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——查询授权节点",
+        "uid" : "a005b07fe95f0f89",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451226334,
+          "stop" : 1636451226477,
+          "duration" : 143
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——获取目录编码",
+        "uid" : "c7ea922b846a154d",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451227141,
+          "stop" : 1636451227263,
+          "duration" : 122
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——删除公告",
+        "uid" : "48de79545b44aaa3",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451243165,
+          "stop" : 1636451243286,
+          "duration" : 121
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通考试】——获取授权组织",
+        "uid" : "ecd59bd08eb05ad3",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451237793,
+          "stop" : 1636451238007,
+          "duration" : 214
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——修改单选题",
+        "uid" : "661444639cd87982",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451228467,
+          "stop" : 1636451228738,
+          "duration" : 271
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——试题目录导出",
+        "uid" : "818cb0a96bfe53ab",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451234573,
+          "stop" : 1636451234738,
+          "duration" : 165
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通考试】——考试开始时间",
+        "uid" : "22796a8aecae77dc",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451237489,
+          "stop" : 1636451237639,
+          "duration" : 150
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——删除多选题",
+        "uid" : "e32d7d6ce35d4203",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451231694,
+          "stop" : 1636451232085,
+          "duration" : 391
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【广告配置】——上传广告封面",
+        "uid" : "81de85f325796a96",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451241282,
+          "stop" : 1636451241803,
+          "duration" : 521
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——新增判断题",
+        "uid" : "1454b35d730621c5",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451229094,
+          "stop" : 1636451229296,
+          "duration" : 202
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——修改问答题",
+        "uid" : "caa7219838e692a8",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451230140,
+          "stop" : 1636451230369,
+          "duration" : 229
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——删除试题目录",
+        "uid" : "41a0c78d2dc6f160",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451236678,
+          "stop" : 1636451236922,
+          "duration" : 244
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——点击试题目录修改",
+        "uid" : "be03ba3b8a4e1787",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451233979,
+          "stop" : 1636451234165,
+          "duration" : 186
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——新增问答题",
+        "uid" : "469636b1e5ee71ac",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451229898,
+          "stop" : 1636451230131,
+          "duration" : 233
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——试题批量更新",
+        "uid" : "2e70eeb3e7028289",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451233641,
+          "stop" : 1636451233813,
+          "duration" : 172
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_run[api_data65]",
+        "uid" : "2aba98e86d388793",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "broken",
+        "time" : {
+          "start" : 1636451242010,
+          "stop" : 1636451242010,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——音视频完成规则",
+        "uid" : "f21a7cef33227079",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451226045,
+          "stop" : 1636451226171,
+          "duration" : 126
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "【公告配置】——查询公告开放时间",
-        "uid" : "80e48aa0e6a9422c",
-        "parentUid" : "29fd93ccc1f5334c9f7400c5cec3f031",
+        "uid" : "b50b5921dbd6b513",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
         "status" : "passed",
         "time" : {
-          "start" : 1634806750868,
-          "stop" : 1634806750939,
-          "duration" : 71
+          "start" : 1636451242178,
+          "stop" : 1636451242310,
+          "duration" : 132
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——删除判断题",
+        "uid" : "a796c466fdb7cda6",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451232094,
+          "stop" : 1636451232257,
+          "duration" : 163
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——批处理异步更新",
+        "uid" : "80731a59815b29bd",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451233820,
+          "stop" : 1636451233972,
+          "duration" : 152
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——新增公告",
+        "uid" : "9bc01f6fc50c92e2",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451242582,
+          "stop" : 1636451242720,
+          "duration" : 138
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "【公告配置】——查询公告标题",
-        "uid" : "305de9abcc1304e8",
+        "uid" : "b69c419217d636b7",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1636451242036,
+          "stop" : 1636451242155,
+          "duration" : 119
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——修改排序题",
+        "uid" : "552f7272c61da4e0",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451231238,
+          "stop" : 1636451231414,
+          "duration" : 176
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【广告配置】——查询授权组织",
+        "uid" : "585f63383e0307d7",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451240736,
+          "stop" : 1636451241093,
+          "duration" : 357
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通考试】——获取所有设备类型",
+        "uid" : "968e2a9f6cc89595",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451237301,
+          "stop" : 1636451237480,
+          "duration" : 179
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——查询目录试题",
+        "uid" : "63b060188249a8e",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451235279,
+          "stop" : 1636451235701,
+          "duration" : 422
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——新增排序题",
+        "uid" : "5214706593530f19",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451230862,
+          "stop" : 1636451231230,
+          "duration" : 368
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——查询授权组织",
+        "uid" : "cf77b43dd1555d36",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451242316,
+          "stop" : 1636451242447,
+          "duration" : 131
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——查询组织目录",
+        "uid" : "1930bd0c9cdbe658",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451226633,
+          "stop" : 1636451226972,
+          "duration" : 339
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——删除单选题",
+        "uid" : "4a10888443ddda1f",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451231551,
+          "stop" : 1636451231686,
+          "duration" : 135
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——删除队列更新任务",
+        "uid" : "b775ec3f05c52a8c",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451234929,
+          "stop" : 1636451235115,
+          "duration" : 186
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——发布导入试题",
+        "uid" : "c8974a0a129371ff",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451235709,
+          "stop" : 1636451235956,
+          "duration" : 247
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——删除填空题",
+        "uid" : "579c0d86a6cd58c3",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451232261,
+          "stop" : 1636451232419,
+          "duration" : 158
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【广告配置】——获取认证考试",
+        "uid" : "5f19e5b697a1d396",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1636451241808,
+          "stop" : 1636451241938,
+          "duration" : 130
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——新增多选题",
+        "uid" : "c86614f577804f1e",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451228750,
+          "stop" : 1636451228923,
+          "duration" : 173
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通考试】——确认封面图片",
+        "uid" : "937474d9711d7e6c",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451238733,
+          "stop" : 1636451239673,
+          "duration" : 940
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通考试】——获取推荐标签",
+        "uid" : "fbb9a77d1c798383",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451237645,
+          "stop" : 1636451237784,
+          "duration" : 139
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——删除导入试题",
+        "uid" : "679d6daa8a21b8b6",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451235967,
+          "stop" : 1636451236664,
+          "duration" : 697
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——删除排序题",
+        "uid" : "513afbdd23d10754",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451232816,
+          "stop" : 1636451233256,
+          "duration" : 440
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——置顶公告",
+        "uid" : "b73bbf682f6a392",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451242727,
+          "stop" : 1636451242857,
+          "duration" : 130
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——新增填空题",
+        "uid" : "216edc7db3157b5f",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451229486,
+          "stop" : 1636451229700,
+          "duration" : 214
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——修改阅读理解题",
+        "uid" : "481e8b25c18d35b1",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636451230586,
+          "stop" : 1636451230857,
+          "duration" : 271
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_run[api_data63]",
+        "uid" : "c57ef8871e158064",
+        "parentUid" : "7ab7a01e1f26dc3909ca93a0d704ba93",
+        "status" : "broken",
+        "time" : {
+          "start" : 1636451241983,
+          "stop" : 1636451241983,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7ab7a01e1f26dc3909ca93a0d704ba93"
+    }, {
+      "name" : "18052-MainThread",
+      "children" : [ {
+        "name" : "【普通试题】——修改阅读理解题",
+        "uid" : "d339d8eb10f3b48f",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452478418,
+          "stop" : 1636452478553,
+          "duration" : 135
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——新建试题目录",
+        "uid" : "c4c587629199c9ce",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452474540,
+          "stop" : 1636452474932,
+          "duration" : 392
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——修改公告",
+        "uid" : "c44343549b1f2e90",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452490330,
+          "stop" : 1636452490664,
+          "duration" : 334
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——点击试题目录修改",
+        "uid" : "f3b86222bd5dbc7f",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452481171,
+          "stop" : 1636452481336,
+          "duration" : 165
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——批处理异步导入",
+        "uid" : "c9d55a3c15168d18",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452480611,
+          "stop" : 1636452480752,
+          "duration" : 141
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【广告配置】——广告撤销",
+        "uid" : "1a3f55747d557037",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452488235,
+          "stop" : 1636452488387,
+          "duration" : 152
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【广告配置】——广告保存",
+        "uid" : "8493a74917645032",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452487383,
+          "stop" : 1636452487516,
+          "duration" : 133
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——删除判断题",
+        "uid" : "ae379cda800a21b9",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452479388,
+          "stop" : 1636452479550,
+          "duration" : 162
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通考试】——考试开始时间",
+        "uid" : "2440b51b3fa2b9a4",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452484070,
+          "stop" : 1636452484243,
+          "duration" : 173
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——查询组织试题",
+        "uid" : "6b32e257b55333dd",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452475697,
+          "stop" : 1636452475916,
+          "duration" : 219
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——新增判断题",
+        "uid" : "303f47474fde1421",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452476461,
+          "stop" : 1636452476617,
+          "duration" : 156
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——删除问答题",
+        "uid" : "caa29dea38ef0bcf",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452479952,
+          "stop" : 1636452480093,
+          "duration" : 141
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通考试】——确认封面图片",
+        "uid" : "b696bbebf13a6068",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452484926,
+          "stop" : 1636452485756,
+          "duration" : 830
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【广告配置】——广告发布",
+        "uid" : "c3f4ba498624459e",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452487522,
+          "stop" : 1636452487678,
+          "duration" : 156
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——取消置顶公告",
+        "uid" : "fa098ce74f57c084",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452490103,
+          "stop" : 1636452490319,
+          "duration" : 216
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——修改填空题",
+        "uid" : "67280f25932a3e71",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452477406,
+          "stop" : 1636452477629,
+          "duration" : 223
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【广告配置】——查询授权组织",
+        "uid" : "61ace16408c942b4",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452486375,
+          "stop" : 1636452486502,
+          "duration" : 127
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——查询公告开放时间",
+        "uid" : "cc478042c2c2bd6c",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452489010,
+          "stop" : 1636452489280,
+          "duration" : 270
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——删除公告",
+        "uid" : "839890201770cbf7",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452490675,
+          "stop" : 1636452490812,
+          "duration" : 137
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——音视频完成规则",
+        "uid" : "f919e1fd1d321778",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452472916,
+          "stop" : 1636452473117,
+          "duration" : 201
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——修改问答题",
+        "uid" : "f904b7cb2bd08530",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452477829,
+          "stop" : 1636452477971,
+          "duration" : 142
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——修改判断题",
+        "uid" : "aac3e50f8dd54a0d",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452476621,
+          "stop" : 1636452476972,
+          "duration" : 351
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——新增填空题",
+        "uid" : "e0dacb80dae0313f",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452476980,
+          "stop" : 1636452477400,
+          "duration" : 420
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【广告配置】——广告删除",
+        "uid" : "707fab26725a51a6",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452488566,
+          "stop" : 1636452488795,
+          "duration" : 229
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——查询目录试题",
+        "uid" : "6331c8d8194806aa",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452482265,
+          "stop" : 1636452482497,
+          "duration" : 232
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——删除阅读理解题",
+        "uid" : "fb36666cac0baf31",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452480097,
+          "stop" : 1636452480265,
+          "duration" : 168
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——新增多选题",
+        "uid" : "e5d61940f34dfca6",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452476098,
+          "stop" : 1636452476297,
+          "duration" : 199
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——新增排序题",
+        "uid" : "9ed3f725ff17761f",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452478558,
+          "stop" : 1636452478736,
+          "duration" : 178
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——试题目录导出",
+        "uid" : "8abe588464b9c1f2",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452481484,
+          "stop" : 1636452481661,
+          "duration" : 177
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——试题导出",
+        "uid" : "6fce4c30a84113e7",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452478936,
+          "stop" : 1636452479062,
+          "duration" : 126
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通考试】——提交考试封面",
+        "uid" : "3795e188b2c38897",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452485762,
+          "stop" : 1636452486219,
+          "duration" : 457
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——新增公告",
+        "uid" : "af5d5a07bddacfee",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452489794,
+          "stop" : 1636452489949,
+          "duration" : 155
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【广告配置】——获取认证考试",
+        "uid" : "9dc9712187843a0f",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452487201,
+          "stop" : 1636452487378,
+          "duration" : 177
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——删除队列更新任务",
+        "uid" : "a4ae62f9af68abfc",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452481901,
+          "stop" : 1636452482086,
+          "duration" : 185
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——查询公告标题",
+        "uid" : "b7b9908a7a2f7f07",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452488802,
+          "stop" : 1636452489002,
+          "duration" : 200
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_config_token",
+        "uid" : "3e294394c64418b8",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452472909,
+          "stop" : 1636452472912,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——查询组织操作类型",
+        "uid" : "c757749c76853752",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452473403,
+          "stop" : 1636452473523,
+          "duration" : 120
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通考试】——获取所有设备类型",
+        "uid" : "8831a910b55ef4ff",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452483893,
+          "stop" : 1636452484065,
+          "duration" : 172
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——置顶公告",
+        "uid" : "90a5c73b9de38dd8",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452489954,
+          "stop" : 1636452490098,
+          "duration" : 144
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——修改单选题",
+        "uid" : "471b24afa281182a",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452475922,
+          "stop" : 1636452476093,
+          "duration" : 171
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——查询目录编码",
+        "uid" : "755d2bfcd48e8a0a",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452475092,
+          "stop" : 1636452475296,
+          "duration" : 204
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——查询组织目录",
+        "uid" : "3d4a3939f080d4c9",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452473528,
+          "stop" : 1636452473882,
+          "duration" : 354
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——查询授权节点",
+        "uid" : "715a96520f88a4be",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452473269,
+          "stop" : 1636452473397,
+          "duration" : 128
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——发布导入试题",
+        "uid" : "ed14eca8439dc61b",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452482505,
+          "stop" : 1636452482683,
+          "duration" : 178
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——查询组织试题",
+        "uid" : "863cdc81beb724b6",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452473889,
+          "stop" : 1636452474315,
+          "duration" : 426
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——删除导入试题",
+        "uid" : "738d878bccf6f46b",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452482687,
+          "stop" : 1636452483338,
+          "duration" : 651
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——批处理异步更新",
+        "uid" : "92a7fb8c74d8124b",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452481009,
+          "stop" : 1636452481166,
+          "duration" : 157
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——新增单选题",
+        "uid" : "22a07d87316e5686",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452475302,
+          "stop" : 1636452475689,
+          "duration" : 387
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——修改多选题",
+        "uid" : "574315054aa2a056",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452476304,
+          "stop" : 1636452476453,
+          "duration" : 149
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【广告配置】——广告排序",
+        "uid" : "1e67f133f11ea026",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452487682,
+          "stop" : 1636452488228,
+          "duration" : 546
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——删除试题目录",
+        "uid" : "4c83c7391a50e1df",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452483347,
+          "stop" : 1636452483590,
+          "duration" : 243
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——删除排序题",
+        "uid" : "ada1393913fd6402",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452480270,
+          "stop" : 1636452480419,
+          "duration" : 149
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——查询组织操作类型",
+        "uid" : "3472d98d3d704fe5",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452489640,
+          "stop" : 1636452489789,
+          "duration" : 149
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——防录屏配置规则",
+        "uid" : "89b921b6b007609d",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452473123,
+          "stop" : 1636452473265,
+          "duration" : 142
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——获取目录编码",
+        "uid" : "1f33c613d7b02197",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452474323,
+          "stop" : 1636452474534,
+          "duration" : 211
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通考试】——生成考试id",
+        "uid" : "462e854c229cd926",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452483750,
+          "stop" : 1636452483886,
+          "duration" : 136
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通考试】——获取授权组织",
+        "uid" : "54c318a82f2fc8a3",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452484378,
+          "stop" : 1636452484508,
+          "duration" : 130
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——删除填空题",
+        "uid" : "f426a43e1abc015f",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452479555,
+          "stop" : 1636452479947,
+          "duration" : 392
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——查询试题目录",
+        "uid" : "fe6dad0e43cb66db",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452474940,
+          "stop" : 1636452475088,
+          "duration" : 148
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——提交试题目录修改",
+        "uid" : "e5f5ead1ebe59957",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452481341,
+          "stop" : 1636452481479,
+          "duration" : 138
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——试题批量导入",
+        "uid" : "62b61cc013121007",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452480427,
+          "stop" : 1636452480606,
+          "duration" : 179
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——删除多选题",
+        "uid" : "bcdfc838d22abff0",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452479232,
+          "stop" : 1636452479383,
+          "duration" : 151
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——删除队列导入任务",
+        "uid" : "965aade014dc79d3",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452482092,
+          "stop" : 1636452482257,
+          "duration" : 165
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——新增问答题",
+        "uid" : "9d21724d50fdb3d9",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452477655,
+          "stop" : 1636452477824,
+          "duration" : 169
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——试题批量更新",
+        "uid" : "f9321dd24b40a6d8",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452480758,
+          "stop" : 1636452481004,
+          "duration" : 246
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——修改排序题",
+        "uid" : "6e8dc80c4678b29e",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452478743,
+          "stop" : 1636452478930,
+          "duration" : 187
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【广告配置】——查询广告标题",
+        "uid" : "f699a9d23fbbdee7",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452486230,
+          "stop" : 1636452486370,
+          "duration" : 140
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【广告配置】——广告修改",
+        "uid" : "a05f421bf9f7729a",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452488394,
+          "stop" : 1636452488561,
+          "duration" : 167
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通考试】——人脸识别规则",
+        "uid" : "372cf0a3b2ebe86c",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452483596,
+          "stop" : 1636452483745,
+          "duration" : 149
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通考试】——获取推荐标签",
+        "uid" : "706af38853520c0e",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452484247,
+          "stop" : 1636452484371,
+          "duration" : 124
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——查询授权组织",
+        "uid" : "95603be3c53682ec",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452489289,
+          "stop" : 1636452489635,
+          "duration" : 346
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——删除单选题",
+        "uid" : "3a2df733e603cc0",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452479068,
+          "stop" : 1636452479227,
+          "duration" : 159
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——新增阅读理解",
+        "uid" : "18f004bd39c89545",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452477976,
+          "stop" : 1636452478408,
+          "duration" : 432
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】——查看任务队列",
+        "uid" : "997b63123cff2085",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452481666,
+          "stop" : 1636452481893,
+          "duration" : 227
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通考试】——上传考试封面",
+        "uid" : "82e438b2fb226ab4",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452484514,
+          "stop" : 1636452484918,
+          "duration" : 404
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【广告配置】——上传广告封面",
+        "uid" : "e9206146142fc6fa",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452486671,
+          "stop" : 1636452487194,
+          "duration" : 523
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【广告配置】——查询组织操作类型",
+        "uid" : "9a3bcb3cdf88e203",
+        "parentUid" : "c4782736041e867a402d4801f25bc692",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636452486509,
+          "stop" : 1636452486666,
+          "duration" : 157
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c4782736041e867a402d4801f25bc692"
+    }, {
+      "name" : "12456-MainThread",
+      "children" : [ {
+        "name" : "【公告配置】——查询公告标题",
+        "uid" : "e80965fd6f4754b7",
         "parentUid" : "29fd93ccc1f5334c9f7400c5cec3f031",
         "status" : "passed",
         "time" : {
@@ -244,8 +2029,21 @@
         "newFailed" : false,
         "parameters" : [ ]
       }, {
+        "name" : "【公告配置】——查询公告开放时间",
+        "uid" : "83dce592180ae166",
+        "parentUid" : "29fd93ccc1f5334c9f7400c5cec3f031",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634806750868,
+          "stop" : 1634806750939,
+          "duration" : 71
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
         "name" : "【公告配置】——置顶公告",
-        "uid" : "a04f69eb68aab1c1",
+        "uid" : "dceb256090763e65",
         "parentUid" : "29fd93ccc1f5334c9f7400c5cec3f031",
         "status" : "passed",
         "time" : {
@@ -258,7 +2056,7 @@
         "parameters" : [ ]
       }, {
         "name" : "【公告配置】——删除公告",
-        "uid" : "e6caebae6d56af7",
+        "uid" : "9e6c9a1cd0ba601d",
         "parentUid" : "29fd93ccc1f5334c9f7400c5cec3f031",
         "status" : "passed",
         "time" : {
@@ -269,26 +2067,1260 @@
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——新增公告",
+        "uid" : "1f8c3f46fb521aea",
+        "parentUid" : "29fd93ccc1f5334c9f7400c5cec3f031",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634806751149,
+          "stop" : 1634806751225,
+          "duration" : 76
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——查询授权组织",
+        "uid" : "a43e73277f571937",
+        "parentUid" : "29fd93ccc1f5334c9f7400c5cec3f031",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634806750943,
+          "stop" : 1634806751064,
+          "duration" : 121
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_config_token",
+        "uid" : "ce7bc1f20eca11e2",
+        "parentUid" : "29fd93ccc1f5334c9f7400c5cec3f031",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634806750775,
+          "stop" : 1634806750777,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——取消置顶公告",
+        "uid" : "cee9c973cca84228",
+        "parentUid" : "29fd93ccc1f5334c9f7400c5cec3f031",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634806751316,
+          "stop" : 1634806751397,
+          "duration" : 81
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——修改公告",
+        "uid" : "ee9be74ae4cfd748",
+        "parentUid" : "29fd93ccc1f5334c9f7400c5cec3f031",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634806751402,
+          "stop" : 1634806751475,
+          "duration" : 73
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——查询组织操作类型",
+        "uid" : "3ea383665815816b",
+        "parentUid" : "29fd93ccc1f5334c9f7400c5cec3f031",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634806751069,
+          "stop" : 1634806751141,
+          "duration" : 72
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
       } ],
       "uid" : "29fd93ccc1f5334c9f7400c5cec3f031"
     }, {
-      "name" : "37024-MainThread",
+      "name" : "18288-MainThread",
       "children" : [ {
-        "name" : "【公告配置】——查询公告开放时间",
-        "uid" : "9b416efec520d8df",
-        "parentUid" : "b1b0274f7770b003fd6293e437506084",
+        "name" : "【普通试题】-修改排序题",
+        "uid" : "f2ff697813949771",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
         "status" : "passed",
         "time" : {
-          "start" : 1634806844940,
-          "stop" : 1634806845568,
-          "duration" : 628
+          "start" : 1636368886783,
+          "stop" : 1636368886866,
+          "duration" : 83
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通考试】——获取授权组织",
+        "uid" : "d57cd31a41d95150",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368890696,
+          "stop" : 1636368890799,
+          "duration" : 103
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-删除试题目录",
+        "uid" : "8040e93c1426c238",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368890134,
+          "stop" : 1636368890263,
+          "duration" : 129
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-音视频完成规则",
+        "uid" : "4d1195b6aa0069d4",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368882659,
+          "stop" : 1636368882742,
+          "duration" : 83
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-新增排序题",
+        "uid" : "8e3ea4682c4a2c6d",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368886602,
+          "stop" : 1636368886775,
+          "duration" : 173
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-删除导入试题",
+        "uid" : "f14ff755fa88aacc",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "failed",
+        "time" : {
+          "start" : 1636368889785,
+          "stop" : 1636368890114,
+          "duration" : 329
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——查询公告标题",
+        "uid" : "c8d7fa7774a5ffd1",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368893246,
+          "stop" : 1636368893325,
+          "duration" : 79
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-删除阅读理解题",
+        "uid" : "df56183cd50d6054",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368887749,
+          "stop" : 1636368887867,
+          "duration" : 118
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-修改填空题",
+        "uid" : "e0703be0d58dc768",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368885898,
+          "stop" : 1636368886002,
+          "duration" : 104
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通考试】——确认封面图片",
+        "uid" : "9db21f19a9c3124",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368891140,
+          "stop" : 1636368891357,
+          "duration" : 217
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通考试】——考试开始时间",
+        "uid" : "be3f66fa4957643f",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368890507,
+          "stop" : 1636368890594,
+          "duration" : 87
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【广告配置】——获取认证考试",
+        "uid" : "4e3102c5b5949f31",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368892564,
+          "stop" : 1636368892665,
+          "duration" : 101
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-查询授权节点",
+        "uid" : "44c2966a9dcc6561",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368882823,
+          "stop" : 1636368882971,
+          "duration" : 148
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_run[api_data44]",
+        "uid" : "c489c3731863181a",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "broken",
+        "time" : {
+          "start" : 1636368889771,
+          "stop" : 1636368889772,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-修改问答题",
+        "uid" : "5b900b1be11c5935",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368886191,
+          "stop" : 1636368886287,
+          "duration" : 96
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-查询目录试题",
+        "uid" : "d7d86bd035e0b067",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1636368889436,
+          "stop" : 1636368889748,
+          "duration" : 312
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-删除问答题",
+        "uid" : "d8ff0f70ef503338",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368887645,
+          "stop" : 1636368887742,
+          "duration" : 97
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【广告配置】——广告删除",
+        "uid" : "fc735c6da95e79db",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368893155,
+          "stop" : 1636368893241,
+          "duration" : 86
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【广告配置】——广告排序",
+        "uid" : "133a07e494bbcbdb",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368892887,
+          "stop" : 1636368892968,
+          "duration" : 81
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-删除单选题",
+        "uid" : "9831b5b137e69c11",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368886948,
+          "stop" : 1636368887048,
+          "duration" : 100
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-查看任务队列",
+        "uid" : "40b9af52a75776bb",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1636368888912,
+          "stop" : 1636368889050,
+          "duration" : 138
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-新增单选题",
+        "uid" : "410cc16053c1c11c",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368883958,
+          "stop" : 1636368884138,
+          "duration" : 180
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-试题目录导出",
+        "uid" : "d017b8b82748565f",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368888777,
+          "stop" : 1636368888905,
+          "duration" : 128
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-点击试题目录修改",
+        "uid" : "2bc4f923132e1429",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368888594,
+          "stop" : 1636368888672,
+          "duration" : 78
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-新增问答题",
+        "uid" : "4e33e7d227a23b8e",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368886007,
+          "stop" : 1636368886186,
+          "duration" : 179
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通考试】——获取推荐标签",
+        "uid" : "d7e983b0f79229e9",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368890602,
+          "stop" : 1636368890689,
+          "duration" : 87
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-删除多选题",
+        "uid" : "8403f78de1713e0e",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368887052,
+          "stop" : 1636368887358,
+          "duration" : 306
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-查询组织目录",
+        "uid" : "21409ecccd52b9ca",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368883083,
+          "stop" : 1636368883166,
+          "duration" : 83
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【广告配置】——广告发布",
+        "uid" : "395e224ac2122712",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368892771,
+          "stop" : 1636368892882,
+          "duration" : 111
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通考试】——人脸识别规则",
+        "uid" : "bee1782fb88ecc4d",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368890269,
+          "stop" : 1636368890340,
+          "duration" : 71
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【广告配置】——查询授权组织",
+        "uid" : "6e85dcda7b6bc32f",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368891872,
+          "stop" : 1636368892032,
+          "duration" : 160
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——查询组织操作类型",
+        "uid" : "a1c8c80d6ed39b1f",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368893552,
+          "stop" : 1636368893632,
+          "duration" : 80
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-新增多选题",
+        "uid" : "d6926208f37bd344",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368884491,
+          "stop" : 1636368885085,
+          "duration" : 594
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-批处理异步导入",
+        "uid" : "8c2d9b9aa6d904c0",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368888136,
+          "stop" : 1636368888365,
+          "duration" : 229
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-删除队列导入任务",
+        "uid" : "bc87ff63bbde758",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368889331,
+          "stop" : 1636368889431,
+          "duration" : 100
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-修改单选题",
+        "uid" : "1897c320a2b1c8e7",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368884396,
+          "stop" : 1636368884486,
+          "duration" : 90
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-删除填空题",
+        "uid" : "811ba0814c7e1c23",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368887475,
+          "stop" : 1636368887640,
+          "duration" : 165
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——取消置顶公告",
+        "uid" : "337cd5cdea3380a6",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368893842,
+          "stop" : 1636368893930,
+          "duration" : 88
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-批处理异步更新",
+        "uid" : "50dadebb0f24693a",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368888505,
+          "stop" : 1636368888586,
+          "duration" : 81
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-新建试题目录",
+        "uid" : "750b5a623bce8165",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368883666,
+          "stop" : 1636368883761,
+          "duration" : 95
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-修改阅读理解题",
+        "uid" : "80417294ee3de995",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368886500,
+          "stop" : 1636368886596,
+          "duration" : 96
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通考试】——提交考试封面",
+        "uid" : "5f8fcb6e6bbbfa65",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368891366,
+          "stop" : 1636368891769,
+          "duration" : 403
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-查询目录编码",
+        "uid" : "373c7a45d1285dc",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368883872,
+          "stop" : 1636368883953,
+          "duration" : 81
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-防录屏配置规则",
+        "uid" : "5b6a67e715a18abd",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368882748,
+          "stop" : 1636368882817,
+          "duration" : 69
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-试题导出",
+        "uid" : "b9a9c63ce0d19fba",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368886872,
+          "stop" : 1636368886943,
+          "duration" : 71
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——删除公告",
+        "uid" : "95abbdaf915ab846",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368894029,
+          "stop" : 1636368894108,
+          "duration" : 79
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【广告配置】——广告保存",
+        "uid" : "d2fc00db1e5f084b",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368892671,
+          "stop" : 1636368892763,
+          "duration" : 92
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——查询公告开放时间",
+        "uid" : "d927fe6bd8696e62",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368893330,
+          "stop" : 1636368893409,
+          "duration" : 79
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-修改多选题",
+        "uid" : "9ab7489936c4014b",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368885094,
+          "stop" : 1636368885211,
+          "duration" : 117
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-删除排序题",
+        "uid" : "443153e373916cd4",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368887874,
+          "stop" : 1636368887983,
+          "duration" : 109
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-新增阅读理解",
+        "uid" : "e4a264303e3c4bc2",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368886294,
+          "stop" : 1636368886492,
+          "duration" : 198
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通考试】——获取所有设备类型",
+        "uid" : "4f76dfa2e3001984",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368890426,
+          "stop" : 1636368890499,
+          "duration" : 73
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——置顶公告",
+        "uid" : "6ae4f04427ce6c0c",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368893758,
+          "stop" : 1636368893837,
+          "duration" : 79
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【广告配置】——上传广告封面",
+        "uid" : "76f27e5331ac4eae",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368892143,
+          "stop" : 1636368892559,
+          "duration" : 416
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-查询组织试题",
+        "uid" : "ea446c63683054fc",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368883170,
+          "stop" : 1636368883576,
+          "duration" : 406
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-试题批量更新",
+        "uid" : "25043d81dd402eb5",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368888374,
+          "stop" : 1636368888499,
+          "duration" : 125
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——修改公告",
+        "uid" : "cc1b53d3ab4e68ec",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368893934,
+          "stop" : 1636368894023,
+          "duration" : 89
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通考试】——上传考试封面",
+        "uid" : "efd34df1e3afe2d1",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368890805,
+          "stop" : 1636368891131,
+          "duration" : 326
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-提交试题目录修改",
+        "uid" : "2ba42980d588be20",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368888677,
+          "stop" : 1636368888772,
+          "duration" : 95
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【广告配置】——广告修改",
+        "uid" : "8b69c911e580728d",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368893063,
+          "stop" : 1636368893150,
+          "duration" : 87
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-获取目录编码",
+        "uid" : "a6df7f279a2dfb39",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368883583,
+          "stop" : 1636368883659,
+          "duration" : 76
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-删除判断题",
+        "uid" : "ef58423444ea7dc4",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368887364,
+          "stop" : 1636368887468,
+          "duration" : 104
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-新增填空题",
+        "uid" : "a21a36cc6ce4b22b",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368885506,
+          "stop" : 1636368885887,
+          "duration" : 381
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【广告配置】——查询组织操作类型",
+        "uid" : "26675ca20cd63eaa",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368892037,
+          "stop" : 1636368892135,
+          "duration" : 98
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——查询授权组织",
+        "uid" : "4286287566c54a98",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368893415,
+          "stop" : 1636368893548,
+          "duration" : 133
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——新增公告",
+        "uid" : "eafbc44d125dcb17",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368893641,
+          "stop" : 1636368893752,
+          "duration" : 111
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-新增判断题",
+        "uid" : "1c83d4f8545baa3e",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368885215,
+          "stop" : 1636368885398,
+          "duration" : 183
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-修改判断题",
+        "uid" : "ee20d7449606a0b2",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368885403,
+          "stop" : 1636368885500,
+          "duration" : 97
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_config_token",
+        "uid" : "f7747acd640ffe67",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368882652,
+          "stop" : 1636368882654,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-查询试题目录",
+        "uid" : "b58e230d8048d638",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368883765,
+          "stop" : 1636368883867,
+          "duration" : 102
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-查询组织操作类型",
+        "uid" : "e86621fd7ec0f705",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368882976,
+          "stop" : 1636368883079,
+          "duration" : 103
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通考试】——生成考试id",
+        "uid" : "465f5dd2af3dfd7",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368890345,
+          "stop" : 1636368890419,
+          "duration" : 74
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【广告配置】——查询广告标题",
+        "uid" : "c2323285a556c397",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1636368891777,
+          "stop" : 1636368891853,
+          "duration" : 76
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-删除队列更新任务",
+        "uid" : "544e7fef5f7344eb",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368889233,
+          "stop" : 1636368889324,
+          "duration" : 91
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-查询组织试题",
+        "uid" : "2238015f589d0d1",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368884148,
+          "stop" : 1636368884388,
+          "duration" : 240
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【普通试题】-试题批量导入",
+        "uid" : "1c42181d49903583",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368887990,
+          "stop" : 1636368888130,
+          "duration" : 140
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【广告配置】——广告撤销",
+        "uid" : "9a7149647f865d24",
+        "parentUid" : "71c8056fc6b13eb354118acf41446656",
+        "status" : "passed",
+        "time" : {
+          "start" : 1636368892976,
+          "stop" : 1636368893059,
+          "duration" : 83
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "71c8056fc6b13eb354118acf41446656"
+    }, {
+      "name" : "10268-MainThread",
+      "children" : [ {
+        "name" : "test_config_token",
+        "uid" : "9abb91150aabe239",
+        "parentUid" : "42d0ef7687355fe7e54caad01d1cf7a1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634806814618,
+          "stop" : 1634806814621,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_run[api_data5]",
+        "uid" : "befaf766c034b856",
+        "parentUid" : "42d0ef7687355fe7e54caad01d1cf7a1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1634806815312,
+          "stop" : 1634806815312,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——查询授权组织",
+        "uid" : "c606c849f94c936b",
+        "parentUid" : "42d0ef7687355fe7e54caad01d1cf7a1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634806814811,
+          "stop" : 1634806814934,
+          "duration" : 123
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——查询组织操作类型",
+        "uid" : "51d7ca55e470b97a",
+        "parentUid" : "42d0ef7687355fe7e54caad01d1cf7a1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634806814939,
+          "stop" : 1634806815037,
+          "duration" : 98
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_run[api_data6]",
+        "uid" : "b6deef23fd2db0c1",
+        "parentUid" : "42d0ef7687355fe7e54caad01d1cf7a1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1634806815325,
+          "stop" : 1634806815325,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——查询公告开放时间",
+        "uid" : "70273c3fdd634d96",
+        "parentUid" : "42d0ef7687355fe7e54caad01d1cf7a1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634806814728,
+          "stop" : 1634806814804,
+          "duration" : 76
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——新增公告",
+        "uid" : "528c8ff3db303cb9",
+        "parentUid" : "42d0ef7687355fe7e54caad01d1cf7a1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1634806815044,
+          "stop" : 1634806815132,
+          "duration" : 88
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "test_run[api_data7]",
-        "uid" : "455347df9843b1b5",
+        "uid" : "66cdb4a29d7626c",
+        "parentUid" : "42d0ef7687355fe7e54caad01d1cf7a1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1634806815338,
+          "stop" : 1634806815338,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_run[api_data8]",
+        "uid" : "1484ed667cd5afb",
+        "parentUid" : "42d0ef7687355fe7e54caad01d1cf7a1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1634806815350,
+          "stop" : 1634806815350,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——查询公告标题",
+        "uid" : "4015457eb905a5a4",
+        "parentUid" : "42d0ef7687355fe7e54caad01d1cf7a1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634806814626,
+          "stop" : 1634806814723,
+          "duration" : 97
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "42d0ef7687355fe7e54caad01d1cf7a1"
+    }, {
+      "name" : "36132-MainThread",
+      "children" : [ {
+        "name" : "【公告配置】——查询公告标题",
+        "uid" : "c72eff96036bf1d9",
+        "parentUid" : "90d29f31713f6618908720d96d9b8948",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634807108199,
+          "stop" : 1634807136834,
+          "duration" : 28635
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_config_token",
+        "uid" : "46cd7e995f71976c",
+        "parentUid" : "90d29f31713f6618908720d96d9b8948",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634807108185,
+          "stop" : 1634807108191,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "90d29f31713f6618908720d96d9b8948"
+    }, {
+      "name" : "37024-MainThread",
+      "children" : [ {
+        "name" : "test_run[api_data7]",
+        "uid" : "952ca462df7b2a15",
         "parentUid" : "b1b0274f7770b003fd6293e437506084",
         "status" : "broken",
         "time" : {
@@ -300,34 +3332,21 @@
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "test_run[api_data6]",
-        "uid" : "9afcf0780240cce7",
-        "parentUid" : "b1b0274f7770b003fd6293e437506084",
-        "status" : "broken",
-        "time" : {
-          "start" : 1634806856796,
-          "stop" : 1634806858023,
-          "duration" : 1227
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "【公告配置】——查询组织操作类型",
-        "uid" : "a922385cad76047a",
+        "name" : "【公告配置】——查询公告开放时间",
+        "uid" : "511e8ab8fbd3344f",
         "parentUid" : "b1b0274f7770b003fd6293e437506084",
         "status" : "passed",
         "time" : {
-          "start" : 1634806846200,
-          "stop" : 1634806848593,
-          "duration" : 2393
+          "start" : 1634806844940,
+          "stop" : 1634806845568,
+          "duration" : 628
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "test_run[api_data5]",
-        "uid" : "5107c5efd0eb5fda",
+        "uid" : "8b437a06cd3421b9",
         "parentUid" : "b1b0274f7770b003fd6293e437506084",
         "status" : "broken",
         "time" : {
@@ -339,21 +3358,8 @@
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "test_run[api_data8]",
-        "uid" : "3e24cedff180b179",
-        "parentUid" : "b1b0274f7770b003fd6293e437506084",
-        "status" : "broken",
-        "time" : {
-          "start" : 1634806861052,
-          "stop" : 1634806862381,
-          "duration" : 1329
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
         "name" : "test_config_token",
-        "uid" : "4e21913c07885d3a",
+        "uid" : "6700358b14068b34",
         "parentUid" : "b1b0274f7770b003fd6293e437506084",
         "status" : "passed",
         "time" : {
@@ -365,8 +3371,21 @@
         "newFailed" : false,
         "parameters" : [ ]
       }, {
+        "name" : "test_run[api_data6]",
+        "uid" : "c2b22bfa7ce97cea",
+        "parentUid" : "b1b0274f7770b003fd6293e437506084",
+        "status" : "broken",
+        "time" : {
+          "start" : 1634806856796,
+          "stop" : 1634806858023,
+          "duration" : 1227
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
         "name" : "【公告配置】——新增公告",
-        "uid" : "11a719ddb4c91975",
+        "uid" : "3698e72f69f71cd9",
         "parentUid" : "b1b0274f7770b003fd6293e437506084",
         "status" : "broken",
         "time" : {
@@ -378,8 +3397,34 @@
         "newFailed" : false,
         "parameters" : [ ]
       }, {
+        "name" : "【公告配置】——查询授权组织",
+        "uid" : "ff3667171e12e5f7",
+        "parentUid" : "b1b0274f7770b003fd6293e437506084",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634806845576,
+          "stop" : 1634806846191,
+          "duration" : 615
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_run[api_data8]",
+        "uid" : "53641c7c95bec03b",
+        "parentUid" : "b1b0274f7770b003fd6293e437506084",
+        "status" : "broken",
+        "time" : {
+          "start" : 1634806861052,
+          "stop" : 1634806862381,
+          "duration" : 1329
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
         "name" : "【公告配置】——查询公告标题",
-        "uid" : "581b8a1a5878da89",
+        "uid" : "324dfd9b58f19734",
         "parentUid" : "b1b0274f7770b003fd6293e437506084",
         "status" : "passed",
         "time" : {
@@ -391,14 +3436,14 @@
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "【公告配置】——查询授权组织",
-        "uid" : "ad034fcd049c6c17",
+        "name" : "【公告配置】——查询组织操作类型",
+        "uid" : "ef2f84077d4be870",
         "parentUid" : "b1b0274f7770b003fd6293e437506084",
         "status" : "passed",
         "time" : {
-          "start" : 1634806845576,
-          "stop" : 1634806846191,
-          "duration" : 615
+          "start" : 1634806846200,
+          "stop" : 1634806848593,
+          "duration" : 2393
         },
         "flaky" : false,
         "newFailed" : false,
@@ -406,213 +3451,10 @@
       } ],
       "uid" : "b1b0274f7770b003fd6293e437506084"
     }, {
-      "name" : "50864-MainThread",
-      "children" : [ {
-        "name" : "【公告配置】——查询公告标题",
-        "uid" : "26153ed8acf3a827",
-        "parentUid" : "6ee51a3b71ddf822ed7683ee31c129eb",
-        "status" : "passed",
-        "time" : {
-          "start" : 1634806790490,
-          "stop" : 1634806790569,
-          "duration" : 79
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "【公告配置】——删除公告",
-        "uid" : "69b5b5dd17b77806",
-        "parentUid" : "6ee51a3b71ddf822ed7683ee31c129eb",
-        "status" : "passed",
-        "time" : {
-          "start" : 1634806791190,
-          "stop" : 1634806791268,
-          "duration" : 78
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "【公告配置】——置顶公告",
-        "uid" : "5a4b765ef75b88d8",
-        "parentUid" : "6ee51a3b71ddf822ed7683ee31c129eb",
-        "status" : "passed",
-        "time" : {
-          "start" : 1634806790949,
-          "stop" : 1634806791023,
-          "duration" : 74
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "【公告配置】——查询公告开放时间",
-        "uid" : "f30439df96b3a419",
-        "parentUid" : "6ee51a3b71ddf822ed7683ee31c129eb",
-        "status" : "passed",
-        "time" : {
-          "start" : 1634806790577,
-          "stop" : 1634806790652,
-          "duration" : 75
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "【公告配置】——查询授权组织",
-        "uid" : "260d6c0c6296a431",
-        "parentUid" : "6ee51a3b71ddf822ed7683ee31c129eb",
-        "status" : "passed",
-        "time" : {
-          "start" : 1634806790656,
-          "stop" : 1634806790778,
-          "duration" : 122
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "【公告配置】——查询组织操作类型",
-        "uid" : "baf8ecf7e4d5a4fc",
-        "parentUid" : "6ee51a3b71ddf822ed7683ee31c129eb",
-        "status" : "passed",
-        "time" : {
-          "start" : 1634806790782,
-          "stop" : 1634806790859,
-          "duration" : 77
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_config_token",
-        "uid" : "3278f605db611383",
-        "parentUid" : "6ee51a3b71ddf822ed7683ee31c129eb",
-        "status" : "passed",
-        "time" : {
-          "start" : 1634806790481,
-          "stop" : 1634806790483,
-          "duration" : 2
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "【公告配置】——新增公告",
-        "uid" : "d1fbe2c9098546db",
-        "parentUid" : "6ee51a3b71ddf822ed7683ee31c129eb",
-        "status" : "passed",
-        "time" : {
-          "start" : 1634806790863,
-          "stop" : 1634806790945,
-          "duration" : 82
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "【公告配置】——取消置顶公告",
-        "uid" : "6d839efb2581eba7",
-        "parentUid" : "6ee51a3b71ddf822ed7683ee31c129eb",
-        "status" : "passed",
-        "time" : {
-          "start" : 1634806791026,
-          "stop" : 1634806791109,
-          "duration" : 83
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "【公告配置】——修改公告",
-        "uid" : "b1d500653949dc35",
-        "parentUid" : "6ee51a3b71ddf822ed7683ee31c129eb",
-        "status" : "passed",
-        "time" : {
-          "start" : 1634806791113,
-          "stop" : 1634806791185,
-          "duration" : 72
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "6ee51a3b71ddf822ed7683ee31c129eb"
-    }, {
-      "name" : "36132-MainThread",
-      "children" : [ {
-        "name" : "test_config_token",
-        "uid" : "fa227c25da5f9b77",
-        "parentUid" : "90d29f31713f6618908720d96d9b8948",
-        "status" : "passed",
-        "time" : {
-          "start" : 1634807108185,
-          "stop" : 1634807108191,
-          "duration" : 6
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "【公告配置】——查询公告标题",
-        "uid" : "f704286eb789d046",
-        "parentUid" : "90d29f31713f6618908720d96d9b8948",
-        "status" : "passed",
-        "time" : {
-          "start" : 1634807108199,
-          "stop" : 1634807136834,
-          "duration" : 28635
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "90d29f31713f6618908720d96d9b8948"
-    }, {
       "name" : "14500-MainThread",
       "children" : [ {
-        "name" : "【公告配置】——新增公告",
-        "uid" : "ef1eaff671d09fb2",
-        "parentUid" : "badc3739c1bbb8262c9b101266f66919",
-        "status" : "passed",
-        "time" : {
-          "start" : 1634806656481,
-          "stop" : 1634806656566,
-          "duration" : 85
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "【公告配置】——修改公告",
-        "uid" : "8782102942ea110a",
-        "parentUid" : "badc3739c1bbb8262c9b101266f66919",
-        "status" : "passed",
-        "time" : {
-          "start" : 1634806656755,
-          "stop" : 1634806656837,
-          "duration" : 82
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "【公告配置】——删除公告",
-        "uid" : "cee99da3a8fde7a6",
-        "parentUid" : "badc3739c1bbb8262c9b101266f66919",
-        "status" : "passed",
-        "time" : {
-          "start" : 1634806656841,
-          "stop" : 1634806656923,
-          "duration" : 82
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
         "name" : "【公告配置】——查询公告开放时间",
-        "uid" : "f8dc90292bbb7d05",
+        "uid" : "9ea345ff178520c",
         "parentUid" : "badc3739c1bbb8262c9b101266f66919",
         "status" : "passed",
         "time" : {
@@ -624,47 +3466,8 @@
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "【公告配置】——查询授权组织",
-        "uid" : "d954bec29b19c444",
-        "parentUid" : "badc3739c1bbb8262c9b101266f66919",
-        "status" : "passed",
-        "time" : {
-          "start" : 1634806656262,
-          "stop" : 1634806656391,
-          "duration" : 129
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "【公告配置】——置顶公告",
-        "uid" : "68ef2e4dd65e147f",
-        "parentUid" : "badc3739c1bbb8262c9b101266f66919",
-        "status" : "passed",
-        "time" : {
-          "start" : 1634806656574,
-          "stop" : 1634806656659,
-          "duration" : 85
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "【公告配置】——查询公告标题",
-        "uid" : "1a3312648fa3eb20",
-        "parentUid" : "badc3739c1bbb8262c9b101266f66919",
-        "status" : "passed",
-        "time" : {
-          "start" : 1634806656103,
-          "stop" : 1634806656176,
-          "duration" : 73
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
         "name" : "【公告配置】——查询组织操作类型",
-        "uid" : "d0e1343cd8061f32",
+        "uid" : "9cc59072a09abdb3",
         "parentUid" : "badc3739c1bbb8262c9b101266f66919",
         "status" : "passed",
         "time" : {
@@ -676,8 +3479,60 @@
         "newFailed" : false,
         "parameters" : [ ]
       }, {
+        "name" : "【公告配置】——查询公告标题",
+        "uid" : "bfb81d85cebf44ce",
+        "parentUid" : "badc3739c1bbb8262c9b101266f66919",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634806656103,
+          "stop" : 1634806656176,
+          "duration" : 73
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——修改公告",
+        "uid" : "e997558eb0a5aa78",
+        "parentUid" : "badc3739c1bbb8262c9b101266f66919",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634806656755,
+          "stop" : 1634806656837,
+          "duration" : 82
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——新增公告",
+        "uid" : "5cf49fbfe0bffcbb",
+        "parentUid" : "badc3739c1bbb8262c9b101266f66919",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634806656481,
+          "stop" : 1634806656566,
+          "duration" : 85
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——查询授权组织",
+        "uid" : "f93f0ff1a3dc77bc",
+        "parentUid" : "badc3739c1bbb8262c9b101266f66919",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634806656262,
+          "stop" : 1634806656391,
+          "duration" : 129
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
         "name" : "test_config_token",
-        "uid" : "7586b3dcaed61962",
+        "uid" : "98de045530b2ee15",
         "parentUid" : "badc3739c1bbb8262c9b101266f66919",
         "status" : "passed",
         "time" : {
@@ -689,8 +3544,34 @@
         "newFailed" : false,
         "parameters" : [ ]
       }, {
+        "name" : "【公告配置】——删除公告",
+        "uid" : "91a629a20499072b",
+        "parentUid" : "badc3739c1bbb8262c9b101266f66919",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634806656841,
+          "stop" : 1634806656923,
+          "duration" : 82
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——置顶公告",
+        "uid" : "b1a164734d639daf",
+        "parentUid" : "badc3739c1bbb8262c9b101266f66919",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634806656574,
+          "stop" : 1634806656659,
+          "duration" : 85
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
         "name" : "【公告配置】——取消置顶公告",
-        "uid" : "725db3e67d9de7a2",
+        "uid" : "11af1427f86d34cf",
         "parentUid" : "badc3739c1bbb8262c9b101266f66919",
         "status" : "passed",
         "time" : {
@@ -703,6 +3584,140 @@
         "parameters" : [ ]
       } ],
       "uid" : "badc3739c1bbb8262c9b101266f66919"
+    }, {
+      "name" : "50864-MainThread",
+      "children" : [ {
+        "name" : "【公告配置】——删除公告",
+        "uid" : "9238f36ae351beca",
+        "parentUid" : "6ee51a3b71ddf822ed7683ee31c129eb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634806791190,
+          "stop" : 1634806791268,
+          "duration" : 78
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——取消置顶公告",
+        "uid" : "8fec849ec5c0d49e",
+        "parentUid" : "6ee51a3b71ddf822ed7683ee31c129eb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634806791026,
+          "stop" : 1634806791109,
+          "duration" : 83
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——查询授权组织",
+        "uid" : "cc379e57d3d412ca",
+        "parentUid" : "6ee51a3b71ddf822ed7683ee31c129eb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634806790656,
+          "stop" : 1634806790778,
+          "duration" : 122
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——新增公告",
+        "uid" : "4882af4153b88d80",
+        "parentUid" : "6ee51a3b71ddf822ed7683ee31c129eb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634806790863,
+          "stop" : 1634806790945,
+          "duration" : 82
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——查询公告开放时间",
+        "uid" : "450787a480020c69",
+        "parentUid" : "6ee51a3b71ddf822ed7683ee31c129eb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634806790577,
+          "stop" : 1634806790652,
+          "duration" : 75
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——修改公告",
+        "uid" : "5ea94facf664a342",
+        "parentUid" : "6ee51a3b71ddf822ed7683ee31c129eb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634806791113,
+          "stop" : 1634806791185,
+          "duration" : 72
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_config_token",
+        "uid" : "458862698bc33979",
+        "parentUid" : "6ee51a3b71ddf822ed7683ee31c129eb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634806790481,
+          "stop" : 1634806790483,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——查询组织操作类型",
+        "uid" : "d3a363b0476e78a3",
+        "parentUid" : "6ee51a3b71ddf822ed7683ee31c129eb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634806790782,
+          "stop" : 1634806790859,
+          "duration" : 77
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——置顶公告",
+        "uid" : "8aec4add2b0198a8",
+        "parentUid" : "6ee51a3b71ddf822ed7683ee31c129eb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634806790949,
+          "stop" : 1634806791023,
+          "duration" : 74
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "【公告配置】——查询公告标题",
+        "uid" : "30b67b72e5188ef2",
+        "parentUid" : "6ee51a3b71ddf822ed7683ee31c129eb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1634806790490,
+          "stop" : 1634806790569,
+          "duration" : 79
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6ee51a3b71ddf822ed7683ee31c129eb"
     } ],
     "uid" : "24c01948fc7a6d7fc1d0cc2cf2b8de07"
   } ]

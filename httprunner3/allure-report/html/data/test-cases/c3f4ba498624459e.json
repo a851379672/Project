@@ -1,0 +1,156 @@
+{
+  "uid" : "c3f4ba498624459e",
+  "name" : "【广告配置】——广告发布",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "db61bed12ca90e7fe392a2b342f58748",
+  "time" : {
+    "start" : 1636452487522,
+    "stop" : 1636452487678,
+    "duration" : 156
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1636452472903,
+      "stop" : 1636452472908,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1636452472283,
+      "stop" : 1636452472902,
+      "duration" : 619
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "38aa7c59fc355d3c",
+      "name" : "log",
+      "source" : "38aa7c59fc355d3c.txt",
+      "type" : "text/plain",
+      "size" : 253
+    }, {
+      "uid" : "414b18f6d7113b3",
+      "name" : "stderr",
+      "source" : "414b18f6d7113b3.txt",
+      "type" : "text/plain",
+      "size" : 1616
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1636452490813,
+      "stop" : 1636452490813,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【广告配置】——广告发布"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "18052-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "https://tester1.zhixueyun.com/api/v1/exam/banner/publish/${bannersId}",
+    "url" : "https://tester1.zhixueyun.com/api/v1/exam/banner/publish/${bannersId}",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "d6b47a14368c9eb",
+      "status" : "broken",
+      "statusDetails" : "TypeError: replace() argument 2 must be str, not None",
+      "time" : {
+        "start" : 1636451241969,
+        "stop" : 1636451241969,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "395e224ac2122712",
+      "status" : "passed",
+      "time" : {
+        "start" : 1636368892771,
+        "stop" : 1636368892882,
+        "duration" : 111
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c3f4ba498624459e.json",
+  "parameterValues" : [ ]
+}

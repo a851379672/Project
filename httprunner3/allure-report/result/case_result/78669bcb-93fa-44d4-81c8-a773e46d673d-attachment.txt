@@ -1,0 +1,3 @@
+INFO     root:data_depend.py:40 提取变量：paixuid: 89847294-3362-42d7-8d95-9162a70373f7
+INFO     root:data_depend.py:40 提取变量：paixuname: 试题目录1-排序题1
+INFO     root:validate.py:57 响应断言： 预期值：'8' 实际值：'8', 断言成功!

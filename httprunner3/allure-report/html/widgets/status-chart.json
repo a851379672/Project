@@ -1,100 +1,770 @@
 [ {
-  "uid" : "fa227c25da5f9b77",
-  "name" : "test_config_token",
+  "uid" : "a05f421bf9f7729a",
+  "name" : "【广告配置】——广告修改",
   "time" : {
-    "start" : 1634807108185,
-    "stop" : 1634807108191,
-    "duration" : 6
+    "start" : 1636452488394,
+    "stop" : 1636452488561,
+    "duration" : 167
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "f704286eb789d046",
-  "name" : "【公告配置】——查询公告标题",
+  "uid" : "aac3e50f8dd54a0d",
+  "name" : "【普通试题】——修改判断题",
   "time" : {
-    "start" : 1634807108199,
-    "stop" : 1634807136834,
-    "duration" : 28635
+    "start" : 1636452476621,
+    "stop" : 1636452476972,
+    "duration" : 351
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "455347df9843b1b5",
-  "name" : "test_run[api_data7]",
+  "uid" : "9dc9712187843a0f",
+  "name" : "【广告配置】——获取认证考试",
   "time" : {
-    "start" : 1634806858058,
-    "stop" : 1634806861016,
-    "duration" : 2958
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "a922385cad76047a",
-  "name" : "【公告配置】——查询组织操作类型",
-  "time" : {
-    "start" : 1634806846200,
-    "stop" : 1634806848593,
-    "duration" : 2393
+    "start" : 1636452487201,
+    "stop" : 1636452487378,
+    "duration" : 177
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "5107c5efd0eb5fda",
-  "name" : "test_run[api_data5]",
+  "uid" : "e5d61940f34dfca6",
+  "name" : "【普通试题】——新增多选题",
   "time" : {
-    "start" : 1634806850230,
-    "stop" : 1634806856751,
-    "duration" : 6521
+    "start" : 1636452476098,
+    "stop" : 1636452476297,
+    "duration" : 199
   },
-  "status" : "broken",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "9b416efec520d8df",
+  "uid" : "997b63123cff2085",
+  "name" : "【普通试题】——查看任务队列",
+  "time" : {
+    "start" : 1636452481666,
+    "stop" : 1636452481893,
+    "duration" : 227
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "471b24afa281182a",
+  "name" : "【普通试题】——修改单选题",
+  "time" : {
+    "start" : 1636452475922,
+    "stop" : 1636452476093,
+    "duration" : 171
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bcdfc838d22abff0",
+  "name" : "【普通试题】——删除多选题",
+  "time" : {
+    "start" : 1636452479232,
+    "stop" : 1636452479383,
+    "duration" : 151
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fb36666cac0baf31",
+  "name" : "【普通试题】——删除阅读理解题",
+  "time" : {
+    "start" : 1636452480097,
+    "stop" : 1636452480265,
+    "duration" : 168
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6b32e257b55333dd",
+  "name" : "【普通试题】——查询组织试题",
+  "time" : {
+    "start" : 1636452475697,
+    "stop" : 1636452475916,
+    "duration" : 219
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cc478042c2c2bd6c",
   "name" : "【公告配置】——查询公告开放时间",
   "time" : {
-    "start" : 1634806844940,
-    "stop" : 1634806845568,
-    "duration" : 628
+    "start" : 1636452489010,
+    "stop" : 1636452489280,
+    "duration" : 270
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "9afcf0780240cce7",
-  "name" : "test_run[api_data6]",
+  "uid" : "738d878bccf6f46b",
+  "name" : "【普通试题】——删除导入试题",
   "time" : {
-    "start" : 1634806856796,
-    "stop" : 1634806858023,
-    "duration" : 1227
+    "start" : 1636452482687,
+    "stop" : 1636452483338,
+    "duration" : 651
   },
-  "status" : "broken",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "11a719ddb4c91975",
-  "name" : "【公告配置】——新增公告",
+  "uid" : "22a07d87316e5686",
+  "name" : "【普通试题】——新增单选题",
   "time" : {
-    "start" : 1634806848608,
-    "stop" : 1634806849950,
-    "duration" : 1342
+    "start" : 1636452475302,
+    "stop" : 1636452475689,
+    "duration" : 387
   },
-  "status" : "broken",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "3e24cedff180b179",
-  "name" : "test_run[api_data8]",
+  "uid" : "c44343549b1f2e90",
+  "name" : "【公告配置】——修改公告",
   "time" : {
-    "start" : 1634806861052,
-    "stop" : 1634806862381,
-    "duration" : 1329
+    "start" : 1636452490330,
+    "stop" : 1636452490664,
+    "duration" : 334
   },
-  "status" : "broken",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "ad034fcd049c6c17",
+  "uid" : "ada1393913fd6402",
+  "name" : "【普通试题】——删除排序题",
+  "time" : {
+    "start" : 1636452480270,
+    "stop" : 1636452480419,
+    "duration" : 149
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "965aade014dc79d3",
+  "name" : "【普通试题】——删除队列导入任务",
+  "time" : {
+    "start" : 1636452482092,
+    "stop" : 1636452482257,
+    "duration" : 165
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "303f47474fde1421",
+  "name" : "【普通试题】——新增判断题",
+  "time" : {
+    "start" : 1636452476461,
+    "stop" : 1636452476617,
+    "duration" : 156
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8abe588464b9c1f2",
+  "name" : "【普通试题】——试题目录导出",
+  "time" : {
+    "start" : 1636452481484,
+    "stop" : 1636452481661,
+    "duration" : 177
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8831a910b55ef4ff",
+  "name" : "【普通考试】——获取所有设备类型",
+  "time" : {
+    "start" : 1636452483893,
+    "stop" : 1636452484065,
+    "duration" : 172
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f904b7cb2bd08530",
+  "name" : "【普通试题】——修改问答题",
+  "time" : {
+    "start" : 1636452477829,
+    "stop" : 1636452477971,
+    "duration" : 142
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b696bbebf13a6068",
+  "name" : "【普通考试】——确认封面图片",
+  "time" : {
+    "start" : 1636452484926,
+    "stop" : 1636452485756,
+    "duration" : 830
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "89b921b6b007609d",
+  "name" : "【普通试题】——防录屏配置规则",
+  "time" : {
+    "start" : 1636452473123,
+    "stop" : 1636452473265,
+    "duration" : 142
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fe6dad0e43cb66db",
+  "name" : "【普通试题】——查询试题目录",
+  "time" : {
+    "start" : 1636452474940,
+    "stop" : 1636452475088,
+    "duration" : 148
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c3f4ba498624459e",
+  "name" : "【广告配置】——广告发布",
+  "time" : {
+    "start" : 1636452487522,
+    "stop" : 1636452487678,
+    "duration" : 156
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f919e1fd1d321778",
+  "name" : "【普通试题】——音视频完成规则",
+  "time" : {
+    "start" : 1636452472916,
+    "stop" : 1636452473117,
+    "duration" : 201
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e5f5ead1ebe59957",
+  "name" : "【普通试题】——提交试题目录修改",
+  "time" : {
+    "start" : 1636452481341,
+    "stop" : 1636452481479,
+    "duration" : 138
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9ed3f725ff17761f",
+  "name" : "【普通试题】——新增排序题",
+  "time" : {
+    "start" : 1636452478558,
+    "stop" : 1636452478736,
+    "duration" : 178
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6331c8d8194806aa",
+  "name" : "【普通试题】——查询目录试题",
+  "time" : {
+    "start" : 1636452482265,
+    "stop" : 1636452482497,
+    "duration" : 232
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f9321dd24b40a6d8",
+  "name" : "【普通试题】——试题批量更新",
+  "time" : {
+    "start" : 1636452480758,
+    "stop" : 1636452481004,
+    "duration" : 246
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c4c587629199c9ce",
+  "name" : "【普通试题】——新建试题目录",
+  "time" : {
+    "start" : 1636452474540,
+    "stop" : 1636452474932,
+    "duration" : 392
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "462e854c229cd926",
+  "name" : "【普通考试】——生成考试id",
+  "time" : {
+    "start" : 1636452483750,
+    "stop" : 1636452483886,
+    "duration" : 136
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "863cdc81beb724b6",
+  "name" : "【普通试题】——查询组织试题",
+  "time" : {
+    "start" : 1636452473889,
+    "stop" : 1636452474315,
+    "duration" : 426
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "372cf0a3b2ebe86c",
+  "name" : "【普通考试】——人脸识别规则",
+  "time" : {
+    "start" : 1636452483596,
+    "stop" : 1636452483745,
+    "duration" : 149
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2440b51b3fa2b9a4",
+  "name" : "【普通考试】——考试开始时间",
+  "time" : {
+    "start" : 1636452484070,
+    "stop" : 1636452484243,
+    "duration" : 173
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3e294394c64418b8",
+  "name" : "test_config_token",
+  "time" : {
+    "start" : 1636452472909,
+    "stop" : 1636452472912,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d339d8eb10f3b48f",
+  "name" : "【普通试题】——修改阅读理解题",
+  "time" : {
+    "start" : 1636452478418,
+    "stop" : 1636452478553,
+    "duration" : 135
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e0dacb80dae0313f",
+  "name" : "【普通试题】——新增填空题",
+  "time" : {
+    "start" : 1636452476980,
+    "stop" : 1636452477400,
+    "duration" : 420
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "54c318a82f2fc8a3",
+  "name" : "【普通考试】——获取授权组织",
+  "time" : {
+    "start" : 1636452484378,
+    "stop" : 1636452484508,
+    "duration" : 130
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1f33c613d7b02197",
+  "name" : "【普通试题】——获取目录编码",
+  "time" : {
+    "start" : 1636452474323,
+    "stop" : 1636452474534,
+    "duration" : 211
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ae379cda800a21b9",
+  "name" : "【普通试题】——删除判断题",
+  "time" : {
+    "start" : 1636452479388,
+    "stop" : 1636452479550,
+    "duration" : 162
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3d4a3939f080d4c9",
+  "name" : "【普通试题】——查询组织目录",
+  "time" : {
+    "start" : 1636452473528,
+    "stop" : 1636452473882,
+    "duration" : 354
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "706af38853520c0e",
+  "name" : "【普通考试】——获取推荐标签",
+  "time" : {
+    "start" : 1636452484247,
+    "stop" : 1636452484371,
+    "duration" : 124
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f3b86222bd5dbc7f",
+  "name" : "【普通试题】——点击试题目录修改",
+  "time" : {
+    "start" : 1636452481171,
+    "stop" : 1636452481336,
+    "duration" : 165
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b7b9908a7a2f7f07",
+  "name" : "【公告配置】——查询公告标题",
+  "time" : {
+    "start" : 1636452488802,
+    "stop" : 1636452489002,
+    "duration" : 200
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9a3bcb3cdf88e203",
+  "name" : "【广告配置】——查询组织操作类型",
+  "time" : {
+    "start" : 1636452486509,
+    "stop" : 1636452486666,
+    "duration" : 157
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "755d2bfcd48e8a0a",
+  "name" : "【普通试题】——查询目录编码",
+  "time" : {
+    "start" : 1636452475092,
+    "stop" : 1636452475296,
+    "duration" : 204
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "574315054aa2a056",
+  "name" : "【普通试题】——修改多选题",
+  "time" : {
+    "start" : 1636452476304,
+    "stop" : 1636452476453,
+    "duration" : 149
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "18f004bd39c89545",
+  "name" : "【普通试题】——新增阅读理解",
+  "time" : {
+    "start" : 1636452477976,
+    "stop" : 1636452478408,
+    "duration" : 432
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "67280f25932a3e71",
+  "name" : "【普通试题】——修改填空题",
+  "time" : {
+    "start" : 1636452477406,
+    "stop" : 1636452477629,
+    "duration" : 223
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6e8dc80c4678b29e",
+  "name" : "【普通试题】——修改排序题",
+  "time" : {
+    "start" : 1636452478743,
+    "stop" : 1636452478930,
+    "duration" : 187
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "707fab26725a51a6",
+  "name" : "【广告配置】——广告删除",
+  "time" : {
+    "start" : 1636452488566,
+    "stop" : 1636452488795,
+    "duration" : 229
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6fce4c30a84113e7",
+  "name" : "【普通试题】——试题导出",
+  "time" : {
+    "start" : 1636452478936,
+    "stop" : 1636452479062,
+    "duration" : 126
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8493a74917645032",
+  "name" : "【广告配置】——广告保存",
+  "time" : {
+    "start" : 1636452487383,
+    "stop" : 1636452487516,
+    "duration" : 133
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a4ae62f9af68abfc",
+  "name" : "【普通试题】——删除队列更新任务",
+  "time" : {
+    "start" : 1636452481901,
+    "stop" : 1636452482086,
+    "duration" : 185
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3a2df733e603cc0",
+  "name" : "【普通试题】——删除单选题",
+  "time" : {
+    "start" : 1636452479068,
+    "stop" : 1636452479227,
+    "duration" : 159
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9d21724d50fdb3d9",
+  "name" : "【普通试题】——新增问答题",
+  "time" : {
+    "start" : 1636452477655,
+    "stop" : 1636452477824,
+    "duration" : 169
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "61ace16408c942b4",
+  "name" : "【广告配置】——查询授权组织",
+  "time" : {
+    "start" : 1636452486375,
+    "stop" : 1636452486502,
+    "duration" : 127
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ed14eca8439dc61b",
+  "name" : "【普通试题】——发布导入试题",
+  "time" : {
+    "start" : 1636452482505,
+    "stop" : 1636452482683,
+    "duration" : 178
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4c83c7391a50e1df",
+  "name" : "【普通试题】——删除试题目录",
+  "time" : {
+    "start" : 1636452483347,
+    "stop" : 1636452483590,
+    "duration" : 243
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3472d98d3d704fe5",
+  "name" : "【公告配置】——查询组织操作类型",
+  "time" : {
+    "start" : 1636452489640,
+    "stop" : 1636452489789,
+    "duration" : 149
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "95603be3c53682ec",
   "name" : "【公告配置】——查询授权组织",
   "time" : {
-    "start" : 1634806845576,
-    "stop" : 1634806846191,
-    "duration" : 615
+    "start" : 1636452489289,
+    "stop" : 1636452489635,
+    "duration" : 346
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fa098ce74f57c084",
+  "name" : "【公告配置】——取消置顶公告",
+  "time" : {
+    "start" : 1636452490103,
+    "stop" : 1636452490319,
+    "duration" : 216
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "839890201770cbf7",
+  "name" : "【公告配置】——删除公告",
+  "time" : {
+    "start" : 1636452490675,
+    "stop" : 1636452490812,
+    "duration" : 137
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c757749c76853752",
+  "name" : "【普通试题】——查询组织操作类型",
+  "time" : {
+    "start" : 1636452473403,
+    "stop" : 1636452473523,
+    "duration" : 120
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e9206146142fc6fa",
+  "name" : "【广告配置】——上传广告封面",
+  "time" : {
+    "start" : 1636452486671,
+    "stop" : 1636452487194,
+    "duration" : 523
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "af5d5a07bddacfee",
+  "name" : "【公告配置】——新增公告",
+  "time" : {
+    "start" : 1636452489794,
+    "stop" : 1636452489949,
+    "duration" : 155
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "92a7fb8c74d8124b",
+  "name" : "【普通试题】——批处理异步更新",
+  "time" : {
+    "start" : 1636452481009,
+    "stop" : 1636452481166,
+    "duration" : 157
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1e67f133f11ea026",
+  "name" : "【广告配置】——广告排序",
+  "time" : {
+    "start" : 1636452487682,
+    "stop" : 1636452488228,
+    "duration" : 546
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "62b61cc013121007",
+  "name" : "【普通试题】——试题批量导入",
+  "time" : {
+    "start" : 1636452480427,
+    "stop" : 1636452480606,
+    "duration" : 179
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1a3f55747d557037",
+  "name" : "【广告配置】——广告撤销",
+  "time" : {
+    "start" : 1636452488235,
+    "stop" : 1636452488387,
+    "duration" : 152
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3795e188b2c38897",
+  "name" : "【普通考试】——提交考试封面",
+  "time" : {
+    "start" : 1636452485762,
+    "stop" : 1636452486219,
+    "duration" : 457
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "82e438b2fb226ab4",
+  "name" : "【普通考试】——上传考试封面",
+  "time" : {
+    "start" : 1636452484514,
+    "stop" : 1636452484918,
+    "duration" : 404
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f426a43e1abc015f",
+  "name" : "【普通试题】——删除填空题",
+  "time" : {
+    "start" : 1636452479555,
+    "stop" : 1636452479947,
+    "duration" : 392
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c9d55a3c15168d18",
+  "name" : "【普通试题】——批处理异步导入",
+  "time" : {
+    "start" : 1636452480611,
+    "stop" : 1636452480752,
+    "duration" : 141
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "90a5c73b9de38dd8",
+  "name" : "【公告配置】——置顶公告",
+  "time" : {
+    "start" : 1636452489954,
+    "stop" : 1636452490098,
+    "duration" : 144
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "715a96520f88a4be",
+  "name" : "【普通试题】——查询授权节点",
+  "time" : {
+    "start" : 1636452473269,
+    "stop" : 1636452473397,
+    "duration" : 128
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f699a9d23fbbdee7",
+  "name" : "【广告配置】——查询广告标题",
+  "time" : {
+    "start" : 1636452486230,
+    "stop" : 1636452486370,
+    "duration" : 140
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "caa29dea38ef0bcf",
+  "name" : "【普通试题】——删除问答题",
+  "time" : {
+    "start" : 1636452479952,
+    "stop" : 1636452480093,
+    "duration" : 141
   },
   "status" : "passed",
   "severity" : "normal"

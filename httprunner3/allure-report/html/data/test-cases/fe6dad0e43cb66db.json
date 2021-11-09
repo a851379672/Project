@@ -1,0 +1,197 @@
+{
+  "uid" : "fe6dad0e43cb66db",
+  "name" : "【普通试题】——查询试题目录",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "a55ee9e1686786c45c028e484396efd9",
+  "time" : {
+    "start" : 1636452474940,
+    "stop" : 1636452475088,
+    "duration" : 148
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1636452472903,
+      "stop" : 1636452472908,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1636452472283,
+      "stop" : 1636452472902,
+      "duration" : 619
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e8d7652be6a798b3",
+      "name" : "log",
+      "source" : "e8d7652be6a798b3.txt",
+      "type" : "text/plain",
+      "size" : 115
+    }, {
+      "uid" : "9233c8ad61e4a5ec",
+      "name" : "stderr",
+      "source" : "9233c8ad61e4a5ec.txt",
+      "type" : "text/plain",
+      "size" : 1577
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1636452490813,
+      "stop" : 1636452490813,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【普通试题】——查询试题目录"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "18052-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "https://tester1.zhixueyun.com/api/v1/exam/question-depot",
+    "url" : "https://tester1.zhixueyun.com/api/v1/exam/question-depot",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "f6834bf309ecf294",
+      "status" : "passed",
+      "time" : {
+        "start" : 1636451227652,
+        "stop" : 1636451227788,
+        "duration" : 136
+      }
+    }, {
+      "uid" : "b58e230d8048d638",
+      "status" : "passed",
+      "time" : {
+        "start" : 1636368883765,
+        "stop" : 1636368883867,
+        "duration" : 102
+      }
+    }, {
+      "uid" : "53641c7c95bec03b",
+      "status" : "broken",
+      "statusDetails" : "TypeError: replace() argument 2 must be str, not None",
+      "time" : {
+        "start" : 1634806861052,
+        "stop" : 1634806862381,
+        "duration" : 1329
+      }
+    }, {
+      "uid" : "1484ed667cd5afb",
+      "status" : "broken",
+      "statusDetails" : "TypeError: replace() argument 2 must be str, not None",
+      "time" : {
+        "start" : 1634806815350,
+        "stop" : 1634806815350,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "9238f36ae351beca",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634806791190,
+        "stop" : 1634806791268,
+        "duration" : 78
+      }
+    }, {
+      "uid" : "9e6c9a1cd0ba601d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634806751479,
+        "stop" : 1634806751573,
+        "duration" : 94
+      }
+    }, {
+      "uid" : "91a629a20499072b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634806656841,
+        "stop" : 1634806656923,
+        "duration" : 82
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fe6dad0e43cb66db.json",
+  "parameterValues" : [ ]
+}

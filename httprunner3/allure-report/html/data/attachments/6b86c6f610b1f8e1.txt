@@ -1,0 +1,2 @@
+INFO     root:validate.py:57 响应断言： 预期值：'preer公告2' 实际值：'preer公告2', 断言成功!
+INFO     root:validate.py:57 响应断言： 预期值：'这里是preer公告2' 实际值：'这里是preer公告2', 断言成功!

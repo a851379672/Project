@@ -1,0 +1,46 @@
+2021-11-08 18:54:48.770 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : PUT
+url      : http://pre-202108-10.zhixueyun.com/api/v1/exam/question-depot/62c57f85-b3e4-4131-b02d-19cf2e05486f
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__63dee25121f52d578e31b63d9eae3001",
+    "uri": "exam/question-depot",
+    "Content-Length": "205",
+    "Content-Type": "application/x-www-form-urlencoded"
+}
+cookies  : {}
+body     : name=%E8%AF%95%E9%A2%98%E7%9B%AE%E5%BD%951&id=62c57f85-b3e4-4131-b02d-19cf2e05486f&organizationId=9bcad76a-ba7e-4ace-9f92-f6e086a29cec&code=preer1&sequence=1&state=0&authToLower=0&depotAuthToLower=0&type=1
+
+2021-11-08 18:54:48.770 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Mon, 08 Nov 2021 10:54:48 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "265",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "authToLower": 0,
+    "createTime": 1636368883782,
+    "depotAuthToLower": 0,
+    "id": "62c57f85-b3e4-4131-b02d-19cf2e05486f",
+    "name": "试题目录1",
+    "organization": null,
+    "organizationId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+    "parentId": null,
+    "parentName": null,
+    "sequence": 1,
+    "state": 0
+}
+
+2021-11-08 18:54:48,771 | D:\PyCharm\project\httprunner3\common\validate.py[line:57] | INFO: 响应断言： 预期值：'62c57f85-b3e4-4131-b02d-19cf2e05486f' 实际值：'62c57f85-b3e4-4131-b02d-19cf2e05486f', 断言成功!

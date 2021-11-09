@@ -1,0 +1,485 @@
+2021-11-08 18:54:43.573 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://pre-202108-10.zhixueyun.com/api/v1/exam/question?organizationId=9bcad76a-ba7e-4ace-9f92-f6e086a29cec&organization%5Bid%5D=9bcad76a-ba7e-4ace-9f92-f6e086a29cec&organization%5Bname%5D=preer&organization%5Bstate%5D=1&forbidden=0&depttype=1&url=exam%2Fquestion-depot&page=1&pageSize=10
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__63dee25121f52d578e31b63d9eae3001",
+    "uri": "exam/question-depot"
+}
+cookies  : {}
+body     : None
+
+2021-11-08 18:54:43.575 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Mon, 08 Nov 2021 10:54:43 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "items": [
+        {
+            "answerNum": null,
+            "content": "阅读理解题1",
+            "contentText": "阅读理解题1",
+            "createTime": 1635735955290,
+            "difficulty": 3,
+            "errorRate": 0,
+            "id": "dbbd6a57-1d64-4620-b8da-f86ab9c74a14",
+            "markAmount": null,
+            "organization": {
+                "company": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                },
+                "companyId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "name": "preer"
+            },
+            "originalQuestionId": "dbbd6a57-1d64-4620-b8da-f86ab9c74a14",
+            "parsing": null,
+            "parsingText": null,
+            "questionAttrs": null,
+            "questionDepot": {
+                "depotAuthToLower": 0,
+                "id": "9bdea305-5c5b-4dba-816b-33db606971ea",
+                "name": "preer"
+            },
+            "questionDepotId": "9bdea305-5c5b-4dba-816b-33db606971ea",
+            "recoveryCount": null,
+            "rightRate": 0,
+            "score": 1500,
+            "status": 1,
+            "subs": null,
+            "type": 6
+        },
+        {
+            "answerNum": null,
+            "content": "为什么测量大电容量对反映局部缺陷并不灵敏？ 2",
+            "contentText": "为什么测量大电容量对反映局部缺陷并不灵敏？ 2",
+            "createTime": 1635735824446,
+            "difficulty": 3,
+            "errorRate": 0,
+            "id": "088d8de1-4dbc-4332-a9cb-528ec3720894",
+            "markAmount": null,
+            "organization": {
+                "company": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                },
+                "companyId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "name": "preer"
+            },
+            "originalQuestionId": "088d8de1-4dbc-4332-a9cb-528ec3720894",
+            "parsing": "发电机20",
+            "parsingText": "发电机20",
+            "questionAttrs": [
+                {
+                    "id": "0bf86e17-876d-4933-907f-ef2d8420989c",
+                    "name": "0",
+                    "type": "5",
+                    "value": "一滴水可以映射太阳的光芒"
+                }
+            ],
+            "questionDepot": {
+                "depotAuthToLower": 0,
+                "id": "9bdea305-5c5b-4dba-816b-33db606971ea",
+                "name": "preer"
+            },
+            "questionDepotId": "9bdea305-5c5b-4dba-816b-33db606971ea",
+            "recoveryCount": null,
+            "rightRate": 0,
+            "score": 500,
+            "status": 1,
+            "subs": null,
+            "type": 5
+        },
+        {
+            "answerNum": null,
+            "content": "发电机变压器绕组绝缘受潮后，其吸收比（   ） 6",
+            "contentText": "发电机变压器绕组绝缘受潮后，其吸收比（   ） 6",
+            "createTime": 1635735824446,
+            "difficulty": 1,
+            "errorRate": 0,
+            "id": "187dac7e-e85e-4ced-9059-2e0b2084f718",
+            "markAmount": null,
+            "organization": {
+                "company": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                },
+                "companyId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "name": "preer"
+            },
+            "originalQuestionId": "187dac7e-e85e-4ced-9059-2e0b2084f718",
+            "parsing": "发电机6",
+            "parsingText": "发电机6",
+            "questionAttrs": [
+                {
+                    "id": "089844d8-391b-4bfe-a2c2-67c5717b9aa1",
+                    "name": "0",
+                    "type": "0",
+                    "value": "变大"
+                },
+                {
+                    "id": "8ca3e919-d0c1-4fab-899c-330a56725e98",
+                    "name": "1",
+                    "type": "1",
+                    "value": "变小"
+                },
+                {
+                    "id": "9b825925-8a21-442d-8c05-c27f64b7b95d",
+                    "name": "2",
+                    "type": "1",
+                    "value": "不变"
+                },
+                {
+                    "id": "efe51b38-bc70-4cac-8fac-f014789179b4",
+                    "name": "3",
+                    "type": "1",
+                    "value": "不稳定"
+                }
+            ],
+            "questionDepot": {
+                "depotAuthToLower": 0,
+                "id": "9bdea305-5c5b-4dba-816b-33db606971ea",
+                "name": "preer"
+            },
+            "questionDepotId": "9bdea305-5c5b-4dba-816b-33db606971ea",
+            "recoveryCount": null,
+            "rightRate": 0,
+            "score": 500,
+            "status": 1,
+            "subs": null,
+            "type": 1
+        },
+        {
+            "answerNum": null,
+            "content": "今天是星期(),明天星期()？3",
+            "contentText": "今天是星期(),明天星期()？3",
+            "createTime": 1635735824446,
+            "difficulty": 2,
+            "errorRate": 0,
+            "id": "27c3d898-dd0a-42db-bd2e-8d2e2fe74c2e",
+            "markAmount": null,
+            "organization": {
+                "company": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                },
+                "companyId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "name": "preer"
+            },
+            "originalQuestionId": "27c3d898-dd0a-42db-bd2e-8d2e2fe74c2e",
+            "parsing": "发电机27",
+            "parsingText": "发电机27",
+            "questionAttrs": [
+                {
+                    "id": "1ba96001-73a6-45c6-bdad-8c8996645968",
+                    "name": "0",
+                    "type": "4",
+                    "value": "一|二"
+                }
+            ],
+            "questionDepot": {
+                "depotAuthToLower": 0,
+                "id": "9bdea305-5c5b-4dba-816b-33db606971ea",
+                "name": "preer"
+            },
+            "questionDepotId": "9bdea305-5c5b-4dba-816b-33db606971ea",
+            "recoveryCount": null,
+            "rightRate": 0,
+            "score": 500,
+            "status": 1,
+            "subs": null,
+            "type": 4
+        },
+        {
+            "answerNum": null,
+            "content": "为什么测量大电容量对反映局部缺陷并不灵敏？ 6",
+            "contentText": "为什么测量大电容量对反映局部缺陷并不灵敏？ 6",
+            "createTime": 1635735824446,
+            "difficulty": 1,
+            "errorRate": 0,
+            "id": "27e59bc0-5111-4984-8d0e-df248eccad9c",
+            "markAmount": null,
+            "organization": {
+                "company": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                },
+                "companyId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "name": "preer"
+            },
+            "originalQuestionId": "27e59bc0-5111-4984-8d0e-df248eccad9c",
+            "parsing": "发电机24",
+            "parsingText": "发电机24",
+            "questionAttrs": [
+                {
+                    "id": "fa6b00de-a56b-4cd4-ab60-7bbabbb760dc",
+                    "name": "0",
+                    "type": "5",
+                    "value": "一滴水可以映射太阳的光芒"
+                }
+            ],
+            "questionDepot": {
+                "depotAuthToLower": 0,
+                "id": "9bdea305-5c5b-4dba-816b-33db606971ea",
+                "name": "preer"
+            },
+            "questionDepotId": "9bdea305-5c5b-4dba-816b-33db606971ea",
+            "recoveryCount": null,
+            "rightRate": 0,
+            "score": 500,
+            "status": 1,
+            "subs": null,
+            "type": 5
+        },
+        {
+            "answerNum": null,
+            "content": "今天是星期(),明天星期()？5",
+            "contentText": "今天是星期(),明天星期()？5",
+            "createTime": 1635735824446,
+            "difficulty": 1,
+            "errorRate": 0,
+            "id": "2d9db84e-8c9c-47b9-95c2-8498c0adb84c",
+            "markAmount": null,
+            "organization": {
+                "company": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                },
+                "companyId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "name": "preer"
+            },
+            "originalQuestionId": "2d9db84e-8c9c-47b9-95c2-8498c0adb84c",
+            "parsing": "发电机29",
+            "parsingText": "发电机29",
+            "questionAttrs": [
+                {
+                    "id": "2bb7c132-40be-447a-a989-dfd1034b50fd",
+                    "name": "0",
+                    "type": "4",
+                    "value": "一|二"
+                }
+            ],
+            "questionDepot": {
+                "depotAuthToLower": 0,
+                "id": "9bdea305-5c5b-4dba-816b-33db606971ea",
+                "name": "preer"
+            },
+            "questionDepotId": "9bdea305-5c5b-4dba-816b-33db606971ea",
+            "recoveryCount": null,
+            "rightRate": 0,
+            "score": 500,
+            "status": 1,
+            "subs": null,
+            "type": 4
+        },
+        {
+            "answerNum": null,
+            "content": "电力变压器中的油起绝缘、散热作用（   ） 1",
+            "contentText": "电力变压器中的油起绝缘、散热作用（   ） 1",
+            "createTime": 1635735824446,
+            "difficulty": 3,
+            "errorRate": 0,
+            "id": "2efc82d6-c587-4402-9fbe-773f50d7d230",
+            "markAmount": null,
+            "organization": {
+                "company": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                },
+                "companyId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "name": "preer"
+            },
+            "originalQuestionId": "2efc82d6-c587-4402-9fbe-773f50d7d230",
+            "parsing": "发电机13",
+            "parsingText": "发电机13",
+            "questionAttrs": [
+                {
+                    "id": "a5ec4458-6604-48fe-88bb-bd0eabc822ca",
+                    "name": "1",
+                    "type": "3",
+                    "value": "1"
+                }
+            ],
+            "questionDepot": {
+                "depotAuthToLower": 0,
+                "id": "9bdea305-5c5b-4dba-816b-33db606971ea",
+                "name": "preer"
+            },
+            "questionDepotId": "9bdea305-5c5b-4dba-816b-33db606971ea",
+            "recoveryCount": null,
+            "rightRate": 0,
+            "score": 500,
+            "status": 1,
+            "subs": null,
+            "type": 3
+        },
+        {
+            "answerNum": null,
+            "content": "今天是星期(),明天星期()？1",
+            "contentText": "今天是星期(),明天星期()？1",
+            "createTime": 1635735824446,
+            "difficulty": 3,
+            "errorRate": 0,
+            "id": "3d307946-74a0-4227-b6d0-a0d6ce5fda53",
+            "markAmount": null,
+            "organization": {
+                "company": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                },
+                "companyId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "name": "preer"
+            },
+            "originalQuestionId": "3d307946-74a0-4227-b6d0-a0d6ce5fda53",
+            "parsing": "发电机25",
+            "parsingText": "发电机25",
+            "questionAttrs": [
+                {
+                    "id": "93970f79-6cf1-4058-8b2f-4b46426656a9",
+                    "name": "0",
+                    "type": "4",
+                    "value": "一|二"
+                }
+            ],
+            "questionDepot": {
+                "depotAuthToLower": 0,
+                "id": "9bdea305-5c5b-4dba-816b-33db606971ea",
+                "name": "preer"
+            },
+            "questionDepotId": "9bdea305-5c5b-4dba-816b-33db606971ea",
+            "recoveryCount": null,
+            "rightRate": 0,
+            "score": 500,
+            "status": 1,
+            "subs": null,
+            "type": 4
+        },
+        {
+            "answerNum": null,
+            "content": "今天是星期(),明天星期()？6",
+            "contentText": "今天是星期(),明天星期()？6",
+            "createTime": 1635735824446,
+            "difficulty": 1,
+            "errorRate": 0,
+            "id": "4cbd39ce-4a6f-4824-80ae-b4e5a9484c3c",
+            "markAmount": null,
+            "organization": {
+                "company": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                },
+                "companyId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "name": "preer"
+            },
+            "originalQuestionId": "4cbd39ce-4a6f-4824-80ae-b4e5a9484c3c",
+            "parsing": "发电机30",
+            "parsingText": "发电机30",
+            "questionAttrs": [
+                {
+                    "id": "d241e10e-3141-4cb9-8ce7-afb795033f45",
+                    "name": "0",
+                    "type": "4",
+                    "value": "一|二"
+                }
+            ],
+            "questionDepot": {
+                "depotAuthToLower": 0,
+                "id": "9bdea305-5c5b-4dba-816b-33db606971ea",
+                "name": "preer"
+            },
+            "questionDepotId": "9bdea305-5c5b-4dba-816b-33db606971ea",
+            "recoveryCount": null,
+            "rightRate": 0,
+            "score": 500,
+            "status": 1,
+            "subs": null,
+            "type": 4
+        },
+        {
+            "answerNum": null,
+            "content": "发电机变压器绕组绝缘受潮后，其吸收比（   ） 2",
+            "contentText": "发电机变压器绕组绝缘受潮后，其吸收比（   ） 2",
+            "createTime": 1635735824446,
+            "difficulty": 3,
+            "errorRate": 0,
+            "id": "6c9f670f-1a8a-4a0d-bae2-f605eede64e3",
+            "markAmount": null,
+            "organization": {
+                "company": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                },
+                "companyId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "name": "preer"
+            },
+            "originalQuestionId": "6c9f670f-1a8a-4a0d-bae2-f605eede64e3",
+            "parsing": "发电机2",
+            "parsingText": "发电机2",
+            "questionAttrs": [
+                {
+                    "id": "0ae30864-73ab-4e52-8819-40897dbc7a7c",
+                    "name": "3",
+                    "type": "1",
+                    "value": "不稳定"
+                },
+                {
+                    "id": "0c68cf79-bc0e-4322-a527-2e6c38223f27",
+                    "name": "1",
+                    "type": "1",
+                    "value": "变小"
+                },
+                {
+                    "id": "61c44aec-9406-4f22-ad0e-02a1532431ae",
+                    "name": "2",
+                    "type": "1",
+                    "value": "不变"
+                },
+                {
+                    "id": "d41e984d-08dc-4100-a4b3-18cdb4acf2c4",
+                    "name": "0",
+                    "type": "0",
+                    "value": "变大"
+                }
+            ],
+            "questionDepot": {
+                "depotAuthToLower": 0,
+                "id": "9bdea305-5c5b-4dba-816b-33db606971ea",
+                "name": "preer"
+            },
+            "questionDepotId": "9bdea305-5c5b-4dba-816b-33db606971ea",
+            "recoveryCount": null,
+            "rightRate": 0,
+            "score": 500,
+            "status": 1,
+            "subs": null,
+            "type": 1
+        }
+    ],
+    "recordCount": 37
+}
+
+2021-11-08 18:54:43,575 | D:\PyCharm\project\httprunner3\common\validate.py[line:57] | INFO: 响应断言： 预期值：'37' 实际值：'37', 断言成功!

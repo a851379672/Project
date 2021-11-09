@@ -1,0 +1,2 @@
+INFO     root:data_depend.py:40 提取变量：coverPath: default/M00/01/C5/wKgLTWGKQ6aAD1iqAALsu96_yEs882.jpg
+INFO     root:validate.py:57 响应断言： 预期值：'success' 实际值：'success', 断言成功!

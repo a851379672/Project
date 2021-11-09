@@ -1,0 +1,3 @@
+INFO     root:mysql_operate.py:54 SQL影响行数: (36) 预期影响行数: (36) 断言成功!
+INFO     root:mysql_operate.py:54 SQL影响行数: (0) 预期影响行数: (0) 断言成功!
+INFO     root:validate.py:71 响应断言： 预期值：'422' 实际值：'422', 断言成功!

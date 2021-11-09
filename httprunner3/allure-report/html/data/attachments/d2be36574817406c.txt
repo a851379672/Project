@@ -1,0 +1,551 @@
+2021-11-09 18:07:54.311 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/exam/question?organizationId=cc861919-b7fb-4582-b755-48b2eb0e5203&organization%5Bid%5D=cc861919-b7fb-4582-b755-48b2eb0e5203&organization%5Bname%5D=tester&organization%5Bstate%5D=1&forbidden=0&depttype=1&url=exam%2Fquestion-depot&page=1&pageSize=10
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__18e2aca42fbac4d646fa2183166937ac",
+    "uri": "exam/question-depot"
+}
+cookies  : {}
+body     : None
+
+2021-11-09 18:07:54.313 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 09 Nov 2021 10:07:54 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "items": [
+        {
+            "answerNum": null,
+            "content": "发电机变压器绕组绝缘受潮后，其吸收比（   ） 3",
+            "contentText": "发电机变压器绕组绝缘受潮后，其吸收比（   ） 3",
+            "createTime": 1636451234455,
+            "difficulty": 2,
+            "errorRate": 0,
+            "id": "bc7faada-45e0-4d78-81d8-ba9a1c18a87a",
+            "markAmount": null,
+            "organization": {
+                "company": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                },
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "originalQuestionId": "abdf8df1-c512-4981-9b28-604994d163df",
+            "parsing": "发电机3",
+            "parsingText": "发电机3",
+            "questionAttrs": [
+                {
+                    "id": "764c567d-d330-465f-baa1-c296908f8d9b",
+                    "name": "2",
+                    "type": "1",
+                    "value": "不变"
+                },
+                {
+                    "id": "84acc023-1a74-40a9-9e95-79715d595fc0",
+                    "name": "1",
+                    "type": "1",
+                    "value": "变小"
+                },
+                {
+                    "id": "f294db69-b705-4b95-a3f6-3a1cd8bdb9b4",
+                    "name": "3",
+                    "type": "1",
+                    "value": "不稳定"
+                },
+                {
+                    "id": "f626055c-ca1a-4bfe-8dc6-01e1f18ae11f",
+                    "name": "0",
+                    "type": "0",
+                    "value": "变大"
+                }
+            ],
+            "questionDepot": {
+                "depotAuthToLower": 0,
+                "id": "8099063f-5fd6-4ee5-8f43-cd0bb74f8e2d",
+                "name": "tester"
+            },
+            "questionDepotId": "8099063f-5fd6-4ee5-8f43-cd0bb74f8e2d",
+            "recoveryCount": null,
+            "rightRate": 0,
+            "score": 1000,
+            "status": 1,
+            "subs": null,
+            "type": 1
+        },
+        {
+            "answerNum": null,
+            "content": "下列介质中，（   ）是亲水性物质 6",
+            "contentText": "下列介质中，（   ）是亲水性物质 6",
+            "createTime": 1636451234448,
+            "difficulty": 1,
+            "errorRate": 0,
+            "id": "1c782e71-036a-4c42-b8f6-7d31446c1010",
+            "markAmount": null,
+            "organization": {
+                "company": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                },
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "originalQuestionId": "1c823b26-61ed-4cdd-8b55-fb8af90b49e1",
+            "parsing": "发电机12",
+            "parsingText": "发电机12",
+            "questionAttrs": [
+                {
+                    "id": "3e732f51-3901-443e-9e31-f459c23c41d1",
+                    "name": "3",
+                    "type": "2",
+                    "value": "不稳定"
+                },
+                {
+                    "id": "5b64ca47-cf39-4273-bb62-da7b27a1c210",
+                    "name": "0",
+                    "type": "0",
+                    "value": "变大"
+                },
+                {
+                    "id": "c589e6b7-68f1-4a2b-8748-3d2e563f2569",
+                    "name": "2",
+                    "type": "2",
+                    "value": "不变"
+                },
+                {
+                    "id": "c78b6963-c5e3-498e-89bb-85ac37c9af90",
+                    "name": "1",
+                    "type": "0",
+                    "value": "变小"
+                }
+            ],
+            "questionDepot": {
+                "depotAuthToLower": 0,
+                "id": "8099063f-5fd6-4ee5-8f43-cd0bb74f8e2d",
+                "name": "tester"
+            },
+            "questionDepotId": "8099063f-5fd6-4ee5-8f43-cd0bb74f8e2d",
+            "recoveryCount": null,
+            "rightRate": 0,
+            "score": 1000,
+            "status": 1,
+            "subs": null,
+            "type": 2
+        },
+        {
+            "answerNum": null,
+            "content": "电力变压器中的油起绝缘、散热作用（   ） 4",
+            "contentText": "电力变压器中的油起绝缘、散热作用（   ） 4",
+            "createTime": 1636451234441,
+            "difficulty": 2,
+            "errorRate": 0,
+            "id": "8db0ce95-d501-4345-8924-4ef29becbe4b",
+            "markAmount": null,
+            "organization": {
+                "company": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                },
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "originalQuestionId": "ba6b8c0e-3e62-4b42-a3d8-761dce59a321",
+            "parsing": "发电机16",
+            "parsingText": "发电机16",
+            "questionAttrs": [
+                {
+                    "id": "bf711ce1-f43e-4907-bd9d-ecd43d56357a",
+                    "name": "1",
+                    "type": "3",
+                    "value": "1"
+                }
+            ],
+            "questionDepot": {
+                "depotAuthToLower": 0,
+                "id": "8099063f-5fd6-4ee5-8f43-cd0bb74f8e2d",
+                "name": "tester"
+            },
+            "questionDepotId": "8099063f-5fd6-4ee5-8f43-cd0bb74f8e2d",
+            "recoveryCount": null,
+            "rightRate": 0,
+            "score": 1000,
+            "status": 1,
+            "subs": null,
+            "type": 3
+        },
+        {
+            "answerNum": null,
+            "content": "对以下球类从小到大排序2",
+            "contentText": "对以下球类从小到大排序2",
+            "createTime": 1636451234433,
+            "difficulty": 3,
+            "errorRate": 0,
+            "id": "79a3efd2-39a0-4a6c-9b09-7bb7cec560ef",
+            "markAmount": null,
+            "organization": {
+                "company": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                },
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "originalQuestionId": "86f9f046-4e74-43c4-8a74-7e18efbd04b5",
+            "parsing": "发电机32",
+            "parsingText": "发电机32",
+            "questionAttrs": [
+                {
+                    "id": "4c12a0e6-80f9-4de0-bec0-4c3d4dea66bc",
+                    "name": "1",
+                    "type": "8",
+                    "value": "足球"
+                },
+                {
+                    "id": "57e3a3c0-fdd3-4dd4-adce-97f2efbdca13",
+                    "name": "3",
+                    "type": "8",
+                    "value": "网球"
+                },
+                {
+                    "id": "9651eabb-d7d2-4ea7-9a53-a5285063569c",
+                    "name": "0",
+                    "type": "0",
+                    "value": "0|1|2|3|"
+                },
+                {
+                    "id": "c7e31229-671c-4788-a7ae-d46bb3c13e6c",
+                    "name": "0",
+                    "type": "8",
+                    "value": "篮球"
+                },
+                {
+                    "id": "d81d8d4f-1e78-46f8-ae72-dab0a05705fe",
+                    "name": "2",
+                    "type": "8",
+                    "value": "羽毛球"
+                }
+            ],
+            "questionDepot": {
+                "depotAuthToLower": 0,
+                "id": "8099063f-5fd6-4ee5-8f43-cd0bb74f8e2d",
+                "name": "tester"
+            },
+            "questionDepotId": "8099063f-5fd6-4ee5-8f43-cd0bb74f8e2d",
+            "recoveryCount": null,
+            "rightRate": 0,
+            "score": 1000,
+            "status": 1,
+            "subs": null,
+            "type": 8
+        },
+        {
+            "answerNum": null,
+            "content": "下列介质中，（   ）是亲水性物质 4",
+            "contentText": "下列介质中，（   ）是亲水性物质 4",
+            "createTime": 1636451234427,
+            "difficulty": 2,
+            "errorRate": 0,
+            "id": "4420e897-13bb-4237-8f5c-efe7f8d69fc1",
+            "markAmount": null,
+            "organization": {
+                "company": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                },
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "originalQuestionId": "4d960a09-5c96-4afe-8d4e-3aeb4f44114f",
+            "parsing": "发电机10",
+            "parsingText": "发电机10",
+            "questionAttrs": [
+                {
+                    "id": "26830848-272b-453f-9d01-e052ae584815",
+                    "name": "1",
+                    "type": "0",
+                    "value": "变小"
+                },
+                {
+                    "id": "7fe4e40c-73f6-431d-982a-29db7fa6d855",
+                    "name": "3",
+                    "type": "2",
+                    "value": "不稳定"
+                },
+                {
+                    "id": "ba356c9e-d113-4f8e-a7bf-9dcd132e26e1",
+                    "name": "2",
+                    "type": "2",
+                    "value": "不变"
+                },
+                {
+                    "id": "eb46829c-416a-4c4a-be66-cf9ba58e11da",
+                    "name": "0",
+                    "type": "0",
+                    "value": "变大"
+                }
+            ],
+            "questionDepot": {
+                "depotAuthToLower": 0,
+                "id": "8099063f-5fd6-4ee5-8f43-cd0bb74f8e2d",
+                "name": "tester"
+            },
+            "questionDepotId": "8099063f-5fd6-4ee5-8f43-cd0bb74f8e2d",
+            "recoveryCount": null,
+            "rightRate": 0,
+            "score": 1000,
+            "status": 1,
+            "subs": null,
+            "type": 2
+        },
+        {
+            "answerNum": null,
+            "content": "下列介质中，（   ）是亲水性物质 3",
+            "contentText": "下列介质中，（   ）是亲水性物质 3",
+            "createTime": 1636451234421,
+            "difficulty": 2,
+            "errorRate": 0,
+            "id": "58f932dc-bf4b-4aa3-a567-663c049b803c",
+            "markAmount": null,
+            "organization": {
+                "company": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                },
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "originalQuestionId": "b72bcf53-1bae-4e85-8007-4546c3bea169",
+            "parsing": "发电机9",
+            "parsingText": "发电机9",
+            "questionAttrs": [
+                {
+                    "id": "16720f2c-e2a1-4305-be6f-ffa3b4463357",
+                    "name": "3",
+                    "type": "2",
+                    "value": "不稳定"
+                },
+                {
+                    "id": "1f6760b4-25c4-4688-86a7-aed0cf3ae89e",
+                    "name": "1",
+                    "type": "0",
+                    "value": "变小"
+                },
+                {
+                    "id": "5eaf8bcb-e9b8-4b60-a762-5b08e4441b06",
+                    "name": "0",
+                    "type": "0",
+                    "value": "变大"
+                },
+                {
+                    "id": "b9f71bdd-fe9a-44a3-ba3c-92df2713128e",
+                    "name": "2",
+                    "type": "2",
+                    "value": "不变"
+                }
+            ],
+            "questionDepot": {
+                "depotAuthToLower": 0,
+                "id": "8099063f-5fd6-4ee5-8f43-cd0bb74f8e2d",
+                "name": "tester"
+            },
+            "questionDepotId": "8099063f-5fd6-4ee5-8f43-cd0bb74f8e2d",
+            "recoveryCount": null,
+            "rightRate": 0,
+            "score": 1000,
+            "status": 1,
+            "subs": null,
+            "type": 2
+        },
+        {
+            "answerNum": null,
+            "content": "今天是星期(),明天星期()？4",
+            "contentText": "今天是星期(),明天星期()？4",
+            "createTime": 1636451234415,
+            "difficulty": 2,
+            "errorRate": 0,
+            "id": "db628bdd-ba0d-4cc3-8aa5-d5ffa6cba14f",
+            "markAmount": null,
+            "organization": {
+                "company": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                },
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "originalQuestionId": "368bf4f0-59d3-45a9-b8c8-f80def2ec0a1",
+            "parsing": "发电机28",
+            "parsingText": "发电机28",
+            "questionAttrs": [
+                {
+                    "id": "18768473-63db-4680-8b26-28d9a608c88a",
+                    "name": "0",
+                    "type": "4",
+                    "value": "一|二"
+                }
+            ],
+            "questionDepot": {
+                "depotAuthToLower": 0,
+                "id": "8099063f-5fd6-4ee5-8f43-cd0bb74f8e2d",
+                "name": "tester"
+            },
+            "questionDepotId": "8099063f-5fd6-4ee5-8f43-cd0bb74f8e2d",
+            "recoveryCount": null,
+            "rightRate": 0,
+            "score": 1000,
+            "status": 1,
+            "subs": null,
+            "type": 4
+        },
+        {
+            "answerNum": null,
+            "content": "电力变压器中的油起绝缘、散热作用（   ） 1",
+            "contentText": "电力变压器中的油起绝缘、散热作用（   ） 1",
+            "createTime": 1636451234409,
+            "difficulty": 3,
+            "errorRate": 0,
+            "id": "0c143698-c72c-4ef4-9005-241f2b02140c",
+            "markAmount": null,
+            "organization": {
+                "company": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                },
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "originalQuestionId": "98d7378f-ae70-4ed9-b01e-345bf56824fa",
+            "parsing": "发电机13",
+            "parsingText": "发电机13",
+            "questionAttrs": [
+                {
+                    "id": "e683b6d4-7f22-42c9-9b1a-ed8171560a8a",
+                    "name": "1",
+                    "type": "3",
+                    "value": "1"
+                }
+            ],
+            "questionDepot": {
+                "depotAuthToLower": 0,
+                "id": "8099063f-5fd6-4ee5-8f43-cd0bb74f8e2d",
+                "name": "tester"
+            },
+            "questionDepotId": "8099063f-5fd6-4ee5-8f43-cd0bb74f8e2d",
+            "recoveryCount": null,
+            "rightRate": 0,
+            "score": 1000,
+            "status": 1,
+            "subs": null,
+            "type": 3
+        },
+        {
+            "answerNum": null,
+            "content": "为什么测量大电容量对反映局部缺陷并不灵敏？ 6",
+            "contentText": "为什么测量大电容量对反映局部缺陷并不灵敏？ 6",
+            "createTime": 1636451234403,
+            "difficulty": 1,
+            "errorRate": 0,
+            "id": "91a0773e-80d6-4a37-91dd-0a2f90e1a4ef",
+            "markAmount": null,
+            "organization": {
+                "company": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                },
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "originalQuestionId": "452847ac-aedf-4c30-bf3e-d3bd374f4836",
+            "parsing": "发电机24",
+            "parsingText": "发电机24",
+            "questionAttrs": [
+                {
+                    "id": "ba32ef4e-470d-49b2-9dd2-1e3f95dc9243",
+                    "name": "0",
+                    "type": "5",
+                    "value": "一滴水可以映射太阳的光芒"
+                }
+            ],
+            "questionDepot": {
+                "depotAuthToLower": 0,
+                "id": "8099063f-5fd6-4ee5-8f43-cd0bb74f8e2d",
+                "name": "tester"
+            },
+            "questionDepotId": "8099063f-5fd6-4ee5-8f43-cd0bb74f8e2d",
+            "recoveryCount": null,
+            "rightRate": 0,
+            "score": 1000,
+            "status": 1,
+            "subs": null,
+            "type": 5
+        },
+        {
+            "answerNum": null,
+            "content": "今天是星期(),明天星期()？3",
+            "contentText": "今天是星期(),明天星期()？3",
+            "createTime": 1636451234396,
+            "difficulty": 2,
+            "errorRate": 0,
+            "id": "4f3f5f2e-5989-4ac2-a087-e380638f8943",
+            "markAmount": null,
+            "organization": {
+                "company": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                },
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "originalQuestionId": "cb54ef45-eec7-47d8-9784-bac599874c82",
+            "parsing": "发电机27",
+            "parsingText": "发电机27",
+            "questionAttrs": [
+                {
+                    "id": "d2850dcd-2f11-4066-8b56-a63fc77abda3",
+                    "name": "0",
+                    "type": "4",
+                    "value": "一|二"
+                }
+            ],
+            "questionDepot": {
+                "depotAuthToLower": 0,
+                "id": "8099063f-5fd6-4ee5-8f43-cd0bb74f8e2d",
+                "name": "tester"
+            },
+            "questionDepotId": "8099063f-5fd6-4ee5-8f43-cd0bb74f8e2d",
+            "recoveryCount": null,
+            "rightRate": 0,
+            "score": 1000,
+            "status": 1,
+            "subs": null,
+            "type": 4
+        }
+    ],
+    "recordCount": 37
+}
+
+2021-11-09 18:07:54,313 | D:\PyCharm\project\httprunner3\common\validate.py[line:57] | INFO: 响应断言： 预期值：'37' 实际值：'37', 断言成功!

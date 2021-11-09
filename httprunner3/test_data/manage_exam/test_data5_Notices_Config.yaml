@@ -9,7 +9,7 @@ allure:
 test:
 -   name: 【公告配置】——查询公告标题
     request:
-        url: /api/v1/exam/announcement/page
+        url: api/v1/exam/announcement/page
         method: GET
         headers:
           Authorization: Bearer__${access_token}
@@ -27,7 +27,7 @@ test:
 
 -   name: 【公告配置】——查询公告开放时间
     request:
-        url: /api/v1/exam/exam/remote-startTime
+        url: api/v1/exam/exam/remote-startTime
         method: GET
         headers:
           Authorization: Bearer__${access_token}
@@ -40,7 +40,7 @@ test:
 
 -   name: 【公告配置】——查询授权组织
     request:
-        url: /api/v1/system/organization/granted-organization
+        url: api/v1/system/organization/granted-organization
         method: GET
         headers:
           Authorization: Bearer__${access_token}
@@ -57,7 +57,7 @@ test:
 
 -   name: 【公告配置】——查询组织操作类型
     request:
-        url: /api/v1/system/grant/find-organization-operatortype
+        url: api/v1/system/grant/find-organization-operatortype
         method: GET
         headers:
           Authorization: Bearer__${access_token}
@@ -73,7 +73,7 @@ test:
 
 -   name: 【公告配置】——新增公告
     request:
-        url: /api/v1/exam/announcement
+        url: api/v1/exam/announcement
         method: POST
         headers:
           Authorization: Bearer__${access_token}
@@ -95,7 +95,7 @@ test:
 
 -   name: 【公告配置】——置顶公告
     request:
-        url: /api/v1/exam/announcement/top/${noticesId}
+        url: api/v1/exam/announcement/top/${noticesId}
         method: PUT
         headers:
           Authorization: Bearer__${access_token}
@@ -113,7 +113,7 @@ test:
 
 -   name: 【公告配置】——取消置顶公告
     request:
-        url: /api/v1/exam/announcement/remove-top/${noticesId}
+        url: api/v1/exam/announcement/remove-top/${noticesId}
         method: PUT
         headers:
           Authorization: Bearer__${access_token}
@@ -131,7 +131,7 @@ test:
 
 -   name: 【公告配置】——修改公告
     request:
-        url: /api/v1/exam/announcement/${noticesId}
+        url: api/v1/exam/announcement/${noticesId}
         method: PUT
         headers:
           Authorization: Bearer__${access_token}
@@ -154,7 +154,7 @@ test:
 
 -   name: 【公告配置】——删除公告
     request:
-        url: /api/v1/exam/announcement/${noticesId}
+        url: api/v1/exam/announcement/${noticesId}
         method: DELETE
         headers:
           Authorization: Bearer__${access_token}

@@ -1,0 +1,2 @@
+INFO     root:data_depend.py:40 提取变量：noticesId: ae6d1ccd-0a65-454c-a9bd-9667a02add4f
+INFO     root:validate.py:57 响应断言： 预期值：'tester公告1' 实际值：'tester公告1', 断言成功!

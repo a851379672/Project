@@ -1,0 +1,43 @@
+2021-11-09 17:47:22.716 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://tester1.zhixueyun.com/api/v1/exam/announcement
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__672e5a6280190a72d0e541e75ea533ff",
+    "uri": "exam/notices",
+    "Content-Length": "230",
+    "Content-Type": "application/x-www-form-urlencoded"
+}
+cookies  : {}
+body     : title=tester%E5%85%AC%E5%91%8A1&description=%E8%BF%99%E9%87%8C%E6%98%AFtester%E5%85%AC%E5%91%8A1&organizationId-text=preer&organizationId=cc861919-b7fb-4582-b755-48b2eb0e5203&startTime=2021-11-09+17%3A47&endTime=2021-11-10+09%3A00
+
+2021-11-09 17:47:22.716 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 09 Nov 2021 09:47:22 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "297",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "createMemberId": "5f0870a7-d55d-4a31-8782-1ac8d9690efc",
+    "createTime": 1636451242827,
+    "description": "这里是tester公告1",
+    "endTime": 1636506000000,
+    "id": "ae6d1ccd-0a65-454c-a9bd-9667a02add4f",
+    "organizationId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+    "startTime": 1636451220000,
+    "title": "tester公告1"
+}
+
+2021-11-09 17:47:22,717 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：noticesId: ae6d1ccd-0a65-454c-a9bd-9667a02add4f
+2021-11-09 17:47:22,717 | D:\PyCharm\project\httprunner3\common\validate.py[line:57] | INFO: 响应断言： 预期值：'tester公告1' 实际值：'tester公告1', 断言成功!

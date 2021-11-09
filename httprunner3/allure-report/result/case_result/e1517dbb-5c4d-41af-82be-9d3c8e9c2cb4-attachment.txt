@@ -1,0 +1,77 @@
+2021-11-09 17:47:14.915 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/human/export-task/find-export-tasks?businessTypes=4%2C25%2C30&page=1&pageSize=10
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__672e5a6280190a72d0e541e75ea533ff",
+    "uri": "exam/question-depot"
+}
+cookies  : {}
+body     : None
+
+2021-11-09 17:47:14.916 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 09 Nov 2021 09:47:15 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "1102",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "items": [
+        {
+            "attachmentId": "",
+            "businessType": 30,
+            "createTime": 1636451234087,
+            "dataLen": 0,
+            "errorMsg": "[]",
+            "extraParam": null,
+            "failCount": 0,
+            "filePath": null,
+            "fileSize": 13038,
+            "id": "f4144a68-10fe-479c-b09c-d3919e1c2fa5",
+            "memberId": "5f0870a7-d55d-4a31-8782-1ac8d9690efc",
+            "queryParas": "{\"fileId\":\"3a6196a3-6357-4d87-8418-5b500561339c\",\"organizationId\":\"cc861919-b7fb-4582-b755-48b2eb0e5203\",\"type\":1}",
+            "signature": "6a6e9b628a3de5f7e6f02c92aab2d6ae",
+            "status": 2,
+            "successCount": 36,
+            "systemErrorCode": null,
+            "type": 2
+        },
+        {
+            "attachmentId": null,
+            "businessType": 25,
+            "createTime": 1636451233749,
+            "dataLen": 0,
+            "errorMsg": "[]",
+            "extraParam": null,
+            "failCount": 0,
+            "filePath": null,
+            "fileSize": 12516,
+            "id": "6f7bbbf4-2d41-4929-b00e-6bd4875c7613",
+            "memberId": "5f0870a7-d55d-4a31-8782-1ac8d9690efc",
+            "queryParas": "{\"fileId\":\"d75983bf-5f51-484e-8bff-ecf44d13f818\",\"organizationId\":\"cc861919-b7fb-4582-b755-48b2eb0e5203\",\"uri\":\"exam/question-depot\",\"type\":1,\"publish\":\"\",\"isOtherModuleType\":0}",
+            "signature": "a6cd63c7cd88e492b5fa0094e6ca126b",
+            "status": 2,
+            "successCount": 36,
+            "systemErrorCode": null,
+            "type": 1
+        }
+    ],
+    "recordCount": 2
+}
+
+2021-11-09 17:47:14,916 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：exportid_1: f4144a68-10fe-479c-b09c-d3919e1c2fa5
+2021-11-09 17:47:14,916 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：exportid_2: 6f7bbbf4-2d41-4929-b00e-6bd4875c7613
+2021-11-09 17:47:14,916 | D:\PyCharm\project\httprunner3\common\validate.py[line:57] | INFO: 响应断言： 预期值：'2' 实际值：'2', 断言成功!
+2021-11-09 17:47:14,917 | D:\PyCharm\project\httprunner3\common\validate.py[line:57] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
+2021-11-09 17:47:14,917 | D:\PyCharm\project\httprunner3\common\validate.py[line:57] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!

@@ -1,0 +1,48 @@
+2021-11-09 17:47:14.162 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/exam/question-depot/d99c461e-2890-400f-8672-6a9fb7a36f90?organizationId=cc861919-b7fb-4582-b755-48b2eb0e5203&organization%5Bid%5D=cc861919-b7fb-4582-b755-48b2eb0e5203&organization%5Bname%5D=tester&organization%5Bstate%5D=1&depotShare=1&type=1
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__672e5a6280190a72d0e541e75ea533ff",
+    "uri": "exam/question-depot"
+}
+cookies  : {}
+body     : None
+
+2021-11-09 17:47:14.163 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 09 Nov 2021 09:47:14 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "387",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "authToLower": 0,
+    "code": "tester_1",
+    "createTime": 1636451227547,
+    "depotAuthToLower": 1,
+    "id": "d99c461e-2890-400f-8672-6a9fb7a36f90",
+    "name": "试题目录1",
+    "organization": {
+        "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+        "name": "tester"
+    },
+    "organizationId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+    "parentId": null,
+    "parentName": null,
+    "path": "d99c461e-2890-400f-8672-6a9fb7a36f90,",
+    "sequence": 1,
+    "state": 1
+}
+
+2021-11-09 17:47:14,164 | D:\PyCharm\project\httprunner3\common\validate.py[line:57] | INFO: 响应断言： 预期值：'d99c461e-2890-400f-8672-6a9fb7a36f90' 实际值：'d99c461e-2890-400f-8672-6a9fb7a36f90', 断言成功!

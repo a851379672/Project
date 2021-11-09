@@ -1,0 +1,152 @@
+2021-11-08 18:54:49.047 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://pre-202108-10.zhixueyun.com/api/v1/human/export-task/find-export-tasks?businessTypes=4%2C25%2C30&page=1&pageSize=10
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__63dee25121f52d578e31b63d9eae3001",
+    "uri": "exam/question-depot"
+}
+cookies  : {}
+body     : None
+
+2021-11-08 18:54:49.048 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Mon, 08 Nov 2021 10:54:49 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "items": [
+        {
+            "attachmentId": "59cc0069-f669-4a4d-9d59-62f22aba93b3",
+            "businessType": 30,
+            "createTime": 1636368888613,
+            "dataLen": 0,
+            "errorMsg": "[{\"code\":\"31804\",\"column\":0,\"row\":1},{\"code\":\"910001\",\"column\":2,\"row\":1},{\"code\":\"31804\",\"column\":0,\"row\":2},{\"code\":\"910001\",\"column\":2,\"row\":2},{\"code\":\"31804\",\"column\":0,\"row\":3},{\"code\":\"910001\",\"column\":2,\"row\":3},{\"code\":\"31804\",\"column\":0,\"row\":4},{\"code\":\"910001\",\"column\":2,\"row\":4},{\"code\":\"31804\",\"column\":0,\"row\":5},{\"code\":\"910001\",\"column\":2,\"row\":5},{\"code\":\"31804\",\"column\":0,\"row\":6},{\"code\":\"910001\",\"column\":2,\"row\":6},{\"code\":\"31804\",\"column\":0,\"row\":7},{\"code\":\"910001\",\"column\":2,\"row\":7},{\"code\":\"31804\",\"column\":0,\"row\":8},{\"code\":\"910001\",\"column\":2,\"row\":8},{\"code\":\"31804\",\"column\":0,\"row\":9},{\"code\":\"910001\",\"column\":2,\"row\":9},{\"code\":\"31804\",\"column\":0,\"row\":10},{\"code\":\"910001\",\"column\":2,\"row\":10},{\"code\":\"31804\",\"column\":0,\"row\":11},{\"code\":\"910001\",\"column\":2,\"row\":11},{\"code\":\"31804\",\"column\":0,\"row\":12},{\"code\":\"910001\",\"column\":2,\"row\":12},{\"code\":\"31804\",\"column\":0,\"row\":13},{\"code\":\"910001\",\"column\":2,\"row\":13},{\"code\":\"31804\",\"column\":0,\"row\":14},{\"code\":\"910001\",\"column\":2,\"row\":14},{\"code\":\"31804\",\"column\":0,\"row\":15},{\"code\":\"910001\",\"column\":2,\"row\":15},{\"code\":\"31804\",\"column\":0,\"row\":16},{\"code\":\"910001\",\"column\":2,\"row\":16},{\"code\":\"31804\",\"column\":0,\"row\":17},{\"code\":\"910001\",\"column\":2,\"row\":17},{\"code\":\"31804\",\"column\":0,\"row\":18},{\"code\":\"910001\",\"column\":2,\"row\":18},{\"code\":\"31804\",\"column\":0,\"row\":19},{\"code\":\"910001\",\"column\":2,\"row\":19},{\"code\":\"31804\",\"column\":0,\"row\":20},{\"code\":\"910001\",\"column\":2,\"row\":20},{\"code\":\"31804\",\"column\":0,\"row\":21},{\"code\":\"910001\",\"column\":2,\"row\":21},{\"code\":\"31804\",\"column\":0,\"row\":22},{\"code\":\"910001\",\"column\":2,\"row\":22},{\"code\":\"31804\",\"column\":0,\"row\":23},{\"code\":\"910001\",\"column\":2,\"row\":23},{\"code\":\"31804\",\"column\":0,\"row\":24},{\"code\":\"910001\",\"column\":2,\"row\":24},{\"code\":\"31804\",\"column\":0,\"row\":25},{\"code\":\"910001\",\"column\":2,\"row\":25},{\"code\":\"31804\",\"column\":0,\"row\":26},{\"code\":\"910001\",\"column\":2,\"row\":26},{\"code\":\"31804\",\"column\":0,\"row\":27},{\"code\":\"910001\",\"column\":2,\"row\":27},{\"code\":\"31804\",\"column\":0,\"row\":28},{\"code\":\"910001\",\"column\":2,\"row\":28},{\"code\":\"31804\",\"column\":0,\"row\":29},{\"code\":\"910001\",\"column\":2,\"row\":29},{\"code\":\"31804\",\"column\":0,\"row\":30},{\"code\":\"910001\",\"column\":2,\"row\":30},{\"code\":\"31804\",\"column\":0,\"row\":31},{\"code\":\"910001\",\"column\":2,\"row\":31},{\"code\":\"31804\",\"column\":0,\"row\":32},{\"code\":\"910001\",\"column\":2,\"row\":32},{\"code\":\"31804\",\"column\":0,\"row\":33},{\"code\":\"910001\",\"column\":2,\"row\":33},{\"code\":\"31804\",\"column\":0,\"row\":34},{\"code\":\"910001\",\"column\":2,\"row\":34},{\"code\":\"31804\",\"column\":0,\"row\":35},{\"code\":\"910001\",\"column\":2,\"row\":35},{\"code\":\"31804\",\"column\":0,\"row\":36},{\"code\":\"910001\",\"column\":2,\"row\":36}]",
+            "extraParam": null,
+            "failCount": 36,
+            "filePath": null,
+            "fileSize": 7363,
+            "id": "ac2f673d-3cad-48de-a2bc-542b9417c289",
+            "memberId": "73da8c17-d84a-4698-975e-d18ca5232708",
+            "queryParas": "{\"fileId\":\"69b08355-9b34-4960-b33f-8da0a69572b8\",\"organizationId\":\"9bcad76a-ba7e-4ace-9f92-f6e086a29cec\",\"type\":1}",
+            "signature": "c5639b147c5369379f53e9c5ffef9164",
+            "status": 2,
+            "successCount": 0,
+            "systemErrorCode": null,
+            "type": 2
+        },
+        {
+            "attachmentId": "99e43abc-ee0e-47c8-9133-3ecad634ab5f",
+            "businessType": 25,
+            "createTime": 1636368888270,
+            "dataLen": 0,
+            "errorMsg": "[{\"code\":\"30123\",\"column\":7,\"row\":1},{\"code\":\"30123\",\"column\":7,\"row\":2},{\"code\":\"30123\",\"column\":7,\"row\":3},{\"code\":\"30123\",\"column\":7,\"row\":4},{\"code\":\"30123\",\"column\":7,\"row\":5},{\"code\":\"30123\",\"column\":7,\"row\":6},{\"code\":\"30123\",\"column\":7,\"row\":7},{\"code\":\"30123\",\"column\":7,\"row\":8},{\"code\":\"30123\",\"column\":7,\"row\":9},{\"code\":\"30123\",\"column\":7,\"row\":10},{\"code\":\"30123\",\"column\":7,\"row\":11},{\"code\":\"30123\",\"column\":7,\"row\":12},{\"code\":\"30123\",\"column\":7,\"row\":13},{\"code\":\"30123\",\"column\":7,\"row\":14},{\"code\":\"30123\",\"column\":7,\"row\":15},{\"code\":\"30123\",\"column\":7,\"row\":16},{\"code\":\"30123\",\"column\":7,\"row\":17},{\"code\":\"30123\",\"column\":7,\"row\":18},{\"code\":\"30123\",\"column\":7,\"row\":19},{\"code\":\"30123\",\"column\":7,\"row\":20},{\"code\":\"30123\",\"column\":7,\"row\":21},{\"code\":\"30123\",\"column\":7,\"row\":22},{\"code\":\"30123\",\"column\":7,\"row\":23},{\"code\":\"30123\",\"column\":7,\"row\":24},{\"code\":\"30123\",\"column\":7,\"row\":25},{\"code\":\"30123\",\"column\":7,\"row\":26},{\"code\":\"30123\",\"column\":7,\"row\":27},{\"code\":\"30123\",\"column\":7,\"row\":28},{\"code\":\"30123\",\"column\":7,\"row\":29},{\"code\":\"30123\",\"column\":7,\"row\":30},{\"code\":\"30123\",\"column\":7,\"row\":31},{\"code\":\"30123\",\"column\":7,\"row\":32},{\"code\":\"30123\",\"column\":7,\"row\":33},{\"code\":\"30123\",\"column\":7,\"row\":34},{\"code\":\"30123\",\"column\":7,\"row\":35},{\"code\":\"30123\",\"column\":7,\"row\":36}]",
+            "extraParam": null,
+            "failCount": 36,
+            "filePath": null,
+            "fileSize": 7163,
+            "id": "7ac0695b-1f4a-43d5-9281-dead3258a189",
+            "memberId": "73da8c17-d84a-4698-975e-d18ca5232708",
+            "queryParas": "{\"fileId\":\"2b994e5a-792d-4666-8a88-c9860e7cc854\",\"organizationId\":\"9bcad76a-ba7e-4ace-9f92-f6e086a29cec\",\"uri\":\"exam/question-depot\",\"type\":1,\"publish\":\"\",\"isOtherModuleType\":0}",
+            "signature": "79a1276f60faeda284fe2ba3418cd724",
+            "status": 2,
+            "successCount": 0,
+            "systemErrorCode": null,
+            "type": 1
+        },
+        {
+            "attachmentId": "271f23e4-f02f-4695-8fc9-24843032557f",
+            "businessType": 30,
+            "createTime": 1636368293477,
+            "dataLen": 0,
+            "errorMsg": "[{\"code\":\"31804\",\"column\":0,\"row\":1},{\"code\":\"910001\",\"column\":2,\"row\":1},{\"code\":\"31804\",\"column\":0,\"row\":2},{\"code\":\"910001\",\"column\":2,\"row\":2},{\"code\":\"31804\",\"column\":0,\"row\":3},{\"code\":\"910001\",\"column\":2,\"row\":3},{\"code\":\"31804\",\"column\":0,\"row\":4},{\"code\":\"910001\",\"column\":2,\"row\":4},{\"code\":\"31804\",\"column\":0,\"row\":5},{\"code\":\"910001\",\"column\":2,\"row\":5},{\"code\":\"31804\",\"column\":0,\"row\":6},{\"code\":\"910001\",\"column\":2,\"row\":6},{\"code\":\"31804\",\"column\":0,\"row\":7},{\"code\":\"910001\",\"column\":2,\"row\":7},{\"code\":\"31804\",\"column\":0,\"row\":8},{\"code\":\"910001\",\"column\":2,\"row\":8},{\"code\":\"31804\",\"column\":0,\"row\":9},{\"code\":\"910001\",\"column\":2,\"row\":9},{\"code\":\"31804\",\"column\":0,\"row\":10},{\"code\":\"910001\",\"column\":2,\"row\":10},{\"code\":\"31804\",\"column\":0,\"row\":11},{\"code\":\"910001\",\"column\":2,\"row\":11},{\"code\":\"31804\",\"column\":0,\"row\":12},{\"code\":\"910001\",\"column\":2,\"row\":12},{\"code\":\"31804\",\"column\":0,\"row\":13},{\"code\":\"910001\",\"column\":2,\"row\":13},{\"code\":\"31804\",\"column\":0,\"row\":14},{\"code\":\"910001\",\"column\":2,\"row\":14},{\"code\":\"31804\",\"column\":0,\"row\":15},{\"code\":\"910001\",\"column\":2,\"row\":15},{\"code\":\"31804\",\"column\":0,\"row\":16},{\"code\":\"910001\",\"column\":2,\"row\":16},{\"code\":\"31804\",\"column\":0,\"row\":17},{\"code\":\"910001\",\"column\":2,\"row\":17},{\"code\":\"31804\",\"column\":0,\"row\":18},{\"code\":\"910001\",\"column\":2,\"row\":18},{\"code\":\"31804\",\"column\":0,\"row\":19},{\"code\":\"910001\",\"column\":2,\"row\":19},{\"code\":\"31804\",\"column\":0,\"row\":20},{\"code\":\"910001\",\"column\":2,\"row\":20},{\"code\":\"31804\",\"column\":0,\"row\":21},{\"code\":\"910001\",\"column\":2,\"row\":21},{\"code\":\"31804\",\"column\":0,\"row\":22},{\"code\":\"910001\",\"column\":2,\"row\":22},{\"code\":\"31804\",\"column\":0,\"row\":23},{\"code\":\"910001\",\"column\":2,\"row\":23},{\"code\":\"31804\",\"column\":0,\"row\":24},{\"code\":\"910001\",\"column\":2,\"row\":24},{\"code\":\"31804\",\"column\":0,\"row\":25},{\"code\":\"910001\",\"column\":2,\"row\":25},{\"code\":\"31804\",\"column\":0,\"row\":26},{\"code\":\"910001\",\"column\":2,\"row\":26},{\"code\":\"31804\",\"column\":0,\"row\":27},{\"code\":\"910001\",\"column\":2,\"row\":27},{\"code\":\"31804\",\"column\":0,\"row\":28},{\"code\":\"910001\",\"column\":2,\"row\":28},{\"code\":\"31804\",\"column\":0,\"row\":29},{\"code\":\"910001\",\"column\":2,\"row\":29},{\"code\":\"31804\",\"column\":0,\"row\":30},{\"code\":\"910001\",\"column\":2,\"row\":30},{\"code\":\"31804\",\"column\":0,\"row\":31},{\"code\":\"910001\",\"column\":2,\"row\":31},{\"code\":\"31804\",\"column\":0,\"row\":32},{\"code\":\"910001\",\"column\":2,\"row\":32},{\"code\":\"31804\",\"column\":0,\"row\":33},{\"code\":\"910001\",\"column\":2,\"row\":33},{\"code\":\"31804\",\"column\":0,\"row\":34},{\"code\":\"910001\",\"column\":2,\"row\":34},{\"code\":\"31804\",\"column\":0,\"row\":35},{\"code\":\"910001\",\"column\":2,\"row\":35},{\"code\":\"31804\",\"column\":0,\"row\":36},{\"code\":\"910001\",\"column\":2,\"row\":36}]",
+            "extraParam": null,
+            "failCount": 36,
+            "filePath": null,
+            "fileSize": 7363,
+            "id": "f2c14dab-d5b3-4fc9-8308-8b5d42a90df6",
+            "memberId": "73da8c17-d84a-4698-975e-d18ca5232708",
+            "queryParas": "{\"fileId\":\"eb022072-05f0-472a-8f2d-9801f60bd2b8\",\"organizationId\":\"9bcad76a-ba7e-4ace-9f92-f6e086a29cec\",\"type\":1}",
+            "signature": "41a04cd4012b10a86f8fe78939e5572c",
+            "status": 2,
+            "successCount": 0,
+            "systemErrorCode": null,
+            "type": 2
+        },
+        {
+            "attachmentId": "a992a7cd-c034-4b2e-8a5d-b706c96b4caf",
+            "businessType": 25,
+            "createTime": 1636368293015,
+            "dataLen": 0,
+            "errorMsg": "[{\"code\":\"30123\",\"column\":7,\"row\":1},{\"code\":\"30123\",\"column\":7,\"row\":2},{\"code\":\"30123\",\"column\":7,\"row\":3},{\"code\":\"30123\",\"column\":7,\"row\":4},{\"code\":\"30123\",\"column\":7,\"row\":5},{\"code\":\"30123\",\"column\":7,\"row\":6},{\"code\":\"30123\",\"column\":7,\"row\":7},{\"code\":\"30123\",\"column\":7,\"row\":8},{\"code\":\"30123\",\"column\":7,\"row\":9},{\"code\":\"30123\",\"column\":7,\"row\":10},{\"code\":\"30123\",\"column\":7,\"row\":11},{\"code\":\"30123\",\"column\":7,\"row\":12},{\"code\":\"30123\",\"column\":7,\"row\":13},{\"code\":\"30123\",\"column\":7,\"row\":14},{\"code\":\"30123\",\"column\":7,\"row\":15},{\"code\":\"30123\",\"column\":7,\"row\":16},{\"code\":\"30123\",\"column\":7,\"row\":17},{\"code\":\"30123\",\"column\":7,\"row\":18},{\"code\":\"30123\",\"column\":7,\"row\":19},{\"code\":\"30123\",\"column\":7,\"row\":20},{\"code\":\"30123\",\"column\":7,\"row\":21},{\"code\":\"30123\",\"column\":7,\"row\":22},{\"code\":\"30123\",\"column\":7,\"row\":23},{\"code\":\"30123\",\"column\":7,\"row\":24},{\"code\":\"30123\",\"column\":7,\"row\":25},{\"code\":\"30123\",\"column\":7,\"row\":26},{\"code\":\"30123\",\"column\":7,\"row\":27},{\"code\":\"30123\",\"column\":7,\"row\":28},{\"code\":\"30123\",\"column\":7,\"row\":29},{\"code\":\"30123\",\"column\":7,\"row\":30},{\"code\":\"30123\",\"column\":7,\"row\":31},{\"code\":\"30123\",\"column\":7,\"row\":32},{\"code\":\"30123\",\"column\":7,\"row\":33},{\"code\":\"30123\",\"column\":7,\"row\":34},{\"code\":\"30123\",\"column\":7,\"row\":35},{\"code\":\"30123\",\"column\":7,\"row\":36}]",
+            "extraParam": null,
+            "failCount": 36,
+            "filePath": null,
+            "fileSize": 7129,
+            "id": "ef19fb1b-2396-4038-a671-86f223fc0168",
+            "memberId": "73da8c17-d84a-4698-975e-d18ca5232708",
+            "queryParas": "{\"fileId\":\"2c28c684-651d-48da-b3fa-0c4fc2890f80\",\"organizationId\":\"9bcad76a-ba7e-4ace-9f92-f6e086a29cec\",\"uri\":\"exam/question-depot\",\"type\":1,\"publish\":\"\",\"isOtherModuleType\":0}",
+            "signature": "6b408b8b093fef767975b2c9f8ce2338",
+            "status": 2,
+            "successCount": 0,
+            "systemErrorCode": null,
+            "type": 1
+        },
+        {
+            "attachmentId": "7b955fb0-027d-4c85-84bc-0960fbea7318",
+            "businessType": 30,
+            "createTime": 1636367555989,
+            "dataLen": 0,
+            "errorMsg": "[{\"code\":\"31804\",\"column\":0,\"row\":1},{\"code\":\"910001\",\"column\":2,\"row\":1},{\"code\":\"31804\",\"column\":0,\"row\":2},{\"code\":\"910001\",\"column\":2,\"row\":2},{\"code\":\"31804\",\"column\":0,\"row\":3},{\"code\":\"910001\",\"column\":2,\"row\":3},{\"code\":\"31804\",\"column\":0,\"row\":4},{\"code\":\"910001\",\"column\":2,\"row\":4},{\"code\":\"31804\",\"column\":0,\"row\":5},{\"code\":\"910001\",\"column\":2,\"row\":5},{\"code\":\"31804\",\"column\":0,\"row\":6},{\"code\":\"910001\",\"column\":2,\"row\":6},{\"code\":\"31804\",\"column\":0,\"row\":7},{\"code\":\"910001\",\"column\":2,\"row\":7},{\"code\":\"31804\",\"column\":0,\"row\":8},{\"code\":\"910001\",\"column\":2,\"row\":8},{\"code\":\"31804\",\"column\":0,\"row\":9},{\"code\":\"910001\",\"column\":2,\"row\":9},{\"code\":\"31804\",\"column\":0,\"row\":10},{\"code\":\"910001\",\"column\":2,\"row\":10},{\"code\":\"31804\",\"column\":0,\"row\":11},{\"code\":\"910001\",\"column\":2,\"row\":11},{\"code\":\"31804\",\"column\":0,\"row\":12},{\"code\":\"910001\",\"column\":2,\"row\":12},{\"code\":\"31804\",\"column\":0,\"row\":13},{\"code\":\"910001\",\"column\":2,\"row\":13},{\"code\":\"31804\",\"column\":0,\"row\":14},{\"code\":\"910001\",\"column\":2,\"row\":14},{\"code\":\"31804\",\"column\":0,\"row\":15},{\"code\":\"910001\",\"column\":2,\"row\":15},{\"code\":\"31804\",\"column\":0,\"row\":16},{\"code\":\"910001\",\"column\":2,\"row\":16},{\"code\":\"31804\",\"column\":0,\"row\":17},{\"code\":\"910001\",\"column\":2,\"row\":17},{\"code\":\"31804\",\"column\":0,\"row\":18},{\"code\":\"910001\",\"column\":2,\"row\":18},{\"code\":\"31804\",\"column\":0,\"row\":19},{\"code\":\"910001\",\"column\":2,\"row\":19},{\"code\":\"31804\",\"column\":0,\"row\":20},{\"code\":\"910001\",\"column\":2,\"row\":20},{\"code\":\"31804\",\"column\":0,\"row\":21},{\"code\":\"910001\",\"column\":2,\"row\":21},{\"code\":\"31804\",\"column\":0,\"row\":22},{\"code\":\"910001\",\"column\":2,\"row\":22},{\"code\":\"31804\",\"column\":0,\"row\":23},{\"code\":\"910001\",\"column\":2,\"row\":23},{\"code\":\"31804\",\"column\":0,\"row\":24},{\"code\":\"910001\",\"column\":2,\"row\":24},{\"code\":\"31804\",\"column\":0,\"row\":25},{\"code\":\"910001\",\"column\":2,\"row\":25},{\"code\":\"31804\",\"column\":0,\"row\":26},{\"code\":\"910001\",\"column\":2,\"row\":26},{\"code\":\"31804\",\"column\":0,\"row\":27},{\"code\":\"910001\",\"column\":2,\"row\":27},{\"code\":\"31804\",\"column\":0,\"row\":28},{\"code\":\"910001\",\"column\":2,\"row\":28},{\"code\":\"31804\",\"column\":0,\"row\":29},{\"code\":\"910001\",\"column\":2,\"row\":29},{\"code\":\"31804\",\"column\":0,\"row\":30},{\"code\":\"910001\",\"column\":2,\"row\":30},{\"code\":\"31804\",\"column\":0,\"row\":31},{\"code\":\"910001\",\"column\":2,\"row\":31},{\"code\":\"31804\",\"column\":0,\"row\":32},{\"code\":\"910001\",\"column\":2,\"row\":32},{\"code\":\"31804\",\"column\":0,\"row\":33},{\"code\":\"910001\",\"column\":2,\"row\":33},{\"code\":\"31804\",\"column\":0,\"row\":34},{\"code\":\"910001\",\"column\":2,\"row\":34},{\"code\":\"31804\",\"column\":0,\"row\":35},{\"code\":\"910001\",\"column\":2,\"row\":35},{\"code\":\"31804\",\"column\":0,\"row\":36},{\"code\":\"910001\",\"column\":2,\"row\":36}]",
+            "extraParam": null,
+            "failCount": 36,
+            "filePath": null,
+            "fileSize": 7396,
+            "id": "2b4002df-056a-45ff-bb82-a18d9da39142",
+            "memberId": "73da8c17-d84a-4698-975e-d18ca5232708",
+            "queryParas": "{\"fileId\":\"37016e58-5366-48b6-9061-e83f09cd3261\",\"organizationId\":\"9bcad76a-ba7e-4ace-9f92-f6e086a29cec\",\"type\":1}",
+            "signature": "e916246d9f030907e0970b5e1a202af7",
+            "status": 2,
+            "successCount": 0,
+            "systemErrorCode": null,
+            "type": 2
+        },
+        {
+            "attachmentId": "c7a6abc4-d362-4c52-abdc-0801109be4a2",
+            "businessType": 25,
+            "createTime": 1636367555761,
+            "dataLen": 0,
+            "errorMsg": "[{\"code\":\"30123\",\"column\":7,\"row\":1},{\"code\":\"30123\",\"column\":7,\"row\":2},{\"code\":\"30123\",\"column\":7,\"row\":3},{\"code\":\"30123\",\"column\":7,\"row\":4},{\"code\":\"30123\",\"column\":7,\"row\":5},{\"code\":\"30123\",\"column\":7,\"row\":6},{\"code\":\"30123\",\"column\":7,\"row\":7},{\"code\":\"30123\",\"column\":7,\"row\":8},{\"code\":\"30123\",\"column\":7,\"row\":9},{\"code\":\"30123\",\"column\":7,\"row\":10},{\"code\":\"30123\",\"column\":7,\"row\":11},{\"code\":\"30123\",\"column\":7,\"row\":12},{\"code\":\"30123\",\"column\":7,\"row\":13},{\"code\":\"30123\",\"column\":7,\"row\":14},{\"code\":\"30123\",\"column\":7,\"row\":15},{\"code\":\"30123\",\"column\":7,\"row\":16},{\"code\":\"30123\",\"column\":7,\"row\":17},{\"code\":\"30123\",\"column\":7,\"row\":18},{\"code\":\"30123\",\"column\":7,\"row\":19},{\"code\":\"30123\",\"column\":7,\"row\":20},{\"code\":\"30123\",\"column\":7,\"row\":21},{\"code\":\"30123\",\"column\":7,\"row\":22},{\"code\":\"30123\",\"column\":7,\"row\":23},{\"code\":\"30123\",\"column\":7,\"row\":24},{\"code\":\"30123\",\"column\":7,\"row\":25},{\"code\":\"30123\",\"column\":7,\"row\":26},{\"code\":\"30123\",\"column\":7,\"row\":27},{\"code\":\"30123\",\"column\":7,\"row\":28},{\"code\":\"30123\",\"column\":7,\"row\":29},{\"code\":\"30123\",\"column\":7,\"row\":30},{\"code\":\"30123\",\"column\":7,\"row\":31},{\"code\":\"30123\",\"column\":7,\"row\":32},{\"code\":\"30123\",\"column\":7,\"row\":33},{\"code\":\"30123\",\"column\":7,\"row\":34},{\"code\":\"30123\",\"column\":7,\"row\":35},{\"code\":\"30123\",\"column\":7,\"row\":36}]",
+            "extraParam": null,
+            "failCount": 36,
+            "filePath": null,
+            "fileSize": 7162,
+            "id": "dc14b31b-d72b-4c32-8bc2-47ac79361186",
+            "memberId": "73da8c17-d84a-4698-975e-d18ca5232708",
+            "queryParas": "{\"fileId\":\"cc5c2352-b8a3-4ab5-8874-63f735f9accd\",\"organizationId\":\"9bcad76a-ba7e-4ace-9f92-f6e086a29cec\",\"uri\":\"exam/question-depot\",\"type\":1,\"publish\":\"\",\"isOtherModuleType\":0}",
+            "signature": "f85076e718b1d2cfa3b1428dff16d86d",
+            "status": 2,
+            "successCount": 0,
+            "systemErrorCode": null,
+            "type": 1
+        }
+    ],
+    "recordCount": 6
+}
+
+2021-11-08 18:54:49,049 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：exportid_1: ac2f673d-3cad-48de-a2bc-542b9417c289
+2021-11-08 18:54:49,049 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:40] | INFO: 提取变量：exportid_2: 7ac0695b-1f4a-43d5-9281-dead3258a189
+2021-11-08 18:54:49,050 | D:\PyCharm\project\httprunner3\common\validate.py[line:59] | INFO: 断言失败：<class 'AssertionError'>

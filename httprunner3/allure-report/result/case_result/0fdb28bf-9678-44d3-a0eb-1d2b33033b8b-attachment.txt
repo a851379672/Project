@@ -1,0 +1,46 @@
+2021-11-09 18:08:08.557 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : PUT
+url      : https://tester1.zhixueyun.com/api/v1/exam/banner/f614bf2f-cd99-473d-8d7c-e6a0e23c4186
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__18e2aca42fbac4d646fa2183166937ac",
+    "uri": "exam/banners",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "Content-Length": "196"
+}
+cookies  : {}
+body     : title=tester%E5%B9%BF%E5%91%8A2&path=default%2FM00%2F01%2FC6%2FwKgLTWGKSIeAVEnNAAdftfhVfXQ774.jpg&attachmentId=b499d1c6-021b-4d16-8e44-0ff62fd08977&id=f614bf2f-cd99-473d-8d7c-e6a0e23c4186&status=0
+
+2021-11-09 18:08:08.558 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 09 Nov 2021 10:08:08 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "459",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "attachmentId": "b499d1c6-021b-4d16-8e44-0ff62fd08977",
+    "createTime": 1636452487635,
+    "createrId": "5f0870a7-d55d-4a31-8782-1ac8d9690efc",
+    "id": "f614bf2f-cd99-473d-8d7c-e6a0e23c4186",
+    "modifyTime": null,
+    "organizationId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+    "path": "default/M00/01/C6/wKgLTWGKSIeAVEnNAAdftfhVfXQ774.jpg",
+    "sort": null,
+    "status": 0,
+    "title": "tester广告2",
+    "url": "https://tester1.zhixueyun.com/#/exam/exam/exam-detail/c7b1be08-8dc9-45f3-a25c-19886461de25"
+}
+
+2021-11-09 18:08:08,558 | D:\PyCharm\project\httprunner3\common\validate.py[line:57] | INFO: 响应断言： 预期值：'tester广告2' 实际值：'tester广告2', 断言成功!
+2021-11-09 18:08:08,559 | D:\PyCharm\project\httprunner3\common\validate.py[line:57] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!

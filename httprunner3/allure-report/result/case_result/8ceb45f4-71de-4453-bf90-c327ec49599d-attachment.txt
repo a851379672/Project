@@ -1,0 +1,49 @@
+2021-11-08 18:54:44.485 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : PUT
+url      : http://pre-202108-10.zhixueyun.com/api/v1/exam/question/b704dd42-d55d-4e9d-b9da-273b6770a0ff
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__63dee25121f52d578e31b63d9eae3001",
+    "uri": "exam/question-depot",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "Content-Length": "1532"
+}
+cookies  : {}
+body     : value=%5B%7B%27value%27%3A+%27A%27%2C+%27valueText%27%3A+%27A%27%2C+%27name%27%3A+0%2C+%27type%27%3A+1%7D%2C+%7B%27value%27%3A+%27B%27%2C+%27valueText%27%3A+%27B%27%2C+%27name%27%3A+1%2C+%27type%27%3A+0%7D%2C+%7B%27value%27%3A+%27C%27%2C+%27valueText%27%3A+%27C%27%2C+%27name%27%3A+2%2C+%27type%27%3A+1%7D%2C+%7B%27value%27%3A+%27D%27%2C+%27valueText%27%3A+%27D%27%2C+%27name%27%3A+3%2C+%27type%27%3A+1%7D%5D&questionAttrs%5B0%5D%5Bvalue%5D=A&questionAttrs%5B0%5D%5BvalueText%5D=A&questionAttrs%5B0%5D%5Bname%5D=0&questionAttrs%5B0%5D%5Btype%5D=1&questionAttrs%5B1%5D%5Bvalue%5D=B&questionAttrs%5B1%5D%5BvalueText%5D=B&questionAttrs%5B1%5D%5Bname%5D=1&questionAttrs%5B1%5D%5Btype%5D=0&questionAttrs%5B2%5D%5Bvalue%5D=C&questionAttrs%5B2%5D%5BvalueText%5D=C&questionAttrs%5B2%5D%5Bname%5D=2&questionAttrs%5B2%5D%5Btype%5D=1&questionAttrs%5B3%5D%5Bvalue%5D=D&questionAttrs%5B3%5D%5BvalueText%5D=D&questionAttrs%5B3%5D%5Bname%5D=3&questionAttrs%5B3%5D%5Btype%5D=1&content=%E8%AF%95%E9%A2%98%E7%9B%AE%E5%BD%951-%E5%8D%95%E9%80%89%E9%A2%981&contentText=%E8%AF%95%E9%A2%98%E7%9B%AE%E5%BD%951-%E5%8D%95%E9%80%89%E9%A2%981&score=1000&id=b704dd42-d55d-4e9d-b9da-273b6770a0ff&type=1&questionDepotId=62c57f85-b3e4-4131-b02d-19cf2e05486f&questionDepot%5Bid%5D=62c57f85-b3e4-4131-b02d-19cf2e05486f&questionDepot%5Bname%5D=%E8%AF%95%E9%A2%98%E7%9B%AE%E5%BD%951&parsing=%E8%AF%95%E9%A2%98%E8%A7%A3%E6%9E%90&parsingText=%E8%AF%95%E9%A2%98%E8%A7%A3%E6%9E%90&affectedType=1&difficulty=3&organizationId=9bcad76a-ba7e-4ace-9f92-f6e086a29cec&depotEdit=1
+
+2021-11-08 18:54:44.485 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Mon, 08 Nov 2021 10:54:44 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "344",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "content": "试题目录1-单选题1",
+    "createTime": 1636368884068,
+    "difficulty": 3,
+    "errorRate": 0,
+    "id": "b704dd42-d55d-4e9d-b9da-273b6770a0ff",
+    "markAmount": 0,
+    "questionAttrs": null,
+    "questionDepotId": "62c57f85-b3e4-4131-b02d-19cf2e05486f",
+    "recoveryCount": 0,
+    "replaceId": "b704dd42-d55d-4e9d-b9da-273b6770a0ff",
+    "rightRate": 0,
+    "status": 0,
+    "subs": [],
+    "type": 1
+}
+
+2021-11-08 18:54:44,485 | D:\PyCharm\project\httprunner3\common\validate.py[line:57] | INFO: 响应断言： 预期值：'0' 实际值：'0', 断言成功!
