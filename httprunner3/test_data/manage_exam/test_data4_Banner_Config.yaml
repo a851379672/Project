@@ -7,12 +7,12 @@ allure:
       'allure_story': '考试模块'
     }
 test:
--   name: 【广告配置】——查询广告标题
+-   name: 【广告配置】——查询广告
     request:
         url: api/v1/exam/banner/page
         method: GET
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/banners
         params:
             {
@@ -30,7 +30,7 @@ test:
         url: api/v1/system/organization/granted-organization
         method: GET
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/banners
         params:
             {
@@ -47,7 +47,7 @@ test:
         url: api/v1/system/grant/find-organization-operatortype
         method: GET
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/banners
         params:
             {
@@ -58,16 +58,16 @@ test:
     validate:
         -   eq:  ['$.${organizationId},', '0,1,2,3,4']
 
--   name: 【广告配置】——上传广告封面
+-   name: 【广告配置】——新增广告-上传广告封面
     request:
         url: api/v1/human/file/upload
         method: POST
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
         params:
         files:
             {
-              file: '广告封面.jpg'
+              file: 'exam/广告封面.jpg'
             }
     sql_statement:
     extract:
@@ -76,12 +76,12 @@ test:
     validate:
         -   eq:  ['$.[0].filename,', '广告封面.jpg']
 
--   name: 【广告配置】——获取认证考试
+-   name: 【广告配置】——新增广告-添加考试-获取认证考试
     request:
         url: api/v1/exam/exam/exam-select
         method: GET
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/banners
         params:
             {
@@ -96,12 +96,12 @@ test:
     validate:
         -   eq:  ['$.recordCount,', '1']
 
--   name: 【广告配置】——广告保存
+-   name: 【广告配置】——新增广告-广告保存
     request:
         url: api/v1/exam/banner
         method: POST
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/banners
         data:
             {
@@ -124,7 +124,7 @@ test:
         url: api/v1/exam/banner/publish/${bannersId}
         method: PUT
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/banners
           content-type: application/x-www-form-urlencoded; charset=UTF-8
         data:
@@ -143,7 +143,7 @@ test:
         url: api/v1/exam/banner/sort/${bannersId}
         method: PUT
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/banners
           content-type: application/x-www-form-urlencoded; charset=UTF-8
         data:
@@ -163,7 +163,7 @@ test:
         url: api/v1/exam/banner/revoke/${bannersId}
         method: PUT
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/banners
           content-type: application/x-www-form-urlencoded; charset=UTF-8
         data:
@@ -182,7 +182,7 @@ test:
         url: api/v1/exam/banner/${bannersId}
         method: PUT
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/banners
           content-type: application/x-www-form-urlencoded; charset=UTF-8
         data:
@@ -204,7 +204,7 @@ test:
         url: api/v1/exam/banner/${bannersId}
         method: DELETE
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/banners
           content-type: application/x-www-form-urlencoded; charset=UTF-8
         data:

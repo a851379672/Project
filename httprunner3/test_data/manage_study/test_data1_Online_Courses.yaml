@@ -1,0 +1,440 @@
+allure:
+    {
+      'allure_descrption': '',
+      'allure_suite': '管理端',
+      'allure_sub_suite': '学习模块',
+      'allure_feature': '管理端',
+      'allure_story': '学习模块'
+    }
+test:
+-   name: 【在线课程】——查询学习复制功能配置
+    request:
+        url: api/v1/system/rule-config/key
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: course-study/course-info
+        params:
+            {
+              key: 'STUDY_COPY'
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.desc', '课程和专题的复制功能配置']
+
+-   name: 【在线课程】——查询学习相关接口配置
+    request:
+        url: api/v1/system/rule-config/key
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: course-study/course-info
+        params:
+            {
+              key: 'RESOURCE_PROVIDER_CONFIG'
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.desc', '是否开启资源方能力以及相关接口配置']
+
+-   name: 【在线课程】——查询组织操作类型
+    request:
+        url: api/v1/system/grant/find-organization-operatortype
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: course-study/course-info
+        params:
+            {
+              uri: 'course-study/course-info'
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.${organizationId},', '0,1,2,3,4']
+
+-   name: 【在线课程】——查询组织操作类型
+    request:
+        url: api/v1/system/topic/hot
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: course-study/course-info
+        params:
+            {
+              type: 2,
+              limit: 10
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【在线课程】——新增课程—填写信息—获取推荐标签
+    request:
+        url: api/v1/system/topic/hot
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: course-study/course-info
+        params:
+            {
+              type: 2,
+              limit: 10
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【在线课程】——新增课程—填写信息—查询课程证书
+    request:
+        url: api/v1/system/certificate/type-org
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: course-study/course-info
+        params:
+            {
+              businessType: 1
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.name', "课程证书"]
+
+-   name: 【在线课程】——新增课程—填写信息—查询企业证书
+    request:
+        url: api/v1/system/certificate/business
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: course-study/course-info
+        params:
+            {
+              businessType: 1
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.[0].name', '课程证书']
+
+-   name: 【在线课程】——新增课程—填写信息—获取最高授权组织
+    request:
+        url: api/v1/system/organization/max-grant-organization
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: course-study/course-info
+        params:
+            {
+              uri: 'course-study/course-info'
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.status', 1]
+
+-   name: 【在线课程】——新增课程—填写信息—获取最高授权组织
+    request:
+        url: api/v1/system/organization/max-grant-organization
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: course-study/course-info
+        params:
+            {
+              uri: 'course-study/course-info'
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.status', 1]
+
+-   name: 【在线课程】——新增课程—填写信息—查询课程目录权限
+    request:
+        url: api/v1/system/data-permission/key
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: course-study/course-info
+        params:
+            {
+              organizationId: '${organizationId}',
+              code: 'COURSE'
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.name', '课程目录']
+
+-   name: 【在线课程】——新增课程—填写信息—查询课程类别父级
+    request:
+        url: api/v1/course-study/course-category/parents
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: course-study/course-info
+        params:
+            {
+              organizationId: '${organizationId}',
+              state: 1
+            }
+    sql_statement:
+    extract:
+        course_catalogueId: $.id
+    validate:
+        -   eq:  ['$.[0].state', 1]
+
+-   name: 【在线课程】——新增课程—填写信息—选择讲师-查询讲师列表
+    request:
+        url: api/v1/training/lecturer/select
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: course-study/course-info
+        params:
+            {
+              status: 1,
+              uri: 'course-study/course-info',
+              page: 1,
+              pageSize: 10
+            }
+    sql_statement:
+    extract:
+        lecturerIds: $.items[0].id
+    validate:
+        -   eq:  ['$.recordCount', 1]
+
+-   name: 【在线课程】——新增课程—填写信息—选择讲师-查询讲师最近记录
+    request:
+        url: api/v1/training/lecturer/recent-record
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: course-study/course-info
+        data:
+            {
+              lecturerIds: '${lecturerIds}'
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【在线课程】——新增课程—填写信息—选择讲师-查询讲师级别父级
+    request:
+        url: api/v1/training/lecturerLevel/parents
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: course-study/course-info
+        params:
+            {
+              organizationId: '${organizationId}'
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.[0].states', 1]
+
+-   name: 【在线课程】——新增课程—填写信息—选择讲师-查询组织路径
+    request:
+        url: api/v1/system/organization/find-path/${organizationId}
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: course-study/course-info
+        params:
+            {
+              organizationId: '${organizationId}'
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.id', '${organizationId}']
+
+-   name: 【在线课程】——新增课程—填写信息—上传封面-选择封面图片
+    request:
+        url: api/v1/system/file/simple-upload-auth
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: course-study/course-info
+        files:
+          {
+            picSize: 512000,
+            access_token: '${admin_token}',
+            file: 'study/课程封面_1.jpg'
+          }
+    sql_statement:
+    extract:
+        coverPath: $.path
+    validate:
+        -   eq:  ['$.msg', 'success']
+
+-   name: 【在线课程】——新增课程—填写信息—上传封面—确认封面图片
+    request:
+        url: ${coverPath}
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: course-study/course-info
+        params:
+          {
+            image: 'data:image/png;base64,$base'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【在线课程】——新增课程—填写信息—上传封面-提交封面图片
+    request:
+        url: api/v1/system/file/cropper-upload
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: course-study/course-info
+        data:
+          {
+            image: 'data:image/png;base64,$base_64{study/课程封面_1.jpg}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【普通考试】——新增课程—填写信息—查询标签类型
+    request:
+        url: api/v1/system/topic-type
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: course-study/course-info
+        params:
+          {
+            status: 1,
+            organizationId: '${organizationId}'
+          }
+    sql_statement:
+    extract:
+        typeId: $.[0].id
+    validate:
+        -   eq:  ['$.[0].name', '正式标签']
+
+-   name: 【在线课程】——新增课程—填写信息—查询正式类型标签
+    request:
+        url: api/v1/system/topic/select
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        params:
+          {
+            typeId: '${typeId}'
+          }
+    sql_statement:
+    extract:
+        topicId1: $.[0].id
+        topicId2: $.[1].id
+        topicId3: $.[2].id
+        topicId4: $.[3].id
+        topicId5: $.[4].id
+    validate:
+        -   eq:  ['$.[0].topicTypeName', '正式标签']
+
+-   name: 【在线课程】——新增课程—上传资源-查询音视频完成标准
+    request:
+        url: api/v1/system/rule-config/key
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: course-study/course-info
+        params:
+          {
+            key: 'COURSE_COMPLETE_RULE'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.desc', '配置音视频完成标准，以及是否开启倍速播放']
+
+-   name: 【在线课程】——新增课程—上传资源-查询课程完成标准
+    request:
+        url: api/v1/system/rule-config/key
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: course-study/course-info
+        params:
+          {
+            key: 'COURSE_COMPLETION_RULE'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.desc', '配置课程完成标准，以及是否开启倍速播放，是否配置独立规则']
+
+#-   name: 【在线课程】——新增课程—上传资源-上传课件-获取上传文件
+#    request:
+#        url: api/v1/human/sharding-file/auth/get-upload-files
+#        method: GET
+#        headers:
+#          Authorization: Bearer__${admin_token}
+#          uri: course-study/course-info
+#        params:
+#          {
+#            fileKey: '45c09b14e8b161fe1a952e7225dedcd0'
+#          }
+#    sql_statement:
+#    extract:
+#        fileKey: $.fileKey
+#    validate:
+#        -   eq:  [Status Code, 200]
+#
+#-   name: 【在线课程】——新增课程—上传资源-上传课件-获取上传文件
+#    request:
+#        url: api/v1/course-study/sharding-file/upload-parse-file
+#        method: POST
+#        headers:
+#          Authorization: Bearer__${admin_token}
+#          uri: course-study/course-info
+#        files:
+#          {
+#            file: 'study/picture-tester-7.jpg',
+#            fileKey: '${fileKey}',
+#            fileOrder: 1,
+#            flag: 2,
+#            fileName: 'picture-tester-7.jpg',
+#            contentType: 'image/jpeg',
+#            convert: 'true',
+#            notifyUrl: '${ent_url}/api/v1/human/file/cloud/upload-merge',
+#            companyId: '${organizationId}',
+#            fileChunks: 1,
+#            fileSize: 73187,
+#            configId: 'undefined'
+#          }
+#    sql_statement:
+#    extract:
+#        fileKey: $.fileKey
+#    validate:
+#        -   eq:  [Status Code, 200]
+
+
+
+
+
+
+
+
+
+
+
+
+
+

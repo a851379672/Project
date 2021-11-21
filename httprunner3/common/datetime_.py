@@ -165,6 +165,6 @@ if __name__ == "__main__":
     print(object_.diy_time(('*, *, +02, +03, -40, 30')))
     object_ = DateTime()
     print(object_.time_stamp(
-        object_.diy_time(('*, +09, +02, +03, -40, 30'))))  # diy转时间戳 1655633010
+        object_.diy_time(('*, +09, +02, +03, -40, 30'))))  # diy时间转时间戳 1655633010
     print(object_.date_today())  # 获取当前日期, 2021-09-17
     print(object_.date_time())   # 2021-09-17 15:43:19.892563

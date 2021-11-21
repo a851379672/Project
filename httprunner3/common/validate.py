@@ -1,5 +1,4 @@
 import jsonpath
-import pytest
 from mysql_operate import *
 
 logger = logging
@@ -53,7 +52,7 @@ class JsonPath(Manager):
             else:
                 actual = jsonpath.jsonpath(response.json(), actual)[0]
             try:
-                assert expect.__str__() in actual.__str__()
+                assert expect.__str__() in actual.__str__().lower()
                 logger.info(f"响应断言： 预期值：'{expect}' 实际值：'{actual}', 断言成功!")
             except AssertionError:
                 pytest.xfail(f'断言失败：{AssertionError}')
@@ -64,10 +63,10 @@ class JsonPath(Manager):
 class StatusCode(Manager):
 
     def handler(self, actual, expect, response):
-        if actual.startswith('status_code'):
+        if actual.startswith('Status Code'):
             actual = response.status_code
             try:
-                assert actual.__str__() in expect.__str__()
+                assert actual.__str__() in expect.__str__().lower()
                 logger.info(f"响应断言： 预期值：'{expect}' 实际值：'{actual}', 断言成功!")
             except AssertionError:
                 pytest.xfail(f'断言失败：{AssertionError}')
@@ -80,7 +79,7 @@ class RegExp(Manager):
     def handler(self, actual, expect, response):
         actual = re.findall(actual, response.text)[0]
         try:
-            assert actual.__str__() in expect.__str__()
+            assert actual.__str__() in expect.__str__().lower()
             logger.info(f"响应断言： 预期值：'{expect}' 实际值：'{actual}', 断言成功!")
         except AssertionError:
             pytest.xfail(f'断言失败：{AssertionError}')

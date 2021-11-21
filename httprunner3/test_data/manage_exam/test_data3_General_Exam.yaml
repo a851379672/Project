@@ -7,12 +7,31 @@ allure:
       'allure_story': '考试模块'
     }
 test:
--   name: 【普通考试】——人脸识别规则
+
+-   name: 【普通考试】——普通考试-查询考试任务列表
+    request:
+        url: api/v1/exam/exam
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        params:
+            {
+              menuType: 3,
+              page: 1,
+              pageSize: 10
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【普通考试】——新增考试—基本信息—人脸识别规则
     request:
         url: api/v1/system/rule-config/key
         method: GET
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/exam
         params:
             {
@@ -23,53 +42,52 @@ test:
     validate:
         -   eq:  ['$.status', '1']
 
--   name: 【普通考试】——生成考试id
+-   name: 【普通考试】——新增考试—基本信息—生成考试id
     request:
         url: api/v1/exam/exam/virtual-id
         method: GET
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/exam
         params:
     sql_statement:
     extract:
-        virtualExamId: '$.virtualExamId'
+        examId: $.virtualExamId
     validate:
-        -   eq:  ['status_code', '200']
+        -   eq:  [Status Code, 200]
 
--   name: 【普通考试】——获取所有设备类型
+-   name: 【普通考试】——新增考试—基本信息—获取所有设备类型
     request:
         url: api/v1/exam/equipment-type/all
         method: GET
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/exam
         params:
     sql_statement:
     extract:
     validate:
-        -   eq:  ['status_code', '200']
+        -   eq:  [Status Code, 200]
 
--   name: 【普通考试】——考试开始时间
+-   name: 【普通考试】——新增考试—基本信息—考试开始时间
     request:
         url: api/v1/exam/exam/remote-startTime
         method: GET
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/exam
         params:
     sql_statement:
     extract:
-        currentTime: '$.currentTime'
     validate:
         -   eq:  ['$time_stamp{$.afterNoonRemoteTime}', '$time_stamp{$diy_time{*, *, +1, 09, 00, 00}}']
 
--   name: 【普通考试】——获取推荐标签
+-   name: 【普通考试】——新增考试—基本信息—获取推荐标签
     request:
         url: api/v1/system/topic/hot
         method: GET
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/exam
         params:
           {
@@ -79,14 +97,14 @@ test:
     sql_statement:
     extract:
     validate:
-        -   eq:  ['status_code', '200']
+        -   eq:  [Status Code, 200]
 
--   name: 【普通考试】——获取授权组织
+-   name: 【普通考试】——新增考试—基本信息—获取最高授权组织
     request:
         url: api/v1/system/organization/max-grant-organization
         method: GET
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/exam
         params:
           {
@@ -94,35 +112,35 @@ test:
           }
     sql_statement:
     extract:
-        organizationId: '$.id'
+        organizationId: $.id
     validate:
         -   eq:  ['$.status', '1']
 
--   name: 【普通考试】——上传考试封面
+-   name: 【普通考试】——新增考试—基本信息—上传考试封面
     request:
         url: api/v1/system/file/simple-upload-auth
         method: POST
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
         params:
         files:
           {
             picSize: 512000,
-            access_token: '${access_token}',
-            file: '考试封面.jpg'
+            access_token: '${admin_token}',
+            file: 'exam/考试封面.jpg'
           }
     sql_statement:
     extract:
-        coverPath: '$.path'
+        coverPath: $.path
     validate:
         -   eq:  ['$.msg', 'success']
 
--   name: 【普通考试】——确认封面图片
+-   name: 【普通考试】——新增考试—基本信息—确认封面图片
     request:
         url: ${coverPath}
         method: GET
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/exam
         params:
           {
@@ -131,24 +149,1138 @@ test:
     sql_statement:
     extract:
     validate:
-        -   eq:  ['status_code', '200']
+        -   eq:  [Status Code, 200]
 
--   name: 【普通考试】——提交考试封面
+-   name: 【普通考试】——新增考试—基本信息—提交考试封面
     request:
         url: api/v1/system/file/cropper-upload
         method: POST
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           content-type: application/x-www-form-urlencoded; charset=UTF-8
           uri: exam/exam
         data:
           {
-            image: 'data:image/png;base64,$base_64{考试封面.jpg}',
+            image: 'data:image/png;base64,$base_64{exam/考试封面.jpg}'
+          }
+    sql_statement:
+    extract:
+        coverId: $.imgId
+    validate:
+        -   eq:  ['$.msg', 'success']
+
+-   name: 【普通考试】——新增考试—基本信息—查询标签类型
+    request:
+        url: api/v1/system/topic-type
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        params:
+          {
+            status: 1,
+            organizationId: '${organizationId}'
+          }
+    sql_statement:
+    extract:
+        typeId: $.[0].id
+    validate:
+        -   eq:  ['$.[0].name', '正式标签']
+
+-   name: 【普通考试】——新增考试—基本信息—查询正式类型标签
+    request:
+        url: api/v1/system/topic/select
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        params:
+          {
+            typeId: '${typeId}'
+          }
+    sql_statement:
+    extract:
+        topicId1: $.[0].id
+        topicId2: $.[1].id
+        topicId3: $.[2].id
+        topicId4: $.[3].id
+        topicId5: $.[4].id
+    validate:
+        -   eq:  ['$.[0].topicTypeName', '正式标签']
+
+-   name: 【普通考试】——新增考试—添加试卷—试题组卷—选择试题—查询所有试题
+    request:
+        url: api/v1/exam/question
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        params:
+          {
+            organizationId: '${organizationId}',
+            status: 1,
+            url: 'exam/exam',
+            depttype: 1,
+            isSelect: 1,
+            share: 1,
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+        questionDepotId: $.items[0].questionDepotId
+    validate:
+        -   eq:  ['$.recordCount', '37']
+
+-   name: 【普通考试】——新增考试—添加试卷—试题组卷—选择试题—查询目录单选题
+    request:
+        url: api/v1/exam/question
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        params:
+          {
+            organizationId: '${organizationId}',
+            type: 1,
+            status: 1,
+            url: 'exam/exam',
+            depttype: 1,
+            isSelect: 1,
+            share: 1,
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+        danxuantiId: $.items[0].id
+        danxuantiScore: $.items[0].score
+        danxauntiDifficulty: $.difficulty
+        danxuantioriginalQuestionId: $.items[0].originalQuestionId
+    validate:
+        -   eq:  ['$.recordCount', '6']
+
+-   name: 【普通考试】——新增考试—添加试卷—试题组卷—选择试题—查询目录多选题
+    request:
+        url: api/v1/exam/question
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        params:
+          {
+            organizationId: '${organizationId}',
+            type: 2,
+            status: 1,
+            url: 'exam/exam',
+            depttype: 1,
+            isSelect: 1,
+            share: 1,
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+        duoxuantiId: $.items[0].id
+        duoxuantiScore: $.items[0].score
+        duoxuantiDifficulty: $.difficulty
+        duoxuantioriginalQuestionId: $.items[0].originalQuestionId
+    validate:
+        -   eq:  ['$.recordCount', '6']
+
+-   name: 【普通考试】——新增考试—添加试卷—试题组卷—选择试题—查询目录判断题
+    request:
+        url: api/v1/exam/question
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        params:
+          {
+            organizationId: '${organizationId}',
+            type: 3,
+            status: 1,
+            url: 'exam/exam',
+            depttype: 1,
+            isSelect: 1,
+            share: 1,
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+        panduantiId: $.items[0].id
+        panduantiScore: $.items[0].score
+        panduantiDifficulty: $.difficulty
+        panduantioriginalQuestionId: $.items[0].originalQuestionId
+    validate:
+        -   eq:  ['$.recordCount', '6']
+
+-   name: 【普通考试】——新增考试—添加试卷—试题组卷—选择试题—查询目录填空题
+    request:
+        url: api/v1/exam/question
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        params:
+          {
+            organizationId: '${organizationId}',
+            type: 4,
+            status: 1,
+            url: 'exam/exam',
+            depttype: 1,
+            isSelect: 1,
+            share: 1,
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+        tiankongtiId: $.items[0].id
+        tiankongtiScore: $.items[0].score
+        tiankongtiDifficulty: $.difficulty
+        tiankongtioriginalQuestionId: $.items[0].originalQuestionId
+    validate:
+        -   eq:  ['$.recordCount', '6']
+
+-   name: 【普通考试】——新增考试—添加试卷—试题组卷—选择试题—查询目录问答题
+    request:
+        url: api/v1/exam/question
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        params:
+          {
+            organizationId: '${organizationId}',
+            type: 5,
+            status: 1,
+            url: 'exam/exam',
+            depttype: 1,
+            isSelect: 1,
+            share: 1,
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+        wendatiId: $.items[0].id
+        wendatiScore: $.items[0].score
+        wendatiDifficulty: $.difficulty
+        wendatioriginalQuestionId: $.items[0].originalQuestionId
+    validate:
+        -   eq:  ['$.recordCount', '6']
+
+-   name: 【普通考试】——新增考试—添加试卷—试题组卷—选择试题—查询目录排序题
+    request:
+        url: api/v1/exam/question
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        params:
+          {
+            organizationId: '${organizationId}',
+            type: 8,
+            status: 1,
+            url: 'exam/exam',
+            depttype: 1,
+            isSelect: 1,
+            share: 1,
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+        paixutiId: $.items[0].id
+        paixutiScore: $.items[0].score
+        paixutiDifficulty: $.difficulty
+        paixutioriginalQuestionId: $.items[0].originalQuestionId
+    validate:
+        -   eq:  ['$.recordCount', '6']
+
+-   name: 【普通考试】——新增考试—添加试卷—试题组卷—选择试题—查询目录阅读理解题
+    request:
+        url: api/v1/exam/question
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        params:
+          {
+            organizationId: '${organizationId}',
+            type: 6,
+            status: 1,
+            url: 'exam/exam',
+            depttype: 1,
+            isSelect: 1,
+            share: 1,
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+        yuedulijietiId: $.items[0].id
+        yuedulijietiScore: $.items[0].score
+        yuedulijietiDifficulty: $.difficulty
+        yuedulijietioriginalQuestionId: $.items[0].originalQuestionId
+    validate:
+        -   eq:  ['$.recordCount', '1']
+
+-   name: 【普通考试】——新增考试—添加试卷—试题组卷—选择试题—查询阅读理解题子题
+    request:
+        url: api/v1/exam/question/${yuedulijietiId}
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        params:
+    sql_statement:
+    extract:
+        yuedulijie_zitiId1: $.subs[0].id
+        yuedulijie_zitiScore1: $.subs[0].score
+        yuedulijie_zitiId2: $.subs[1].id
+        yuedulijie_zitiScore2: $.subs[1].score
+        yuedulijie_zitiId3: $.subs[2].id
+        yuedulijie_zitiScore3: $.subs[2].score
+    validate:
+        -   eq:  ['$.type', '6']
+
+-   name: 【普通考试】——新增考试—添加试卷—试题组卷—保存试题组卷
+    request:
+        url: api/v1/exam/paper-class
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam
+        data:
+          {
+            questionNum: 7,
+            totalScore: 7500,
+            paperClassQuestions:
+              [
+                {
+                  questionId: "${danxuantiId}",
+                  score: "${danxuantiScore}",
+                  sequence: 0,
+                  isFromSelected: 1,
+                  originalQuestionId: "${danxuantioriginalQuestionId}",
+                  sortType: 1
+                },
+                {
+                  questionId: "${duoxuantiId}",
+                  score: "${duoxuantiScore}",
+                  sequence: 1,
+                  isFromSelected: 1,
+                  originalQuestionId: "${duoxuantioriginalQuestionId}",
+                  sortType: 2
+                },
+                {
+                  questionId: "${panduantiId}",
+                  score: "${panduantiScore}",
+                  sequence: 2,
+                  isFromSelected: 1,
+                  originalQuestionId: "${panduantioriginalQuestionId}",
+                  sortType: 3
+                },
+                {
+                  questionId: "${paixutiId}",
+                  score: "${paixutiScore}",
+                  sequence: 3,
+                  isFromSelected: 1,
+                  originalQuestionId: "${paixutioriginalQuestionId}",
+                  sortType: 4
+                },
+                {
+                  questionId: "${tiankongtiId}",
+                  score: "${tiankongtiScore}",
+                  sequence: 4,
+                  isFromSelected: 1,
+                  originalQuestionId: "${tiankongtioriginalQuestionId}",
+                  sortType: 5
+                },
+                {
+                  questionId: "${wendatiId}",
+                  score: "${wendatiScore}",
+                  sequence: 5,
+                  isFromSelected: 1,
+                  originalQuestionId: "${wendatioriginalQuestionId}",
+                  sortType: 6
+                },
+                {
+                  questionId: "${yuedulijietiId}",
+                  score: "${yuedulijietiScore}",
+                  sequence: 6,
+                  isFromSelected: 1,
+                  originalQuestionId: "${yuedulijietioriginalQuestionId}",
+                  sortType: 7
+                },
+                {
+                  questionId: "${yuedulijie_zitiId1}",
+                  score: "${yuedulijie_zitiScore1}",
+                  sequence: 3,
+                  parentId: "${yuedulijietiId}"
+                },
+                {
+                  questionId: "${yuedulijie_zitiId2}",
+                  score: "${yuedulijie_zitiScore2}",
+                  sequence: 2,
+                  parentId: "${yuedulijietiId}"
+                },
+                {
+                  questionId: "${yuedulijie_zitiId3}",
+                  score: "${yuedulijie_zitiScore3}",
+                  sequence: 1,
+                  parentId: "${yuedulijietiId}"
+                }
+              ],
+            'questionDepot/${questionDepotId}/1/1/1': 10,
+            'questionDepot/${questionDepotId}/1/1/8': 10,
+            'questionDepot/${questionDepotId}/1/1/5': 10,
+            'questionDepot/${questionDepotId}/2/1/4': 10,
+            'questionDepot/${questionDepotId}/3/1/2': 10,
+            'questionDepot/${questionDepotId}/3/1/3': 10,
+            'questionDepot/${questionDepotId}/3/1/6': 10,
+            type: 2,
+            name: '${ent_name}普通考试-$date_time{}'
+          }
+    sql_statement:
+    extract:
+        paperId: $.id
+        examName: $.name
+    validate:
+        -   eq:  ['$.status', '1']
+
+-   name: 【普通考试】——新增考试—添加试卷—查询试卷信息
+    request:
+        url: api/v1/exam/paper-class
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        params:
+          {
+            paperId: '${paperId}'
           }
     sql_statement:
     extract:
     validate:
-        -   eq:  ['$.msg', 'success']
+        -   eq:  ['$.status', '1']
 
+-   name: 【普通考试】——新增考试—添加试卷—选择用户-查询授权节点列表
+    request:
+        url: api/v1/system/grant/find-member-grant-item
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        params:
+          {
+            uri: 'exam/exam'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.[0].organizationName', '${organizationName}']
 
+-   name: 【普通考试】——新增考试—添加试卷—选择用户-查询用户信息
+    request:
+        url: api/v1/human/member/members
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        params:
+          {
+            organizationId: '${organizationId}',
+            name: '${student_username}',
+            exceptSelf: 'true',
+            status: 3,
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.[0].status', '1']
 
+-   name: 【普通考试】——新增考试—添加试卷—选择用户-查询用户数量
+    request:
+        url: api/v1/human/member/members-count
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        params:
+          {
+            organizationId: '${organizationId}',
+            name: '${student_username}',
+            exceptSelf: 'true',
+            status: 3,
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['(.*)', '1']
+
+-   name: 【普通考试】——新增考试—添加考生-查询是否分院管理员
+    request:
+        url: api/v1/system/home-admin/is-home-admin
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        params:
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.isHomeAdmin', 'true']
+
+-   name: 【普通考试】——新增考试—添加考生-同步分院-查询分院信息
+    request:
+        url: api/v1/system/home-admin/member-manage-branch
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        params:
+    sql_statement:
+    extract:
+        homeConfigIds: $.items[0].id
+    validate:
+        -   eq:  ['$.recordCount', '1']
+
+-   name: 【普通考试】——新增考试—添加考生-同步分院-添加分院
+    request:
+        url: api/v1/system/home-admin/check-manage-branch
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        params:
+          {
+            homeConfigIds: '${homeConfigIds}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.ultraVires', 'false']
+
+-   name: 【普通考试】——新增考试—考试配置-监考人员配置-添加监考人员
+    request:
+        url: api/v1/exam/invigilator/batch-insert
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam
+        data:
+          {
+            invigilators:
+              [
+                {
+                  memberId: "${studentId}",
+                  examId: "${examId}"
+                },
+                {
+                  memberId: "${adminId}",
+                  examId: "${examId}"
+                }],
+            examName: '${examName}',
+            businessType: 1
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.[0].examId', '${examId}']
+
+-   name: 【普通考试】——新增考试—考试配置-监考人员配置-查询监考人员列表
+    request:
+        url: api/v1/exam/invigilator/page/config-list
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        params:
+          {
+            examId: '${examId}',
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+      invigilatorId: $.items.[1].id
+    validate:
+        -   eq:  ['$.recordCount', '2']
+
+-   name: 【普通考试】——新增考试—考试配置-监考人员配置-查询监考人员最高监考部门范围
+    request:
+        url: api/v1/system/organization/company-orgs
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        params:
+          {
+            uri: 'exam/exam',
+            supportMore: 'true',
+            status: 1,
+            rootId: '${organizationId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.[0].status', '1']
+
+-   name: 【普通考试】——新增考试—考试配置-监考人员配置-更改监考人员监考范围
+    request:
+        url: api/v1/exam/invigilator/update-grant
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam
+        data:
+          {
+            invigilatorId: '${invigilatorId}',
+            invigilatorGrants:
+              [
+                {
+                  memberId: "${adminId}",
+                  organizationId: "${organizationId}",
+                  type: "1",
+                  invigilatorId: "${invigilatorId}"
+                }
+              ],
+            businessType: 1
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.[0].type', '1']
+
+-   name: 【普通考试】——新增考试—考试配置-监考人员配置-导入监考人员
+    request:
+        url: api/v1/human/file/upload-excel-file
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        files:
+          {
+            file: 'exam/${ent_name}_考试监考人员导入模板.xlsx'
+          }
+    sql_statement:
+    extract:
+        fileId: $.[0].id
+    validate:
+        -   eq:  ['$.[0].filename', '${ent_name}_考试监考人员导入模板.xlsx']
+
+-   name: 【普通考试】——新增考试—考试配置-监考人员配置-查询导入结果
+    request:
+        url: api/v1/exam/invigilator/import-exam
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam
+        data:
+          {
+            fileId: '${fileId}',
+            examId: '${examId}'
+          }
+    sql_statement:
+    extract:
+        errorFileId: $.errorFileId
+    validate:
+        -   eq:  ['$.failCount', '1']
+        -   eq:  ['$.successCount', '1']
+        -   eq:  ['$.updateCount', '1']
+
+-   name: 【普通考试】——新增考试—考试配置-监考人员配置-下载错误的导入数据
+    request:
+        url: api/v1/exam/file/download/invigilator
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        params:
+          {
+            id: '${errorFileId}',
+            access_token: '${admin_token}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【普通考试】——新增考试—考试配置-监考人员配置-删除监考人员
+    request:
+        url: api/v1/exam/invigilator/${invigilatorId}
+        method: DELETE
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam
+        data:
+          {
+            id: '${invigilatorId}',
+            memberName: '${admin_username}',
+            businessType: 1
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.id', '${invigilatorId}']
+
+-   name: 【普通考试】——新增考试—考试配置-发布考试-试卷题目统计
+    request:
+        url: api/v1/exam/exam/paper-question-statistics/${paperId}
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        params:
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.sum', 7]
+
+-   name: 【普通考试】——新增考试—考试配置-发布考试-查询监考人员数量
+    request:
+        url: api/v1/exam/exam/has-invigilator
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        params:
+          {
+            examId: '${examId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.status', '1']
+
+-   name: 【普通考试】——新增考试—考试配置-保存考试
+    request:
+        url: api/v1/exam/exam/${examId}
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam
+        data:
+          {
+            publish: 0,
+            isAllowSwitch: 0,
+            accessSecret: A12345,
+            admissionTicket: 0,
+            allowExamTimes: 1,
+            anonymityMark: 0,
+            applicantNeedAudit: 0,
+            applicantEndTime: '$time_stamp{$diy_time{*, *, +1, *, *, *}}',
+            applicantStartTime: '$time_stamp{$date_time{}}',
+            belongAuditTime: 'false',
+            certificateType: 0,
+            clientType: 0,
+            coverId: '${coverId}',
+            coverIdPath: '${coverIdPath}',
+            duration: 60,
+            startTime: '$diy_time{*, *, *, *, *}',
+            endTime: '$diy_time{*, *, +1, *, *, *}',
+            evalutionRule:
+              {
+                passLess: '45',
+                passGreater: '60',
+                goodLess: '60',
+                goodGreater: '67',
+                excellentLess: '67',
+                noPassGreater: '45'
+              },
+            examNotes:
+              '<p class="MsoNormal" style="font-family:宋体;">
+              <span style="font-family:宋体;"><span>请考生仔细阅读，并参照执行，如遇特殊情况，请联系监考老师或拨打客服电话。</span>
+              </span> </p>',
+            faceFailedRule: 0,
+            faceMode: 0,
+            hasCert: 0,
+            id: '${examId}',
+            isCreditNeedPass: 1,
+            isMakeUp: 0,
+            isOpenPractice: 1,
+            isPermitViewCode: 1,
+            isRepeat: 1,
+            isSetAccessSecret: 1,
+            isSetPassScore: 1,
+            isSetPersonalCode: 0,
+            issueFlag: 1,
+            joinNumber: 0,
+            makeUpCount: 0,
+            name: '${examName}',
+            needApplicant: 1,
+            needFillOutInfo: 0,
+            paperClassId: '${paperId}',
+            paperShowRule: 2,
+            paperSortRule: 1,
+            paperViewRule: 1,
+            passScore: 45,
+            preApproval: 0,
+            previousStatus: 5,
+            sendToCenter: 0,
+            showAnswerRule: 3,
+            sourceType: 1,
+            status: 1,
+            supportApp: '1,2',
+            type: 1,
+            isCredit: 1,
+            client: 2,
+            topicIds: '${topicId1},${topicId2},${topicId3}，${topicId4}，${topicId5}',
+            organizationId-text: '${ent_name}',
+            organizationId: '${organizationId}',
+            publisherId: '${adminId}',
+            publishOrganizationId: '${publishOrganizationId}',
+            isShowScore: 'false',
+            markConfig:
+              {"markPapers":
+                 [{
+                   id: '${examId}',
+                   name: '${examName}',
+                   markMembers:
+                     [
+                       {
+                         id: '${studentId}',
+                         name: '${studentName}'
+                       }
+                     ]
+                 }]
+              },
+            audienceItems:
+              [
+                {
+                  joinId: "${studentId}",joinType: 5,joinName: "${studentName}"
+                }
+              ],
+            addItems:
+              [
+                {
+                  joinId: '${studentId}',
+                  joinType: 5,
+                  joinName: '${studentName}'
+                }
+              ],
+            topic:
+              [
+                {
+                  topicId: '${topicId1}'
+                },
+                {
+                  topicId: '${topicId2}'
+                },
+                {
+                  topicId: '${topicId3}'
+                },
+                {
+                  topicId: '${topicId4}'
+                },
+                {
+                  topicId: '${topicId5}'
+                }
+              ]
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.name', '${examName}']
+
+-   name: 【普通考试】——新增考试—考试配置-发布考试-学员消息通知
+    request:
+        url: api/v1/system/operation/message-template/content
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        params:
+          {
+            templateCode: 'exam_publish',
+            organizationId: '${organizationId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.name', '考试发布']
+
+-   name: 【普通考试】——新增考试—考试配置-发布考试-评卷老师消息通知
+    request:
+        url: api/v1/system/operation/message-template/content
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        params:
+          {
+            templateCode: 'exam_mark_plan',
+            organizationId: '${organizationId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.name', '考试阅卷安排']
+
+-   name: 【普通考试】——新增考试—考试配置-发布考试-监考老师消息通知
+    request:
+        url: api/v1/system/operation/message-template/content
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        params:
+          {
+            templateCode: 'invigilator_notice',
+            organizationId: '${organizationId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.name', '监考通知']
+
+-   name: 【普通考试】——新增考试—考试配置-发布考试-查询规则配置
+    request:
+        url: api/v1/system/rule-config/key
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        params:
+          {
+            key: 'WEBSITE_TITLE'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.status', '1']
+
+-   name: 【普通考试】——新增考试—考试配置-发布考试-查询试卷类型信息
+    request:
+        url: api/v1/exam/paper-class
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        params:
+          {
+            paperId: '${paperId}',
+            examName: '${examName}',
+            businessType: 1
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.status', '1']
+
+-   name: 【普通考试】——新增考试—考试配置-发布考试-提交考试内容
+    request:
+        url: api/v1/exam/exam
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam
+        data:
+          {
+            publish: 1,
+            isAllowSwitch: 0,
+            virtualExamId: '${examId}',
+            isCredit: 1,
+            isRepeat: 1,
+            name: '${examName}',
+            allowExamTimes: 1,
+            startTime: '$diy_time{*, *, *, *, *}',
+            endTime: '$diy_time{*, *, +1, *, *}',
+            duration: 60,
+            client: 2,
+            isCreditNeedPass: 1,
+            type: 1,
+            topicIds: '${topicId1},${topicId2},${topicId3}，${topicId4}，${topicId5}',
+            examNotes: '<p class="MsoNormal" style="font-family:宋体;">
+                <span style="font-family:宋体;"><span>请考生仔细阅读，并参照执行，如遇特殊情况，请联系监考老师或拨打客服电话。</span>
+                </span></p>',
+            organizationId-text: '${ent_name}',
+            organizationId: '${organizationId}',
+            publisherId: '${adminId}',
+            publishOrganizationId: '${publishOrganizationId}',
+            coverId: '${coverId}',
+            coverIdPath: '${coverPath}',
+            supportApp: '1,2',
+            clientType: 0,
+            totalScore: 7500,
+            evalutionRule:
+              {
+                passLess: '45',
+                passGreater: '60',
+                goodLess: '60',
+                goodGreater: '67',
+                excellentLess: '67',
+                noPassGreater: '45'
+              },
+            paperClassId: '${paperId}',
+            paperSortRule: 1,
+            rule: 45,
+            paperShowRule: 2,
+            anonymityMark: 0,
+            markConfig:
+              {"markPapers":
+                 [{
+                   id: '${examId}',
+                   name: '${examName}',
+                   markMembers:
+                     [
+                       {
+                     id: '${studentId}',
+                     name: '${studentName}'
+                       }
+                     ]
+                 }]
+              },
+            audienceItemIds: '${studentId}',
+            resourceIds: 'validatePass',
+            audiences: '${studentName}',
+            addItems:
+              [
+                {
+                  joinId: '${studentId}',
+                  joinType: 5,
+                  joinName: '${studentName}'
+                }
+              ],
+            emptyFlag: 0,
+            branchid: '${homeConfigIds}',
+            resourceType: 4,
+            branchAdmin: 'true',
+            needApplicant: 1,
+            needFillOutInfo: 0,
+            applicantStartTime: '$time_stamp{$date_time{}}',
+            applicantEndTime: '$time_stamp{$diy_time{*, *, +1, *, *, *}}',
+            needAudit: 0,
+            preApproval: 0,
+            applicantNeedAudit: 0,
+            faceMode: 0,
+            faceFailedRule: 0,
+            isShowScore: 'false',
+            accessSecret: 'A12345',
+            isSetAccessSecret: 1,
+            admissionTicket: 0,
+            issueFlag: 1,
+            certificateType: 0,
+            paperViewRule: 1,
+            showAnswerRule: 3,
+            paperClassScores:
+              [
+                {
+                  questionDepotId: '${questionDepotId}',
+                  difficulty: '${danxuantiDifficulty}',
+                  totalScore: '${danxuantiScore}',
+                  questionCount: 1,
+                  type: 1
+                },
+                {
+                  questionDepotId: '${duoxuanDepotId}',
+                  difficulty: '${duoxuantiDifficulty}',
+                  totalScore: '${duoxuantiScore}',
+                  questionCount: 1,
+                  type: 2
+                },
+                {
+                  questionDepotId: '${questionDepotId}',
+                  difficulty: '${panduantiDifficulty}',
+                  totalScore: '${panduantiScore}',
+                  questionCount: 1,
+                  type: 3
+                },
+                {
+                  questionDepotId: '${questionDepotId}',
+                  difficulty: '${tiankongtiDifficulty}',
+                  totalScore: '${tiankongtiScore}',
+                  questionCount: 1,
+                  type: 4
+                },
+                {
+                  questionDepotId: '${questionDepotId}',
+                  difficulty: '${wendatiDifficulty}',
+                  totalScore: '${wendatiScore}',
+                  questionCount: 1,
+                  type: 5
+                },
+                {
+                  questionDepotId: '${questionDepotId}',
+                  difficulty: '${yuedulijietiDifficulty}',
+                  totalScore: '${yuedulijietiScore}',
+                  questionCount: 1,
+                  type: 6
+                },
+                {
+                  questionDepotId: '${questionDepotId}',
+                  difficulty: '${paixutiDifficulty}',
+                  totalScore: '${paixutiScore}',
+                  questionCount: 1,
+                  type: 8
+                },
+              ],
+            audienceItems:
+              [
+                {
+                  joinId: "${studentId}",joinType: 5,joinName: "${studentName}"
+                }
+              ],
+            topic:
+              [
+                {
+                  topicId: '${topicId1}'
+                },
+                {
+                  topicId: '${topicId2}'
+                },
+                {
+                  topicId: '${topicId3}'
+                },
+                {
+                  topicId: '${topicId4}'
+                },
+                {
+                  topicId: '${topicId5}'
+                }
+              ],
+            isSetPersonalCode: 0,
+            noticeUser: 0,
+            noticeTeacher: 0,
+            noticeInvigilator: 0,
+            website: '${ent_name}'
+          }
+    sql_statement:
+    extract:
+        businessId: $.id
+    validate:
+        -   eq:  ['$.name', '${examName}']
+
+-   name: 【普通考试】——新增考试—考试配置-发布考试-发布分支
+    request:
+        url: api/v1/exam/resource-pool/publish-to-branch
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: course-study/course-info
+        data:
+          {
+            businessId: '${businessId}',
+            type: 4,
+            homeConfigIds: '${homeConfigIds}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.status', 'ok']

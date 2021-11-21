@@ -11,7 +11,7 @@ class ReadData(object):
         self.folder: 模块文件夹
         self.file_name: yaml文件名
         """
-        self.folder = [os.path.join(paths, filename) for paths, files, name in os.walk(TESTCASE_PATH) for filename in
+        self.folder = [os.path.join(paths, filename) for paths, files, name in os.walk(TESTDATA_PATH) for filename in
                        files]
         self.file_name = [name for folder in self.folder for path, file, name in os.walk(folder) if name]
 

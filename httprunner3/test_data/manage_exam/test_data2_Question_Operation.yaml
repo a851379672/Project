@@ -12,7 +12,7 @@ test:
         url: api/v1/system/module-code
         method: GET
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
         params:
             {
@@ -20,14 +20,14 @@ test:
             }
     extract:
     validate:
-       -   eq:  ['status_code', '200']
+       -   eq:  [Status Code, 200]
 
 -   name: 【普通试题】——新建试题目录
     request:
         url: api/v1/exam/question-depot
         method: POST
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
         data:
             {
@@ -51,7 +51,7 @@ test:
         url: api/v1/exam/question-depot
         method: GET
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
         params:
             {
@@ -71,7 +71,7 @@ test:
         url: api/v1/exam/question-depot/${questionDepotId}
         method: GET
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
         params:
     extract:
@@ -84,7 +84,7 @@ test:
         url: api/v1/exam/question
         method: POST
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
           content-type: application/x-www-form-urlencoded; charset=UTF-8
         data:
@@ -127,14 +127,14 @@ test:
       danxuanid: $.id
       danxuanname: $.content
     validate:
-      -   eq:   ['$.type', '1']
+      -   eq:  ['$.type', '1']
 
 -   name: 【普通试题】——查询组织试题
     request:
         url: api/v1/exam/question
         method: GET
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
         params:
             {
@@ -158,7 +158,7 @@ test:
         url: api/v1/exam/question/${danxuanid}
         method: PUT
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
           content-type: application/x-www-form-urlencoded; charset=UTF-8
         data:
@@ -199,14 +199,14 @@ test:
           }
     extract:
     validate:
-       -   eq:   ['$.status', '0']
+       -   eq:  ['$.status', '0']
 
 -   name: 【普通试题】——新增多选题
     request:
         url: api/v1/exam/question
         method: POST
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
           content-type: application/x-www-form-urlencoded; charset=UTF-8
         data:
@@ -249,14 +249,14 @@ test:
       duoxuanid: $.id
       duoxuanname: $.content
     validate:
-      -   eq:   ['$.type', '2']
+      -   eq:  ['$.type', '2']
 
 -   name: 【普通试题】——修改多选题
     request:
         url: api/v1/exam/question/${duoxuanid}
         method: PUT
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
           content-type: application/x-www-form-urlencoded; charset=UTF-8
         data:
@@ -297,14 +297,14 @@ test:
           }
     extract:
     validate:
-       -   eq:   ['$.status', '0']
+       -   eq:  ['$.status', '0']
 
 -   name: 【普通试题】——新增判断题
     request:
         url: api/v1/exam/question
         method: POST
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
           content-type: application/x-www-form-urlencoded; charset=UTF-8
         data:
@@ -332,14 +332,14 @@ test:
       panduanid: $.id
       panduanname: $.content
     validate:
-      -   eq:   ['$.type', '3']
+      -   eq:  ['$.type', '3']
 
 -   name: 【普通试题】——修改判断题
     request:
         url: api/v1/exam/question/${panduanid}
         method: PUT
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
           content-type: application/x-www-form-urlencoded; charset=UTF-8
         data:
@@ -365,14 +365,14 @@ test:
           }
     extract:
     validate:
-       -   eq:   ['$.status', '0']
+       -   eq:  ['$.status', '0']
 
 -   name: 【普通试题】——新增填空题
     request:
         url: api/v1/exam/question
         method: POST
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
           content-type: application/x-www-form-urlencoded; charset=UTF-8
         data:
@@ -408,14 +408,14 @@ test:
       tiankongid: $.id
       tiankongname: $.content
     validate:
-      -   eq:   ['$.type', '4']
+      -   eq:  ['$.type', '4']
 
 -   name: 【普通试题】——修改填空题
     request:
         url: api/v1/exam/question/${tiankongid}
         method: PUT
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
           content-type: application/x-www-form-urlencoded; charset=UTF-8
         data:
@@ -442,14 +442,14 @@ test:
     extract:
       tiankongid: $.id
     validate:
-       -   eq:   ['$.status', '0']
+       -   eq:  ['$.status', '0']
 
 -   name: 【普通试题】——新增问答题
     request:
         url: api/v1/exam/question
         method: POST
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
           content-type: application/x-www-form-urlencoded; charset=UTF-8
         data:
@@ -477,14 +477,14 @@ test:
       wendaid: $.id
       wendaname: $.content
     validate:
-      -   eq:   ['$.type', '5']
+      -   eq:  ['$.type', '5']
 
 -   name: 【普通试题】——修改问答题
     request:
         url: api/v1/exam/question/${wendaid}
         method: PUT
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
           content-type: application/x-www-form-urlencoded; charset=UTF-8
         data:
@@ -510,14 +510,14 @@ test:
           }
     extract:
     validate:
-       -   eq:   ['$.status', '0']
+       -   eq:  ['$.status', '0']
 
 -   name: 【普通试题】——新增阅读理解
     request:
         url: api/v1/exam/question
         method: POST
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
           content-type: application/x-www-form-urlencoded; charset=UTF-8
         data:
@@ -614,14 +614,14 @@ test:
       yuedulijie_wendaid: $.subs[2].id
       yuedulijie_wendaid_1: $.subs[2].questionAttrs[0].id
     validate:
-      -   eq:   ['$.type', '6']
+      -   eq:  ['$.type', '6']
 
 -   name: 【普通试题】——修改阅读理解题
     request:
         url: api/v1/exam/question/${yuedulijieid}
         method: PUT
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
           content-type: application/x-www-form-urlencoded; charset=UTF-8
         data:
@@ -702,14 +702,14 @@ test:
           }
     extract:
     validate:
-       -   eq:   ['$.status', '0']
+       -   eq:  ['$.status', '0']
 
 -   name: 【普通试题】——新增排序题
     request:
         url: api/v1/exam/question
         method: POST
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
           content-type: application/x-www-form-urlencoded; charset=UTF-8
         data:
@@ -755,14 +755,14 @@ test:
       paixuid: $.id
       paixuname: $.content
     validate:
-      -   eq:   ['$.type', '8']
+      -   eq:  ['$.type', '8']
 
 -   name: 【普通试题】——修改排序题
     request:
         url: api/v1/exam/question/${paixuid}
         method: PUT
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
           content-type: application/x-www-form-urlencoded; charset=UTF-8
         data:
@@ -806,14 +806,14 @@ test:
           }
     extract:
     validate:
-       -   eq:   ['$.status', '0']
+       -   eq:  ['$.status', '0']
 
 -   name: 【普通试题】——试题导出
     request:
         url: api/v1/system/grant/check-switch
         method: GET
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
         data:
     extract:
@@ -825,7 +825,7 @@ test:
         url: api/v1/exam/question/${danxuanid}
         method: DELETE
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
           content-type: application/x-www-form-urlencoded; charset=UTF-8
         data:
@@ -842,7 +842,7 @@ test:
         url: api/v1/exam/question/${duoxuanid}
         method: DELETE
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
           content-type: application/x-www-form-urlencoded; charset=UTF-8
         data:
@@ -859,7 +859,7 @@ test:
         url: api/v1/exam/question/${panduanid}
         method: DELETE
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
           content-type: application/x-www-form-urlencoded; charset=UTF-8
         data:
@@ -876,7 +876,7 @@ test:
         url: api/v1/exam/question/${tiankongid}
         method: DELETE
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
           content-type: application/x-www-form-urlencoded; charset=UTF-8
         data:
@@ -893,7 +893,7 @@ test:
         url: api/v1/exam/question/${wendaid}
         method: DELETE
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
           content-type: application/x-www-form-urlencoded; charset=UTF-8
         data:
@@ -910,7 +910,7 @@ test:
         url: api/v1/exam/question/${yuedulijieid}
         method: DELETE
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
           content-type: application/x-www-form-urlencoded; charset=UTF-8
         data:
@@ -927,7 +927,7 @@ test:
         url: api/v1/exam/question/${paixuid}
         method: DELETE
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
           content-type: application/x-www-form-urlencoded; charset=UTF-8
         data:
@@ -944,11 +944,11 @@ test:
         url: api/v1/human/file/upload-excel-file
         method: POST
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
         params:
         files:
           {
-            file: '${ent_name}_试题导入模板.xlsx'
+            file: 'exam/${ent_name}_试题导入模板.xlsx'
           }
     extract:
        fileid_1: $.[0].id
@@ -960,7 +960,7 @@ test:
         url: api/v1/exam/question/batch-async-import
         method: POST
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           content-type: application/x-www-form-urlencoded; charset=UTF-8
           uri: exam/question-depot
         params:
@@ -970,22 +970,22 @@ test:
             organizationId: '${organizationId}',
             type: 1,
             uri: 'exam/question-depot',
-            token: '${access_token}'
+            token: '${admin_token}'
           }
     extract:
     validate:
-       -   eq:  ['status_code', '200']
+       -   eq:  [Status Code, 200]
 
 -   name: 【普通试题】——试题批量更新
     request:
         url: api/v1/human/file/upload-excel-file
         method: POST
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
         params:
         files:
           {
-            file: '${ent_name}_试题批量更新模板.xlsx'
+            file: 'exam/${ent_name}_试题批量更新模板.xlsx'
           }
     extract:
       fileid_2: $.[0].id
@@ -997,7 +997,7 @@ test:
         url: api/v1/exam/question/batch-async-update
         method: POST
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           content-type: application/x-www-form-urlencoded; charset=UTF-8
           uri: exam/question-depot
         params:
@@ -1006,18 +1006,18 @@ test:
             fileId: '${fileid_2}',
             type: 1,
             organizationId: '${organizationId}',
-            token: '${access_token}'
+            token: '${admin_token}'
           }
     extract:
     validate:
-       -   eq:  ['status_code', '200']
+       -   eq:  [Status Code, 200]
 
 -   name: 【普通试题】——点击试题目录修改
     request:
         url: api/v1/exam/question-depot/${questionDepotId}
         method: GET
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
         params:
             {
@@ -1037,7 +1037,7 @@ test:
         url: api/v1/exam/question-depot/${questionDepotId}
         method: PUT
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
         data:
             {
@@ -1060,24 +1060,24 @@ test:
         url: api/v1/exam/question-depot/export
         method: GET
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
         params:
           {
             organizationId: '${organizationId}',
             deptType: 1,
             exportType: 2,
-            access_token: '${access_token}'
+            admin_token: '${admin_token}'
           }
     extract:
     validate:
-       -   eq:  ['status_code', '200']
+       -   eq:  [Status Code, 200]
 
 -   name: 【普通试题】——查看任务队列
     request:
         url: api/v1/human/export-task/find-export-tasks
         method: GET
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
         params:
           {
@@ -1098,7 +1098,7 @@ test:
         url: api/v1/human/export-task/${exportid_1}
         method: DELETE
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
         params:
           {
@@ -1113,7 +1113,7 @@ test:
         url: api/v1/human/export-task/${exportid_2}
         method: DELETE
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
         params:
           {
@@ -1128,7 +1128,7 @@ test:
         url: api/v1/exam/question
         method: GET
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
         params:
           {
@@ -1149,42 +1149,42 @@ test:
             pageSize: 100
           }
     extract:
-        timuid1: $.items[0].id
-        timuid2: $.items[1].id
-        timuid3: $.items[2].id
-        timuid4: $.items[3].id
-        timuid5: $.items[4].id
-        timuid6: $.items[5].id
-        timuid7: $.items[6].id
-        timuid8: $.items[7].id
-        timuid9: $.items[8].id
-        timuid10: $.items[9].id
-        timuid11: $.items[10].id
-        timuid12: $.items[11].id
-        timuid13: $.items[12].id
-        timuid14: $.items[13].id
-        timuid15: $.items[14].id
-        timuid16: $.items[15].id
-        timuid17: $.items[16].id
-        timuid18: $.items[17].id
-        timuid19: $.items[18].id
-        timuid20: $.items[19].id
-        timuid21: $.items[20].id
-        timuid22: $.items[21].id
-        timuid23: $.items[22].id
-        timuid24: $.items[23].id
-        timuid25: $.items[24].id
-        timuid26: $.items[25].id
-        timuid27: $.items[26].id
-        timuid28: $.items[27].id
-        timuid29: $.items[28].id
-        timuid30: $.items[29].id
-        timuid31: $.items[30].id
-        timuid32: $.items[31].id
-        timuid33: $.items[32].id
-        timuid34: $.items[33].id
-        timuid35: $.items[34].id
-        timuid36: $.items[35].id
+        timuId1: $.items[0].id
+        timuId2: $.items[1].id
+        timuId3: $.items[2].id
+        timuId4: $.items[3].id
+        timuId5: $.items[4].id
+        timuId6: $.items[5].id
+        timuId7: $.items[6].id
+        timuId8: $.items[7].id
+        timuId9: $.items[8].id
+        timuId10: $.items[9].id
+        timuId11: $.items[10].id
+        timuId12: $.items[11].id
+        timuId13: $.items[12].id
+        timuId14: $.items[13].id
+        timuId15: $.items[14].id
+        timuId16: $.items[15].id
+        timuId17: $.items[16].id
+        timuId18: $.items[17].id
+        timuId19: $.items[18].id
+        timuId20: $.items[19].id
+        timuId21: $.items[20].id
+        timuId22: $.items[21].id
+        timuId23: $.items[22].id
+        timuId24: $.items[23].id
+        timuId25: $.items[24].id
+        timuId26: $.items[25].id
+        timuId27: $.items[26].id
+        timuId28: $.items[27].id
+        timuId29: $.items[28].id
+        timuId30: $.items[29].id
+        timuId31: $.items[30].id
+        timuId32: $.items[31].id
+        timuId33: $.items[32].id
+        timuId34: $.items[33].id
+        timuId35: $.items[34].id
+        timuId36: $.items[35].id
     validate:
        -   eq:  ['$.recordCount', '36']
 
@@ -1193,24 +1193,24 @@ test:
         url: api/v1/exam/question/publish
         method: POST
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
           content-type: application/x-www-form-urlencoded; charset=UTF-8
         data:
           {
-             ids: '${timuid1},${timuid2},${timuid3},${timuid4},${timuid5},${timuid6},${timuid7},${timuid8},${timuid9},${timuid10},${timuid11},${timuid12},${timuid13},${timuid14},${timuid15},${timuid16},${timuid17},${timuid18},${timuid19},${timuid20},${timuid21},${timuid22},${timuid23},${timuid24},${timuid25},${timuid26},${timuid27},${timuid28},${timuid29},${timuid30},${timuid31},${timuid32},${timuid33},${timuid34},${timuid35},${timuid36}',
+             ids: '${timuId1},${timuId2},${timuId3},${timuId4},${timuId5},${timuId6},${timuId7},${timuId8},${timuId9},${timuId10},${timuId11},${timuId12},${timuId13},${timuId14},${timuId15},${timuId16},${timuId17},${timuId18},${timuId19},${timuId20},${timuId21},${timuId22},${timuId23},${timuId24},${timuId25},${timuId26},${timuId27},${timuId28},${timuId29},${timuId30},${timuId31},${timuId32},${timuId33},${timuId34},${timuId35},${timuId36}',
              status: 1
           }
     extract:
     validate:
-       -   eq:  ['$.id', '${timuid1},${timuid2},${timuid3},${timuid4},${timuid5},${timuid6},${timuid7},${timuid8},${timuid9},${timuid10},${timuid11},${timuid12},${timuid13},${timuid14},${timuid15},${timuid16},${timuid17},${timuid18},${timuid19},${timuid20},${timuid21},${timuid22},${timuid23},${timuid24},${timuid25},${timuid26},${timuid27},${timuid28},${timuid29},${timuid30},${timuid31},${timuid32},${timuid33},${timuid34},${timuid35},${timuid36}']
+       -   eq:  ['$.id', '${timuId1},${timuId2},${timuId3},${timuId4},${timuId5},${timuId6},${timuId7},${timuId8},${timuId9},${timuId10},${timuId11},${timuId12},${timuId13},${timuId14},${timuId15},${timuId16},${timuId17},${timuId18},${timuId19},${timuId20},${timuId21},${timuId22},${timuId23},${timuId24},${timuId25},${timuId26},${timuId27},${timuId28},${timuId29},${timuId30},${timuId31},${timuId32},${timuId33},${timuId34},${timuId35},${timuId36}']
 
 -   name: 【普通试题】——删除导入试题
     request:
         url: api/v1/exam/question/batchDelete
         method: POST
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
         data:
     sql_statement:
@@ -1218,14 +1218,14 @@ test:
         -  sql:  ['SELECT * FROM exam.t_question WHERE f_question_depot_id = "${questionDepotId}"', 0]
     extract:
     validate:
-      -   eq:  ['status_code', '422']
+      -   eq:  [Status Code, 422]
 
 -   name: 【普通试题】——删除试题目录
     request:
         url: api/v1/exam/question-depot/${questionDepotId}
         method: DELETE
         headers:
-          Authorization: Bearer__${access_token}
+          Authorization: Bearer__${admin_token}
           uri: exam/question-depot
           content-type: application/x-www-form-urlencoded; charset=UTF-8
         data:

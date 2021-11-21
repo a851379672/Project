@@ -1,7 +1,6 @@
 import allure
 import base64
 import hashlib
-import os
 
 
 def allure_(allure_data, ent_url):
@@ -11,7 +10,7 @@ def allure_(allure_data, ent_url):
     :return:
     """
     allure.dynamic.suite(allure_data['allure']['allure_descrption'])
-    allure.dynamic.link(os.path.join(ent_url, allure_data['request']['url']))
+    allure.dynamic.link(f"{ent_url}{allure_data['request']['url']}")
     allure.dynamic.sub_suite(allure_data['allure']['allure_sub_suite'])
     allure.dynamic.feature(allure_data['allure']['allure_feature'])
     allure.dynamic.story(allure_data['allure']['allure_story'])
@@ -44,5 +43,9 @@ def md_5(encrypt_data):
 
 if __name__ == '__main__':
     with open(r'D:\PyCharm\project\httprunner3\test_file\考试封面.jpg', 'rb') as f:
-        s = md_5(f)
-        print(s)
+        md5_file = md_5(f)
+        print(md5_file)
+    with open(r'D:\PyCharm\project\httprunner3\test_file\考试封面.jpg', 'rb') as f:
+        base_64_file = base_64(f)
+        print(base_64_file)
+

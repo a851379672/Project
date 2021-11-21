@@ -1,12 +1,11 @@
 # -*- coding: utf-8 -*-
 import json
 import pytest
-import requests
-import logging
 import yaml
+import logging
 
-from httprunner.client import get_req_resp_record
 from settings import *
+from base import base_token
 
 
 def pytest_addoption(parser):
@@ -20,79 +19,41 @@ def pytest_addoption(parser):
 
 @pytest.fixture(scope="session", autouse=True)
 def get_config(request):
+    """测试环境预处理"""
     config = request.config.getoption("config")
     config_path = os.path.join(CONFIG_PATH, f'{config}')
     with open(config_path, "r", encoding="utf-8") as f:
-        config_json = yaml.safe_load(f)
-    if config_json:
+        config_dict = yaml.safe_load(f)
+    if config_dict:
         with open(TARGET_PATH, "w", encoding="utf-8") as f:
-            f.write(json.dumps(config_json))
-    return get_access_token(config_json), get_enterprise_config(config_json)
+            f.write(json.dumps(config_dict))
+    base_token.get_admin_token(config_dict)
+    base_token.get_student_token(config_dict)
 
 
-def get_access_token(config: dict):
-    """
-    :return: access_token
-    """
-    res = requests.post(
-        url=config['login_url'],
-        data={
-            'key': config['login_key'],
-            'organization_id': config['organization_id'],
-            'login_method': config['login_method'],
-            'username': config['username'],
-            'pword': config['password']
-        },
-        headers={
-            'Content-Type': 'application/x-www-form-urlencoded'
-        })
-    get_req_resp_record(res)
-    access_token = res.json().get('access_token')
-    if access_token:
-        logging.info('企业管理员登录成功')
-        config.update({'access_token': access_token})
-        with open(TARGET_PATH, 'w') as f:
-            f.write(json.dumps(config))
-        return res
-    else:
-        logging.info('企业管理员登录失败')
+@pytest.fixture(scope="session", autouse=True)
+def fsetup_tear_down(request):
+    """全局前后置处理器"""
+    yield
+
+    # 全局后置处理，添加报告中的环境变量 environment.properties
+    config = request.config.getoption("config")
+    config_path = os.path.join(BASE_PATH, 'config', f'{config}')
+    with open(config_path, "r", encoding="utf-8") as f:
+        config_contents = yaml.safe_load(f)
+    config_contents["environment"] = os.path.splitext(f'{config}')[0]
+    environment_content = ''
+    for k, v in config_contents.items():
+        environment_content += f"{k}={v}\n"
+    with open(ENV_PRO, "w", encoding="utf-8") as f:
+        f.write(environment_content)
+    logging.info("后置处理完成.")
 
 
-def get_enterprise_config(config: dict):
-    """
-    :return: enterprise_config
-    """
-    res = requests.get(
-        url=config['config_url'],
-        headers={
-            'Authorization': f'Bearer__{config["access_token"]}'
-        })
-    get_req_resp_record(res)
-    if res.json()['redirectUri'] in config['ent_url']:
-        logging.info('获取企业配置信息成功')
-        return res
-    else:
-        logging.info('获取企业配置信息失败')
-
-
-def get_config_token(*args):
-    """
-    :param args: args
-    :return:
-    """
-    access_token = args[0][0]
-    enterprise_config = args[0][1]
-    deal_with = args[1]
-    deal_with.extract_('access_token', '$.access_token', access_token, deal_with)
-    enterprise_json = [
-        {'organizationId': '$.currentUser.organization.id'},
-        {'organizationName': '$.currentUser.organization.name'},
-        {'organizationPath': '$.currentUser.organization.path'},
-        {'ent_url': '$.redirectUri'},
-        {'ent_name': '$.websiteTitle'}
-    ]
-    [deal_with.extract_(key, value, enterprise_config, deal_with) for ent in enterprise_json
-     for key, value in ent.items()]
+@pytest.fixture(scope="session", autouse=True)
+def file_fixture():
+    """测试文件预处理,os.path.splitext(file)"""
+    pass
 
 
 if __name__ == '__main__':

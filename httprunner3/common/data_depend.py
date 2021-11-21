@@ -36,8 +36,9 @@ class DataDepend(object):
             try:
                 values = {key: jsonpath.jsonpath(response.json(), value)[0]}.get(key)
                 if values:
-                    self.dicts[key] = str(values)
-                    logging.info('提取变量：{}: {}'.format(key, values))
+                    self.dicts.update({key: str(values)})
+                    logging.info(f'提取变量：{key}: {values}')
+                    return values
             except TypeError as error:
                 logging.info(f'请检查响应和jsonpath: {error}')
 

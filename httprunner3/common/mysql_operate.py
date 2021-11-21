@@ -59,7 +59,7 @@ class MysqlOperate(object):
 
     def execute_sql_list(self):
         """
-        ——执行sql_list，应该用不到了——
+        ——执行sql_list，暂时用不到——
         :return:
         """
         sql_dict = {sql: self.cursor.execute(sql) for sql in self.sql if sql}

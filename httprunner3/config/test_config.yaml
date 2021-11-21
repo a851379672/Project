@@ -1,17 +1,22 @@
 #   test环境
 ent_url: https://tester1.zhixueyun.com/
 ent_host: http://47.97.36.217:443
+config_url: https://tester1.zhixueyun.com/api/v1/system/setting/config
 
 #   登录配置
 login_url: https://test9.zhixueyun.com/oauth/api/v1/auth
-login_key: 0J5Zm+UKb3i4gKYSpDJeGReXokKz1TeyyXGeeqJTfVxWhOz0DpdFdJmMvNNB8difW98CJNYk/1yZ6VYNw30SQtiPAOJLgVrkZolnP78WjJ5UdLpbOFCXvxy6PWmdAjopFj+3wVtARcQ8o6Qx+miPgw36InzJC7ETJj9RgfuiFoZHAxiQuHrHaNUIh3fxZVLawMDGI/ZPHSzaISUKK9gKNw==
 organization_id: SfGRfmj5IJiUyHP+luX/iFcGsyTV5dq8abfvRl+0W1uh7y45djf3lsHagGfQ7ilC
 login_method: JZNm+1f9txtGtiE0oRMJ1g==
-username: admin
-password: zxy123456
 
-#   获取config
-config_url: https://tester1.zhixueyun.com/api/v1/system/setting/config
+#   admin登录配置
+admin_login_key: 0J5Zm+UKb3i4gKYSpDJeGReXokKz1TeyyXGeeqJTfVxWhOz0DpdFdJmMvNNB8difW98CJNYk/1yZ6VYNw30SQtiPAOJLgVrkZolnP78WjJ5UdLpbOFCXvxy6PWmdAjopFj+3wVtARcQ8o6Qx+miPgw36InzJC7ETJj9RgfuiFoZHAxiQuHrHaNUIh3fxZVLawMDGI/ZPHSzaISUKK9gKNw==
+admin_username: admin
+admin_password: zxy123456
+
+#   student登录配置
+student_login_key: 0J5Zm+UKb3i4gKYSpDJeGReXokKz1TeyyXGeeqJTfVxWhOz0DpdFdJmMvNNB8difW98CJNYk/1yZ6VYNw30SQtiPAOJLgVrkZolnP78WjJ5UdLpbOFCXvxy6PWmdAjopFj+3wVtARcQ8o6Qx+miPgw36InzJC7ETJj9RgfuiFoYQgMDfhLlBuduz0dA9IlEnR3TnXNzjIZ7oBQMDwuFsrDYtI++jgeRxPoF3Ufaghug=
+student_username: test_1
+student_password: zxy123456
 
 #   mysql数据库的连接信息
 db_config:

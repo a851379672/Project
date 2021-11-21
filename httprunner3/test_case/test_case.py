@@ -4,8 +4,7 @@ import requests
 import json
 import data_depend
 
-from conftest import get_config_token  # test_case.py
-# from test_case.conftest import get_config_token  # main.py
+from base import base_config
 from common.parse_yaml import ReadData
 from common.data_depend import DataDepend
 from common.validate import Validate
@@ -24,11 +23,11 @@ class TestClass:
         with open(TARGET_PATH, 'r') as file:
             self.file = json.load(file)
 
-    def test_config_token(self, get_config):
+    def test_config(self):
         """
         :return: extract_data
         """
-        get_config_token(get_config, self.deal_with)
+        base_config.get_config_json(self.file, self.deal_with)
 
     @pytest.mark.parametrize('api_data', ReadData().return_data())
     def test_run(self, api_data):
@@ -39,7 +38,7 @@ class TestClass:
 
         """数据处理"""
         request_data = eval(self.deal_with.replace_(api_data['request']))
-        request_data['url'] = os.path.join(self.file['ent_url'], request_data['url'])
+        request_data['url'] = f"{self.file['ent_url']}{request_data['url']}"
         if request_data.get('files'):
             request_data['files'] = data_depend.file_depend(request_data)
         if request_data['headers'].get('content-type') and 'urlencoded' in request_data['headers']['content-type']:
@@ -47,7 +46,7 @@ class TestClass:
         allure_(api_data, self.file['ent_url'])
 
         """日志输出"""
-        response = requests.session().request(**request_data)
+        response = requests.session().request(**request_data, timeout=10)
         get_req_resp_record(response)
 
         """sql执行"""
