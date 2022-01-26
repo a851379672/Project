@@ -94,7 +94,7 @@ class DateTime:
         for key in date_.keys():
             result_time += datetime_[key].__str__() + datetime_format[key]
         if len(args) < 6:
-            result_time = result_time.replace(result_time[-1], '')
+            result_time = result_time[:-1]
         return result_time
 
     def get_year(self, n):
