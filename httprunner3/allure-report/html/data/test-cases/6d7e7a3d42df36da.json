@@ -1,0 +1,98 @@
+{
+  "uid" : "6d7e7a3d42df36da",
+  "name" : "【普通考试】——新增考试-添加试卷-试题组卷-新增试题-上传多选题音频",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "e38f2c09128a9990e440b0c09d3d2fe8",
+  "time" : {
+    "start" : 1643107287453,
+    "stop" : 1643107287751,
+    "duration" : 298
+  },
+  "description" : "\n        :param api_data\n        :return: report_content\n        ",
+  "descriptionHtml" : "<pre><code>    :param api_data\n    :return: report_content\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n        :param api_data\n        :return: report_content\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "eb939299be3dc195",
+      "name" : "log",
+      "source" : "eb939299be3dc195.txt",
+      "type" : "text/plain",
+      "size" : 199
+    }, {
+      "uid" : "9f0e21caf3bbc9a2",
+      "name" : "stderr",
+      "source" : "9f0e21caf3bbc9a2.txt",
+      "type" : "text/plain",
+      "size" : 1692
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【普通考试】——新增考试-添加试卷-试题组卷-新增试题-上传多选题音频"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=5, reruns_delay=5)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "19144-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "http://pre-202108-10.zhixueyun.com/api/v1/human/sharding-file/auth/upload-parse-file",
+    "url" : "http://pre-202108-10.zhixueyun.com/api/v1/human/sharding-file/auth/upload-parse-file",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=5, reruns_delay=5)" ]
+  },
+  "source" : "6d7e7a3d42df36da.json",
+  "parameterValues" : [ ]
+}

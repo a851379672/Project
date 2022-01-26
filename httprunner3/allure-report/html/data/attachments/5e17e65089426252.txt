@@ -1,0 +1,47 @@
+2022-01-25 14:29:59.557 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/human/file/7a3a0a67-9a3b-497f-a139-441225dccbe3
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__913d806a4e52a41790dc2c97e3f00bb4",
+    "uri": "exam/exam"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 14:29:59.558 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:30:00 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "344",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "cloudConfigId": null,
+    "configId": "default",
+    "contentType": "audio/mpeg",
+    "createTime": 1643092197556,
+    "extention": "mp3",
+    "filename": "试题音频_1060.mp3",
+    "id": "7a3a0a67-9a3b-497f-a139-441225dccbe3",
+    "path": "default/M00/0B/09/wKgLTWHvmOWEBEOHAAAAANpF7CU617.mp3",
+    "size": 1200080,
+    "thumbPath": null,
+    "thumbStatus": null,
+    "translateFlag": 1,
+    "translateId": null
+}
+
+2022-01-25 14:29:59,558 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: 'audio/mpeg' 实际值: 'audio/mpeg', 断言成功!

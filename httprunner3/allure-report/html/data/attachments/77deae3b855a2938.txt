@@ -1,0 +1,160 @@
+2022-01-25 11:20:50.500 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://tester1.zhixueyun.com/api/v1/exam/question
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__c0909a02d4a8aa71f02b2f2c302f1894",
+    "uri": "exam/question-depot",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "Content-Length": "6742"
+}
+cookies  : {}
+body     : value=%5B%7B%27questionAttrs%27%3A+%5B%7B%27value%27%3A+%27A%27%2C+%27valueText%27%3A+%27A%27%2C+%27name%27%3A+0%2C+%27type%27%3A+0%7D%2C+%7B%27value%27%3A+%27B%27%2C+%27valueText%27%3A+%27B%27%2C+%27name%27%3A+1%2C+%27type%27%3A+1%7D%2C+%7B%27value%27%3A+%27C%27%2C+%27valueText%27%3A+%27C%27%2C+%27name%27%3A+2%2C+%27type%27%3A+1%7D%2C+%7B%27value%27%3A+%27D%27%2C+%27valueText%27%3A+%27D%27%2C+%27name%27%3A+3%2C+%27type%27%3A+1%7D%5D%2C+%27content%27%3A+%27%E5%8D%95%E9%80%89%E9%A2%981%27%2C+%27contentText%27%3A+%27%E5%8D%95%E9%80%89%E9%A2%981%27%2C+%27difficulty%27%3A+%273%27%2C+%27score%27%3A+%271000%27%2C+%27id%27%3A+%27q-1%27%2C+%27parsing%27%3A+%27%E8%AF%95%E9%A2%98%E8%A7%A3%E6%9E%901%27%2C+%27parsingText%27%3A+%27%E8%AF%95%E9%A2%98%E8%A7%A3%E6%9E%901%27%2C+%27type%27%3A+%271%27%2C+%27order%27%3A+1%7D%2C+%7B%27questionAttrs%27%3A+%5B%7B%27value%27%3A+%27A%27%2C+%27valueText%27%3A+%27A%27%2C+%27name%27%3A+0%2C+%27type%27%3A+0%7D%2C+%7B%27value%27%3A+%27B%27%2C+%27valueText%27%3A+%27B%27%2C+%27name%27%3A+1%2C+%27type%27%3A+0%7D%2C+%7B%27value%27%3A+%27C%27%2C+%27valueText%27%3A+%27C%27%2C+%27name%27%3A+2%2C+%27type%27%3A+2%7D%2C+%7B%27value%27%3A+%27D%27%2C+%27valueText%27%3A+%27D%27%2C+%27name%27%3A+3%2C+%27type%27%3A+2%7D%5D%2C+%27content%27%3A+%27%E5%A4%9A%E9%80%89%E9%A2%982%27%2C+%27contentText%27%3A+%27%E5%A4%9A%E9%80%89%E9%A2%982%27%2C+%27difficulty%27%3A+%273%27%2C+%27score%27%3A+%271000%27%2C+%27id%27%3A+%27q-2%27%2C+%27parsing%27%3A+%27%E8%AF%95%E9%A2%98%E8%A7%A3%E6%9E%902%27%2C+%27parsingText%27%3A+%27%E8%AF%95%E9%A2%98%E8%A7%A3%E6%9E%902%27%2C+%27type%27%3A+%272%27%2C+%27order%27%3A+2%7D%2C+%7B%27questionAttrs%27%3A+%5B%7B%27value%27%3A+%27%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%27%2C+%27name%27%3A+%27%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%27%2C+%27type%27%3A+5%7D%5D%2C+%27content%27%3A+%27%E9%97%AE%E7%AD%94%E9%A2%983%27%2C+%27contentText%27%3A+%27%E9%97%AE%E7%AD%94%E9%A2%983%27%2C+%27score%27%3A+%271000%27%2C+%27parsing%27%3A+%27%E8%AF%95%E9%A2%98%E8%A7%A3%E6%9E%903%27%2C+%27parsingText%27%3A+%27%E8%AF%95%E9%A2%98%E8%A7%A3%E6%9E%903%27%2C+%27type%27%3A+%275%27%2C+%27id%27%3A+%27q-3%27%2C+%27difficulty%27%3A+%273%27%2C+%27order%27%3A+3%7D%5D&questionAttrs%5B+0+%5D%5B+questionAttrs+%5D%5B+0+%5D%5B+value+%5D=A&questionAttrs%5B+0+%5D%5B+questionAttrs+%5D%5B+0+%5D%5B+valueText+%5D=A&questionAttrs%5B+0+%5D%5B+questionAttrs+%5D%5B+0+%5D%5B+name+%5D=0&questionAttrs%5B+0+%5D%5B+questionAttrs+%5D%5B+0+%5D%5B+type+%5D=0&questionAttrs%5B+0+%5D%5B+questionAttrs+%5D%5B+1+%5D%5B+value+%5D=B&questionAttrs%5B+0+%5D%5B+questionAttrs+%5D%5B+1+%5D%5B+valueText+%5D=B&questionAttrs%5B+0+%5D%5B+questionAttrs+%5D%5B+1+%5D%5B+name+%5D=1&questionAttrs%5B+0+%5D%5B+questionAttrs+%5D%5B+1+%5D%5B+type+%5D=1&questionAttrs%5B+0+%5D%5B+questionAttrs+%5D%5B+2+%5D%5B+value+%5D=C&questionAttrs%5B+0+%5D%5B+questionAttrs+%5D%5B+2+%5D%5B+valueText+%5D=C&questionAttrs%5B+0+%5D%5B+questionAttrs+%5D%5B+2+%5D%5B+name+%5D=2&questionAttrs%5B+0+%5D%5B+questionAttrs+%5D%5B+2+%5D%5B+type+%5D=1&questionAttrs%5B+0+%5D%5B+questionAttrs+%5D%5B+3+%5D%5B+value+%5D=D&questionAttrs%5B+0+%5D%5B+questionAttrs+%5D%5B+3+%5D%5B+valueText+%5D=D&questionAttrs%5B+0+%5D%5B+questionAttrs+%5D%5B+3+%5D%5B+name+%5D=3&questionAttrs%5B+0+%5D%5B+questionAttrs+%5D%5B+3+%5D%5B+type+%5D=1&questionAttrs%5B+0+%5D%5B+content+%5D=%E5%8D%95%E9%80%89%E9%A2%981&questionAttrs%5B+0+%5D%5B+contentText+%5D=%E5%8D%95%E9%80%89%E9%A2%981&questionAttrs%5B+0+%5D%5B+difficulty+%5D=3&questionAttrs%5B+0+%5D%5B+score+%5D=1000&questionAttrs%5B+0+%5D%5B+id+%5D=q-1&questionAttrs%5B+0+%5D%5B+parsing+%5D=%E8%AF%95%E9%A2%98%E8%A7%A3%E6%9E%901&questionAttrs%5B+0+%5D%5B+parsingText+%5D=%E8%AF%95%E9%A2%98%E8%A7%A3%E6%9E%901&questionAttrs%5B+0+%5D%5B+type+%5D=1&questionAttrs%5B+0+%5D%5B+order+%5D=1&questionAttrs%5B+1+%5D%5B+questionAttrs+%5D%5B+0+%5D%5B+value+%5D=A&questionAttrs%5B+1+%5D%5B+questionAttrs+%5D%5B+0+%5D%5B+valueText+%5D=A&questionAttrs%5B+1+%5D%5B+questionAttrs+%5D%5B+0+%5D%5B+name+%5D=0&questionAttrs%5B+1+%5D%5B+questionAttrs+%5D%5B+0+%5D%5B+type+%5D=0&questionAttrs%5B+1+%5D%5B+questionAttrs+%5D%5B+1+%5D%5B+value+%5D=B&questionAttrs%5B+1+%5D%5B+questionAttrs+%5D%5B+1+%5D%5B+valueText+%5D=B&questionAttrs%5B+1+%5D%5B+questionAttrs+%5D%5B+1+%5D%5B+name+%5D=1&questionAttrs%5B+1+%5D%5B+questionAttrs+%5D%5B+1+%5D%5B+type+%5D=0&questionAttrs%5B+1+%5D%5B+questionAttrs+%5D%5B+2+%5D%5B+value+%5D=C&questionAttrs%5B+1+%5D%5B+questionAttrs+%5D%5B+2+%5D%5B+valueText+%5D=C&questionAttrs%5B+1+%5D%5B+questionAttrs+%5D%5B+2+%5D%5B+name+%5D=2&questionAttrs%5B+1+%5D%5B+questionAttrs+%5D%5B+2+%5D%5B+type+%5D=2&questionAttrs%5B+1+%5D%5B+questionAttrs+%5D%5B+3+%5D%5B+value+%5D=D&questionAttrs%5B+1+%5D%5B+questionAttrs+%5D%5B+3+%5D%5B+valueText+%5D=D&questionAttrs%5B+1+%5D%5B+questionAttrs+%5D%5B+3+%5D%5B+name+%5D=3&questionAttrs%5B+1+%5D%5B+questionAttrs+%5D%5B+3+%5D%5B+type+%5D=2&questionAttrs%5B+1+%5D%5B+content+%5D=%E5%A4%9A%E9%80%89%E9%A2%982&questionAttrs%5B+1+%5D%5B+contentText+%5D=%E5%A4%9A%E9%80%89%E9%A2%982&questionAttrs%5B+1+%5D%5B+difficulty+%5D=3&questionAttrs%5B+1+%5D%5B+score+%5D=1000&questionAttrs%5B+1+%5D%5B+id+%5D=q-2&questionAttrs%5B+1+%5D%5B+parsing+%5D=%E8%AF%95%E9%A2%98%E8%A7%A3%E6%9E%902&questionAttrs%5B+1+%5D%5B+parsingText+%5D=%E8%AF%95%E9%A2%98%E8%A7%A3%E6%9E%902&questionAttrs%5B+1+%5D%5B+type+%5D=2&questionAttrs%5B+1+%5D%5B+order+%5D=2&questionAttrs%5B+2+%5D%5B+questionAttrs+%5D%5B+0+%5D%5B+value+%5D=%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88&questionAttrs%5B+2+%5D%5B+questionAttrs+%5D%5B+0+%5D%5B+name+%5D=%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88&questionAttrs%5B+2+%5D%5B+questionAttrs+%5D%5B+0+%5D%5B+type+%5D=5&questionAttrs%5B+2+%5D%5B+content+%5D=%E9%97%AE%E7%AD%94%E9%A2%983&questionAttrs%5B+2+%5D%5B+contentText+%5D=%E9%97%AE%E7%AD%94%E9%A2%983&questionAttrs%5B+2+%5D%5B+score+%5D=1000&questionAttrs%5B+2+%5D%5B+parsing+%5D=%E8%AF%95%E9%A2%98%E8%A7%A3%E6%9E%903&questionAttrs%5B+2+%5D%5B+parsingText+%5D=%E8%AF%95%E9%A2%98%E8%A7%A3%E6%9E%903&questionAttrs%5B+2+%5D%5B+type+%5D=5&questionAttrs%5B+2+%5D%5B+id+%5D=q-3&questionAttrs%5B+2+%5D%5B+difficulty+%5D=3&questionAttrs%5B+2+%5D%5B+order+%5D=3&content=%E8%AF%95%E9%A2%98%E7%9B%AE%E5%BD%952022-01-25+11%3A20%3A47-%E9%98%85%E8%AF%BB%E8%A3%82%E8%A7%A3%E9%A2%981&contentText=%E8%AF%95%E9%A2%98%E7%9B%AE%E5%BD%952022-01-25+11%3A20%3A47-%E9%98%85%E8%AF%BB%E8%A3%82%E8%A7%A3%E9%A2%981&score=3000&type=6&questionDepotId=7b9a2ce6-7cd8-4b10-9b21-1d9b56f6ceb7&questionDepot%5B+id+%5D=7b9a2ce6-7cd8-4b10-9b21-1d9b56f6ceb7&questionDepot%5B+name+%5D=%E8%AF%95%E9%A2%98%E7%9B%AE%E5%BD%952022-01-25+11%3A20%3A47&organizationId=cc861919-b7fb-4582-b755-48b2eb0e5203&organization%5B+id+%5D=cc861919-b7fb-4582-b755-48b2eb0e5203&organization%5B+name+%5D=tester&difficulty=3&depotEdit=0
+
+2022-01-25 11:20:50.501 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:20:51 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "1841",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "content": "试题目录2022-01-25 11:20:47-阅读裂解题1",
+    "createTime": 1643080851208,
+    "difficulty": 3,
+    "errorRate": 0,
+    "id": "5674eeba-d1d5-41ee-bcae-e0ed9e0e0afe",
+    "markAmount": 0,
+    "questionAttrs": null,
+    "questionDepotId": "7b9a2ce6-7cd8-4b10-9b21-1d9b56f6ceb7",
+    "recoveryCount": 0,
+    "rightRate": 0,
+    "status": 0,
+    "subs": [
+        {
+            "content": "单选题1",
+            "difficulty": 3,
+            "id": "d70afa3a-aaa8-4172-8eca-b964b262a31d",
+            "parsing": "试题解析1",
+            "parsingText": "试题解析1",
+            "questionAttrs": [
+                {
+                    "createTime": 1643080851210,
+                    "id": "5e974bcd-a13e-4770-b51e-1ccdef833a78",
+                    "name": "0",
+                    "type": "0",
+                    "value": "A"
+                },
+                {
+                    "createTime": 1643080851210,
+                    "id": "09e6e558-2e48-455a-b261-3c7d46608c71",
+                    "name": "1",
+                    "type": "1",
+                    "value": "B"
+                },
+                {
+                    "createTime": 1643080851210,
+                    "id": "31855d07-21f0-4269-bb3e-5e6b371a28af",
+                    "name": "2",
+                    "type": "1",
+                    "value": "C"
+                },
+                {
+                    "createTime": 1643080851210,
+                    "id": "66cf5fe2-5090-41d1-9deb-5e7054aaece0",
+                    "name": "3",
+                    "type": "1",
+                    "value": "D"
+                }
+            ],
+            "score": 1000,
+            "type": 1
+        },
+        {
+            "content": "多选题2",
+            "difficulty": 3,
+            "id": "58343871-2152-4714-81fe-27e591d21f3a",
+            "parsing": "试题解析2",
+            "parsingText": "试题解析2",
+            "questionAttrs": [
+                {
+                    "createTime": 1643080851212,
+                    "id": "4168b702-d08d-4568-8cb7-1d948c03b36f",
+                    "name": "0",
+                    "type": "0",
+                    "value": "A"
+                },
+                {
+                    "createTime": 1643080851212,
+                    "id": "7ee0a5a0-1da3-4227-8ebb-cf33b762e83d",
+                    "name": "1",
+                    "type": "0",
+                    "value": "B"
+                },
+                {
+                    "createTime": 1643080851212,
+                    "id": "1b650fb7-fade-42c5-8378-3d5ecc76751f",
+                    "name": "2",
+                    "type": "2",
+                    "value": "C"
+                },
+                {
+                    "createTime": 1643080851212,
+                    "id": "07d3d84a-508a-4f0c-bcfb-21b5dd3298e2",
+                    "name": "3",
+                    "type": "2",
+                    "value": "D"
+                }
+            ],
+            "score": 1000,
+            "type": 2
+        },
+        {
+            "content": "问答题3",
+            "difficulty": 3,
+            "id": "45814202-4704-42fe-ad0c-ac5485e919b0",
+            "parsing": "试题解析3",
+            "parsingText": "试题解析3",
+            "questionAttrs": [
+                {
+                    "createTime": 1643080851215,
+                    "id": "e7b2c066-54eb-4f0a-b0f4-6d9c1830e3c4",
+                    "name": "参考答案",
+                    "type": "5",
+                    "value": "参考答案"
+                }
+            ],
+            "score": 1000,
+            "type": 5
+        }
+    ],
+    "type": 6
+}
+
+2022-01-25 11:20:50,501 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：yuedulijieid: 5674eeba-d1d5-41ee-bcae-e0ed9e0e0afe
+2022-01-25 11:20:50,502 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：yuedulijiename: 试题目录2022-01-25 11:20:47-阅读裂解题1
+2022-01-25 11:20:50,502 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：yuedulijie_danxuanid: d70afa3a-aaa8-4172-8eca-b964b262a31d
+2022-01-25 11:20:50,502 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：yuedulijie_danxuanid_1: 5e974bcd-a13e-4770-b51e-1ccdef833a78
+2022-01-25 11:20:50,502 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：yuedulijie_danxuanid_2: 09e6e558-2e48-455a-b261-3c7d46608c71
+2022-01-25 11:20:50,503 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：yuedulijie_danxuanid_3: 31855d07-21f0-4269-bb3e-5e6b371a28af
+2022-01-25 11:20:50,503 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：yuedulijie_danxuanid_4: 66cf5fe2-5090-41d1-9deb-5e7054aaece0
+2022-01-25 11:20:50,503 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：yuedulijie_duoxuanid: 58343871-2152-4714-81fe-27e591d21f3a
+2022-01-25 11:20:50,504 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：yuedulijie_duoxuanid_1: 4168b702-d08d-4568-8cb7-1d948c03b36f
+2022-01-25 11:20:50,504 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：yuedulijie_duoxuanid_2: 7ee0a5a0-1da3-4227-8ebb-cf33b762e83d
+2022-01-25 11:20:50,504 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：yuedulijie_duoxuanid_3: 1b650fb7-fade-42c5-8378-3d5ecc76751f
+2022-01-25 11:20:50,504 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：yuedulijie_duoxuanid_4: 07d3d84a-508a-4f0c-bcfb-21b5dd3298e2
+2022-01-25 11:20:50,505 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：yuedulijie_wendaid: 45814202-4704-42fe-ad0c-ac5485e919b0
+2022-01-25 11:20:50,505 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：yuedulijie_wendaid_1: e7b2c066-54eb-4f0a-b0f4-6d9c1830e3c4
+2022-01-25 11:20:50,505 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '6' 实际值: '6', 断言成功!

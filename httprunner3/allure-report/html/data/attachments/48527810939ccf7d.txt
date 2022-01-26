@@ -1,0 +1,2 @@
+INFO     root:data_depend.py:37 提取变量：fileId: 6d0df2ab-81c8-469b-b2b0-672e9f27ab1c
+INFO     root:validate.py:76 响应断言:  预期值: '9395' 实际值: '9395', 断言成功!

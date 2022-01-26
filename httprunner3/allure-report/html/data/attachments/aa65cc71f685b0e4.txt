@@ -1,0 +1,44 @@
+2022-01-25 18:45:41.311 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://pre-202108-10.zhixueyun.com/api/v1/course-study/file/safe-new/1132086d-cdee-4fbe-b1bf-1a9768602fef
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__5162aae81b0783802661ab1b21b0a987",
+    "uri": "exam/exam"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 18:45:41.312 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 10:45:42 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "481",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "configId": "default",
+    "contentType": "video/mp4",
+    "duration": null,
+    "extention": "mp4",
+    "fileKey": "174403853bb7056fc8429976b4ce6462",
+    "filename": "试题视频_1113.mp4",
+    "id": "1132086d-cdee-4fbe-b1bf-1a9768602fef",
+    "path": "https://pre-202108-10.zhixueyun.com/api/v1/course-study/file/index.m3u8?attachmentId=NWOiN3TLgdAApdqelAM%2FDVfxnDik%2FY3yt%2BcbayKz%2FOxJQHJzzg089VSTLxiXYpL5&access_token=5162aae81b0783802661ab1b21b0a987&isCloud=0",
+    "size": 2299387,
+    "translateFlag": 3,
+    "translateId": null
+}
+
+2022-01-25 18:45:41,312 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: 'video/mp4' 实际值: 'video/mp4', 断言成功!

@@ -1,0 +1,36 @@
+2022-01-25 11:14:56.785 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : PUT
+url      : https://tester1.zhixueyun.com/api/v1/exam/paper/enable/6f88ad4a-3e44-44d9-88be-6182ea0a6043
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__8282fe0727e597a9fde0b2768b3de476",
+    "Content-Length": "104",
+    "Content-Type": "application/x-www-form-urlencoded"
+}
+cookies  : {}
+body     : id=6f88ad4a-3e44-44d9-88be-6182ea0a6043&name=%E3%80%90%E8%AF%95%E5%8D%B7%E3%80%912022-01-25+11%3A14%3A55
+
+2022-01-25 11:14:56.786 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:14:57 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "45",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "id": "6f88ad4a-3e44-44d9-88be-6182ea0a6043"
+}
+
+2022-01-25 11:14:56,786 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '6f88ad4a-3e44-44d9-88be-6182ea0a6043' 实际值: '6f88ad4a-3e44-44d9-88be-6182ea0a6043', 断言成功!

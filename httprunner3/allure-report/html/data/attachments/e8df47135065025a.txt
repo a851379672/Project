@@ -1,0 +1,37 @@
+2022-01-25 11:14:28.505 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : DELETE
+url      : https://tester1.zhixueyun.com/api/v1/exam/question/54db3a8c-23cc-4cda-b0ed-7e3b12ed6a16
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__8282fe0727e597a9fde0b2768b3de476",
+    "uri": "exam/question-depot",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "Content-Length": "133"
+}
+cookies  : {}
+body     : id=54db3a8c-23cc-4cda-b0ed-7e3b12ed6a16&name=%E8%AF%95%E9%A2%98%E7%9B%AE%E5%BD%952022-01-25+11%3A14%3A24-%E6%8E%92%E5%BA%8F%E9%A2%981
+
+2022-01-25 11:14:28.505 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:14:29 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "45",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "id": "54db3a8c-23cc-4cda-b0ed-7e3b12ed6a16"
+}
+
+2022-01-25 11:14:28,506 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '54db3a8c-23cc-4cda-b0ed-7e3b12ed6a16' 实际值: '54db3a8c-23cc-4cda-b0ed-7e3b12ed6a16', 断言成功!

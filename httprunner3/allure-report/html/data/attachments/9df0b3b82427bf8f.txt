@@ -1,0 +1,37 @@
+2022-01-25 11:14:12.947 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://tester1.zhixueyun.com/api/v1/exam/exam/mark-notice
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__8282fe0727e597a9fde0b2768b3de476",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "uri": "exam/exam",
+    "Content-Length": "886"
+}
+cookies  : {}
+body     : noticeTeacherText=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%82%A8%E5%B7%B2%E8%A2%AB%E5%AE%89%E6%8E%92%E4%B8%BA%E3%80%90%E3%80%90%E6%99%AE%E9%80%9A%E8%80%83%E8%AF%95%E3%80%912022-01-25+11%3A13%3A50%E3%80%91%E8%80%83%E8%AF%95%E7%9A%84%E8%AF%84%E5%8D%B7%E8%80%81%E5%B8%88%EF%BC%8C%E8%AF%B7%E5%90%88%E7%90%86%E5%AE%89%E6%8E%92%E5%B7%A5%E4%BD%9C%E6%97%B6%E9%97%B4%E5%B0%BD%E5%BF%AB%E9%98%85%E5%8D%B7%E3%80%82%E8%B0%A2%E8%B0%A2%E3%80%82&noticeTeacherContent=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%82%A8%E5%B7%B2%E8%A2%AB%E5%AE%89%E6%8E%92%E4%B8%BA%E3%80%90%E3%80%90%E6%99%AE%E9%80%9A%E8%80%83%E8%AF%95%E3%80%912022-01-25+11%3A13%3A50%E3%80%91%E8%80%83%E8%AF%95%E7%9A%84%E8%AF%84%E5%8D%B7%E8%80%81%E5%B8%88%EF%BC%8C%E8%AF%B7%E5%90%88%E7%90%86%E5%AE%89%E6%8E%92%E5%B7%A5%E4%BD%9C%E6%97%B6%E9%97%B4%E5%B0%BD%E5%BF%AB%E9%98%85%E5%8D%B7%E3%80%82%E8%B0%A2%E8%B0%A2%E3%80%82&examId=60a410e8-6690-47fa-961b-5113d4d1dc6b
+
+2022-01-25 11:14:12.947 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:14:13 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "17",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "msg": "success"
+}
+
+2022-01-25 11:14:12,948 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: 'success' 实际值: 'success', 断言成功!

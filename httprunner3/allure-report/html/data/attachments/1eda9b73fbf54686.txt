@@ -1,0 +1,3 @@
+INFO     root:data_depend.py:37 提取变量：paperId: 99a96f38-5ad1-410e-9377-7c85ccee3a85
+INFO     root:data_depend.py:37 提取变量：examName: 【广告配置考试】2022-01-25 14:07:38
+INFO     root:validate.py:76 响应断言:  预期值: '1' 实际值: '1', 断言成功!

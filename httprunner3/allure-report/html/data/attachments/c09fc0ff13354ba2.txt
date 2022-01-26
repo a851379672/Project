@@ -1,0 +1,3 @@
+INFO     root:data_depend.py:37 提取变量：wendaid: 6089e704-a959-4802-8cf6-f4d4451902fc
+INFO     root:data_depend.py:37 提取变量：wendaname: 试题目录2022-01-25 18:46:30-题目1
+INFO     root:validate.py:76 响应断言:  预期值: '5' 实际值: '5', 断言成功!

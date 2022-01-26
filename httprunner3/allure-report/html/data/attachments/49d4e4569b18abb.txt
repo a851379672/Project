@@ -1,0 +1,2 @@
+INFO     root:data_depend.py:37 提取变量：registId: f85690b3-31c5-4c70-bcaa-ca5770dfb801
+INFO     root:validate.py:76 响应断言:  预期值: '200' 实际值: '200', 断言成功!

@@ -1,0 +1,36 @@
+2022-01-25 18:46:45.978 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : PUT
+url      : http://pre-202108-10.zhixueyun.com/api/v1/exam/certificate-record/revoke
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__5162aae81b0783802661ab1b21b0a987",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "uri": "exam/certificate-record",
+    "Content-Length": "40"
+}
+cookies  : {}
+body     : ids=24be4ede-96d1-47d3-80f7-66d8b3aa8407
+
+2022-01-25 18:46:45.979 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 10:46:46 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "46",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "ids": "24be4ede-96d1-47d3-80f7-66d8b3aa8407"
+}
+
+2022-01-25 18:46:45,979 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '24be4ede-96d1-47d3-80f7-66d8b3aa8407' 实际值: '24be4ede-96d1-47d3-80f7-66d8b3aa8407', 断言成功!

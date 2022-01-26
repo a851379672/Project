@@ -1,0 +1,437 @@
+allure:
+    {
+      'allure_descrption': '',
+      'allure_suite': '管理端',
+      'allure_sub_suite': '考试模块',
+      'allure_feature': '管理端',
+      'allure_story': '考试模块'
+    }
+test:
+-   name: 【试卷库】——查询授权组织
+    request:
+        url: api/v1/system/organization/granted-organization
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/paper-library
+        body:
+            {
+              uri: 'exam/paper-library',
+              supportMore: 'true'
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.[0].status', '1']
+
+-   name: 【试卷库】——查询组织操作类型
+    request:
+        url: api/v1/system/grant/find-organization-operatortype
+        method: GET
+        headers:
+            Authorization: Bearer__${admin_token}
+            uri: exam/signup
+        body:
+          {
+            uri: 'exam/paper-library'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.${organizationId},', '0,1,2,3,4']
+
+-   name: 【试卷库】——查询试卷库
+    request:
+        url: api/v1/exam/paper
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/paper-library
+        body:
+            {
+              organizationId: '${organizationId}',
+              'organization[id]': '${organizationId}',
+              'organization[name]': '${organizationName}',
+              'organization[state]': 1,
+              uri: 'exam/paper-library',
+              depotType: 1,
+              page: 1,
+              pageSize: 10
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【试卷库】——查询试卷库目录
+    request:
+        url: api/v1/exam/paper-depot
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/paper-library
+        body:
+            {
+              organizationId: '${organizationId}',
+              'organization[id]': '${organizationId}',
+              'organization[name]': '${organizationName}',
+              'organization[state]': 1,
+              type: 1,
+            }
+    sql_statement:
+    extract:
+        paperDepotId: $.[0].id
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【试卷库】——新增目录-获取目录默认编码
+    request:
+        url: api/v1/system/module-code
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/paper-library
+        body:
+            {
+              prefix: 'st_'
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【试卷库】——新增试卷库目录
+    request:
+        url: api/v1/exam/paper-depot
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+        body:
+          {
+            name: '试卷库目录$date_time{}',
+            organizationId: '${organizationId}',
+            code: '${ent_name}_1',
+            state: 1,
+            authToLower: 0,
+            type: 1
+          }
+        files:
+    sql_statement:
+    extract:
+        paperDepotId_copy: $.id
+        paperDepotName_copy: $.name
+    validate:
+        -   eq:  ['$.state', '1']
+
+-   name: 【试卷库】——查询试卷库试卷数
+    request:
+        url: api/v1/exam/paper/count
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/paper-library
+        body:
+          {
+            depotType: 1,
+            organizationId: '${organizationId}',
+            depotPath: '${paperDepotId},'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【试卷库】——新增试卷-获取最高授权组织
+    request:
+        url: api/v1/system/organization/max-grant-organization
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/paper-library
+        body:
+            {
+              uri: 'exam/paper-library'
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.status', '1']
+
+-   name: 【试卷库】——新增试卷-试题组卷-新增试题-新增单选题
+    request:
+        url: api/v1/exam/question/other
+        method: POST
+        headers:
+            Authorization: Bearer__${admin_token}
+            content-type: application/x-www-form-urlencoded; charset=UTF-8
+            uri: exam/exam
+        body:
+            {
+                value: [{'value': 'A','valueText': 'A','name': 0,'type': 0},{'value': 'B','valueText': 'B', 'name': 1,
+                         'type':1},{'value':'C','valueText':'C','name':2,'type':1},{'value':'D','valueText':'D',
+                         'name':3,'type':1}],
+                'questionAttrs[0][value]': 'A',
+                'questionAttrs[0][valueText]': 'A',
+                'questionAttrs[0][name]': 0,
+                'questionAttrs[0][type]': 0,
+                'questionAttrs[1][value]': 'B',
+                'questionAttrs[1][valueText]': 'B',
+                'questionAttrs[1][name]': 1,
+                'questionAttrs[1][type]': 1,
+                'questionAttrs[2][value]': 'C',
+                'questionAttrs[2][valueText]': 'C',
+                'questionAttrs[2][name]': 2,
+                'questionAttrs[2][type]': 1,
+                'questionAttrs[3][value]': 'D',
+                'questionAttrs[3][valueText]': 'D',
+                'questionAttrs[3][name]': 3,
+                'questionAttrs[3][type]': 1,
+                content: '【单选题】试题信息$date_time{}',
+                contentText: '【单选题】试题信息$date_time{}',
+                score: 1000,
+                type: 1,
+                parsing: '【单选题】试题解析',
+                parsingText: '【单选题】试题解析',
+                difficulty: 3,
+                organizationId: '${organizationId}',
+                isTemp: 1,
+                depotEdit: 0
+           }
+    sql_statement:
+    extract:
+        danxuantiId: $.id
+    validate:
+        -   eq:  ['$.type', '1']
+
+-   name: 【试卷库】——新增试卷-保存试卷
+    request:
+        url: api/v1/exam/paper
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/paper-library
+        body:
+          {
+            name: '【试卷】$date_time{}',
+            organizationId-text: '${organizationName}',
+            organizationId: '${organizationId}',
+            paperDepotId: '${paperDepotId}',
+            publishId: '${adminId}',
+            publishOrganizationId: '${organizationId}',
+            totalScore: 1000,
+            questionNum: 1,
+            paperClassQuestions: [{"questionId":"${danxuantiId}","score":1000,"sequence":0,"isFromSelected":0,"sortType":1}],
+            type: 2
+          }
+    sql_statement:
+    extract:
+        paperId: $.id
+        paperName: $.name
+    validate:
+        -   eq:  ['$.status', '0']
+
+-   name: 【试卷库】——查询试卷库试卷
+    request:
+        url: api/v1/exam/paper
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/paper-library
+        body:
+          {
+            organizationId: '${organizationId}',
+            'organization[id]': '${organizationId}',
+            'organization[name]': '${organizationName}',
+            'organization[state]': 1,
+            url: 'exam/paper-library',
+            depotType: 1,
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200 ]
+
+-   name: 【试卷库】——试卷库试卷详情
+    request:
+        url: api/v1/exam/paper-class
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/paper-library
+        body:
+          {
+            paperId: '${paperId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.status', '0']
+
+-   name: 【试卷库】——修改试卷库试卷
+    request:
+        url: api/v1/exam/paper/${paperId}
+        method: PUT
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/paper-library
+        body:
+          {
+            name: '${paperName}',
+            organizationId-text: '${organizationName}',
+            organizationId: '${organizationId}',
+            paperDepotId: '${paperDepotId}',
+            publishId: '${adminId}',
+            publishOrganizationId: '${organizationId}',
+            totalScore: 1000,
+            questionNum: 1,
+            paperClassQuestions: [{"questionId": "${danxuantiId}","score": 1000,"sequence": 0,"isFromSelected": 0,"sortType": 1}],
+            type: 2,
+            id: '${paperId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.status', '0']
+
+-   name: 【试卷库】——发布试卷库试卷
+    request:
+        url: api/v1/exam/paper/publish/${paperId}
+        method: PUT
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/paper-library
+        body:
+          {
+            id: '${paperId}',
+            name: '${paperName}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.id', '${paperId}']
+
+-   name: 【试卷库】——预览试卷库试卷
+    request:
+        url: api/v1/exam/paper-class
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/paper-library
+        body:
+          {
+            paperId: '${paperId}',
+            examName: '${paperName}',
+            businessType: 1
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.status', '1']
+
+-   name: 【试卷库】——导出试卷库试卷
+    request:
+        url: api/v1/exam/paper/export
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+        body:
+          {
+            paperId: '${paperId}',
+            name: '${paperName}',
+            access_token: '${admin_token}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【试卷库】——禁用试卷库试卷
+    request:
+        url: api/v1/exam/paper/disable/${paperId}
+        method: PUT
+        headers:
+          Authorization: Bearer__${admin_token}
+        body:
+          {
+            id: '${paperId}',
+            name: '${paperName}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.id', '${paperId}']
+
+-   name: 【试卷库】——启用试卷库试卷
+    request:
+        url: api/v1/exam/paper/enable/${paperId}
+        method: PUT
+        headers:
+          Authorization: Bearer__${admin_token}
+        body:
+          {
+            id: '${paperId}',
+            name: '${paperName}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.id', '${paperId}']
+
+-   name: 【试卷库】——复制试卷库试卷
+    request:
+        url: api/v1/exam/paper/copy-paper
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/paper-library
+        body:
+          {
+            paperId: '${paperId}'
+          }
+    sql_statement:
+    extract:
+        copyPaperId: $.id
+        copyPaperName: $.name
+    validate:
+        -   eq:  ['$.status', '0']
+
+-   name: 【试卷库】——删除复制试卷
+    request:
+        url: api/v1/exam/paper/${copyPaperId}
+        method: DELETE
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/paper-library
+        body:
+          {
+            id: '${copyPaperId}',
+            name: '${copyPaperName}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.id', '${copyPaperId}']
+
+-   name: 【试卷库】——删除试卷库目录
+    request:
+        url: api/v1/exam/paper-depot/${paperDepotId_copy}
+        method: DELETE
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/paper-library
+        body:
+          {
+            'id[]': '${paperDepotId_copy}',
+            name: '${paperDepotName_copy}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.id', '${paperDepotId_copy}']

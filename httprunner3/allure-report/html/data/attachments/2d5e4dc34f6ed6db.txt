@@ -1,0 +1,42 @@
+2022-01-25 18:46:52.949 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : http://pre-202108-10.zhixueyun.com/api/v1/exam/game/break-through/base-info
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__5162aae81b0783802661ab1b21b0a987",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "uri": "exam/exam-game",
+    "Content-Length": "700"
+}
+cookies  : {}
+body     : name=%E3%80%90%E6%B8%B8%E6%88%8F%E9%97%AF%E5%85%B3%E3%80%912022-01-25+18%3A46%3A52&organizationId-text=preer&organizationId=9bcad76a-ba7e-4ace-9f92-f6e086a29cec&publishMemberId=73da8c17-d84a-4698-975e-d18ca5232708&publishOrganizationId=9bcad76a-ba7e-4ace-9f92-f6e086a29cec&coverId=f5007691-c381-4782-ac8d-6e51fe57e92d&coverPath=default%2FM00%2F00%2FD5%2FwKgLQGHv1R2ASg6pAAEXVn_kUs0165.jpg&gameExperienceRules=%5B%7B%27type%27%3A+1%2C+%27value%27%3A+%272%27%2C+%27status%27%3A+1%7D%2C+%7B%27type%27%3A+2%2C+%27value%27%3A+%275%27%2C+%27status%27%3A+1%7D%2C+%7B%27type%27%3A+3%2C+%27value%27%3A+%270%27%2C+%27status%27%3A+1%7D%2C+%7B%27type%27%3A+4%2C+%27value%27%3A+%2720%27%2C+%27status%27%3A+1%7D%5D
+
+2022-01-25 18:46:52.950 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 10:46:53 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "166",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "createTime": 1643107613785,
+    "id": "9afedb15-ca51-404f-bd34-0f2b6908c9eb",
+    "name": "【游戏闯关】2022-01-25 18:46:52",
+    "status": 0,
+    "type": 1,
+    "updateTime": 1643107613785
+}
+
+2022-01-25 18:46:52,950 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：gameId: 9afedb15-ca51-404f-bd34-0f2b6908c9eb
+2022-01-25 18:46:52,951 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '0' 实际值: '0', 断言成功!

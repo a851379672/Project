@@ -1,0 +1,44 @@
+2022-01-25 11:13:56.182 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/system/operation/message-template/content?templateCode=invigilator_notice&organizationId=cc861919-b7fb-4582-b755-48b2eb0e5203
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__8282fe0727e597a9fde0b2768b3de476",
+    "uri": "exam/exam"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 11:13:56.183 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:13:56 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "649",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "content": "您好，您已被安排为【{0}】考试的监考老师，该考试将于【{1}】准时开始，考试时长【{2}】，请合理安排工作时间进行监考管理，谢谢。",
+    "contentDesc": null,
+    "id": "ada4a53c-f810-4ed7-a603-7bb4ae8f71cd",
+    "module": 4,
+    "name": "监考通知",
+    "organizationId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+    "paramDesc": "0考试名称 1考试开始时间 2考试时长",
+    "paramNum": 3,
+    "subject": "【监考通知】",
+    "textContent": "您好，您已被安排为【{0}】考试的监考老师，该考试将于【{1}】准时开始，考试时长【{2}】，请合理安排工作时间进行监考管理，谢谢。"
+}
+
+2022-01-25 11:13:56,183 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '监考通知' 实际值: '监考通知', 断言成功!

@@ -1,0 +1,34 @@
+2022-01-25 18:45:42.039 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : http://pre-202108-10.zhixueyun.com/api/v1/exam/invigilator/batch-insert
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__5162aae81b0783802661ab1b21b0a987",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "uri": "exam/exam",
+    "Content-Length": "381"
+}
+cookies  : {}
+body     : invigilators=%5B%7B%27memberId%27%3A+%27d2537992-353c-4b83-88a7-70a42829b74c%27%2C+%27examId%27%3A+%27e46c2530-4ff7-4978-9faf-0b36369bdff6%27%7D%2C+%7B%27memberId%27%3A+%2773da8c17-d84a-4698-975e-d18ca5232708%27%2C+%27examId%27%3A+%27e46c2530-4ff7-4978-9faf-0b36369bdff6%27%7D%5D&examName=%E3%80%90%E6%99%AE%E9%80%9A%E8%80%83%E8%AF%95%E3%80%912022-01-25+18%3A45%3A40&businessType=1
+
+2022-01-25 18:45:42.039 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 10:45:42 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "289",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : [{'examId': 'e46c2530-4ff7-4978-9faf-0b36369bdff6', 'id': 'c39f85fb-50d5-424f-8791-f5d856e42e08', 'memberId': 'd2537992-353c-4b83-88a7-70a42829b74c'}, {'examId': 'e46c2530-4ff7-4978-9faf-0b36369bdff6', 'id': '11e39699-4dd4-456a-92b2-e3cb9eb74f6b', 'memberId': '73da8c17-d84a-4698-975e-d18ca5232708'}]
+
+2022-01-25 18:45:42,040 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: 'e46c2530-4ff7-4978-9faf-0b36369bdff6' 实际值: 'e46c2530-4ff7-4978-9faf-0b36369bdff6', 断言成功!

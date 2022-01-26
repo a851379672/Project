@@ -1,0 +1,58 @@
+2022-01-25 14:30:54.313 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/human/export-task/find-export-tasks?businessTypes=16&extraParam=gameId%3D056c3f4e-c7ac-41ce-b71a-40e36dafd6ce&page=1&pageSize=10
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__913d806a4e52a41790dc2c97e3f00bb4",
+    "uri": "exam/exam-game"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 14:30:54.313 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:30:55 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "587",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "items": [
+        {
+            "attachmentId": "3bd023b6-503e-40ee-834f-27db8ab68322",
+            "businessType": 16,
+            "createTime": 1643092255042,
+            "dataLen": 0,
+            "errorMsg": null,
+            "extraParam": "gameId=056c3f4e-c7ac-41ce-b71a-40e36dafd6ce",
+            "failCount": null,
+            "filePath": "default/M00/0B/09/wKgLTWHvmR-AF2f6AAANmBq5T7k46.xlsx",
+            "fileSize": 3480,
+            "id": "e7a317ea-4549-457c-a317-1b4b05951265",
+            "memberId": "5f0870a7-d55d-4a31-8782-1ac8d9690efc",
+            "queryParas": "{\"gameId\":\"056c3f4e-c7ac-41ce-b71a-40e36dafd6ce\"}",
+            "signature": "9ca0044163547bbeb778575a2894c8ab",
+            "status": 2,
+            "successCount": null,
+            "systemErrorCode": null,
+            "type": 0
+        }
+    ],
+    "recordCount": 1
+}
+
+2022-01-25 14:30:54,314 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：attachmentId: 3bd023b6-503e-40ee-834f-27db8ab68322
+2022-01-25 14:30:54,314 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：exportId: e7a317ea-4549-457c-a317-1b4b05951265
+2022-01-25 14:30:54,314 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '1' 实际值: '1', 断言成功!

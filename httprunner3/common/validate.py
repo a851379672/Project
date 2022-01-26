@@ -4,7 +4,7 @@ from mysql_operate import *
 logger = logging
 
 
-class Validate(object):
+class Validate:
 
     def __init__(self):
         self.judge = JsonPath()
@@ -25,8 +25,6 @@ class Validate(object):
             expect = deal_with.replace_(expect)
         elif deal_with.replace_(actual):
             actual = deal_with.replace_(actual)
-        # elif deal_with.replace_(expect, actual):
-        #     expect = deal_with.replace_(expect, actual)
         self.judge.handler(actual, expect, response)
 
 
@@ -51,11 +49,7 @@ class JsonPath(Manager):
                 actual = str(jsonpath.jsonpath(response.json(), actual)[0])[:-3]
             else:
                 actual = jsonpath.jsonpath(response.json(), actual)[0]
-            try:
-                assert expect.__str__() in actual.__str__().lower()
-                logger.info(f"响应断言： 预期值：'{expect}' 实际值：'{actual}', 断言成功!")
-            except AssertionError:
-                pytest.xfail(f'断言失败：{AssertionError}')
+            assert_(actual.__str__().lower(), expect.__str__().lower())
         else:
             self.obj.handler(actual, expect, response)
 
@@ -63,13 +57,9 @@ class JsonPath(Manager):
 class StatusCode(Manager):
 
     def handler(self, actual, expect, response):
-        if actual.startswith('Status Code'):
+        if actual.lower().startswith('status code'):
             actual = response.status_code
-            try:
-                assert actual.__str__() in expect.__str__().lower()
-                logger.info(f"响应断言： 预期值：'{expect}' 实际值：'{actual}', 断言成功!")
-            except AssertionError:
-                pytest.xfail(f'断言失败：{AssertionError}')
+            assert_(actual.__str__().lower(), expect.__str__().lower())
         else:
             self.obj.handler(actual, expect, response)
 
@@ -78,11 +68,15 @@ class RegExp(Manager):
 
     def handler(self, actual, expect, response):
         actual = re.findall(actual, response.text)[0]
-        try:
-            assert actual.__str__() in expect.__str__().lower()
-            logger.info(f"响应断言： 预期值：'{expect}' 实际值：'{actual}', 断言成功!")
-        except AssertionError:
-            pytest.xfail(f'断言失败：{AssertionError}')
+        assert_(actual.__str__().lower(), expect.__str__().lower())
+
+
+def assert_(actual, expect):
+    if expect in actual:
+        logger.info(f"响应断言:  预期值: '{expect}' 实际值: '{actual}', 断言成功!")
+    else:
+        logger.info(f"响应断言:  预期值: '{expect}' 实际值: '{actual}', 断言失败!")
+        assert expect.__str__().lower() in actual.__str__().lower()
 
 
 if __name__ == '__main__':

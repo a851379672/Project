@@ -1,2 +1,0 @@
-INFO     root:data_depend.py:40 提取变量：originalQuestionId: af49cc5a-1e06-4c6b-880c-90077e031741
-INFO     root:validate.py:57 响应断言： 预期值：'cc861919-b7fb-4582-b755-48b2eb0e5203' 实际值：'cc861919-b7fb-4582-b755-48b2eb0e5203', 断言成功!

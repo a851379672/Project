@@ -1,0 +1,37 @@
+INFO     root:mysql_operate.py:88 SQL查询结果: 97514295-fb62-4029-af11-7c395e8ecd99
+INFO     root:mysql_operate.py:57 SQL影响行数: 1 预期影响行数: 1 断言成功!
+INFO     root:data_depend.py:41 提取变量：danxuantiId_copy_count: 1
+INFO     root:data_depend.py:41 提取变量：danxuantiId_copy_value: 97514295-fb62-4029-af11-7c395e8ecd99
+INFO     root:mysql_operate.py:88 SQL查询结果: d27353d7-80de-47ad-8b9a-97dbdcda4481
+INFO     root:mysql_operate.py:57 SQL影响行数: 1 预期影响行数: 1 断言成功!
+INFO     root:data_depend.py:41 提取变量：duoxuantiId_copy_count: 1
+INFO     root:data_depend.py:41 提取变量：duoxuantiId_copy_value: d27353d7-80de-47ad-8b9a-97dbdcda4481
+INFO     root:mysql_operate.py:88 SQL查询结果: e1d9806d-16f9-44f9-9eb6-2469cd53677d
+INFO     root:mysql_operate.py:57 SQL影响行数: 1 预期影响行数: 1 断言成功!
+INFO     root:data_depend.py:41 提取变量：panduantiId_copy_count: 1
+INFO     root:data_depend.py:41 提取变量：panduantiId_copy_value: e1d9806d-16f9-44f9-9eb6-2469cd53677d
+INFO     root:mysql_operate.py:88 SQL查询结果: 32942b6f-3373-4fd0-acc0-2bd55aec2015
+INFO     root:mysql_operate.py:57 SQL影响行数: 1 预期影响行数: 1 断言成功!
+INFO     root:data_depend.py:41 提取变量：paixutiId_copy_count: 1
+INFO     root:data_depend.py:41 提取变量：paixutiId_copy_value: 32942b6f-3373-4fd0-acc0-2bd55aec2015
+INFO     root:mysql_operate.py:88 SQL查询结果: 1d57bf23-fe4d-4ba8-9d48-364ffadce7af
+INFO     root:mysql_operate.py:57 SQL影响行数: 1 预期影响行数: 1 断言成功!
+INFO     root:data_depend.py:41 提取变量：tiankongtiId_copy_count: 1
+INFO     root:data_depend.py:41 提取变量：tiankongtiId_copy_value: 1d57bf23-fe4d-4ba8-9d48-364ffadce7af
+INFO     root:mysql_operate.py:88 SQL查询结果: c9f9a39e-114e-4c82-a7a8-9ccfe532d5ea
+INFO     root:mysql_operate.py:57 SQL影响行数: 1 预期影响行数: 1 断言成功!
+INFO     root:data_depend.py:41 提取变量：wendatiId_copy_count: 1
+INFO     root:data_depend.py:41 提取变量：wendatiId_copy_value: c9f9a39e-114e-4c82-a7a8-9ccfe532d5ea
+INFO     root:mysql_operate.py:88 SQL查询结果: c1e341fb-b0b3-406c-b724-788fc17d5454
+INFO     root:mysql_operate.py:57 SQL影响行数: 1 预期影响行数: 1 断言成功!
+INFO     root:data_depend.py:41 提取变量：yuedulijie_zitiId1_copy_count: 1
+INFO     root:data_depend.py:41 提取变量：yuedulijie_zitiId1_copy_value: c1e341fb-b0b3-406c-b724-788fc17d5454
+INFO     root:mysql_operate.py:88 SQL查询结果: 2e44e65e-1105-45df-b844-3cfc46a03bff
+INFO     root:mysql_operate.py:57 SQL影响行数: 1 预期影响行数: 1 断言成功!
+INFO     root:data_depend.py:41 提取变量：yuedulijie_zitiId2_copy_count: 1
+INFO     root:data_depend.py:41 提取变量：yuedulijie_zitiId2_copy_value: 2e44e65e-1105-45df-b844-3cfc46a03bff
+INFO     root:mysql_operate.py:88 SQL查询结果: 282a629e-b27f-4742-892f-cf84422d33d3
+INFO     root:mysql_operate.py:57 SQL影响行数: 1 预期影响行数: 1 断言成功!
+INFO     root:data_depend.py:41 提取变量：yuedulijie_zitiId3_copy_count: 1
+INFO     root:data_depend.py:41 提取变量：yuedulijie_zitiId3_copy_value: 282a629e-b27f-4742-892f-cf84422d33d3
+INFO     root:validate.py:76 响应断言:  预期值: '200' 实际值: '200', 断言成功!

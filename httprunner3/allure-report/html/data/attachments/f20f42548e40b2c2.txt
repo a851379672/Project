@@ -1,0 +1,35 @@
+2022-01-25 18:45:36.993 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : http://pre-202108-10.zhixueyun.com/api/v1/human/sharding-file/auth/upload-parse-file
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__5162aae81b0783802661ab1b21b0a987",
+    "uri": "exam/exam",
+    "Content-Length": "2300754",
+    "Content-Type": "multipart/form-data; boundary=76a2d82f53a6e0407f96b4c740fe9e6b"
+}
+cookies  : {}
+body     : upload file stream (OMITTED)
+
+2022-01-25 18:45:36.993 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 10:45:37 GMT",
+    "Content-Type": "text/html;charset=UTF-8",
+    "Content-Length": "221",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : text/html;charset=UTF-8
+body     : [{'contentType': 'video/mp4', 'filename': '试题视频_1113.mp4', 'id': '1132086d-cdee-4fbe-b1bf-1a9768602fef', 'path': 'CfPWmy2KzFDoMtrWPlDVpRHZutgRcUlMuuYgYgttmbroVeD6/1f23vWXlnDUNp1/WH6f2EKelxtnlHlLlV522g==', 'size': 2299387}]
+
+2022-01-25 18:45:36,994 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：videoId: 1132086d-cdee-4fbe-b1bf-1a9768602fef
+2022-01-25 18:45:36,994 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: 'video/mp4' 实际值: 'video/mp4', 断言成功!

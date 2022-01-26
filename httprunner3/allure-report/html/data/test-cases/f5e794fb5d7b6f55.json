@@ -1,0 +1,191 @@
+{
+  "uid" : "f5e794fb5d7b6f55",
+  "name" : "【游戏管理】——新增练习-受众设置-游戏规则",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "b238b020c5727ce5b41a6dd6d0b44803",
+  "time" : {
+    "start" : 1643090870628,
+    "stop" : 1643090870770,
+    "duration" : 142
+  },
+  "description" : "\n        :param api_data\n        :return: report_content\n        ",
+  "descriptionHtml" : "<pre><code>    :param api_data\n    :return: report_content\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "fsetup_tear_down",
+    "time" : {
+      "start" : 1643090812726,
+      "stop" : 1643090812726,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1643090812726,
+      "stop" : 1643090812977,
+      "duration" : 251
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "file_fixture",
+    "time" : {
+      "start" : 1643090812720,
+      "stop" : 1643090812726,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass",
+    "time" : {
+      "start" : 1643090812977,
+      "stop" : 1643090812981,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param api_data\n        :return: report_content\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "2d852a163d6b9726",
+      "name" : "log",
+      "source" : "2d852a163d6b9726.txt",
+      "type" : "text/plain",
+      "size" : 184
+    }, {
+      "uid" : "8d83f46d8b5e2ec9",
+      "name" : "stderr",
+      "source" : "8d83f46d8b5e2ec9.txt",
+      "type" : "text/plain",
+      "size" : 3137
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "fsetup_tear_down::0",
+    "time" : {
+      "start" : 1643090879277,
+      "stop" : 1643090879282,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass::0",
+    "time" : {
+      "start" : 1643090879271,
+      "stop" : 1643090879271,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【游戏管理】——新增练习-受众设置-游戏规则"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=3, reruns_delay=5)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "32128-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "api_data",
+    "value" : "{'name': '【游戏管理】——新增练习-受众设置-游戏规则', 'request': {'url': 'api/v1/exam/game/practice/base-info', 'method': 'POST', 'headers': {'Authorization': 'Bearer__${admin_token}', 'content-type': 'application/x-www-form-urlencoded; charset=UTF-8', 'uri': 'exam/exam-game'}, 'data': {'number': '${question_count}', 'gameSection': {'gamePaperTactics': [], 'questionNum': '${question_count}', 'integral': '10', 'answerTime': '20'}, 'name': '【游戏练习】$date_time{}', 'organizationId-text': '${organizationName}', 'organizationId': '${organizationId}', 'publishMemberId': '${adminId}', 'publishOrganizationId': '${organizationId}', 'coverId': '${coverId}', 'coverPath': '${coverPath}', 'gamePaperTactics': [{'questionDepotId': '${questionDepotId}', 'organizationId': '${organizationId}', 'questionDepot': {'id': '${questionDepotId}', 'name': '${organizationName}'}, 'amount': '${question_count}'}], 'gameExperienceRules': [{'type': 1, 'value': '2', 'status': 1}, {'type': 2, 'value': '5', 'status': 1}, {'type': 3, 'value': '0', 'status': 1}, {'type': 4, 'value': '20', 'status': 1}]}}, 'sql_statement': None, 'extract': {'practiceId': '$.id'}, 'validate': [{'eq': ['$.status', '0']}], 'allure': {'allure_descrption': '【游戏管理】——新增练习-受众设置-游戏规则', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}"
+  } ],
+  "links" : [ {
+    "name" : "https://tester1.zhixueyun.com/api/v1/exam/game/practice/base-info",
+    "url" : "https://tester1.zhixueyun.com/api/v1/exam/game/practice/base-info",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=3, reruns_delay=5)" ]
+  },
+  "source" : "f5e794fb5d7b6f55.json",
+  "parameterValues" : [ "{'name': '【游戏管理】——新增练习-受众设置-游戏规则', 'request': {'url': 'api/v1/exam/game/practice/base-info', 'method': 'POST', 'headers': {'Authorization': 'Bearer__${admin_token}', 'content-type': 'application/x-www-form-urlencoded; charset=UTF-8', 'uri': 'exam/exam-game'}, 'data': {'number': '${question_count}', 'gameSection': {'gamePaperTactics': [], 'questionNum': '${question_count}', 'integral': '10', 'answerTime': '20'}, 'name': '【游戏练习】$date_time{}', 'organizationId-text': '${organizationName}', 'organizationId': '${organizationId}', 'publishMemberId': '${adminId}', 'publishOrganizationId': '${organizationId}', 'coverId': '${coverId}', 'coverPath': '${coverPath}', 'gamePaperTactics': [{'questionDepotId': '${questionDepotId}', 'organizationId': '${organizationId}', 'questionDepot': {'id': '${questionDepotId}', 'name': '${organizationName}'}, 'amount': '${question_count}'}], 'gameExperienceRules': [{'type': 1, 'value': '2', 'status': 1}, {'type': 2, 'value': '5', 'status': 1}, {'type': 3, 'value': '0', 'status': 1}, {'type': 4, 'value': '20', 'status': 1}]}}, 'sql_statement': None, 'extract': {'practiceId': '$.id'}, 'validate': [{'eq': ['$.status', '0']}], 'allure': {'allure_descrption': '【游戏管理】——新增练习-受众设置-游戏规则', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}" ]
+}

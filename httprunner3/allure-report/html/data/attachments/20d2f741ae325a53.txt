@@ -1,0 +1,35 @@
+2022-01-25 14:30:01.077 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://tester1.zhixueyun.com/api/v1/exam/invigilator/batch-insert
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__913d806a4e52a41790dc2c97e3f00bb4",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "uri": "exam/exam",
+    "Content-Length": "381"
+}
+cookies  : {}
+body     : invigilators=%5B%7B%27memberId%27%3A+%2700f8266a-1ff2-4ab3-97e0-307621501005%27%2C+%27examId%27%3A+%27101b3285-04a6-481c-a8c3-766fcf7c8838%27%7D%2C+%7B%27memberId%27%3A+%275f0870a7-d55d-4a31-8782-1ac8d9690efc%27%2C+%27examId%27%3A+%27101b3285-04a6-481c-a8c3-766fcf7c8838%27%7D%5D&examName=%E3%80%90%E6%99%AE%E9%80%9A%E8%80%83%E8%AF%95%E3%80%912022-01-25+14%3A29%3A58&businessType=1
+
+2022-01-25 14:30:01.077 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:30:01 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "289",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : [{'examId': '101b3285-04a6-481c-a8c3-766fcf7c8838', 'id': '4ab6067b-9541-49d7-8fc2-50ac07d9eb73', 'memberId': '00f8266a-1ff2-4ab3-97e0-307621501005'}, {'examId': '101b3285-04a6-481c-a8c3-766fcf7c8838', 'id': 'ac183e82-ecd3-4f7f-87df-5ac7f9a29813', 'memberId': '5f0870a7-d55d-4a31-8782-1ac8d9690efc'}]
+
+2022-01-25 14:30:01,078 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '101b3285-04a6-481c-a8c3-766fcf7c8838' 实际值: '101b3285-04a6-481c-a8c3-766fcf7c8838', 断言成功!

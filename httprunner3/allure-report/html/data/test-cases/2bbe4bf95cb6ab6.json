@@ -1,0 +1,98 @@
+{
+  "uid" : "2bbe4bf95cb6ab6",
+  "name" : "【普通考试】——新增考试-考试配置-监考人员配置-更改监考人员监考范围",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "17ecc6b71b217bf1886f788e9137700e",
+  "time" : {
+    "start" : 1643107291259,
+    "stop" : 1643107291341,
+    "duration" : 82
+  },
+  "description" : "\n        :param api_data\n        :return: report_content\n        ",
+  "descriptionHtml" : "<pre><code>    :param api_data\n    :return: report_content\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n        :param api_data\n        :return: report_content\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b7399a38ff74c4f2",
+      "name" : "log",
+      "source" : "b7399a38ff74c4f2.txt",
+      "type" : "text/plain",
+      "size" : 88
+    }, {
+      "uid" : "52ddde368438776e",
+      "name" : "stderr",
+      "source" : "52ddde368438776e.txt",
+      "type" : "text/plain",
+      "size" : 1803
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【普通考试】——新增考试-考试配置-监考人员配置-更改监考人员监考范围"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=5, reruns_delay=5)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "19144-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "http://pre-202108-10.zhixueyun.com/api/v1/exam/invigilator/update-grant",
+    "url" : "http://pre-202108-10.zhixueyun.com/api/v1/exam/invigilator/update-grant",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=5, reruns_delay=5)" ]
+  },
+  "source" : "2bbe4bf95cb6ab6.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,6 @@
+INFO     root:data_depend.py:37 提取变量：topicId1: d2573a4c-1cba-4762-87fa-a98cd7ccf644
+INFO     root:data_depend.py:37 提取变量：topicId2: 728f63c0-8434-4d26-8df9-96a6e4965113
+INFO     root:data_depend.py:37 提取变量：topicId3: 5d8baabc-0130-464c-8ffe-08b22865566c
+INFO     root:data_depend.py:37 提取变量：topicId4: 3d67b595-ca4c-4aa7-8f1a-67a5ad1b515e
+INFO     root:data_depend.py:37 提取变量：topicId5: 31fdb22b-fa5d-436d-a394-a0c80d74132c
+INFO     root:validate.py:76 响应断言:  预期值: '200' 实际值: '200', 断言成功!

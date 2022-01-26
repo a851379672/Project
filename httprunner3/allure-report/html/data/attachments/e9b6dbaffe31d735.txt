@@ -1,0 +1,134 @@
+2022-01-25 14:07:04.534 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/exam/exam/front/user-record/801a6800-06ba-49c4-ad3d-8775030eeadc?examId=801a6800-06ba-49c4-ad3d-8775030eeadc&organizationId=cc861919-b7fb-4582-b755-48b2eb0e5203
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__952100744d93ee98c41357f829c92311"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 14:07:04.536 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:07:05 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "2317",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "allowExamTimes": 1,
+    "allowSwitchTimes": 3,
+    "applicantEndTime": 1643177224000,
+    "applicantNeedAudit": 0,
+    "applicantStartTime": 1643004424000,
+    "clientType": 0,
+    "companySupport": true,
+    "coverId": "ce81f9c3-2c77-413e-b553-a2f79d87e0b0",
+    "coverIdPath": "default/M00/0B/09/wKgLTWHvk3-AYK5lAALsu96_yEs931.jpg",
+    "credit": 1000,
+    "duration": 60,
+    "endTime": 1643263620000,
+    "errorListMark": null,
+    "examNotes": "请考生仔细阅读，并参照执行，如遇特殊情况，请联系监考老师或拨打客服电话。",
+    "examRecord": {
+        "currentTime": 1643090825316,
+        "endTime": null,
+        "id": "c57f99c4-ac81-4868-bf79-cad577ba57ee",
+        "isFinished": null,
+        "isReset": null,
+        "lastRecordId": null,
+        "startTime": null,
+        "status": 1,
+        "submitTime": null,
+        "topScoreRecordId": null
+    },
+    "examRegist": {
+        "beforeStatus": null,
+        "credit": null,
+        "examTimes": null,
+        "id": null,
+        "isReset": null,
+        "memberId": null,
+        "passStatus": null,
+        "status": 3,
+        "topScore": null,
+        "topScoreRecordId": null
+    },
+    "examedTimes": 0,
+    "faceFailedRule": 0,
+    "faceLimitTimes": 3,
+    "faceMode": 1,
+    "id": "801a6800-06ba-49c4-ad3d-8775030eeadc",
+    "isOverByPassExam": null,
+    "isRepeat": 1,
+    "isSetAccessSecret": 1,
+    "isSetPersonalCode": 0,
+    "isShowAnswerImmed": null,
+    "makeUpCount": 0,
+    "name": "【普通考试】2022-01-25 14:06:58",
+    "needApplicant": 1,
+    "needFillOutInfo": 0,
+    "organizationId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+    "paperClass": {
+        "totalScore": 9000
+    },
+    "paperViewRule": 1,
+    "passScore": 54,
+    "sendToCenter": 0,
+    "showAnswerRule": 3,
+    "signUp": {
+        "id": "0dd2220c-a06d-4d29-9936-9b5ac7c99c8f",
+        "status": 2
+    },
+    "sourceType": 1,
+    "startTime": 1643090820000,
+    "status": 5,
+    "topic": [
+        {
+            "businessId": "801a6800-06ba-49c4-ad3d-8775030eeadc",
+            "businessType": 1,
+            "id": "07b0b36d-a25f-4532-93ae-3c0c15045b00",
+            "topicId": "0a25d886-cf57-48d0-83ca-209c09aa2ed1"
+        },
+        {
+            "businessId": "801a6800-06ba-49c4-ad3d-8775030eeadc",
+            "businessType": 1,
+            "id": "09ecdd4d-21b5-430b-9628-8a6e2db92b1c",
+            "topicId": "150b6d5e-7f81-4bdf-a0e4-249d61c161fb"
+        },
+        {
+            "businessId": "801a6800-06ba-49c4-ad3d-8775030eeadc",
+            "businessType": 1,
+            "id": "aae15155-59a4-4666-8a13-289d53fcc6da",
+            "topicId": "41bc2946-a7b4-44af-bcff-885f9ed6bfde"
+        },
+        {
+            "businessId": "801a6800-06ba-49c4-ad3d-8775030eeadc",
+            "businessType": 1,
+            "id": "af7e5d38-5bb4-48c1-a9ff-41303fadf0cf",
+            "topicId": "1ca2abfd-732e-4638-8d85-8f0a01dd3332"
+        },
+        {
+            "businessId": "801a6800-06ba-49c4-ad3d-8775030eeadc",
+            "businessType": 1,
+            "id": "fdfb1842-5749-4711-85d7-cfaa122ede58",
+            "topicId": "fe627367-6445-4ca1-83da-f7664df41351"
+        }
+    ],
+    "type": 1
+}
+
+2022-01-25 14:07:04,536 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：examRecordId: c57f99c4-ac81-4868-bf79-cad577ba57ee
+2022-01-25 14:07:04,537 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '5' 实际值: '5', 断言成功!

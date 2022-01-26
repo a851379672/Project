@@ -1,0 +1,51 @@
+2022-01-25 11:14:25.977 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://tester1.zhixueyun.com/api/v1/exam/question
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__8282fe0727e597a9fde0b2768b3de476",
+    "uri": "exam/question-depot",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "Content-Length": "855"
+}
+cookies  : {}
+body     : value=%5B%7B%27value%27%3A+%271%27%2C+%27name%27%3A+%271%27%2C+%27type%27%3A+3%7D%5D&content=%E8%AF%95%E9%A2%98%E7%9B%AE%E5%BD%952022-01-25+11%3A14%3A24-%E5%88%A4%E6%96%AD%E9%A2%981&contentText=%E8%AF%95%E9%A2%98%E7%9B%AE%E5%BD%952022-01-25+11%3A14%3A24-%E5%88%A4%E6%96%AD%E9%A2%981&score=1000&type=3&questionAttrs%5B0%5D%5Bvalue%5D=1&questionAttrs%5B0%5D%5Bname%5D=1&questionAttrs%5B0%5D%5Btype%5D=3&questionDepotId=44c54da5-e2e5-4b77-ae95-d0566b527c9d&questionDepot%5Bid%5D=44c54da5-e2e5-4b77-ae95-d0566b527c9d&questionDepot%5Bname%5D=%E8%AF%95%E9%A2%98%E7%9B%AE%E5%BD%952022-01-25+11%3A14%3A24&organizationId=cc861919-b7fb-4582-b755-48b2eb0e5203&organization%5Bid%5D=cc861919-b7fb-4582-b755-48b2eb0e5203&organization%5Bname%5D=tester&parsing=%E8%AF%95%E9%A2%98%E8%A7%A3%E6%9E%90&parsingText=%E8%AF%95%E9%A2%98%E8%A7%A3%E6%9E%90&difficulty=3&depotEdit=0
+
+2022-01-25 11:14:25.977 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:14:26 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "311",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "content": "试题目录2022-01-25 11:14:24-判断题1",
+    "createTime": 1643080466688,
+    "difficulty": 3,
+    "errorRate": 0,
+    "id": "626b1bfe-1a1f-4800-b4ad-8c630b4f4d1f",
+    "markAmount": 0,
+    "questionAttrs": null,
+    "questionDepotId": "44c54da5-e2e5-4b77-ae95-d0566b527c9d",
+    "recoveryCount": 0,
+    "rightRate": 0,
+    "status": 0,
+    "subs": [],
+    "type": 3
+}
+
+2022-01-25 11:14:25,977 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：panduanid: 626b1bfe-1a1f-4800-b4ad-8c630b4f4d1f
+2022-01-25 11:14:25,978 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：panduanname: 试题目录2022-01-25 11:14:24-判断题1
+2022-01-25 11:14:25,978 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '3' 实际值: '3', 断言成功!

@@ -1,0 +1,188 @@
+{
+  "uid" : "d4e709ae700f9a88",
+  "name" : "【普通试题】——删除判断题",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "e4379aac3a1f3dc17ea7f361c2ddb967",
+  "time" : {
+    "start" : 1643080618528,
+    "stop" : 1643080618666,
+    "duration" : 138
+  },
+  "description" : "\n        :param api_data\n        :return: report_content\n        ",
+  "descriptionHtml" : "<pre><code>    :param api_data\n    :return: report_content\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "fsetup_tear_down",
+    "time" : {
+      "start" : 1643080586705,
+      "stop" : 1643080586705,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass",
+    "time" : {
+      "start" : 1643080586990,
+      "stop" : 1643080586995,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "file_fixture",
+    "time" : {
+      "start" : 1643080586697,
+      "stop" : 1643080586705,
+      "duration" : 8
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1643080586705,
+      "stop" : 1643080586990,
+      "duration" : 285
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param api_data\n        :return: report_content\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "1537af4460dd85fd",
+      "name" : "log",
+      "source" : "1537af4460dd85fd.txt",
+      "type" : "text/plain",
+      "size" : 158
+    }, {
+      "uid" : "e38ee884294ce1f3",
+      "name" : "stderr",
+      "source" : "e38ee884294ce1f3.txt",
+      "type" : "text/plain",
+      "size" : 1595
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "fsetup_tear_down::0",
+    "time" : {
+      "start" : 1643080642834,
+      "stop" : 1643080642840,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass::0",
+    "time" : {
+      "start" : 1643080642825,
+      "stop" : 1643080642825,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【普通试题】——删除判断题"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "7636-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "api_data",
+    "value" : "{'name': '【普通试题】——删除判断题', 'request': {'url': 'api/v1/exam/question/${panduanid}', 'method': 'DELETE', 'headers': {'Authorization': 'Bearer__${admin_token}', 'uri': 'exam/question-depot', 'content-type': 'application/x-www-form-urlencoded; charset=UTF-8'}, 'data': {'id': '${panduanid}', 'name': '${panduanname}'}}, 'extract': None, 'validate': [{'eq': ['$.id', '${panduanid}']}], 'allure': {'allure_descrption': '【普通试题】——删除判断题', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}"
+  } ],
+  "links" : [ {
+    "name" : "https://tester1.zhixueyun.com/api/v1/exam/question/${panduanid}",
+    "url" : "https://tester1.zhixueyun.com/api/v1/exam/question/${panduanid}",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d4e709ae700f9a88.json",
+  "parameterValues" : [ "{'name': '【普通试题】——删除判断题', 'request': {'url': 'api/v1/exam/question/${panduanid}', 'method': 'DELETE', 'headers': {'Authorization': 'Bearer__${admin_token}', 'uri': 'exam/question-depot', 'content-type': 'application/x-www-form-urlencoded; charset=UTF-8'}, 'data': {'id': '${panduanid}', 'name': '${panduanname}'}}, 'extract': None, 'validate': [{'eq': ['$.id', '${panduanid}']}], 'allure': {'allure_descrption': '【普通试题】——删除判断题', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}" ]
+}

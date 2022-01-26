@@ -1,0 +1,54 @@
+2022-01-25 18:46:47.285 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://pre-202108-10.zhixueyun.com/api/v1/exam/sign-auth/signup-detail?signUpId=81aa5c4d-2b45-4c10-b850-cb2df6a971b6
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__5162aae81b0783802661ab1b21b0a987",
+    "uri": "exam/signup"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 18:46:47.285 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 10:46:48 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "469",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "description": null,
+    "email": "",
+    "examId": "84434675-0fb5-4382-b775-536a43201c55",
+    "id": "61146e14-cb6a-424b-bd11-37f76a06ca89",
+    "member": {
+        "email": null,
+        "fullName": "学生1",
+        "headPortraitPath": null,
+        "id": "61146e14-cb6a-424b-bd11-37f76a06ca89",
+        "identityNumber": null,
+        "name": "test_1",
+        "organization": {
+            "companyName": "preer",
+            "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+            "name": "preer"
+        },
+        "phoneNumber": null
+    },
+    "phoneNumber": "",
+    "sex": null,
+    "signUpId": "81aa5c4d-2b45-4c10-b850-cb2df6a971b6"
+}
+
+2022-01-25 18:46:47,285 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '81aa5c4d-2b45-4c10-b850-cb2df6a971b6' 实际值: '81aa5c4d-2b45-4c10-b850-cb2df6a971b6', 断言成功!

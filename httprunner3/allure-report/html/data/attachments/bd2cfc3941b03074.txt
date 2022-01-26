@@ -1,0 +1,52 @@
+2022-01-25 14:39:25.522 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://tester1.zhixueyun.com/api/v1/exam/question/other
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__c7fc72caf066b114b1fe7f418ac2c8f1",
+    "uri": "exam/question-depot",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "Content-Length": "1283"
+}
+cookies  : {}
+body     : value=%5B%7B%27value%27%3A+%27%E3%80%90%E9%97%AE%E7%AD%94%E9%A2%98%E3%80%91%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%27%2C+%27name%27%3A+%27%E3%80%90%E9%97%AE%E7%AD%94%E9%A2%98%E3%80%91%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%27%2C+%27type%27%3A+5%7D%5D&questionAttrs%5B0%5D%5Bvalue%5D=%E3%80%90%E9%97%AE%E7%AD%94%E9%A2%98%E3%80%91%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88&questionAttrs%5B0%5D%5Bname%5D=%E3%80%90%E9%97%AE%E7%AD%94%E9%A2%98%E3%80%91%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88&questionAttrs%5B0%5D%5Btype%5D=5&content=%E3%80%90%E9%97%AE%E7%AD%94%E9%A2%98%E3%80%91%E8%AF%95%E9%A2%98%E4%BF%A1%E6%81%AF2022-01-25+14%3A39%3A25&contentText=%E3%80%90%E9%97%AE%E7%AD%94%E9%A2%98%E3%80%91%E8%AF%95%E9%A2%98%E4%BF%A1%E6%81%AF2022-01-25+14%3A39%3A25&score=1000&type=5&questionDepotId=54edbf14-202d-48de-ad6f-4a8a83fb7a3d&questionDepot%5Bid%5D=54edbf14-202d-48de-ad6f-4a8a83fb7a3d&questionDepot%5Bname%5D=%E8%AF%95%E9%A2%98%E7%9B%AE%E5%BD%95&organizationId=cc861919-b7fb-4582-b755-48b2eb0e5203&organization%5Bid%5D=cc861919-b7fb-4582-b755-48b2eb0e5203&organization%5Bname%5D=tester&parsing=%E3%80%90%E9%97%AE%E7%AD%94%E9%A2%98%E3%80%91%E8%AF%95%E9%A2%98%E8%A7%A3%E6%9E%90&parsingText=%E3%80%90%E9%97%AE%E7%AD%94%E9%A2%98%E3%80%91%E8%AF%95%E9%A2%98%E8%A7%A3%E6%9E%90&difficulty=3&isTemp=1&depotEdit=0
+
+2022-01-25 14:39:25.523 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:39:26 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "315",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "content": "【问答题】试题信息2022-01-25 14:39:25",
+    "createTime": 1643092766279,
+    "difficulty": 3,
+    "errorRate": 0,
+    "id": "f9008707-708e-46f9-9699-63949011ff22",
+    "markAmount": 0,
+    "questionAttrs": null,
+    "questionDepotId": "54edbf14-202d-48de-ad6f-4a8a83fb7a3d",
+    "recoveryCount": 0,
+    "rightRate": 0,
+    "status": 2,
+    "subs": [],
+    "type": 5
+}
+
+2022-01-25 14:39:25,523 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：wendatiId: f9008707-708e-46f9-9699-63949011ff22
+2022-01-25 14:39:25,524 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：wendatiName: 【问答题】试题信息2022-01-25 14:39:25
+2022-01-25 14:39:25,524 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：wendatiDifficulty: 3
+2022-01-25 14:39:25,524 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '5' 实际值: '5', 断言成功!

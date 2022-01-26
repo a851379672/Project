@@ -1,0 +1,33 @@
+2022-01-25 14:06:59.715 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/system/grant/find-member-grant-item?uri=exam%2Fexam
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__d47752064eceb10c9bdde411d492369b",
+    "uri": "exam/exam"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 14:06:59.716 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:07:00 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "145",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : [{'childFind': 1, 'id': '168983d3-6235-418a-9ccc-89195cab9924', 'organizationId': 'cc861919-b7fb-4582-b755-48b2eb0e5203', 'organizationName': 'tester'}]
+
+2022-01-25 14:06:59,717 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: 'tester' 实际值: 'tester', 断言成功!

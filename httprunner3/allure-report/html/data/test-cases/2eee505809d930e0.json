@@ -1,0 +1,98 @@
+{
+  "uid" : "2eee505809d930e0",
+  "name" : "【普通考试】——新增考试-基本信息-考试开始时间",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "d79ef2ab66480eab68e0fe95f96074ea",
+  "time" : {
+    "start" : 1643107285823,
+    "stop" : 1643107285888,
+    "duration" : 65
+  },
+  "description" : "\n        :param api_data\n        :return: report_content\n        ",
+  "descriptionHtml" : "<pre><code>    :param api_data\n    :return: report_content\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n        :param api_data\n        :return: report_content\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b23aa3e2a639c72",
+      "name" : "log",
+      "source" : "b23aa3e2a639c72.txt",
+      "type" : "text/plain",
+      "size" : 92
+    }, {
+      "uid" : "d302c84d04ad737a",
+      "name" : "stderr",
+      "source" : "d302c84d04ad737a.txt",
+      "type" : "text/plain",
+      "size" : 1265
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【普通考试】——新增考试-基本信息-考试开始时间"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=5, reruns_delay=5)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "19144-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "http://pre-202108-10.zhixueyun.com/api/v1/exam/exam/remote-startTime",
+    "url" : "http://pre-202108-10.zhixueyun.com/api/v1/exam/exam/remote-startTime",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=5, reruns_delay=5)" ]
+  },
+  "source" : "2eee505809d930e0.json",
+  "parameterValues" : [ ]
+}

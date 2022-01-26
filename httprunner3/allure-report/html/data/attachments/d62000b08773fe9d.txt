@@ -1,0 +1,2 @@
+INFO     root:data_depend.py:37 提取变量：fileid_1: d968ccfc-115c-4b7e-aa8e-0a214957f9c7
+INFO     root:validate.py:76 响应断言:  预期值: 'xlsx' 实际值: 'preer_试题导入模板_1115.xlsx', 断言成功!

@@ -1,0 +1,208 @@
+2022-01-25 14:30:46.044 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/exam/paper-class?paperId=610e8238-da83-421d-9c72-7ecc969e9f1e&examName=%E3%80%90%E7%9B%91%E8%80%83%2F%E6%8A%A5%E5%90%8D%E8%80%83%E8%AF%95%E3%80%912022-01-25+14%3A30%3A45&businessType=1
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__913d806a4e52a41790dc2c97e3f00bb4",
+    "uri": "exam/exam"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 14:30:46.046 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:30:46 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "3311",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "createTime": null,
+    "exam": {
+        "examNotes": null,
+        "id": null,
+        "name": null,
+        "paperShowRule": null
+    },
+    "id": "610e8238-da83-421d-9c72-7ecc969e9f1e",
+    "isSubjective": 0,
+    "name": "【监考/报名考试】2022-01-25 14:30:45",
+    "organization": {
+        "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+        "name": "tester"
+    },
+    "organizationId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+    "paperClassQuestions": [
+        {
+            "id": "08bd1f73-7f61-4fc7-81eb-02d661916159",
+            "isFromSelected": 0,
+            "paperClassId": null,
+            "parentId": null,
+            "question": {
+                "answerCount": null,
+                "answerNum": null,
+                "code": null,
+                "companyId": null,
+                "content": "【单选题】试题信息2022-01-25 14:30:45",
+                "contentText": null,
+                "createTime": 1643092246402,
+                "differentPercent": null,
+                "differentPercentStr": null,
+                "difficulty": 3,
+                "difficultyPercent": null,
+                "difficultyPercentStr": null,
+                "dimension": null,
+                "dimensionId": null,
+                "errorRate": null,
+                "examName": null,
+                "examNum": null,
+                "exportContent": null,
+                "exportOrder": null,
+                "exportType": null,
+                "id": "c383a328-d566-41f7-ba5c-14855f87c36e",
+                "index": null,
+                "isFromSelected": null,
+                "isSubjective": null,
+                "isTemp": null,
+                "knowledge": null,
+                "markAmount": null,
+                "maxChoice": null,
+                "migrateFlag": null,
+                "minChoice": null,
+                "modifyDate": null,
+                "order": null,
+                "organization": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "name": "tester"
+                },
+                "organizationId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "organizationName": null,
+                "originalQuestionId": "c383a328-d566-41f7-ba5c-14855f87c36e",
+                "otherAnswer": null,
+                "paperClassQuestion": null,
+                "parentId": null,
+                "parsing": "【单选题】试题解析",
+                "parsingText": "【单选题】试题解析",
+                "questionAttrs": [
+                    {
+                        "companyId": null,
+                        "createTime": 1643092246402,
+                        "id": "6910b4dc-8179-4cba-88d5-df27b4a80cf2",
+                        "migrateFlag": null,
+                        "modifyDate": null,
+                        "name": "0",
+                        "questionId": "c383a328-d566-41f7-ba5c-14855f87c36e",
+                        "score": null,
+                        "selectCount": null,
+                        "selectPercent": null,
+                        "type": "0",
+                        "value": "A",
+                        "valueText": null
+                    },
+                    {
+                        "companyId": null,
+                        "createTime": 1643092246402,
+                        "id": "4103c8e8-d34e-493b-b250-4780283f71a1",
+                        "migrateFlag": null,
+                        "modifyDate": null,
+                        "name": "2",
+                        "questionId": "c383a328-d566-41f7-ba5c-14855f87c36e",
+                        "score": null,
+                        "selectCount": null,
+                        "selectPercent": null,
+                        "type": "1",
+                        "value": "C",
+                        "valueText": null
+                    },
+                    {
+                        "companyId": null,
+                        "createTime": 1643092246402,
+                        "id": "a4198328-b2e2-41a7-81a0-1279ded5442b",
+                        "migrateFlag": null,
+                        "modifyDate": null,
+                        "name": "1",
+                        "questionId": "c383a328-d566-41f7-ba5c-14855f87c36e",
+                        "score": null,
+                        "selectCount": null,
+                        "selectPercent": null,
+                        "type": "1",
+                        "value": "B",
+                        "valueText": null
+                    },
+                    {
+                        "companyId": null,
+                        "createTime": 1643092246402,
+                        "id": "8af926e3-b56d-4939-b0b4-1dd9b79d06c4",
+                        "migrateFlag": null,
+                        "modifyDate": null,
+                        "name": "3",
+                        "questionId": "c383a328-d566-41f7-ba5c-14855f87c36e",
+                        "score": null,
+                        "selectCount": null,
+                        "selectPercent": null,
+                        "type": "1",
+                        "value": "D",
+                        "valueText": null
+                    }
+                ],
+                "questionCopyId": null,
+                "questionCopyIdList": null,
+                "questionDepot": {
+                    "id": null,
+                    "name": null
+                },
+                "questionDepotId": null,
+                "questionDepotName": null,
+                "questionRecoverys": null,
+                "reason": null,
+                "recoveryCount": null,
+                "replaceId": null,
+                "required": null,
+                "rightRate": null,
+                "score": 1000,
+                "sequence": null,
+                "skillsElment": null,
+                "sourceType": null,
+                "status": null,
+                "subs": null,
+                "type": 1,
+                "updateQuestionId": null
+            },
+            "questionId": "c383a328-d566-41f7-ba5c-14855f87c36e",
+            "score": 1000,
+            "sequence": 0
+        }
+    ],
+    "paperClassTactics": [],
+    "paperDepot": {
+        "id": null,
+        "name": null
+    },
+    "publishOrganization": {
+        "id": null,
+        "name": null
+    },
+    "publisher": {
+        "fullName": null,
+        "id": null,
+        "name": null
+    },
+    "questionNum": 1,
+    "status": 1,
+    "totalScore": 1000,
+    "type": 2
+}
+
+2022-01-25 14:30:46,047 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '1' 实际值: '1', 断言成功!

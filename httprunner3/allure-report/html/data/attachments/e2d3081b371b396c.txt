@@ -1,0 +1,4 @@
+INFO     root:data_depend.py:37 提取变量：id: ffc1fcc6-440d-4809-969c-219de7f98dbe
+INFO     root:data_depend.py:37 提取变量：attachmentId: 06df9ec7-0f5a-4a59-bc9b-5ea6bb9e224f
+INFO     root:validate.py:76 响应断言:  预期值: '1' 实际值: '1', 断言成功!
+INFO     root:validate.py:76 响应断言:  预期值: '1' 实际值: '1', 断言成功!

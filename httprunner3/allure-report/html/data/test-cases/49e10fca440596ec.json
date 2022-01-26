@@ -1,0 +1,191 @@
+{
+  "uid" : "49e10fca440596ec",
+  "name" : "【试卷库】——查询试卷库试卷数",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "b00f2e3c93931a0da3b4014ec117d783",
+  "time" : {
+    "start" : 1643092255615,
+    "stop" : 1643092255749,
+    "duration" : 134
+  },
+  "description" : "\n        :param api_data\n        :return: report_content\n        ",
+  "descriptionHtml" : "<pre><code>    :param api_data\n    :return: report_content\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestClass",
+    "time" : {
+      "start" : 1643092193504,
+      "stop" : 1643092193508,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "fsetup_tear_down",
+    "time" : {
+      "start" : 1643092193212,
+      "stop" : 1643092193212,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1643092193212,
+      "stop" : 1643092193504,
+      "duration" : 292
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "file_fixture",
+    "time" : {
+      "start" : 1643092193205,
+      "stop" : 1643092193212,
+      "duration" : 7
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param api_data\n        :return: report_content\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "7dfcf5310630175d",
+      "name" : "log",
+      "source" : "7dfcf5310630175d.txt",
+      "type" : "text/plain",
+      "size" : 88
+    }, {
+      "uid" : "49a8e29a1347450d",
+      "name" : "stderr",
+      "source" : "49a8e29a1347450d.txt",
+      "type" : "text/plain",
+      "size" : 1337
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestClass::0",
+    "time" : {
+      "start" : 1643092259928,
+      "stop" : 1643092259928,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "fsetup_tear_down::0",
+    "time" : {
+      "start" : 1643092259939,
+      "stop" : 1643092259943,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【试卷库】——查询试卷库试卷数"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=3, reruns_delay=5)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "29784-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "api_data",
+    "value" : "{'name': '【试卷库】——查询试卷库试卷数', 'request': {'url': 'api/v1/exam/paper/count', 'method': 'GET', 'headers': {'Authorization': 'Bearer__${admin_token}', 'uri': 'exam/paper-library'}, 'params': {'depotType': 1, 'organizationId': '${organizationId}', 'depotPath': '${paperDepotId},'}}, 'sql_statement': None, 'extract': None, 'validate': [{'eq': ['$.count', '0']}], 'allure': {'allure_descrption': '【试卷库】——查询试卷库试卷数', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}"
+  } ],
+  "links" : [ {
+    "name" : "https://tester1.zhixueyun.com/api/v1/exam/paper/count",
+    "url" : "https://tester1.zhixueyun.com/api/v1/exam/paper/count",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=3, reruns_delay=5)" ]
+  },
+  "source" : "49e10fca440596ec.json",
+  "parameterValues" : [ "{'name': '【试卷库】——查询试卷库试卷数', 'request': {'url': 'api/v1/exam/paper/count', 'method': 'GET', 'headers': {'Authorization': 'Bearer__${admin_token}', 'uri': 'exam/paper-library'}, 'params': {'depotType': 1, 'organizationId': '${organizationId}', 'depotPath': '${paperDepotId},'}}, 'sql_statement': None, 'extract': None, 'validate': [{'eq': ['$.count', '0']}], 'allure': {'allure_descrption': '【试卷库】——查询试卷库试卷数', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}" ]
+}

@@ -1,0 +1,294 @@
+{
+  "uid" : "9aea62fe517c6127",
+  "name" : "【游戏管理】——新增闯关-受众设置-获取默认受众",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "9e19bb930a77c31e8be14353531c54c5",
+  "time" : {
+    "start" : 1643107613467,
+    "stop" : 1643107613543,
+    "duration" : 76
+  },
+  "description" : "\n        :param api_data\n        :return: report_content\n        ",
+  "descriptionHtml" : "<pre><code>    :param api_data\n    :return: report_content\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "file_fixture",
+    "time" : {
+      "start" : 1643107533441,
+      "stop" : 1643107533449,
+      "duration" : 8
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1643107533449,
+      "stop" : 1643107533754,
+      "duration" : 305
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "fsetup_tear_down",
+    "time" : {
+      "start" : 1643107533449,
+      "stop" : 1643107533449,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass",
+    "time" : {
+      "start" : 1643107533754,
+      "stop" : 1643107533760,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param api_data\n        :return: report_content\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a94addf53a35af8",
+      "name" : "log",
+      "source" : "a94addf53a35af8.txt",
+      "type" : "text/plain",
+      "size" : 88
+    }, {
+      "uid" : "32ebb6c26efcadda",
+      "name" : "stderr",
+      "source" : "32ebb6c26efcadda.txt",
+      "type" : "text/plain",
+      "size" : 1313
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "fsetup_tear_down::0",
+    "time" : {
+      "start" : 1643107617789,
+      "stop" : 1643107617793,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass::0",
+    "time" : {
+      "start" : 1643107617782,
+      "stop" : 1643107617782,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【游戏管理】——新增闯关-受众设置-获取默认受众"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=5, reruns_delay=5)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "22048-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "http://pre-202108-10.zhixueyun.com/api/v1/exam/game/audience/${gameId}",
+    "url" : "http://pre-202108-10.zhixueyun.com/api/v1/exam/game/audience/${gameId}",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "bec14e8f85a71438",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643107613467,
+        "stop" : 1643107613543,
+        "duration" : 76
+      }
+    }, {
+      "uid" : "8acc7b747817987f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643092826615,
+        "stop" : 1643092826735,
+        "duration" : 120
+      }
+    }, {
+      "uid" : "505d0efc61462cf5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643092826615,
+        "stop" : 1643092826735,
+        "duration" : 120
+      }
+    }, {
+      "uid" : "f90f079a90afcd46",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643092253119,
+        "stop" : 1643092253241,
+        "duration" : 122
+      }
+    }, {
+      "uid" : "f7b3aa3f1f68eee9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643092253119,
+        "stop" : 1643092253241,
+        "duration" : 122
+      }
+    }, {
+      "uid" : "3da68d95083d3a91",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643090872741,
+        "stop" : 1643090872862,
+        "duration" : 121
+      }
+    }, {
+      "uid" : "c479a7ef8c663362",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643090872741,
+        "stop" : 1643090872862,
+        "duration" : 121
+      }
+    }, {
+      "uid" : "b5ac198dad0d7ff6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643080870001,
+        "stop" : 1643080870124,
+        "duration" : 123
+      }
+    }, {
+      "uid" : "2960cb2fe44fefee",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643080870001,
+        "stop" : 1643080870124,
+        "duration" : 123
+      }
+    }, {
+      "uid" : "cffed060861f5cd6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643080636381,
+        "stop" : 1643080636507,
+        "duration" : 126
+      }
+    }, {
+      "uid" : "a7bf27eb1b0425ba",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643080636381,
+        "stop" : 1643080636507,
+        "duration" : 126
+      }
+    }, {
+      "uid" : "2a9daa0ae0c2da32",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643080492201,
+        "stop" : 1643080492368,
+        "duration" : 167
+      }
+    }, {
+      "uid" : "31a4a19055eb407f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643080492201,
+        "stop" : 1643080492368,
+        "duration" : 167
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=5, reruns_delay=5)" ]
+  },
+  "source" : "9aea62fe517c6127.json",
+  "parameterValues" : [ ]
+}

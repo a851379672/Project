@@ -1,0 +1,191 @@
+{
+  "uid" : "3328dca82eba01ab",
+  "name" : "【广告配置】——发布考试",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "83062757071797a4f11f57593e20cd6d",
+  "time" : {
+    "start" : 1643092239336,
+    "stop" : 1643092239488,
+    "duration" : 152
+  },
+  "description" : "\n        :param api_data\n        :return: report_content\n        ",
+  "descriptionHtml" : "<pre><code>    :param api_data\n    :return: report_content\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestClass",
+    "time" : {
+      "start" : 1643092193504,
+      "stop" : 1643092193508,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "fsetup_tear_down",
+    "time" : {
+      "start" : 1643092193212,
+      "stop" : 1643092193212,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1643092193212,
+      "stop" : 1643092193504,
+      "duration" : 292
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "file_fixture",
+    "time" : {
+      "start" : 1643092193205,
+      "stop" : 1643092193212,
+      "duration" : 7
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param api_data\n        :return: report_content\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "dc6b577e5ff8ccae",
+      "name" : "log",
+      "source" : "dc6b577e5ff8ccae.txt",
+      "type" : "text/plain",
+      "size" : 88
+    }, {
+      "uid" : "e6554a0f261754c7",
+      "name" : "stderr",
+      "source" : "e6554a0f261754c7.txt",
+      "type" : "text/plain",
+      "size" : 3648
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestClass::0",
+    "time" : {
+      "start" : 1643092259928,
+      "stop" : 1643092259928,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "fsetup_tear_down::0",
+    "time" : {
+      "start" : 1643092259939,
+      "stop" : 1643092259943,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【广告配置】——发布考试"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=3, reruns_delay=5)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "29784-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "api_data",
+    "value" : "{'name': '【广告配置】——发布考试', 'request': {'url': 'api/v1/exam/exam', 'method': 'POST', 'headers': {'Authorization': 'Bearer__${admin_token}', 'content-type': 'application/x-www-form-urlencoded; charset=UTF-8', 'uri': 'exam/group-exam'}, 'data': {'publish': 1, 'name': '${examName}', 'type': 3, 'allowExamTimes': 1, 'startTime': '$diy_time{*, *, *, *, *}', 'endTime': '$diy_time{*, *, +1, *, *}', 'duration': 60, 'isCreditNeedPass': 1, 'examNotes': '请考生仔细阅读，并参照执行，如遇特殊情况，请联系监考老师或拨打客服电话。', 'organizationId-text': '${organizationName}', 'organizationId': '${organizationId}', 'publisherId': '${adminId}', 'publishOrganizationId': '${organizationId}', 'isCredit': 1, 'supportApp': '1', 'clientType': 1, 'audienceItemIds': '${studentId}', 'resourceIds': 'validatePass', 'audiences': '${studentName}', 'addItems': [{'joinId': '${studentId}', 'joinType': 5, 'joinName': '${studentName}'}], 'emptyFlag': 0, 'needApplicant': 0, 'sendToCenter': 1, 'applicantNeedAudit': 0, 'isAllowSwitch': 0, 'faceMode': 0, 'faceFailedRule': 0, 'isSetAccessSecret': 0, 'isSetPersonalCode': 0, 'admissionTicket': 0, 'evalutionRule': '{\"passLess\": 6,\"passGreater\": 8,\"goodLess\": 8,\"goodGreater\": 9,\"excellentLess\": 9,\"noPassGreater\": 6}', 'paperClassId': '${paperId}', 'paperSortRule': 1, 'paperShowRule': 2, 'rule': 6, 'paperViewRule': 1, 'parsingViewRule': 2, 'isShowAnswerImmed': 2, 'showAnswerRule': 1, 'hasCert': 0, 'virtualExamId': '${examId}', 'audienceItems': [{'joinId': '${studentId}', 'joinType': 5, 'joinName': '${studentName}'}], 'topic': [], 'noticeUser': 0, 'noticeTeacher': 0, 'noticeInvigilator': 0, 'website': '${organizationName}'}}, 'sql_statement': None, 'extract': None, 'validate': [{'eq': ['$.supportApp', '1']}], 'allure': {'allure_descrption': '【广告配置】——发布考试', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}"
+  } ],
+  "links" : [ {
+    "name" : "https://tester1.zhixueyun.com/api/v1/exam/exam",
+    "url" : "https://tester1.zhixueyun.com/api/v1/exam/exam",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=3, reruns_delay=5)" ]
+  },
+  "source" : "3328dca82eba01ab.json",
+  "parameterValues" : [ "{'name': '【广告配置】——发布考试', 'request': {'url': 'api/v1/exam/exam', 'method': 'POST', 'headers': {'Authorization': 'Bearer__${admin_token}', 'content-type': 'application/x-www-form-urlencoded; charset=UTF-8', 'uri': 'exam/group-exam'}, 'data': {'publish': 1, 'name': '${examName}', 'type': 3, 'allowExamTimes': 1, 'startTime': '$diy_time{*, *, *, *, *}', 'endTime': '$diy_time{*, *, +1, *, *}', 'duration': 60, 'isCreditNeedPass': 1, 'examNotes': '请考生仔细阅读，并参照执行，如遇特殊情况，请联系监考老师或拨打客服电话。', 'organizationId-text': '${organizationName}', 'organizationId': '${organizationId}', 'publisherId': '${adminId}', 'publishOrganizationId': '${organizationId}', 'isCredit': 1, 'supportApp': '1', 'clientType': 1, 'audienceItemIds': '${studentId}', 'resourceIds': 'validatePass', 'audiences': '${studentName}', 'addItems': [{'joinId': '${studentId}', 'joinType': 5, 'joinName': '${studentName}'}], 'emptyFlag': 0, 'needApplicant': 0, 'sendToCenter': 1, 'applicantNeedAudit': 0, 'isAllowSwitch': 0, 'faceMode': 0, 'faceFailedRule': 0, 'isSetAccessSecret': 0, 'isSetPersonalCode': 0, 'admissionTicket': 0, 'evalutionRule': '{\"passLess\": 6,\"passGreater\": 8,\"goodLess\": 8,\"goodGreater\": 9,\"excellentLess\": 9,\"noPassGreater\": 6}', 'paperClassId': '${paperId}', 'paperSortRule': 1, 'paperShowRule': 2, 'rule': 6, 'paperViewRule': 1, 'parsingViewRule': 2, 'isShowAnswerImmed': 2, 'showAnswerRule': 1, 'hasCert': 0, 'virtualExamId': '${examId}', 'audienceItems': [{'joinId': '${studentId}', 'joinType': 5, 'joinName': '${studentName}'}], 'topic': [], 'noticeUser': 0, 'noticeTeacher': 0, 'noticeInvigilator': 0, 'website': '${organizationName}'}}, 'sql_statement': None, 'extract': None, 'validate': [{'eq': ['$.supportApp', '1']}], 'allure': {'allure_descrption': '【广告配置】——发布考试', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}" ]
+}

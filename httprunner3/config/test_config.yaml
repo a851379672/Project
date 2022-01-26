@@ -1,6 +1,6 @@
 #   test环境
 ent_url: https://tester1.zhixueyun.com/
-ent_host: http://47.97.36.217:443
+env_url: https://test9.zhixueyun.com/
 config_url: https://tester1.zhixueyun.com/api/v1/system/setting/config
 
 #   登录配置
@@ -14,7 +14,7 @@ admin_username: admin
 admin_password: zxy123456
 
 #   student登录配置
-student_login_key: 0J5Zm+UKb3i4gKYSpDJeGReXokKz1TeyyXGeeqJTfVxWhOz0DpdFdJmMvNNB8difW98CJNYk/1yZ6VYNw30SQtiPAOJLgVrkZolnP78WjJ5UdLpbOFCXvxy6PWmdAjopFj+3wVtARcQ8o6Qx+miPgw36InzJC7ETJj9RgfuiFoYQgMDfhLlBuduz0dA9IlEnR3TnXNzjIZ7oBQMDwuFsrDYtI++jgeRxPoF3Ufaghug=
+student_login_key: 0J5Zm+UKb3i4gKYSpDJeGReXokKz1TeyyXGeeqJTfVxWhOz0DpdFdJmMvNNB8difW98CJNYk/1yZ6VYNw30SQtiPAOJLgVrkZolnP78WjJ5gtYuAYtUY3xMUMxcGgnQH2XP/biozhREJBQ9oJe9JKen7YehtDKiILw66buxAGorzXV6l2ChiSflP1Cq9QJomvbgm4oK6k6IfN1R9gDd+bA==
 student_username: test_1
 student_password: zxy123456
 
@@ -31,7 +31,7 @@ db_config:
 #   redis数据库的连接信息
 redis_config:
   {
-    redis_host: 192.168.10.46,
-    redis_port: 6379,
-    redis_password: ".com"
+    redis_host: 47.99.135.195,
+    redis_port: 30116,
+    redis_password: 'TA6sMiuSRqtTrHB7Amdg'
   }

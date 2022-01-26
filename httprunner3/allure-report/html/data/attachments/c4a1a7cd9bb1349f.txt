@@ -1,0 +1,44 @@
+2022-01-25 14:07:04.905 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/exam/exam/front/simple-data//801a6800-06ba-49c4-ad3d-8775030eeadc
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__952100744d93ee98c41357f829c92311"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 14:07:04.905 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:07:05 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "254",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "duration": 60,
+    "endTime": 1643263620000,
+    "faceFailedRule": 0,
+    "faceLimitTimes": 3,
+    "faceMode": 1,
+    "id": "801a6800-06ba-49c4-ad3d-8775030eeadc",
+    "name": "【普通考试】2022-01-25 14:06:58",
+    "publishOrganization": null,
+    "startTime": 1643090820000,
+    "status": 5,
+    "type": 1
+}
+
+2022-01-25 14:07:04,905 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '5' 实际值: '5', 断言成功!

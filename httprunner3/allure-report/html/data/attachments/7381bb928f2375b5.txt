@@ -1,0 +1,173 @@
+2022-01-25 14:06:53.271 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/system/setting/config
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__952100744d93ee98c41357f829c92311"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 14:06:53.271 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:06:54 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "2902",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "redirectUri": "https://tester1.zhixueyun.com",
+    "shareTemplate": [
+        {
+            "code": "bar",
+            "content": "大家一起来围观吧!",
+            "id": "4dd85bcf-7aa3-446d-b2d8-d879e5cf5495",
+            "name": "分享到问吧"
+        },
+        {
+            "code": "weibo",
+            "content": "小伙伴们,有好东西啦,快点进来看吧!",
+            "id": "522987b2-c194-44ef-9e5b-fb3d27b7a869",
+            "name": "新浪微搏"
+        },
+        {
+            "code": "qzone",
+            "content": "空间的内容绝对有料,有兴趣的小伙伴赶紧来吧!",
+            "id": "783995f4-ff7a-4035-b964-bf6dc1b971b6",
+            "name": "QQ空间"
+        },
+        {
+            "code": "weixin",
+            "content": "绝对有料，小伙伴们赶紧来吧!",
+            "id": "fa7f52a8-609c-480f-bd4b-17f18726e3b5",
+            "name": "微信"
+        }
+    ],
+    "cloudFileWebUrl": "JWDxv5HwHx5zYZjH/Kh5gvu0Bmquw3u4zuF9IGT0yCMlr7EfTOFNR8InV03mi+Ul",
+    "cloudCdnPreviewAddress": "iCC4MqMr9cUSQ/svmQv7kUils9LtrV4q03QYJnEQGME=",
+    "skin": 1,
+    "isOtherAdmin": false,
+    "resourceConfigs": [
+        {
+            "cdnViewUrl": "iCC4MqMr9cUSQ/svmQv7kTgD5HMUVHoApyrKQYFuPuk=",
+            "courseScormFileUrl": "NGkTU0tRMj/z9ZTuh/o1Br31klHZBZNzYy23fYCAA7chsRm/0ZB0EEBn2u1IbV/j",
+            "courseScormWebUrl": "R8WN2u4V+dZoC1l2lfn97xUp5HPEotnI0DBPhfFnEchecuE2lEpQWe7ddd0N5fRX",
+            "id": "default",
+            "name": "9Su++NUJ2DOFHC4qpCLRZA==",
+            "viewUrl": "NGkTU0tRMj/z9ZTuh/o1Bj7UQ5CDxWwmYpcoir+0ucw="
+        }
+    ],
+    "liveSupply": 4,
+    "cdnPreviewAddress": "iCC4MqMr9cUSQ/svmQv7kTgD5HMUVHoApyrKQYFuPuk=",
+    "menuLengthThreshold": "10",
+    "currentUser": {
+        "companyOrganization": {
+            "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+            "name": "tester",
+            "shortName": null
+        },
+        "fullName": "xuesheng1",
+        "headPortrait": null,
+        "headPortraitPath": null,
+        "id": "00f8266a-1ff2-4ab3-97e0-307621501005",
+        "initSetting": 1,
+        "name": "test_1",
+        "organization": {
+            "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+            "name": "tester",
+            "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+        },
+        "rootOrganization": {
+            "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+            "name": "tester"
+        }
+    },
+    "courseToolSwitch": "0",
+    "courseScormFileUrl": "NGkTU0tRMj/z9ZTuh/o1Br31klHZBZNzYy23fYCAA7chsRm/0ZB0EEBn2u1IbV/j",
+    "organization": {
+        "id": "SfGRfmj5IJiUyHP+luX/iFcGsyTV5dq8abfvRl+0W1uh7y45djf3lsHagGfQ7ilC",
+        "name": "Lcg3nUTAuYbJRE5PVi22Ag==",
+        "path": "SfGRfmj5IJiUyHP+luX/iFcGsyTV5dq8abfvRl+0W1vPUWxsEeUt0He9/EPTDDRu",
+        "shortName": null
+    },
+    "secureFileSwitch": 1,
+    "defaultOpen": "0",
+    "cloudFileSwitch": 0,
+    "cloudPreviewAddress": "NGkTU0tRMj/z9ZTuh/o1Bj7UQ5CDxWwmYpcoir+0ucw=",
+    "roleLength": 0,
+    "courseScormWebUrl": "R8WN2u4V+dZoC1l2lfn97xUp5HPEotnI0DBPhfFnEchecuE2lEpQWe7ddd0N5fRX",
+    "dashboard": 1,
+    "dataPermission": [
+        {
+            "code": "JOB_TYPE",
+            "deptLevel": 0,
+            "groupLevel": 1,
+            "orgLevel": 0
+        },
+        {
+            "code": "JOB",
+            "deptLevel": 0,
+            "groupLevel": 1,
+            "orgLevel": 0
+        },
+        {
+            "code": "POSITION",
+            "deptLevel": 0,
+            "groupLevel": 1,
+            "orgLevel": 0
+        },
+        {
+            "code": "LECTURER",
+            "deptLevel": 0,
+            "groupLevel": 1,
+            "orgLevel": 0
+        },
+        {
+            "code": "CERTIFICATE",
+            "deptLevel": 0,
+            "groupLevel": 1,
+            "orgLevel": 0
+        },
+        {
+            "code": "TAG",
+            "deptLevel": 0,
+            "groupLevel": 1,
+            "orgLevel": 0
+        },
+        {
+            "code": "COURSE",
+            "deptLevel": 0,
+            "groupLevel": 1,
+            "orgLevel": 0
+        },
+        {
+            "code": "APPROVAL",
+            "deptLevel": 0,
+            "groupLevel": 1,
+            "orgLevel": 0
+        },
+        {
+            "code": "KNOWLEDGE",
+            "deptLevel": 0,
+            "groupLevel": 1,
+            "orgLevel": 0
+        }
+    ],
+    "websiteTitle": "tester"
+}
+
+2022-01-25 14:06:53,272 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：studentId: 00f8266a-1ff2-4ab3-97e0-307621501005
+2022-01-25 14:06:53,273 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：studentName: xuesheng1
+2022-01-25 14:06:53,273 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: 'https://tester1.zhixueyun.com' 实际值: 'https://tester1.zhixueyun.com', 断言成功!

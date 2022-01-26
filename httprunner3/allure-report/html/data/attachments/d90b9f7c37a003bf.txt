@@ -1,0 +1,418 @@
+2022-01-25 11:20:43.593 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/exam/question-analyze/question-summary-list?examId=d2b32a87-0aeb-4319-a48a-520e9739d508&page=1&pageSize=10
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__c0909a02d4a8aa71f02b2f2c302f1894",
+    "uri": "exam/exam"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 11:20:43.595 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:20:44 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "6002",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "items": [
+        {
+            "answeredCount": 1,
+            "attrs": null,
+            "content": "【阅读理解题】试题信息2022-01-25 11:20:14",
+            "errorCount": 0,
+            "errorRate": null,
+            "id": "2da8e2dc-a994-4afe-9a0d-5eddc4793eea",
+            "questionCopyId": "fcdc352d-bf38-4dc0-a1a5-9b7228c001dd",
+            "questionDepotId": "54edbf14-202d-48de-ad6f-4a8a83fb7a3d",
+            "rightCount": 0,
+            "rightRate": null,
+            "score": 3000,
+            "subs": [
+                {
+                    "answeredCount": 1,
+                    "attrs": [
+                        {
+                            "count": 1,
+                            "name": "0",
+                            "rate": 10000,
+                            "type": 5,
+                            "value": "得分=满分"
+                        },
+                        {
+                            "count": 0,
+                            "name": "1",
+                            "rate": 0,
+                            "type": 5,
+                            "value": "满分＞得分＞0分"
+                        },
+                        {
+                            "count": 0,
+                            "name": "2",
+                            "rate": 0,
+                            "type": 5,
+                            "value": "得分=0分"
+                        },
+                        {
+                            "count": 0,
+                            "name": "3",
+                            "rate": 0,
+                            "type": 5,
+                            "value": "待评卷"
+                        }
+                    ],
+                    "content": "【阅读理解题-问答题】试题信息",
+                    "errorCount": 0,
+                    "errorRate": 0,
+                    "id": "21ee1da1-347f-4b5a-a350-136443adac76",
+                    "questionCopyId": "0a098daf-57ae-4eca-b63e-a5789706a725",
+                    "rightCount": 1,
+                    "rightRate": 10000,
+                    "score": 1000,
+                    "type": 5,
+                    "unansweredCount": 0
+                },
+                {
+                    "answeredCount": 1,
+                    "attrs": [
+                        {
+                            "count": 1,
+                            "name": "0",
+                            "rate": 10000,
+                            "type": 0,
+                            "value": "A"
+                        },
+                        {
+                            "count": 0,
+                            "name": "1",
+                            "rate": 0,
+                            "type": 1,
+                            "value": "B"
+                        },
+                        {
+                            "count": 0,
+                            "name": "2",
+                            "rate": 0,
+                            "type": 1,
+                            "value": "C"
+                        },
+                        {
+                            "count": 0,
+                            "name": "3",
+                            "rate": 0,
+                            "type": 1,
+                            "value": "D"
+                        }
+                    ],
+                    "content": "【阅读理解题-单选题】试题信息",
+                    "errorCount": 0,
+                    "errorRate": 0,
+                    "id": "a0255d80-24c8-4ae7-9ebb-905262851354",
+                    "questionCopyId": "b0837f32-f52e-4c3a-9fb5-8ceaf9daca8c",
+                    "rightCount": 1,
+                    "rightRate": 10000,
+                    "score": 1000,
+                    "type": 1,
+                    "unansweredCount": 0
+                },
+                {
+                    "answeredCount": 1,
+                    "attrs": [
+                        {
+                            "count": 1,
+                            "name": "0",
+                            "rate": 10000,
+                            "type": 0,
+                            "value": "a"
+                        },
+                        {
+                            "count": 1,
+                            "name": "1",
+                            "rate": 10000,
+                            "type": 0,
+                            "value": "b"
+                        },
+                        {
+                            "count": 0,
+                            "name": "2",
+                            "rate": 0,
+                            "type": 2,
+                            "value": "c"
+                        },
+                        {
+                            "count": 0,
+                            "name": "3",
+                            "rate": 0,
+                            "type": 2,
+                            "value": "d"
+                        }
+                    ],
+                    "content": "【阅读理解题-多选题】试题信息",
+                    "errorCount": 0,
+                    "errorRate": 0,
+                    "id": "cfd46abb-d1b5-4ccc-96b1-29c5a30c9dcd",
+                    "questionCopyId": "189a0927-c2b6-4bdc-bbcf-a2918af06b6c",
+                    "rightCount": 1,
+                    "rightRate": 10000,
+                    "score": 1000,
+                    "type": 2,
+                    "unansweredCount": 0
+                }
+            ],
+            "type": 6,
+            "unansweredCount": 0
+        },
+        {
+            "answeredCount": 1,
+            "attrs": [
+                {
+                    "count": 1,
+                    "name": "0",
+                    "rate": 10000,
+                    "type": 5,
+                    "value": "得分=满分"
+                },
+                {
+                    "count": 0,
+                    "name": "1",
+                    "rate": 0,
+                    "type": 5,
+                    "value": "满分＞得分＞0分"
+                },
+                {
+                    "count": 0,
+                    "name": "2",
+                    "rate": 0,
+                    "type": 5,
+                    "value": "得分=0分"
+                },
+                {
+                    "count": 0,
+                    "name": "3",
+                    "rate": 0,
+                    "type": 5,
+                    "value": "待评卷"
+                }
+            ],
+            "content": "【问答题】试题信息2022-01-25 11:20:13",
+            "errorCount": 0,
+            "errorRate": 0,
+            "id": "3e4d7ad8-156e-416d-997e-3b76d8e2a14d",
+            "questionCopyId": "2af305b0-a437-4485-b745-a7c4edf0e73b",
+            "questionDepotId": "54edbf14-202d-48de-ad6f-4a8a83fb7a3d",
+            "rightCount": 1,
+            "rightRate": 10000,
+            "score": 1000,
+            "subs": null,
+            "type": 5,
+            "unansweredCount": 0
+        },
+        {
+            "answeredCount": 1,
+            "attrs": [
+                {
+                    "count": 1,
+                    "name": "8",
+                    "rate": 10000,
+                    "type": 0,
+                    "value": "0|1|2|3|"
+                }
+            ],
+            "content": "【排序题】试题信息2022-01-25 11:20:13",
+            "errorCount": 0,
+            "errorRate": 0,
+            "id": "4b80bde9-fc57-464d-8c08-d8072f6f03ca",
+            "questionCopyId": "4ba11eda-3095-45a7-b090-ef5c4e190deb",
+            "questionDepotId": "54edbf14-202d-48de-ad6f-4a8a83fb7a3d",
+            "rightCount": 1,
+            "rightRate": 10000,
+            "score": 1000,
+            "subs": null,
+            "type": 8,
+            "unansweredCount": 0
+        },
+        {
+            "answeredCount": 1,
+            "attrs": [
+                {
+                    "count": 1,
+                    "name": "1",
+                    "rate": 10000,
+                    "type": 0,
+                    "value": "1"
+                },
+                {
+                    "count": 0,
+                    "name": "0",
+                    "rate": 0,
+                    "type": 3,
+                    "value": "0"
+                }
+            ],
+            "content": "【判断题】试题信息2022-01-25 11:20:13<img id='preview-9f25384a-2a7f-4630-a29e-e9d7a753a333,试题视频_1052.mp4,mp4' class='video-img' style='display:block;width:302px;height:170px;' data-type='mp4' data-name='试题视频_1052.mp4' data-id='9f25384a-2a7f-4630-a29e-e9d7a753a333' src='https://tester1.zhixueyun.com/admin/images/preview-media.jpg' />",
+            "errorCount": 0,
+            "errorRate": 0,
+            "id": "6580df20-caa3-43f9-8138-0754b976cec6",
+            "questionCopyId": "ba526b5d-0e96-42e1-be6d-fed10f8e3ba8",
+            "questionDepotId": "54edbf14-202d-48de-ad6f-4a8a83fb7a3d",
+            "rightCount": 1,
+            "rightRate": 10000,
+            "score": 1000,
+            "subs": null,
+            "type": 3,
+            "unansweredCount": 0
+        },
+        {
+            "answeredCount": 1,
+            "attrs": [
+                {
+                    "count": 0,
+                    "name": "0",
+                    "rate": 0,
+                    "type": 0,
+                    "value": "A"
+                },
+                {
+                    "count": 0,
+                    "name": "1",
+                    "rate": 0,
+                    "type": 0,
+                    "value": "B"
+                },
+                {
+                    "count": 1,
+                    "name": "2",
+                    "rate": 10000,
+                    "type": 2,
+                    "value": "C"
+                },
+                {
+                    "count": 1,
+                    "name": "3",
+                    "rate": 10000,
+                    "type": 2,
+                    "value": "D"
+                }
+            ],
+            "content": "【多选题】试题信息2022-01-25 11:20:12<img id='preview-80cbf416-f44b-4be4-af42-2238543ecb89,试题音频_1052.mp3,mp3' class='video-img' style='display:block;width:302px;height:170px;' data-type='mp3' data-name='试题音频_1052.mp3' data-id='80cbf416-f44b-4be4-af42-2238543ecb89' src='https://tester1.zhixueyun.com/admin/images/preview-media.jpg' />",
+            "errorCount": 1,
+            "errorRate": 10000,
+            "id": "a8132cf1-16f0-4d2e-a9a6-edeecb4c96a0",
+            "questionCopyId": "d7a3df89-6cc5-44eb-9d2b-f67a865c5f3f",
+            "questionDepotId": "54edbf14-202d-48de-ad6f-4a8a83fb7a3d",
+            "rightCount": 0,
+            "rightRate": 0,
+            "score": 1000,
+            "subs": null,
+            "type": 2,
+            "unansweredCount": 0
+        },
+        {
+            "answeredCount": 1,
+            "attrs": [
+                {
+                    "count": 1,
+                    "name": "0",
+                    "rate": 10000,
+                    "type": 4,
+                    "value": "得分=满分"
+                },
+                {
+                    "count": 0,
+                    "name": "1",
+                    "rate": 0,
+                    "type": 4,
+                    "value": "满分＞得分＞0分"
+                },
+                {
+                    "count": 0,
+                    "name": "2",
+                    "rate": 0,
+                    "type": 4,
+                    "value": "得分=0分"
+                },
+                {
+                    "count": 0,
+                    "name": "3",
+                    "rate": 0,
+                    "type": 4,
+                    "value": "待评卷"
+                }
+            ],
+            "content": "【填空题】试题信息()2022-01-25 11:20:13",
+            "errorCount": 0,
+            "errorRate": 0,
+            "id": "d1c8143c-001e-4244-af27-8c19e1065676",
+            "questionCopyId": "29c0c896-520c-45f5-b5d1-2f4a9f67e011",
+            "questionDepotId": "54edbf14-202d-48de-ad6f-4a8a83fb7a3d",
+            "rightCount": 1,
+            "rightRate": 10000,
+            "score": 1000,
+            "subs": null,
+            "type": 4,
+            "unansweredCount": 0
+        },
+        {
+            "answeredCount": 0,
+            "attrs": [
+                {
+                    "count": 0,
+                    "name": "0",
+                    "rate": 0,
+                    "type": 0,
+                    "value": "A"
+                },
+                {
+                    "count": 0,
+                    "name": "1",
+                    "rate": 0,
+                    "type": 1,
+                    "value": "B"
+                },
+                {
+                    "count": 0,
+                    "name": "2",
+                    "rate": 0,
+                    "type": 1,
+                    "value": "C"
+                },
+                {
+                    "count": 0,
+                    "name": "3",
+                    "rate": 0,
+                    "type": 1,
+                    "value": "D"
+                }
+            ],
+            "content": "【单选题】试题信息2022-01-25 11:20:11<img src=\"https://test9.zhixueyun.com/default/M00/0B/08/wKgLTWHvbGyAdgA9AACACFLS5pw103.jpg\" />",
+            "errorCount": 0,
+            "errorRate": 0,
+            "id": "818dfb32-c25e-4224-a8fa-f6665abfb37e",
+            "questionCopyId": "9fa05de0-37f3-489a-87bc-c20942074662",
+            "questionDepotId": "54edbf14-202d-48de-ad6f-4a8a83fb7a3d",
+            "rightCount": 0,
+            "rightRate": 0,
+            "score": 1000,
+            "subs": null,
+            "type": 1,
+            "unansweredCount": 1
+        }
+    ],
+    "recordCount": 7
+}
+
+2022-01-25 11:20:43,596 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '200' 实际值: '200', 断言成功!

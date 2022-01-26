@@ -1,0 +1,2 @@
+INFO     root:data_depend.py:37 提取变量：certificateId: 4f868b1d-fbe4-40f9-b505-b37c0b41217a
+INFO     root:validate.py:76 响应断言:  预期值: '4' 实际值: '4', 断言成功!

@@ -1,0 +1,2 @@
+INFO     root:data_depend.py:37 提取变量：practiceId: 7965aaa2-6822-45ff-a4fb-2a8ab81ced45
+INFO     root:validate.py:76 响应断言:  预期值: '0' 实际值: '0', 断言成功!

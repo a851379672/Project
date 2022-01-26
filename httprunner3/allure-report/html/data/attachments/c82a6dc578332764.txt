@@ -1,0 +1,4 @@
+INFO     root:data_depend.py:37 提取变量：duoxuantiId: 78b33d7c-29dd-4cdd-8749-6ff4b80d92da
+INFO     root:data_depend.py:37 提取变量：duoxuantiName: 【多选题】试题信息2022-01-25 14:39:23<img id='preview-3fca50ed-2a1b-4084-ab0b-9ee51805a226,试题音频_1061.mp3,mp3' class='video-img' style='display:block;width:302px;height:170px;' data-type='mp3' data-name='试题音频_1061.mp3' data-id='3fca50ed-2a1b-4084-ab0b-9ee51805a226' src='https://tester1.zhixueyun.com/admin/images/preview-media.jpg' />
+INFO     root:data_depend.py:37 提取变量：duoxuantiDifficulty: 3
+INFO     root:validate.py:76 响应断言:  预期值: '2' 实际值: '2', 断言成功!

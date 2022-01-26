@@ -1,0 +1,2 @@
+INFO     root:data_depend.py:37 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+INFO     root:validate.py:76 响应断言:  预期值: '1' 实际值: '1', 断言成功!

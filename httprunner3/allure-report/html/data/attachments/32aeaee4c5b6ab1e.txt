@@ -1,0 +1,7 @@
+INFO     root:data_depend.py:37 提取变量：yuedulijietiId: a6777302-71ba-47e5-ac54-7c31c4b2fa68
+INFO     root:data_depend.py:37 提取变量：yuedulijietiName: 【阅读理解题】试题信息2022-01-25 14:06:58
+INFO     root:data_depend.py:37 提取变量：yuedulijie_zitiId1: 8fb6d8ec-c248-4d9c-9b29-7e1336dcbb9a
+INFO     root:data_depend.py:37 提取变量：yuedulijie_zitiId2: ddbdafc2-4be8-4c6e-959f-1c8e27fcc52b
+INFO     root:data_depend.py:37 提取变量：yuedulijie_zitiId3: 5e842608-edeb-4887-90ea-5c4129241239
+INFO     root:data_depend.py:37 提取变量：yuedulijietiDifficulty: 3
+INFO     root:validate.py:76 响应断言:  预期值: '6' 实际值: '6', 断言成功!

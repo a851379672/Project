@@ -1,0 +1,101 @@
+2022-01-25 18:46:46.867 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://pre-202108-10.zhixueyun.com/api/v1/exam/exam/front/user-record/84434675-0fb5-4382-b775-536a43201c55?examId=84434675-0fb5-4382-b775-536a43201c55&organizationId=9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__bd5308de3bbd763ea5274f65356a9ae9"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 18:46:46.869 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 10:46:47 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "1396",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "allowExamTimes": 1,
+    "allowSwitchTimes": null,
+    "applicantEndTime": 1643194006000,
+    "applicantNeedAudit": 1,
+    "applicantStartTime": 1643021206000,
+    "clientType": 0,
+    "companySupport": false,
+    "coverId": null,
+    "coverIdPath": null,
+    "credit": null,
+    "duration": 60,
+    "endTime": 1643280360000,
+    "errorListMark": null,
+    "examNotes": "请考生仔细阅读，并参照执行，如遇特殊情况，请联系监考老师或拨打客服电话。",
+    "examRecord": {
+        "currentTime": 1643107607704,
+        "endTime": null,
+        "id": null,
+        "isFinished": null,
+        "isReset": null,
+        "lastRecordId": null,
+        "startTime": null,
+        "status": null,
+        "submitTime": null,
+        "topScoreRecordId": null
+    },
+    "examRegist": {
+        "beforeStatus": null,
+        "credit": null,
+        "examTimes": null,
+        "id": null,
+        "isReset": null,
+        "memberId": null,
+        "passStatus": null,
+        "status": 1,
+        "topScore": null,
+        "topScoreRecordId": null
+    },
+    "examedTimes": 0,
+    "faceFailedRule": 0,
+    "faceLimitTimes": null,
+    "faceMode": 0,
+    "id": "84434675-0fb5-4382-b775-536a43201c55",
+    "isOverByPassExam": null,
+    "isRepeat": 1,
+    "isSetAccessSecret": 0,
+    "isSetPersonalCode": 0,
+    "isShowAnswerImmed": null,
+    "makeUpCount": 0,
+    "name": "【监考/报名考试】2022-01-25 18:46:46",
+    "needApplicant": 1,
+    "needFillOutInfo": 0,
+    "organizationId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+    "paperClass": {
+        "totalScore": 1000
+    },
+    "paperViewRule": 1,
+    "passScore": 6,
+    "sendToCenter": 0,
+    "showAnswerRule": 3,
+    "signUp": {
+        "id": "81aa5c4d-2b45-4c10-b850-cb2df6a971b6",
+        "status": 1
+    },
+    "sourceType": 1,
+    "startTime": 1643107560000,
+    "status": 5,
+    "topic": [],
+    "type": 1
+}
+
+2022-01-25 18:46:46,869 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '5' 实际值: '5', 断言成功!

@@ -1,0 +1,101 @@
+{
+  "uid" : "bc933ae11c4793e8",
+  "name" : "【企业初始化】——student登录初始化",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "0c09e7fe1f659d85b789c6df064a5e2c",
+  "time" : {
+    "start" : 1643090762812,
+    "stop" : 1643090762938,
+    "duration" : 126
+  },
+  "description" : "\n        :param api_data\n        :return: report_content\n        ",
+  "descriptionHtml" : "<pre><code>    :param api_data\n    :return: report_content\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n        :param api_data\n        :return: report_content\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "7147dd201af85493",
+      "name" : "log",
+      "source" : "7147dd201af85493.txt",
+      "type" : "text/plain",
+      "size" : 309
+    }, {
+      "uid" : "5c0dd3fd68301dd1",
+      "name" : "stderr",
+      "source" : "5c0dd3fd68301dd1.txt",
+      "type" : "text/plain",
+      "size" : 5927
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【企业初始化】——student登录初始化"
+  }, {
+    "name" : "subSuite",
+    "value" : "初始化"
+  }, {
+    "name" : "feature",
+    "value" : "saas"
+  }, {
+    "name" : "story",
+    "value" : "登录初始化"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=3, reruns_delay=5)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "23184-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "api_data",
+    "value" : "{'name': '【企业初始化】——student登录初始化', 'request': {'url': 'api/v1/system/setting/config', 'method': 'GET', 'headers': {'Authorization': 'Bearer__${student_token}'}}, 'sql_statement': None, 'extract': {'studentId': '$.currentUser.id', 'studentName': '$.currentUser.fullName'}, 'validate': [{'eq': ['$.redirectUri', '${ent_url}']}], 'allure': {'allure_descrption': '【企业初始化】——student登录初始化', 'allure_suite': 'saas', 'allure_sub_suite': '初始化', 'allure_feature': 'saas', 'allure_story': '登录初始化'}}"
+  } ],
+  "links" : [ {
+    "name" : "https://tester1.zhixueyun.com/api/v1/system/setting/config",
+    "url" : "https://tester1.zhixueyun.com/api/v1/system/setting/config",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=3, reruns_delay=5)" ]
+  },
+  "source" : "bc933ae11c4793e8.json",
+  "parameterValues" : [ "{'name': '【企业初始化】——student登录初始化', 'request': {'url': 'api/v1/system/setting/config', 'method': 'GET', 'headers': {'Authorization': 'Bearer__${student_token}'}}, 'sql_statement': None, 'extract': {'studentId': '$.currentUser.id', 'studentName': '$.currentUser.fullName'}, 'validate': [{'eq': ['$.redirectUri', '${ent_url}']}], 'allure': {'allure_descrption': '【企业初始化】——student登录初始化', 'allure_suite': 'saas', 'allure_sub_suite': '初始化', 'allure_feature': 'saas', 'allure_story': '登录初始化'}}" ]
+}

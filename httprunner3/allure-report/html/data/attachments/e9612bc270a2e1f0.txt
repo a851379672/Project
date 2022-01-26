@@ -1,0 +1,35 @@
+2022-01-25 18:45:36.249 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : http://pre-202108-10.zhixueyun.com/api/v1/human/sharding-file/auth/upload-parse-file
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__5162aae81b0783802661ab1b21b0a987",
+    "uri": "exam/exam",
+    "Content-Length": "1201448",
+    "Content-Type": "multipart/form-data; boundary=6b942ea736aaec7de28c84753fdbee30"
+}
+cookies  : {}
+body     : upload file stream (OMITTED)
+
+2022-01-25 18:45:36.249 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 10:45:37 GMT",
+    "Content-Type": "text/html;charset=UTF-8",
+    "Content-Length": "222",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : text/html;charset=UTF-8
+body     : [{'contentType': 'audio/mpeg', 'filename': '试题音频_1112.mp3', 'id': 'e5822e8b-b89b-40c7-9a5a-f17d57d3fce8', 'path': 'CfPWmy2KzFDoMtrWPlDVpU0P9Gk7bHyy4nhHpvkuQmHc6KENUPYEsv1DRaBVLmXNcUeTT/ShUnEj5AFHs2n+gA==', 'size': 1200080}]
+
+2022-01-25 18:45:36,250 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：audioId: e5822e8b-b89b-40c7-9a5a-f17d57d3fce8
+2022-01-25 18:45:36,250 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: 'audio/mpeg' 实际值: 'audio/mpeg', 断言成功!

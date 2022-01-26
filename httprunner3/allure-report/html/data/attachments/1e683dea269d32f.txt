@@ -1,0 +1,35 @@
+2022-01-25 11:17:11.282 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : PUT
+url      : https://tester1.zhixueyun.com/api/v1/exam/sign-up
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__c8422706e5d28b82f1856a214a6f0316",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "uri": "exam/signup",
+    "Content-Length": "798"
+}
+cookies  : {}
+body     : signUpIds=cce84475-1a12-4edc-bb69-1a7a34a6fca1&signUpId=cce84475-1a12-4edc-bb69-1a7a34a6fca1&status=2&isBatch=0&isManage=1&noticeUser=1&noticeUserText=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%82%A8%E7%94%B3%E8%AF%B7%E7%9A%84%E8%80%83%E8%AF%95%E3%80%90%E7%9B%91%E8%80%83%2F%E6%8A%A5%E5%90%8D%E8%80%83%E8%AF%95%E3%80%912022-01-25+11%3A17%3A08%E5%B7%B2%E9%80%9A%E8%BF%87%EF%BC%8C%E8%AF%B7%E5%87%86%E6%97%B6%E5%8F%82%E5%8A%A0%E8%80%83%E8%AF%95%EF%BC%8C%E8%B0%A2%E8%B0%A2%E3%80%82&noticeUserContent=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%82%A8%E7%94%B3%E8%AF%B7%E7%9A%84%E8%80%83%E8%AF%95%E3%80%90%E7%9B%91%E8%80%83%2F%E6%8A%A5%E5%90%8D%E8%80%83%E8%AF%95%E3%80%912022-01-25+11%3A17%3A08%E5%B7%B2%E9%80%9A%E8%BF%87%EF%BC%8C%E8%AF%B7%E5%87%86%E6%97%B6%E5%8F%82%E5%8A%A0%E8%80%83%E8%AF%95%EF%BC%8C%E8%B0%A2%E8%B0%A2%E3%80%82
+
+2022-01-25 11:17:11.283 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:17:12 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "573",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : [{'auditMember': None, 'auditMemberId': '5f0870a7-d55d-4a31-8782-1ac8d9690efc', 'companyId': 'cc861919-b7fb-4582-b755-48b2eb0e5203', 'createTime': 1643080630475, 'exam': {'createTime': 1643080630475, 'id': '5ec24185-20ac-4f45-bea4-e248e5df9258', 'status': 5}, 'examId': '5ec24185-20ac-4f45-bea4-e248e5df9258', 'examRecord': None, 'examRegist': None, 'id': 'cce84475-1a12-4edc-bb69-1a7a34a6fca1', 'member': None, 'memberId': '00f8266a-1ff2-4ab3-97e0-307621501005', 'modifyDate': 1643080631000, 'organization': None, 'organizationId': 'cc861919-b7fb-4582-b755-48b2eb0e5203', 'paperInstance': None, 'status': 3}]
+
+2022-01-25 11:17:11,284 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '3' 实际值: '3', 断言成功!

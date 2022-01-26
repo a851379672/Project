@@ -1,0 +1,169 @@
+2022-01-25 18:46:55.541 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://pre-202108-10.zhixueyun.com/api/v1/exam/paper?organizationId=9bcad76a-ba7e-4ace-9f92-f6e086a29cec&organization%5Bid%5D=9bcad76a-ba7e-4ace-9f92-f6e086a29cec&organization%5Bname%5D=preer&organization%5Bstate%5D=1&url=exam%2Fpaper-library&depotType=1&page=1&pageSize=10
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__5162aae81b0783802661ab1b21b0a987",
+    "uri": "exam/paper-library"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 18:46:55.542 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 10:46:56 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "2488",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "items": [
+        {
+            "createTime": 1643107616293,
+            "id": "9359bf96-63d7-4444-8f57-eed83870c620",
+            "name": "【试卷】2022-01-25 18:46:55",
+            "organization": {
+                "company": null,
+                "companyId": null,
+                "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "name": "preer"
+            },
+            "paperDepot": {
+                "id": "16b50a59-c70d-4228-9b1c-feb6ea7afd9a",
+                "name": "preer"
+            },
+            "questionNum": 1,
+            "status": 0,
+            "totalScore": 1000,
+            "type": 2
+        },
+        {
+            "createTime": 1643107183124,
+            "id": "899fdaa5-cee1-447d-b32a-89fa1525a0dc",
+            "name": "【试卷】2022-01-25 18:39:42",
+            "organization": {
+                "company": null,
+                "companyId": null,
+                "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "name": "preer"
+            },
+            "paperDepot": {
+                "id": "16b50a59-c70d-4228-9b1c-feb6ea7afd9a",
+                "name": "preer"
+            },
+            "questionNum": 1,
+            "status": 1,
+            "totalScore": 1000,
+            "type": 2
+        },
+        {
+            "createTime": 1643106852736,
+            "id": "bce560db-bb78-4534-807e-65807a6e8bb7",
+            "name": "【试卷】2022-01-25 18:34:11",
+            "organization": {
+                "company": null,
+                "companyId": null,
+                "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "name": "preer"
+            },
+            "paperDepot": {
+                "id": "16b50a59-c70d-4228-9b1c-feb6ea7afd9a",
+                "name": "preer"
+            },
+            "questionNum": 1,
+            "status": 1,
+            "totalScore": 1000,
+            "type": 2
+        },
+        {
+            "createTime": 1643106752040,
+            "id": "99340ef2-6a86-42cb-956f-5751c9925a4f",
+            "name": "【试卷】2022-01-25 18:32:04[复制]",
+            "organization": {
+                "company": null,
+                "companyId": null,
+                "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "name": "preer"
+            },
+            "paperDepot": {
+                "id": "16b50a59-c70d-4228-9b1c-feb6ea7afd9a",
+                "name": "preer"
+            },
+            "questionNum": 1,
+            "status": 0,
+            "totalScore": 1000,
+            "type": 2
+        },
+        {
+            "createTime": 1643106725513,
+            "id": "6abae521-76b8-414a-84b9-dfa706a96bd5",
+            "name": "【试卷】2022-01-25 18:32:04",
+            "organization": {
+                "company": null,
+                "companyId": null,
+                "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "name": "preer"
+            },
+            "paperDepot": {
+                "id": "16b50a59-c70d-4228-9b1c-feb6ea7afd9a",
+                "name": "preer"
+            },
+            "questionNum": 1,
+            "status": 1,
+            "totalScore": 1000,
+            "type": 2
+        },
+        {
+            "createTime": 1643106337377,
+            "id": "fa0e1c47-73fd-4abe-97f6-6b0115949ab6",
+            "name": "sdfg ",
+            "organization": {
+                "company": null,
+                "companyId": null,
+                "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "name": "preer"
+            },
+            "paperDepot": {
+                "id": "16b50a59-c70d-4228-9b1c-feb6ea7afd9a",
+                "name": "preer"
+            },
+            "questionNum": 1,
+            "status": 0,
+            "totalScore": 1000,
+            "type": 2
+        },
+        {
+            "createTime": 1643104489756,
+            "id": "7e746016-eb73-4db7-810a-c5060d2e1212",
+            "name": "【试卷】2022-01-25 17:54:48",
+            "organization": {
+                "company": null,
+                "companyId": null,
+                "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "name": "preer"
+            },
+            "paperDepot": {
+                "id": "426fab4f-acdc-4fd4-9886-f5d6fde88c22",
+                "name": "试卷库目录2022-01-25 17:54:48"
+            },
+            "questionNum": 1,
+            "status": 2,
+            "totalScore": 1000,
+            "type": 2
+        }
+    ],
+    "recordCount": 7
+}
+
+2022-01-25 18:46:55,542 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '200' 实际值: '200', 断言成功!

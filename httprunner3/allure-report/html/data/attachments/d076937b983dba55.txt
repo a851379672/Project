@@ -1,0 +1,132 @@
+2022-01-25 11:20:46.322 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/exam/exam-record?examId=d2b32a87-0aeb-4319-a48a-520e9739d508&url=exam%2Fexam&businessType=0&page=1&pageSize=10&access_token=c0909a02d4a8aa71f02b2f2c302f1894
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__c0909a02d4a8aa71f02b2f2c302f1894",
+    "uri": "exam/exam"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 11:20:46.322 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:20:47 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "1748",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "items": [
+        {
+            "alarmInfo": 1,
+            "answeredCount": 6,
+            "clientType": 1,
+            "clientVersion": "Edge/97.0.1072.55",
+            "credit": 1000,
+            "endTime": 1643084426289,
+            "errorImport": 0,
+            "exam": {
+                "duration": 60,
+                "id": "d2b32a87-0aeb-4319-a48a-520e9739d508",
+                "name": "【普通考试】2022-01-25 11:20:14"
+            },
+            "examFaceStatistics": {
+                "count": 1,
+                "status": 4
+            },
+            "examTimes": 1,
+            "id": "d8e1790e-0dbe-4047-b1df-811a71159e81",
+            "isCurrent": 1,
+            "isPause": 0,
+            "isReset": null,
+            "lastSubmitTime": 1643080834587,
+            "member": {
+                "fullName": "xuesheng1",
+                "id": "00f8266a-1ff2-4ab3-97e0-307621501005",
+                "majorPositionId": null,
+                "majorPositionName": null,
+                "name": "test_1"
+            },
+            "needMark": 1,
+            "noAnswerCount": 1,
+            "organization": {
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "paperInstance": null,
+            "personalCode": null,
+            "score": 7000,
+            "showMarkAsNormal": false,
+            "startTime": 1643080826289,
+            "status": 6,
+            "submitTime": 1643080834587,
+            "switchTimes": 1,
+            "usedTime": 0,
+            "userIp": "192.168.11.76"
+        },
+        {
+            "alarmInfo": 1,
+            "answeredCount": null,
+            "clientType": null,
+            "clientVersion": null,
+            "credit": null,
+            "endTime": null,
+            "errorImport": null,
+            "exam": {
+                "duration": 60,
+                "id": "d2b32a87-0aeb-4319-a48a-520e9739d508",
+                "name": "【普通考试】2022-01-25 11:20:14"
+            },
+            "examFaceStatistics": {
+                "count": null,
+                "status": null
+            },
+            "examTimes": 1,
+            "id": "2958e391-9e20-4538-840e-af1bad540afc",
+            "isCurrent": 1,
+            "isPause": null,
+            "isReset": null,
+            "lastSubmitTime": null,
+            "member": {
+                "fullName": "超级管理员",
+                "id": "5f0870a7-d55d-4a31-8782-1ac8d9690efc",
+                "majorPositionId": null,
+                "majorPositionName": null,
+                "name": "admin"
+            },
+            "needMark": null,
+            "noAnswerCount": null,
+            "organization": {
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "paperInstance": null,
+            "personalCode": null,
+            "score": null,
+            "showMarkAsNormal": false,
+            "startTime": null,
+            "status": 1,
+            "submitTime": null,
+            "switchTimes": null,
+            "usedTime": null,
+            "userIp": null
+        }
+    ],
+    "recordCount": 2
+}
+
+2022-01-25 11:20:46,323 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：admin_examrecord: 2958e391-9e20-4538-840e-af1bad540afc
+2022-01-25 11:20:46,323 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '200' 实际值: '200', 断言成功!

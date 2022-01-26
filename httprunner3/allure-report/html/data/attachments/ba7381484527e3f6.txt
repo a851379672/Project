@@ -1,0 +1,38 @@
+2022-01-25 11:13:54.321 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/system/certificate/type-org?businessType=4&organizationId=cc861919-b7fb-4582-b755-48b2eb0e5203
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__8282fe0727e597a9fde0b2768b3de476",
+    "uri": "exam/exam"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 11:13:54.322 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:13:55 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "96",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "id": "451f4a55-b01f-4131-ba6e-43f5191f9fc1",
+    "isDefault": 1,
+    "name": "普通考试证书",
+    "type": 4
+}
+
+2022-01-25 11:13:54,322 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '4' 实际值: '4', 断言成功!

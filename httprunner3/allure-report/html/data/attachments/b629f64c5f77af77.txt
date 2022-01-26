@@ -1,0 +1,286 @@
+2022-01-25 18:46:37.425 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://pre-202108-10.zhixueyun.com/api/v1/exam/certificate-record?page=1&pageSize=10
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__5162aae81b0783802661ab1b21b0a987",
+    "uri": "exam/certificate-record"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 18:46:37.426 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 10:46:38 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "5827",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "items": [
+        {
+            "createTime": 1643103938354,
+            "effectiveTime": null,
+            "id": "df25565b-7494-4866-a42e-7722310a03f9",
+            "issueTime": 1640793600000,
+            "member": {
+                "companyId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "fullName": "学生1",
+                "id": "d2537992-353c-4b83-88a7-70a42829b74c",
+                "name": "test_1",
+                "organization": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "name": "preer",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                }
+            },
+            "memberId": "d2537992-353c-4b83-88a7-70a42829b74c",
+            "name": "preer_证书名称",
+            "num": "00120220125preerSD000015",
+            "passStatus": 1,
+            "reason": null,
+            "revokeFlag": null,
+            "score": 10000,
+            "type": 0
+        },
+        {
+            "createTime": 1643103937988,
+            "effectiveTime": null,
+            "id": "b63ef002-c018-494f-b9e7-a6eb1f366439",
+            "issueTime": 1643040000000,
+            "member": {
+                "companyId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "fullName": "学生1",
+                "id": "d2537992-353c-4b83-88a7-70a42829b74c",
+                "name": "test_1",
+                "organization": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "name": "preer",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                }
+            },
+            "memberId": "d2537992-353c-4b83-88a7-70a42829b74c",
+            "name": "考试证书2022-01-25 17:45:37",
+            "num": "00120220125preerSD000014",
+            "passStatus": 1,
+            "reason": "考得不错",
+            "revokeFlag": 1,
+            "score": 10000,
+            "type": 0
+        },
+        {
+            "createTime": 1643103903494,
+            "effectiveTime": null,
+            "id": "f4126649-7234-4372-b441-b201bc93798f",
+            "issueTime": 1640793600000,
+            "member": {
+                "companyId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "fullName": "学生1",
+                "id": "d2537992-353c-4b83-88a7-70a42829b74c",
+                "name": "test_1",
+                "organization": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "name": "preer",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                }
+            },
+            "memberId": "d2537992-353c-4b83-88a7-70a42829b74c",
+            "name": "preer_证书名称",
+            "num": "00120220125preerSD000013",
+            "passStatus": 1,
+            "reason": null,
+            "revokeFlag": null,
+            "score": 10000,
+            "type": 0
+        },
+        {
+            "createTime": 1643103903182,
+            "effectiveTime": null,
+            "id": "dbd775da-fcf9-4157-81db-06f8773bf001",
+            "issueTime": 1643040000000,
+            "member": {
+                "companyId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "fullName": "学生1",
+                "id": "d2537992-353c-4b83-88a7-70a42829b74c",
+                "name": "test_1",
+                "organization": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "name": "preer",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                }
+            },
+            "memberId": "d2537992-353c-4b83-88a7-70a42829b74c",
+            "name": "考试证书2022-01-25 17:45:02",
+            "num": "00120220125preerSD000012",
+            "passStatus": 1,
+            "reason": "考得不错",
+            "revokeFlag": 1,
+            "score": 10000,
+            "type": 0
+        },
+        {
+            "createTime": 1643103870383,
+            "effectiveTime": null,
+            "id": "0a7a387e-4304-4b85-ac37-c674fc67892e",
+            "issueTime": 1640793600000,
+            "member": {
+                "companyId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "fullName": "学生1",
+                "id": "d2537992-353c-4b83-88a7-70a42829b74c",
+                "name": "test_1",
+                "organization": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "name": "preer",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                }
+            },
+            "memberId": "d2537992-353c-4b83-88a7-70a42829b74c",
+            "name": "preer_证书名称",
+            "num": "00120220125preerSD000011",
+            "passStatus": 1,
+            "reason": null,
+            "revokeFlag": null,
+            "score": 10000,
+            "type": 0
+        },
+        {
+            "createTime": 1643103870071,
+            "effectiveTime": null,
+            "id": "d4cb5bc9-cc16-4d3a-9ca8-c6c4c2a2afde",
+            "issueTime": 1643040000000,
+            "member": {
+                "companyId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "fullName": "学生1",
+                "id": "d2537992-353c-4b83-88a7-70a42829b74c",
+                "name": "test_1",
+                "organization": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "name": "preer",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                }
+            },
+            "memberId": "d2537992-353c-4b83-88a7-70a42829b74c",
+            "name": "考试证书2022-01-25 17:44:29",
+            "num": "00120220125preerSD000010",
+            "passStatus": 1,
+            "reason": "考得不错",
+            "revokeFlag": 1,
+            "score": 10000,
+            "type": 0
+        },
+        {
+            "createTime": 1643103853085,
+            "effectiveTime": null,
+            "id": "dc801b8b-bca1-42b4-b0fc-540cd3ed3750",
+            "issueTime": 1640793600000,
+            "member": {
+                "companyId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "fullName": "学生1",
+                "id": "d2537992-353c-4b83-88a7-70a42829b74c",
+                "name": "test_1",
+                "organization": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "name": "preer",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                }
+            },
+            "memberId": "d2537992-353c-4b83-88a7-70a42829b74c",
+            "name": "preer_证书名称",
+            "num": "00120220125preerSD000009",
+            "passStatus": 1,
+            "reason": null,
+            "revokeFlag": null,
+            "score": 10000,
+            "type": 0
+        },
+        {
+            "createTime": 1643103719418,
+            "effectiveTime": null,
+            "id": "57d049ac-2116-4a1e-a099-f8e0d8b8dcf2",
+            "issueTime": 1643040000000,
+            "member": {
+                "companyId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "fullName": "学生1",
+                "id": "d2537992-353c-4b83-88a7-70a42829b74c",
+                "name": "test_1",
+                "organization": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "name": "preer",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                }
+            },
+            "memberId": "d2537992-353c-4b83-88a7-70a42829b74c",
+            "name": "考试证书2022-01-25 17:41:58",
+            "num": "00120220125preerSD000008",
+            "passStatus": 1,
+            "reason": "考得不错",
+            "revokeFlag": null,
+            "score": 10000,
+            "type": 0
+        },
+        {
+            "createTime": 1643103606873,
+            "effectiveTime": null,
+            "id": "b85a88f0-8221-4d4a-b5e7-4ebaa9a58d98",
+            "issueTime": 1643040000000,
+            "member": {
+                "companyId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "fullName": "学生1",
+                "id": "d2537992-353c-4b83-88a7-70a42829b74c",
+                "name": "test_1",
+                "organization": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "name": "preer",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                }
+            },
+            "memberId": "d2537992-353c-4b83-88a7-70a42829b74c",
+            "name": "考试证书2022-01-25 17:40:05",
+            "num": "00120220125preerSD000007",
+            "passStatus": 1,
+            "reason": "考得不错",
+            "revokeFlag": null,
+            "score": 10000,
+            "type": 0
+        },
+        {
+            "createTime": 1643103458636,
+            "effectiveTime": null,
+            "id": "b772ec45-2cb8-4f12-a792-8a2aa69dc1e3",
+            "issueTime": 1643040000000,
+            "member": {
+                "companyId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "fullName": "学生1",
+                "id": "d2537992-353c-4b83-88a7-70a42829b74c",
+                "name": "test_1",
+                "organization": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "name": "preer",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                }
+            },
+            "memberId": "d2537992-353c-4b83-88a7-70a42829b74c",
+            "name": "考试证书2022-01-25 17:37:37",
+            "num": "00120220125preerSD000006",
+            "passStatus": 1,
+            "reason": "考得不错",
+            "revokeFlag": null,
+            "score": 10000,
+            "type": 0
+        }
+    ],
+    "recordCount": 12
+}
+
+2022-01-25 18:46:37,426 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '200' 实际值: '200', 断言成功!

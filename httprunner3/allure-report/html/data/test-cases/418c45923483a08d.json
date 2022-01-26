@@ -1,0 +1,98 @@
+{
+  "uid" : "418c45923483a08d",
+  "name" : "【普通考试】——新增考试-预览试卷-播放音频文件",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "05a26e15532bf6e27c4ebf124f9d380e",
+  "time" : {
+    "start" : 1643107290022,
+    "stop" : 1643107290121,
+    "duration" : 99
+  },
+  "description" : "\n        :param api_data\n        :return: report_content\n        ",
+  "descriptionHtml" : "<pre><code>    :param api_data\n    :return: report_content\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n        :param api_data\n        :return: report_content\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "8e772b98630672f1",
+      "name" : "log",
+      "source" : "8e772b98630672f1.txt",
+      "type" : "text/plain",
+      "size" : 106
+    }, {
+      "uid" : "95f0e1408610fcb6",
+      "name" : "stderr",
+      "source" : "95f0e1408610fcb6.txt",
+      "type" : "text/plain",
+      "size" : 2175
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【普通考试】——新增考试-预览试卷-播放音频文件"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=5, reruns_delay=5)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "19144-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "http://pre-202108-10.zhixueyun.com/api/v1/course-study/file/safe/${audioId}",
+    "url" : "http://pre-202108-10.zhixueyun.com/api/v1/course-study/file/safe/${audioId}",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=5, reruns_delay=5)" ]
+  },
+  "source" : "418c45923483a08d.json",
+  "parameterValues" : [ ]
+}

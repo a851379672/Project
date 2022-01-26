@@ -1,0 +1,39 @@
+2022-01-25 14:07:57.096 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : DELETE
+url      : https://tester1.zhixueyun.com/api/v1/exam/paper/44ea7d90-6d25-4bd4-83d4-969e9963b867
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__d47752064eceb10c9bdde411d492369b",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "uri": "exam/paper-library",
+    "Content-Length": "128"
+}
+cookies  : {}
+body     : id=44ea7d90-6d25-4bd4-83d4-969e9963b867&name=%E3%80%90%E8%AF%95%E5%8D%B7%E3%80%912022-01-25+14%3A07%3A55%5B%E5%A4%8D%E5%88%B6%5D
+
+2022-01-25 14:07:57.097 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:07:57 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "45",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "id": "44ea7d90-6d25-4bd4-83d4-969e9963b867"
+}
+
+2022-01-25 14:07:57,298 | D:\PyCharm\project\httprunner3\common\mysql_operate.py[line:57] | INFO: SQL影响行数: 1 预期影响行数: 1 断言成功!
+2022-01-25 14:07:57,298 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:41] | INFO: 提取变量：sql_count: 1
+2022-01-25 14:07:57,299 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '44ea7d90-6d25-4bd4-83d4-969e9963b867' 实际值: '44ea7d90-6d25-4bd4-83d4-969e9963b867', 断言成功!

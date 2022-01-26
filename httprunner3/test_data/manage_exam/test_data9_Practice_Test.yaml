@@ -1,0 +1,246 @@
+allure:
+    {
+      'allure_descrption': '',
+      'allure_suite': '管理端',
+      'allure_sub_suite': '考试模块',
+      'allure_feature': '管理端',
+      'allure_story': '考试模块'
+    }
+test:
+-   name: 【模拟考试】——查询授权组织
+    request:
+        url: api/v1/exam/practice/practice-list
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam-practice
+        body:
+            {
+              page: 1,
+              pageSize: 10
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【模拟考试】——查询组织操作类型
+    request:
+        url: api/v1/system/grant/find-organization-operatortype
+        method: GET
+        headers:
+            Authorization: Bearer__${admin_token}
+            uri: exam/exam-practice
+        body:
+          {
+            uri: 'exam/exam-practice'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.${organizationId},', '0,1,2,3,4']
+
+-   name: 【模拟考试】——新增模拟考试-获取最高授权组织
+    request:
+        url: api/v1/system/organization/max-grant-organization
+        method: GET
+        headers:
+            Authorization: Bearer__${admin_token}
+            uri: exam/exam-practice
+        body:
+          {
+            uri: 'exam/exam-practice'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.status', '1']
+
+-   name: 【模拟考试】——新增模拟考试-选择题库-查询授权组织
+    request:
+        url: api/v1/system/organization/granted-organization
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam-practice
+        body:
+            {
+              uri: 'exam/exam-practice',
+              supportMore: 'true',
+              status: 1
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.[0].status', '1']
+
+-   name: 【模拟考试】——新增模拟考试-选择题库-查询试题目录
+    request:
+        url: api/v1/exam/question-depot
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam-practice
+        body:
+            {
+              organizationId: '${organizationId}',
+              status: 1,
+              share: 1,
+              type: 1,
+              depotShare: 1,
+              'organization[id]': '${organizationId}',
+              'organization[name]': '${organizationName}'
+            }
+    sql_statement:
+    extract:
+        questionDepotId: $.[0].id
+        questionDepotName: $.[0].name
+    validate:
+        -   eq:  ['$.[0].state', '1']
+
+-   name: 【模拟考试】——新增模拟考试-选择题库-查询目录试题数
+    request:
+        url: api/v1/exam/question-depot/random-questions-count
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam-practice
+        body:
+            {
+              questionDepotId: '${questionDepotId}',
+              organizationId: '${organizationId}',
+              'organization[id]': '${organizationId}',
+              'organization[name]': '${organizationName}',
+              'questionDepot[id]': '${organizationId}',
+              'questionDepot[name]': '${questionDepotName}',
+              selected: 'true',
+              depotType: 1
+            }
+    sql_statement:
+        -  question:  ['SELECT * FROM exam.t_question WHERE f_question_depot_id = "${questionDepotId}" AND `f_status` = 1 AND `f_is_subjective` = 0 AND `f_type` != 8', 18]
+    extract:
+    validate:
+        -   eq:  ['$.questionDepotId', '${questionDepotId}']
+
+-   name: 【模拟考试】——新增模拟考试-受众设置-考试规则
+    request:
+        url: api/v1/exam/practice/base-info
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam-practice
+        body:
+          {
+            number: '${question_count}',
+            name: '【模拟考试】$date_time{}',
+            organizationId-text: '${organizationName}',
+            organizationId: '${organizationId}',
+            publishMemberId: '${adminId}',
+            publishOrganizationId: '${organizationId}',
+            paperTactics: [{"questionDepotId":"${questionDepotId}","organizationId":"${organizationId}","questionDepot":{"id":"${questionDepotId}","name":"${organizationName}"},"amount":'${question_count}'}],
+            practiceQuestionNum: '${question_count}',
+            ableTime: '$diy_time{*, *, *, *, *}',
+            disableTime: '$diy_time{*, *, +1, *, *}'
+          }
+    sql_statement:
+    extract:
+        practiceId: $.id
+    validate:
+        -   eq:  ['$.status', '0']
+
+-   name: 【模拟考试】——新增模拟考试-受众设置-查询受众
+    request:
+        url: api/v1/exam/practice/audience/${practiceId}
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam-game
+        body:
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.[0].joinName', '0']
+
+-   name: 【模拟考试】——新增模拟考试-受众设置-更新模拟考试受众
+    request:
+        url: api/v1/exam/practice/audience/${practiceId}
+        method: PUT
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam-practice
+        body:
+          {
+            audienceItems: [{"joinId":"${studentId}","joinType":5,"joinName":"${studentName}"}],
+            audiences: '${studentName}',
+            addItems: [{"joinId":"${studentId}","joinType":5,"joinName":"${studentName}"}],
+            emptyFlag: 0,
+            'cacheUpdateOptionsData[addItems][0][id]': '${studentId}',
+            'cacheUpdateOptionsData[addItems][0][value]': '${studentName}',
+            'cacheUpdateOptionsData[addItems][0][type]': 'member',
+            'cacheUpdateOptionsData[addItems][0][checked]': 'true',
+            'cacheUpdateOptionsData[emptyFlag]': 0,
+            'cacheAllAudiences[0][id]': '${studentId}',
+            'cacheAllAudiences[0][value]': '${studentName}',
+            'cacheAllAudiences[0][type]': 'member',
+            'cacheAllAudiences[0][checked]': 'true',
+            publish: 0,
+            id: '${practiceId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.status', '0']
+
+-   name: 【模拟考试】——发布模拟考试
+    request:
+        url: api/v1/exam/practice/publish/${practiceId}
+        method: PUT
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam-practice
+        body:
+          {
+            id: '${practiceId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.status', '1']
+
+-   name: 【模拟考试】——禁用模拟考试
+    request:
+        url: api/v1/exam/practice/update-status/${practiceId}
+        method: PUT
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam-practice
+        body:
+          {
+            id: '${practiceId}',
+            status: 2
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.status', '2']
+
+-   name: 【模拟考试】——删除模拟考试
+    request:
+        url: api/v1/exam/practice/${practiceId}
+        method: DELETE
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam-practice
+        body:
+          {
+            id: '${practiceId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.result', '1']

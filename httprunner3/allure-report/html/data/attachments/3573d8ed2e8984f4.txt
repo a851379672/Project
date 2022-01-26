@@ -1,0 +1,33 @@
+2022-01-25 18:46:30.004 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://pre-202108-10.zhixueyun.com/api/v1/system/organization/granted-organization?uri=exam%2Fquestion-depot&supportMore=true
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__5162aae81b0783802661ab1b21b0a987",
+    "uri": "exam/question-depot"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 18:46:30.005 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 10:46:30 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "183",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : [{'depth': 1, 'id': '9bcad76a-ba7e-4ace-9f92-f6e086a29cec', 'isParent': False, 'level': 2, 'name': 'preer', 'order': 1, 'parentId': None, 'path': '9bcad76a-ba7e-4ace-9f92-f6e086a29cec,', 'status': 1}]
+
+2022-01-25 18:46:30,005 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：questionDepot: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,
+2022-01-25 18:46:30,006 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '9bcad76a-ba7e-4ace-9f92-f6e086a29cec' 实际值: '9bcad76a-ba7e-4ace-9f92-f6e086a29cec', 断言成功!

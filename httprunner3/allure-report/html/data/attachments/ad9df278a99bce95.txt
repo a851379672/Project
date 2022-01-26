@@ -1,0 +1,39 @@
+2022-01-25 11:17:04.074 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : PUT
+url      : https://tester1.zhixueyun.com/api/v1/exam/banner/sort/ea200012-2f8c-4ff5-b9b7-0a78b35d6af3
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__c8422706e5d28b82f1856a214a6f0316",
+    "uri": "exam/banners",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "Content-Length": "78"
+}
+cookies  : {}
+body     : id=ea200012-2f8c-4ff5-b9b7-0a78b35d6af3&sort=2&title=tester%E5%B9%BF%E5%91%8A2
+
+2022-01-25 11:17:04.075 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:17:04 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "54",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "id": "ea200012-2f8c-4ff5-b9b7-0a78b35d6af3",
+    "sort": 2
+}
+
+2022-01-25 11:17:04,075 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: 'ea200012-2f8c-4ff5-b9b7-0a78b35d6af3' 实际值: 'ea200012-2f8c-4ff5-b9b7-0a78b35d6af3', 断言成功!
+2022-01-25 11:17:04,076 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '2' 实际值: '2', 断言成功!

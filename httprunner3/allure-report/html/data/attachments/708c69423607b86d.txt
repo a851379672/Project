@@ -1,0 +1,33 @@
+2022-01-25 14:40:24.747 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/exam/game/audience/31cc32b1-7ba8-443c-a7c9-c7a6a9c9dfff
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__c7fc72caf066b114b1fe7f418ac2c8f1",
+    "uri": "exam/exam-game"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 14:40:24.747 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:40:25 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "126",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : [{'grantItems': None, 'joinId': None, 'joinName': '0', 'joinType': 99, 'memberId': None, 'organizationId': None, 'organizationName': None}]
+
+2022-01-25 14:40:24,747 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '0' 实际值: '0', 断言成功!

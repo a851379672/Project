@@ -1,0 +1,74 @@
+2022-01-25 14:39:47.398 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/exam/certificate-record/exam-cert?examId=35647533-ea15-4c02-bf13-db6286a05a42&page=1&pageSize=10
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__c7fc72caf066b114b1fe7f418ac2c8f1",
+    "uri": "exam/exam"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 14:39:47.399 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:39:48 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "746",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "items": [
+        {
+            "certificateIssue": 0,
+            "examId": "35647533-ea15-4c02-bf13-db6286a05a42",
+            "examName": "【普通考试】2022-01-25 14:39:25",
+            "id": "be990ad9-f904-4091-ae4e-3eb5d8623a5b",
+            "member": {
+                "fullName": "xuesheng1",
+                "id": null,
+                "name": "test_1"
+            },
+            "organization": {
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "passStatus": 0,
+            "startTime": 1643092777189,
+            "topScore": 7000
+        },
+        {
+            "certificateIssue": 0,
+            "examId": "35647533-ea15-4c02-bf13-db6286a05a42",
+            "examName": "【普通考试】2022-01-25 14:39:25",
+            "id": "18314e8d-014f-4722-ae65-b838bcf86002",
+            "member": {
+                "fullName": "超级管理员",
+                "id": null,
+                "name": "admin"
+            },
+            "organization": {
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "passStatus": null,
+            "startTime": null,
+            "topScore": null
+        }
+    ],
+    "recordCount": 2
+}
+
+2022-01-25 14:39:47,399 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：registId: 18314e8d-014f-4722-ae65-b838bcf86002
+2022-01-25 14:39:47,399 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '200' 实际值: '200', 断言成功!

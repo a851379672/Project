@@ -1,0 +1,39 @@
+2022-01-25 14:30:41.059 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : PUT
+url      : https://tester1.zhixueyun.com/api/v1/exam/banner/revoke/f2fa85de-f382-454c-b44e-3ef32f10f85b
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__913d806a4e52a41790dc2c97e3f00bb4",
+    "uri": "exam/banners",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "Content-Length": "71"
+}
+cookies  : {}
+body     : id=f2fa85de-f382-454c-b44e-3ef32f10f85b&title=tester%E5%B9%BF%E5%91%8A1
+
+2022-01-25 14:30:41.059 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:30:41 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "56",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "id": "f2fa85de-f382-454c-b44e-3ef32f10f85b",
+    "status": 0
+}
+
+2022-01-25 14:30:41,060 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: 'f2fa85de-f382-454c-b44e-3ef32f10f85b' 实际值: 'f2fa85de-f382-454c-b44e-3ef32f10f85b', 断言成功!
+2022-01-25 14:30:41,060 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '0' 实际值: '0', 断言成功!

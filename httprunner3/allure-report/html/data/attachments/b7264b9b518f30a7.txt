@@ -1,0 +1,38 @@
+2022-01-25 18:41:28.121 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://pre-202108-10.zhixueyun.com/api/v1/human/sharding-file/auth/get-upload-files?fileKey=188d0fe2d3b31d4185f3662602a6dd34
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__85e43964274f4735315f924b26fc2818",
+    "uri": "exam/exam"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 18:41:28.122 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 10:41:28 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "145",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "attachmentId": null,
+    "attachments": null,
+    "endSliceSuccess": null,
+    "fileKey": "188d0fe2d3b31d4185f3662602a6dd34#e3e68e13-d4c3-44c2-afd4-3c867f7789c8"
+}
+
+2022-01-25 18:41:28,122 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：mp4fileKey: 188d0fe2d3b31d4185f3662602a6dd34#e3e68e13-d4c3-44c2-afd4-3c867f7789c8
+2022-01-25 18:41:28,122 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '200' 实际值: '200', 断言成功!

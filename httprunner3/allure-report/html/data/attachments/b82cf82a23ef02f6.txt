@@ -1,0 +1,138 @@
+2022-01-25 11:14:47.083 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/exam/exam/exam-select?uri=exam%2Finvigilator&examType=1&page=1&pageSize=10
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__8282fe0727e597a9fde0b2768b3de476",
+    "uri": "exam/invigilator"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 11:14:47.083 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:14:47 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "2033",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "items": [
+        {
+            "clientType": 0,
+            "id": "092b4e7c-9777-4283-8136-32b104d5444b",
+            "name": "【监考/报名考试】2022-01-25 11:14:44",
+            "organization": {
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "type": 1
+        },
+        {
+            "clientType": 1,
+            "id": "ee857dc1-7279-4b8e-a749-8ac80f0a97de",
+            "name": "【广告配置考试】2022-01-25 11:14:31",
+            "organization": {
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "type": 3
+        },
+        {
+            "clientType": 0,
+            "id": "e0849e16-f0e0-4624-b680-d4769a32f58d",
+            "name": "【监考/报名考试】2022-01-25 11:10:13",
+            "organization": {
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "type": 1
+        },
+        {
+            "clientType": 1,
+            "id": "86bfc529-9e94-4508-b3db-8c95ca96a2b7",
+            "name": "【广告配置考试】2022-01-25 11:10:06",
+            "organization": {
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "type": 3
+        },
+        {
+            "clientType": 0,
+            "id": "d543a719-afde-4edd-931b-da5b0e0534ad",
+            "name": "【监考/报名考试】2022-01-25 10:58:55",
+            "organization": {
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "type": 1
+        },
+        {
+            "clientType": 1,
+            "id": "ccd3f3c0-4b2c-4bf7-8b9a-873767000ace",
+            "name": "【广告配置考试】2022-01-25 10:58:47",
+            "organization": {
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "type": 3
+        },
+        {
+            "clientType": 0,
+            "id": "d920c387-452e-4b88-99e3-b88f62c358de",
+            "name": "【监考/报名考试】2022-01-25 10:53:16",
+            "organization": {
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "type": 1
+        },
+        {
+            "clientType": 1,
+            "id": "305a7c05-cf66-4cc5-8ec1-d72cbfac5f9e",
+            "name": "【广告配置考试】2022-01-25 10:53:09",
+            "organization": {
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "type": 3
+        },
+        {
+            "clientType": 0,
+            "id": "8452ec0d-79c9-44ef-806a-6fee5e54323b",
+            "name": "【监考/报名考试】2022-01-25 10:18:06",
+            "organization": {
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "type": 1
+        },
+        {
+            "clientType": 1,
+            "id": "e33b8088-c8b9-4f8a-a9b6-a8179d823c06",
+            "name": "【广告配置考试】2022-01-25 10:18:00",
+            "organization": {
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "type": 3
+        }
+    ],
+    "recordCount": 24
+}
+
+2022-01-25 11:14:47,084 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：examId: 092b4e7c-9777-4283-8136-32b104d5444b
+2022-01-25 11:14:47,084 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '200' 实际值: '200', 断言成功!

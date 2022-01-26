@@ -1,0 +1,339 @@
+{
+  "uid" : "6e8fe49a3a35f77d",
+  "name" : "test_config",
+  "fullName" : "test_case.test_case.TestClass#test_config",
+  "historyId" : "f29d4a9b6586f630858ae6507485a6bb",
+  "time" : {
+    "start" : 1643107533763,
+    "stop" : 1643107533766,
+    "duration" : 3
+  },
+  "description" : "\n        :return: extract_data\n        ",
+  "descriptionHtml" : "<pre><code>    :return: extract_data\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "file_fixture",
+    "time" : {
+      "start" : 1643107533441,
+      "stop" : 1643107533449,
+      "duration" : 8
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1643107533449,
+      "stop" : 1643107533754,
+      "duration" : 305
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "fsetup_tear_down",
+    "time" : {
+      "start" : 1643107533449,
+      "stop" : 1643107533449,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass",
+    "time" : {
+      "start" : 1643107533754,
+      "stop" : 1643107533760,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :return: extract_data\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "654320aa46a08397",
+      "name" : "log",
+      "source" : "654320aa46a08397.txt",
+      "type" : "text/plain",
+      "size" : 2103
+    }, {
+      "uid" : "22594b81f34e714b",
+      "name" : "stderr",
+      "source" : "22594b81f34e714b.txt",
+      "type" : "text/plain",
+      "size" : 6275
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "fsetup_tear_down::0",
+    "time" : {
+      "start" : 1643107617789,
+      "stop" : 1643107617793,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass::0",
+    "time" : {
+      "start" : 1643107617782,
+      "stop" : 1643107617782,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "22048-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "4920c267631ed2cc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643107533763,
+        "stop" : 1643107533766,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "7c5092760b73404a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643107285294,
+        "stop" : 1643107285296,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "8f7bc6c93e5f80ab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643107285294,
+        "stop" : 1643107285296,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "8d9d2f08ed112bff",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643092760073,
+        "stop" : 1643092760075,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "123b260b4fe04139",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643092760073,
+        "stop" : 1643092760075,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "abbbf44f1a9d0d25",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643092193509,
+        "stop" : 1643092193512,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "ee00f1bee744ee96",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643092193509,
+        "stop" : 1643092193512,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "eb8822a269ac0d1a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643090812984,
+        "stop" : 1643090812986,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "3926e231bea5bd06",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643090812984,
+        "stop" : 1643090812986,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "50d3c561b3f840e3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643090762648,
+        "stop" : 1643090762650,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "38125260b647ca94",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643090762648,
+        "stop" : 1643090762650,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "901d42ee829e1f9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643081413846,
+        "stop" : 1643081413848,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "ccc0706f6a6b319f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643081413846,
+        "stop" : 1643081413848,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "52fd744261d0877b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643081327351,
+        "stop" : 1643081327353,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "c7a56e922217a0ed",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643081327351,
+        "stop" : 1643081327353,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "9b1296aa9b5bd63c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643080808626,
+        "stop" : 1643080808628,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "32f5bfec3528cbc8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643080808626,
+        "stop" : 1643080808628,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "f560f595286295de",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643080586996,
+        "stop" : 1643080587000,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "9c9eb91ce6ce0ae0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643080586996,
+        "stop" : 1643080587000,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "f8e19b4ab171de97",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643080424327,
+        "stop" : 1643080424330,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "8ef9dd75093c134c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643080424327,
+        "stop" : 1643080424330,
+        "duration" : 3
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6e8fe49a3a35f77d.json",
+  "parameterValues" : [ ]
+}

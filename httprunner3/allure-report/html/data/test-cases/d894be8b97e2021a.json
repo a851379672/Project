@@ -1,0 +1,191 @@
+{
+  "uid" : "d894be8b97e2021a",
+  "name" : "【普通考试】——考试答题-触发暂停考试",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "7f71d1f1c8253c60d81d319df80e1970",
+  "time" : {
+    "start" : 1643090835689,
+    "stop" : 1643090835812,
+    "duration" : 123
+  },
+  "description" : "\n        :param api_data\n        :return: report_content\n        ",
+  "descriptionHtml" : "<pre><code>    :param api_data\n    :return: report_content\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "fsetup_tear_down",
+    "time" : {
+      "start" : 1643090812726,
+      "stop" : 1643090812726,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1643090812726,
+      "stop" : 1643090812977,
+      "duration" : 251
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "file_fixture",
+    "time" : {
+      "start" : 1643090812720,
+      "stop" : 1643090812726,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass",
+    "time" : {
+      "start" : 1643090812977,
+      "stop" : 1643090812981,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param api_data\n        :return: report_content\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b305af5e19fc31ba",
+      "name" : "log",
+      "source" : "b305af5e19fc31ba.txt",
+      "type" : "text/plain",
+      "size" : 180
+    }, {
+      "uid" : "8e3bec7cfa6649a5",
+      "name" : "stderr",
+      "source" : "8e3bec7cfa6649a5.txt",
+      "type" : "text/plain",
+      "size" : 2869
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "fsetup_tear_down::0",
+    "time" : {
+      "start" : 1643090879277,
+      "stop" : 1643090879282,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass::0",
+    "time" : {
+      "start" : 1643090879271,
+      "stop" : 1643090879271,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【普通考试】——考试答题-触发暂停考试"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=3, reruns_delay=5)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "32128-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "api_data",
+    "value" : "{'name': '【普通考试】——考试答题-触发暂停考试', 'request': {'url': 'api/v1/exam/exam-record/front/pause', 'method': 'POST', 'headers': {'Authorization': 'Bearer__${student_token}', 'content-type': 'application/x-www-form-urlencoded; charset=UTF-8'}, 'data': {'examRecordId': '${examRecordId}'}}, 'sql_statement': None, 'extract': None, 'validate': [{'eq': ['$.isPause', '1']}], 'allure': {'allure_descrption': '【普通考试】——考试答题-触发暂停考试', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}"
+  } ],
+  "links" : [ {
+    "name" : "https://tester1.zhixueyun.com/api/v1/exam/exam-record/front/pause",
+    "url" : "https://tester1.zhixueyun.com/api/v1/exam/exam-record/front/pause",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=3, reruns_delay=5)" ]
+  },
+  "source" : "d894be8b97e2021a.json",
+  "parameterValues" : [ "{'name': '【普通考试】——考试答题-触发暂停考试', 'request': {'url': 'api/v1/exam/exam-record/front/pause', 'method': 'POST', 'headers': {'Authorization': 'Bearer__${student_token}', 'content-type': 'application/x-www-form-urlencoded; charset=UTF-8'}, 'data': {'examRecordId': '${examRecordId}'}}, 'sql_statement': None, 'extract': None, 'validate': [{'eq': ['$.isPause', '1']}], 'allure': {'allure_descrption': '【普通考试】——考试答题-触发暂停考试', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}" ]
+}

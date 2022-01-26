@@ -1,0 +1,2 @@
+INFO     root:validate.py:76 响应断言:  预期值: 'ea200012-2f8c-4ff5-b9b7-0a78b35d6af3' 实际值: 'ea200012-2f8c-4ff5-b9b7-0a78b35d6af3', 断言成功!
+INFO     root:validate.py:76 响应断言:  预期值: '0' 实际值: '0', 断言成功!

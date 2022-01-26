@@ -1,0 +1,18 @@
+INFO     root:base_token.py:29 企业管理员登录成功
+INFO     root:base_token.py:56 企业学员登录成功
+INFO     root:base_config.py:13 提取变量：ent_url: https://tester1.zhixueyun.com/
+INFO     root:base_config.py:13 提取变量：env_url: https://test9.zhixueyun.com/
+INFO     root:base_config.py:13 提取变量：config_url: https://tester1.zhixueyun.com/api/v1/system/setting/config
+INFO     root:base_config.py:13 提取变量：login_url: https://test9.zhixueyun.com/oauth/api/v1/auth
+INFO     root:base_config.py:13 提取变量：organization_id: SfGRfmj5IJiUyHP+luX/iFcGsyTV5dq8abfvRl+0W1uh7y45djf3lsHagGfQ7ilC
+INFO     root:base_config.py:13 提取变量：login_method: JZNm+1f9txtGtiE0oRMJ1g==
+INFO     root:base_config.py:13 提取变量：admin_login_key: 0J5Zm+UKb3i4gKYSpDJeGReXokKz1TeyyXGeeqJTfVxWhOz0DpdFdJmMvNNB8difW98CJNYk/1yZ6VYNw30SQtiPAOJLgVrkZolnP78WjJ5UdLpbOFCXvxy6PWmdAjopFj+3wVtARcQ8o6Qx+miPgw36InzJC7ETJj9RgfuiFoZHAxiQuHrHaNUIh3fxZVLawMDGI/ZPHSzaISUKK9gKNw==
+INFO     root:base_config.py:13 提取变量：admin_username: admin
+INFO     root:base_config.py:13 提取变量：admin_password: zxy123456
+INFO     root:base_config.py:13 提取变量：student_login_key: 0J5Zm+UKb3i4gKYSpDJeGReXokKz1TeyyXGeeqJTfVxWhOz0DpdFdJmMvNNB8difW98CJNYk/1yZ6VYNw30SQtiPAOJLgVrkZolnP78WjJ5UdLpbOFCXvxy6PWmdAjopFj+3wVtARcQ8o6Qx+miPgw36InzJC7ETJj9RgfuiFoYQgMDfhLlBuduz0dA9IlEnR3TnXNzjIZ7oBQMDwuFsrDYtI++jgeRxPoF3Ufaghug=
+INFO     root:base_config.py:13 提取变量：student_username: test_1
+INFO     root:base_config.py:13 提取变量：student_password: zxy123456
+INFO     root:base_config.py:13 提取变量：db_config: {'db_host': '120.27.193.70', 'db_name': 'testadmin', 'db_password': 'dreamtech@.IT2021', 'db_port': 4002, 'db_charset': 'utf8'}
+INFO     root:base_config.py:13 提取变量：redis_config: {'redis_host': '47.99.135.195', 'redis_port': 30116, 'redis_password': 'TA6sMiuSRqtTrHB7Amdg'}
+INFO     root:base_config.py:13 提取变量：admin_token: 913d806a4e52a41790dc2c97e3f00bb4
+INFO     root:base_config.py:13 提取变量：student_token: 1ed5c1ee658ef13aaa49bca09ed78677

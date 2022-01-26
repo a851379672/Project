@@ -1,0 +1,188 @@
+{
+  "uid" : "e71a2956eac7f15a",
+  "name" : "【发放证书】——查询任务队列",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "cbafe375c000c15fdf34415daa0a7235",
+  "time" : {
+    "start" : 1643080627473,
+    "stop" : 1643080627614,
+    "duration" : 141
+  },
+  "description" : "\n        :param api_data\n        :return: report_content\n        ",
+  "descriptionHtml" : "<pre><code>    :param api_data\n    :return: report_content\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "fsetup_tear_down",
+    "time" : {
+      "start" : 1643080586705,
+      "stop" : 1643080586705,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass",
+    "time" : {
+      "start" : 1643080586990,
+      "stop" : 1643080586995,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "file_fixture",
+    "time" : {
+      "start" : 1643080586697,
+      "stop" : 1643080586705,
+      "duration" : 8
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1643080586705,
+      "stop" : 1643080586990,
+      "duration" : 285
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param api_data\n        :return: report_content\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "cda8db9894e23fb3",
+      "name" : "log",
+      "source" : "cda8db9894e23fb3.txt",
+      "type" : "text/plain",
+      "size" : 363
+    }, {
+      "uid" : "28e2e25d053cc5c2",
+      "name" : "stderr",
+      "source" : "28e2e25d053cc5c2.txt",
+      "type" : "text/plain",
+      "size" : 2536
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "fsetup_tear_down::0",
+    "time" : {
+      "start" : 1643080642834,
+      "stop" : 1643080642840,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass::0",
+    "time" : {
+      "start" : 1643080642825,
+      "stop" : 1643080642825,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【发放证书】——查询任务队列"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "7636-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "api_data",
+    "value" : "{'name': '【发放证书】——查询任务队列', 'request': {'url': 'api/v1/human/export-task/find-export-tasks', 'method': 'GET', 'headers': {'Authorization': 'Bearer__${admin_token}', 'uri': 'exam/certificate-record'}, 'params': {'businessTypes': 33, 'page': 1, 'pageSize': 10}}, 'sql_statement': None, 'extract': {'id': '$.items[0].id', 'attachmentId': '$.items[0].attachmentId'}, 'validate': [{'eq': ['$.items[0].failCount', '1']}, {'eq': ['$.items[0].successCount', '1']}], 'allure': {'allure_descrption': '【发放证书】——查询任务队列', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}"
+  } ],
+  "links" : [ {
+    "name" : "https://tester1.zhixueyun.com/api/v1/human/export-task/find-export-tasks",
+    "url" : "https://tester1.zhixueyun.com/api/v1/human/export-task/find-export-tasks",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e71a2956eac7f15a.json",
+  "parameterValues" : [ "{'name': '【发放证书】——查询任务队列', 'request': {'url': 'api/v1/human/export-task/find-export-tasks', 'method': 'GET', 'headers': {'Authorization': 'Bearer__${admin_token}', 'uri': 'exam/certificate-record'}, 'params': {'businessTypes': 33, 'page': 1, 'pageSize': 10}}, 'sql_statement': None, 'extract': {'id': '$.items[0].id', 'attachmentId': '$.items[0].attachmentId'}, 'validate': [{'eq': ['$.items[0].failCount', '1']}, {'eq': ['$.items[0].successCount', '1']}], 'allure': {'allure_descrption': '【发放证书】——查询任务队列', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}" ]
+}

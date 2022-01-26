@@ -1,0 +1,2 @@
+INFO     root:data_depend.py:37 提取变量：tiankongid: 2e1f33c8-650b-4f32-9909-24a885d8ef80
+INFO     root:validate.py:76 响应断言:  预期值: '0' 实际值: '0', 断言成功!

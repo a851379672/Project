@@ -30,7 +30,6 @@ def get_admin_token(config: dict):
         config.update({'admin_token': admin_token})
         with open(TARGET_PATH, 'w') as f:
             f.write(json.dumps(config))
-        return res
     else:
         logging.info('企业管理员登录失败')
 
@@ -58,6 +57,5 @@ def get_student_token(config: dict):
         config.update({'student_token': student_token})
         with open(TARGET_PATH, 'w') as f:
             f.write(json.dumps(config))
-        return res
     else:
         logging.info('企业学员登录失败')

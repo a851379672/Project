@@ -1,0 +1,53 @@
+2022-01-25 14:39:56.588 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/exam/face?examId=35647533-ea15-4c02-bf13-db6286a05a42&page=1&pageSize=10
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__c7fc72caf066b114b1fe7f418ac2c8f1",
+    "uri": "exam/exam"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 14:39:56.589 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:39:57 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "333",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "items": [
+        {
+            "count": 1,
+            "examRecordId": "efd44cdf-9400-41b7-9d6c-e9ee7191ad8b",
+            "lastModifyTime": 1643092777179,
+            "maxScore": 1000000,
+            "member": {
+                "fullName": "xuesheng1",
+                "id": "00f8266a-1ff2-4ab3-97e0-307621501005",
+                "name": "test_1",
+                "organization": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "name": "tester"
+                }
+            },
+            "minScore": 1000000
+        }
+    ],
+    "recordCount": 1
+}
+
+2022-01-25 14:39:56,589 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '1' 实际值: '1', 断言成功!

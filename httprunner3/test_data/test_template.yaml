@@ -13,15 +13,19 @@
 #        url: /api/v1/exam/question-depot
 #        method: POST
 #        headers:
-#          Authorization: Bearer__${admin_token}
-#          uri: exam/question-depot
-#        params:
+#            Authorization: Bearer__${admin_token}
+#            uri: exam/question-depot
+#        body:
 #            {
 #              key: 'value',
 #              key: 'value'
 #            }
+#        files:
+#            {
+#              file: 'exam/${ent_name}_监考人员导入模板.xlsx'
+#            }
 #    sql_statement:
-#        -  sql:  ['SELECT * FROM exam.t_question WHERE f_question_depot_id = "${questionDepotId}"', 0]
+#        -  question:  ['SELECT * FROM exam.t_question WHERE f_question_depot_id = "${questionDepotId}" AND `f_status` = 1 AND `f_is_subjective` = 0 AND `f_type` != 8', 18]
 #    extract:
 #        nationality_id: $..items.[0].id
 #    validate:

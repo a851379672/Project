@@ -1,0 +1,191 @@
+{
+  "uid" : "d8d78d6c8c28ca2f",
+  "name" : "【普通考试】——考试详情-受众报名考试",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "0013d94152993491b2d331106b7e7b4f",
+  "time" : {
+    "start" : 1643080436792,
+    "stop" : 1643080436957,
+    "duration" : 165
+  },
+  "description" : "\n        :param api_data\n        :return: report_content\n        ",
+  "descriptionHtml" : "<pre><code>    :param api_data\n    :return: report_content\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1643080424057,
+      "stop" : 1643080424321,
+      "duration" : 264
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "file_fixture",
+    "time" : {
+      "start" : 1643080424047,
+      "stop" : 1643080424056,
+      "duration" : 9
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass",
+    "time" : {
+      "start" : 1643080424321,
+      "stop" : 1643080424326,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "fsetup_tear_down",
+    "time" : {
+      "start" : 1643080424056,
+      "stop" : 1643080424057,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param api_data\n        :return: report_content\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "af90eb57b0728bc6",
+      "name" : "log",
+      "source" : "af90eb57b0728bc6.txt",
+      "type" : "text/plain",
+      "size" : 88
+    }, {
+      "uid" : "289c39b7b0d723a7",
+      "name" : "stderr",
+      "source" : "289c39b7b0d723a7.txt",
+      "type" : "text/plain",
+      "size" : 1995
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestClass::0",
+    "time" : {
+      "start" : 1643080499214,
+      "stop" : 1643080499214,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "fsetup_tear_down::0",
+    "time" : {
+      "start" : 1643080499225,
+      "stop" : 1643080499231,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【普通考试】——考试详情-受众报名考试"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=3, reruns_delay=5)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "22184-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "api_data",
+    "value" : "{'name': '【普通考试】——考试详情-受众报名考试', 'request': {'url': 'api/v1/exam/sign-auth', 'method': 'POST', 'headers': {'Authorization': 'Bearer__${student_token}', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}, 'data': {'examId': '${examId}', 'organizationId': '${organizationId}'}}, 'sql_statement': None, 'extract': None, 'validate': [{'eq': ['$.signUp.status', '2']}], 'allure': {'allure_descrption': '【普通考试】——考试详情-受众报名考试', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}"
+  } ],
+  "links" : [ {
+    "name" : "https://tester1.zhixueyun.com/api/v1/exam/sign-auth",
+    "url" : "https://tester1.zhixueyun.com/api/v1/exam/sign-auth",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=3, reruns_delay=5)" ]
+  },
+  "source" : "d8d78d6c8c28ca2f.json",
+  "parameterValues" : [ "{'name': '【普通考试】——考试详情-受众报名考试', 'request': {'url': 'api/v1/exam/sign-auth', 'method': 'POST', 'headers': {'Authorization': 'Bearer__${student_token}', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}, 'data': {'examId': '${examId}', 'organizationId': '${organizationId}'}}, 'sql_statement': None, 'extract': None, 'validate': [{'eq': ['$.signUp.status', '2']}], 'allure': {'allure_descrption': '【普通考试】——考试详情-受众报名考试', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}" ]
+}

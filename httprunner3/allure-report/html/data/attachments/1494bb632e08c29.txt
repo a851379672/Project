@@ -1,0 +1,35 @@
+2022-01-25 18:46:56.214 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : PUT
+url      : http://pre-202108-10.zhixueyun.com/api/v1/exam/paper/enable/9359bf96-63d7-4444-8f57-eed83870c620
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__5162aae81b0783802661ab1b21b0a987",
+    "Content-Length": "104",
+    "Content-Type": "application/x-www-form-urlencoded"
+}
+cookies  : {}
+body     : id=9359bf96-63d7-4444-8f57-eed83870c620&name=%E3%80%90%E8%AF%95%E5%8D%B7%E3%80%912022-01-25+18%3A46%3A55
+
+2022-01-25 18:46:56.214 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 10:46:57 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "45",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "id": "9359bf96-63d7-4444-8f57-eed83870c620"
+}
+
+2022-01-25 18:46:56,214 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '9359bf96-63d7-4444-8f57-eed83870c620' 实际值: '9359bf96-63d7-4444-8f57-eed83870c620', 断言成功!

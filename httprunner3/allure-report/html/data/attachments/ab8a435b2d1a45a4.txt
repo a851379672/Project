@@ -1,0 +1,36 @@
+2022-01-25 14:07:43.162 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://tester1.zhixueyun.com/api/v1/human/file/upload-excel-file
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__d47752064eceb10c9bdde411d492369b",
+    "uri": "exam/certificate-record",
+    "Content-Length": "9571",
+    "Content-Type": "multipart/form-data; boundary=e82686b1546e04a749defde32a82873d"
+}
+cookies  : {}
+body     : upload file stream (OMITTED)
+
+2022-01-25 14:07:43.162 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:07:43 GMT",
+    "Content-Type": "text/html;charset=UTF-8",
+    "Content-Length": "221",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : text/html;charset=UTF-8
+body     : [{'contentType': None, 'createTime': 1643090863946, 'filename': 'tester_证书发放导入模板_488.xlsx', 'id': '2f4c8822-6dc4-44ea-a2b8-17f5902b352c', 'path': 'default/M00/0B/09/wKgLTWHvk6-AG2eJAAAkszS2YYc12.xlsx', 'size': 9395}]
+
+2022-01-25 14:07:43,163 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：fileId: 2f4c8822-6dc4-44ea-a2b8-17f5902b352c
+2022-01-25 14:07:43,163 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '9395' 实际值: '9395', 断言成功!

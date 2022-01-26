@@ -1,0 +1,3 @@
+INFO     root:data_depend.py:37 提取变量：examId_copy: 8d7b0571-e79e-45b3-984d-48bbcf5ffadf
+INFO     root:data_depend.py:37 提取变量：examName_copy: 【普通考试】2022-01-25 18:45:40[复制1]
+INFO     root:validate.py:76 响应断言:  预期值: '复制' 实际值: '【普通考试】2022-01-25 18:45:40[复制1]', 断言成功!

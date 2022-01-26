@@ -1,0 +1,2 @@
+INFO     root:data_depend.py:37 提取变量：mp4fileKey: 188d0fe2d3b31d4185f3662602a6dd34#e3e68e13-d4c3-44c2-afd4-3c867f7789c8
+INFO     root:validate.py:76 响应断言:  预期值: '200' 实际值: '200', 断言成功!

@@ -1,3 +1,0 @@
-INFO     root:data_depend.py:40 提取变量：questionDepotId: 8d06aa9d-7bce-47b8-99cb-407904379417
-INFO     root:data_depend.py:40 提取变量：questionDepotName: 试题目录1
-INFO     root:validate.py:57 响应断言： 预期值：'cc861919-b7fb-4582-b755-48b2eb0e5203' 实际值：'cc861919-b7fb-4582-b755-48b2eb0e5203', 断言成功!

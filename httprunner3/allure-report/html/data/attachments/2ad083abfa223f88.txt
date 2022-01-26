@@ -1,0 +1,35 @@
+2022-01-25 11:17:07.992 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : DELETE
+url      : https://tester1.zhixueyun.com/api/v1/human/export-task/488cd195-98b5-4ca9-be6c-5505c62a8e62
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__c8422706e5d28b82f1856a214a6f0316",
+    "uri": "exam/certificate-record",
+    "Content-Length": "39",
+    "Content-Type": "application/x-www-form-urlencoded"
+}
+cookies  : {}
+body     : id=488cd195-98b5-4ca9-be6c-5505c62a8e62
+
+2022-01-25 11:17:07.993 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:17:08 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "1",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : 1
+
+2022-01-25 11:17:07,993 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '1' 实际值: '1', 断言成功!

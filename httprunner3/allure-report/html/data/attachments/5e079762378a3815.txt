@@ -1,0 +1,37 @@
+2022-01-25 11:14:37.381 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://tester1.zhixueyun.com/api/v1/exam/certificate-record/async-import
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__8282fe0727e597a9fde0b2768b3de476",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "uri": "exam/certificate-record",
+    "Content-Length": "82"
+}
+cookies  : {}
+body     : fileId=b89d60ef-c691-434f-8f26-aa03f405bb09&token=8282fe0727e597a9fde0b2768b3de476
+
+2022-01-25 11:14:37.381 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:14:38 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "55",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "attachmentId": "0059f1aa-74b1-47e4-82bd-9c1b904fd8bf"
+}
+
+2022-01-25 11:14:37,382 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '200' 实际值: '200', 断言成功!

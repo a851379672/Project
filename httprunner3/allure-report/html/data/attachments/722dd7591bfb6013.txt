@@ -1,0 +1,91 @@
+2022-01-25 11:28:47.214 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://test9.zhixueyun.com/oauth/api/v1/auth
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Content-Length": "396"
+}
+cookies  : {}
+body     : key=0J5Zm%2BUKb3i4gKYSpDJeGReXokKz1TeyyXGeeqJTfVxWhOz0DpdFdJmMvNNB8difW98CJNYk%2F1yZ6VYNw30SQtiPAOJLgVrkZolnP78WjJ5UdLpbOFCXvxy6PWmdAjopFj%2B3wVtARcQ8o6Qx%2BmiPgw36InzJC7ETJj9RgfuiFoZHAxiQuHrHaNUIh3fxZVLawMDGI%2FZPHSzaISUKK9gKNw%3D%3D&organization_id=SfGRfmj5IJiUyHP%2BluX%2FiFcGsyTV5dq8abfvRl%2B0W1uh7y45djf3lsHagGfQ7ilC&login_method=JZNm%2B1f9txtGtiE0oRMJ1g%3D%3D&username=admin&pword=zxy123456
+
+2022-01-25 11:28:47.215 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:28:47 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "156",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "access_token": "7df5548d4af39089c6352e15e8f1a4e9",
+    "state": "/",
+    "redirect_uri": "https://tester1.zhixueyun.com/admin",
+    "token_type": "Bearer",
+    "expires_in": 3600
+}
+
+2022-01-25 11:28:47,216 | D:\PyCharm\project\httprunner3\base\base_token.py[line:29] | INFO: 企业管理员登录成功
+2022-01-25 11:28:47.342 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://test9.zhixueyun.com/oauth/api/v1/auth
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Content-Length": "417"
+}
+cookies  : {}
+body     : key=0J5Zm%2BUKb3i4gKYSpDJeGReXokKz1TeyyXGeeqJTfVxWhOz0DpdFdJmMvNNB8difW98CJNYk%2F1yZ6VYNw30SQtiPAOJLgVrkZolnP78WjJ5UdLpbOFCXvxy6PWmdAjopFj%2B3wVtARcQ8o6Qx%2BmiPgw36InzJC7ETJj9RgfuiFoYQgMDfhLlBuduz0dA9IlEnR3TnXNzjIZ7oBQMDwuFsrDYtI%2B%2BjgeRxPoF3Ufaghug%3D&organization_id=SfGRfmj5IJiUyHP%2BluX%2FiFcGsyTV5dq8abfvRl%2B0W1uh7y45djf3lsHagGfQ7ilC&login_method=JZNm%2B1f9txtGtiE0oRMJ1g%3D%3D&username=test_1&pword=zxy123456
+
+2022-01-25 11:28:47.342 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:28:48 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "165",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "access_token": "ed55028fb981949e03682ce01cc136a1",
+    "state": "/exam/exam",
+    "redirect_uri": "https://tester1.zhixueyun.com/admin",
+    "token_type": "Bearer",
+    "expires_in": 3600
+}
+
+2022-01-25 11:28:47,342 | D:\PyCharm\project\httprunner3\base\base_token.py[line:56] | INFO: 企业学员登录成功
+2022-01-25 11:28:47,350 | D:\PyCharm\project\httprunner3\base\base_config.py[line:13] | INFO: 提取变量：ent_url: https://tester1.zhixueyun.com/
+2022-01-25 11:28:47,350 | D:\PyCharm\project\httprunner3\base\base_config.py[line:13] | INFO: 提取变量：env_url: https://test9.zhixueyun.com/
+2022-01-25 11:28:47,350 | D:\PyCharm\project\httprunner3\base\base_config.py[line:13] | INFO: 提取变量：ent_host: http://47.97.36.217:443
+2022-01-25 11:28:47,350 | D:\PyCharm\project\httprunner3\base\base_config.py[line:13] | INFO: 提取变量：config_url: https://tester1.zhixueyun.com/api/v1/system/setting/config
+2022-01-25 11:28:47,350 | D:\PyCharm\project\httprunner3\base\base_config.py[line:13] | INFO: 提取变量：login_url: https://test9.zhixueyun.com/oauth/api/v1/auth
+2022-01-25 11:28:47,350 | D:\PyCharm\project\httprunner3\base\base_config.py[line:13] | INFO: 提取变量：organization_id: SfGRfmj5IJiUyHP+luX/iFcGsyTV5dq8abfvRl+0W1uh7y45djf3lsHagGfQ7ilC
+2022-01-25 11:28:47,350 | D:\PyCharm\project\httprunner3\base\base_config.py[line:13] | INFO: 提取变量：login_method: JZNm+1f9txtGtiE0oRMJ1g==
+2022-01-25 11:28:47,350 | D:\PyCharm\project\httprunner3\base\base_config.py[line:13] | INFO: 提取变量：admin_login_key: 0J5Zm+UKb3i4gKYSpDJeGReXokKz1TeyyXGeeqJTfVxWhOz0DpdFdJmMvNNB8difW98CJNYk/1yZ6VYNw30SQtiPAOJLgVrkZolnP78WjJ5UdLpbOFCXvxy6PWmdAjopFj+3wVtARcQ8o6Qx+miPgw36InzJC7ETJj9RgfuiFoZHAxiQuHrHaNUIh3fxZVLawMDGI/ZPHSzaISUKK9gKNw==
+2022-01-25 11:28:47,351 | D:\PyCharm\project\httprunner3\base\base_config.py[line:13] | INFO: 提取变量：admin_username: admin
+2022-01-25 11:28:47,351 | D:\PyCharm\project\httprunner3\base\base_config.py[line:13] | INFO: 提取变量：admin_password: zxy123456
+2022-01-25 11:28:47,351 | D:\PyCharm\project\httprunner3\base\base_config.py[line:13] | INFO: 提取变量：student_login_key: 0J5Zm+UKb3i4gKYSpDJeGReXokKz1TeyyXGeeqJTfVxWhOz0DpdFdJmMvNNB8difW98CJNYk/1yZ6VYNw30SQtiPAOJLgVrkZolnP78WjJ5UdLpbOFCXvxy6PWmdAjopFj+3wVtARcQ8o6Qx+miPgw36InzJC7ETJj9RgfuiFoYQgMDfhLlBuduz0dA9IlEnR3TnXNzjIZ7oBQMDwuFsrDYtI++jgeRxPoF3Ufaghug=
+2022-01-25 11:28:47,351 | D:\PyCharm\project\httprunner3\base\base_config.py[line:13] | INFO: 提取变量：student_username: test_1
+2022-01-25 11:28:47,351 | D:\PyCharm\project\httprunner3\base\base_config.py[line:13] | INFO: 提取变量：student_password: zxy123456
+2022-01-25 11:28:47,351 | D:\PyCharm\project\httprunner3\base\base_config.py[line:13] | INFO: 提取变量：db_config: {'db_host': '120.27.193.70', 'db_name': 'testadmin', 'db_password': 'dreamtech@.IT2021', 'db_port': 4002, 'db_charset': 'utf8'}
+2022-01-25 11:28:47,351 | D:\PyCharm\project\httprunner3\base\base_config.py[line:13] | INFO: 提取变量：redis_config: {'redis_host': '192.168.10.46', 'redis_port': 6379, 'redis_password': '.com'}
+2022-01-25 11:28:47,351 | D:\PyCharm\project\httprunner3\base\base_config.py[line:13] | INFO: 提取变量：admin_token: 7df5548d4af39089c6352e15e8f1a4e9
+2022-01-25 11:28:47,351 | D:\PyCharm\project\httprunner3\base\base_config.py[line:13] | INFO: 提取变量：student_token: ed55028fb981949e03682ce01cc136a1

@@ -1,0 +1,34 @@
+2022-01-25 14:07:31.063 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/system/organization/granted-organization?uri=exam%2Fquestion-depot&supportMore=true
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__d47752064eceb10c9bdde411d492369b",
+    "uri": "exam/question-depot"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 14:07:31.064 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:07:31 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "184",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : [{'depth': 1, 'id': 'cc861919-b7fb-4582-b755-48b2eb0e5203', 'isParent': False, 'level': 2, 'name': 'tester', 'order': 1, 'parentId': None, 'path': 'cc861919-b7fb-4582-b755-48b2eb0e5203,', 'status': 1}]
+
+2022-01-25 14:07:31,064 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：questionDepot: cc861919-b7fb-4582-b755-48b2eb0e5203,
+2022-01-25 14:07:31,064 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: 'cc861919-b7fb-4582-b755-48b2eb0e5203' 实际值: 'cc861919-b7fb-4582-b755-48b2eb0e5203', 断言成功!

@@ -1,0 +1,46 @@
+2022-01-25 11:17:20.570 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://tester1.zhixueyun.com/api/v1/exam/paper/copy-paper
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__c8422706e5d28b82f1856a214a6f0316",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "uri": "exam/paper-library",
+    "Content-Length": "44"
+}
+cookies  : {}
+body     : paperId=41b06b94-7969-45ba-a9c8-7e757605895a
+
+2022-01-25 11:17:20.571 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:17:21 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "232",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "createTime": 1643080641316,
+    "id": "0a819a99-4bb2-44bb-9329-d82b8773eff7",
+    "isSubjective": 0,
+    "name": "【试卷】2022-01-25 11:17:19[复制]",
+    "organizationId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+    "status": 0,
+    "totalScore": 1000,
+    "type": 2
+}
+
+2022-01-25 11:17:20,571 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：copyPaperId: 0a819a99-4bb2-44bb-9329-d82b8773eff7
+2022-01-25 11:17:20,571 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：copyPaperName: 【试卷】2022-01-25 11:17:19[复制]
+2022-01-25 11:17:20,573 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '0' 实际值: '0', 断言成功!

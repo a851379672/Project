@@ -1,0 +1,37 @@
+2022-01-25 14:07:44.970 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : PUT
+url      : https://tester1.zhixueyun.com/api/v1/exam/certificate-record/revoke
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__d47752064eceb10c9bdde411d492369b",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "uri": "exam/certificate-record",
+    "Content-Length": "40"
+}
+cookies  : {}
+body     : ids=8b3e0781-d8f2-4630-8ea6-6f80109c9f13
+
+2022-01-25 14:07:44.970 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:07:45 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "46",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "ids": "8b3e0781-d8f2-4630-8ea6-6f80109c9f13"
+}
+
+2022-01-25 14:07:44,971 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '8b3e0781-d8f2-4630-8ea6-6f80109c9f13' 实际值: '8b3e0781-d8f2-4630-8ea6-6f80109c9f13', 断言成功!

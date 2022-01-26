@@ -7,16 +7,18 @@ import pytest
 from settings import *
 
 
-class MysqlOperate(object):
+class MysqlOperate:
 
-    def __init__(self, sql_statement):
+    def __init__(self, extract_key, sql_statement):
         """
-        读取config.json文件
-        :param sql_statement: sql语句
+        读取config.json
+        :param extract_key: extract_key
+        :param sql_statement: sql
         """
         with open(TARGET_PATH, 'r', encoding="utf-8") as f:
             config_json = json.loads(f.read())
         self.sql = sql_statement
+        self.key = extract_key
         self.db_name = re.findall(r'FROM (.*?)\.', sql_statement)[0]
         self.db, self.cursor = self.link_sql(config_json['db_config'])
         self.judge = Select()
@@ -44,30 +46,22 @@ class MysqlOperate(object):
         """
         执行sql
         :param: value: 预期值
+        :param: deal_with
         :return:
         """
         if deal_with.replace_(self.sql):
             self.sql = deal_with.replace_(self.sql)
         result = self.judge.handler(self.cursor, self.sql, self.db)
         try:
-            assert result == value
-            logging.info(f'SQL影响行数: ({result}) 预期影响行数: ({value}) 断言成功!')
+            assert value == result['count']
+            logging.info(f'SQL影响行数: {result["count"]} 预期影响行数: {value} 断言成功!')
+            deal_with.extract_(f'{self.key}_count', result['count'], None, deal_with)
+            if result.get('value'):
+                deal_with.extract_(f'{self.key}_value', result['value'], None, deal_with)
         except AssertionError:
-            pytest.xfail(f'SQL断言失败：{AssertionError}')
+            pytest.xfail(f'SQL断言失败: {AssertionError}')
         self.cursor.close()
         self.db.close()
-
-    def execute_sql_list(self):
-        """
-        ——执行sql_list，暂时用不到——
-        :return:
-        """
-        sql_dict = {sql: self.cursor.execute(sql) for sql in self.sql if sql}
-        sql_result = [self.judge.handler(self.cursor, sql, self.db) for sql, value in sql_dict.items()
-                      if self.judge.handler(self.cursor, sql, self.db)]
-        self.cursor.close()
-        self.db.close()
-        return sql_result
 
 
 class Manager:
@@ -89,8 +83,10 @@ class Select(Manager):
             cursor.execute(sql)
             result = cursor.fetchone()
             if result:
-                logging.info(f'sql select result: {result}')
-            return cursor.rowcount
+                key = re.findall('select (.*?) from', sql.lower())[0]
+                cursor_value = result.get(key)
+                logging.info(f'SQL查询结果: {cursor_value}')
+                return {'count': cursor.rowcount, 'value': cursor_value}
         else:
             return self.obj.handler(cursor, sql, db)
 
@@ -101,6 +97,6 @@ class Delete(Manager):
         if sql.lower().startswith('delete'):
             cursor.execute(sql)
             db.commit()
-            return cursor.rowcount
+            return {'count': cursor.rowcount}
         else:
             return self.obj.handler(cursor, sql, db)

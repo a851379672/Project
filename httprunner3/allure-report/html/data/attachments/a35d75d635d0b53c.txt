@@ -1,0 +1,46 @@
+2022-01-25 14:07:55.705 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://tester1.zhixueyun.com/api/v1/exam/paper
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__d47752064eceb10c9bdde411d492369b",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "uri": "exam/paper-library",
+    "Content-Length": "529"
+}
+cookies  : {}
+body     : name=%E3%80%90%E8%AF%95%E5%8D%B7%E3%80%912022-01-25+14%3A07%3A55&organizationId-text=tester&organizationId=cc861919-b7fb-4582-b755-48b2eb0e5203&paperDepotId=32976bd1-2248-40e4-8af1-2efffb402767&publishId=5f0870a7-d55d-4a31-8782-1ac8d9690efc&publishOrganizationId=cc861919-b7fb-4582-b755-48b2eb0e5203&totalScore=1000&questionNum=1&paperClassQuestions=%5B%7B%27questionId%27%3A+%27dadbe48f-676b-4bda-9086-463c187ed27b%27%2C+%27score%27%3A+1000%2C+%27sequence%27%3A+0%2C+%27isFromSelected%27%3A+0%2C+%27sortType%27%3A+1%7D%5D&type=2
+
+2022-01-25 14:07:55.706 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:07:56 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "224",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "createTime": 1643090876479,
+    "id": "09fcdd4d-58f1-4b87-94b2-4f20871fa9bf",
+    "isSubjective": 0,
+    "name": "【试卷】2022-01-25 14:07:55",
+    "organizationId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+    "status": 0,
+    "totalScore": 1000,
+    "type": 2
+}
+
+2022-01-25 14:07:55,706 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：paperId: 09fcdd4d-58f1-4b87-94b2-4f20871fa9bf
+2022-01-25 14:07:55,706 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：paperName: 【试卷】2022-01-25 14:07:55
+2022-01-25 14:07:55,706 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '0' 实际值: '0', 断言成功!

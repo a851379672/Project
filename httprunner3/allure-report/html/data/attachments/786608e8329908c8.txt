@@ -1,0 +1,3 @@
+INFO     root:data_depend.py:37 提取变量：paperDepotId: d8304a24-d163-4516-8692-5e8fc756ac60
+INFO     root:data_depend.py:37 提取变量：paperDepotName: 试卷库目录2022-01-25 11:21:12
+INFO     root:validate.py:76 响应断言:  预期值: '1' 实际值: '1', 断言成功!

@@ -1,0 +1,39 @@
+2022-01-25 11:13:47.143 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://tester1.zhixueyun.com/api/v1/system/file/upload?dir=image
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__8282fe0727e597a9fde0b2768b3de476",
+    "uri": "exam/exam",
+    "Content-Length": "32933",
+    "Content-Type": "multipart/form-data; boundary=0f0609de279369001da9aac0134c095f"
+}
+cookies  : {}
+body     : upload file stream (OMITTED)
+
+2022-01-25 11:13:47.144 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:13:47 GMT",
+    "Content-Type": "text/html;charset=UTF-8",
+    "Content-Length": "100",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : text/html;charset=UTF-8
+body     : {
+    "error": 0,
+    "url": "https://test9.zhixueyun.com/default/M00/0B/07/wKgLTWHvauuAfm9XAACACFLS5pw544.jpg"
+}
+
+2022-01-25 11:13:47,144 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：imgurl: https://test9.zhixueyun.com/default/M00/0B/07/wKgLTWHvauuAfm9XAACACFLS5pw544.jpg
+2022-01-25 11:13:47,145 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '0' 实际值: '0', 断言成功!

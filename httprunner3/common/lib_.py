@@ -20,7 +20,7 @@ def allure_(allure_data, ent_url):
 def base_64(encrypt_data):
     """
     :param encrypt_data: encrypt_data
-    :return: str(base64data, encoding="utf-8")
+    :return: base64(data)
     """
     try:
         base64data = base64.b64encode(encrypt_data.encode(encoding='utf-8'))
@@ -32,7 +32,7 @@ def base_64(encrypt_data):
 def md_5(encrypt_data):
     """
     :param encrypt_data: encrypt_data
-    :return:
+    :return: md5(data)
     """
     try:
         md5data = hashlib.md5(encrypt_data.encode(encoding='utf-8')).hexdigest()
@@ -48,4 +48,3 @@ if __name__ == '__main__':
     with open(r'D:\PyCharm\project\httprunner3\test_file\考试封面.jpg', 'rb') as f:
         base_64_file = base_64(f)
         print(base_64_file)
-

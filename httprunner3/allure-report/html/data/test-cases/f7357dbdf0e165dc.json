@@ -1,0 +1,98 @@
+{
+  "uid" : "f7357dbdf0e165dc",
+  "name" : "【普通考试】——新增考试-考试配置-监考人员配置-下载错误的导入数据",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "d23ae197aeb3009ba3d70f44e8c63008",
+  "time" : {
+    "start" : 1643107291698,
+    "stop" : 1643107291832,
+    "duration" : 134
+  },
+  "description" : "\n        :param api_data\n        :return: report_content\n        ",
+  "descriptionHtml" : "<pre><code>    :param api_data\n    :return: report_content\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n        :param api_data\n        :return: report_content\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "3c3573975d65883",
+      "name" : "log",
+      "source" : "3c3573975d65883.txt",
+      "type" : "text/plain",
+      "size" : 92
+    }, {
+      "uid" : "6a0f9f4767b4df01",
+      "name" : "stderr",
+      "source" : "6a0f9f4767b4df01.txt",
+      "type" : "text/plain",
+      "size" : 2558
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【普通考试】——新增考试-考试配置-监考人员配置-下载错误的导入数据"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=5, reruns_delay=5)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "19144-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "http://pre-202108-10.zhixueyun.com/api/v1/exam/file/download/invigilator",
+    "url" : "http://pre-202108-10.zhixueyun.com/api/v1/exam/file/download/invigilator",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=5, reruns_delay=5)" ]
+  },
+  "source" : "f7357dbdf0e165dc.json",
+  "parameterValues" : [ ]
+}

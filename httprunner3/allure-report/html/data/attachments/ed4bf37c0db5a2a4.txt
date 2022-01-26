@@ -1,0 +1,46 @@
+2022-01-25 18:46:55.029 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : http://pre-202108-10.zhixueyun.com/api/v1/exam/paper-depot
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__5162aae81b0783802661ab1b21b0a987",
+    "Content-Length": "167",
+    "Content-Type": "application/x-www-form-urlencoded"
+}
+cookies  : {}
+body     : name=%E8%AF%95%E5%8D%B7%E5%BA%93%E7%9B%AE%E5%BD%952022-01-25+18%3A46%3A54&organizationId=9bcad76a-ba7e-4ace-9f92-f6e086a29cec&code=preer_1&state=1&authToLower=0&type=1
+
+2022-01-25 18:46:55.029 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 10:46:55 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "265",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "authToLower": 0,
+    "createTime": 1643107615860,
+    "id": "9cb83650-b223-4422-b17d-b3d6bed7fd4a",
+    "name": "试卷库目录2022-01-25 18:46:54",
+    "organization": null,
+    "organizationId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+    "parentId": null,
+    "parentName": null,
+    "sequence": 3,
+    "state": 1
+}
+
+2022-01-25 18:46:55,030 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：paperDepotId_copy: 9cb83650-b223-4422-b17d-b3d6bed7fd4a
+2022-01-25 18:46:55,030 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：paperDepotName_copy: 试卷库目录2022-01-25 18:46:54
+2022-01-25 18:46:55,030 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '1' 实际值: '1', 断言成功!

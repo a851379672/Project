@@ -1,0 +1,63 @@
+2022-01-25 14:30:09.502 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/course-study/file/safe/9c0e71b5-a91e-41b8-8497-0aff07e50a4c
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__1ed5c1ee658ef13aaa49bca09ed78677"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 14:30:09.502 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:30:10 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "798",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "cloudConfigId": null,
+    "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+    "configId": "default",
+    "contentType": "video/mp4",
+    "createTime": 1643092198623,
+    "duration": null,
+    "extention": "mp4",
+    "fastdfsPath": null,
+    "fileKey": "f377a3218e0978e3e15ae0b06026aaa3",
+    "fileOrder": null,
+    "filename": "试题视频_1060.mp4",
+    "id": "9c0e71b5-a91e-41b8-8497-0aff07e50a4c",
+    "isAuth": null,
+    "modifyDate": 1643092198000,
+    "path": "https://cdnsafe.zhixueyun.com/default/M00/0B/09/wKgLTWHvmOaEVIYcAAAAAOb9iyY340.mp4?auth_key=1643095810-0-0-abe939da948be4ccb21a475f06240ba9",
+    "size": 9707113,
+    "source": null,
+    "startOrEndFlag": null,
+    "thumbPath": null,
+    "thumbStatus": null,
+    "thumbnailId": null,
+    "thumbnailImg": null,
+    "thumbnailPath": null,
+    "translateFlag": 3,
+    "translateId": null,
+    "translateLevel": 0,
+    "translatePath": null,
+    "type": null,
+    "uploadStatus": null,
+    "url": null
+}
+
+2022-01-25 14:30:09,503 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: 'mp4' 实际值: '试题视频_1060.mp4', 断言成功!

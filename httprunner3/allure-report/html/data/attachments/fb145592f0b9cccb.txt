@@ -1,0 +1,48 @@
+2022-01-25 18:46:30.571 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : http://pre-202108-10.zhixueyun.com/api/v1/exam/question-depot
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__5162aae81b0783802661ab1b21b0a987",
+    "uri": "exam/question-depot",
+    "Content-Length": "188",
+    "Content-Type": "application/x-www-form-urlencoded"
+}
+cookies  : {}
+body     : name=%E8%AF%95%E9%A2%98%E7%9B%AE%E5%BD%952022-01-25+18%3A46%3A30&organizationId=9bcad76a-ba7e-4ace-9f92-f6e086a29cec&code=preer_1&sequence=0&state=1&authToLower=0&depotAuthToLower=1&type=1
+
+2022-01-25 18:46:30.571 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 10:46:31 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "283",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "authToLower": 0,
+    "createTime": 1643107591401,
+    "depotAuthToLower": 1,
+    "id": "9fd77df6-5d05-4278-a42c-e0f588235401",
+    "name": "试题目录2022-01-25 18:46:30",
+    "organization": null,
+    "organizationId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+    "parentId": null,
+    "parentName": null,
+    "sequence": 1,
+    "state": 1
+}
+
+2022-01-25 18:46:30,572 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：questionDepotId: 9fd77df6-5d05-4278-a42c-e0f588235401
+2022-01-25 18:46:30,572 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：questionDepotName: 试题目录2022-01-25 18:46:30
+2022-01-25 18:46:30,573 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '9bcad76a-ba7e-4ace-9f92-f6e086a29cec' 实际值: '9bcad76a-ba7e-4ace-9f92-f6e086a29cec', 断言成功!

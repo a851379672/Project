@@ -1,0 +1,3 @@
+INFO     root:data_depend.py:37 提取变量：bannersId: 1277a848-33e5-486b-9e8f-0eabe793fae7
+INFO     root:data_depend.py:37 提取变量：bannersTitle: tester广告1
+INFO     root:validate.py:76 响应断言:  预期值: '0' 实际值: '0', 断言成功!

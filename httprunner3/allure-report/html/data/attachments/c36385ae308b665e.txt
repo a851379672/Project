@@ -1,0 +1,4 @@
+INFO     root:data_depend.py:37 提取变量：danxuantiId: 0a5f175f-0b2e-4888-b75c-e0c0b82ec12e
+INFO     root:data_depend.py:37 提取变量：danxuantiName: 【单选题】试题信息2022-01-25 11:21:01
+INFO     root:data_depend.py:37 提取变量：danxuantiDifficulty: 3
+INFO     root:validate.py:76 响应断言:  预期值: '1' 实际值: '1', 断言成功!

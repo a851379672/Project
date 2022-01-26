@@ -1,0 +1,2 @@
+INFO     root:data_depend.py:37 提取变量：videoId: 0fa710d8-7f2f-478d-971f-44de0baefb0f
+INFO     root:validate.py:76 响应断言:  预期值: 'video/mp4' 实际值: 'video/mp4', 断言成功!

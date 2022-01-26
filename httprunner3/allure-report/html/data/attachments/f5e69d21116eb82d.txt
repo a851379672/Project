@@ -1,0 +1,495 @@
+2022-01-25 14:39:46.487 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/exam/exam/score-detail?examRecordId=efd44cdf-9400-41b7-9d6c-e9ee7191ad8b
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__c7fc72caf066b114b1fe7f418ac2c8f1",
+    "uri": "exam/exam"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 14:39:46.490 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:39:47 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "allowExamTimes": 1,
+    "allowSwitchTimes": 3,
+    "applicantEndTime": 1643179171000,
+    "applicantNeedAudit": 0,
+    "certificateId": null,
+    "coverId": "00ae869d-7a94-4769-ba2c-b42a3ac24223",
+    "credit": 1000,
+    "duration": 60,
+    "endTime": 1643265540000,
+    "examNotes": "请考生仔细阅读，并参照执行，如遇特殊情况，请联系监考老师或拨打客服电话。",
+    "examRecord": {
+        "currentTime": 1643092787261,
+        "id": "efd44cdf-9400-41b7-9d6c-e9ee7191ad8b",
+        "member": {
+            "fullName": "xuesheng1",
+            "id": "00f8266a-1ff2-4ab3-97e0-307621501005",
+            "name": "test_1"
+        },
+        "orderContent": null,
+        "score": 7000,
+        "status": 6
+    },
+    "examRegist": {
+        "passStatus": 0
+    },
+    "id": "35647533-ea15-4c02-bf13-db6286a05a42",
+    "isAllowAddRoom": null,
+    "isAllowPause": null,
+    "isAllowSwitch": 1,
+    "isCreditNeedPass": null,
+    "name": "【普通考试】2022-01-25 14:39:25",
+    "needFillOutInfo": 0,
+    "paper": {
+        "isSubjective": 1,
+        "questionNum": 7,
+        "questions": [
+            {
+                "answerRecord": null,
+                "content": "【单选题】试题信息2022-01-25 14:39:22<img src=\"https://test9.zhixueyun.com/default/M00/0B/09/wKgLTWHvmxuAWXmwAACACFLS5pw843.jpg\" />",
+                "difficulty": null,
+                "errorRate": 0,
+                "id": "363caf40-3dc4-4baf-ae87-0cfe88ff9c06",
+                "isSubjective": null,
+                "parentId": null,
+                "parsing": "【单选题】试题解析",
+                "parsingText": "【单选题】试题解析",
+                "questionAttrCopys": [
+                    {
+                        "createTime": null,
+                        "id": "4881853c-e218-4bd3-bd86-a03cc3244c14",
+                        "name": "0",
+                        "type": "0",
+                        "value": "A"
+                    },
+                    {
+                        "createTime": null,
+                        "id": "4af04c60-18ec-4856-885e-fdc1fce9c966",
+                        "name": "1",
+                        "type": "1",
+                        "value": "B"
+                    },
+                    {
+                        "createTime": null,
+                        "id": "7b23b2d2-5952-4f4a-8420-3dc7d4c2c34a",
+                        "name": "3",
+                        "type": "1",
+                        "value": "D"
+                    },
+                    {
+                        "createTime": null,
+                        "id": "961d8203-a269-4cc7-9b0e-5d9b59f3bfef",
+                        "name": "2",
+                        "type": "1",
+                        "value": "C"
+                    }
+                ],
+                "questionDepotId": null,
+                "rightRate": 0,
+                "score": 1000,
+                "sequence": 0,
+                "subs": null,
+                "type": 1
+            },
+            {
+                "answerRecord": {
+                    "answer": "2,3",
+                    "answerImageList": null,
+                    "id": "fec9f70c-5bde-4676-b809-6f5c2fa489b1",
+                    "isRight": 0,
+                    "score": 0
+                },
+                "content": "【多选题】试题信息2022-01-25 14:39:23<img id='preview-3fca50ed-2a1b-4084-ab0b-9ee51805a226,试题音频_1061.mp3,mp3' class='video-img' style='display:block;width:302px;height:170px;' data-type='mp3' data-name='试题音频_1061.mp3' data-id='3fca50ed-2a1b-4084-ab0b-9ee51805a226' src='https://tester1.zhixueyun.com/admin/images/preview-media.jpg' />",
+                "difficulty": null,
+                "errorRate": 0,
+                "id": "582ca170-6860-4b93-afe4-50b9f5b9925e",
+                "isSubjective": null,
+                "parentId": null,
+                "parsing": "【多选题】试题解析",
+                "parsingText": "【多选题】试题解析",
+                "questionAttrCopys": [
+                    {
+                        "createTime": null,
+                        "id": "4bdc926e-0b02-4d99-830d-79425753b549",
+                        "name": "0",
+                        "type": "0",
+                        "value": "A"
+                    },
+                    {
+                        "createTime": null,
+                        "id": "63f3eeb3-c975-4cd3-a483-03b70d0da388",
+                        "name": "1",
+                        "type": "0",
+                        "value": "B"
+                    },
+                    {
+                        "createTime": null,
+                        "id": "65948427-a13c-408a-9a02-7e4bc2c341fb",
+                        "name": "3",
+                        "type": "2",
+                        "value": "D"
+                    },
+                    {
+                        "createTime": null,
+                        "id": "765a4a74-4689-4627-b316-8af4649ad452",
+                        "name": "2",
+                        "type": "2",
+                        "value": "C"
+                    }
+                ],
+                "questionDepotId": null,
+                "rightRate": 0,
+                "score": 1000,
+                "sequence": 1,
+                "subs": null,
+                "type": 2
+            },
+            {
+                "answerRecord": {
+                    "answer": "1",
+                    "answerImageList": null,
+                    "id": "cb8dbbe8-5df0-4673-864f-9a47440712db",
+                    "isRight": 1,
+                    "score": 1000
+                },
+                "content": "【判断题】试题信息2022-01-25 14:39:24<img id='preview-3ca7e859-daf7-43ef-bc5a-f7d1776e021a,试题视频_1061.mp4,mp4' class='video-img' style='display:block;width:302px;height:170px;' data-type='mp4' data-name='试题视频_1061.mp4' data-id='3ca7e859-daf7-43ef-bc5a-f7d1776e021a' src='https://tester1.zhixueyun.com/admin/images/preview-media.jpg' />",
+                "difficulty": null,
+                "errorRate": 0,
+                "id": "623d1b41-3718-4cb2-9bee-f5a98d50554b",
+                "isSubjective": null,
+                "parentId": null,
+                "parsing": "【判断题】试题解析",
+                "parsingText": "【判断题】试题解析",
+                "questionAttrCopys": [
+                    {
+                        "createTime": null,
+                        "id": "eaed1803-eef1-442d-9b54-d105264da838",
+                        "name": "1",
+                        "type": "3",
+                        "value": "1"
+                    }
+                ],
+                "questionDepotId": null,
+                "rightRate": 0,
+                "score": 1000,
+                "sequence": 2,
+                "subs": null,
+                "type": 3
+            },
+            {
+                "answerRecord": {
+                    "answer": "0|1|2|3|",
+                    "answerImageList": null,
+                    "id": "254aaa6a-e25f-4b21-8c60-ae38bffc293f",
+                    "isRight": 1,
+                    "score": 1000
+                },
+                "content": "【排序题】试题信息2022-01-25 14:39:25",
+                "difficulty": null,
+                "errorRate": 0,
+                "id": "57e45374-46da-434e-8413-b95f3675a844",
+                "isSubjective": null,
+                "parentId": null,
+                "parsing": "【排序题】试题解析",
+                "parsingText": "【排序题】试题解析",
+                "questionAttrCopys": [
+                    {
+                        "createTime": null,
+                        "id": "4950a30c-a6b5-4882-8997-e0f92ed0a326",
+                        "name": "2",
+                        "type": "8",
+                        "value": "C"
+                    },
+                    {
+                        "createTime": null,
+                        "id": "72933f87-282e-4b56-bcaa-dfd017009fd0",
+                        "name": "0",
+                        "type": "0",
+                        "value": "0|1|2|3|"
+                    },
+                    {
+                        "createTime": null,
+                        "id": "7dd175cb-e2be-4c97-a4ca-fb5eb98808ac",
+                        "name": "0",
+                        "type": "8",
+                        "value": "A"
+                    },
+                    {
+                        "createTime": null,
+                        "id": "be5ede97-50f9-468f-a26c-c9443d1cb693",
+                        "name": "1",
+                        "type": "8",
+                        "value": "B"
+                    },
+                    {
+                        "createTime": null,
+                        "id": "ee56acec-9019-44f2-9914-cbc3c3862163",
+                        "name": "3",
+                        "type": "8",
+                        "value": "D"
+                    }
+                ],
+                "questionDepotId": null,
+                "rightRate": 0,
+                "score": 1000,
+                "sequence": 3,
+                "subs": null,
+                "type": 8
+            },
+            {
+                "answerRecord": {
+                    "answer": "填空题答案",
+                    "answerImageList": null,
+                    "id": "add50bc4-d805-41ec-b955-000bca1d6999",
+                    "isRight": 1,
+                    "score": 1000
+                },
+                "content": "【填空题】试题信息()2022-01-25 14:39:25",
+                "difficulty": null,
+                "errorRate": 0,
+                "id": "f4913390-d6b6-4b58-b856-e5f66de54e17",
+                "isSubjective": null,
+                "parentId": null,
+                "parsing": "【填空题】试题解析",
+                "parsingText": "【填空题】试题解析",
+                "questionAttrCopys": [
+                    {
+                        "createTime": null,
+                        "id": "5b0ecf5c-3054-4b32-a703-e8b31300ffc2",
+                        "name": "【填空题】试题答案",
+                        "type": "4",
+                        "value": "【填空题】试题答案"
+                    }
+                ],
+                "questionDepotId": null,
+                "rightRate": 0,
+                "score": 1000,
+                "sequence": 4,
+                "subs": null,
+                "type": 4
+            },
+            {
+                "answerRecord": {
+                    "answer": "问答题答案",
+                    "answerImageList": null,
+                    "id": "9d07efe2-b161-495e-8d7d-48d3e23c9d35",
+                    "isRight": 1,
+                    "score": 1000
+                },
+                "content": "【问答题】试题信息2022-01-25 14:39:25",
+                "difficulty": null,
+                "errorRate": 0,
+                "id": "608437e6-0d1c-43ea-a0a1-f3c911648ae8",
+                "isSubjective": null,
+                "parentId": null,
+                "parsing": "【问答题】试题解析",
+                "parsingText": "【问答题】试题解析",
+                "questionAttrCopys": [
+                    {
+                        "createTime": null,
+                        "id": "57c51063-b7b0-476d-ba7a-4be5305623ae",
+                        "name": "【问答题】参考答案",
+                        "type": "5",
+                        "value": "【问答题】参考答案"
+                    }
+                ],
+                "questionDepotId": null,
+                "rightRate": 0,
+                "score": 1000,
+                "sequence": 5,
+                "subs": null,
+                "type": 5
+            },
+            {
+                "answerRecord": null,
+                "content": "【阅读理解题】试题信息2022-01-25 14:39:25",
+                "difficulty": null,
+                "errorRate": 0,
+                "id": "4988096d-2fff-4844-a78b-9fed49c35772",
+                "isSubjective": null,
+                "parentId": null,
+                "parsing": null,
+                "parsingText": null,
+                "questionAttrCopys": null,
+                "questionDepotId": null,
+                "rightRate": 0,
+                "score": 3000,
+                "sequence": 6,
+                "subs": [
+                    {
+                        "answerRecord": {
+                            "answer": "阅读理解题-问答题答案",
+                            "answerImageList": [
+                                {
+                                    "path": "/ixrDO9ptC2K6xiO8hV36QyhtVuu9yHUZvuLUJn11de2kXnzJXrzhHtJdKqU698PBuYFnb0ZfPGAiZQuFeeJ/g==",
+                                    "attachmentId": "bb8c7afa-fea7-40d5-b81a-799bac4500ac",
+                                    "sort": 0
+                                }
+                            ],
+                            "id": "cd1812e4-45d4-404e-90ee-2dc71218fcb9",
+                            "isRight": 1,
+                            "score": 1000
+                        },
+                        "content": "【阅读理解题-问答题】试题信息",
+                        "difficulty": null,
+                        "errorRate": null,
+                        "id": "474a2555-221b-4e53-9285-e0152e506cdd",
+                        "isSubjective": null,
+                        "parentId": "4988096d-2fff-4844-a78b-9fed49c35772",
+                        "parsing": "【阅读理解题-问答题】试题解析",
+                        "parsingText": "【阅读理解题-问答题】试题解析",
+                        "questionAttrCopys": [
+                            {
+                                "createTime": null,
+                                "id": "a9a18671-8ec0-4f87-b55b-0e498d83d6d3",
+                                "name": "【阅读理解题-问答题】参考答案",
+                                "type": "5",
+                                "value": "【阅读理解题-问答题】参考答案"
+                            }
+                        ],
+                        "questionDepotId": null,
+                        "rightRate": null,
+                        "score": 1000,
+                        "type": 5
+                    },
+                    {
+                        "answerRecord": {
+                            "answer": "0",
+                            "answerImageList": null,
+                            "id": "80179b9f-951e-4613-ab24-af02149e7208",
+                            "isRight": 1,
+                            "score": 1000
+                        },
+                        "content": "【阅读理解题-单选题】试题信息",
+                        "difficulty": null,
+                        "errorRate": null,
+                        "id": "57e4f2fd-0d2f-4bb0-8004-5e78fc830d40",
+                        "isSubjective": null,
+                        "parentId": "4988096d-2fff-4844-a78b-9fed49c35772",
+                        "parsing": "【阅读理解题-单选题】试题解析",
+                        "parsingText": "【阅读理解题-单选题】试题解析",
+                        "questionAttrCopys": [
+                            {
+                                "createTime": null,
+                                "id": "82073862-44ae-468a-886d-266e9d8a3b29",
+                                "name": "3",
+                                "type": "1",
+                                "value": "D"
+                            },
+                            {
+                                "createTime": null,
+                                "id": "552ed74f-73a5-4627-a68e-e832f4a383bb",
+                                "name": "2",
+                                "type": "1",
+                                "value": "C"
+                            },
+                            {
+                                "createTime": null,
+                                "id": "18833cca-f7eb-4be2-9b10-c16dd8fb195a",
+                                "name": "0",
+                                "type": "0",
+                                "value": "A"
+                            },
+                            {
+                                "createTime": null,
+                                "id": "4d381dff-3d35-4f3f-a97b-05d64b48da8b",
+                                "name": "1",
+                                "type": "1",
+                                "value": "B"
+                            }
+                        ],
+                        "questionDepotId": null,
+                        "rightRate": null,
+                        "score": 1000,
+                        "type": 1
+                    },
+                    {
+                        "answerRecord": {
+                            "answer": "0,1",
+                            "answerImageList": null,
+                            "id": "e41ddfb9-0d3d-497c-a4db-08d390cdaeec",
+                            "isRight": 1,
+                            "score": 1000
+                        },
+                        "content": "【阅读理解题-多选题】试题信息",
+                        "difficulty": null,
+                        "errorRate": null,
+                        "id": "cfd8b716-e3ca-4c78-b3e9-33a147042e44",
+                        "isSubjective": null,
+                        "parentId": "4988096d-2fff-4844-a78b-9fed49c35772",
+                        "parsing": "【阅读理解题-多选题】试题解析",
+                        "parsingText": "【阅读理解题-多选题】试题解析",
+                        "questionAttrCopys": [
+                            {
+                                "createTime": null,
+                                "id": "c80fc61c-b6b9-4999-a0dc-7762fc26f1a5",
+                                "name": "2",
+                                "type": "2",
+                                "value": "c"
+                            },
+                            {
+                                "createTime": null,
+                                "id": "864121a5-a242-4360-852a-0e3d0f39b7ef",
+                                "name": "0",
+                                "type": "0",
+                                "value": "a"
+                            },
+                            {
+                                "createTime": null,
+                                "id": "490d81e8-46a2-4944-8552-d2ff84a53d3d",
+                                "name": "3",
+                                "type": "2",
+                                "value": "d"
+                            },
+                            {
+                                "createTime": null,
+                                "id": "8a300df5-f285-46c4-b3f0-d989970e0b8d",
+                                "name": "1",
+                                "type": "0",
+                                "value": "b"
+                            }
+                        ],
+                        "questionDepotId": null,
+                        "rightRate": null,
+                        "score": 1000,
+                        "type": 2
+                    }
+                ],
+                "type": 6
+            }
+        ],
+        "totalScore": 9000
+    },
+    "paperShowRule": 2,
+    "paperSortRule": 1,
+    "parsingViewRule": null,
+    "passScore": 54,
+    "showAnswerRule": 3,
+    "sourceType": 1,
+    "startTime": 1643092740000,
+    "supportApp": "1,2",
+    "type": 1
+}
+
+2022-01-25 14:39:46,491 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '1' 实际值: '1', 断言成功!

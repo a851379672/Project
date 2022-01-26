@@ -1,0 +1,3 @@
+INFO     root:data_depend.py:37 提取变量：tiankongid: 4d6c0cee-4286-4207-95cd-59497fb5195a
+INFO     root:data_depend.py:37 提取变量：tiankongname: <p> 题目1：() </p> <p> 题目2：() </p>
+INFO     root:validate.py:76 响应断言:  预期值: '4' 实际值: '4', 断言成功!

@@ -1,0 +1,3 @@
+INFO     root:data_depend.py:37 提取变量：panduanid: 99c695a5-3b8a-42b9-9060-aef5f0e47834
+INFO     root:data_depend.py:37 提取变量：panduanname: 试题目录2022-01-25 14:30:31-判断题1
+INFO     root:validate.py:76 响应断言:  预期值: '3' 实际值: '3', 断言成功!

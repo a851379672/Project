@@ -1,0 +1,5 @@
+INFO     root:data_depend.py:37 提取变量：exportid_1: 6e287d27-5e42-4304-af90-bae2c412ccff
+INFO     root:data_depend.py:37 提取变量：exportid_2: b53507ab-0c92-44c4-a129-274686f4b5f1
+INFO     root:validate.py:76 响应断言:  预期值: '2' 实际值: '2', 断言成功!
+INFO     root:validate.py:76 响应断言:  预期值: '36' 实际值: '36', 断言成功!
+INFO     root:validate.py:76 响应断言:  预期值: '0' 实际值: '0', 断言成功!

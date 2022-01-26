@@ -1,0 +1,188 @@
+{
+  "uid" : "1a817633ab7af3bb",
+  "name" : "【普通试题】——新增试题-新增填空题",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "0948e7021e4765e9ae6094d4c11f619f",
+  "time" : {
+    "start" : 1643080616746,
+    "stop" : 1643080616920,
+    "duration" : 174
+  },
+  "description" : "\n        :param api_data\n        :return: report_content\n        ",
+  "descriptionHtml" : "<pre><code>    :param api_data\n    :return: report_content\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "fsetup_tear_down",
+    "time" : {
+      "start" : 1643080586705,
+      "stop" : 1643080586705,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass",
+    "time" : {
+      "start" : 1643080586990,
+      "stop" : 1643080586995,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "file_fixture",
+    "time" : {
+      "start" : 1643080586697,
+      "stop" : 1643080586705,
+      "duration" : 8
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1643080586705,
+      "stop" : 1643080586990,
+      "duration" : 285
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param api_data\n        :return: report_content\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "8c9a19609c92945c",
+      "name" : "log",
+      "source" : "8c9a19609c92945c.txt",
+      "type" : "text/plain",
+      "size" : 289
+    }, {
+      "uid" : "de2e2d8cb44555f6",
+      "name" : "stderr",
+      "source" : "de2e2d8cb44555f6.txt",
+      "type" : "text/plain",
+      "size" : 2893
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "fsetup_tear_down::0",
+    "time" : {
+      "start" : 1643080642834,
+      "stop" : 1643080642840,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass::0",
+    "time" : {
+      "start" : 1643080642825,
+      "stop" : 1643080642825,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【普通试题】——新增试题-新增填空题"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "7636-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "api_data",
+    "value" : "{'name': '【普通试题】——新增试题-新增填空题', 'request': {'url': 'api/v1/exam/question', 'method': 'POST', 'headers': {'Authorization': 'Bearer__${admin_token}', 'uri': 'exam/question-depot', 'content-type': 'application/x-www-form-urlencoded; charset=UTF-8'}, 'data': {'value': [{'value': '1|2', 'name': '1|2', 'type': 4}], 'questionAttrs[0][value]': '1|2', 'questionAttrs[0][name]': '1|2', 'questionAttrs[0][type]': 4, 'content': '<p> 题目1：() </p> <p> 题目2：() </p>', 'contentText': '题目1：() 题目2：()', 'score': 1000, 'type': 4, 'questionDepotId': '${questionDepotId}', 'questionDepot[id]': '${questionDepotId}', 'questionDepot[name]': '${questionDepotName}', 'organizationId': '${organizationId}', 'organization[id]': '${organizationId}', 'organization[name]': '${organizationName}', 'parsing': '试题解析', 'parsingText': '试题解析', 'difficulty': 3, 'depotEdit': 0}}, 'extract': {'tiankongid': '$.id', 'tiankongname': '$.content'}, 'validate': [{'eq': ['$.type', '4']}], 'allure': {'allure_descrption': '【普通试题】——新增试题-新增填空题', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}"
+  } ],
+  "links" : [ {
+    "name" : "https://tester1.zhixueyun.com/api/v1/exam/question",
+    "url" : "https://tester1.zhixueyun.com/api/v1/exam/question",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1a817633ab7af3bb.json",
+  "parameterValues" : [ "{'name': '【普通试题】——新增试题-新增填空题', 'request': {'url': 'api/v1/exam/question', 'method': 'POST', 'headers': {'Authorization': 'Bearer__${admin_token}', 'uri': 'exam/question-depot', 'content-type': 'application/x-www-form-urlencoded; charset=UTF-8'}, 'data': {'value': [{'value': '1|2', 'name': '1|2', 'type': 4}], 'questionAttrs[0][value]': '1|2', 'questionAttrs[0][name]': '1|2', 'questionAttrs[0][type]': 4, 'content': '<p> 题目1：() </p> <p> 题目2：() </p>', 'contentText': '题目1：() 题目2：()', 'score': 1000, 'type': 4, 'questionDepotId': '${questionDepotId}', 'questionDepot[id]': '${questionDepotId}', 'questionDepot[name]': '${questionDepotName}', 'organizationId': '${organizationId}', 'organization[id]': '${organizationId}', 'organization[name]': '${organizationName}', 'parsing': '试题解析', 'parsingText': '试题解析', 'difficulty': 3, 'depotEdit': 0}}, 'extract': {'tiankongid': '$.id', 'tiankongname': '$.content'}, 'validate': [{'eq': ['$.type', '4']}], 'allure': {'allure_descrption': '【普通试题】——新增试题-新增填空题', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}" ]
+}

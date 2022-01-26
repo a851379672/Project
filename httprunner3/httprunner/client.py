@@ -87,7 +87,7 @@ def get_req_resp_record(resp_obj: Response) -> ReqRespData:
             response_body = resp_obj.json()
             # resp_obj.type == list
             if type(response_body) == list and response_body:
-                response_body = response_body[0]
+                response_body = response_body.__str__()
         except ValueError:
             # only record at most 512 text charactors
             resp_text = resp_obj.text

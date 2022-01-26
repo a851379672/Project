@@ -1,0 +1,2 @@
+INFO     root:data_depend.py:37 提取变量：gameId: 35aa23e8-3414-4b37-905b-d740f0a3d0bd
+INFO     root:validate.py:76 响应断言:  预期值: '0' 实际值: '0', 断言成功!

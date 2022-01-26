@@ -1,0 +1,4 @@
+INFO     root:data_depend.py:37 提取变量：paixutiId: 9d3384b2-6fa7-4763-a59d-1c78bb1ed72e
+INFO     root:data_depend.py:37 提取变量：paixutiName: 【排序题】试题信息2022-01-25 14:29:58
+INFO     root:data_depend.py:37 提取变量：paixutiDifficulty: 3
+INFO     root:validate.py:76 响应断言:  预期值: '8' 实际值: '8', 断言成功!

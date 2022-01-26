@@ -1,0 +1,255 @@
+2022-01-25 18:45:59.688 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://pre-202108-10.zhixueyun.com/api/v1/exam/exam/exam-mark-paper?examRecordId=8e589dab-2027-48b9-8984-0e318cd29cde
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__5162aae81b0783802661ab1b21b0a987",
+    "uri": "exam/exam"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 18:45:59.689 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 10:46:00 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "4367",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "allowExamTimes": 1,
+    "allowSwitchTimes": 3,
+    "anonymityMark": 0,
+    "applicantEndTime": 1643193944000,
+    "applicantNeedAudit": 0,
+    "certificateId": "4f868b1d-fbe4-40f9-b505-b37c0b41217a",
+    "coverId": "0ac13ad9-9700-43ff-88ef-c0b28ff91730",
+    "duration": 60,
+    "endTime": 1643280300000,
+    "examNotes": "请考生仔细阅读，并参照执行，如遇特殊情况，请联系监考老师或拨打客服电话。",
+    "examRecord": {
+        "id": "8e589dab-2027-48b9-8984-0e318cd29cde",
+        "member": {
+            "fullName": "学生1",
+            "id": "d2537992-353c-4b83-88a7-70a42829b74c",
+            "name": "test_1"
+        },
+        "orderContent": null
+    },
+    "id": "e46c2530-4ff7-4978-9faf-0b36369bdff6",
+    "isAllowAddRoom": null,
+    "isAllowPause": null,
+    "isAllowSwitch": 1,
+    "name": "【普通考试】2022-01-25 18:45:40",
+    "paper": {
+        "id": "dfbf026a-9e20-4712-add9-a99864864b69",
+        "questions": [
+            {
+                "answerRecord": {
+                    "answer": "填空题答案",
+                    "answerImageList": null,
+                    "id": "2dd3cb64-0c60-4e0a-8d3f-4631225069d1",
+                    "score": null
+                },
+                "content": "【填空题】试题信息()2022-01-25 18:45:40",
+                "difficulty": null,
+                "errorRate": null,
+                "id": "e0626e7d-0604-418c-840c-40c5cb7ef8b1",
+                "isSubjective": null,
+                "parentId": null,
+                "questionAttrCopys": [
+                    {
+                        "id": "1501857a-b10a-4c24-8c33-09367ee03da7",
+                        "name": "【填空题】试题答案",
+                        "type": "4",
+                        "value": "【填空题】试题答案"
+                    }
+                ],
+                "questionDepotId": null,
+                "score": 1000,
+                "sequence": 4,
+                "subs": null,
+                "type": 4
+            },
+            {
+                "answerRecord": {
+                    "answer": "问答题答案",
+                    "answerImageList": null,
+                    "id": "0725d470-c83f-43a3-91ed-78af31e231f8",
+                    "score": null
+                },
+                "content": "【问答题】试题信息2022-01-25 18:45:40",
+                "difficulty": null,
+                "errorRate": null,
+                "id": "04a5aa31-4836-4908-825c-4fb514455dd6",
+                "isSubjective": null,
+                "parentId": null,
+                "questionAttrCopys": [
+                    {
+                        "id": "ac198bee-1658-49c6-9411-931c9785e116",
+                        "name": "【问答题】参考答案",
+                        "type": "5",
+                        "value": "【问答题】参考答案"
+                    }
+                ],
+                "questionDepotId": null,
+                "score": 1000,
+                "sequence": 5,
+                "subs": null,
+                "type": 5
+            },
+            {
+                "answerRecord": null,
+                "content": "【阅读理解题】试题信息2022-01-25 18:45:40",
+                "difficulty": null,
+                "errorRate": null,
+                "id": "a598319a-22d6-4b8f-8e72-30e398240a4a",
+                "isSubjective": null,
+                "parentId": null,
+                "questionAttrCopys": null,
+                "questionDepotId": null,
+                "score": 3000,
+                "sequence": 6,
+                "subs": [
+                    {
+                        "answerRecord": {
+                            "answer": "0,1",
+                            "answerImageList": null,
+                            "id": "a211f41f-735b-4b2d-804e-b4922966e837",
+                            "score": 1000
+                        },
+                        "content": "【阅读理解题-多选题】试题信息",
+                        "difficulty": null,
+                        "errorRate": null,
+                        "id": "75dea89a-6aa5-43bd-9239-784a7b4a7e5c",
+                        "isSubjective": null,
+                        "parentId": "a598319a-22d6-4b8f-8e72-30e398240a4a",
+                        "questionAttrCopys": [
+                            {
+                                "id": "dbdead0c-3109-4bbc-a932-ef5a1c424bd8",
+                                "name": "1",
+                                "type": "0",
+                                "value": "b"
+                            },
+                            {
+                                "id": "8dfa4b8f-5c73-4d77-a73e-9a0c901c134a",
+                                "name": "3",
+                                "type": "2",
+                                "value": "d"
+                            },
+                            {
+                                "id": "b8095865-71a8-46a6-8480-4686f4a38f6d",
+                                "name": "0",
+                                "type": "0",
+                                "value": "a"
+                            },
+                            {
+                                "id": "1e0742cd-1ec6-486e-8a4f-a672fececa9c",
+                                "name": "2",
+                                "type": "2",
+                                "value": "c"
+                            }
+                        ],
+                        "questionDepotId": null,
+                        "score": 1000,
+                        "type": 2
+                    },
+                    {
+                        "answerRecord": {
+                            "answer": "0",
+                            "answerImageList": null,
+                            "id": "44374746-d9e0-4816-a38e-04300c5a198b",
+                            "score": 1000
+                        },
+                        "content": "【阅读理解题-单选题】试题信息",
+                        "difficulty": null,
+                        "errorRate": null,
+                        "id": "1ad03684-460f-48fd-b914-3ffde0de7a7b",
+                        "isSubjective": null,
+                        "parentId": "a598319a-22d6-4b8f-8e72-30e398240a4a",
+                        "questionAttrCopys": [
+                            {
+                                "id": "6c93ff61-2bda-4d36-bda3-d4cee1d10fc5",
+                                "name": "2",
+                                "type": "1",
+                                "value": "C"
+                            },
+                            {
+                                "id": "5465733b-687d-4698-a093-79bf8f9c51d4",
+                                "name": "3",
+                                "type": "1",
+                                "value": "D"
+                            },
+                            {
+                                "id": "69eaa40a-6f14-4293-a48e-2bc23fe13e7a",
+                                "name": "0",
+                                "type": "0",
+                                "value": "A"
+                            },
+                            {
+                                "id": "9c26f92c-c8d5-49cb-9ab1-a96d85f52ff0",
+                                "name": "1",
+                                "type": "1",
+                                "value": "B"
+                            }
+                        ],
+                        "questionDepotId": null,
+                        "score": 1000,
+                        "type": 1
+                    },
+                    {
+                        "answerRecord": {
+                            "answer": "阅读理解题-问答题答案",
+                            "answerImageList": [
+                                {
+                                    "path": "CfPWmy2KzFDoMtrWPlDVpfnBtn1EJxZilve+TqRs0gr+Tu0wEABSUUfO/YGBwHhKBuYFnb0ZfPGAiZQuFeeJ/g==",
+                                    "attachmentId": "65bb2e90-c4c8-4385-a02f-bb0f3c65f819",
+                                    "sort": 0
+                                }
+                            ],
+                            "id": "208323c0-67e2-4404-92fb-96740bd8a31d",
+                            "score": null
+                        },
+                        "content": "【阅读理解题-问答题】试题信息",
+                        "difficulty": null,
+                        "errorRate": null,
+                        "id": "17e60ee4-aa59-4a0c-9018-29879b87d6af",
+                        "isSubjective": null,
+                        "parentId": "a598319a-22d6-4b8f-8e72-30e398240a4a",
+                        "questionAttrCopys": [
+                            {
+                                "id": "5f005799-7f3d-4f02-b5f9-e03c0e52d6a5",
+                                "name": "【阅读理解题-问答题】参考答案",
+                                "type": "5",
+                                "value": "【阅读理解题-问答题】参考答案"
+                            }
+                        ],
+                        "questionDepotId": null,
+                        "score": 1000,
+                        "type": 5
+                    }
+                ],
+                "type": 6
+            }
+        ]
+    },
+    "paperShowRule": 2,
+    "paperSortRule": 1,
+    "passScore": 54,
+    "startTime": 1643107500000,
+    "supportApp": "1,2",
+    "type": 1
+}
+
+2022-01-25 18:45:59,689 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '1' 实际值: '1', 断言成功!

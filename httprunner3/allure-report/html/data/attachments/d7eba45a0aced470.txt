@@ -1,0 +1,37 @@
+2022-01-25 11:14:28.831 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://tester1.zhixueyun.com/api/v1/exam/question/batch-async-import
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__8282fe0727e597a9fde0b2768b3de476",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "uri": "exam/question-depot",
+    "Content-Length": "167"
+}
+cookies  : {}
+body     : fileId=7089f07d-658c-451d-9609-fcd7a51c6d8b&organizationId=cc861919-b7fb-4582-b755-48b2eb0e5203&type=1&uri=exam%2Fquestion-depot&token=8282fe0727e597a9fde0b2768b3de476
+
+2022-01-25 11:14:28.832 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:14:29 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "55",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "attachmentId": "27fbd4b0-3ac6-4b7e-b52c-09d65315b162"
+}
+
+2022-01-25 11:14:28,833 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '200' 实际值: '200', 断言成功!

@@ -1,0 +1,191 @@
+{
+  "uid" : "80bc31d4a9771264",
+  "name" : "【普通试题】——查询目录试题",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "28a76c83624768a0d930f60190109f33",
+  "time" : {
+    "start" : 1643080853691,
+    "stop" : 1643080853942,
+    "duration" : 251
+  },
+  "description" : "\n        :param api_data\n        :return: report_content\n        ",
+  "descriptionHtml" : "<pre><code>    :param api_data\n    :return: report_content\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "file_fixture",
+    "time" : {
+      "start" : 1643080808357,
+      "stop" : 1643080808364,
+      "duration" : 7
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass",
+    "time" : {
+      "start" : 1643080808619,
+      "stop" : 1643080808624,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "fsetup_tear_down",
+    "time" : {
+      "start" : 1643080808365,
+      "stop" : 1643080808365,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1643080808365,
+      "stop" : 1643080808619,
+      "duration" : 254
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param api_data\n        :return: report_content\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "349008d10ed0332",
+      "name" : "log",
+      "source" : "349008d10ed0332.txt",
+      "type" : "text/plain",
+      "size" : 3465
+    }, {
+      "uid" : "b4cfecf389e9d44b",
+      "name" : "stderr",
+      "source" : "b4cfecf389e9d44b.txt",
+      "type" : "text/plain",
+      "size" : 78994
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestClass::0",
+    "time" : {
+      "start" : 1643080876999,
+      "stop" : 1643080876999,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "fsetup_tear_down::0",
+    "time" : {
+      "start" : 1643080877005,
+      "stop" : 1643080877010,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【普通试题】——查询目录试题"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=3, reruns_delay=5)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "28248-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "api_data",
+    "value" : "{'name': '【普通试题】——查询目录试题', 'request': {'url': 'api/v1/exam/question', 'method': 'GET', 'headers': {'Authorization': 'Bearer__${admin_token}', 'uri': 'exam/question-depot'}, 'params': {'questionDepotId': '${questionDepotId}', 'questionDepot[id]': '${questionDepotId}', 'questionDepot[name]': '${questionDepotName}', 'questionDepot[path]': '${questionDepotId},', 'questionDepot[state]': 1, 'organizationId': '${organizationId}', 'organization[id]': '${organizationId}', 'organization[name]': '${organizationName}', 'organization[state]': 1, 'forbidden': 0, 'depttype': 1, 'url': 'exam/question-depot', 'depotPath': '${questionDepotId},', 'page': 1, 'pageSize': 100}}, 'extract': {'timuId1': '$.items[0].id', 'timuId2': '$.items[1].id', 'timuId3': '$.items[2].id', 'timuId4': '$.items[3].id', 'timuId5': '$.items[4].id', 'timuId6': '$.items[5].id', 'timuId7': '$.items[6].id', 'timuId8': '$.items[7].id', 'timuId9': '$.items[8].id', 'timuId10': '$.items[9].id', 'timuId11': '$.items[10].id', 'timuId12': '$.items[11].id', 'timuId13': '$.items[12].id', 'timuId14': '$.items[13].id', 'timuId15': '$.items[14].id', 'timuId16': '$.items[15].id', 'timuId17': '$.items[16].id', 'timuId18': '$.items[17].id', 'timuId19': '$.items[18].id', 'timuId20': '$.items[19].id', 'timuId21': '$.items[20].id', 'timuId22': '$.items[21].id', 'timuId23': '$.items[22].id', 'timuId24': '$.items[23].id', 'timuId25': '$.items[24].id', 'timuId26': '$.items[25].id', 'timuId27': '$.items[26].id', 'timuId28': '$.items[27].id', 'timuId29': '$.items[28].id', 'timuId30': '$.items[29].id', 'timuId31': '$.items[30].id', 'timuId32': '$.items[31].id', 'timuId33': '$.items[32].id', 'timuId34': '$.items[33].id', 'timuId35': '$.items[34].id', 'timuId36': '$.items[35].id'}, 'validate': [{'eq': ['$.recordCount', '36']}], 'allure': {'allure_descrption': '【普通试题】——查询目录试题', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}"
+  } ],
+  "links" : [ {
+    "name" : "https://tester1.zhixueyun.com/api/v1/exam/question",
+    "url" : "https://tester1.zhixueyun.com/api/v1/exam/question",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=3, reruns_delay=5)" ]
+  },
+  "source" : "80bc31d4a9771264.json",
+  "parameterValues" : [ "{'name': '【普通试题】——查询目录试题', 'request': {'url': 'api/v1/exam/question', 'method': 'GET', 'headers': {'Authorization': 'Bearer__${admin_token}', 'uri': 'exam/question-depot'}, 'params': {'questionDepotId': '${questionDepotId}', 'questionDepot[id]': '${questionDepotId}', 'questionDepot[name]': '${questionDepotName}', 'questionDepot[path]': '${questionDepotId},', 'questionDepot[state]': 1, 'organizationId': '${organizationId}', 'organization[id]': '${organizationId}', 'organization[name]': '${organizationName}', 'organization[state]': 1, 'forbidden': 0, 'depttype': 1, 'url': 'exam/question-depot', 'depotPath': '${questionDepotId},', 'page': 1, 'pageSize': 100}}, 'extract': {'timuId1': '$.items[0].id', 'timuId2': '$.items[1].id', 'timuId3': '$.items[2].id', 'timuId4': '$.items[3].id', 'timuId5': '$.items[4].id', 'timuId6': '$.items[5].id', 'timuId7': '$.items[6].id', 'timuId8': '$.items[7].id', 'timuId9': '$.items[8].id', 'timuId10': '$.items[9].id', 'timuId11': '$.items[10].id', 'timuId12': '$.items[11].id', 'timuId13': '$.items[12].id', 'timuId14': '$.items[13].id', 'timuId15': '$.items[14].id', 'timuId16': '$.items[15].id', 'timuId17': '$.items[16].id', 'timuId18': '$.items[17].id', 'timuId19': '$.items[18].id', 'timuId20': '$.items[19].id', 'timuId21': '$.items[20].id', 'timuId22': '$.items[21].id', 'timuId23': '$.items[22].id', 'timuId24': '$.items[23].id', 'timuId25': '$.items[24].id', 'timuId26': '$.items[25].id', 'timuId27': '$.items[26].id', 'timuId28': '$.items[27].id', 'timuId29': '$.items[28].id', 'timuId30': '$.items[29].id', 'timuId31': '$.items[30].id', 'timuId32': '$.items[31].id', 'timuId33': '$.items[32].id', 'timuId34': '$.items[33].id', 'timuId35': '$.items[34].id', 'timuId36': '$.items[35].id'}, 'validate': [{'eq': ['$.recordCount', '36']}], 'allure': {'allure_descrption': '【普通试题】——查询目录试题', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}" ]
+}

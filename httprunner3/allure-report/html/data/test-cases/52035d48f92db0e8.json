@@ -1,0 +1,151 @@
+{
+  "uid" : "52035d48f92db0e8",
+  "name" : "test_run[api_data124]",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "8331ef0812a08bed5e16ebc2443b0c58",
+  "time" : {
+    "start" : 1643080610471,
+    "stop" : 1643080610471,
+    "duration" : 0
+  },
+  "description" : "\n        :param api_data\n        :return: report_content\n        ",
+  "descriptionHtml" : "<pre><code>    :param api_data\n    :return: report_content\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "TypeError: replace() argument 2 must be str, not None",
+  "statusTrace" : "self = <test_case.test_case.TestClass object at 0x000001E8DD600820>\napi_data = {'allure': {'allure_descrption': '【普通考试】——考试管理-试题分析-查询答对题试题详情', 'allure_feature': '管理端', 'allure_story': '考试模块', 'allu... 1, 'examId': '${examId}', 'orderType': 0, 'page': 1, ...}, 'url': 'api/v1/exam/question-analyze/answer-summary'}, ...}\n\n    @pytest.mark.parametrize('api_data', ReadData().return_data())\n    def test_run(self, api_data):\n        \"\"\"\n        :param api_data\n        :return: report_content\n        \"\"\"\n    \n        \"\"\"数据处理\"\"\"\n>       request_data = eval(self.deal_with.replace_(api_data['request']))\n\ntest_case\\test_case.py:41: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ncommon\\data_depend.py:51: in replace_\n    replace_copy = self.get_replace(keys1, replace_copy)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <common.data_depend.DataDepend object at 0x000001E8DD947C40>\nkeys = ['admin_token', 'examId', 'rightanswer']\nreplace_data = \"{'url': 'api/v1/exam/question-analyze/answer-summary', 'method': 'GET', 'headers': {'Authorization': 'Bearer__c842270...f-9c29-0889e55a2642', 'questionCopyId': '${rightanswer}', 'answerType': 1, 'orderType': 0, 'page': 1, 'pageSize': 10}}\"\n\n    def get_replace(self, keys, replace_data):\n        \"\"\"\n        :param keys: keys\n        :param replace_data: replace_data\n        :return:\n        \"\"\"\n        for key in keys:\n            if key.startswith('$'):\n                value = self.repeatedly(key)\n                replace_data = replace_data.replace(key + '}', value.__str__())\n            elif self.in_getattr(key):\n                #   自定义方法\n                replace_data = self.definition(keys, key, replace_data)\n                break\n            else:\n                #   替换变量\n                value = self.dicts.get(key)\n>               replace_data = replace_data.replace('${' + key + '}', value)\nE               TypeError: replace() argument 2 must be str, not None\n\ncommon\\data_depend.py:82: TypeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "fsetup_tear_down",
+    "time" : {
+      "start" : 1643080586705,
+      "stop" : 1643080586705,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass",
+    "time" : {
+      "start" : 1643080586990,
+      "stop" : 1643080586995,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "file_fixture",
+    "time" : {
+      "start" : 1643080586697,
+      "stop" : 1643080586705,
+      "duration" : 8
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1643080586705,
+      "stop" : 1643080586990,
+      "duration" : 285
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "fsetup_tear_down::0",
+    "time" : {
+      "start" : 1643080642834,
+      "stop" : 1643080642840,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass::0",
+    "time" : {
+      "start" : 1643080642825,
+      "stop" : 1643080642825,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "7636-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "api_data",
+    "value" : "{'name': '【普通考试】——考试管理-试题分析-查询答对题试题详情', 'request': {'url': 'api/v1/exam/question-analyze/answer-summary', 'method': 'GET', 'headers': {'Authorization': 'Bearer__${admin_token}', 'uri': 'exam/exam'}, 'params': {'examId': '${examId}', 'questionCopyId': '${rightanswer}', 'answerType': 1, 'orderType': 0, 'page': 1, 'pageSize': 10}}, 'sql_statement': None, 'extract': None, 'validate': [{'eq': ['$.questionCopyId', '${rightanswer}']}], 'allure': {'allure_descrption': '【普通考试】——考试管理-试题分析-查询答对题试题详情', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "52035d48f92db0e8.json",
+  "parameterValues" : [ "{'name': '【普通考试】——考试管理-试题分析-查询答对题试题详情', 'request': {'url': 'api/v1/exam/question-analyze/answer-summary', 'method': 'GET', 'headers': {'Authorization': 'Bearer__${admin_token}', 'uri': 'exam/exam'}, 'params': {'examId': '${examId}', 'questionCopyId': '${rightanswer}', 'answerType': 1, 'orderType': 0, 'page': 1, 'pageSize': 10}}, 'sql_statement': None, 'extract': None, 'validate': [{'eq': ['$.questionCopyId', '${rightanswer}']}], 'allure': {'allure_descrption': '【普通考试】——考试管理-试题分析-查询答对题试题详情', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}" ]
+}

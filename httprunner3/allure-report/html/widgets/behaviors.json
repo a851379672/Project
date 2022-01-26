@@ -1,8 +1,19 @@
 {
-  "total" : 2,
+  "total" : 3,
   "items" : [ {
     "uid" : "3b7d9bcea2ac294a3ac0d4c817a698ba",
     "name" : "管理端",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "4882c88b1a8663ebc6e61bbb632c6a2c",
+    "name" : "saas",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,

@@ -3,29 +3,26 @@ import copy
 import jsonpath
 import re
 import logging
-import datetime_
+import date_time
 import lib_
+import file_depend
 
-from settings import *
 
-
-class DataDepend(object):
+class DataDepend:
 
     def __init__(self):
         self.dicts = {}
-        self.image_file = lambda x: any(x.endswith(extension)
-                                        for extension in ['.png ', '.jpg', '.jpeg', '.PNG', '.JPG', '.JPEG'])
         self.expr1 = r'\$\{(.*?)\}'
         self.expr2 = r'\$[a-z]+[+\-*/_-]+[a-z]+{\$.*?}'
-        self.expr3 = r'\$(.*?){}'
-        self.expr4 = r'\$(.*?){(.*?)}'
-        self.datetime_ = datetime_.DateTime
+        self.expr3 = r'\$(.*?){(.*?)}'
+        self.expr4 = r'\$(.*?){}'
+        self.datetime_ = date_time.DateTime
 
     def extract_(self, key, value, response, deal_with):
         """
         :param key: extract_key
         :param value: extract_value
-        :param response: response数据
+        :param response: response
         :param deal_with: deal_with
         :return: log info
         """
@@ -33,21 +30,21 @@ class DataDepend(object):
         if replace_data:
             value = replace_data
         if value.startswith('$.'):
-            try:
-                values = {key: jsonpath.jsonpath(response.json(), value)[0]}.get(key)
-                if values:
-                    self.dicts.update({key: str(values)})
-                    logging.info(f'提取变量：{key}: {values}')
-                    return values
-            except TypeError as error:
-                logging.info(f'请检查响应和jsonpath: {error}')
+            values = {key: jsonpath.jsonpath(response.json(), value)[0]}.get(key)
+            if values:
+                self.dicts.update({key: values.__str__()})
+                logging.info(f'提取变量：{key}: {values}')
+                return values
+        else:
+            self.dicts.update({key: value.__str__()})
+            logging.info(f'提取变量：{key}: {value}')
 
     def replace_(self, replace_data):
         """
         :param replace_data: replace_data
         :return: eval(build_data)
         """
-        replace_copy = copy.copy(str(replace_data))
+        replace_copy = copy.copy(replace_data.__str__())
         keys1 = re.findall(self.expr1, replace_copy)
         if keys1:
             replace_copy = self.get_replace(keys1, replace_copy)
@@ -56,11 +53,11 @@ class DataDepend(object):
             replace_copy = self.get_replace(keys2, replace_copy)
         keys3 = re.findall(self.expr3, replace_copy)
         if keys3:
-            replace_copy = self.get_replace(keys3, replace_copy)
+            for key in keys3:
+                replace_copy = self.get_replace([key[0], key[1]], replace_copy)
         keys4 = re.findall(self.expr4, replace_copy)
         if keys4:
-            for key in keys4:
-                replace_copy = self.get_replace(key, replace_copy)
+            replace_copy = self.get_replace(keys4, replace_copy)
         if replace_copy is not replace_data:
             return replace_copy
 
@@ -71,43 +68,20 @@ class DataDepend(object):
         :return:
         """
         for key in keys:
-            if self.image_file(keys[-1]):
-                #   图片加密转换
-                replace_data = self.image_depend(keys[1], key, replace_data)
-                break
             if key.startswith('$'):
-                #   获取方法集合、倒序排序
-                func_gather = re.findall(r'\$(.*?){', key)[::-1]
-                func = func_gather[1]
-                if len(func_gather) > 1:
-                    #   方法抽取及参数处理
-                    func_replace = re.findall('{(.*?)}', re.findall('{(.*?)}', key)[0] + '}')[0]
-                    objects = self.in_getattr_(func)
-                    func_params = self.getattr_(objects, func_gather[0], func_replace)
-                else:
-                    func_params = None
-                if self.in_getattr_(func):
-                    objects = self.in_getattr_(func)
-                    value = self.getattr_(objects, func, func_params)
-                else:
-                    objects = self.in_getattr_(func)
-                    value = self.getattr_(objects, key)
-                replace_data = replace_data.replace(replace_data, value.__str__())
-            elif self.in_getattr_(key):
-                objects = self.in_getattr_(key)
-                if len(keys) > 1:
-                    value = self.getattr_(objects, key, keys[1])
-                    replace_data = replace_data.replace('$' + key + '{' + keys[1] + '}', value.__str__())
-                else:
-                    value = self.getattr_(objects, key)
-                    replace_data = replace_data.replace('$' + key + '{}', value.__str__())
+                value = self.repeatedly(key)
+                replace_data = replace_data.replace(key + '}', value.__str__())
+            elif self.in_getattr(key):
+                #   自定义方法
+                replace_data = self.definition(keys, key, replace_data)
                 break
             else:
+                #   替换变量
                 value = self.dicts.get(key)
                 replace_data = replace_data.replace('${' + key + '}', value)
         return replace_data
 
-    def in_getattr_(self, func):
+    def in_getattr(self, func):
         """
         :param func: 函数
         :return: objects
@@ -116,12 +90,14 @@ class DataDepend(object):
             return self.datetime_
         elif func in dir(lib_):
             return lib_
+        elif func in dir(file_depend.FileDepend()):
+            return file_depend.FileDepend()
         else:
             return False
 
     def getattr_(self, objects, func, func_params=None):
         """
-        :param objects
+        :param objects: 对象
         :param func: 函数
         :param func_params: 参数
         :return:
@@ -135,39 +111,58 @@ class DataDepend(object):
             value = getattr(objects, func)(self)
         return value
 
-    def image_depend(self, file_name, func, replace_data):
+    def repeatedly(self, key):
         """
-        :param file_name: 文件名
-        :param func: 函数
+        数据多次处理
+        :param key: processing_key
+        :return:
+        """
+        #   获取方法集合、倒序排序
+        func_gather = re.findall(r'\$(.*?){', key)[::-1]
+        func = func_gather[1]
+        if len(func_gather) > 1:
+            #   方法抽取、参数处理
+            func_replace = re.findall('{(.*?)}', re.findall('{(.*?)}', key)[0] + '}')[0]
+            objects = self.in_getattr(func)
+            func_params = self.getattr_(objects, func_gather[0], func_replace)
+        else:
+            func_params = None
+        if self.in_getattr(func):
+            objects = self.in_getattr(func)
+            return self.getattr_(objects, func, func_params.__str__())
+        else:
+            objects = self.in_getattr(func)
+            return self.getattr_(objects, key)
+
+    def definition(self, keys, key, replace_data):
+        """
+        自定义方法
+        :param keys: processing_keys
+        :param key: processing_method
         :param replace_data: replace_data
         :return:
         """
-        file_path = os.path.join(FILE_PATH, file_name)
-        objects = self.in_getattr_(func)
-        value = self.getattr_(objects, func, open(file_path, 'rb'))
-        return replace_data.replace(r'$' + func + '{' + file_name + '}', value.__str__())
-
-
-def file_depend(request_data):
-    """
-    :param request_data: request_data
-    :return:
-    """
-    file_name = request_data['files']['file']
-    file_path = os.path.join(FILE_PATH, file_name)
-    if len(request_data['files']) == 1:
-        request_data['files'] = {'file': open(file_path, 'rb')}
-    else:
-        file_params = {key: (None, value) for key, value in request_data['files'].items() if key != 'file'}
-        file_params.update({'file': (file_name, open(file_path, 'rb'))})
-        request_data['files'] = file_params
-    return request_data['files']
+        method = keys[-1]
+        objects = self.in_getattr(key)
+        if file_depend.FileDepend().file_dispose(method) and key in dir(lib_):
+            #   图片加密转换
+            keys[1] = file_depend.FileDepend().file_dispose(keys[1])
+        if len(keys) > 1:
+            eval_replace_data = eval(replace_data).get('params') or eval(replace_data).get('data')
+            if eval_replace_data and eval_replace_data.get('fileKey') and len(eval_replace_data) == 1:
+                #   文件加密上传
+                return file_depend.file_encryption(method, replace_data, key)
+            else:
+                value = self.getattr_(objects, key, keys[1])
+                return replace_data.replace('$' + key + '{' + method + '}', value.__str__())
+        else:
+            value = self.getattr_(objects, key)
+            return replace_data.replace('$' + key + '{}', value.__str__())
 
 
 if __name__ == '__main__':
-    datadepend_ = DataDepend()
-    datadepend_.dicts['access_token'] = '123'
-    print(datadepend_.replace_("{'name': '【普通考试】-人脸识别规则', 'request': {'method': 'GET', 'headers': {'Authorizati"
-                               "on': 'Bearer__${access_token}', 'uri': None}, 'params': {'key': '$diy_time{2021, 09, +0"
-                               "2, +03, -40, 30}', 'value': '$diy_time{2021, 09, +02, +03, -40, 30}'}}, 'sql_statement'"
-                               ": None, 'extract': None, 'validate': [{'eq': ['$.status', '1']}]}"))
+    data_depend = DataDepend()
+    data_depend.dicts['admin_token'] = '123'
+    print(data_depend.replace_("{'url': 'api/v1/system/file/simple-upload-auth', 'method': 'POST', 'headers': {'Author"
+                               "ization': 'Bearer__${admin_token}', 'uri': 'exam/exam-game'}, 'data': {'picSize': 51200"
+                               "0, 'access_token': '${admin_token}', 'file': '$file_content{exam/练习图标.jpg}'}}"))

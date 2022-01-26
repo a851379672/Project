@@ -1,0 +1,188 @@
+{
+  "uid" : "926d7424dd791ec8",
+  "name" : "【普通考试】——考试答题-校验答题记录",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "a66ab87194c0fbdcf085bbc2be5a3574",
+  "time" : {
+    "start" : 1643080604854,
+    "stop" : 1643080606266,
+    "duration" : 1412
+  },
+  "description" : "\n        :param api_data\n        :return: report_content\n        ",
+  "descriptionHtml" : "<pre><code>    :param api_data\n    :return: report_content\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "fsetup_tear_down",
+    "time" : {
+      "start" : 1643080586705,
+      "stop" : 1643080586705,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass",
+    "time" : {
+      "start" : 1643080586990,
+      "stop" : 1643080586995,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "file_fixture",
+    "time" : {
+      "start" : 1643080586697,
+      "stop" : 1643080586705,
+      "duration" : 8
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1643080586705,
+      "stop" : 1643080586990,
+      "duration" : 285
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param api_data\n        :return: report_content\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a8b13537f58a4fa1",
+      "name" : "log",
+      "source" : "a8b13537f58a4fa1.txt",
+      "type" : "text/plain",
+      "size" : 3350
+    }, {
+      "uid" : "1f8f396908fb2e18",
+      "name" : "stderr",
+      "source" : "1f8f396908fb2e18.txt",
+      "type" : "text/plain",
+      "size" : 6849
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "fsetup_tear_down::0",
+    "time" : {
+      "start" : 1643080642834,
+      "stop" : 1643080642840,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass::0",
+    "time" : {
+      "start" : 1643080642825,
+      "stop" : 1643080642825,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【普通考试】——考试答题-校验答题记录"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "7636-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "api_data",
+    "value" : "{'name': '【普通考试】——考试答题-校验答题记录', 'request': {'url': 'api/v1/exam/exam/front/answer-record/v2', 'method': 'GET', 'headers': {'Authorization': 'Bearer__${student_token}'}, 'params': {'examId': '${examId}'}}, 'sql_statement': [{'danxuantiId_copy': ['SELECT f_id FROM exam.t_question_copy WHERE f_question_id = \"${danxuantiId}\"', 1]}, {'duoxuantiId_copy': ['SELECT f_id FROM exam.t_question_copy WHERE f_question_id = \"${duoxuantiId}\"', 1]}, {'panduantiId_copy': ['SELECT f_id FROM exam.t_question_copy WHERE f_question_id = \"${panduantiId}\"', 1]}, {'paixutiId_copy': ['SELECT f_id FROM exam.t_question_copy WHERE f_question_id = \"${paixutiId}\"', 1]}, {'tiankongtiId_copy': ['SELECT f_id FROM exam.t_question_copy WHERE f_question_id = \"${tiankongtiId}\"', 1]}, {'wendatiId_copy': ['SELECT f_id FROM exam.t_question_copy WHERE f_question_id = \"${wendatiId}\"', 1]}, {'yuedulijie_zitiId1_copy': ['SELECT f_id FROM exam.t_question_copy WHERE f_question_id = \"${yuedulijie_zitiId1}\"', 1]}, {'yuedulijie_zitiId2_copy': ['SELECT f_id FROM exam.t_question_copy WHERE f_question_id = \"${yuedulijie_zitiId2}\"', 1]}, {'yuedulijie_zitiId3_copy': ['SELECT f_id FROM exam.t_question_copy WHERE f_question_id = \"${yuedulijie_zitiId3}\"', 1]}], 'extract': None, 'validate': [{'eq': ['Status Code', 200]}], 'allure': {'allure_descrption': '【普通考试】——考试答题-校验答题记录', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}"
+  } ],
+  "links" : [ {
+    "name" : "https://tester1.zhixueyun.com/api/v1/exam/exam/front/answer-record/v2",
+    "url" : "https://tester1.zhixueyun.com/api/v1/exam/exam/front/answer-record/v2",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "926d7424dd791ec8.json",
+  "parameterValues" : [ "{'name': '【普通考试】——考试答题-校验答题记录', 'request': {'url': 'api/v1/exam/exam/front/answer-record/v2', 'method': 'GET', 'headers': {'Authorization': 'Bearer__${student_token}'}, 'params': {'examId': '${examId}'}}, 'sql_statement': [{'danxuantiId_copy': ['SELECT f_id FROM exam.t_question_copy WHERE f_question_id = \"${danxuantiId}\"', 1]}, {'duoxuantiId_copy': ['SELECT f_id FROM exam.t_question_copy WHERE f_question_id = \"${duoxuantiId}\"', 1]}, {'panduantiId_copy': ['SELECT f_id FROM exam.t_question_copy WHERE f_question_id = \"${panduantiId}\"', 1]}, {'paixutiId_copy': ['SELECT f_id FROM exam.t_question_copy WHERE f_question_id = \"${paixutiId}\"', 1]}, {'tiankongtiId_copy': ['SELECT f_id FROM exam.t_question_copy WHERE f_question_id = \"${tiankongtiId}\"', 1]}, {'wendatiId_copy': ['SELECT f_id FROM exam.t_question_copy WHERE f_question_id = \"${wendatiId}\"', 1]}, {'yuedulijie_zitiId1_copy': ['SELECT f_id FROM exam.t_question_copy WHERE f_question_id = \"${yuedulijie_zitiId1}\"', 1]}, {'yuedulijie_zitiId2_copy': ['SELECT f_id FROM exam.t_question_copy WHERE f_question_id = \"${yuedulijie_zitiId2}\"', 1]}, {'yuedulijie_zitiId3_copy': ['SELECT f_id FROM exam.t_question_copy WHERE f_question_id = \"${yuedulijie_zitiId3}\"', 1]}], 'extract': None, 'validate': [{'eq': ['Status Code', 200]}], 'allure': {'allure_descrption': '【普通考试】——考试答题-校验答题记录', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}" ]
+}

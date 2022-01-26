@@ -1,0 +1,2 @@
+INFO     root:validate.py:76 响应断言:  预期值: '99923beb-9630-4e57-8f0e-eaf780a48c92' 实际值: '99923beb-9630-4e57-8f0e-eaf780a48c92', 断言成功!
+INFO     root:validate.py:76 响应断言:  预期值: '2' 实际值: '2', 断言成功!

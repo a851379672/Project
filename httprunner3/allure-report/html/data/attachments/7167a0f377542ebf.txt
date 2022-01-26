@@ -1,0 +1,2 @@
+INFO     root:data_depend.py:37 提取变量：originalQuestionId: bae85cba-ced5-4e12-9695-4aeb6aba1c4d
+INFO     root:validate.py:76 响应断言:  预期值: '9bcad76a-ba7e-4ace-9f92-f6e086a29cec' 实际值: '9bcad76a-ba7e-4ace-9f92-f6e086a29cec', 断言成功!

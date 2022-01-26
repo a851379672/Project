@@ -1,0 +1,52 @@
+2022-01-25 18:45:44.799 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : http://pre-202108-10.zhixueyun.com/api/v1/exam/sign-auth
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__bd5308de3bbd763ea5274f65356a9ae9",
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "Content-Length": "95"
+}
+cookies  : {}
+body     : examId=e46c2530-4ff7-4978-9faf-0b36369bdff6&organizationId=9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+
+2022-01-25 18:45:44.799 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 10:45:45 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "460",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "signUp": {
+        "auditMember": null,
+        "auditMemberId": null,
+        "companyId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+        "createTime": 1643107545626,
+        "exam": null,
+        "examId": "e46c2530-4ff7-4978-9faf-0b36369bdff6",
+        "examRecord": null,
+        "examRegist": null,
+        "id": "40cd1409-f980-43ee-b130-8897ebddabf4",
+        "member": null,
+        "memberId": "d2537992-353c-4b83-88a7-70a42829b74c",
+        "modifyDate": null,
+        "organization": null,
+        "organizationId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+        "paperInstance": null,
+        "status": 2
+    }
+}
+
+2022-01-25 18:45:44,800 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '2' 实际值: '2', 断言成功!

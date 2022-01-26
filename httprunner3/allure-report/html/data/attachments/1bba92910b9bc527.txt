@@ -1,0 +1,32 @@
+2022-01-25 18:46:47.361 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://pre-202108-10.zhixueyun.com/api/v1/exam/exam-register/certification-list?memberId=d2537992-353c-4b83-88a7-70a42829b74c&uri=exam%2Fexam
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__5162aae81b0783802661ab1b21b0a987",
+    "uri": "exam/signup"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 18:46:47.361 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 10:46:48 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "1019",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : [{'exam': {'name': '1.11考试1'}, 'examRecord': {'startTime': 1641885355566}, 'id': '409cd07f-c99b-4b71-8020-6cbcb7c834bd', 'passStatus': 0, 'topScore': 4500}, {'exam': {'name': '【普通考试】2022-01-25 18:45:40'}, 'examRecord': {'startTime': 1643107548897}, 'id': '7c4a2d21-147f-4303-8f8e-bbf351e89668', 'passStatus': 0, 'topScore': 7000}, {'exam': {'name': '【普通考试】2022-01-25 16:37:29'}, 'examRecord': {'startTime': 1643099854584}, 'id': '9b64dc81-1189-4cce-b64e-917e2a57c531', 'passStatus': 0, 'topScore': 7000}, {'exam': {'name': '【普通考试】2022-01-25 16:59:19'}, 'examRecord': {'startTime': 1643101167629}, 'id': 'a101879a-64dc-4389-ab75-7304d94c16ec', 'passStatus': 0, 'topScore': 7000}, {'exam': {'name': '【普通考试】2022-01-25 16:45:32'}, 'examRecord': {'startTime': 1643100339876}, 'id': 'ae7807d0-0257-47fa-8754-a0196b20cd1f', 'passStatus': 0, 'topScore': 7000}, {'exam': {'name': '【普通考试】2022-01-25 16:55:15'}, 'examRecord': {'startTime': 1643100928891}, 'id': 'c2aec823-da2a-4772-a200-59463eb6207f', 'passStatus': 0, 'topScore': 7000}]
+
+2022-01-25 18:46:47,362 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '200' 实际值: '200', 断言成功!

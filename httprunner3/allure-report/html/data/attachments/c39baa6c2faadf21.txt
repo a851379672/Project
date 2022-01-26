@@ -1,0 +1,41 @@
+2022-01-25 11:13:44.914 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/system/rule-config/key?key=FACE_CONFIG
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__8282fe0727e597a9fde0b2768b3de476",
+    "uri": "exam/exam"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 11:13:44.915 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:13:45 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "446",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "desc": "对人脸识别的应用场景进行开关配置",
+    "id": "ae4291c3-6bcd-4a5b-962c-135c533a6748",
+    "key": "FACE_CONFIG",
+    "organizationId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+    "status": 1,
+    "type": 2,
+    "value": "{\"faceContrastLogin\":1,\"faceContrastLoginShow\":true,\"faceContrastSwitch\":2,\"similarity\":80,\"facePhotographSwitch\":1,\"faceContrastExamShow\":true,\"faceContrastExam\":1,\"facePhotographExamShow\":true,\"facePhotographExam\":1}"
+}
+
+2022-01-25 11:13:44,915 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '1' 实际值: '1', 断言成功!

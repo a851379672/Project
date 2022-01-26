@@ -1,0 +1,7 @@
+INFO     root:data_depend.py:37 提取变量：id: 46725e9c-1c0f-4c2a-8636-1e77733c2cb5
+INFO     root:data_depend.py:37 提取变量：attachmentId: d60b60da-d426-4310-9621-f3cdf1a2309e
+INFO     root:validate.py:78 响应断言:  预期值: '1' 实际值: 'none', 断言失败!
+INFO     root:data_depend.py:37 提取变量：id: 46725e9c-1c0f-4c2a-8636-1e77733c2cb5
+INFO     root:data_depend.py:37 提取变量：attachmentId: 4d2ba252-d9fd-4bc7-830e-d09f802484d9
+INFO     root:validate.py:76 响应断言:  预期值: '1' 实际值: '1', 断言成功!
+INFO     root:validate.py:76 响应断言:  预期值: '1' 实际值: '1', 断言成功!

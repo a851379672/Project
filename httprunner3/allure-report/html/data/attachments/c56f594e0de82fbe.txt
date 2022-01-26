@@ -1,0 +1,2 @@
+INFO     root:data_depend.py:37 提取变量：imgurl: https://prezxy9.zhixueyun.com/default/M00/00/D5/wKgLQGHv1NCAJqCSAACACFLS5pw098.jpg
+INFO     root:validate.py:76 响应断言:  预期值: '0' 实际值: '0', 断言成功!

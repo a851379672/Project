@@ -1,0 +1,2 @@
+INFO     root:data_depend.py:37 提取变量：invigilatorId: 2ba0bca6-1c7c-43be-907b-4c5ecc526919
+INFO     root:validate.py:76 响应断言:  预期值: '200' 实际值: '200', 断言成功!

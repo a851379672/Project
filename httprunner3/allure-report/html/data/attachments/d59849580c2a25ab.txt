@@ -1,0 +1,4 @@
+INFO     root:data_depend.py:37 提取变量：wendatiId: 0b20f16d-ed3c-4ef7-be1c-c9ad90f90ac7
+INFO     root:data_depend.py:37 提取变量：wendatiName: 【问答题】试题信息2022-01-25 14:29:58
+INFO     root:data_depend.py:37 提取变量：wendatiDifficulty: 3
+INFO     root:validate.py:76 响应断言:  预期值: '5' 实际值: '5', 断言成功!

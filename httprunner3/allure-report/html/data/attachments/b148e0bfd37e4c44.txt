@@ -1,0 +1,35 @@
+2022-01-25 14:39:46.945 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://tester1.zhixueyun.com/api/v1/exam/mark-config
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__c7fc72caf066b114b1fe7f418ac2c8f1",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "uri": "exam/exam",
+    "Content-Length": "383"
+}
+cookies  : {}
+body     : examId=35647533-ea15-4c02-bf13-db6286a05a42&value=%7B%27markPapers%27%3A+%5B%7B%27id%27%3A+%27f970b4b4-67ee-41d1-a1bb-322e1356e5bf%27%2C+%27markMembers%27%3A+%5B%7B%27id%27%3A+%2700f8266a-1ff2-4ab3-97e0-307621501005%27%2C+%27name%27%3A+%27xuesheng1%27%7D%5D%2C+%27name%27%3A+%27%E3%80%90%E6%99%AE%E9%80%9A%E8%80%83%E8%AF%95%E3%80%912022-01-25+14%3A39%3A25%27%7D%5D%7D&anonymityMark=1
+
+2022-01-25 14:39:46.945 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:39:47 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "328",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : [{'companyId': 'cc861919-b7fb-4582-b755-48b2eb0e5203', 'createTime': 1643092787726, 'examId': '35647533-ea15-4c02-bf13-db6286a05a42', 'id': '82ef8547-9c7b-4500-937b-f0290bf216a5', 'member': None, 'memberId': '00f8266a-1ff2-4ab3-97e0-307621501005', 'modifyDate': None, 'question': None, 'type': 1, 'typeId': 'f970b4b4-67ee-41d1-a1bb-322e1356e5bf'}]
+
+2022-01-25 14:39:46,945 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '1' 实际值: '1', 断言成功!

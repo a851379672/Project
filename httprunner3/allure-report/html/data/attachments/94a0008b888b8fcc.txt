@@ -1,0 +1,48 @@
+2022-01-25 11:28:48.811 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://tester1.zhixueyun.com/api/v1/exam/practice/base-info
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__7df5548d4af39089c6352e15e8f1a4e9",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "uri": "exam/exam-practice",
+    "Content-Length": "673"
+}
+cookies  : {}
+body     : number=18&name=%E3%80%90%E6%A8%A1%E6%8B%9F%E8%80%83%E8%AF%95%E3%80%912022-01-25+11%3A28%3A48&organizationId-text=tester&organizationId=cc861919-b7fb-4582-b755-48b2eb0e5203&publishMemberId=5f0870a7-d55d-4a31-8782-1ac8d9690efc&publishOrganizationId=cc861919-b7fb-4582-b755-48b2eb0e5203&paperTactics=%5B%7B%27questionDepotId%27%3A+%278099063f-5fd6-4ee5-8f43-cd0bb74f8e2d%27%2C+%27organizationId%27%3A+%27cc861919-b7fb-4582-b755-48b2eb0e5203%27%2C+%27questionDepot%27%3A+%7B%27id%27%3A+%278099063f-5fd6-4ee5-8f43-cd0bb74f8e2d%27%2C+%27name%27%3A+%27tester%27%7D%2C+%27amount%27%3A+%2718%27%7D%5D&practiceQuestionNum=18&ableTime=2022-01-25+11%3A28&disableTime=2022-01-26+11%3A28
+
+2022-01-25 11:28:48.812 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:28:49 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "411",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "ableTime": 1643081280000,
+    "createTime": 1643081329568,
+    "disableTime": 1643167680000,
+    "id": "7965aaa2-6822-45ff-a4fb-2a8ab81ced45",
+    "name": "【模拟考试】2022-01-25 11:28:48",
+    "organizationId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+    "practiceQuestionNum": 18,
+    "publishMemberId": "5f0870a7-d55d-4a31-8782-1ac8d9690efc",
+    "publishOrganizationId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+    "status": 0,
+    "updateTime": 1643081329568
+}
+
+2022-01-25 11:28:48,812 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：practiceId: 7965aaa2-6822-45ff-a4fb-2a8ab81ced45
+2022-01-25 11:28:48,812 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '0' 实际值: '0', 断言成功!

@@ -1,0 +1,2 @@
+INFO     root:data_depend.py:37 提取变量：section1ID: 7c1c7f18-e9d5-46e4-a717-dfbeecd60719
+INFO     root:validate.py:76 响应断言:  预期值: '0' 实际值: '0', 断言成功!

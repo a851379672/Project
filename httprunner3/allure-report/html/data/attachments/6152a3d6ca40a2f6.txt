@@ -1,0 +1,46 @@
+2022-01-25 11:14:23.366 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://tester1.zhixueyun.com/api/v1/exam/exam/copy-exam
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__8282fe0727e597a9fde0b2768b3de476",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "uri": "exam/exam",
+    "Content-Length": "43"
+}
+cookies  : {}
+body     : examId=60a410e8-6690-47fa-961b-5113d4d1dc6b
+
+2022-01-25 11:14:23.366 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:14:24 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "244",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "duration": 60,
+    "id": "1201b434-2126-4ec0-a8ac-fad0c98ab612",
+    "isOverByPassExam": null,
+    "name": "【普通考试】2022-01-25 11:13:50[复制1]",
+    "paperClassId": "5c4852e3-3b62-46bf-9c34-da773cb3acc0",
+    "paperShowRule": 2,
+    "paperSortRule": 1,
+    "passScore": 54
+}
+
+2022-01-25 11:14:23,366 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：examId_copy: 1201b434-2126-4ec0-a8ac-fad0c98ab612
+2022-01-25 11:14:23,367 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：examName_copy: 【普通考试】2022-01-25 11:13:50[复制1]
+2022-01-25 11:14:23,367 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '复制' 实际值: '【普通考试】2022-01-25 11:13:50[复制1]', 断言成功!

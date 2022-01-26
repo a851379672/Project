@@ -1,0 +1,35 @@
+2022-01-25 14:40:29.193 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/exam/paper/count?depotType=1&organizationId=cc861919-b7fb-4582-b755-48b2eb0e5203&depotPath=03d1e93b-3df8-4ab4-9dbf-a715b00d3963%2C
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__c7fc72caf066b114b1fe7f418ac2c8f1",
+    "uri": "exam/paper-library"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 14:40:29.193 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:40:29 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "11",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "count": 0
+}
+
+2022-01-25 14:40:29,193 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '0' 实际值: '0', 断言成功!

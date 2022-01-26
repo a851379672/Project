@@ -1,0 +1,3 @@
+INFO     root:data_depend.py:37 提取变量：studentId: d2537992-353c-4b83-88a7-70a42829b74c
+INFO     root:data_depend.py:37 提取变量：studentName: 学生1
+INFO     root:validate.py:76 响应断言:  预期值: 'http://pre-202108-10.zhixueyun.com' 实际值: 'http://pre-202108-10.zhixueyun.com', 断言成功!

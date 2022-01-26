@@ -1,0 +1,47 @@
+2022-01-25 11:13:51.585 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/human/file/a592d501-6f89-4ba8-a957-5576286fe5d7
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__8282fe0727e597a9fde0b2768b3de476",
+    "uri": "exam/exam"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 11:13:51.586 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:13:52 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "343",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "cloudConfigId": null,
+    "configId": "default",
+    "contentType": "video/mp4",
+    "createTime": 1643080430320,
+    "extention": "mp4",
+    "filename": "试题视频_1050.mp4",
+    "id": "a592d501-6f89-4ba8-a957-5576286fe5d7",
+    "path": "default/M00/0B/07/wKgLTWHvau6ENDQMAAAAAOb9iyY960.mp4",
+    "size": 9707113,
+    "thumbPath": null,
+    "thumbStatus": null,
+    "translateFlag": 3,
+    "translateId": null
+}
+
+2022-01-25 11:13:51,586 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: 'video/mp4' 实际值: 'video/mp4', 断言成功!

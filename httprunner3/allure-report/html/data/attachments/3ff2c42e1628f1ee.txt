@@ -1,0 +1,38 @@
+2022-01-25 11:14:10.395 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://tester1.zhixueyun.com/api/v1/exam/exam-record/front/submitPaper
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__76ba88c18f354efefc11e3817996b852",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "Content-Length": "3030"
+}
+cookies  : {}
+body     : examId=60a410e8-6690-47fa-961b-5113d4d1dc6b&examRecordId=b842256b-a38d-405e-b064-dfc094a80661&submitType=Hand&answerRecords=%5B%7B%27questionId%27%3A+%27248b236c-97c6-4271-8887-e09ee112d3a8%27%2C+%27answer%27%3A+%27%27%7D%2C+%7B%27questionId%27%3A+%27310cfaff-f212-4d83-bd14-901cbb18e67d%27%2C+%27answer%27%3A+%272%2C3%27%7D%2C+%7B%27questionId%27%3A+%27de7640b1-e9f5-4579-affe-c84a3cd6d53c%27%2C+%27answer%27%3A+%271%27%7D%2C+%7B%27questionId%27%3A+%275c46c0fc-dbb4-4251-b65b-50d1cced4f3d%27%2C+%27answer%27%3A+%270%7C1%7C2%7C3%7C%27%7D%2C+%7B%27questionId%27%3A+%27a25ee710-a443-42b1-a7e3-799160a72dbf%27%2C+%27answer%27%3A+%27%E5%A1%AB%E7%A9%BA%E9%A2%98%E7%AD%94%E6%A1%88%27%7D%2C+%7B%27questionId%27%3A+%2765befd51-ea58-4a29-ba3b-4cb12bb6a1c5%27%2C+%27answer%27%3A+%27%E9%97%AE%E7%AD%94%E9%A2%98%E7%AD%94%E6%A1%88%27%2C+%27answerImageList%27%3A+%27%27%7D%2C+%7B%27questionId%27%3A+%27ae9cbfe5-a812-472f-a6c6-bd106f62f899%27%2C+%27answer%27%3A+%270%27%7D%2C+%7B%27questionId%27%3A+%27a2e4b147-1e3f-4946-bd98-a2b221d42c3d%27%2C+%27answer%27%3A+%270%2C1%27%7D%2C+%7B%27questionId%27%3A+%2721d72ee4-fad5-40c9-a027-200c8b776ea8%27%2C+%27answer%27%3A+%27%E9%98%85%E8%AF%BB%E7%90%86%E8%A7%A3%E9%A2%98-%E9%97%AE%E7%AD%94%E9%A2%98%E7%AD%94%E6%A1%88%27%2C+%27answerImageList%27%3A+%5B%7B%27attachmentId%27%3A+%272922942c-4da1-4dca-a802-4d4d340be7ec%27%2C+%27path%27%3A+%27%2FixrDO9ptC2K6xiO8hV36UFYrnS7Yv0FwtPzvu8Oc7z5fGryWqTAP5NnPPsSDHb6BuYFnb0ZfPGAiZQuFeeJ%2Fg%3D%3D%27%2C+%27sort%27%3A+0%7D%5D%7D%5D&fullAnswerRecords=%5B%7B%27questionId%27%3A+%27248b236c-97c6-4271-8887-e09ee112d3a8%27%2C+%27answer%27%3A+%27%27%7D%2C+%7B%27questionId%27%3A+%27310cfaff-f212-4d83-bd14-901cbb18e67d%27%2C+%27answer%27%3A+%272%2C3%27%7D%2C+%7B%27questionId%27%3A+%27de7640b1-e9f5-4579-affe-c84a3cd6d53c%27%2C+%27answer%27%3A+%271%27%7D%2C+%7B%27questionId%27%3A+%275c46c0fc-dbb4-4251-b65b-50d1cced4f3d%27%2C+%27answer%27%3A+%270%7C1%7C2%7C3%7C%27%7D%2C+%7B%27questionId%27%3A+%27a25ee710-a443-42b1-a7e3-799160a72dbf%27%2C+%27answer%27%3A+%27%E5%A1%AB%E7%A9%BA%E9%A2%98%E7%AD%94%E6%A1%88%27%7D%2C+%7B%27questionId%27%3A+%2765befd51-ea58-4a29-ba3b-4cb12bb6a1c5%27%2C+%27answer%27%3A+%27%E9%97%AE%E7%AD%94%E9%A2%98%E7%AD%94%E6%A1%88%27%2C+%27answerImageList%27%3A+%27%27%7D%2C+%7B%27questionId%27%3A+%27ae9cbfe5-a812-472f-a6c6-bd106f62f899%27%2C+%27answer%27%3A+%270%27%7D%2C+%7B%27questionId%27%3A+%27a2e4b147-1e3f-4946-bd98-a2b221d42c3d%27%2C+%27answer%27%3A+%270%2C1%27%7D%2C+%7B%27questionId%27%3A+%2721d72ee4-fad5-40c9-a027-200c8b776ea8%27%2C+%27answer%27%3A+%27%E9%98%85%E8%AF%BB%E7%90%86%E8%A7%A3%E9%A2%98-%E9%97%AE%E7%AD%94%E9%A2%98%E7%AD%94%E6%A1%88%27%2C+%27answerImageList%27%3A+%5B%7B%27attachmentId%27%3A+%272922942c-4da1-4dca-a802-4d4d340be7ec%27%2C+%27path%27%3A+%27%2FixrDO9ptC2K6xiO8hV36UFYrnS7Yv0FwtPzvu8Oc7z5fGryWqTAP5NnPPsSDHb6BuYFnb0ZfPGAiZQuFeeJ%2Fg%3D%3D%27%2C+%27sort%27%3A+0%7D%5D%7D%5D&clientType=1&lastCacheTime=1643080450000&submitDetailType=2&clientVersion=Edge%2F97.0.1072.55&noAnswerCount=0&answeredCount=7&checkings=%5B%5D
+
+2022-01-25 11:14:10.396 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:14:11 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "52",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "status": 1,
+    "msg": "success",
+    "submitAnsweredCount": 7
+}
+
+2022-01-25 11:14:10,396 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: 'success' 实际值: 'success', 断言成功!

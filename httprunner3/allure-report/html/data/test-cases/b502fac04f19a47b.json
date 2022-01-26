@@ -1,0 +1,186 @@
+{
+  "uid" : "b502fac04f19a47b",
+  "name" : "【普通考试】——考试管理-证书发放-下载发放证书",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "48e49dca954194df60304190cd93b3c0",
+  "time" : {
+    "start" : 1643107575889,
+    "stop" : 1643107575969,
+    "duration" : 80
+  },
+  "description" : "\n        :param api_data\n        :return: report_content\n        ",
+  "descriptionHtml" : "<pre><code>    :param api_data\n    :return: report_content\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "TypeError: 'bool' object is not subscriptable",
+  "statusTrace" : "self = <test_case.test_case.TestClass object at 0x000001A7E4946490>\napi_data = {'allure': {'allure_descrption': '【普通考试】——考试管理-证书发放-下载发放证书', 'allure_feature': '管理端', 'allure_story': '考试模块', 'allure_...rset=UTF-8', 'uri': 'exam/exam'}, 'method': 'POST', 'url': 'api/v1/exam/certificate-record/validate-certificate'}, ...}\n\n    @pytest.mark.flaky(reruns=5, reruns_delay=5)\n    @pytest.mark.parametrize('api_data', ReadData().return_data())\n    def test_run(self, api_data):\n        \"\"\"\n        :param api_data\n        :return: report_content\n        \"\"\"\n    \n        \"\"\"数据处理\"\"\"\n        request_data = eval(self.deal_with.replace_(api_data['request']))\n        request_data['url'] = f\"{self.file['ent_url']}{request_data['url']}\"\n        if request_data.get('files'):\n            request_data['files'] = FileDepend().file_dispose(request_data['files'])\n        if request_data['headers'].get('content-type') and 'urlencoded' in request_data['headers'].get('content-type'):\n            request_data['data'] = urlencode(request_data['data'])\n        allure_(api_data, self.file['ent_url'])\n    \n        \"\"\"日志输出\"\"\"\n        response = requests.session().request(**request_data, timeout=10)\n        get_req_resp_record(response)\n    \n        \"\"\"sql执行\"\"\"\n        sql_statement = api_data.get('sql_statement')\n        if sql_statement:\n            [MysqlOperate(key, value[0]).execute_sql(value[1], self.deal_with) for sql in sql_statement\n             for key, value in sql.items()]\n    \n        \"\"\"参数提取\"\"\"\n        extract = api_data.get('extract')\n        if extract:\n            [self.deal_with.extract_(key, value, response, self.deal_with) for key, value in extract.items()]\n    \n        \"\"\"响应断言\"\"\"\n        validate = api_data.get('validate')\n        if validate:\n>           [self.validate.validate_(value[0], value[1], response, self.deal_with) for validate_dict in validate\n             for key, value in validate_dict.items()]\n\ntest_case\\test_case.py:67: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ntest_case\\test_case.py:67: in <listcomp>\n    [self.validate.validate_(value[0], value[1], response, self.deal_with) for validate_dict in validate\ncommon\\validate.py:28: in validate_\n    self.judge.handler(actual, expect, response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <common.validate.JsonPath object at 0x000001A7E26502E0>\nactual = '$.result', expect = 'true', response = <Response [422]>\n\n    def handler(self, actual, expect, response):\n        if actual.startswith('$'):\n            if re.findall(r'\\$[a-zA-Z](.*?){', actual):\n                actual = re.findall('{(.*?)}', actual)[0]\n                actual = str(jsonpath.jsonpath(response.json(), actual)[0])[:-3]\n            else:\n>               actual = jsonpath.jsonpath(response.json(), actual)[0]\nE               TypeError: 'bool' object is not subscriptable\n\ncommon\\validate.py:51: TypeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "file_fixture",
+    "time" : {
+      "start" : 1643107533441,
+      "stop" : 1643107533449,
+      "duration" : 8
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1643107533449,
+      "stop" : 1643107533754,
+      "duration" : 305
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "fsetup_tear_down",
+    "time" : {
+      "start" : 1643107533449,
+      "stop" : 1643107533449,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass",
+    "time" : {
+      "start" : 1643107533754,
+      "stop" : 1643107533760,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param api_data\n        :return: report_content\n        ",
+    "status" : "broken",
+    "statusMessage" : "TypeError: 'bool' object is not subscriptable",
+    "statusTrace" : "self = <test_case.test_case.TestClass object at 0x000001A7E4946490>\napi_data = {'allure': {'allure_descrption': '【普通考试】——考试管理-证书发放-下载发放证书', 'allure_feature': '管理端', 'allure_story': '考试模块', 'allure_...rset=UTF-8', 'uri': 'exam/exam'}, 'method': 'POST', 'url': 'api/v1/exam/certificate-record/validate-certificate'}, ...}\n\n    @pytest.mark.flaky(reruns=5, reruns_delay=5)\n    @pytest.mark.parametrize('api_data', ReadData().return_data())\n    def test_run(self, api_data):\n        \"\"\"\n        :param api_data\n        :return: report_content\n        \"\"\"\n    \n        \"\"\"数据处理\"\"\"\n        request_data = eval(self.deal_with.replace_(api_data['request']))\n        request_data['url'] = f\"{self.file['ent_url']}{request_data['url']}\"\n        if request_data.get('files'):\n            request_data['files'] = FileDepend().file_dispose(request_data['files'])\n        if request_data['headers'].get('content-type') and 'urlencoded' in request_data['headers'].get('content-type'):\n            request_data['data'] = urlencode(request_data['data'])\n        allure_(api_data, self.file['ent_url'])\n    \n        \"\"\"日志输出\"\"\"\n        response = requests.session().request(**request_data, timeout=10)\n        get_req_resp_record(response)\n    \n        \"\"\"sql执行\"\"\"\n        sql_statement = api_data.get('sql_statement')\n        if sql_statement:\n            [MysqlOperate(key, value[0]).execute_sql(value[1], self.deal_with) for sql in sql_statement\n             for key, value in sql.items()]\n    \n        \"\"\"参数提取\"\"\"\n        extract = api_data.get('extract')\n        if extract:\n            [self.deal_with.extract_(key, value, response, self.deal_with) for key, value in extract.items()]\n    \n        \"\"\"响应断言\"\"\"\n        validate = api_data.get('validate')\n        if validate:\n>           [self.validate.validate_(value[0], value[1], response, self.deal_with) for validate_dict in validate\n             for key, value in validate_dict.items()]\n\ntest_case\\test_case.py:67: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ntest_case\\test_case.py:67: in <listcomp>\n    [self.validate.validate_(value[0], value[1], response, self.deal_with) for validate_dict in validate\ncommon\\validate.py:28: in validate_\n    self.judge.handler(actual, expect, response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <common.validate.JsonPath object at 0x000001A7E26502E0>\nactual = '$.result', expect = 'true', response = <Response [422]>\n\n    def handler(self, actual, expect, response):\n        if actual.startswith('$'):\n            if re.findall(r'\\$[a-zA-Z](.*?){', actual):\n                actual = re.findall('{(.*?)}', actual)[0]\n                actual = str(jsonpath.jsonpath(response.json(), actual)[0])[:-3]\n            else:\n>               actual = jsonpath.jsonpath(response.json(), actual)[0]\nE               TypeError: 'bool' object is not subscriptable\n\ncommon\\validate.py:51: TypeError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "9a02ea3d245ee505",
+      "name" : "stderr",
+      "source" : "9a02ea3d245ee505.txt",
+      "type" : "text/plain",
+      "size" : 4788
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "fsetup_tear_down::0",
+    "time" : {
+      "start" : 1643107617789,
+      "stop" : 1643107617793,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass::0",
+    "time" : {
+      "start" : 1643107617782,
+      "stop" : 1643107617782,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【普通考试】——考试管理-证书发放-下载发放证书"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=5, reruns_delay=5)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "22048-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "http://pre-202108-10.zhixueyun.com/api/v1/exam/certificate-record/validate-certificate",
+    "url" : "http://pre-202108-10.zhixueyun.com/api/v1/exam/certificate-record/validate-certificate",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=5, reruns_delay=5)" ]
+  },
+  "source" : "b502fac04f19a47b.json",
+  "parameterValues" : [ ]
+}

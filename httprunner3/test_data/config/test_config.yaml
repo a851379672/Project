@@ -1,10 +1,10 @@
 allure:
     {
       'allure_descrption': '',
-      'allure_suite': '',
-      'allure_sub_suite': '',
-      'allure_feature': '',
-      'allure_story': ''
+      'allure_suite': 'saas',
+      'allure_sub_suite': '初始化',
+      'allure_feature': 'saas',
+      'allure_story': '登录初始化'
     }
 test:
 -   name: 【企业初始化】——admin登录初始化
@@ -13,7 +13,7 @@ test:
         method: GET
         headers:
           Authorization: Bearer__${admin_token}
-        params:
+        body:
     sql_statement:
     extract:
         organizationId: $.currentUser.organization.id,
@@ -22,6 +22,7 @@ test:
         ent_url: $.redirectUri,
         ent_name: $.websiteTitle,
         adminId: $.currentUser.id
+        adminName: $.currentUser.fullName
     validate:
         -   eq:  [$.redirectUri, '${ent_url}']
 
@@ -31,9 +32,10 @@ test:
         method: GET
         headers:
           Authorization: Bearer__${student_token}
-        params:
+        body:
     sql_statement:
     extract:
         studentId: $.currentUser.id
+        studentName: $.currentUser.fullName
     validate:
         -   eq:  [$.redirectUri, '${ent_url}']

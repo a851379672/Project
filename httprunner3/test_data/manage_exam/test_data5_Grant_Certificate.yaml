@@ -1,0 +1,299 @@
+allure:
+    {
+      'allure_descrption': '',
+      'allure_suite': '管理端',
+      'allure_sub_suite': '考试模块',
+      'allure_feature': '管理端',
+      'allure_story': '考试模块'
+    }
+test:
+-   name: 【发放证书】——查询证书发放记录
+    request:
+        url: api/v1/exam/certificate-record
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/certificate-record
+        body:
+            {
+              page: 1,
+              pageSize: 10
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【发放证书】——查询组织操作类型
+    request:
+        url: api/v1/system/grant/find-organization-operatortype
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/certificate-record
+        body:
+          {
+            uri: 'exam/certificate-record'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.${organizationId},', '0,1,2,3,4']
+
+-   name: 【发放证书】——查询考试证书类型
+    request:
+        url: api/v1/system/certificate/type-org
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/certificate-record
+        body:
+            {
+              businessType: 4,
+              organizationId: '${organizationId}'
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.isDefault', '1']
+
+-   name: 【发放证书】——查询企业考试证书
+    request:
+        url: api/v1/system/certificate/business
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/certificate-record
+        body:
+            {
+              businessType: 4,
+              organizationId: '${organizationId}'
+            }
+    sql_statement:
+    extract:
+        certificateId: $.[0].id
+    validate:
+        -   eq:  ['$.[0].isDefault', '1']
+
+-   name: 【发放证书】——查询授权组织
+    request:
+        url: api/v1/system/organization/granted-organization
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/certificate-record
+        body:
+            {
+              uri: 'exam/certificate-record',
+              supportMore: 'true',
+              status: '1'
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.[0].status,', '1']
+
+-   name: 【发放证书】——查询用户信息
+    request:
+        url: api/v1/human/member/members
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/certificate-record
+        body:
+            {
+              uri: 'exam/certificate-record',
+              organizationId: '${organizationId}',
+              status: 3,
+              page: 1,
+              pageSize: 10
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【发放证书】——查询用户数量
+    request:
+        url: api/v1/human/member/members-count
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/certificate-record
+        body:
+            {
+              uri: 'exam/certificate-record',
+              organizationId: '${organizationId}',
+              status: 3,
+              page: 1,
+              pageSize: 10
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【发放证书】——发放考试证书
+    request:
+        url: api/v1/exam/certificate-record/grant
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/certificate-record
+        body:
+            {
+              name: '考试证书$date_time{}',
+              type: 0,
+              organizationId-text: '${organizationName}',
+              organizationId: '${organizationId}',
+              memberName: '${studentName}',
+              memberId: '${studentId}',
+              certScore: 100,
+              issueTime: '$date_today{}',
+              certificateId: '${certificateId}',
+              reason: '考得不错',
+              score: 10000
+            }
+    sql_statement:
+    extract:
+        ids: $.id
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【发放证书】——查询组织路径
+    request:
+        url: api/v1/system/organization/find-path/${organizationId}
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/certificate-record
+        body:
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.name,', '${organizationName}']
+
+-   name: 【发放证书】——批量导入考试证书
+    request:
+        url: api/v1/human/file/upload-excel-file
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/certificate-record
+        body:
+        files:
+          {
+            file: 'exam/${ent_name}_证书发放导入模板.xlsx'
+          }
+    sql_statement:
+    extract:
+        fileId: $.[0].id
+    validate:
+        -   eq:  ['$.[0].filename,', 'xlsx']
+
+-   name: 【发放证书】——异步导入考试证书
+    request:
+        url: api/v1/exam/certificate-record/async-import
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/certificate-record
+        body:
+          {
+            fileId: '${fileId}',
+            token: '${admin_token}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【发放证书】——查询任务队列
+    request:
+        url: api/v1/human/export-task/find-export-tasks
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/certificate-record
+        body:
+          {
+            businessTypes: 33,
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+        id: $.items[0].id
+        attachmentId: $.items[0].attachmentId
+    validate:
+        -   eq:  ['$.items[0].failCount', '1']
+        -   eq:  ['$.items[0].successCount', '1']
+
+-   name: 【发放证书】——下载导入失败记录
+    request:
+        url: /api/v1/human/file/download
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/certificate-record
+        body:
+          {
+            access_token: '${admin_token}',
+            id: '${attachmentId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【发放证书】——删除导入记录
+    request:
+        url: api/v1/human/export-task/${id}
+        method: DELETE
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/certificate-record
+        body:
+          {
+            id: '${id}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['(.+?)', '1']
+
+-   name: 【发放证书】——下载发放证书
+    request:
+        url: api/v1/exam/certificate-record/export-exam-cert-record
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/certificate-record
+        body:
+          {
+            ids: '${ids}',
+            access_token: '${admin_token}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【发放证书】——撤回发放证书
+    request:
+        url: api/v1/exam/certificate-record/revoke
+        method: PUT
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/certificate-record
+        body:
+          {
+            ids: '${ids}',
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.ids', '${ids}']

@@ -4,7 +4,7 @@ import yaml
 from settings import *
 
 
-class ReadData(object):
+class ReadData:
 
     def __init__(self):
         """
@@ -31,7 +31,8 @@ class ReadData(object):
             num += 1
         return list_data
 
-    def data_separation(self, separation_data):
+    @staticmethod
+    def case_parameterization(separation_data):
         """
         遍历测试数据，参数化allure报告
         :param separation_data: load_data
@@ -46,6 +47,13 @@ class ReadData(object):
                 allure['allure_descrption'] = test['name']
                 test['allure'] = copy.deepcopy(allure)
                 list_data.append(test)
+                if test['request'].get('body'):
+                    if test['request']['method'] == 'GET':
+                        test['request']['params'] = test['request'].pop('body')
+                    else:
+                        test['request']['data'] = test['request'].pop('body')
+                elif test['request'].get('body') is None:
+                    del test['request']['body']
             num += 1
         return list_data
 
@@ -55,7 +63,7 @@ class ReadData(object):
         :return: test_data
         """
         load_data = self.load_data()
-        test_data = self.data_separation(load_data)
+        test_data = self.case_parameterization(load_data)
         return test_data
 
 

@@ -1,0 +1,296 @@
+{
+  "uid" : "ea71194fe6a0a8ff",
+  "name" : "【普通考试】——考试管理-试题分析-查询答错试题列表",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "942b63528a5c563925f39365f1102950",
+  "time" : {
+    "start" : 1643107586390,
+    "stop" : 1643107586461,
+    "duration" : 71
+  },
+  "description" : "\n        :param api_data\n        :return: report_content\n        ",
+  "descriptionHtml" : "<pre><code>    :param api_data\n    :return: report_content\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "file_fixture",
+    "time" : {
+      "start" : 1643107533441,
+      "stop" : 1643107533449,
+      "duration" : 8
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1643107533449,
+      "stop" : 1643107533754,
+      "duration" : 305
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "fsetup_tear_down",
+    "time" : {
+      "start" : 1643107533449,
+      "stop" : 1643107533449,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass",
+    "time" : {
+      "start" : 1643107533754,
+      "stop" : 1643107533760,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param api_data\n        :return: report_content\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "db7a8f0cc7c0726e",
+      "name" : "log",
+      "source" : "db7a8f0cc7c0726e.txt",
+      "type" : "text/plain",
+      "size" : 189
+    }, {
+      "uid" : "e7c3b93416324ed1",
+      "name" : "stderr",
+      "source" : "e7c3b93416324ed1.txt",
+      "type" : "text/plain",
+      "size" : 4099
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "fsetup_tear_down::0",
+    "time" : {
+      "start" : 1643107617789,
+      "stop" : 1643107617793,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass::0",
+    "time" : {
+      "start" : 1643107617782,
+      "stop" : 1643107617782,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【普通考试】——考试管理-试题分析-查询答错试题列表"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=5, reruns_delay=5)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "22048-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "http://pre-202108-10.zhixueyun.com/api/v1/exam/question-analyze/question-list",
+    "url" : "http://pre-202108-10.zhixueyun.com/api/v1/exam/question-analyze/question-list",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "c8996ab106c5563c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643107586390,
+        "stop" : 1643107586461,
+        "duration" : 71
+      }
+    }, {
+      "uid" : "18b6787ced2a01a7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643092793271,
+        "stop" : 1643092793414,
+        "duration" : 143
+      }
+    }, {
+      "uid" : "852206f84d524d4b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643092793271,
+        "stop" : 1643092793414,
+        "duration" : 143
+      }
+    }, {
+      "uid" : "dc81de759d646619",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643092226392,
+        "stop" : 1643092226520,
+        "duration" : 128
+      }
+    }, {
+      "uid" : "67230c56814a3bb6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643092226392,
+        "stop" : 1643092226520,
+        "duration" : 128
+      }
+    }, {
+      "uid" : "448c76e47a8a61c0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643090845954,
+        "stop" : 1643090846118,
+        "duration" : 164
+      }
+    }, {
+      "uid" : "cf9a9d74e052a395",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643090845954,
+        "stop" : 1643090846118,
+        "duration" : 164
+      }
+    }, {
+      "uid" : "82f1571b31592ba9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643080842257,
+        "stop" : 1643080842375,
+        "duration" : 118
+      }
+    }, {
+      "uid" : "ea945bac44f28964",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643080842257,
+        "stop" : 1643080842375,
+        "duration" : 118
+      }
+    }, {
+      "uid" : "258cdd0f9431cf25",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'bool' object is not subscriptable",
+      "time" : {
+        "start" : 1643080610052,
+        "stop" : 1643080610187,
+        "duration" : 135
+      }
+    }, {
+      "uid" : "10bcad737cda2e9f",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'bool' object is not subscriptable",
+      "time" : {
+        "start" : 1643080610052,
+        "stop" : 1643080610187,
+        "duration" : 135
+      }
+    }, {
+      "uid" : "40e798647c509f5b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643080459070,
+        "stop" : 1643080459233,
+        "duration" : 163
+      }
+    }, {
+      "uid" : "7e03f643c27d6e43",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643080459070,
+        "stop" : 1643080459233,
+        "duration" : 163
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=5, reruns_delay=5)" ]
+  },
+  "source" : "ea71194fe6a0a8ff.json",
+  "parameterValues" : [ ]
+}

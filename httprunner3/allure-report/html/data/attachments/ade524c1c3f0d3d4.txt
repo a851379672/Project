@@ -1,0 +1,4 @@
+INFO     root:data_depend.py:37 提取变量：panduantiId: 9790a311-e03b-4557-b93e-207830bfbbe0
+INFO     root:data_depend.py:37 提取变量：panduantiName: 【判断题】试题信息2022-01-25 14:06:57<img id='preview-0fa710d8-7f2f-478d-971f-44de0baefb0f,试题视频_1057.mp4,mp4' class='video-img' style='display:block;width:302px;height:170px;' data-type='mp4' data-name='试题视频_1057.mp4' data-id='0fa710d8-7f2f-478d-971f-44de0baefb0f' src='https://tester1.zhixueyun.com/admin/images/preview-media.jpg' />
+INFO     root:data_depend.py:37 提取变量：panduantiDifficulty: 3
+INFO     root:validate.py:76 响应断言:  预期值: '3' 实际值: '3', 断言成功!

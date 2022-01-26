@@ -1,0 +1,6 @@
+INFO     root:data_depend.py:37 提取变量：topicId1: fe627367-6445-4ca1-83da-f7664df41351
+INFO     root:data_depend.py:37 提取变量：topicId2: 41bc2946-a7b4-44af-bcff-885f9ed6bfde
+INFO     root:data_depend.py:37 提取变量：topicId3: 1ca2abfd-732e-4638-8d85-8f0a01dd3332
+INFO     root:data_depend.py:37 提取变量：topicId4: 150b6d5e-7f81-4bdf-a0e4-249d61c161fb
+INFO     root:data_depend.py:37 提取变量：topicId5: 0a25d886-cf57-48d0-83ca-209c09aa2ed1
+INFO     root:validate.py:76 响应断言:  预期值: '正式标签' 实际值: '正式标签', 断言成功!

@@ -1,0 +1,1017 @@
+allure:
+    {
+      'allure_descrption': '',
+      'allure_suite': '管理端',
+      'allure_sub_suite': '考试模块',
+      'allure_feature': '管理端',
+      'allure_story': '考试模块'
+    }
+test:
+-   name: 【普通考试】——考试管理-考试管理-触发导入记录
+    request:
+        url: api/v1/exam/exam/trigger-import-records/${examId}
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.isSuccess', 'true']
+
+-   name: 【普通考试】——考试管理-考试管理-查询当前时间
+    request:
+        url: api/v1/exam/exam/currentTime
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【普通考试】——考试管理-考试管理-查询考试人员
+    request:
+        url: api/v1/human/member/getPositionByMemberId
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam
+        body:
+          {
+            memberIds: ['${studentId}']
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.[0].fullName', '${studentName}']
+
+-   name: 【普通考试】——考试管理-考试管理-添加考生
+    request:
+        url: api/v1/exam/exam-record/add-user-to-exam
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam
+        body:
+          {
+            ids: '${adminId}',
+            examId: '${examId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.success', 'success']
+
+-   name: 【普通考试】——考试管理-考试管理-考生催办
+    request:
+        url: api/v1/exam/exam-record/urge
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam
+        body:
+          {
+            ids: '${adminId}',
+            noticeUserText: '您好，您需要参加的考试【${examName}】尚未完成，请尽快参加考试，谢谢！',
+            noticeUserContent: '您好，您需要参加的考试【${examName}】尚未完成，请尽快参加考试，谢谢！',
+            examId: '${examId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.msg', 'success']
+
+-   name: 【普通考试】——考试管理-考试管理-查询任务队列
+    request:
+        url: api/v1/human/export-task/find-export-tasks
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            businessTypes: '6,38',
+            extraParam: 'examId=${examId}',
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【普通考试】——考试管理-考试管理-学员考卷导出
+    request:
+        url: api/v1/exam/exam-record/sync-export-papers
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            businessType: 38,
+            queryParas: "{examId: '${examId}', url: 'exam/exam',businessType: 1}",
+            extraParam: 'examId=${examId}',
+            examId: '${examId}',
+            access_token: '${admin_token}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【普通考试】——考试管理-考试管理-进入评卷界面
+    request:
+        url: api/v1/exam/exam/exam-mark-paper
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            examRecordId: '${examRecordId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.type', '1']
+
+-   name: 【普通考试】——考试管理-考试管理-评卷界面-提交评卷
+    request:
+        url: api/v1/exam/exam/mark-paper-info
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam
+        body:
+          {
+            adminMark: 1,
+            examRecordId: '${examRecordId}',
+            examId: '${examId}',
+            answerRecords:
+              [
+                {
+                  questionId: '${tiankongtiId_copy_value}',
+                  score: 1000,
+                  questionCopy:{type: 4}
+                },
+                {
+                  questionId: '${wendatiId_copy_value}',
+                  score: 1000,
+                  questionCopy: {type: 5}
+                },
+                {
+                  questionId: '${yuedulijie_zitiId3_copy_value}',
+                  score: 1000,
+                  questionCopy:{type: 5}
+                }
+              ],
+            businessType: 0
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.msg', '1']
+
+-   name: 【普通考试】——考试管理-考试管理-查询考试详情
+    request:
+        url: api/v1/exam/exam/score-detail
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            examRecordId: '${examRecordId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.type', '1']
+
+-   name: 【普通考试】——考试管理-考试管理-考试详情-下载考试详情
+    request:
+        url: api/v1/exam/exam-record/download-person-paper
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            examRecordId: '${examRecordId}',
+            access_token: '${admin_token}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【普通考试】——考试管理-评卷配置-查询评卷通知模板
+    request:
+        url: api/v1/system/operation/message-template/content
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            templateCode: 'exam_mark_plan',
+            organizationId: '${organizationId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.name', '考试阅卷安排']
+
+-   name: 【普通考试】——考试管理-评卷配置-修改评卷方式
+    request:
+        url: api/v1/exam/mark-config
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam
+        body:
+          {
+            examId: '${examId}',
+            value: {markPapers:[{id: '${paperId}',markMembers: [{id: '${studentId}',name: '${studentName}'}],name: '${examName}'}]},
+            anonymityMark: 1
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.[0].type', '1']
+
+-   name: 【普通考试】——考试管理-评卷配置-评卷安排通知
+    request:
+        url: api/v1/exam/exam/mark-notice
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam
+        body:
+          {
+            noticeTeacherText: '您好，您已被安排为【${examName}】考试的评卷老师，请合理安排工作时间尽快阅卷。谢谢。',
+            noticeTeacherContent: '您好，您已被安排为【${examName}】考试的评卷老师，请合理安排工作时间尽快阅卷。谢谢。',
+            examId: '${examId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.msg', 'success']
+
+-   name: 【普通考试】——考试管理-证书发放-查询证书通知模板
+    request:
+        url: api/v1/system/operation/message-template/content
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            templateCode: 'exam_certificate_issue_auto',
+            organizationId: '${organizationId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.name', '考生获得证书通知']
+
+-   name: 【普通考试】——考试管理-证书发放-查询考生列表
+    request:
+        url: api/v1/exam/certificate-record/exam-cert
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            examId: '${examId}',
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+        registId: $.items[1].id
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【普通考试】——考试管理-证书发放-发放证书
+    request:
+        url: api/v1/exam/certificate-record/issue
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam
+        body:
+          {
+            examId: '${examId}',
+            registId: '${registId}',
+            noticeUser: 1,
+            noticeUserText: '您好，您参加的考试【${examName}】，已获得证书，敬请查看，谢谢',
+            noticeUserContent: '您好，您参加的考试【${examName}】，已获得证书，敬请查看，谢谢'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.[0].passStatus', '1']
+
+-   name: 【普通考试】——考试管理-证书发放-下载发放证书
+    request:
+        url: api/v1/exam/certificate-record/validate-certificate
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam
+        body:
+          {
+            ids: '${registId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.result', 'true']
+
+-   name: 【普通考试】——考试管理-证书发放-查询任务队列
+    request:
+        url: api/v1/human/export-task/find-export-tasks
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            businessTypes: 14,
+            extraParam: '${examId}',
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【普通考试】——考试管理-试题分析-查询未答试题列表
+    request:
+        url: api/v1/exam/question-analyze/question-list
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            examId: '${examId}',
+            orderType: 0,
+            orderField: 'unanswerCount',
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+        unanswer: $.items[0].questionCopyId
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【普通考试】——考试管理-试题分析-查询已答试题列表
+    request:
+        url: api/v1/exam/question-analyze/question-list
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            examId: '${examId}',
+            orderType: 0,
+            orderField: 'answerCount',
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+        answer: $.items[0].questionCopyId
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【普通考试】——考试管理-试题分析-查询答错试题列表
+    request:
+        url: api/v1/exam/question-analyze/question-list
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            examId: '${examId}',
+            orderType: 0,
+            orderField: 'errorCount',
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+        erroranswer: $.items[0].questionCopyId
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【普通考试】——考试管理-试题分析-查询答对试题列表
+    request:
+        url: api/v1/exam/question-analyze/question-list
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            examId: '${examId}',
+            orderType: 0,
+            orderField: 'rightCount',
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+        rightanswer: $.items[0].questionCopyId
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【普通考试】——考试管理-试题分析-查询未答题试题详情
+    request:
+        url: api/v1/exam/question-analyze/answer-summary
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            examId: '${examId}',
+            questionCopyId: '${unanswer}',
+            answerType: 3,
+            orderType: 0,
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.questionCopyId', '${unanswer}']
+
+-   name: 【普通考试】——考试管理-试题分析-查询已答题试题详情
+    request:
+        url: api/v1/exam/question-analyze/answer-summary
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            examId: '${examId}',
+            questionCopyId: '${answer}',
+            answerType: 2,
+            orderType: 0,
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.questionCopyId', '${answer}']
+
+-   name: 【普通考试】——考试管理-试题分析-查询答错题试题详情
+    request:
+        url: api/v1/exam/question-analyze/answer-summary
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            examId: '${examId}',
+            questionCopyId: '${erroranswer}',
+            answerType: 0,
+            orderType: 0,
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.questionCopyId', '${erroranswer}']
+
+-   name: 【普通考试】——考试管理-试题分析-查询答对题试题详情
+    request:
+        url: api/v1/exam/question-analyze/answer-summary
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            examId: '${examId}',
+            questionCopyId: '${rightanswer}',
+            answerType: 1,
+            orderType: 0,
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.questionCopyId', '${rightanswer}']
+
+-   name: 【普通考试】——考试管理-试题分析-试题分析导出
+    request:
+        url: api/v1/exam/question-analyze/sync-export
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            businessType: 8,
+            extraParam: '${examId}',
+            queryParas: "{examId: '${examId}',orderType: 0,orderField: 'answerCount'}",
+            access_token: '${admin_token}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【普通考试】——考试管理-试题分析-查询任务队列
+    request:
+        url: api/v1/human/export-task/find-export-tasks
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            businessTypes: 8,
+            extraParam: '${examId}',
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【普通考试】——考试管理-试卷分析-查询试题列表
+    request:
+        url: api/v1/exam/question-analyze/question-summary-list
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            examId: '${examId}',
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【普通考试】——考试管理-试卷分析-查询多选题答题详情
+    request:
+        url: api/v1/exam/question-analyze/student-attr-list
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            questionCopyId: '${duoxuantiId_copy_value}',
+            examId: '${examId}',
+            attr: 2,
+            orderType: 0,
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【普通考试】——考试管理-试卷分析-查询判断题答题详情
+    request:
+        url: api/v1/exam/question-analyze/student-attr-list
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            questionCopyId: '${panduantiId_copy_value}',
+            examId: '${examId}',
+            attr: 1,
+            orderType: 0,
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【普通考试】——考试管理-试卷分析-查询排序题答题详情
+    request:
+        url: api/v1/exam/question-analyze/student-attr-list
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            questionCopyId: '${paixutiId_copy_value}',
+            examId: '${examId}',
+            attr: '0|1|2|3|',
+            orderType: 0,
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【普通考试】——考试管理-试卷分析-查询填空题答题详情
+    request:
+        url: api/v1/exam/question-analyze/student-attr-list
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            questionCopyId: '${tiankongtiId_copy_value}',
+            examId: '${examId}',
+            attr: 0,
+            orderType: 0,
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【普通考试】——考试管理-试卷分析-查询问答题答题详情
+    request:
+        url: api/v1/exam/question-analyze/student-attr-list
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            questionCopyId: '${wendatiId_copy_value}',
+            examId: '${examId}',
+            attr: 0,
+            orderType: 0,
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【普通考试】——考试管理-试卷分析-查询阅读理解题-单选题答题详情
+    request:
+        url: api/v1/exam/question-analyze/student-attr-list
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            questionCopyId: '${yuedulijie_zitiId1_copy_value}',
+            examId: '${examId}',
+            attr: 0,
+            orderType: 0,
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【普通考试】——考试管理-试卷分析-查询阅读理解题-多选题答题详情
+    request:
+        url: api/v1/exam/question-analyze/student-attr-list
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            questionCopyId: '${yuedulijie_zitiId2_copy_value}',
+            examId: '${examId}',
+            attr: 0,
+            orderType: 0,
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【普通考试】——考试管理-试卷分析-查询阅读理解题-问答题答题详情
+    request:
+        url: api/v1/exam/question-analyze/student-attr-list
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            questionCopyId: '${yuedulijie_zitiId3_copy_value}',
+            examId: '${examId}',
+            attr: 0,
+            orderType: 0,
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【普通考试】——考试管理-试卷分析-试卷分析导出
+    request:
+        url: api/v1/exam/question-analyze/paper-analyze-sync-export
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            businessType: 110,
+            extraParam: '${examId}',
+            queryParas: "{examId: '${examId}'}",
+            access_token: '${admin_token}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【普通考试】——考试管理-试卷分析-查询任务队列
+    request:
+        url: api/v1/human/export-task/find-export-tasks
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            businessTypes: 110,
+            extraParam: '${examId}',
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【普通考试】——考试管理-异常管理-查询异常记录
+    request:
+        url: api/v1/exam/exam-import-record/exam-error-record
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            examId: '${examId}',
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.recordCount', '1']
+
+-   name: 【普通考试】——考试管理-异常管理-查询断网记录
+    request:
+        url: api/v1/exam/exam-record/netstats
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            clientType: 1,
+            userId: '${studentId}',
+            examId: '${examId}',
+            examRecordId: '${examRecordId}',
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.recordCount', '1']
+
+-   name: 【普通考试】——考试管理-异常管理-查询答题保存记录
+    request:
+        url: api/v1/exam/exam-import-record/exam-record
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            examId: '${examId}',
+            examRecordId: '${examRecordId}',
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.recordCount', '1']
+
+-   name: 【普通考试】——考试管理-人脸采集-查询人脸对比记录
+    request:
+        url: api/v1/exam/face
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            examId: '${examId}',
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.recordCount', '1']
+
+-   name: 【普通考试】——考试管理-人脸采集-查询人脸对比详情
+    request:
+        url: api/v1/exam/face/detail
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            examId: '${examId}',
+            memberId: '${studentId}',
+            examRecordId: '${examRecordId}',
+            index: 1
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.recordCount', '1']
+
+-   name: 【普通考试】——考试管理-修改考试时间
+    request:
+        url: api/v1/exam/exam/change-time/${examId}
+        method: PUT
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam
+        body:
+          {
+            id: '${examId}',
+            applicantEndTime: '$diy_time{*, *, *, *, *}',
+            endTime: '$diy_time{*, *, *, *, *}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.id', '${examId}']
+
+-   name: 【普通考试】——考试管理-考试管理-新增补考-生成补考试卷
+    request:
+        url: api/v1/exam/exam/make-up/${examId}
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.type', '1']
+
+-   name: 【普通考试】——考试管理-考试管理-查询考试记录
+    request:
+        url: api/v1/exam/exam-record
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            examId: '${examId}',
+            url: 'exam/exam',
+            businessType: 0,
+            page: 1,
+            pageSize: 10,
+            access_token: '${admin_token}'
+          }
+    sql_statement:
+    extract:
+      admin_examrecord: $.items[1].id
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【普通考试】——考试管理-考试管理-考生删除
+    request:
+        url: api/v1/exam/exam-record/${admin_examrecord}
+        method: DELETE
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam
+        body:
+          {
+            id: '${admin_examrecord}',
+            memberName: '${adminName}',
+            examName: '${examName}',
+            status: 0
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.id', '${admin_examrecord}']
+
+-   name: 【普通考试】——复制已有考试
+    request:
+        url: api/v1/exam/exam/copy-exam
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam
+        body:
+          {
+            examId: '${examId}'
+          }
+    sql_statement:
+    extract:
+        examId_copy: $.id
+        examName_copy: $.name
+    validate:
+        -   eq:  ['$.name', '复制']
+
+-   name: 【普通考试】——删除复制考试
+    request:
+        url: api/v1/exam/exam/${examId_copy}
+        method: DELETE
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam
+        body:
+          {
+            id: '${examId_copy}',
+            name: '${examName_copy}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.id', '${examId_copy}']
+
+-   name: 【普通考试】——导出考试试卷
+    request:
+        url: api/v1/exam/paper/export
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam
+        body:
+          {
+            paperId: '${paperId}',
+            name: '${examName}',
+            access_token: '${admin_token}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]

@@ -1,0 +1,35 @@
+2022-01-25 11:14:29.011 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://tester1.zhixueyun.com/api/v1/human/file/upload-excel-file
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__8282fe0727e597a9fde0b2768b3de476",
+    "Content-Length": "13215",
+    "Content-Type": "multipart/form-data; boundary=00f7a61604f61d4b3ba749dc1582dec2"
+}
+cookies  : {}
+body     : upload file stream (OMITTED)
+
+2022-01-25 11:14:29.012 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:14:29 GMT",
+    "Content-Type": "text/html;charset=UTF-8",
+    "Content-Length": "223",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : text/html;charset=UTF-8
+body     : [{'contentType': None, 'createTime': 1643080469764, 'filename': 'tester_试题批量更新模板_1053.xlsx', 'id': '5b21c816-510e-4664-a84f-6d248050fc1d', 'path': 'default/M00/0B/08/wKgLTWHvaxWAF7YxAAAy7j-5gaQ98.xlsx', 'size': 13038}]
+
+2022-01-25 11:14:29,012 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：fileid_2: 5b21c816-510e-4664-a84f-6d248050fc1d
+2022-01-25 11:14:29,012 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '13038' 实际值: '13038', 断言成功!

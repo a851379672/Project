@@ -1,0 +1,37 @@
+2022-01-25 14:30:18.462 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://tester1.zhixueyun.com/api/v1/exam/exam-record/urge
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__913d806a4e52a41790dc2c97e3f00bb4",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "uri": "exam/exam",
+    "Content-Length": "795"
+}
+cookies  : {}
+body     : ids=5f0870a7-d55d-4a31-8782-1ac8d9690efc&noticeUserText=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%82%A8%E9%9C%80%E8%A6%81%E5%8F%82%E5%8A%A0%E7%9A%84%E8%80%83%E8%AF%95%E3%80%90%E3%80%90%E6%99%AE%E9%80%9A%E8%80%83%E8%AF%95%E3%80%912022-01-25+14%3A29%3A58%E3%80%91%E5%B0%9A%E6%9C%AA%E5%AE%8C%E6%88%90%EF%BC%8C%E8%AF%B7%E5%B0%BD%E5%BF%AB%E5%8F%82%E5%8A%A0%E8%80%83%E8%AF%95%EF%BC%8C%E8%B0%A2%E8%B0%A2%EF%BC%81&noticeUserContent=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%82%A8%E9%9C%80%E8%A6%81%E5%8F%82%E5%8A%A0%E7%9A%84%E8%80%83%E8%AF%95%E3%80%90%E3%80%90%E6%99%AE%E9%80%9A%E8%80%83%E8%AF%95%E3%80%912022-01-25+14%3A29%3A58%E3%80%91%E5%B0%9A%E6%9C%AA%E5%AE%8C%E6%88%90%EF%BC%8C%E8%AF%B7%E5%B0%BD%E5%BF%AB%E5%8F%82%E5%8A%A0%E8%80%83%E8%AF%95%EF%BC%8C%E8%B0%A2%E8%B0%A2%EF%BC%81&examId=101b3285-04a6-481c-a8c3-766fcf7c8838
+
+2022-01-25 14:30:18.463 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:30:19 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "17",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "msg": "success"
+}
+
+2022-01-25 14:30:18,463 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: 'success' 实际值: 'success', 断言成功!

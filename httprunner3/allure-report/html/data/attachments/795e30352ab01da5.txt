@@ -1,0 +1,2 @@
+INFO     root:data_depend.py:37 提取变量：imgurl: default/M00/00/D5/wKgLQGHv1NqANiebAAWWMgv_LzE169.jpg
+INFO     root:validate.py:76 响应断言:  预期值: 'success' 实际值: 'success', 断言成功!

@@ -1,0 +1,346 @@
+2022-01-25 18:41:25.573 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://pre-202108-10.zhixueyun.com/api/v1/exam/exam?menuType=3&page=1&pageSize=10
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__85e43964274f4735315f924b26fc2818",
+    "uri": "exam/exam"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 18:41:25.574 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 10:41:26 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "6392",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "items": [
+        {
+            "applicantNumber": 1,
+            "duration": 60,
+            "endTime": 1643276700000,
+            "examNotes": null,
+            "id": "b89efa2b-2e35-4f5a-b39e-e6a4198d989b",
+            "isMakeUp": 0,
+            "joinNumber": 0,
+            "makeUpCount": null,
+            "name": "【监考/报名考试】2022-01-25 17:45:43",
+            "needApplicant": 1,
+            "organization": {
+                "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "name": "preer",
+                "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+            },
+            "paperClass": {
+                "associatedState": null,
+                "id": "5a5b7c7b-4fa1-4d0a-8bd7-16efc40d4c49",
+                "type": 2
+            },
+            "paperClassId": "5a5b7c7b-4fa1-4d0a-8bd7-16efc40d4c49",
+            "paperShowRule": 2,
+            "paperSortRule": 1,
+            "passPercent": null,
+            "previousStatus": null,
+            "showHidden": 0,
+            "startTime": 1643103900000,
+            "status": 5,
+            "type": 1
+        },
+        {
+            "applicantNumber": 1,
+            "duration": 60,
+            "endTime": 1643276700000,
+            "examNotes": null,
+            "id": "91b80839-e6b4-4ef0-8627-a1b4aa96c170",
+            "isMakeUp": 0,
+            "joinNumber": 0,
+            "makeUpCount": null,
+            "name": "【监考/报名考试】2022-01-25 17:45:08",
+            "needApplicant": 1,
+            "organization": {
+                "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "name": "preer",
+                "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+            },
+            "paperClass": {
+                "associatedState": null,
+                "id": "1d028d15-3f80-4b16-b564-0f98e98574be",
+                "type": 2
+            },
+            "paperClassId": "1d028d15-3f80-4b16-b564-0f98e98574be",
+            "paperShowRule": 2,
+            "paperSortRule": 1,
+            "passPercent": null,
+            "previousStatus": null,
+            "showHidden": 0,
+            "startTime": 1643103900000,
+            "status": 5,
+            "type": 1
+        },
+        {
+            "applicantNumber": 1,
+            "duration": 60,
+            "endTime": 1643101200000,
+            "examNotes": null,
+            "id": "8a17aeb7-8efa-4267-9d8f-668d48eacef2",
+            "isMakeUp": 0,
+            "joinNumber": 1,
+            "makeUpCount": null,
+            "name": "【普通考试】2022-01-25 16:59:19",
+            "needApplicant": 1,
+            "organization": {
+                "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "name": "preer",
+                "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+            },
+            "paperClass": {
+                "associatedState": null,
+                "id": "ab6a289a-d6f1-45e5-8793-dd7c99c9e3a5",
+                "type": 2
+            },
+            "paperClassId": "ab6a289a-d6f1-45e5-8793-dd7c99c9e3a5",
+            "paperShowRule": 2,
+            "paperSortRule": 1,
+            "passPercent": null,
+            "previousStatus": null,
+            "showHidden": 0,
+            "startTime": 1643101140000,
+            "status": 6,
+            "type": 1
+        },
+        {
+            "applicantNumber": 1,
+            "duration": 60,
+            "endTime": 1643100960000,
+            "examNotes": null,
+            "id": "eca0e888-4dc5-4f62-8802-0db67d5ed6b8",
+            "isMakeUp": 0,
+            "joinNumber": 1,
+            "makeUpCount": null,
+            "name": "【普通考试】2022-01-25 16:55:15",
+            "needApplicant": 1,
+            "organization": {
+                "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "name": "preer",
+                "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+            },
+            "paperClass": {
+                "associatedState": null,
+                "id": "f8e59ee7-7e69-4700-a087-5f48fe5c2e2c",
+                "type": 2
+            },
+            "paperClassId": "f8e59ee7-7e69-4700-a087-5f48fe5c2e2c",
+            "paperShowRule": 2,
+            "paperSortRule": 1,
+            "passPercent": null,
+            "previousStatus": null,
+            "showHidden": 0,
+            "startTime": 1643100900000,
+            "status": 6,
+            "type": 1
+        },
+        {
+            "applicantNumber": 1,
+            "duration": 60,
+            "endTime": 1643100360000,
+            "examNotes": null,
+            "id": "518d59a3-2389-4343-bd3b-98f76b87f693",
+            "isMakeUp": 0,
+            "joinNumber": 1,
+            "makeUpCount": null,
+            "name": "【普通考试】2022-01-25 16:45:32",
+            "needApplicant": 1,
+            "organization": {
+                "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "name": "preer",
+                "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+            },
+            "paperClass": {
+                "associatedState": null,
+                "id": "2eaa8ff4-17c5-4894-a1bb-37147ab4b64f",
+                "type": 2
+            },
+            "paperClassId": "2eaa8ff4-17c5-4894-a1bb-37147ab4b64f",
+            "paperShowRule": 2,
+            "paperSortRule": 1,
+            "passPercent": null,
+            "previousStatus": null,
+            "showHidden": 0,
+            "startTime": 1643100300000,
+            "status": 6,
+            "type": 1
+        },
+        {
+            "applicantNumber": 1,
+            "duration": 60,
+            "endTime": 1643100000000,
+            "examNotes": null,
+            "id": "14936f50-c9fe-44f7-9ae5-6f00551b98d0",
+            "isMakeUp": 0,
+            "joinNumber": 1,
+            "makeUpCount": null,
+            "name": "【普通考试】2022-01-25 16:37:29",
+            "needApplicant": 1,
+            "organization": {
+                "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "name": "preer",
+                "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+            },
+            "paperClass": {
+                "associatedState": null,
+                "id": "0fe957f1-53be-45c7-af5a-83ef0d84828d",
+                "type": 2
+            },
+            "paperClassId": "0fe957f1-53be-45c7-af5a-83ef0d84828d",
+            "paperShowRule": 2,
+            "paperSortRule": 1,
+            "passPercent": null,
+            "previousStatus": null,
+            "showHidden": 0,
+            "startTime": 1643099820000,
+            "status": 6,
+            "type": 1
+        },
+        {
+            "applicantNumber": null,
+            "duration": 60,
+            "endTime": 1643272200000,
+            "examNotes": null,
+            "id": "55577c58-25e6-460a-93b8-f813df7171e2",
+            "isMakeUp": 0,
+            "joinNumber": 0,
+            "makeUpCount": null,
+            "name": "【普通考试】2022-01-25 16:29:07",
+            "needApplicant": 1,
+            "organization": {
+                "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "name": "preer",
+                "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+            },
+            "paperClass": {
+                "associatedState": null,
+                "id": "c0f161c7-4493-452b-b5e4-75e6b9bc7e0b",
+                "type": 2
+            },
+            "paperClassId": "c0f161c7-4493-452b-b5e4-75e6b9bc7e0b",
+            "paperShowRule": 2,
+            "paperSortRule": 1,
+            "passPercent": null,
+            "previousStatus": null,
+            "showHidden": 0,
+            "startTime": 1643099400000,
+            "status": 5,
+            "type": 1
+        },
+        {
+            "applicantNumber": null,
+            "duration": 60,
+            "endTime": 1643267520000,
+            "examNotes": null,
+            "id": "8f220b7c-27fb-474a-b239-fc75a39794cf",
+            "isMakeUp": 0,
+            "joinNumber": 0,
+            "makeUpCount": null,
+            "name": "【普通考试】2022-01-25 15:11:47",
+            "needApplicant": 1,
+            "organization": {
+                "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "name": "preer",
+                "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+            },
+            "paperClass": {
+                "associatedState": null,
+                "id": "33d4f53a-292e-4a34-8daa-305f62a22157",
+                "type": 2
+            },
+            "paperClassId": "33d4f53a-292e-4a34-8daa-305f62a22157",
+            "paperShowRule": 2,
+            "paperSortRule": 1,
+            "passPercent": null,
+            "previousStatus": null,
+            "showHidden": 0,
+            "startTime": 1643094720000,
+            "status": 5,
+            "type": 1
+        },
+        {
+            "applicantNumber": null,
+            "duration": 60,
+            "endTime": 1643592600000,
+            "examNotes": null,
+            "id": "11a2a03f-e41c-4d6f-84aa-91f6c20505f3",
+            "isMakeUp": 0,
+            "joinNumber": 1,
+            "makeUpCount": null,
+            "name": "11.2考试2",
+            "needApplicant": 0,
+            "organization": {
+                "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "name": "preer",
+                "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+            },
+            "paperClass": {
+                "associatedState": null,
+                "id": "95821d55-ac14-4773-a0b4-23e946e81cc2",
+                "type": 2
+            },
+            "paperClassId": "95821d55-ac14-4773-a0b4-23e946e81cc2",
+            "paperShowRule": 2,
+            "paperSortRule": 1,
+            "passPercent": null,
+            "previousStatus": null,
+            "showHidden": 0,
+            "startTime": 1641886800000,
+            "status": 5,
+            "type": 1
+        },
+        {
+            "applicantNumber": null,
+            "duration": 60,
+            "endTime": 1642123800000,
+            "examNotes": null,
+            "id": "b276bad9-8f70-42b3-bd63-8d677557274f",
+            "isMakeUp": 0,
+            "joinNumber": 2,
+            "makeUpCount": null,
+            "name": "1.11考试1",
+            "needApplicant": 0,
+            "organization": {
+                "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "name": "preer",
+                "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+            },
+            "paperClass": {
+                "associatedState": null,
+                "id": "eda62306-2ba1-47ac-b67f-a4f943ff2e1b",
+                "type": 2
+            },
+            "paperClassId": "eda62306-2ba1-47ac-b67f-a4f943ff2e1b",
+            "paperShowRule": 2,
+            "paperSortRule": 1,
+            "passPercent": null,
+            "previousStatus": null,
+            "showHidden": 0,
+            "startTime": 1641862800000,
+            "status": 6,
+            "type": 1
+        }
+    ],
+    "recordCount": 10
+}
+
+2022-01-25 18:41:25,574 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '200' 实际值: '200', 断言成功!

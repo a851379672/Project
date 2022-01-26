@@ -1,0 +1,3 @@
+INFO     root:data_depend.py:37 提取变量：coverId: a57778f7-fa1a-4cf7-b57f-db8851f4c8b2
+INFO     root:data_depend.py:37 提取变量：coverPath: default/M00/0B/09/wKgLTWHvk7eAZ7JtAAEv61TgKG4100.jpg
+INFO     root:validate.py:76 响应断言:  预期值: 'success' 实际值: 'success', 断言成功!

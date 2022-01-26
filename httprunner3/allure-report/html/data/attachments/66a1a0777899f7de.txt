@@ -1,0 +1,528 @@
+2022-01-25 11:20:47.842 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/exam/question?organizationId=cc861919-b7fb-4582-b755-48b2eb0e5203&organization%5Bid%5D=cc861919-b7fb-4582-b755-48b2eb0e5203&organization%5Bname%5D=tester&organization%5Bstate%5D=1&forbidden=0&depttype=1&url=exam%2Fquestion-depot&page=1&pageSize=10
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__c0909a02d4a8aa71f02b2f2c302f1894",
+    "uri": "exam/question-depot"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 11:20:47.844 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:20:48 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "items": [
+        {
+            "answerNum": null,
+            "content": "【阅读理解题】试题信息2022-01-25 11:20:14",
+            "contentText": "【阅读理解题】试题信息2022-01-25 11:20:14",
+            "createTime": 1643080815072,
+            "difficulty": 3,
+            "errorRate": 0,
+            "id": "998257f1-e6b9-4090-aed9-c55abcf2e637",
+            "markAmount": null,
+            "organization": {
+                "company": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                },
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "originalQuestionId": "998257f1-e6b9-4090-aed9-c55abcf2e637",
+            "parsing": null,
+            "parsingText": null,
+            "questionAttrs": null,
+            "questionDepot": {
+                "depotAuthToLower": 0,
+                "id": "54edbf14-202d-48de-ad6f-4a8a83fb7a3d",
+                "name": "试题目录"
+            },
+            "questionDepotId": "54edbf14-202d-48de-ad6f-4a8a83fb7a3d",
+            "recoveryCount": null,
+            "rightRate": 0,
+            "score": 3000,
+            "status": 1,
+            "subs": null,
+            "type": 6
+        },
+        {
+            "answerNum": null,
+            "content": "【排序题】试题信息2022-01-25 11:20:13",
+            "contentText": "【排序题】试题信息2022-01-25 11:20:13",
+            "createTime": 1643080814896,
+            "difficulty": 3,
+            "errorRate": 0,
+            "id": "c09e7299-2c79-4b4e-842a-b6ada2576056",
+            "markAmount": null,
+            "organization": {
+                "company": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                },
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "originalQuestionId": "c09e7299-2c79-4b4e-842a-b6ada2576056",
+            "parsing": "【排序题】试题解析",
+            "parsingText": "【排序题】试题解析",
+            "questionAttrs": [
+                {
+                    "id": "2052cf72-6ce2-42f1-8939-41c6cac97bc0",
+                    "name": "3",
+                    "type": "8",
+                    "value": "D"
+                },
+                {
+                    "id": "39ddcbe2-eaa1-42db-9e53-efeece96f2d5",
+                    "name": "2",
+                    "type": "8",
+                    "value": "C"
+                },
+                {
+                    "id": "50d654ae-ec44-4e27-8d82-8cfa3123722a",
+                    "name": "0",
+                    "type": "8",
+                    "value": "A"
+                },
+                {
+                    "id": "6af29ff6-b54d-4362-9213-d492031650e5",
+                    "name": "0",
+                    "type": "0",
+                    "value": "0|1|2|3|"
+                },
+                {
+                    "id": "ca9ed480-dccf-45a6-b29b-c9f6b083afe6",
+                    "name": "1",
+                    "type": "8",
+                    "value": "B"
+                }
+            ],
+            "questionDepot": {
+                "depotAuthToLower": 0,
+                "id": "54edbf14-202d-48de-ad6f-4a8a83fb7a3d",
+                "name": "试题目录"
+            },
+            "questionDepotId": "54edbf14-202d-48de-ad6f-4a8a83fb7a3d",
+            "recoveryCount": null,
+            "rightRate": 0,
+            "score": 1000,
+            "status": 1,
+            "subs": null,
+            "type": 8
+        },
+        {
+            "answerNum": null,
+            "content": "【问答题】试题信息2022-01-25 11:20:13",
+            "contentText": "【问答题】试题信息2022-01-25 11:20:13",
+            "createTime": 1643080814680,
+            "difficulty": 3,
+            "errorRate": 0,
+            "id": "466a6f6e-c533-4438-b9fd-6fcc280c329f",
+            "markAmount": null,
+            "organization": {
+                "company": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                },
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "originalQuestionId": "466a6f6e-c533-4438-b9fd-6fcc280c329f",
+            "parsing": "【问答题】试题解析",
+            "parsingText": "【问答题】试题解析",
+            "questionAttrs": [
+                {
+                    "id": "3198af85-e130-4f66-9c36-70cfaccc8bf7",
+                    "name": "【问答题】参考答案",
+                    "type": "5",
+                    "value": "【问答题】参考答案"
+                }
+            ],
+            "questionDepot": {
+                "depotAuthToLower": 0,
+                "id": "54edbf14-202d-48de-ad6f-4a8a83fb7a3d",
+                "name": "试题目录"
+            },
+            "questionDepotId": "54edbf14-202d-48de-ad6f-4a8a83fb7a3d",
+            "recoveryCount": null,
+            "rightRate": 0,
+            "score": 1000,
+            "status": 1,
+            "subs": null,
+            "type": 5
+        },
+        {
+            "answerNum": null,
+            "content": "【填空题】试题信息()2022-01-25 11:20:13",
+            "contentText": "【填空题】试题信息()2022-01-25 11:20:13",
+            "createTime": 1643080814516,
+            "difficulty": 3,
+            "errorRate": 0,
+            "id": "9b950214-6770-4309-83eb-bf653a758d68",
+            "markAmount": null,
+            "organization": {
+                "company": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                },
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "originalQuestionId": "9b950214-6770-4309-83eb-bf653a758d68",
+            "parsing": "【填空题】试题解析",
+            "parsingText": "【填空题】试题解析",
+            "questionAttrs": [
+                {
+                    "id": "ed6d824c-15ce-4cfe-b2c3-ca983d072c97",
+                    "name": "【填空题】试题答案",
+                    "type": "4",
+                    "value": "【填空题】试题答案"
+                }
+            ],
+            "questionDepot": {
+                "depotAuthToLower": 0,
+                "id": "54edbf14-202d-48de-ad6f-4a8a83fb7a3d",
+                "name": "试题目录"
+            },
+            "questionDepotId": "54edbf14-202d-48de-ad6f-4a8a83fb7a3d",
+            "recoveryCount": null,
+            "rightRate": 0,
+            "score": 1000,
+            "status": 1,
+            "subs": null,
+            "type": 4
+        },
+        {
+            "answerNum": null,
+            "content": "【判断题】试题信息2022-01-25 11:20:13<img id='preview-9f25384a-2a7f-4630-a29e-e9d7a753a333,试题视频_1052.mp4,mp4' class='video-img' style='display:block;width:302px;height:170px;' data-type='mp4' data-name='试题视频_1052.mp4' data-id='9f25384a-2a7f-4630-a29e-e9d7a753a333' src='https://tester1.zhixueyun.com/admin/images/preview-media.jpg' />",
+            "contentText": "【判断题】试题信息2022-01-25 11:20:13<img id='preview-9f25384a-2a7f-4630-a29e-e9d7a753a333,试题视频_1052.mp4,mp4' class='video-img' style='display:block;width:302px;height:170px;' data-type='mp4' data-name='试题视频_1052.mp4' data-id='9f25384a-2a7f-4630-a29e-e9d7a753a333' src='https://tester1.zhixueyun.com/admin/images/preview-media.jpg' />",
+            "createTime": 1643080814342,
+            "difficulty": 3,
+            "errorRate": 0,
+            "id": "e03969fc-c7ea-44d8-b2c4-f9e6a544c2f9",
+            "markAmount": null,
+            "organization": {
+                "company": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                },
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "originalQuestionId": "e03969fc-c7ea-44d8-b2c4-f9e6a544c2f9",
+            "parsing": "【判断题】试题解析",
+            "parsingText": "【判断题】试题解析",
+            "questionAttrs": [
+                {
+                    "id": "b1e5407a-96fd-4197-9419-c0546d1357fc",
+                    "name": "1",
+                    "type": "3",
+                    "value": "1"
+                }
+            ],
+            "questionDepot": {
+                "depotAuthToLower": 0,
+                "id": "54edbf14-202d-48de-ad6f-4a8a83fb7a3d",
+                "name": "试题目录"
+            },
+            "questionDepotId": "54edbf14-202d-48de-ad6f-4a8a83fb7a3d",
+            "recoveryCount": null,
+            "rightRate": 0,
+            "score": 1000,
+            "status": 1,
+            "subs": null,
+            "type": 3
+        },
+        {
+            "answerNum": null,
+            "content": "【多选题】试题信息2022-01-25 11:20:12<img id='preview-80cbf416-f44b-4be4-af42-2238543ecb89,试题音频_1052.mp3,mp3' class='video-img' style='display:block;width:302px;height:170px;' data-type='mp3' data-name='试题音频_1052.mp3' data-id='80cbf416-f44b-4be4-af42-2238543ecb89' src='https://tester1.zhixueyun.com/admin/images/preview-media.jpg' />",
+            "contentText": "【多选题】试题信息2022-01-25 11:20:12<img id='preview-80cbf416-f44b-4be4-af42-2238543ecb89,试题音频_1052.mp3,mp3' class='video-img' style='display:block;width:302px;height:170px;' data-type='mp3' data-name='试题音频_1052.mp3' data-id='80cbf416-f44b-4be4-af42-2238543ecb89' src='https://tester1.zhixueyun.com/admin/images/preview-media.jpg' />",
+            "createTime": 1643080813060,
+            "difficulty": 3,
+            "errorRate": 0,
+            "id": "7d5ee7cf-17a8-44ef-9c11-3c01d9b14ae0",
+            "markAmount": null,
+            "organization": {
+                "company": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                },
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "originalQuestionId": "7d5ee7cf-17a8-44ef-9c11-3c01d9b14ae0",
+            "parsing": "【多选题】试题解析",
+            "parsingText": "【多选题】试题解析",
+            "questionAttrs": [
+                {
+                    "id": "20bab4c6-07dc-4a98-b25b-f01c9159bc05",
+                    "name": "3",
+                    "type": "2",
+                    "value": "D"
+                },
+                {
+                    "id": "6536623e-3053-41eb-813c-c2af91662691",
+                    "name": "0",
+                    "type": "0",
+                    "value": "A"
+                },
+                {
+                    "id": "84bf3f44-f79b-42cb-a9fb-e505db05302f",
+                    "name": "1",
+                    "type": "0",
+                    "value": "B"
+                },
+                {
+                    "id": "9d3910ef-f5b4-47fb-a6e5-d9fcecedf4b5",
+                    "name": "2",
+                    "type": "2",
+                    "value": "C"
+                }
+            ],
+            "questionDepot": {
+                "depotAuthToLower": 0,
+                "id": "54edbf14-202d-48de-ad6f-4a8a83fb7a3d",
+                "name": "试题目录"
+            },
+            "questionDepotId": "54edbf14-202d-48de-ad6f-4a8a83fb7a3d",
+            "recoveryCount": null,
+            "rightRate": 0,
+            "score": 1000,
+            "status": 1,
+            "subs": null,
+            "type": 2
+        },
+        {
+            "answerNum": null,
+            "content": "【单选题】试题信息2022-01-25 11:20:11<img src=\"https://test9.zhixueyun.com/default/M00/0B/08/wKgLTWHvbGyAdgA9AACACFLS5pw103.jpg\" />",
+            "contentText": "【单选题】试题信息2022-01-25 11:20:11<img src=\"https://test9.zhixueyun.com/default/M00/0B/08/wKgLTWHvbGyAdgA9AACACFLS5pw103.jpg\" />",
+            "createTime": 1643080812196,
+            "difficulty": 3,
+            "errorRate": 0,
+            "id": "2532cd96-1826-423e-9935-eeb562f2c7af",
+            "markAmount": null,
+            "organization": {
+                "company": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                },
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "originalQuestionId": "2532cd96-1826-423e-9935-eeb562f2c7af",
+            "parsing": "【单选题】试题解析",
+            "parsingText": "【单选题】试题解析",
+            "questionAttrs": [
+                {
+                    "id": "1dc27ddb-ee74-4403-af6f-428a7979ad8f",
+                    "name": "1",
+                    "type": "1",
+                    "value": "B"
+                },
+                {
+                    "id": "3dfb73bf-21e9-41bc-9b87-1025df7c2c46",
+                    "name": "2",
+                    "type": "1",
+                    "value": "C"
+                },
+                {
+                    "id": "f5f0cd4d-585b-4eef-a613-a26c9c4bc66d",
+                    "name": "3",
+                    "type": "1",
+                    "value": "D"
+                },
+                {
+                    "id": "feb4ac45-67d3-47fa-9261-b433323e2fca",
+                    "name": "0",
+                    "type": "0",
+                    "value": "A"
+                }
+            ],
+            "questionDepot": {
+                "depotAuthToLower": 0,
+                "id": "54edbf14-202d-48de-ad6f-4a8a83fb7a3d",
+                "name": "试题目录"
+            },
+            "questionDepotId": "54edbf14-202d-48de-ad6f-4a8a83fb7a3d",
+            "recoveryCount": null,
+            "rightRate": 0,
+            "score": 1000,
+            "status": 1,
+            "subs": null,
+            "type": 1
+        },
+        {
+            "answerNum": null,
+            "content": "发电机变压器绕组绝缘受潮后，其吸收比（   ） 3",
+            "contentText": "发电机变压器绕组绝缘受潮后，其吸收比（   ） 3",
+            "createTime": 1643080621516,
+            "difficulty": 2,
+            "errorRate": 0,
+            "id": "74848d6c-b318-4ccb-abab-7a12edcb148d",
+            "markAmount": null,
+            "organization": {
+                "company": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                },
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "originalQuestionId": "abdf8df1-c512-4981-9b28-604994d163df",
+            "parsing": "发电机3",
+            "parsingText": "发电机3",
+            "questionAttrs": [
+                {
+                    "id": "36e0be0a-b67c-4148-aa20-b34682785ad5",
+                    "name": "1",
+                    "type": "1",
+                    "value": "变小"
+                },
+                {
+                    "id": "6e28db99-5400-4eb3-ba8d-2ce7c111f7af",
+                    "name": "3",
+                    "type": "1",
+                    "value": "不稳定"
+                },
+                {
+                    "id": "7cfa5f9f-ed03-4b88-90bd-eef25bb4622e",
+                    "name": "2",
+                    "type": "1",
+                    "value": "不变"
+                },
+                {
+                    "id": "f9470f00-4b8d-493b-be31-f6d5276705d7",
+                    "name": "0",
+                    "type": "0",
+                    "value": "变大"
+                }
+            ],
+            "questionDepot": {
+                "depotAuthToLower": 0,
+                "id": "8099063f-5fd6-4ee5-8f43-cd0bb74f8e2d",
+                "name": "tester"
+            },
+            "questionDepotId": "8099063f-5fd6-4ee5-8f43-cd0bb74f8e2d",
+            "recoveryCount": null,
+            "rightRate": 0,
+            "score": 1000,
+            "status": 1,
+            "subs": null,
+            "type": 1
+        },
+        {
+            "answerNum": null,
+            "content": "今天是星期(),明天星期()？2",
+            "contentText": "今天是星期(),明天星期()？2",
+            "createTime": 1643080621507,
+            "difficulty": 3,
+            "errorRate": 0,
+            "id": "1a6bc2f6-38cb-4db9-85b6-e71f6efd1c19",
+            "markAmount": null,
+            "organization": {
+                "company": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                },
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "originalQuestionId": "3245c2e7-e636-4bb1-848f-a0354784c7bc",
+            "parsing": "发电机26",
+            "parsingText": "发电机26",
+            "questionAttrs": [
+                {
+                    "id": "9205bb8f-6c83-4f54-a293-7890ffbf57c1",
+                    "name": "0",
+                    "type": "4",
+                    "value": "一|二"
+                }
+            ],
+            "questionDepot": {
+                "depotAuthToLower": 0,
+                "id": "8099063f-5fd6-4ee5-8f43-cd0bb74f8e2d",
+                "name": "tester"
+            },
+            "questionDepotId": "8099063f-5fd6-4ee5-8f43-cd0bb74f8e2d",
+            "recoveryCount": null,
+            "rightRate": 0,
+            "score": 1000,
+            "status": 1,
+            "subs": null,
+            "type": 4
+        },
+        {
+            "answerNum": null,
+            "content": "今天是星期(),明天星期()？3",
+            "contentText": "今天是星期(),明天星期()？3",
+            "createTime": 1643080621499,
+            "difficulty": 2,
+            "errorRate": 0,
+            "id": "08f10623-2e6e-4d63-befe-9bc4da35510a",
+            "markAmount": null,
+            "organization": {
+                "company": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                },
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "name": "tester"
+            },
+            "originalQuestionId": "cb54ef45-eec7-47d8-9784-bac599874c82",
+            "parsing": "发电机27",
+            "parsingText": "发电机27",
+            "questionAttrs": [
+                {
+                    "id": "ebfccea0-ce7e-404d-acce-c27e7d5a1a74",
+                    "name": "0",
+                    "type": "4",
+                    "value": "一|二"
+                }
+            ],
+            "questionDepot": {
+                "depotAuthToLower": 0,
+                "id": "8099063f-5fd6-4ee5-8f43-cd0bb74f8e2d",
+                "name": "tester"
+            },
+            "questionDepotId": "8099063f-5fd6-4ee5-8f43-cd0bb74f8e2d",
+            "recoveryCount": null,
+            "rightRate": 0,
+            "score": 1000,
+            "status": 1,
+            "subs": null,
+            "type": 4
+        }
+    ],
+    "recordCount": 1264
+}
+
+2022-01-25 11:20:47,845 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '200' 实际值: '200', 断言成功!

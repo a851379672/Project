@@ -1,0 +1,36 @@
+2022-01-25 18:45:47.333 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://pre-202108-10.zhixueyun.com/api/v1/system/file-cloud/get-company-config?companyId=9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__bd5308de3bbd763ea5274f65356a9ae9"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 18:45:47.334 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 10:45:48 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "928",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "cloudCdnDomain": "https://zxycdn.zhixueyun.com",
+    "configs": "{\"1\":\"{\\\"cdnSecretUrl\\\":\\\"\\\",\\\"cdnViewUrl\\\":\\\"\\\",\\\"viewUrl\\\":\\\"https://filecloudpre.zhixueyun.com/file-cloud\\\"}\",\"2\":\"{\\\"cdnSecretUrl\\\":\\\"https://filecloudpre-safe-cdn.zhixueyun.com\\\",\\\"cdnViewUrl\\\":\\\"https://filecloudpre-cdn.zhixueyun.com\\\",\\\"viewUrl\\\":\\\"\\\"}\",\"default\":\"{\\\"cdnSecretKey\\\":\\\"tIAHvYJo4ry3afjX\\\",\\\"cdnSecretUrl\\\":\\\"https://zxysafecdn.zhixueyun.com\\\",\\\"cdnViewUrl\\\":\\\"https://zxycdn.zhixueyun.com/\\\",\\\"companyId\\\":\\\"\\\",\\\"deleteFlag\\\":\\\"N\\\",\\\"id\\\":\\\"default\\\",\\\"modifyDate\\\":1629277987000,\\\"name\\\":\\\"默认配置\\\",\\\"organizationId\\\":\\\"default\\\",\\\"trackerServers\\\":\\\"192.168.11.64:10401\\\",\\\"viewUrl\\\":\\\"https://prezxy9.zhixueyun.com/\\\"}\"}",
+    "companyId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+    "cloudFileOpen": "1"
+}
+
+2022-01-25 18:45:47,335 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: 'https://prezxy9.zhixueyun.com/' 实际值: '{"1":"{\"cdnsecreturl\":\"\",\"cdnviewurl\":\"\",\"viewurl\":\"https://filecloudpre.zhixueyun.com/file-cloud\"}","2":"{\"cdnsecreturl\":\"https://filecloudpre-safe-cdn.zhixueyun.com\",\"cdnviewurl\":\"https://filecloudpre-cdn.zhixueyun.com\",\"viewurl\":\"\"}","default":"{\"cdnsecretkey\":\"tiahvyjo4ry3afjx\",\"cdnsecreturl\":\"https://zxysafecdn.zhixueyun.com\",\"cdnviewurl\":\"https://zxycdn.zhixueyun.com/\",\"companyid\":\"\",\"deleteflag\":\"n\",\"id\":\"default\",\"modifydate\":1629277987000,\"name\":\"默认配置\",\"organizationid\":\"default\",\"trackerservers\":\"192.168.11.64:10401\",\"viewurl\":\"https://prezxy9.zhixueyun.com/\"}"}', 断言成功!

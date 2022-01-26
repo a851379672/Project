@@ -1,3 +1,0 @@
-INFO     root:data_depend.py:40 提取变量：danxuanid: b704dd42-d55d-4e9d-b9da-273b6770a0ff
-INFO     root:data_depend.py:40 提取变量：danxuanname: 试题目录1-单选题1
-INFO     root:validate.py:57 响应断言： 预期值：'1' 实际值：'1', 断言成功!

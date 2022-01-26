@@ -1,0 +1,49 @@
+2022-01-25 11:16:55.128 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://tester1.zhixueyun.com/api/v1/exam/question-depot
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__c8422706e5d28b82f1856a214a6f0316",
+    "uri": "exam/question-depot",
+    "Content-Length": "189",
+    "Content-Type": "application/x-www-form-urlencoded"
+}
+cookies  : {}
+body     : name=%E8%AF%95%E9%A2%98%E7%9B%AE%E5%BD%952022-01-25+11%3A16%3A54&organizationId=cc861919-b7fb-4582-b755-48b2eb0e5203&code=tester_1&sequence=0&state=1&authToLower=0&depotAuthToLower=1&type=1
+
+2022-01-25 11:16:55.128 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:16:55 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "283",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "authToLower": 0,
+    "createTime": 1643080615874,
+    "depotAuthToLower": 1,
+    "id": "630f7afe-05cb-48eb-b98a-c8618c10711b",
+    "name": "试题目录2022-01-25 11:16:54",
+    "organization": null,
+    "organizationId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+    "parentId": null,
+    "parentName": null,
+    "sequence": 1,
+    "state": 1
+}
+
+2022-01-25 11:16:55,130 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：questionDepotId: 630f7afe-05cb-48eb-b98a-c8618c10711b
+2022-01-25 11:16:55,131 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：questionDepotName: 试题目录2022-01-25 11:16:54
+2022-01-25 11:16:55,131 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: 'cc861919-b7fb-4582-b755-48b2eb0e5203' 实际值: 'cc861919-b7fb-4582-b755-48b2eb0e5203', 断言成功!

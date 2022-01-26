@@ -1,0 +1,81 @@
+2022-01-25 14:07:52.226 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://tester1.zhixueyun.com/api/v1/exam/game/break-through/game-section
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__d47752064eceb10c9bdde411d492369b",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "uri": "exam/exam-game",
+    "Content-Length": "757"
+}
+cookies  : {}
+body     : gamePaperTactics=%5B%7B%27organizationId%27%3A+%27cc861919-b7fb-4582-b755-48b2eb0e5203%27%2C+%27questionDepotId%27%3A+%278099063f-5fd6-4ee5-8f43-cd0bb74f8e2d%27%2C+%27difficulty%27%3A+%273%27%2C+%27type%27%3A+1%2C+%27amount%27%3A+1%7D%2C+%7B%27organizationId%27%3A+%27cc861919-b7fb-4582-b755-48b2eb0e5203%27%2C+%27questionDepotId%27%3A+%278099063f-5fd6-4ee5-8f43-cd0bb74f8e2d%27%2C+%27difficulty%27%3A+%273%27%2C+%27type%27%3A+2%2C+%27amount%27%3A+1%7D%2C+%7B%27organizationId%27%3A+%27cc861919-b7fb-4582-b755-48b2eb0e5203%27%2C+%27questionDepotId%27%3A+%278099063f-5fd6-4ee5-8f43-cd0bb74f8e2d%27%2C+%27difficulty%27%3A+%273%27%2C+%27type%27%3A+3%2C+%27amount%27%3A+1%7D%5D&errorTimes=3&integral=100&answerTime=20&gameId=1f1c3f88-e356-4f70-864f-22605ccb597c
+
+2022-01-25 14:07:52.227 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:07:53 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "1194",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "answerTime": 20,
+    "createTime": 1643090873008,
+    "errorTimes": 3,
+    "gameId": "1f1c3f88-e356-4f70-864f-22605ccb597c",
+    "gamePaperTactics": [
+        {
+            "amount": 1,
+            "createTime": 1643090873008,
+            "difficulty": 3,
+            "gameId": "1f1c3f88-e356-4f70-864f-22605ccb597c",
+            "gameSectionId": "6df57a52-1519-4ff4-87f9-e338b0c8204a",
+            "id": "9aa3a492-c7e4-4467-a8db-a7a47bab755d",
+            "organizationId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+            "questionDepotId": "8099063f-5fd6-4ee5-8f43-cd0bb74f8e2d",
+            "type": 1
+        },
+        {
+            "amount": 1,
+            "createTime": 1643090873008,
+            "difficulty": 3,
+            "gameId": "1f1c3f88-e356-4f70-864f-22605ccb597c",
+            "gameSectionId": "6df57a52-1519-4ff4-87f9-e338b0c8204a",
+            "id": "d5be8986-25a3-49dc-bd59-bd837bc50388",
+            "organizationId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+            "questionDepotId": "8099063f-5fd6-4ee5-8f43-cd0bb74f8e2d",
+            "type": 2
+        },
+        {
+            "amount": 1,
+            "createTime": 1643090873008,
+            "difficulty": 3,
+            "gameId": "1f1c3f88-e356-4f70-864f-22605ccb597c",
+            "gameSectionId": "6df57a52-1519-4ff4-87f9-e338b0c8204a",
+            "id": "83758bce-899e-4a00-bb93-7acf0360524f",
+            "organizationId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+            "questionDepotId": "8099063f-5fd6-4ee5-8f43-cd0bb74f8e2d",
+            "type": 3
+        }
+    ],
+    "id": "6df57a52-1519-4ff4-87f9-e338b0c8204a",
+    "integral": 100,
+    "order": 0,
+    "questionNum": 3,
+    "type": 1
+}
+
+2022-01-25 14:07:52,227 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：section1ID: 6df57a52-1519-4ff4-87f9-e338b0c8204a
+2022-01-25 14:07:52,227 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '0' 实际值: '0', 断言成功!

@@ -1,0 +1,64 @@
+2022-01-25 14:06:59.158 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/course-study/file/safe/c6965e47-5d26-45d7-9355-acb8a8274fdf
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__d47752064eceb10c9bdde411d492369b",
+    "uri": "exam/exam"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 14:06:59.159 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:06:59 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "800",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "cloudConfigId": null,
+    "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+    "configId": "default",
+    "contentType": "audio/mpeg",
+    "createTime": 1643090817215,
+    "duration": 70000,
+    "extention": "mp3",
+    "fastdfsPath": null,
+    "fileKey": "e5dd79851caab5b252416355bf09a4c8",
+    "fileOrder": null,
+    "filename": "试题音频_1057.mp3",
+    "id": "c6965e47-5d26-45d7-9355-acb8a8274fdf",
+    "isAuth": null,
+    "modifyDate": 1643090817000,
+    "path": "https://cdnsafe.zhixueyun.com/default/M00/0B/09/wKgLTWHvk4GEey0WAAAAANpF7CU055.mp3?auth_key=1643094419-0-0-4c84305a5bc9ce1d485977b4dd15ceb2",
+    "size": 1200080,
+    "source": null,
+    "startOrEndFlag": null,
+    "thumbPath": null,
+    "thumbStatus": null,
+    "thumbnailId": null,
+    "thumbnailImg": null,
+    "thumbnailPath": null,
+    "translateFlag": 1,
+    "translateId": null,
+    "translateLevel": 0,
+    "translatePath": null,
+    "type": null,
+    "uploadStatus": null,
+    "url": null
+}
+
+2022-01-25 14:06:59,159 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: 'audio/mpeg' 实际值: 'audio/mpeg', 断言成功!

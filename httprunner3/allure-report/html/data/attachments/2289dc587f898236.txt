@@ -1,0 +1,108 @@
+2022-01-25 14:30:07.515 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/scripts/custom/config.json
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__1ed5c1ee658ef13aaa49bca09ed78677"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 14:30:07.516 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:30:08 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Last-Modified": "Fri, 21 Jan 2022 10:55:30 GMT",
+    "Vary": "Accept-Encoding",
+    "ETag": "W/\"61ea9122-97c\"",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "X-Requested-With",
+    "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+    "Content-Encoding": "gzip",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : utf-8
+content_type : application/json
+body     : {
+    "customMode": "development--",
+    "customModules": [
+        {
+            "customCss": 0,
+            "description": "国电投学员端主模块定制",
+            "domain": "http://localhost:8004/bundle/",
+            "id": "27ef6422-4fb4-11e9-8708-00163e0eaa32",
+            "moduleLoadPath": "main.js",
+            "moduleName": "main",
+            "name": "国电投学员端主模块定制",
+            "rootOrganizationId": "1",
+            "from": "drizzle"
+        },
+        {
+            "customCss": 0,
+            "description": "国电投学员端培训模块定制",
+            "domain": "http://localhost:8004/bundle/",
+            "id": "831a8269-4fb4-11e9-8708-00163e0eaa32",
+            "moduleLoadPath": "train-new.js",
+            "moduleName": "train-new",
+            "name": "国电投学员端培训模块定制",
+            "rootOrganizationId": "1",
+            "from": "drizzle"
+        },
+        {
+            "customCss": 0,
+            "description": "国电投学员端培训模块定制",
+            "domain": "http://localhost:8004/bundle/",
+            "id": "831a8269-4fb4-11e9-8708-00163e0eaa35",
+            "moduleLoadPath": "study.js",
+            "moduleName": "study",
+            "name": "国电投学员端培训模块定制",
+            "rootOrganizationId": "1",
+            "from": "drizzle"
+        },
+        {
+            "customCss": 1,
+            "description": "vue module",
+            "domain": "http://localhost:8006/",
+            "id": "27ef6422-4fb4-11e9-8708-00163e0eaa32",
+            "moduleLoadPath": "js/app.js",
+            "moduleName": "app",
+            "name": "app",
+            "rootOrganizationId": "1",
+            "from": "vue"
+        },
+        {
+            "customCss": 0,
+            "description": "vue module",
+            "domain": "http://localhost:8006/",
+            "id": "27ef6422-4fb4-11e9-8708-00163e0eaa32",
+            "moduleLoadPath": "js/home.js",
+            "moduleName": "home",
+            "name": "home",
+            "rootOrganizationId": "1",
+            "from": "vue"
+        },
+        {
+            "customCss": 0,
+            "description": "vue module",
+            "domain": "http://localhost:8006/",
+            "id": "27ef6422-4fb4-11e9-8708-00163e0eaa32",
+            "moduleLoadPath": "js/add.js",
+            "moduleName": "add",
+            "name": "add",
+            "rootOrganizationId": "1",
+            "from": "vue"
+        }
+    ]
+}
+
+2022-01-25 14:30:07,516 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '200' 实际值: '200', 断言成功!

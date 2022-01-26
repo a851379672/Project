@@ -1,0 +1,349 @@
+2022-01-25 18:46:46.975 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://pre-202108-10.zhixueyun.com/api/v1/exam/sign-up/all?uri=exam%2Finvigilator&page=1&pageSize=10
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__5162aae81b0783802661ab1b21b0a987",
+    "uri": "exam/signup"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 18:46:46.978 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 10:46:47 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "6643",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "items": [
+        {
+            "auditMember": {
+                "fullName": null
+            },
+            "createTime": 1643107607620,
+            "exam": {
+                "belongAuditTime": true,
+                "endTime": 1643280360000,
+                "name": "【监考/报名考试】2022-01-25 18:46:46",
+                "needFillOutInfo": 0,
+                "organization": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "name": "preer",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                },
+                "startTime": 1643107560000,
+                "type": 1
+            },
+            "examId": "84434675-0fb5-4382-b775-536a43201c55",
+            "examRegist": {
+                "beforeStatus": null,
+                "passStatus": null,
+                "status": 1
+            },
+            "id": "81aa5c4d-2b45-4c10-b850-cb2df6a971b6",
+            "member": {
+                "companyId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "fullName": "学生1",
+                "id": "d2537992-353c-4b83-88a7-70a42829b74c",
+                "name": "test_1",
+                "organization": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "name": "preer",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                }
+            },
+            "memberId": "d2537992-353c-4b83-88a7-70a42829b74c",
+            "status": 1
+        },
+        {
+            "auditMember": {
+                "fullName": null
+            },
+            "createTime": 1643107545626,
+            "exam": {
+                "belongAuditTime": false,
+                "endTime": 1643107560000,
+                "name": "【普通考试】2022-01-25 18:45:40",
+                "needFillOutInfo": 0,
+                "organization": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "name": "preer",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                },
+                "startTime": 1643107500000,
+                "type": 1
+            },
+            "examId": "e46c2530-4ff7-4978-9faf-0b36369bdff6",
+            "examRegist": {
+                "beforeStatus": 7,
+                "passStatus": 0,
+                "status": 8
+            },
+            "id": "40cd1409-f980-43ee-b130-8897ebddabf4",
+            "member": {
+                "companyId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "fullName": "学生1",
+                "id": "d2537992-353c-4b83-88a7-70a42829b74c",
+                "name": "test_1",
+                "organization": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "name": "preer",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                }
+            },
+            "memberId": "d2537992-353c-4b83-88a7-70a42829b74c",
+            "status": 2
+        },
+        {
+            "auditMember": {
+                "fullName": "超级管理员"
+            },
+            "createTime": 1643103944742,
+            "exam": {
+                "belongAuditTime": true,
+                "endTime": 1643276700000,
+                "name": "【监考/报名考试】2022-01-25 17:45:43",
+                "needFillOutInfo": 0,
+                "organization": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "name": "preer",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                },
+                "startTime": 1643103900000,
+                "type": 1
+            },
+            "examId": "b89efa2b-2e35-4f5a-b39e-e6a4198d989b",
+            "examRegist": {
+                "beforeStatus": 2,
+                "passStatus": null,
+                "status": 3
+            },
+            "id": "fb6a952c-a6fc-475a-b349-e5025f30a1b4",
+            "member": {
+                "companyId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "fullName": "学生1",
+                "id": "d2537992-353c-4b83-88a7-70a42829b74c",
+                "name": "test_1",
+                "organization": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "name": "preer",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                }
+            },
+            "memberId": "d2537992-353c-4b83-88a7-70a42829b74c",
+            "status": 2
+        },
+        {
+            "auditMember": {
+                "fullName": "超级管理员"
+            },
+            "createTime": 1643103909914,
+            "exam": {
+                "belongAuditTime": true,
+                "endTime": 1643276700000,
+                "name": "【监考/报名考试】2022-01-25 17:45:08",
+                "needFillOutInfo": 0,
+                "organization": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "name": "preer",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                },
+                "startTime": 1643103900000,
+                "type": 1
+            },
+            "examId": "91b80839-e6b4-4ef0-8627-a1b4aa96c170",
+            "examRegist": {
+                "beforeStatus": 2,
+                "passStatus": null,
+                "status": 3
+            },
+            "id": "ba12a5a2-8ea8-4e1f-8849-117b8d6802ab",
+            "member": {
+                "companyId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "fullName": "学生1",
+                "id": "d2537992-353c-4b83-88a7-70a42829b74c",
+                "name": "test_1",
+                "organization": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "name": "preer",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                }
+            },
+            "memberId": "d2537992-353c-4b83-88a7-70a42829b74c",
+            "status": 2
+        },
+        {
+            "auditMember": {
+                "fullName": null
+            },
+            "createTime": 1643101164479,
+            "exam": {
+                "belongAuditTime": false,
+                "endTime": 1643101200000,
+                "name": "【普通考试】2022-01-25 16:59:19",
+                "needFillOutInfo": 0,
+                "organization": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "name": "preer",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                },
+                "startTime": 1643101140000,
+                "type": 1
+            },
+            "examId": "8a17aeb7-8efa-4267-9d8f-668d48eacef2",
+            "examRegist": {
+                "beforeStatus": 7,
+                "passStatus": 0,
+                "status": 8
+            },
+            "id": "2b238fa2-4d68-4c45-aea8-e7f0dbe25ba3",
+            "member": {
+                "companyId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "fullName": "学生1",
+                "id": "d2537992-353c-4b83-88a7-70a42829b74c",
+                "name": "test_1",
+                "organization": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "name": "preer",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                }
+            },
+            "memberId": "d2537992-353c-4b83-88a7-70a42829b74c",
+            "status": 2
+        },
+        {
+            "auditMember": {
+                "fullName": null
+            },
+            "createTime": 1643100919761,
+            "exam": {
+                "belongAuditTime": false,
+                "endTime": 1643100960000,
+                "name": "【普通考试】2022-01-25 16:55:15",
+                "needFillOutInfo": 0,
+                "organization": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "name": "preer",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                },
+                "startTime": 1643100900000,
+                "type": 1
+            },
+            "examId": "eca0e888-4dc5-4f62-8802-0db67d5ed6b8",
+            "examRegist": {
+                "beforeStatus": 7,
+                "passStatus": 0,
+                "status": 8
+            },
+            "id": "8bfb6570-8daf-427b-b9bf-25c785e7a354",
+            "member": {
+                "companyId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "fullName": "学生1",
+                "id": "d2537992-353c-4b83-88a7-70a42829b74c",
+                "name": "test_1",
+                "organization": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "name": "preer",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                }
+            },
+            "memberId": "d2537992-353c-4b83-88a7-70a42829b74c",
+            "status": 2
+        },
+        {
+            "auditMember": {
+                "fullName": null
+            },
+            "createTime": 1643100336685,
+            "exam": {
+                "belongAuditTime": false,
+                "endTime": 1643100360000,
+                "name": "【普通考试】2022-01-25 16:45:32",
+                "needFillOutInfo": 0,
+                "organization": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "name": "preer",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                },
+                "startTime": 1643100300000,
+                "type": 1
+            },
+            "examId": "518d59a3-2389-4343-bd3b-98f76b87f693",
+            "examRegist": {
+                "beforeStatus": 7,
+                "passStatus": 0,
+                "status": 8
+            },
+            "id": "533116ac-fd9d-4dc7-a07e-2ea4cc7dc57a",
+            "member": {
+                "companyId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "fullName": "学生1",
+                "id": "d2537992-353c-4b83-88a7-70a42829b74c",
+                "name": "test_1",
+                "organization": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "name": "preer",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                }
+            },
+            "memberId": "d2537992-353c-4b83-88a7-70a42829b74c",
+            "status": 2
+        },
+        {
+            "auditMember": {
+                "fullName": null
+            },
+            "createTime": 1643099854297,
+            "exam": {
+                "belongAuditTime": false,
+                "endTime": 1643100000000,
+                "name": "【普通考试】2022-01-25 16:37:29",
+                "needFillOutInfo": 0,
+                "organization": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "name": "preer",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                },
+                "startTime": 1643099820000,
+                "type": 1
+            },
+            "examId": "14936f50-c9fe-44f7-9ae5-6f00551b98d0",
+            "examRegist": {
+                "beforeStatus": 7,
+                "passStatus": 0,
+                "status": 8
+            },
+            "id": "6cc6f1a4-426b-4f0e-858a-549a5d1fcbc0",
+            "member": {
+                "companyId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                "fullName": "学生1",
+                "id": "d2537992-353c-4b83-88a7-70a42829b74c",
+                "name": "test_1",
+                "organization": {
+                    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+                    "name": "preer",
+                    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+                }
+            },
+            "memberId": "d2537992-353c-4b83-88a7-70a42829b74c",
+            "status": 2
+        }
+    ],
+    "recordCount": 8
+}
+
+2022-01-25 18:46:46,978 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：signUpId: 81aa5c4d-2b45-4c10-b850-cb2df6a971b6
+2022-01-25 18:46:46,979 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '1' 实际值: '1', 断言成功!

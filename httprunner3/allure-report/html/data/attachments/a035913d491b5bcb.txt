@@ -1,0 +1,72 @@
+2022-01-25 14:30:26.772 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/exam/question-analyze/answer-summary?examId=101b3285-04a6-481c-a8c3-766fcf7c8838&questionCopyId=97514295-fb62-4029-af11-7c395e8ecd99&answerType=3&orderType=0&page=1&pageSize=10
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__913d806a4e52a41790dc2c97e3f00bb4",
+    "uri": "exam/exam"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 14:30:26.776 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:30:27 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "524",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "answeredCount": 0,
+    "attrs": [
+        {
+            "count": 0,
+            "name": "0",
+            "rate": 0,
+            "type": 0,
+            "value": "A"
+        },
+        {
+            "count": 0,
+            "name": "1",
+            "rate": 0,
+            "type": 1,
+            "value": "B"
+        },
+        {
+            "count": 0,
+            "name": "2",
+            "rate": 0,
+            "type": 1,
+            "value": "C"
+        },
+        {
+            "count": 0,
+            "name": "3",
+            "rate": 0,
+            "type": 1,
+            "value": "D"
+        }
+    ],
+    "content": "【单选题】试题信息2022-01-25 14:29:56<img src=\"https://test9.zhixueyun.com/default/M00/0B/09/wKgLTWHvmOSAfCfaAACACFLS5pw022.jpg\" />",
+    "errorCount": 0,
+    "questionCopyId": "97514295-fb62-4029-af11-7c395e8ecd99",
+    "rightCount": 0,
+    "score": 1000,
+    "type": 1,
+    "unansweredCount": 1
+}
+
+2022-01-25 14:30:26,776 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '97514295-fb62-4029-af11-7c395e8ecd99' 实际值: '97514295-fb62-4029-af11-7c395e8ecd99', 断言成功!

@@ -1,0 +1,3 @@
+INFO     root:data_depend.py:37 提取变量：attachmentId: bb3f9e4e-8b3f-403b-a987-3641a61e34c3
+INFO     root:data_depend.py:37 提取变量：exportId: f2bf53e9-5211-473e-afe1-fc5de51ff8ee
+INFO     root:validate.py:76 响应断言:  预期值: '1' 实际值: '1', 断言成功!

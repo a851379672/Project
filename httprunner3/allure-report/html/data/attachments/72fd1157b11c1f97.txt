@@ -1,0 +1,44 @@
+2022-01-25 14:39:31.118 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/system/operation/message-template/content?templateCode=exam_publish&organizationId=cc861919-b7fb-4582-b755-48b2eb0e5203
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__c7fc72caf066b114b1fe7f418ac2c8f1",
+    "uri": "exam/exam"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 14:39:31.118 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:39:31 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "522",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "content": "您好，【{0}】在【{1}】发布了考试【{2}】，考试时间为【{3}】，请您及时参加考试。",
+    "contentDesc": null,
+    "id": "567d3b77-a868-4f01-a422-fad2dd41656a",
+    "module": 4,
+    "name": "考试发布",
+    "organizationId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+    "paramDesc": "0发布部门 1平台名 2考试名称 3考试时间",
+    "paramNum": 4,
+    "subject": "【考试发布通知】",
+    "textContent": "您好，【{0}】在【{1}】发布了考试【{2}】，考试时间为【{3}】，请您及时参加考试。"
+}
+
+2022-01-25 14:39:31,119 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '考试发布' 实际值: '考试发布', 断言成功!

@@ -1,0 +1,36 @@
+2022-01-25 11:14:03.014 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://tester1.zhixueyun.com/api/v1/human/file/auth/upload-parse-file
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__76ba88c18f354efefc11e3817996b852",
+    "Content-Length": "487720",
+    "Content-Type": "multipart/form-data; boundary=4f4a9cc43519d77a4ff247987dbbf7c7"
+}
+cookies  : {}
+body     : upload file stream (OMITTED)
+
+2022-01-25 11:14:03.015 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:14:03 GMT",
+    "Content-Type": "text/html;charset=UTF-8",
+    "Content-Length": "239",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : text/html;charset=UTF-8
+body     : [{'contentType': None, 'createTime': 1643080443765, 'filename': '答题图片_118.jpg', 'id': '2922942c-4da1-4dca-a802-4d4d340be7ec', 'path': '/ixrDO9ptC2K6xiO8hV36UFYrnS7Yv0FwtPzvu8Oc7z5fGryWqTAP5NnPPsSDHb6BuYFnb0ZfPGAiZQuFeeJ/g==', 'size': 487564}]
+
+2022-01-25 11:14:03,015 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：attachmentId: 2922942c-4da1-4dca-a802-4d4d340be7ec
+2022-01-25 11:14:03,016 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：attachmentPath: /ixrDO9ptC2K6xiO8hV36UFYrnS7Yv0FwtPzvu8Oc7z5fGryWqTAP5NnPPsSDHb6BuYFnb0ZfPGAiZQuFeeJ/g==
+2022-01-25 11:14:03,017 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: 'jpg' 实际值: '答题图片_118.jpg', 断言成功!

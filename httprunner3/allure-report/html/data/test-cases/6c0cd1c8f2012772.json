@@ -1,0 +1,191 @@
+{
+  "uid" : "6c0cd1c8f2012772",
+  "name" : "【模拟考试】——新增模拟考试-受众设置-更新模拟考试受众",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "bd3fe50718187fbec2ab06e1291987bf",
+  "time" : {
+    "start" : 1643081415494,
+    "stop" : 1643081415616,
+    "duration" : 122
+  },
+  "description" : "\n        :param api_data\n        :return: report_content\n        ",
+  "descriptionHtml" : "<pre><code>    :param api_data\n    :return: report_content\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1643081413569,
+      "stop" : 1643081413839,
+      "duration" : 270
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "file_fixture",
+    "time" : {
+      "start" : 1643081413562,
+      "stop" : 1643081413568,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "fsetup_tear_down",
+    "time" : {
+      "start" : 1643081413569,
+      "stop" : 1643081413569,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass",
+    "time" : {
+      "start" : 1643081413839,
+      "stop" : 1643081413845,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param api_data\n        :return: report_content\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "76df2e4b974c6174",
+      "name" : "log",
+      "source" : "76df2e4b974c6174.txt",
+      "type" : "text/plain",
+      "size" : 88
+    }, {
+      "uid" : "5f39684cdd6685c0",
+      "name" : "stderr",
+      "source" : "5f39684cdd6685c0.txt",
+      "type" : "text/plain",
+      "size" : 2445
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "fsetup_tear_down::0",
+    "time" : {
+      "start" : 1643081416020,
+      "stop" : 1643081416024,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass::0",
+    "time" : {
+      "start" : 1643081416019,
+      "stop" : 1643081416019,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【模拟考试】——新增模拟考试-受众设置-更新模拟考试受众"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=3, reruns_delay=5)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "29628-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "api_data",
+    "value" : "{'name': '【模拟考试】——新增模拟考试-受众设置-更新模拟考试受众', 'request': {'url': 'api/v1/exam/practice/audience/${practiceId}', 'method': 'PUT', 'headers': {'Authorization': 'Bearer__${admin_token}', 'content-type': 'application/x-www-form-urlencoded; charset=UTF-8', 'uri': 'exam/exam-practice'}, 'data': {'audienceItems': [{'joinId': '${studentId}', 'joinType': 5, 'joinName': '${studentName}'}], 'audiences': '${studentName}', 'addItems': [{'joinId': '${studentId}', 'joinType': 5, 'joinName': '${studentName}'}], 'emptyFlag': 0, 'cacheUpdateOptionsData[addItems][0][id]': '${studentId}', 'cacheUpdateOptionsData[addItems][0][value]': '${studentName}', 'cacheUpdateOptionsData[addItems][0][type]': 'member', 'cacheUpdateOptionsData[addItems][0][checked]': 'true', 'cacheUpdateOptionsData[emptyFlag]': 0, 'cacheAllAudiences[0][id]': '${studentId}', 'cacheAllAudiences[0][value]': '${studentName}', 'cacheAllAudiences[0][type]': 'member', 'cacheAllAudiences[0][checked]': 'true', 'publish': 0, 'id': '${practiceId}'}}, 'sql_statement': None, 'extract': None, 'validate': [{'eq': ['$.status', '0']}], 'allure': {'allure_descrption': '【模拟考试】——新增模拟考试-受众设置-更新模拟考试受众', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}"
+  } ],
+  "links" : [ {
+    "name" : "https://tester1.zhixueyun.com/api/v1/exam/practice/audience/${practiceId}",
+    "url" : "https://tester1.zhixueyun.com/api/v1/exam/practice/audience/${practiceId}",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=3, reruns_delay=5)" ]
+  },
+  "source" : "6c0cd1c8f2012772.json",
+  "parameterValues" : [ "{'name': '【模拟考试】——新增模拟考试-受众设置-更新模拟考试受众', 'request': {'url': 'api/v1/exam/practice/audience/${practiceId}', 'method': 'PUT', 'headers': {'Authorization': 'Bearer__${admin_token}', 'content-type': 'application/x-www-form-urlencoded; charset=UTF-8', 'uri': 'exam/exam-practice'}, 'data': {'audienceItems': [{'joinId': '${studentId}', 'joinType': 5, 'joinName': '${studentName}'}], 'audiences': '${studentName}', 'addItems': [{'joinId': '${studentId}', 'joinType': 5, 'joinName': '${studentName}'}], 'emptyFlag': 0, 'cacheUpdateOptionsData[addItems][0][id]': '${studentId}', 'cacheUpdateOptionsData[addItems][0][value]': '${studentName}', 'cacheUpdateOptionsData[addItems][0][type]': 'member', 'cacheUpdateOptionsData[addItems][0][checked]': 'true', 'cacheUpdateOptionsData[emptyFlag]': 0, 'cacheAllAudiences[0][id]': '${studentId}', 'cacheAllAudiences[0][value]': '${studentName}', 'cacheAllAudiences[0][type]': 'member', 'cacheAllAudiences[0][checked]': 'true', 'publish': 0, 'id': '${practiceId}'}}, 'sql_statement': None, 'extract': None, 'validate': [{'eq': ['$.status', '0']}], 'allure': {'allure_descrption': '【模拟考试】——新增模拟考试-受众设置-更新模拟考试受众', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}" ]
+}

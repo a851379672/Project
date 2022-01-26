@@ -1,0 +1,191 @@
+{
+  "uid" : "f253421e843ba4cf",
+  "name" : "【普通考试】——考试管理-评卷配置-评卷安排通知",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "3f00faba96f5fe4419fa3d8ebdf7e0ed",
+  "time" : {
+    "start" : 1643080836036,
+    "stop" : 1643080836172,
+    "duration" : 136
+  },
+  "description" : "\n        :param api_data\n        :return: report_content\n        ",
+  "descriptionHtml" : "<pre><code>    :param api_data\n    :return: report_content\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "file_fixture",
+    "time" : {
+      "start" : 1643080808357,
+      "stop" : 1643080808364,
+      "duration" : 7
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass",
+    "time" : {
+      "start" : 1643080808619,
+      "stop" : 1643080808624,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "fsetup_tear_down",
+    "time" : {
+      "start" : 1643080808365,
+      "stop" : 1643080808365,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1643080808365,
+      "stop" : 1643080808619,
+      "duration" : 254
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param api_data\n        :return: report_content\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "1c5dfe8dab23440f",
+      "name" : "log",
+      "source" : "1c5dfe8dab23440f.txt",
+      "type" : "text/plain",
+      "size" : 100
+    }, {
+      "uid" : "3e71c5e29f702e49",
+      "name" : "stderr",
+      "source" : "3e71c5e29f702e49.txt",
+      "type" : "text/plain",
+      "size" : 2221
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestClass::0",
+    "time" : {
+      "start" : 1643080876999,
+      "stop" : 1643080876999,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "fsetup_tear_down::0",
+    "time" : {
+      "start" : 1643080877005,
+      "stop" : 1643080877010,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【普通考试】——考试管理-评卷配置-评卷安排通知"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=3, reruns_delay=5)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "28248-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "api_data",
+    "value" : "{'name': '【普通考试】——考试管理-评卷配置-评卷安排通知', 'request': {'url': 'api/v1/exam/exam/mark-notice', 'method': 'POST', 'headers': {'Authorization': 'Bearer__${admin_token}', 'content-type': 'application/x-www-form-urlencoded; charset=UTF-8', 'uri': 'exam/exam'}, 'data': {'noticeTeacherText': '您好，您已被安排为【${examName}】考试的评卷老师，请合理安排工作时间尽快阅卷。谢谢。', 'noticeTeacherContent': '您好，您已被安排为【${examName}】考试的评卷老师，请合理安排工作时间尽快阅卷。谢谢。', 'examId': '${examId}'}}, 'sql_statement': None, 'extract': None, 'validate': [{'eq': ['$.msg', 'success']}], 'allure': {'allure_descrption': '【普通考试】——考试管理-评卷配置-评卷安排通知', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}"
+  } ],
+  "links" : [ {
+    "name" : "https://tester1.zhixueyun.com/api/v1/exam/exam/mark-notice",
+    "url" : "https://tester1.zhixueyun.com/api/v1/exam/exam/mark-notice",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=3, reruns_delay=5)" ]
+  },
+  "source" : "f253421e843ba4cf.json",
+  "parameterValues" : [ "{'name': '【普通考试】——考试管理-评卷配置-评卷安排通知', 'request': {'url': 'api/v1/exam/exam/mark-notice', 'method': 'POST', 'headers': {'Authorization': 'Bearer__${admin_token}', 'content-type': 'application/x-www-form-urlencoded; charset=UTF-8', 'uri': 'exam/exam'}, 'data': {'noticeTeacherText': '您好，您已被安排为【${examName}】考试的评卷老师，请合理安排工作时间尽快阅卷。谢谢。', 'noticeTeacherContent': '您好，您已被安排为【${examName}】考试的评卷老师，请合理安排工作时间尽快阅卷。谢谢。', 'examId': '${examId}'}}, 'sql_statement': None, 'extract': None, 'validate': [{'eq': ['$.msg', 'success']}], 'allure': {'allure_descrption': '【普通考试】——考试管理-评卷配置-评卷安排通知', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}" ]
+}

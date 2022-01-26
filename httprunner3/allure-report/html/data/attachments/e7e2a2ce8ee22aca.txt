@@ -1,0 +1,3 @@
+INFO     root:data_depend.py:37 提取变量：path: default/M00/0B/08/wKgLTWHva7CAKq-RAAdftfhVfXQ433.jpg
+INFO     root:data_depend.py:37 提取变量：attachmentId: 3767d22a-8387-4da3-8505-b6490aaf9974
+INFO     root:validate.py:76 响应断言:  预期值: '483253' 实际值: '483253', 断言成功!

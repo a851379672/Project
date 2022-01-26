@@ -1,0 +1,101 @@
+{
+  "uid" : "6344e085f3bd915f",
+  "name" : "【普通考试】——新增考试-基本信息-获取所有设备类型",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "11b0579c56edfc302ffa72c38dc6644c",
+  "time" : {
+    "start" : 1643090763348,
+    "stop" : 1643090763464,
+    "duration" : 116
+  },
+  "description" : "\n        :param api_data\n        :return: report_content\n        ",
+  "descriptionHtml" : "<pre><code>    :param api_data\n    :return: report_content\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n        :param api_data\n        :return: report_content\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "4b306fbbdd8a5073",
+      "name" : "log",
+      "source" : "4b306fbbdd8a5073.txt",
+      "type" : "text/plain",
+      "size" : 92
+    }, {
+      "uid" : "c60a00fb1fe99f55",
+      "name" : "stderr",
+      "source" : "c60a00fb1fe99f55.txt",
+      "type" : "text/plain",
+      "size" : 1208
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【普通考试】——新增考试-基本信息-获取所有设备类型"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=3, reruns_delay=5)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "23184-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "api_data",
+    "value" : "{'name': '【普通考试】——新增考试-基本信息-获取所有设备类型', 'request': {'url': 'api/v1/exam/equipment-type/all', 'method': 'GET', 'headers': {'Authorization': 'Bearer__${admin_token}', 'uri': 'exam/exam'}}, 'sql_statement': None, 'extract': None, 'validate': [{'eq': ['Status Code', 200]}], 'allure': {'allure_descrption': '【普通考试】——新增考试-基本信息-获取所有设备类型', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}"
+  } ],
+  "links" : [ {
+    "name" : "https://tester1.zhixueyun.com/api/v1/exam/equipment-type/all",
+    "url" : "https://tester1.zhixueyun.com/api/v1/exam/equipment-type/all",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=3, reruns_delay=5)" ]
+  },
+  "source" : "6344e085f3bd915f.json",
+  "parameterValues" : [ "{'name': '【普通考试】——新增考试-基本信息-获取所有设备类型', 'request': {'url': 'api/v1/exam/equipment-type/all', 'method': 'GET', 'headers': {'Authorization': 'Bearer__${admin_token}', 'uri': 'exam/exam'}}, 'sql_statement': None, 'extract': None, 'validate': [{'eq': ['Status Code', 200]}], 'allure': {'allure_descrption': '【普通考试】——新增考试-基本信息-获取所有设备类型', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}" ]
+}

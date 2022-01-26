@@ -1,0 +1,38 @@
+2022-01-25 11:17:22.662 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : PUT
+url      : https://tester1.zhixueyun.com/api/v1/exam/practice/update-status/fe892a79-197f-4256-8e6e-f37ee70b54ce
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__c8422706e5d28b82f1856a214a6f0316",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "uri": "exam/exam-practice",
+    "Content-Length": "48"
+}
+cookies  : {}
+body     : id=fe892a79-197f-4256-8e6e-f37ee70b54ce&status=2
+
+2022-01-25 11:17:22.664 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:17:23 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "56",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "id": "fe892a79-197f-4256-8e6e-f37ee70b54ce",
+    "status": 2
+}
+
+2022-01-25 11:17:22,664 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '2' 实际值: '2', 断言成功!

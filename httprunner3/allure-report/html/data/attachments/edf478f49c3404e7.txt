@@ -1,0 +1,55 @@
+2022-01-25 14:07:46.791 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/exam/sign-auth/signup-detail?signUpId=6fa848d9-7ed7-4235-8459-516f4afd6193
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__d47752064eceb10c9bdde411d492369b",
+    "uri": "exam/signup"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 14:07:46.792 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:07:47 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "473",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "description": null,
+    "email": "",
+    "examId": "3a39fb86-3427-42c9-8c5c-498e821d73ee",
+    "id": "e5f8090f-3e78-4673-8e8b-cc3fc385ad4f",
+    "member": {
+        "email": null,
+        "fullName": "xuesheng1",
+        "headPortraitPath": null,
+        "id": "e5f8090f-3e78-4673-8e8b-cc3fc385ad4f",
+        "identityNumber": null,
+        "name": "test_1",
+        "organization": {
+            "companyName": "tester",
+            "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+            "name": "tester"
+        },
+        "phoneNumber": null
+    },
+    "phoneNumber": "",
+    "sex": null,
+    "signUpId": "6fa848d9-7ed7-4235-8459-516f4afd6193"
+}
+
+2022-01-25 14:07:46,793 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '6fa848d9-7ed7-4235-8459-516f4afd6193' 实际值: '6fa848d9-7ed7-4235-8459-516f4afd6193', 断言成功!

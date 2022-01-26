@@ -1,0 +1,71 @@
+2022-01-25 14:07:15.965 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/exam/exam/front/answer-record/v2?examId=801a6800-06ba-49c4-ad3d-8775030eeadc
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__952100744d93ee98c41357f829c92311"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 14:07:15.965 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:07:16 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "38",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "answerRecords": [],
+    "lastCacheTime": 1
+}
+
+2022-01-25 14:07:16,107 | D:\PyCharm\project\httprunner3\common\mysql_operate.py[line:88] | INFO: SQL查询结果: c337636c-4cd0-4963-8523-406d80a90791
+2022-01-25 14:07:16,107 | D:\PyCharm\project\httprunner3\common\mysql_operate.py[line:57] | INFO: SQL影响行数: 1 预期影响行数: 1 断言成功!
+2022-01-25 14:07:16,107 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:41] | INFO: 提取变量：danxuantiId_copy_count: 1
+2022-01-25 14:07:16,107 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:41] | INFO: 提取变量：danxuantiId_copy_value: c337636c-4cd0-4963-8523-406d80a90791
+2022-01-25 14:07:16,250 | D:\PyCharm\project\httprunner3\common\mysql_operate.py[line:88] | INFO: SQL查询结果: 721843b7-a415-45d3-a47a-514e9a75f690
+2022-01-25 14:07:16,250 | D:\PyCharm\project\httprunner3\common\mysql_operate.py[line:57] | INFO: SQL影响行数: 1 预期影响行数: 1 断言成功!
+2022-01-25 14:07:16,250 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:41] | INFO: 提取变量：duoxuantiId_copy_count: 1
+2022-01-25 14:07:16,250 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:41] | INFO: 提取变量：duoxuantiId_copy_value: 721843b7-a415-45d3-a47a-514e9a75f690
+2022-01-25 14:07:16,391 | D:\PyCharm\project\httprunner3\common\mysql_operate.py[line:88] | INFO: SQL查询结果: 04d8f55e-de49-423a-9efb-d51f6c88d110
+2022-01-25 14:07:16,391 | D:\PyCharm\project\httprunner3\common\mysql_operate.py[line:57] | INFO: SQL影响行数: 1 预期影响行数: 1 断言成功!
+2022-01-25 14:07:16,391 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:41] | INFO: 提取变量：panduantiId_copy_count: 1
+2022-01-25 14:07:16,391 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:41] | INFO: 提取变量：panduantiId_copy_value: 04d8f55e-de49-423a-9efb-d51f6c88d110
+2022-01-25 14:07:16,524 | D:\PyCharm\project\httprunner3\common\mysql_operate.py[line:88] | INFO: SQL查询结果: e14294cd-3a1d-46bd-9daf-ccf01eadb61c
+2022-01-25 14:07:16,524 | D:\PyCharm\project\httprunner3\common\mysql_operate.py[line:57] | INFO: SQL影响行数: 1 预期影响行数: 1 断言成功!
+2022-01-25 14:07:16,524 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:41] | INFO: 提取变量：paixutiId_copy_count: 1
+2022-01-25 14:07:16,524 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:41] | INFO: 提取变量：paixutiId_copy_value: e14294cd-3a1d-46bd-9daf-ccf01eadb61c
+2022-01-25 14:07:16,690 | D:\PyCharm\project\httprunner3\common\mysql_operate.py[line:88] | INFO: SQL查询结果: 95453e48-6f5f-4750-867a-92f00cb3e667
+2022-01-25 14:07:16,690 | D:\PyCharm\project\httprunner3\common\mysql_operate.py[line:57] | INFO: SQL影响行数: 1 预期影响行数: 1 断言成功!
+2022-01-25 14:07:16,690 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:41] | INFO: 提取变量：tiankongtiId_copy_count: 1
+2022-01-25 14:07:16,692 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:41] | INFO: 提取变量：tiankongtiId_copy_value: 95453e48-6f5f-4750-867a-92f00cb3e667
+2022-01-25 14:07:16,829 | D:\PyCharm\project\httprunner3\common\mysql_operate.py[line:88] | INFO: SQL查询结果: 741e8750-1c24-4a4c-9e5a-1c077f4f9e15
+2022-01-25 14:07:16,830 | D:\PyCharm\project\httprunner3\common\mysql_operate.py[line:57] | INFO: SQL影响行数: 1 预期影响行数: 1 断言成功!
+2022-01-25 14:07:16,831 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:41] | INFO: 提取变量：wendatiId_copy_count: 1
+2022-01-25 14:07:16,831 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:41] | INFO: 提取变量：wendatiId_copy_value: 741e8750-1c24-4a4c-9e5a-1c077f4f9e15
+2022-01-25 14:07:16,960 | D:\PyCharm\project\httprunner3\common\mysql_operate.py[line:88] | INFO: SQL查询结果: ea07a1d1-39cb-4915-8b3c-473e97734ee7
+2022-01-25 14:07:16,960 | D:\PyCharm\project\httprunner3\common\mysql_operate.py[line:57] | INFO: SQL影响行数: 1 预期影响行数: 1 断言成功!
+2022-01-25 14:07:16,960 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:41] | INFO: 提取变量：yuedulijie_zitiId1_copy_count: 1
+2022-01-25 14:07:16,960 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:41] | INFO: 提取变量：yuedulijie_zitiId1_copy_value: ea07a1d1-39cb-4915-8b3c-473e97734ee7
+2022-01-25 14:07:17,095 | D:\PyCharm\project\httprunner3\common\mysql_operate.py[line:88] | INFO: SQL查询结果: 99e76d9a-541d-434a-987e-5623823fe961
+2022-01-25 14:07:17,095 | D:\PyCharm\project\httprunner3\common\mysql_operate.py[line:57] | INFO: SQL影响行数: 1 预期影响行数: 1 断言成功!
+2022-01-25 14:07:17,095 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:41] | INFO: 提取变量：yuedulijie_zitiId2_copy_count: 1
+2022-01-25 14:07:17,095 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:41] | INFO: 提取变量：yuedulijie_zitiId2_copy_value: 99e76d9a-541d-434a-987e-5623823fe961
+2022-01-25 14:07:17,232 | D:\PyCharm\project\httprunner3\common\mysql_operate.py[line:88] | INFO: SQL查询结果: 925acd9e-621f-448d-ab73-ee3be77d1991
+2022-01-25 14:07:17,232 | D:\PyCharm\project\httprunner3\common\mysql_operate.py[line:57] | INFO: SQL影响行数: 1 预期影响行数: 1 断言成功!
+2022-01-25 14:07:17,232 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:41] | INFO: 提取变量：yuedulijie_zitiId3_copy_count: 1
+2022-01-25 14:07:17,232 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:41] | INFO: 提取变量：yuedulijie_zitiId3_copy_value: 925acd9e-621f-448d-ab73-ee3be77d1991
+2022-01-25 14:07:17,233 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '200' 实际值: '200', 断言成功!

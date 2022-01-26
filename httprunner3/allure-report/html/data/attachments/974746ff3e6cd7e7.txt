@@ -1,0 +1,331 @@
+2022-01-25 14:07:47.725 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/exam/invigilator/page/management-list?uri=exam%2Finvigilator&page=1&pageSize=10
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__d47752064eceb10c9bdde411d492369b",
+    "uri": "exam/invigilator"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 14:07:47.726 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:07:48 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "6758",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "items": [
+        {
+            "exam": {
+                "id": "c05b8f63-afd2-4dac-9d53-1515bc078df0",
+                "name": "【普通考试】2022-01-25 14:06:58",
+                "organization": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "name": "tester",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                }
+            },
+            "id": "c05b8f63-afd2-4dac-9d53-1515bc078df0",
+            "invigilatorGrants": null,
+            "invigilatorOrgStr": "全部人员",
+            "member": {
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "email": null,
+                "fullName": "xuesheng1",
+                "id": "00f8266a-1ff2-4ab3-97e0-307621501005",
+                "name": "test_1",
+                "organization": {
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                },
+                "phoneNumber": null
+            }
+        },
+        {
+            "exam": {
+                "id": "3071105e-b920-42ef-9bd9-6ecb585468e7",
+                "name": "【普通考试】2022-01-25 11:20:14",
+                "organization": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "name": "tester",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                }
+            },
+            "id": "3071105e-b920-42ef-9bd9-6ecb585468e7",
+            "invigilatorGrants": [
+                {
+                    "examId": "d2b32a87-0aeb-4319-a48a-520e9739d508",
+                    "id": "5c10d752-c098-4596-b0d2-cd8f909c3654",
+                    "memberId": "5f0870a7-d55d-4a31-8782-1ac8d9690efc",
+                    "organization": {
+                        "name": "tester"
+                    },
+                    "organizationId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "type": 1
+                }
+            ],
+            "invigilatorOrgStr": "tester(包含子部门)",
+            "member": {
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "email": null,
+                "fullName": "超级管理员",
+                "id": "5f0870a7-d55d-4a31-8782-1ac8d9690efc",
+                "name": "admin",
+                "organization": {
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                },
+                "phoneNumber": null
+            }
+        },
+        {
+            "exam": {
+                "id": "9320bb78-3c33-4d55-9755-34364a6f7dce",
+                "name": "【普通考试】2022-01-25 11:16:32",
+                "organization": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "name": "tester",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                }
+            },
+            "id": "9320bb78-3c33-4d55-9755-34364a6f7dce",
+            "invigilatorGrants": null,
+            "invigilatorOrgStr": "全部人员",
+            "member": {
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "email": null,
+                "fullName": "xuesheng1",
+                "id": "00f8266a-1ff2-4ab3-97e0-307621501005",
+                "name": "test_1",
+                "organization": {
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                },
+                "phoneNumber": null
+            }
+        },
+        {
+            "exam": {
+                "id": "75cd9efe-b437-43d6-aea0-f439383c723c",
+                "name": "【普通考试】2022-01-25 11:13:50",
+                "organization": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "name": "tester",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                }
+            },
+            "id": "75cd9efe-b437-43d6-aea0-f439383c723c",
+            "invigilatorGrants": [
+                {
+                    "examId": "60a410e8-6690-47fa-961b-5113d4d1dc6b",
+                    "id": "45408e08-88de-4fbe-a109-956cdc9b7988",
+                    "memberId": "5f0870a7-d55d-4a31-8782-1ac8d9690efc",
+                    "organization": {
+                        "name": "tester"
+                    },
+                    "organizationId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "type": 1
+                }
+            ],
+            "invigilatorOrgStr": "tester(包含子部门)",
+            "member": {
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "email": null,
+                "fullName": "超级管理员",
+                "id": "5f0870a7-d55d-4a31-8782-1ac8d9690efc",
+                "name": "admin",
+                "organization": {
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                },
+                "phoneNumber": null
+            }
+        },
+        {
+            "exam": {
+                "id": "d953140c-6208-45e3-8906-339553c3836d",
+                "name": "【普通考试】2022-01-25 10:58:17",
+                "organization": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "name": "tester",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                }
+            },
+            "id": "d953140c-6208-45e3-8906-339553c3836d",
+            "invigilatorGrants": null,
+            "invigilatorOrgStr": "全部人员",
+            "member": {
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "email": null,
+                "fullName": "xuesheng1",
+                "id": "00f8266a-1ff2-4ab3-97e0-307621501005",
+                "name": "test_1",
+                "organization": {
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                },
+                "phoneNumber": null
+            }
+        },
+        {
+            "exam": {
+                "id": "45d78445-5e55-43d7-9e79-25815b146628",
+                "name": "【普通考试】2022-01-25 10:52:38",
+                "organization": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "name": "tester",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                }
+            },
+            "id": "45d78445-5e55-43d7-9e79-25815b146628",
+            "invigilatorGrants": null,
+            "invigilatorOrgStr": "全部人员",
+            "member": {
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "email": null,
+                "fullName": "xuesheng1",
+                "id": "00f8266a-1ff2-4ab3-97e0-307621501005",
+                "name": "test_1",
+                "organization": {
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                },
+                "phoneNumber": null
+            }
+        },
+        {
+            "exam": {
+                "id": "b65c4a47-6c62-4bad-a5ac-2cea503d880f",
+                "name": "【普通考试】2022-01-25 10:17:20",
+                "organization": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "name": "tester",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                }
+            },
+            "id": "b65c4a47-6c62-4bad-a5ac-2cea503d880f",
+            "invigilatorGrants": null,
+            "invigilatorOrgStr": "全部人员",
+            "member": {
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "email": null,
+                "fullName": "xuesheng1",
+                "id": "00f8266a-1ff2-4ab3-97e0-307621501005",
+                "name": "test_1",
+                "organization": {
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                },
+                "phoneNumber": null
+            }
+        },
+        {
+            "exam": {
+                "id": "a58b1e1a-cd4a-45d8-adb4-7a2d17edbd11",
+                "name": "【普通考试】2022-01-25 10:13:40",
+                "organization": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "name": "tester",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                }
+            },
+            "id": "a58b1e1a-cd4a-45d8-adb4-7a2d17edbd11",
+            "invigilatorGrants": null,
+            "invigilatorOrgStr": "全部人员",
+            "member": {
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "email": null,
+                "fullName": "xuesheng1",
+                "id": "00f8266a-1ff2-4ab3-97e0-307621501005",
+                "name": "test_1",
+                "organization": {
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                },
+                "phoneNumber": null
+            }
+        },
+        {
+            "exam": {
+                "id": "a37e2311-95b2-4b96-a643-ac9bf97062f4",
+                "name": "【普通考试】2022-01-25 09:56:40",
+                "organization": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "name": "tester",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                }
+            },
+            "id": "a37e2311-95b2-4b96-a643-ac9bf97062f4",
+            "invigilatorGrants": [
+                {
+                    "examId": "ec8ee9a7-0474-40bd-a9fd-35453b6d5cb6",
+                    "id": "08fd65b2-fcd5-428d-97df-faae44463ae8",
+                    "memberId": "5f0870a7-d55d-4a31-8782-1ac8d9690efc",
+                    "organization": {
+                        "name": "tester"
+                    },
+                    "organizationId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "type": 1
+                }
+            ],
+            "invigilatorOrgStr": "tester(包含子部门)",
+            "member": {
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "email": null,
+                "fullName": "超级管理员",
+                "id": "5f0870a7-d55d-4a31-8782-1ac8d9690efc",
+                "name": "admin",
+                "organization": {
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                },
+                "phoneNumber": null
+            }
+        },
+        {
+            "exam": {
+                "id": "ae3ba239-5923-4e9d-8e8c-b084b898b2fb",
+                "name": "【普通考试】2022-01-25 09:54:10",
+                "organization": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "name": "tester",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                }
+            },
+            "id": "ae3ba239-5923-4e9d-8e8c-b084b898b2fb",
+            "invigilatorGrants": [
+                {
+                    "examId": "c7cd900c-f064-4cb2-b33b-6196459c8f00",
+                    "id": "c0ad4ae6-bd6a-4cd7-935e-c927e1d27df1",
+                    "memberId": "5f0870a7-d55d-4a31-8782-1ac8d9690efc",
+                    "organization": {
+                        "name": "tester"
+                    },
+                    "organizationId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "type": 1
+                }
+            ],
+            "invigilatorOrgStr": "tester(包含子部门)",
+            "member": {
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "email": null,
+                "fullName": "超级管理员",
+                "id": "5f0870a7-d55d-4a31-8782-1ac8d9690efc",
+                "name": "admin",
+                "organization": {
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                },
+                "phoneNumber": null
+            }
+        }
+    ],
+    "recordCount": 68
+}
+
+2022-01-25 14:07:47,727 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '200' 实际值: '200', 断言成功!

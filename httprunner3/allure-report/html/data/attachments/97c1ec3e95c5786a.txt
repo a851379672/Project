@@ -1,0 +1,33 @@
+2022-01-25 18:45:43.139 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://pre-202108-10.zhixueyun.com/api/v1/system/certificate/business?businessType=4&organizationId=9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__5162aae81b0783802661ab1b21b0a987",
+    "uri": "exam/exam"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 18:45:43.139 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 10:45:43 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "98",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : [{'id': '4f868b1d-fbe4-40f9-b505-b37c0b41217a', 'isDefault': 1, 'name': '普通考试证书', 'type': 4}]
+
+2022-01-25 18:45:43,140 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：certificateId: 4f868b1d-fbe4-40f9-b505-b37c0b41217a
+2022-01-25 18:45:43,140 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '4' 实际值: '4', 断言成功!

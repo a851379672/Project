@@ -1,0 +1,37 @@
+2022-01-25 14:40:22.779 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://tester1.zhixueyun.com/api/v1/exam/invigilator/message
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__c7fc72caf066b114b1fe7f418ac2c8f1",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "uri": "exam/invigilator",
+    "Content-Length": "40"
+}
+cookies  : {}
+body     : ids=7f54e1a0-5936-4612-8271-ca2c73bf4479
+
+2022-01-25 14:40:22.779 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:40:23 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "46",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "ids": "7f54e1a0-5936-4612-8271-ca2c73bf4479"
+}
+
+2022-01-25 14:40:22,780 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '7f54e1a0-5936-4612-8271-ca2c73bf4479' 实际值: '7f54e1a0-5936-4612-8271-ca2c73bf4479', 断言成功!

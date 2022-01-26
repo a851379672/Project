@@ -1,0 +1,50 @@
+2022-01-25 11:16:57.412 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : PUT
+url      : https://tester1.zhixueyun.com/api/v1/exam/question/3f1e45f8-8108-45f9-b4b3-3593613f833c
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__c8422706e5d28b82f1856a214a6f0316",
+    "uri": "exam/question-depot",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "Content-Length": "1120"
+}
+cookies  : {}
+body     : value=%5B%7B%27value%27%3A+%27%E8%AF%95%E9%A2%98%E7%9B%AE%E5%BD%952022-01-25+11%3A16%3A54-%E7%AD%94%E6%A1%881.%27%2C+%27name%27%3A+%27%E8%AF%95%E9%A2%98%E7%9B%AE%E5%BD%952022-01-25+11%3A16%3A54-%E7%AD%94%E6%A1%881.%27%2C+%27type%27%3A+5%7D%5D&content=%E8%AF%95%E9%A2%98%E7%9B%AE%E5%BD%952022-01-25+11%3A16%3A54-%E9%A2%98%E7%9B%AE1.&contentText=%E8%AF%95%E9%A2%98%E7%9B%AE%E5%BD%952022-01-25+11%3A16%3A54-%E9%A2%98%E7%9B%AE1.&score=1000&id=3f1e45f8-8108-45f9-b4b3-3593613f833c&type=5&questionAttrs%5B0%5D%5Bvalue%5D=%E8%AF%95%E9%A2%98%E7%9B%AE%E5%BD%952022-01-25+11%3A16%3A54-%E7%AD%94%E6%A1%881&questionAttrs%5B0%5D%5Bname%5D=%E8%AF%95%E9%A2%98%E7%9B%AE%E5%BD%952022-01-25+11%3A16%3A54-%E7%AD%94%E6%A1%881&questionAttrs%5B0%5D%5Btype%5D=5&questionDepotId=630f7afe-05cb-48eb-b98a-c8618c10711b&questionDepot%5Bid%5D=630f7afe-05cb-48eb-b98a-c8618c10711b&questionDepot%5Bname%5D=%E8%AF%95%E9%A2%98%E7%9B%AE%E5%BD%952022-01-25+11%3A16%3A54&parsing=%E8%AF%95%E9%A2%98%E8%A7%A3%E6%9E%90&parsingText=%E8%AF%95%E9%A2%98%E8%A7%A3%E6%9E%90&affectedType=1&difficulty=3&organizationId=cc861919-b7fb-4582-b755-48b2eb0e5203&depotEdit=1
+
+2022-01-25 11:16:57.412 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:16:58 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "360",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "content": "试题目录2022-01-25 11:16:54-题目1.",
+    "createTime": 1643080617974,
+    "difficulty": 3,
+    "errorRate": 0,
+    "id": "3f1e45f8-8108-45f9-b4b3-3593613f833c",
+    "markAmount": 0,
+    "questionAttrs": null,
+    "questionDepotId": "630f7afe-05cb-48eb-b98a-c8618c10711b",
+    "recoveryCount": 0,
+    "replaceId": "3f1e45f8-8108-45f9-b4b3-3593613f833c",
+    "rightRate": 0,
+    "status": 0,
+    "subs": [],
+    "type": 5
+}
+
+2022-01-25 11:16:57,413 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '0' 实际值: '0', 断言成功!

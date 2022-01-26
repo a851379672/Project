@@ -1,0 +1,36 @@
+2022-01-25 18:46:34.647 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : http://pre-202108-10.zhixueyun.com/api/v1/exam/question/batchDelete
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__5162aae81b0783802661ab1b21b0a987",
+    "uri": "exam/question-depot",
+    "Content-Length": "1405",
+    "Content-Type": "application/x-www-form-urlencoded"
+}
+cookies  : {}
+body     : ids=0d6acf12-4496-4fae-9423-10d704bcd5eb%2C3af6844d-97e1-4894-b0a7-6eb160a1f9e3%2C5246fbe2-c2f1-425d-adf2-30769328332f%2C6e9cbd07-f371-4e4c-9a77-26536d8a6feb%2C709215b0-0db6-4560-aa7d-31260497f154%2C838e1640-ce98-4d53-941d-0f4c8c324979%2C907e107b-b3e3-4758-ba73-b3a99c4b5a57%2C947d798d-4498-48e4-a7e1-f97da4afc5e0%2Ca1ef8343-99f3-4b9a-b53a-942bfb240684%2Caae576ab-1b5c-446b-a7bc-851d9b27d904%2Cc37cc486-69a3-4373-8bc1-8af8ff445f5e%2Cd77784c9-465b-4073-9629-65b36cc5cccd%2Cdb5665ba-3517-44d9-94d5-208f6e0c730d%2Ce236cbc1-7549-4a54-802e-4453e53f2c02%2Ce72287eb-bc6a-45b3-9132-e034c01c121e%2Cf7ee3633-7ec6-4754-83bf-ba6127ce30fd%2C06f6e3d4-0344-4be3-85a8-80d443f3e8e1%2C163fbca4-575b-441e-ab42-42d16830766b%2C1c9d96fb-5deb-418b-b62c-1ed25d40dbe4%2C21a0b953-d7ba-4998-9a18-3d32647d3fac%2C39892e25-27e6-4ab2-9a72-f056f384e313%2C3e1a5d9e-acc2-48f9-8338-9009a4531b1c%2C49861fb8-8615-41dc-97c0-458d10f3f324%2C5690f385-b6c2-436d-b338-e3d15ffcbb0e%2C659b07bb-a7a3-41ac-be16-101b3868e163%2C66c451f8-3e48-4752-bc7e-77d60cd26218%2C78330986-fc2e-4ad5-bfa6-3aa71bb4c34b%2C810865d5-39ca-4461-a82e-54b6e5b32a8c%2C818d68d4-63f8-4221-9037-e18d46026739%2C9bf61498-1949-40db-b428-2a8684594893%2C9e23a381-39a2-40fb-b17c-af275b00f46e%2Ca17670e2-e9fa-425a-8db0-e441791ec2e4%2Cbd6e6660-8235-4973-80eb-8d7c6f49f6a2%2Cc865d5f6-1b38-4c12-8266-4f34800fb092%2Cdbe62ae5-7aa1-4e0c-90d4-5221110c9118%2Cfd194ed2-05e5-42eb-8b08-eeba7e16ea93
+
+2022-01-25 18:46:34.648 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 10:46:35 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "1341",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "ids": "0d6acf12-4496-4fae-9423-10d704bcd5eb,3af6844d-97e1-4894-b0a7-6eb160a1f9e3,5246fbe2-c2f1-425d-adf2-30769328332f,6e9cbd07-f371-4e4c-9a77-26536d8a6feb,709215b0-0db6-4560-aa7d-31260497f154,838e1640-ce98-4d53-941d-0f4c8c324979,907e107b-b3e3-4758-ba73-b3a99c4b5a57,947d798d-4498-48e4-a7e1-f97da4afc5e0,a1ef8343-99f3-4b9a-b53a-942bfb240684,aae576ab-1b5c-446b-a7bc-851d9b27d904,c37cc486-69a3-4373-8bc1-8af8ff445f5e,d77784c9-465b-4073-9629-65b36cc5cccd,db5665ba-3517-44d9-94d5-208f6e0c730d,e236cbc1-7549-4a54-802e-4453e53f2c02,e72287eb-bc6a-45b3-9132-e034c01c121e,f7ee3633-7ec6-4754-83bf-ba6127ce30fd,06f6e3d4-0344-4be3-85a8-80d443f3e8e1,163fbca4-575b-441e-ab42-42d16830766b,1c9d96fb-5deb-418b-b62c-1ed25d40dbe4,21a0b953-d7ba-4998-9a18-3d32647d3fac,39892e25-27e6-4ab2-9a72-f056f384e313,3e1a5d9e-acc2-48f9-8338-9009a4531b1c,49861fb8-8615-41dc-97c0-458d10f3f324,5690f385-b6c2-436d-b338-e3d15ffcbb0e,659b07bb-a7a3-41ac-be16-101b3868e163,66c451f8-3e48-4752-bc7e-77d60cd26218,78330986-fc2e-4ad5-bfa6-3aa71bb4c34b,810865d5-39ca-4461-a82e-54b6e5b32a8c,818d68d4-63f8-4221-9037-e18d46026739,9bf61498-1949-40db-b428-2a8684594893,9e23a381-39a2-40fb-b17c-af275b00f46e,a17670e2-e9fa-425a-8db0-e441791ec2e4,bd6e6660-8235-4973-80eb-8d7c6f49f6a2,c865d5f6-1b38-4c12-8266-4f34800fb092,dbe62ae5-7aa1-4e0c-90d4-5221110c9118,fd194ed2-05e5-42eb-8b08-eeba7e16ea93"
+}
+
+2022-01-25 18:46:34,648 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '200' 实际值: '200', 断言成功!

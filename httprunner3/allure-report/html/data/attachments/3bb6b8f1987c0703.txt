@@ -1,0 +1,3 @@
+INFO     root:data_depend.py:37 提取变量：attachmentId: e1412ff6-ac88-44c7-b296-a8fe4cfd859c
+INFO     root:data_depend.py:37 提取变量：attachmentPath: /ixrDO9ptC2K6xiO8hV36aEbpAvvOx1suwcMA8ss13q83B3iVmPbpbTTJuO1pezqBuYFnb0ZfPGAiZQuFeeJ/g==
+INFO     root:validate.py:76 响应断言:  预期值: 'jpg' 实际值: '答题图片_120.jpg', 断言成功!

@@ -1,0 +1,51 @@
+2022-01-25 11:16:56.916 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://tester1.zhixueyun.com/api/v1/exam/question
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__c8422706e5d28b82f1856a214a6f0316",
+    "uri": "exam/question-depot",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "Content-Length": "871"
+}
+cookies  : {}
+body     : value=%5B%7B%27value%27%3A+%271%7C2%27%2C+%27name%27%3A+%271%7C2%27%2C+%27type%27%3A+4%7D%5D&questionAttrs%5B0%5D%5Bvalue%5D=1%7C2&questionAttrs%5B0%5D%5Bname%5D=1%7C2&questionAttrs%5B0%5D%5Btype%5D=4&content=%3Cp%3E+%E9%A2%98%E7%9B%AE1%EF%BC%9A%28%29+%3C%2Fp%3E+%3Cp%3E+%E9%A2%98%E7%9B%AE2%EF%BC%9A%28%29+%3C%2Fp%3E&contentText=%E9%A2%98%E7%9B%AE1%EF%BC%9A%28%29+%E9%A2%98%E7%9B%AE2%EF%BC%9A%28%29&score=1000&type=4&questionDepotId=630f7afe-05cb-48eb-b98a-c8618c10711b&questionDepot%5Bid%5D=630f7afe-05cb-48eb-b98a-c8618c10711b&questionDepot%5Bname%5D=%E8%AF%95%E9%A2%98%E7%9B%AE%E5%BD%952022-01-25+11%3A16%3A54&organizationId=cc861919-b7fb-4582-b755-48b2eb0e5203&organization%5Bid%5D=cc861919-b7fb-4582-b755-48b2eb0e5203&organization%5Bname%5D=tester&parsing=%E8%AF%95%E9%A2%98%E8%A7%A3%E6%9E%90&parsingText=%E8%AF%95%E9%A2%98%E8%A7%A3%E6%9E%90&difficulty=3&depotEdit=0
+
+2022-01-25 11:16:56.917 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:16:57 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "312",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "content": "<p> 题目1：() </p> <p> 题目2：() </p>",
+    "createTime": 1643080617631,
+    "difficulty": 3,
+    "errorRate": 0,
+    "id": "1945eec2-12a4-4945-8fb9-4e4af5a95618",
+    "markAmount": 0,
+    "questionAttrs": null,
+    "questionDepotId": "630f7afe-05cb-48eb-b98a-c8618c10711b",
+    "recoveryCount": 0,
+    "rightRate": 0,
+    "status": 0,
+    "subs": [],
+    "type": 4
+}
+
+2022-01-25 11:16:56,917 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：tiankongid: 1945eec2-12a4-4945-8fb9-4e4af5a95618
+2022-01-25 11:16:56,917 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：tiankongname: <p> 题目1：() </p> <p> 题目2：() </p>
+2022-01-25 11:16:56,917 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '4' 实际值: '4', 断言成功!

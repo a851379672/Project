@@ -1,0 +1,294 @@
+{
+  "uid" : "4bf73dc37b30542f",
+  "name" : "【游戏管理】——删除练习",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "fd83339bc083053d65221caebc99a918",
+  "time" : {
+    "start" : 1643107612364,
+    "stop" : 1643107612459,
+    "duration" : 95
+  },
+  "description" : "\n        :param api_data\n        :return: report_content\n        ",
+  "descriptionHtml" : "<pre><code>    :param api_data\n    :return: report_content\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "file_fixture",
+    "time" : {
+      "start" : 1643107533441,
+      "stop" : 1643107533449,
+      "duration" : 8
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1643107533449,
+      "stop" : 1643107533754,
+      "duration" : 305
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "fsetup_tear_down",
+    "time" : {
+      "start" : 1643107533449,
+      "stop" : 1643107533449,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass",
+    "time" : {
+      "start" : 1643107533754,
+      "stop" : 1643107533760,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param api_data\n        :return: report_content\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "dfa3f32e22e0a1bd",
+      "name" : "log",
+      "source" : "dfa3f32e22e0a1bd.txt",
+      "type" : "text/plain",
+      "size" : 88
+    }, {
+      "uid" : "16ee9b6bf7ea4431",
+      "name" : "stderr",
+      "source" : "16ee9b6bf7ea4431.txt",
+      "type" : "text/plain",
+      "size" : 1302
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "fsetup_tear_down::0",
+    "time" : {
+      "start" : 1643107617789,
+      "stop" : 1643107617793,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass::0",
+    "time" : {
+      "start" : 1643107617782,
+      "stop" : 1643107617782,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【游戏管理】——删除练习"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=5, reruns_delay=5)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "22048-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "http://pre-202108-10.zhixueyun.com/api/v1/exam/game/${practiceId}",
+    "url" : "http://pre-202108-10.zhixueyun.com/api/v1/exam/game/${practiceId}",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "1d516fc95104ffb0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643107612364,
+        "stop" : 1643107612459,
+        "duration" : 95
+      }
+    }, {
+      "uid" : "395812c6f00711fd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643092825048,
+        "stop" : 1643092825173,
+        "duration" : 125
+      }
+    }, {
+      "uid" : "6bd3e35b793f83ac",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643092825048,
+        "stop" : 1643092825173,
+        "duration" : 125
+      }
+    }, {
+      "uid" : "b0b12097b9331068",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643092251552,
+        "stop" : 1643092251667,
+        "duration" : 115
+      }
+    }, {
+      "uid" : "ab804445f20f802c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643092251552,
+        "stop" : 1643092251667,
+        "duration" : 115
+      }
+    }, {
+      "uid" : "3c9276251132cbfa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643090871158,
+        "stop" : 1643090871288,
+        "duration" : 130
+      }
+    }, {
+      "uid" : "6f99fc470cb03d09",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643090871158,
+        "stop" : 1643090871288,
+        "duration" : 130
+      }
+    }, {
+      "uid" : "b6193157c33f21dd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643080868145,
+        "stop" : 1643080868291,
+        "duration" : 146
+      }
+    }, {
+      "uid" : "5088a29c83a60cee",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643080868145,
+        "stop" : 1643080868291,
+        "duration" : 146
+      }
+    }, {
+      "uid" : "945f0210dcb10299",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643080634726,
+        "stop" : 1643080634850,
+        "duration" : 124
+      }
+    }, {
+      "uid" : "544aa1b93f3d9404",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643080634726,
+        "stop" : 1643080634850,
+        "duration" : 124
+      }
+    }, {
+      "uid" : "e13772d456c90453",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643080490546,
+        "stop" : 1643080490678,
+        "duration" : 132
+      }
+    }, {
+      "uid" : "25d51a71a6f6ba9e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643080490546,
+        "stop" : 1643080490678,
+        "duration" : 132
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=5, reruns_delay=5)" ]
+  },
+  "source" : "4bf73dc37b30542f.json",
+  "parameterValues" : [ ]
+}

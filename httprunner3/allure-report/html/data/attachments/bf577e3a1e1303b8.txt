@@ -1,0 +1,46 @@
+2022-01-25 14:29:59.095 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://tester1.zhixueyun.com/api/v1/exam/paper-class
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__913d806a4e52a41790dc2c97e3f00bb4",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "uri": "exam/exam",
+    "Content-Length": "2354"
+}
+cookies  : {}
+body     : questionNum=7&totalScore=9000&paperClassQuestions=%5B%7B%27questionId%27%3A+%270c2eea63-9fca-4cd5-9287-861479ede208%27%2C+%27score%27%3A+1000%2C+%27sequence%27%3A+0%2C+%27isFromSelected%27%3A+0%2C+%27sortType%27%3A+1%7D%2C+%7B%27questionId%27%3A+%27a34a3ebb-1a30-44f6-8260-811c8c5c50e7%27%2C+%27score%27%3A+1000%2C+%27sequence%27%3A+1%2C+%27isFromSelected%27%3A+0%2C+%27sortType%27%3A+2%7D%2C+%7B%27questionId%27%3A+%27beca9126-6a41-4c1e-842e-fc8d7a151418%27%2C+%27score%27%3A+1000%2C+%27sequence%27%3A+2%2C+%27isFromSelected%27%3A+0%2C+%27sortType%27%3A+3%7D%2C+%7B%27questionId%27%3A+%279d3384b2-6fa7-4763-a59d-1c78bb1ed72e%27%2C+%27score%27%3A+1000%2C+%27sequence%27%3A+3%2C+%27isFromSelected%27%3A+0%2C+%27sortType%27%3A+4%7D%2C+%7B%27questionId%27%3A+%271691b74c-c857-4112-b968-b6e04e48640a%27%2C+%27score%27%3A+1000%2C+%27sequence%27%3A+4%2C+%27isFromSelected%27%3A+0%2C+%27sortType%27%3A+5%7D%2C+%7B%27questionId%27%3A+%270b20f16d-ed3c-4ef7-be1c-c9ad90f90ac7%27%2C+%27score%27%3A+1000%2C+%27sequence%27%3A+5%2C+%27isFromSelected%27%3A+0%2C+%27sortType%27%3A+6%7D%2C+%7B%27questionId%27%3A+%276a0e6e51-8853-4d81-a615-27a78e7f2f58%27%2C+%27score%27%3A+3000%2C+%27sequence%27%3A+6%2C+%27isFromSelected%27%3A+0%2C+%27sortType%27%3A+7%7D%2C+%7B%27questionId%27%3A+%27e79da67b-7d4f-4453-b8b4-73239aa40200%27%2C+%27score%27%3A+1000%2C+%27sequence%27%3A+0%2C+%27parentId%27%3A+%276a0e6e51-8853-4d81-a615-27a78e7f2f58%27%7D%2C+%7B%27questionId%27%3A+%27da881044-e0d0-4adf-a1cc-9c3c6302e932%27%2C+%27score%27%3A+1000%2C+%27sequence%27%3A+1%2C+%27parentId%27%3A+%276a0e6e51-8853-4d81-a615-27a78e7f2f58%27%7D%2C+%7B%27questionId%27%3A+%277c93bda5-9962-418e-b95d-4a492f46cf4b%27%2C+%27score%27%3A+1000%2C+%27sequence%27%3A+2%2C+%27parentId%27%3A+%276a0e6e51-8853-4d81-a615-27a78e7f2f58%27%7D%5D&questionDepot%2F54edbf14-202d-48de-ad6f-4a8a83fb7a3d%2F3%2F1%2F1=10&questionDepot%2F54edbf14-202d-48de-ad6f-4a8a83fb7a3d%2F3%2F1%2F2=10&questionDepot%2F54edbf14-202d-48de-ad6f-4a8a83fb7a3d%2F3%2F1%2F3=10&questionDepot%2F54edbf14-202d-48de-ad6f-4a8a83fb7a3d%2F3%2F1%2F8=10&questionDepot%2F54edbf14-202d-48de-ad6f-4a8a83fb7a3d%2F3%2F1%2F4=10&questionDepot%2F54edbf14-202d-48de-ad6f-4a8a83fb7a3d%2F3%2F1%2F5=10&questionDepot%2F54edbf14-202d-48de-ad6f-4a8a83fb7a3d%2F3%2F1%2F6=30&type=2&name=%E3%80%90%E6%99%AE%E9%80%9A%E8%80%83%E8%AF%95%E3%80%912022-01-25+14%3A29%3A58
+
+2022-01-25 14:29:59.095 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:29:59 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "230",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "createTime": 1643092199875,
+    "id": "a2e1379a-f932-4f34-b385-36a985b4ddac",
+    "isSubjective": 1,
+    "name": "【普通考试】2022-01-25 14:29:58",
+    "organizationId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+    "status": 1,
+    "totalScore": 9000,
+    "type": 2
+}
+
+2022-01-25 14:29:59,095 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：paperId: a2e1379a-f932-4f34-b385-36a985b4ddac
+2022-01-25 14:29:59,095 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：examName: 【普通考试】2022-01-25 14:29:58
+2022-01-25 14:29:59,096 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '1' 实际值: '1', 断言成功!

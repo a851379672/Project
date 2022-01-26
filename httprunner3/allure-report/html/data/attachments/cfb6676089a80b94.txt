@@ -1,0 +1,36 @@
+2022-01-25 11:20:56.194 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://tester1.zhixueyun.com/api/v1/human/file/upload
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__c0909a02d4a8aa71f02b2f2c302f1894",
+    "Content-Length": "483410",
+    "Content-Type": "multipart/form-data; boundary=e7002de670d47e9c072d92667edfe6c5"
+}
+cookies  : {}
+body     : upload file stream (OMITTED)
+
+2022-01-25 11:20:56.194 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:20:56 GMT",
+    "Content-Type": "text/html;charset=UTF-8",
+    "Content-Length": "244",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : text/html;charset=UTF-8
+body     : [{'contentType': None, 'createTime': 1643080856934, 'filename': '广告封面_1055.jpg', 'id': '3d504fe7-2b2e-4cb9-be03-906ec5be109d', 'path': 'default/M00/0B/08/wKgLTWHvbJiANDr5AAdftfhVfXQ480.jpg', 'size': 483253, 'thumbnailId': None, 'thumbnailPath': None}]
+
+2022-01-25 11:20:56,195 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：path: default/M00/0B/08/wKgLTWHvbJiANDr5AAdftfhVfXQ480.jpg
+2022-01-25 11:20:56,195 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：attachmentId: 3d504fe7-2b2e-4cb9-be03-906ec5be109d
+2022-01-25 11:20:56,195 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '483253' 实际值: '483253', 断言成功!

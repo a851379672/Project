@@ -1,0 +1,2 @@
+INFO     root:data_depend.py:37 提取变量：examId: 996cb3ad-1bb2-4750-bc93-77f0728cfb37
+INFO     root:validate.py:76 响应断言:  预期值: '200' 实际值: '200', 断言成功!

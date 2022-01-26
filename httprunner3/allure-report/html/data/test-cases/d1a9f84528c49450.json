@@ -1,0 +1,101 @@
+{
+  "uid" : "d1a9f84528c49450",
+  "name" : "【普通考试】——新增考试-添加试卷-试题组卷-新增试题-获取音频fileKey",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "939fd4d90978507faec33b5ccf9d74a6",
+  "time" : {
+    "start" : 1643090765502,
+    "stop" : 1643090765623,
+    "duration" : 121
+  },
+  "description" : "\n        :param api_data\n        :return: report_content\n        ",
+  "descriptionHtml" : "<pre><code>    :param api_data\n    :return: report_content\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n        :param api_data\n        :return: report_content\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "bdf856d1dd2262b2",
+      "name" : "log",
+      "source" : "bdf856d1dd2262b2.txt",
+      "type" : "text/plain",
+      "size" : 221
+    }, {
+      "uid" : "c7b54ad7b44e974a",
+      "name" : "stderr",
+      "source" : "c7b54ad7b44e974a.txt",
+      "type" : "text/plain",
+      "size" : 1630
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【普通考试】——新增考试-添加试卷-试题组卷-新增试题-获取音频fileKey"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=3, reruns_delay=5)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "23184-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "api_data",
+    "value" : "{'name': '【普通考试】——新增考试-添加试卷-试题组卷-新增试题-获取音频fileKey', 'request': {'url': 'api/v1/human/sharding-file/auth/get-upload-files', 'method': 'GET', 'headers': {'Authorization': 'Bearer__${admin_token}', 'uri': 'exam/exam'}, 'params': {'fileKey': '$md_5{exam/试题音频.mp3, path_name(), file_size()}'}}, 'sql_statement': None, 'extract': {'mp3fileKey': '$.fileKey'}, 'validate': [{'eq': ['Status Code', 200]}], 'allure': {'allure_descrption': '【普通考试】——新增考试-添加试卷-试题组卷-新增试题-获取音频fileKey', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}"
+  } ],
+  "links" : [ {
+    "name" : "https://tester1.zhixueyun.com/api/v1/human/sharding-file/auth/get-upload-files",
+    "url" : "https://tester1.zhixueyun.com/api/v1/human/sharding-file/auth/get-upload-files",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=3, reruns_delay=5)" ]
+  },
+  "source" : "d1a9f84528c49450.json",
+  "parameterValues" : [ "{'name': '【普通考试】——新增考试-添加试卷-试题组卷-新增试题-获取音频fileKey', 'request': {'url': 'api/v1/human/sharding-file/auth/get-upload-files', 'method': 'GET', 'headers': {'Authorization': 'Bearer__${admin_token}', 'uri': 'exam/exam'}, 'params': {'fileKey': '$md_5{exam/试题音频.mp3, path_name(), file_size()}'}}, 'sql_statement': None, 'extract': {'mp3fileKey': '$.fileKey'}, 'validate': [{'eq': ['Status Code', 200]}], 'allure': {'allure_descrption': '【普通考试】——新增考试-添加试卷-试题组卷-新增试题-获取音频fileKey', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}" ]
+}

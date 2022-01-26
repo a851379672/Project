@@ -1,0 +1,47 @@
+2022-01-25 14:40:04.836 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : PUT
+url      : https://tester1.zhixueyun.com/api/v1/exam/question-depot/8a5af9c6-e63d-45a7-ace1-d078c906e40f
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__c7fc72caf066b114b1fe7f418ac2c8f1",
+    "uri": "exam/question-depot",
+    "Content-Length": "229",
+    "Content-Type": "application/x-www-form-urlencoded"
+}
+cookies  : {}
+body     : name=%E8%AF%95%E9%A2%98%E7%9B%AE%E5%BD%952022-01-25+14%3A39%3A58&id=8a5af9c6-e63d-45a7-ace1-d078c906e40f&organizationId=cc861919-b7fb-4582-b755-48b2eb0e5203&code=tester_1&sequence=1&state=0&authToLower=0&depotAuthToLower=0&type=1
+
+2022-01-25 14:40:04.837 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:40:05 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "283",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "authToLower": 0,
+    "createTime": 1643092799811,
+    "depotAuthToLower": 0,
+    "id": "8a5af9c6-e63d-45a7-ace1-d078c906e40f",
+    "name": "试题目录2022-01-25 14:39:58",
+    "organization": null,
+    "organizationId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+    "parentId": null,
+    "parentName": null,
+    "sequence": 1,
+    "state": 0
+}
+
+2022-01-25 14:40:04,837 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '8a5af9c6-e63d-45a7-ace1-d078c906e40f' 实际值: '8a5af9c6-e63d-45a7-ace1-d078c906e40f', 断言成功!

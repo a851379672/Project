@@ -1,0 +1,2 @@
+INFO     root:data_depend.py:37 提取变量：answer: 4ba11eda-3095-45a7-b090-ef5c4e190deb
+INFO     root:validate.py:76 响应断言:  预期值: '200' 实际值: '200', 断言成功!

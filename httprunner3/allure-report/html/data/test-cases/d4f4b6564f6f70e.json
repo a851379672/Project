@@ -1,0 +1,188 @@
+{
+  "uid" : "d4f4b6564f6f70e",
+  "name" : "【监考/报名管理】——新增考试-添加试卷-试题组卷-新增试题-新增单选题",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "31b3cb5e87e2cd72006ae946aa3d05d4",
+  "time" : {
+    "start" : 1643080628707,
+    "stop" : 1643080628861,
+    "duration" : 154
+  },
+  "description" : "\n        :param api_data\n        :return: report_content\n        ",
+  "descriptionHtml" : "<pre><code>    :param api_data\n    :return: report_content\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "fsetup_tear_down",
+    "time" : {
+      "start" : 1643080586705,
+      "stop" : 1643080586705,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass",
+    "time" : {
+      "start" : 1643080586990,
+      "stop" : 1643080586995,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "file_fixture",
+    "time" : {
+      "start" : 1643080586697,
+      "stop" : 1643080586705,
+      "duration" : 8
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1643080586705,
+      "stop" : 1643080586990,
+      "duration" : 285
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param api_data\n        :return: report_content\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "63362e0d374dfe70",
+      "name" : "log",
+      "source" : "63362e0d374dfe70.txt",
+      "type" : "text/plain",
+      "size" : 364
+    }, {
+      "uid" : "84c4c7eb9f2529d2",
+      "name" : "stderr",
+      "source" : "84c4c7eb9f2529d2.txt",
+      "type" : "text/plain",
+      "size" : 3605
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "fsetup_tear_down::0",
+    "time" : {
+      "start" : 1643080642834,
+      "stop" : 1643080642840,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass::0",
+    "time" : {
+      "start" : 1643080642825,
+      "stop" : 1643080642825,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【监考/报名管理】——新增考试-添加试卷-试题组卷-新增试题-新增单选题"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "7636-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "api_data",
+    "value" : "{'name': '【监考/报名管理】——新增考试-添加试卷-试题组卷-新增试题-新增单选题', 'request': {'url': 'api/v1/exam/question/other', 'method': 'POST', 'headers': {'Authorization': 'Bearer__${admin_token}', 'content-type': 'application/x-www-form-urlencoded; charset=UTF-8', 'uri': 'exam/exam'}, 'data': {'value': [{'value': 'A', 'valueText': 'A', 'name': 0, 'type': 0}, {'value': 'B', 'valueText': 'B', 'name': 1, 'type': 1}, {'value': 'C', 'valueText': 'C', 'name': 2, 'type': 1}, {'value': 'D', 'valueText': 'D', 'name': 3, 'type': 1}], 'questionAttrs[0][value]': 'A', 'questionAttrs[0][valueText]': 'A', 'questionAttrs[0][name]': 0, 'questionAttrs[0][type]': 0, 'questionAttrs[1][value]': 'B', 'questionAttrs[1][valueText]': 'B', 'questionAttrs[1][name]': 1, 'questionAttrs[1][type]': 1, 'questionAttrs[2][value]': 'C', 'questionAttrs[2][valueText]': 'C', 'questionAttrs[2][name]': 2, 'questionAttrs[2][type]': 1, 'questionAttrs[3][value]': 'D', 'questionAttrs[3][valueText]': 'D', 'questionAttrs[3][name]': 3, 'questionAttrs[3][type]': 1, 'content': '【单选题】试题信息$date_time{}', 'contentText': '【单选题】试题信息$date_time{}', 'score': 1000, 'type': 1, 'parsing': '【单选题】试题解析', 'parsingText': '【单选题】试题解析', 'difficulty': 3, 'organizationId': '${organizationId}', 'isTemp': 1, 'depotEdit': 0}}, 'sql_statement': None, 'extract': {'danxuantiId': '$.id', 'danxuantiName': '$.content', 'danxuantiDifficulty': '$.difficulty'}, 'validate': [{'eq': ['$.type', '1']}], 'allure': {'allure_descrption': '【监考/报名管理】——新增考试-添加试卷-试题组卷-新增试题-新增单选题', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}"
+  } ],
+  "links" : [ {
+    "name" : "https://tester1.zhixueyun.com/api/v1/exam/question/other",
+    "url" : "https://tester1.zhixueyun.com/api/v1/exam/question/other",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d4f4b6564f6f70e.json",
+  "parameterValues" : [ "{'name': '【监考/报名管理】——新增考试-添加试卷-试题组卷-新增试题-新增单选题', 'request': {'url': 'api/v1/exam/question/other', 'method': 'POST', 'headers': {'Authorization': 'Bearer__${admin_token}', 'content-type': 'application/x-www-form-urlencoded; charset=UTF-8', 'uri': 'exam/exam'}, 'data': {'value': [{'value': 'A', 'valueText': 'A', 'name': 0, 'type': 0}, {'value': 'B', 'valueText': 'B', 'name': 1, 'type': 1}, {'value': 'C', 'valueText': 'C', 'name': 2, 'type': 1}, {'value': 'D', 'valueText': 'D', 'name': 3, 'type': 1}], 'questionAttrs[0][value]': 'A', 'questionAttrs[0][valueText]': 'A', 'questionAttrs[0][name]': 0, 'questionAttrs[0][type]': 0, 'questionAttrs[1][value]': 'B', 'questionAttrs[1][valueText]': 'B', 'questionAttrs[1][name]': 1, 'questionAttrs[1][type]': 1, 'questionAttrs[2][value]': 'C', 'questionAttrs[2][valueText]': 'C', 'questionAttrs[2][name]': 2, 'questionAttrs[2][type]': 1, 'questionAttrs[3][value]': 'D', 'questionAttrs[3][valueText]': 'D', 'questionAttrs[3][name]': 3, 'questionAttrs[3][type]': 1, 'content': '【单选题】试题信息$date_time{}', 'contentText': '【单选题】试题信息$date_time{}', 'score': 1000, 'type': 1, 'parsing': '【单选题】试题解析', 'parsingText': '【单选题】试题解析', 'difficulty': 3, 'organizationId': '${organizationId}', 'isTemp': 1, 'depotEdit': 0}}, 'sql_statement': None, 'extract': {'danxuantiId': '$.id', 'danxuantiName': '$.content', 'danxuantiDifficulty': '$.difficulty'}, 'validate': [{'eq': ['$.type', '1']}], 'allure': {'allure_descrption': '【监考/报名管理】——新增考试-添加试卷-试题组卷-新增试题-新增单选题', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}" ]
+}

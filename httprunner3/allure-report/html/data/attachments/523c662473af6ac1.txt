@@ -1,0 +1,90 @@
+2022-01-25 11:20:42.555 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/exam/question-analyze/question-list?examId=d2b32a87-0aeb-4319-a48a-520e9739d508&orderType=0&orderField=rightCount&page=1&pageSize=10
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__c0909a02d4a8aa71f02b2f2c302f1894",
+    "uri": "exam/exam"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 11:20:42.555 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:20:43 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "1965",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "items": [
+        {
+            "answeredCount": 1,
+            "content": "【排序题】试题信息2022-01-25 11:20:13",
+            "errorCount": 0,
+            "errorRate": 0,
+            "id": "4b80bde9-fc57-464d-8c08-d8072f6f03ca",
+            "questionCopyId": "4ba11eda-3095-45a7-b090-ef5c4e190deb",
+            "questionDepotName": "试题目录",
+            "rightCount": 1,
+            "rightRate": 10000,
+            "type": 8,
+            "unansweredCount": 0
+        },
+        {
+            "answeredCount": 1,
+            "content": "【判断题】试题信息2022-01-25 11:20:13<img id='preview-9f25384a-2a7f-4630-a29e-e9d7a753a333,试题视频_1052.mp4,mp4' class='video-img' style='display:block;width:302px;height:170px;' data-type='mp4' data-name='试题视频_1052.mp4' data-id='9f25384a-2a7f-4630-a29e-e9d7a753a333' src='https://tester1.zhixueyun.com/admin/images/preview-media.jpg' />",
+            "errorCount": 0,
+            "errorRate": 0,
+            "id": "6580df20-caa3-43f9-8138-0754b976cec6",
+            "questionCopyId": "ba526b5d-0e96-42e1-be6d-fed10f8e3ba8",
+            "questionDepotName": "试题目录",
+            "rightCount": 1,
+            "rightRate": 10000,
+            "type": 3,
+            "unansweredCount": 0
+        },
+        {
+            "answeredCount": 0,
+            "content": "【单选题】试题信息2022-01-25 11:20:11<img src=\"https://test9.zhixueyun.com/default/M00/0B/08/wKgLTWHvbGyAdgA9AACACFLS5pw103.jpg\" />",
+            "errorCount": 0,
+            "errorRate": 0,
+            "id": "818dfb32-c25e-4224-a8fa-f6665abfb37e",
+            "questionCopyId": "9fa05de0-37f3-489a-87bc-c20942074662",
+            "questionDepotName": "试题目录",
+            "rightCount": 0,
+            "rightRate": 0,
+            "type": 1,
+            "unansweredCount": 1
+        },
+        {
+            "answeredCount": 1,
+            "content": "【多选题】试题信息2022-01-25 11:20:12<img id='preview-80cbf416-f44b-4be4-af42-2238543ecb89,试题音频_1052.mp3,mp3' class='video-img' style='display:block;width:302px;height:170px;' data-type='mp3' data-name='试题音频_1052.mp3' data-id='80cbf416-f44b-4be4-af42-2238543ecb89' src='https://tester1.zhixueyun.com/admin/images/preview-media.jpg' />",
+            "errorCount": 1,
+            "errorRate": 10000,
+            "id": "a8132cf1-16f0-4d2e-a9a6-edeecb4c96a0",
+            "questionCopyId": "d7a3df89-6cc5-44eb-9d2b-f67a865c5f3f",
+            "questionDepotName": "试题目录",
+            "rightCount": 0,
+            "rightRate": 0,
+            "type": 2,
+            "unansweredCount": 0
+        }
+    ],
+    "recordCount": 4
+}
+
+2022-01-25 11:20:42,556 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：rightanswer: 4ba11eda-3095-45a7-b090-ef5c4e190deb
+2022-01-25 11:20:42,556 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '200' 实际值: '200', 断言成功!

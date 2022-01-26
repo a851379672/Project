@@ -1,0 +1,3 @@
+INFO     root:data_depend.py:37 提取变量：paperId: c2d7762c-a777-48e4-8b94-81c7c82c9186
+INFO     root:data_depend.py:37 提取变量：examName: 【监考/报名考试】2022-01-25 14:40:18
+INFO     root:validate.py:76 响应断言:  预期值: '1' 实际值: '1', 断言成功!

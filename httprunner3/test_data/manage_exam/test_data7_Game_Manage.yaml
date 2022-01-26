@@ -1,0 +1,677 @@
+allure:
+    {
+      'allure_descrption': '',
+      'allure_suite': '管理端',
+      'allure_sub_suite': '考试模块',
+      'allure_feature': '管理端',
+      'allure_story': '考试模块'
+    }
+test:
+-   name: 【游戏管理】——查询游戏列表
+    request:
+        url: api/v1/exam/game/game-list
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam-game
+        body:
+            {
+              page: 1,
+              pageSize: 10
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200 ]
+
+-   name: 【游戏管理】——查询授权组织
+    request:
+        url: api/v1/system/grant/find-organization-operatortype
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam-game
+        body:
+            {
+              uri: 'exam/exam-game'
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.${organizationId},', '0,1,2,3,4']
+
+-   name: 【游戏管理】——新增练习-获取最高授权组织
+    request:
+        url: api/v1/system/organization/max-grant-organization
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam-game
+        body:
+            {
+              uri: 'exam/exam-game'
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.status', '1']
+
+-   name: 【游戏管理】——新增练习-选择题库-查询授权组织
+    request:
+        url: api/v1/system/organization/granted-organization
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam-game
+        body:
+            {
+              uri: 'exam/exam-game',
+              supportMore: 'true',
+              status: 1
+            }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.[0].status', '1']
+
+-   name: 【游戏管理】——新增练习-选择题库-查询试题目录
+    request:
+        url: api/v1/exam/question-depot
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam-game
+        body:
+            {
+              organizationId: '${organizationId}',
+              status: 1,
+              share: 1,
+              type: 1,
+              depotShare: 1,
+              'organization[id]': '${organizationId}',
+              'organization[name]': '${organizationName}'
+            }
+    sql_statement:
+    extract:
+        questionDepotId: $.[0].id
+        questionDepotName: $.[0].name
+    validate:
+        -   eq:  ['$.[0].state', '1']
+
+-   name: 【游戏管理】——新增练习-选择题库-查询目录试题数
+    request:
+        url: api/v1/exam/question-depot/random-questions-count
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam-game
+        body:
+            {
+              questionDepotId: '${questionDepotId}',
+              organizationId: '${organizationId}',
+              'organization[id]': '${organizationId}',
+              'organization[name]': '${organizationName}',
+              'questionDepot[id]': '${organizationId}',
+              'questionDepot[name]': '${questionDepotName}',
+              selected: 'true',
+              depotType: 1
+            }
+    sql_statement:
+        -  question:  ['SELECT * FROM exam.t_question WHERE f_question_depot_id = "${questionDepotId}" AND `f_status` = 1 AND `f_is_subjective` = 0 AND `f_type` != 8', 18]
+    extract:
+    validate:
+        -   eq:  ['$.questionDepotId', '${questionDepotId}']
+
+-   name: 【游戏管理】——新增练习-上传游戏图标-上传图片
+    request:
+        url: api/v1/system/file/simple-upload-auth
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+        body:
+        files:
+          {
+            picSize: 512000,
+            access_token: '${admin_token}',
+            file: 'exam/练习图标.jpg'
+          }
+    sql_statement:
+    extract:
+        coverId: $.imgId
+        coverPath: $.path
+    validate:
+        -   eq:  ['$.msg', 'success']
+
+-   name: 【游戏管理】——新增练习-上传游戏图标-提交图片
+    request:
+        url: api/v1/system/file/cropper-upload
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam-game
+        body:
+          {
+            image: 'data:image/png;base64,$base_64{exam/练习图标.jpg}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.msg', 'success']
+
+-   name: 【游戏管理】——新增练习-受众设置-游戏规则
+    request:
+        url: api/v1/exam/game/practice/base-info
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam-game
+        body:
+          {
+            number: '${question_count}',
+            gameSection: {"gamePaperTactics":[],"questionNum":'${question_count}',"integral":"10","answerTime":"20"},
+            name: '【游戏练习】$date_time{}',
+            organizationId-text: '${organizationName}',
+            organizationId: '${organizationId}',
+            publishMemberId: '${adminId}',
+            publishOrganizationId: '${organizationId}',
+            coverId: '${coverId}',
+            coverPath: '${coverPath}',
+            gamePaperTactics: [{"questionDepotId":"${questionDepotId}","organizationId":"${organizationId}","questionDepot":{"id":"${questionDepotId}","name":"${organizationName}"},"amount":'${question_count}'}],
+            gameExperienceRules: [{"type":1,"value":"2","status":1},{"type":2,"value":"5","status":1},{"type":3,"value":"0","status":1},{"type":4,"value":"20","status":1}]
+          }
+    sql_statement:
+    extract:
+        practiceId: $.id
+    validate:
+        -   eq:  ['$.status', '0']
+
+-   name: 【游戏管理】——新增练习-受众设置-查询受众
+    request:
+        url: api/v1/exam/game/audience/${practiceId}
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam-game
+        body:
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.[0].joinName', '0']
+
+-   name: 【游戏管理】——新增练习-受众设置-更新练习受众
+    request:
+        url: api/v1/exam/game/audience/${practiceId}
+        method: PUT
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam-game
+        body:
+          {
+            audienceItems: [{"joinId":"${studentId}","joinType":5,"joinName":"${studentName}"}],
+            audiences: '${studentName}',
+            addItems: [{"joinId":"${studentId}","joinType":5,"joinName":"${studentName}"}],
+            emptyFlag: 0,
+            'cacheUpdateOptionsData[addItems][0][id]': '${studentId}',
+            'cacheUpdateOptionsData[addItems][0][value]': '${studentName}',
+            'cacheUpdateOptionsData[addItems][0][type]': 'member',
+            'cacheUpdateOptionsData[addItems][0][checked]': 'true',
+            'cacheUpdateOptionsData[emptyFlag]': 0,
+            'cacheAllAudiences[0][id]': '${studentId}',
+            'cacheAllAudiences[0][value]': '${studentName}',
+            'cacheAllAudiences[0][type]': 'member',
+            'cacheAllAudiences[0][checked]': 'true',
+            publish: 0,
+            id: '${practiceId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.status', '0']
+
+-   name: 【游戏管理】——发布练习
+    request:
+        url: api/v1/exam/game/publish/${practiceId}
+        method: PUT
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam-game
+        body:
+          {
+            id: '${practiceId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.status', '2']
+
+-   name: 【游戏管理】——禁用练习
+    request:
+        url: api/v1/exam/game/update-game-status/${practiceId}
+        method: PUT
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam-game
+        body:
+          {
+            id: '${practiceId}',
+            status: 1
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.status', '1']
+
+-   name: 【游戏管理】——删除练习
+    request:
+        url: api/v1/exam/game/${practiceId}
+        method: DELETE
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam-game
+        body:
+          {
+            id: '${practiceId}',
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['(.+?)', '1']
+
+-   name: 【游戏管理】——新增闯关-游戏设置-上传图片
+    request:
+        url: api/v1/system/file/simple-upload-auth
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+        body:
+        files:
+          {
+            picSize: 512000,
+            access_token: '${admin_token}',
+            file: 'exam/游戏图标.jpg'
+          }
+    sql_statement:
+    extract:
+        coverId: $.imgId
+        coverPath: $.path
+    validate:
+        -   eq:  ['$.msg', 'success']
+
+-   name: 【游戏管理】——新增闯关-游戏设置-提交图片
+    request:
+        url: api/v1/system/file/cropper-upload
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam-game
+        body:
+          {
+            image: 'data:image/png;base64,$base_64{exam/游戏图标.jpg}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.msg', 'success']
+
+-   name: 【游戏管理】——新增闯关-关卡设置-基本信息
+    request:
+        url: api/v1/exam/game/break-through/base-info
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam-game
+        body:
+          {
+            name: '【游戏闯关】$date_time{}',
+            organizationId-text: '${organizationName}',
+            organizationId: '${organizationId}',
+            publishMemberId: '${adminId}',
+            publishOrganizationId: '${organizationId}',
+            coverId: '${coverId}',
+            coverPath: '${coverPath}',
+            gameExperienceRules: [{"type":1,"value":"2","status":1},{"type":2,"value":"5","status":1},{"type":3,"value":"0","status":1},{"type":4,"value":"20","status":1}]
+          }
+    sql_statement:
+    extract:
+        gameId: $.id
+    validate:
+        -   eq:  ['$.status', '0']
+
+-   name: 【游戏管理】——新增闯关-关卡设置-新增第一关卡
+    request:
+        url: api/v1/exam/game/break-through/game-section
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam-game
+        body:
+          {
+            gamePaperTactics:
+              [
+                {"organizationId":"${organizationId}","questionDepotId":"${questionDepotId}","difficulty":"3","type":1,"amount":1},
+                {"organizationId":"${organizationId}","questionDepotId":"${questionDepotId}","difficulty":"3","type":2,"amount":1},
+                {"organizationId":"${organizationId}","questionDepotId":"${questionDepotId}","difficulty":"3","type":3,"amount":1}
+              ],
+            errorTimes: 3,
+            integral: 100,
+            answerTime: 20,
+            gameId: '${gameId}'
+          }
+    sql_statement:
+    extract:
+        section1ID: $.id
+    validate:
+        -   eq:  ['$.order', '0']
+
+-   name: 【游戏管理】——新增闯关-关卡设置-查询关卡
+    request:
+        url: api/v1/exam/game/break-through/game-section
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam-game
+        body:
+          {
+            gameId: '${gameId}',
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.recordCount', '1']
+
+-   name: 【游戏管理】——新增闯关-关卡设置-新增第二关卡
+    request:
+        url: api/v1/exam/game/break-through/game-section
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam-game
+        body:
+          {
+            gamePaperTactics:
+              [
+                {"organizationId":"${organizationId}","questionDepotId":"${questionDepotId}","difficulty":"3","type":1,"amount":1},
+                {"organizationId":"${organizationId}","questionDepotId":"${questionDepotId}","difficulty":"3","type":2,"amount":1},
+                {"organizationId":"${organizationId}","questionDepotId":"${questionDepotId}","difficulty":"3","type":3,"amount":1}
+              ],
+            errorTimes: 3,
+            integral: 100,
+            answerTime: 20,
+            gameId: '${gameId}'
+          }
+    sql_statement:
+    extract:
+        section2ID: $.id
+    validate:
+        -   eq:  ['$.order', '1']
+
+-   name: 【游戏管理】——新增闯关-关卡设置-关卡详情
+    request:
+        url: api/v1/exam/game/break-through/game-section/${section2ID}
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam-game
+        body:
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.order', '1']
+
+-   name: 【游戏管理】——新增闯关-关卡设置-修改第二关卡
+    request:
+        url: api/v1/exam/game/break-through/game-section/${section2ID}
+        method: PUT
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam-game
+        body:
+          {
+            gamePaperTactics:
+              [
+                {"organizationId":"${organizationId}","questionDepotId":"${questionDepotId}","difficulty":"3","type":1,"amount":2},
+                {"organizationId":"${organizationId}","questionDepotId":"${questionDepotId}","difficulty":"3","type":2,"amount":2},
+                {"organizationId":"${organizationId}","questionDepotId":"${questionDepotId}","difficulty":"3","type":3,"amount":2}
+              ],
+            errorTimes: 3,
+            integral: 100,
+            answerTime: 20,
+            gameId: '${gameId}',
+            id: '${section2ID}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['(.+?)', '1']
+
+-   name: 【游戏管理】——新增闯关-关卡设置-删除第二关卡
+    request:
+        url: api/v1/exam/game/break-through/game-section/${section2ID}
+        method: DELETE
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam-game
+        body:
+          {
+            gameId: '${gameId}',
+            id: '${section2ID}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['(.+?)', '1']
+
+-   name: 【游戏管理】——新增闯关-受众设置-获取默认受众
+    request:
+        url: api/v1/exam/game/audience/${gameId}
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam-game
+        body:
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.[0].joinName', '0']
+
+-   name: 【游戏管理】——新增闯关-受众设置-修改闯关受众
+    request:
+        url: api/v1/exam/game/audience/${gameId}
+        method: PUT
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam-game
+        body:
+          {
+            audienceItems: [{"joinId":"${studentId}","joinType":5,"joinName":"${studentName}"}],
+            audiences: '${studentName}',
+            addItems: [{"joinId":"${studentId}","joinType":5,"joinName":"${studentName}"}],
+            emptyFlag: 0,
+            'cacheUpdateOptionsData[addItems][0][id]': '${studentId}',
+            'cacheUpdateOptionsData[addItems][0][value]': '${studentName}',
+            'cacheUpdateOptionsData[addItems][0][type]': 'member',
+            'cacheUpdateOptionsData[addItems][0][checked]': 'true',
+            'cacheUpdateOptionsData[emptyFlag]': 0,
+            'cacheAllAudiences[0][id]': '${studentId}',
+            'cacheAllAudiences[0][value]': '${studentName}',
+            'cacheAllAudiences[0][type]': 'member',
+            'cacheAllAudiences[0][checked]': 'true',
+            publish: 0,
+            id: '${gameId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.status', '0']
+
+-   name: 【游戏管理】——发布游戏闯关
+    request:
+        url: api/v1/exam/game/publish/${gameId}
+        method: PUT
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam-game
+        body:
+          {
+            id: '${gameId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.status', '2']
+
+-   name: 【游戏管理】——禁用游戏闯关
+    request:
+        url: api/v1/exam/game/update-game-status/${gameId}
+        method: PUT
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam-game
+        body:
+          {
+            id: '${gameId}',
+            status: 1
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.status', '1']
+
+-   name: 【游戏管理】——闯关管理-查询闯关详情
+    request:
+        url: api/v1/exam/game/basic/${gameId}
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam-game
+        body:
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.type', '1']
+
+-   name: 【游戏管理】——闯关管理-查询闯关注册信息
+    request:
+        url: api/v1/exam/game-register
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam-game
+        body:
+          {
+            gameId: '${gameId}',
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.recordCount', '0']
+
+-   name: 【游戏管理】——闯关管理-导出闯关详情
+    request:
+        url: api/v1/exam/game/export-by-queue
+        method: POST
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam-game
+        body:
+          {
+            businessType: 16,
+            gameId: '${gameId}',
+            extraParam: 'gameId=${gameId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['$.status', '1']
+
+-   name: 【游戏管理】——闯关管理-查询任务队列
+    request:
+        url: api/v1/human/export-task/find-export-tasks
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam-game
+        body:
+          {
+            businessTypes: 16,
+            extraParam: 'gameId=${gameId}',
+            page: 1,
+            pageSize: 10
+          }
+    sql_statement:
+    extract:
+        attachmentId: $.items[0].attachmentId
+        exportId: $.items[0].id
+    validate:
+        -   eq:  ['$.recordCount', '1']
+
+-   name: 【游戏管理】——闯关管理-下载导出详情
+    request:
+        url: api/v1/human/file/download
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+          uri: exam/exam-game
+        body:
+          {
+            access_token: '${admin_token}',
+            id: '${attachmentId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【游戏管理】——闯关管理-删除导出详情
+    request:
+        url: api/v1/human/export-task/${exportId}
+        method: DELETE
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam-game
+        body:
+          {
+            id: '${exportId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['(.+?)', '1']
+
+-   name: 【游戏管理】——删除游戏闯关
+    request:
+        url: api/v1/exam/game/${gameId}
+        method: DELETE
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: exam/exam-game
+        body:
+          {
+            id: '${gameId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['(.+?)', '1']

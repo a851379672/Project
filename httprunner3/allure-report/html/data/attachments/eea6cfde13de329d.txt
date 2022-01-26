@@ -1,0 +1,42 @@
+2022-01-25 18:46:53.630 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : PUT
+url      : http://pre-202108-10.zhixueyun.com/api/v1/exam/game/audience/9afedb15-ca51-404f-bd34-0f2b6908c9eb
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__5162aae81b0783802661ab1b21b0a987",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "uri": "exam/exam-game",
+    "Content-Length": "934"
+}
+cookies  : {}
+body     : audienceItems=%5B%7B%27joinId%27%3A+%27d2537992-353c-4b83-88a7-70a42829b74c%27%2C+%27joinType%27%3A+5%2C+%27joinName%27%3A+%27%E5%AD%A6%E7%94%9F1%27%7D%5D&audiences=%E5%AD%A6%E7%94%9F1&addItems=%5B%7B%27joinId%27%3A+%27d2537992-353c-4b83-88a7-70a42829b74c%27%2C+%27joinType%27%3A+5%2C+%27joinName%27%3A+%27%E5%AD%A6%E7%94%9F1%27%7D%5D&emptyFlag=0&cacheUpdateOptionsData%5BaddItems%5D%5B0%5D%5Bid%5D=d2537992-353c-4b83-88a7-70a42829b74c&cacheUpdateOptionsData%5BaddItems%5D%5B0%5D%5Bvalue%5D=%E5%AD%A6%E7%94%9F1&cacheUpdateOptionsData%5BaddItems%5D%5B0%5D%5Btype%5D=member&cacheUpdateOptionsData%5BaddItems%5D%5B0%5D%5Bchecked%5D=true&cacheUpdateOptionsData%5BemptyFlag%5D=0&cacheAllAudiences%5B0%5D%5Bid%5D=d2537992-353c-4b83-88a7-70a42829b74c&cacheAllAudiences%5B0%5D%5Bvalue%5D=%E5%AD%A6%E7%94%9F1&cacheAllAudiences%5B0%5D%5Btype%5D=member&cacheAllAudiences%5B0%5D%5Bchecked%5D=true&publish=0&id=9afedb15-ca51-404f-bd34-0f2b6908c9eb
+
+2022-01-25 18:46:53.630 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 10:46:54 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "187",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "audienceItems": null,
+    "createTime": 1643107613785,
+    "id": "9afedb15-ca51-404f-bd34-0f2b6908c9eb",
+    "name": "【游戏闯关】2022-01-25 18:46:52",
+    "status": 0,
+    "type": 1,
+    "updateTime": 1643107614461
+}
+
+2022-01-25 18:46:53,631 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '0' 实际值: '0', 断言成功!

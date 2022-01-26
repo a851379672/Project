@@ -1,0 +1,3 @@
+INFO     root:data_depend.py:37 提取变量：questionDepotId: 54edbf14-202d-48de-ad6f-4a8a83fb7a3d
+INFO     root:data_depend.py:37 提取变量：questionDepotName: 试题目录
+INFO     root:validate.py:76 响应断言:  预期值: '1' 实际值: '1', 断言成功!

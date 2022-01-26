@@ -1,3 +1,0 @@
-INFO     root:data_depend.py:40 提取变量：exportid_1: ac2f673d-3cad-48de-a2bc-542b9417c289
-INFO     root:data_depend.py:40 提取变量：exportid_2: 7ac0695b-1f4a-43d5-9281-dead3258a189
-INFO     root:validate.py:59 断言失败：<class 'AssertionError'>

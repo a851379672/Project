@@ -1,0 +1,2 @@
+INFO     root:data_depend.py:37 提取变量：businessId: 1046511c-af20-4178-a244-c71dd334ff4b
+INFO     root:validate.py:76 响应断言:  预期值: '1,2' 实际值: '1,2', 断言成功!

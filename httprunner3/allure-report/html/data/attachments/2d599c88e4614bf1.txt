@@ -1,0 +1,2 @@
+INFO     root:data_depend.py:37 提取变量：audioId: 7a3a0a67-9a3b-497f-a139-441225dccbe3
+INFO     root:validate.py:76 响应断言:  预期值: 'audio/mpeg' 实际值: 'audio/mpeg', 断言成功!

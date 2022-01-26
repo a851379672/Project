@@ -1,0 +1,2 @@
+INFO     root:data_depend.py:37 提取变量：signUpId: 566999e6-3939-4534-9338-c3099f82ce56
+INFO     root:validate.py:76 响应断言:  预期值: '1' 实际值: '1', 断言成功!

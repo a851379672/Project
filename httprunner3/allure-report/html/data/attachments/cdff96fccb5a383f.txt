@@ -1,0 +1,52 @@
+2022-01-25 14:39:25.182 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://tester1.zhixueyun.com/api/v1/exam/question/other
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__c7fc72caf066b114b1fe7f418ac2c8f1",
+    "uri": "exam/question-depot",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "Content-Length": "1837"
+}
+cookies  : {}
+body     : value=%5B%7B%27value%27%3A+%271%27%2C+%27name%27%3A+%271%27%2C+%27type%27%3A+3%7D%5D&content=%E3%80%90%E5%88%A4%E6%96%AD%E9%A2%98%E3%80%91%E8%AF%95%E9%A2%98%E4%BF%A1%E6%81%AF2022-01-25+14%3A39%3A24%3Cimg+id%3D%27preview-3ca7e859-daf7-43ef-bc5a-f7d1776e021a%2C%E8%AF%95%E9%A2%98%E8%A7%86%E9%A2%91_1061.mp4%2Cmp4%27+class%3D%27video-img%27+style%3D%27display%3Ablock%3Bwidth%3A302px%3Bheight%3A170px%3B%27+data-type%3D%27mp4%27+data-name%3D%27%E8%AF%95%E9%A2%98%E8%A7%86%E9%A2%91_1061.mp4%27+data-id%3D%273ca7e859-daf7-43ef-bc5a-f7d1776e021a%27+src%3D%27https%3A%2F%2Ftester1.zhixueyun.com%2Fadmin%2Fimages%2Fpreview-media.jpg%27+%2F%3E&contentText=%E3%80%90%E5%88%A4%E6%96%AD%E9%A2%98%E3%80%91%E8%AF%95%E9%A2%98%E4%BF%A1%E6%81%AF2022-01-25+14%3A39%3A24%3Cimg+id%3D%27preview-3ca7e859-daf7-43ef-bc5a-f7d1776e021a%2C%E8%AF%95%E9%A2%98%E8%A7%86%E9%A2%91_1061.mp4%2Cmp4%27+class%3D%27video-img%27+style%3D%27display%3Ablock%3Bwidth%3A302px%3Bheight%3A170px%3B%27+data-type%3D%27mp4%27+data-name%3D%27%E8%AF%95%E9%A2%98%E8%A7%86%E9%A2%91_1061.mp4%27+data-id%3D%273ca7e859-daf7-43ef-bc5a-f7d1776e021a%27+src%3D%27https%3A%2F%2Ftester1.zhixueyun.com%2Fadmin%2Fimages%2Fpreview-media.jpg%27+%2F%3E&questionAttrs%5B0%5D%5Bvalue%5D=1&questionAttrs%5B0%5D%5Bname%5D=1&questionAttrs%5B0%5D%5Btype%5D=3&score=1000&type=3&questionDepotId=54edbf14-202d-48de-ad6f-4a8a83fb7a3d&questionDepot%5Bid%5D=54edbf14-202d-48de-ad6f-4a8a83fb7a3d&questionDepot%5Bname%5D=%E8%AF%95%E9%A2%98%E7%9B%AE%E5%BD%95&organizationId=cc861919-b7fb-4582-b755-48b2eb0e5203&organization%5Bid%5D=cc861919-b7fb-4582-b755-48b2eb0e5203&organization%5Bname%5D=tester&parsing=%E3%80%90%E5%88%A4%E6%96%AD%E9%A2%98%E3%80%91%E8%AF%95%E9%A2%98%E8%A7%A3%E6%9E%90&parsingText=%E3%80%90%E5%88%A4%E6%96%AD%E9%A2%98%E3%80%91%E8%AF%95%E9%A2%98%E8%A7%A3%E6%9E%90&difficulty=3&isTemp=1&depotEdit=0
+
+2022-01-25 14:39:25.183 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:39:25 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "628",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "content": "【判断题】试题信息2022-01-25 14:39:24<img id='preview-3ca7e859-daf7-43ef-bc5a-f7d1776e021a,试题视频_1061.mp4,mp4' class='video-img' style='display:block;width:302px;height:170px;' data-type='mp4' data-name='试题视频_1061.mp4' data-id='3ca7e859-daf7-43ef-bc5a-f7d1776e021a' src='https://tester1.zhixueyun.com/admin/images/preview-media.jpg' />",
+    "createTime": 1643092765933,
+    "difficulty": 3,
+    "errorRate": 0,
+    "id": "ff712eb0-3a34-4e72-a9a5-813a4ce2390d",
+    "markAmount": 0,
+    "questionAttrs": null,
+    "questionDepotId": "54edbf14-202d-48de-ad6f-4a8a83fb7a3d",
+    "recoveryCount": 0,
+    "rightRate": 0,
+    "status": 2,
+    "subs": [],
+    "type": 3
+}
+
+2022-01-25 14:39:25,184 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：panduantiId: ff712eb0-3a34-4e72-a9a5-813a4ce2390d
+2022-01-25 14:39:25,185 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：panduantiName: 【判断题】试题信息2022-01-25 14:39:24<img id='preview-3ca7e859-daf7-43ef-bc5a-f7d1776e021a,试题视频_1061.mp4,mp4' class='video-img' style='display:block;width:302px;height:170px;' data-type='mp4' data-name='试题视频_1061.mp4' data-id='3ca7e859-daf7-43ef-bc5a-f7d1776e021a' src='https://tester1.zhixueyun.com/admin/images/preview-media.jpg' />
+2022-01-25 14:39:25,185 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：panduantiDifficulty: 3
+2022-01-25 14:39:25,185 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '3' 实际值: '3', 断言成功!

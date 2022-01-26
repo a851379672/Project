@@ -1,0 +1,37 @@
+2022-01-25 11:20:51.407 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : DELETE
+url      : https://tester1.zhixueyun.com/api/v1/exam/question/cab2e75a-7ea7-42cd-9b39-3796ce97c378
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__c0909a02d4a8aa71f02b2f2c302f1894",
+    "uri": "exam/question-depot",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "Content-Length": "133"
+}
+cookies  : {}
+body     : id=cab2e75a-7ea7-42cd-9b39-3796ce97c378&name=%E8%AF%95%E9%A2%98%E7%9B%AE%E5%BD%952022-01-25+11%3A20%3A47-%E5%A4%9A%E9%80%89%E9%A2%981
+
+2022-01-25 11:20:51.408 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:20:52 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "45",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "id": "cab2e75a-7ea7-42cd-9b39-3796ce97c378"
+}
+
+2022-01-25 11:20:51,408 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: 'cab2e75a-7ea7-42cd-9b39-3796ce97c378' 实际值: 'cab2e75a-7ea7-42cd-9b39-3796ce97c378', 断言成功!

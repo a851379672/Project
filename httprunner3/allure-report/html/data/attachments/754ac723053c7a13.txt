@@ -1,0 +1,50 @@
+2022-01-25 11:14:01.069 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/scorm-file/cc861919-b7fb-4582-b755-48b2eb0e5203/rule-config.json
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__76ba88c18f354efefc11e3817996b852"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 11:14:01.069 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 404
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:14:01 GMT",
+    "Content-Type": "text/html",
+    "Content-Length": "363",
+    "Connection": "keep-alive",
+    "ETag": "\"6108ec57-16b\"",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : ISO-8859-1
+content_type : text/html
+body     : <!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to zhixueyun</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>zhixueyun test9  404 Not Found</h1>
+<p><em>Sorry, the page you visited does not exist, please return to the homepage</em></p>
+</body>
+</html>
+
+
+2022-01-25 11:14:01,070 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '404' 实际值: '404', 断言成功!

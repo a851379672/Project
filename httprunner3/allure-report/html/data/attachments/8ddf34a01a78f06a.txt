@@ -1,0 +1,39 @@
+2022-01-25 11:14:34.085 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : PUT
+url      : https://tester1.zhixueyun.com/api/v1/exam/banner/revoke/99923beb-9630-4e57-8f0e-eaf780a48c92
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__8282fe0727e597a9fde0b2768b3de476",
+    "uri": "exam/banners",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "Content-Length": "71"
+}
+cookies  : {}
+body     : id=99923beb-9630-4e57-8f0e-eaf780a48c92&title=tester%E5%B9%BF%E5%91%8A1
+
+2022-01-25 11:14:34.086 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:14:34 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "56",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "id": "99923beb-9630-4e57-8f0e-eaf780a48c92",
+    "status": 0
+}
+
+2022-01-25 11:14:34,087 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '99923beb-9630-4e57-8f0e-eaf780a48c92' 实际值: '99923beb-9630-4e57-8f0e-eaf780a48c92', 断言成功!
+2022-01-25 11:14:34,087 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '0' 实际值: '0', 断言成功!

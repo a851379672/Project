@@ -1,0 +1,43 @@
+2022-01-25 18:46:00.426 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://pre-202108-10.zhixueyun.com/api/v1/system/operation/message-template/content?templateCode=exam_certificate_issue_auto&organizationId=9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__5162aae81b0783802661ab1b21b0a987",
+    "uri": "exam/exam"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 18:46:00.427 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 10:46:01 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "514",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "content": "您好，您参加的【{0}】在【{1}】的考试【{2}】，已获得证书，敬请查看，谢谢。",
+    "contentDesc": null,
+    "id": "dc4be14a-024e-441b-9d47-085003cdc283",
+    "module": 4,
+    "name": "考生获得证书通知",
+    "organizationId": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+    "paramDesc": "0发布部门 1平台名 2考试名称",
+    "paramNum": 3,
+    "subject": "【考生获得证书通知】",
+    "textContent": "您好，您参加的【{0}】在【{1}】的考试【{2}】，已获得证书，敬请查看，谢谢。"
+}
+
+2022-01-25 18:46:00,427 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '考生获得证书通知' 实际值: '考生获得证书通知', 断言成功!

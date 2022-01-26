@@ -1,0 +1,2 @@
+INFO     root:data_depend.py:37 提取变量：fileId: c249b16c-16ae-4232-a121-7367d7a940ff
+INFO     root:validate.py:76 响应断言:  预期值: 'xlsx' 实际值: 'preer_证书发放导入模板_543.xlsx', 断言成功!

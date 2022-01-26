@@ -20,4 +20,4 @@ CONFIG_PATH = os.path.join(BASE_PATH, 'config')
 TARGET_PATH = os.path.join(BASE_PATH, 'config.json')
 
 #  env.pro文件路径
-ENV_PRO = os.path.join(BASE_PATH, 'allure-report/environment.properties')
+ENV_PRO = os.path.join(BASE_PATH, 'allure-report/result/environment.properties')

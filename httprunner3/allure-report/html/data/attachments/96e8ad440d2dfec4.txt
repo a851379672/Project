@@ -1,0 +1,37 @@
+2022-01-25 18:46:40.203 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://pre-202108-10.zhixueyun.com/api/v1/system/organization/find-path/9bcad76a-ba7e-4ace-9f92-f6e086a29cec
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__5162aae81b0783802661ab1b21b0a987",
+    "uri": "exam/certificate-record"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 18:46:40.203 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 10:46:41 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "134",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "id": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec",
+    "name": "preer",
+    "organizationName": "preer",
+    "path": "9bcad76a-ba7e-4ace-9f92-f6e086a29cec,"
+}
+
+2022-01-25 18:46:40,204 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: 'preer' 实际值: 'preer', 断言成功!

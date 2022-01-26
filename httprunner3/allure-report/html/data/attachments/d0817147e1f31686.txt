@@ -1,0 +1,35 @@
+2022-01-25 18:45:42.480 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : http://pre-202108-10.zhixueyun.com/api/v1/human/file/upload-excel-file
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__5162aae81b0783802661ab1b21b0a987",
+    "uri": "exam/exam",
+    "Content-Length": "9176",
+    "Content-Type": "multipart/form-data; boundary=799870ae5165dfda2b52aba9f95da64b"
+}
+cookies  : {}
+body     : upload file stream (OMITTED)
+
+2022-01-25 18:45:42.481 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 10:45:43 GMT",
+    "Content-Type": "text/html;charset=UTF-8",
+    "Content-Length": "221",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : text/html;charset=UTF-8
+body     : [{'contentType': None, 'createTime': 1643107543315, 'filename': 'preer_监考人员导入模板_1115.xlsx', 'id': 'df43ed5d-ce6d-4686-a3dd-58e1396a15fd', 'path': 'default/M00/00/D5/wKgLQGHv1NeAF7zCAAAjKFNAzZU92.xlsx', 'size': 9000}]
+
+2022-01-25 18:45:42,481 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：fileId: df43ed5d-ce6d-4686-a3dd-58e1396a15fd
+2022-01-25 18:45:42,481 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: 'xlsx' 实际值: 'preer_监考人员导入模板_1115.xlsx', 断言成功!

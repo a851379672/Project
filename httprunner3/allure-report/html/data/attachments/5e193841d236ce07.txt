@@ -1,0 +1,56 @@
+2022-01-25 11:20:44.695 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/exam/question-analyze/student-attr-list?questionCopyId=0a098daf-57ae-4eca-b63e-a5789706a725&examId=d2b32a87-0aeb-4319-a48a-520e9739d508&attr=0&orderType=0&page=1&pageSize=10
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__c0909a02d4a8aa71f02b2f2c302f1894",
+    "uri": "exam/exam"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 11:20:44.696 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:20:45 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "445",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "items": [
+        {
+            "answer": "",
+            "answerImageList": [
+                {
+                    "path": "/ixrDO9ptC2K6xiO8hV36aEbpAvvOx1suwcMA8ss13q83B3iVmPbpbTTJuO1pezqBuYFnb0ZfPGAiZQuFeeJ/g==",
+                    "attachmentId": "e1412ff6-ac88-44c7-b296-a8fe4cfd859c",
+                    "sort": 0
+                }
+            ],
+            "fullName": "xuesheng1",
+            "id": "84b41369-3b8e-4720-bc97-1df72f4f8d6b",
+            "score": 1000,
+            "value": "阅读理解题-问答题答案"
+        }
+    ],
+    "options": {
+        "score": "1000",
+        "questionName": "【阅读理解题-问答题】试题信息",
+        "type": "5"
+    },
+    "recordCount": 1
+}
+
+2022-01-25 11:20:44,697 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '200' 实际值: '200', 断言成功!

@@ -1,0 +1,2 @@
+INFO     root:data_depend.py:37 提取变量：mp3fileKey: 30e239e0f614b23811572d970885807b#d6d4621a-6c1b-49a4-beb3-3e3adc0a839f
+INFO     root:validate.py:76 响应断言:  预期值: '200' 实际值: '200', 断言成功!

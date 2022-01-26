@@ -1,0 +1,188 @@
+{
+  "uid" : "c976f0ef2250b050",
+  "name" : "【普通试题】——修改试题-修改阅读理解题",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "0318070faf16a94fb43f666bebd4ff2e",
+  "time" : {
+    "start" : 1643080617593,
+    "stop" : 1643080617761,
+    "duration" : 168
+  },
+  "description" : "\n        :param api_data\n        :return: report_content\n        ",
+  "descriptionHtml" : "<pre><code>    :param api_data\n    :return: report_content\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "fsetup_tear_down",
+    "time" : {
+      "start" : 1643080586705,
+      "stop" : 1643080586705,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass",
+    "time" : {
+      "start" : 1643080586990,
+      "stop" : 1643080586995,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "file_fixture",
+    "time" : {
+      "start" : 1643080586697,
+      "stop" : 1643080586705,
+      "duration" : 8
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1643080586705,
+      "stop" : 1643080586990,
+      "duration" : 285
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param api_data\n        :return: report_content\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b2b742ad9795d70f",
+      "name" : "log",
+      "source" : "b2b742ad9795d70f.txt",
+      "type" : "text/plain",
+      "size" : 88
+    }, {
+      "uid" : "14c6b37fd9152b29",
+      "name" : "stderr",
+      "source" : "14c6b37fd9152b29.txt",
+      "type" : "text/plain",
+      "size" : 8945
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "fsetup_tear_down::0",
+    "time" : {
+      "start" : 1643080642834,
+      "stop" : 1643080642840,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass::0",
+    "time" : {
+      "start" : 1643080642825,
+      "stop" : 1643080642825,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【普通试题】——修改试题-修改阅读理解题"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "7636-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "api_data",
+    "value" : "{'name': '【普通试题】——修改试题-修改阅读理解题', 'request': {'url': 'api/v1/exam/question/${yuedulijieid}', 'method': 'PUT', 'headers': {'Authorization': 'Bearer__${admin_token}', 'uri': 'exam/question-depot', 'content-type': 'application/x-www-form-urlencoded; charset=UTF-8'}, 'data': {'value': [{'content': '单选题1', 'difficulty': 3, 'id': '${yuedulijie_danxuanid}', 'order': 1, 'parsing': '试题解析1', 'parsingText': '试题解析1', 'questionAttrs': [{'id': '${yuedulijie_danxuanid_1}', 'name': '0', 'type': '0', 'value': 'A'}, {'id': '${yuedulijie_danxuanid_2}', 'name': '1', 'type': '1', 'value': 'B'}, {'id': '${yuedulijie_danxuanid_3}', 'name': '2', 'type': '1', 'value': 'C'}, {'id': '${yuedulijie_danxuanid_4}', 'name': '3', 'type': '1', 'value': 'D'}], 'score': '1000', 'type': 1}, {'content': '多选题2', 'difficulty': 3, 'id': '${yuedulijie_duoxuanid}', 'order': 2, 'parsing': '试题解析2', 'parsingText': '试题解析2', 'questionAttrs': [{'id': '${yuedulijie_duoxuanid_1}', 'name': '0', 'type': '0', 'value': 'A'}, {'id': '${yuedulijie_duoxuanid_2}', 'name': '1', 'type': '0', 'value': 'B'}, {'id': '${yuedulijie_duoxuanid_3}', 'name': '2', 'type': '2', 'value': 'C'}, {'id': '${yuedulijie_duoxuanid_4}', 'name': '3', 'type': '2', 'value': 'D'}], 'score': '1000', 'type': 2}, {'content': '问答题3', 'difficulty': 3, 'id': '${yuedulijie_wendaid}', 'order': 3, 'parsing': '试题解析3', 'parsingText': '试题解析3', 'questionAttrs': [{'id': '${yuedulijie_wendaid_1}', 'name': '参考答案', 'type': '5', 'value': '参考答案'}], 'score': '1000', 'type': 5}], 'questionAttrs[ 0 ][ content ]': '单选题1', 'questionAttrs[ 0 ][ difficulty ]': 3, 'questionAttrs[ 0 ][ score ]': 1000, 'questionAttrs[ 0 ][ id ]': '${yuedulijie_danxuanid}', 'questionAttrs[ 0 ][ parsing ]': '试题解析1', 'questionAttrs[ 0 ][ parsingText ]': '试题解析1', 'questionAttrs[ 0 ][ type ]': 1, 'questionAttrs[ 0 ][ order ]': 1, 'questionAttrs[ 0 ][ questionAttrs ][ 0 ][ value ]': 'A', 'questionAttrs[ 0 ][ questionAttrs ][ 0 ][ id ]': '${yuedulijie_danxuanid_1}', 'questionAttrs[ 0 ][ questionAttrs ][ 0 ][ name ]': 0, 'questionAttrs[ 0 ][ questionAttrs ][ 0 ][ type ]': 0, 'questionAttrs[ 0 ][ questionAttrs ][ 1 ][ value ]': 'B', 'questionAttrs[ 0 ][ questionAttrs ][ 1 ][ id ]': '${yuedulijie_danxuanid_2}', 'questionAttrs[ 0 ][ questionAttrs ][ 1 ][ name ]': 1, 'questionAttrs[ 0 ][ questionAttrs ][ 1 ][ type ]': 1, 'questionAttrs[ 0 ][ questionAttrs ][ 2 ][ value ]': 'C', 'questionAttrs[ 0 ][ questionAttrs ][ 2 ][ id ]': '${yuedulijie_danxuanid_3}', 'questionAttrs[ 0 ][ questionAttrs ][ 2 ][ name ]': 2, 'questionAttrs[ 0 ][ questionAttrs ][ 2 ][ type ]': 1, 'questionAttrs[ 0 ][ questionAttrs ][ 3 ][ value ]': 'D', 'questionAttrs[ 0 ][ questionAttrs ][ 3 ][ id ]': '${yuedulijie_danxuanid_4}', 'questionAttrs[ 0 ][ questionAttrs ][ 3 ][ name ]': 3, 'questionAttrs[ 0 ][ questionAttrs ][ 3 ][ type ]': 1, 'questionAttrs[ 1 ][ content ]': '多选题2', 'questionAttrs[ 1 ][ id ]': '${yuedulijie_duoxuanid}', 'questionAttrs[ 1 ][ difficulty ]': 3, 'questionAttrs[ 1 ][ score ]': 1000, 'questionAttrs[ 1 ][ parsing ]': '试题解析2', 'questionAttrs[ 1 ][ parsingText ]': '试题解析2', 'questionAttrs[ 1 ][ type ]': 2, 'questionAttrs[ 1 ][ order ]': 2, 'questionAttrs[ 1 ][ questionAttrs ][ 0 ][ value ]': 'A', 'questionAttrs[ 1 ][ questionAttrs ][ 0 ][ id ]': '${yuedulijie_duoxuanid_1}', 'questionAttrs[ 1 ][ questionAttrs ][ 0 ][ name ]': 0, 'questionAttrs[ 1 ][ questionAttrs ][ 0 ][ type ]': 0, 'questionAttrs[ 1 ][ questionAttrs ][ 1 ][ value ]': 'B', 'questionAttrs[ 1 ][ questionAttrs ][ 1 ][ id ]': '${yuedulijie_duoxuanid_2}', 'questionAttrs[ 1 ][ questionAttrs ][ 1 ][ name ]': 1, 'questionAttrs[ 1 ][ questionAttrs ][ 1 ][ type ]': 0, 'questionAttrs[ 1 ][ questionAttrs ][ 2 ][ value ]': 'C', 'questionAttrs[ 1 ][ questionAttrs ][ 2 ][ id ]': '${yuedulijie_duoxuanid_3}', 'questionAttrs[ 1 ][ questionAttrs ][ 2 ][ name ]': 2, 'questionAttrs[ 1 ][ questionAttrs ][ 2 ][ type ]': 2, 'questionAttrs[ 1 ][ questionAttrs ][ 3 ][ value ]': 'D', 'questionAttrs[ 1 ][ questionAttrs ][ 3 ][ id ]': '${yuedulijie_duoxuanid_4}', 'questionAttrs[ 1 ][ questionAttrs ][ 3 ][ name ]': 3, 'questionAttrs[ 1 ][ questionAttrs ][ 3 ][ type ]': 2, 'questionAttrs[ 2 ][ content ]': '问答题3', 'questionAttrs[ 2 ][ id ]': '${yuedulijie_wendaid}', 'questionAttrs[ 2 ][ score ]': 1000, 'questionAttrs[ 2 ][ parsing ]': '试题解析3', 'questionAttrs[ 2 ][ parsingText ]': '试题解析3', 'questionAttrs[ 2 ][ type ]': 5, 'questionAttrs[ 2 ][ difficulty ]': 3, 'questionAttrs[ 2 ][ order ]': 3, 'questionAttrs[ 2 ][ questionAttrs ][ 0 ][ id ]': '${yuedulijie_wendaid_1}', 'questionAttrs[ 2 ][ questionAttrs ][ 0 ][ name ]': '参考答案', 'questionAttrs[ 2 ][ questionAttrs ][ 0 ][ type ]': 5, 'questionAttrs[ 2 ][ questionAttrs ][ 0 ][ value ]': '参考答案', 'content': '${yuedulijiename}', 'contentText': '${yuedulijiename}', 'score': 3000, 'id': '${yuedulijieid}', 'type': 6, 'questionDepotId': '${questionDepotId}', 'questionDepot[ id ]': '${questionDepotId}', 'questionDepot[ name ]': '${questionDepotName}', 'organizationId': '${organizationId}', 'affectedType': 1, 'difficulty': 3, 'depotEdit': 1}}, 'extract': None, 'validate': [{'eq': ['$.status', '0']}], 'allure': {'allure_descrption': '【普通试题】——修改试题-修改阅读理解题', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}"
+  } ],
+  "links" : [ {
+    "name" : "https://tester1.zhixueyun.com/api/v1/exam/question/${yuedulijieid}",
+    "url" : "https://tester1.zhixueyun.com/api/v1/exam/question/${yuedulijieid}",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c976f0ef2250b050.json",
+  "parameterValues" : [ "{'name': '【普通试题】——修改试题-修改阅读理解题', 'request': {'url': 'api/v1/exam/question/${yuedulijieid}', 'method': 'PUT', 'headers': {'Authorization': 'Bearer__${admin_token}', 'uri': 'exam/question-depot', 'content-type': 'application/x-www-form-urlencoded; charset=UTF-8'}, 'data': {'value': [{'content': '单选题1', 'difficulty': 3, 'id': '${yuedulijie_danxuanid}', 'order': 1, 'parsing': '试题解析1', 'parsingText': '试题解析1', 'questionAttrs': [{'id': '${yuedulijie_danxuanid_1}', 'name': '0', 'type': '0', 'value': 'A'}, {'id': '${yuedulijie_danxuanid_2}', 'name': '1', 'type': '1', 'value': 'B'}, {'id': '${yuedulijie_danxuanid_3}', 'name': '2', 'type': '1', 'value': 'C'}, {'id': '${yuedulijie_danxuanid_4}', 'name': '3', 'type': '1', 'value': 'D'}], 'score': '1000', 'type': 1}, {'content': '多选题2', 'difficulty': 3, 'id': '${yuedulijie_duoxuanid}', 'order': 2, 'parsing': '试题解析2', 'parsingText': '试题解析2', 'questionAttrs': [{'id': '${yuedulijie_duoxuanid_1}', 'name': '0', 'type': '0', 'value': 'A'}, {'id': '${yuedulijie_duoxuanid_2}', 'name': '1', 'type': '0', 'value': 'B'}, {'id': '${yuedulijie_duoxuanid_3}', 'name': '2', 'type': '2', 'value': 'C'}, {'id': '${yuedulijie_duoxuanid_4}', 'name': '3', 'type': '2', 'value': 'D'}], 'score': '1000', 'type': 2}, {'content': '问答题3', 'difficulty': 3, 'id': '${yuedulijie_wendaid}', 'order': 3, 'parsing': '试题解析3', 'parsingText': '试题解析3', 'questionAttrs': [{'id': '${yuedulijie_wendaid_1}', 'name': '参考答案', 'type': '5', 'value': '参考答案'}], 'score': '1000', 'type': 5}], 'questionAttrs[ 0 ][ content ]': '单选题1', 'questionAttrs[ 0 ][ difficulty ]': 3, 'questionAttrs[ 0 ][ score ]': 1000, 'questionAttrs[ 0 ][ id ]': '${yuedulijie_danxuanid}', 'questionAttrs[ 0 ][ parsing ]': '试题解析1', 'questionAttrs[ 0 ][ parsingText ]': '试题解析1', 'questionAttrs[ 0 ][ type ]': 1, 'questionAttrs[ 0 ][ order ]': 1, 'questionAttrs[ 0 ][ questionAttrs ][ 0 ][ value ]': 'A', 'questionAttrs[ 0 ][ questionAttrs ][ 0 ][ id ]': '${yuedulijie_danxuanid_1}', 'questionAttrs[ 0 ][ questionAttrs ][ 0 ][ name ]': 0, 'questionAttrs[ 0 ][ questionAttrs ][ 0 ][ type ]': 0, 'questionAttrs[ 0 ][ questionAttrs ][ 1 ][ value ]': 'B', 'questionAttrs[ 0 ][ questionAttrs ][ 1 ][ id ]': '${yuedulijie_danxuanid_2}', 'questionAttrs[ 0 ][ questionAttrs ][ 1 ][ name ]': 1, 'questionAttrs[ 0 ][ questionAttrs ][ 1 ][ type ]': 1, 'questionAttrs[ 0 ][ questionAttrs ][ 2 ][ value ]': 'C', 'questionAttrs[ 0 ][ questionAttrs ][ 2 ][ id ]': '${yuedulijie_danxuanid_3}', 'questionAttrs[ 0 ][ questionAttrs ][ 2 ][ name ]': 2, 'questionAttrs[ 0 ][ questionAttrs ][ 2 ][ type ]': 1, 'questionAttrs[ 0 ][ questionAttrs ][ 3 ][ value ]': 'D', 'questionAttrs[ 0 ][ questionAttrs ][ 3 ][ id ]': '${yuedulijie_danxuanid_4}', 'questionAttrs[ 0 ][ questionAttrs ][ 3 ][ name ]': 3, 'questionAttrs[ 0 ][ questionAttrs ][ 3 ][ type ]': 1, 'questionAttrs[ 1 ][ content ]': '多选题2', 'questionAttrs[ 1 ][ id ]': '${yuedulijie_duoxuanid}', 'questionAttrs[ 1 ][ difficulty ]': 3, 'questionAttrs[ 1 ][ score ]': 1000, 'questionAttrs[ 1 ][ parsing ]': '试题解析2', 'questionAttrs[ 1 ][ parsingText ]': '试题解析2', 'questionAttrs[ 1 ][ type ]': 2, 'questionAttrs[ 1 ][ order ]': 2, 'questionAttrs[ 1 ][ questionAttrs ][ 0 ][ value ]': 'A', 'questionAttrs[ 1 ][ questionAttrs ][ 0 ][ id ]': '${yuedulijie_duoxuanid_1}', 'questionAttrs[ 1 ][ questionAttrs ][ 0 ][ name ]': 0, 'questionAttrs[ 1 ][ questionAttrs ][ 0 ][ type ]': 0, 'questionAttrs[ 1 ][ questionAttrs ][ 1 ][ value ]': 'B', 'questionAttrs[ 1 ][ questionAttrs ][ 1 ][ id ]': '${yuedulijie_duoxuanid_2}', 'questionAttrs[ 1 ][ questionAttrs ][ 1 ][ name ]': 1, 'questionAttrs[ 1 ][ questionAttrs ][ 1 ][ type ]': 0, 'questionAttrs[ 1 ][ questionAttrs ][ 2 ][ value ]': 'C', 'questionAttrs[ 1 ][ questionAttrs ][ 2 ][ id ]': '${yuedulijie_duoxuanid_3}', 'questionAttrs[ 1 ][ questionAttrs ][ 2 ][ name ]': 2, 'questionAttrs[ 1 ][ questionAttrs ][ 2 ][ type ]': 2, 'questionAttrs[ 1 ][ questionAttrs ][ 3 ][ value ]': 'D', 'questionAttrs[ 1 ][ questionAttrs ][ 3 ][ id ]': '${yuedulijie_duoxuanid_4}', 'questionAttrs[ 1 ][ questionAttrs ][ 3 ][ name ]': 3, 'questionAttrs[ 1 ][ questionAttrs ][ 3 ][ type ]': 2, 'questionAttrs[ 2 ][ content ]': '问答题3', 'questionAttrs[ 2 ][ id ]': '${yuedulijie_wendaid}', 'questionAttrs[ 2 ][ score ]': 1000, 'questionAttrs[ 2 ][ parsing ]': '试题解析3', 'questionAttrs[ 2 ][ parsingText ]': '试题解析3', 'questionAttrs[ 2 ][ type ]': 5, 'questionAttrs[ 2 ][ difficulty ]': 3, 'questionAttrs[ 2 ][ order ]': 3, 'questionAttrs[ 2 ][ questionAttrs ][ 0 ][ id ]': '${yuedulijie_wendaid_1}', 'questionAttrs[ 2 ][ questionAttrs ][ 0 ][ name ]': '参考答案', 'questionAttrs[ 2 ][ questionAttrs ][ 0 ][ type ]': 5, 'questionAttrs[ 2 ][ questionAttrs ][ 0 ][ value ]': '参考答案', 'content': '${yuedulijiename}', 'contentText': '${yuedulijiename}', 'score': 3000, 'id': '${yuedulijieid}', 'type': 6, 'questionDepotId': '${questionDepotId}', 'questionDepot[ id ]': '${questionDepotId}', 'questionDepot[ name ]': '${questionDepotName}', 'organizationId': '${organizationId}', 'affectedType': 1, 'difficulty': 3, 'depotEdit': 1}}, 'extract': None, 'validate': [{'eq': ['$.status', '0']}], 'allure': {'allure_descrption': '【普通试题】——修改试题-修改阅读理解题', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}" ]
+}

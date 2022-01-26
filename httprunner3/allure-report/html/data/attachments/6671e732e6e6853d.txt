@@ -1,6 +1,0 @@
-INFO     root:conftest.py:52 企业管理员登录成功
-INFO     root:conftest.py:72 获取企业配置信息成功
-INFO     root:data_depend.py:40 提取变量：access_token: e46f2a224cf64cd03c30ee9dd301a6cc
-INFO     root:data_depend.py:40 提取变量：organizationId: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec
-INFO     root:data_depend.py:40 提取变量：organizationName: preer
-INFO     root:data_depend.py:40 提取变量：organizationPath: 9bcad76a-ba7e-4ace-9f92-f6e086a29cec,

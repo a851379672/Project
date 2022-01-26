@@ -1,8 +1,0 @@
-INFO     root:conftest.py:52 企业管理员登录成功
-INFO     root:conftest.py:72 获取企业配置信息成功
-INFO     root:data_depend.py:40 提取变量：access_token: 672e5a6280190a72d0e541e75ea533ff
-INFO     root:data_depend.py:40 提取变量：organizationId: cc861919-b7fb-4582-b755-48b2eb0e5203
-INFO     root:data_depend.py:40 提取变量：organizationName: tester
-INFO     root:data_depend.py:40 提取变量：organizationPath: cc861919-b7fb-4582-b755-48b2eb0e5203,
-INFO     root:data_depend.py:40 提取变量：ent_url: https://tester1.zhixueyun.com
-INFO     root:data_depend.py:40 提取变量：ent_name: tester

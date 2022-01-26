@@ -1,0 +1,1 @@
+INFO     root:validate.py:76 响应断言:  预期值: '8eceb141-69d9-4ba4-b4c5-7bb2982612e2' 实际值: '8eceb141-69d9-4ba4-b4c5-7bb2982612e2', 断言成功!

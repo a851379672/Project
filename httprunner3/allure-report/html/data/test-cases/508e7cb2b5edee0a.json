@@ -1,0 +1,191 @@
+{
+  "uid" : "508e7cb2b5edee0a",
+  "name" : "【试卷库】——修改试卷库试卷",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "0f3f1c7f2354415a2792ef09c05fc3f3",
+  "time" : {
+    "start" : 1643090875959,
+    "stop" : 1643090876082,
+    "duration" : 123
+  },
+  "description" : "\n        :param api_data\n        :return: report_content\n        ",
+  "descriptionHtml" : "<pre><code>    :param api_data\n    :return: report_content\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "fsetup_tear_down",
+    "time" : {
+      "start" : 1643090812726,
+      "stop" : 1643090812726,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1643090812726,
+      "stop" : 1643090812977,
+      "duration" : 251
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "file_fixture",
+    "time" : {
+      "start" : 1643090812720,
+      "stop" : 1643090812726,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass",
+    "time" : {
+      "start" : 1643090812977,
+      "stop" : 1643090812981,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param api_data\n        :return: report_content\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "aae992b2ca76d6f8",
+      "name" : "log",
+      "source" : "aae992b2ca76d6f8.txt",
+      "type" : "text/plain",
+      "size" : 88
+    }, {
+      "uid" : "6e02b73567da1f8f",
+      "name" : "stderr",
+      "source" : "6e02b73567da1f8f.txt",
+      "type" : "text/plain",
+      "size" : 2176
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "fsetup_tear_down::0",
+    "time" : {
+      "start" : 1643090879277,
+      "stop" : 1643090879282,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass::0",
+    "time" : {
+      "start" : 1643090879271,
+      "stop" : 1643090879271,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【试卷库】——修改试卷库试卷"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=3, reruns_delay=5)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "32128-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "api_data",
+    "value" : "{'name': '【试卷库】——修改试卷库试卷', 'request': {'url': 'api/v1/exam/paper/${paperId}', 'method': 'PUT', 'headers': {'Authorization': 'Bearer__${admin_token}', 'content-type': 'application/x-www-form-urlencoded; charset=UTF-8', 'uri': 'exam/paper-library'}, 'data': {'name': '${paperName}', 'organizationId-text': '${organizationName}', 'organizationId': '${organizationId}', 'paperDepotId': '${paperDepotId}', 'publishId': '${adminId}', 'publishOrganizationId': '${organizationId}', 'totalScore': 1000, 'questionNum': 1, 'paperClassQuestions': [{'questionId': '${danxuantiId}', 'score': 1000, 'sequence': 0, 'isFromSelected': 0, 'sortType': 1}], 'type': 2, 'id': '${paperId}'}}, 'sql_statement': None, 'extract': None, 'validate': [{'eq': ['$.status', '0']}], 'allure': {'allure_descrption': '【试卷库】——修改试卷库试卷', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}"
+  } ],
+  "links" : [ {
+    "name" : "https://tester1.zhixueyun.com/api/v1/exam/paper/${paperId}",
+    "url" : "https://tester1.zhixueyun.com/api/v1/exam/paper/${paperId}",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=3, reruns_delay=5)" ]
+  },
+  "source" : "508e7cb2b5edee0a.json",
+  "parameterValues" : [ "{'name': '【试卷库】——修改试卷库试卷', 'request': {'url': 'api/v1/exam/paper/${paperId}', 'method': 'PUT', 'headers': {'Authorization': 'Bearer__${admin_token}', 'content-type': 'application/x-www-form-urlencoded; charset=UTF-8', 'uri': 'exam/paper-library'}, 'data': {'name': '${paperName}', 'organizationId-text': '${organizationName}', 'organizationId': '${organizationId}', 'paperDepotId': '${paperDepotId}', 'publishId': '${adminId}', 'publishOrganizationId': '${organizationId}', 'totalScore': 1000, 'questionNum': 1, 'paperClassQuestions': [{'questionId': '${danxuantiId}', 'score': 1000, 'sequence': 0, 'isFromSelected': 0, 'sortType': 1}], 'type': 2, 'id': '${paperId}'}}, 'sql_statement': None, 'extract': None, 'validate': [{'eq': ['$.status', '0']}], 'allure': {'allure_descrption': '【试卷库】——修改试卷库试卷', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}" ]
+}

@@ -1,0 +1,4 @@
+INFO     root:mysql_operate.py:86 SQL查询结果: None
+INFO     root:mysql_operate.py:55 SQL影响行数: 18 预期影响行数: 18 断言成功!
+INFO     root:data_depend.py:41 提取变量：question_count: 18
+INFO     root:validate.py:76 响应断言:  预期值: '8099063f-5fd6-4ee5-8f43-cd0bb74f8e2d' 实际值: '8099063f-5fd6-4ee5-8f43-cd0bb74f8e2d', 断言成功!

@@ -1,0 +1,33 @@
+2022-01-25 11:16:36.866 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/system/topic/ids?ids=fe627367-6445-4ca1-83da-f7664df41351%2C41bc2946-a7b4-44af-bcff-885f9ed6bfde%2C1ca2abfd-732e-4638-8d85-8f0a01dd3332%2C150b6d5e-7f81-4bdf-a0e4-249d61c161fb%2C0a25d886-cf57-48d0-83ca-209c09aa2ed1
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__c8422706e5d28b82f1856a214a6f0316",
+    "uri": "exam/exam"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 11:16:36.866 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:16:37 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "1608",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : [{'attachmentIdPath': None, 'deleteFlag': None, 'description': None, 'expertCount': None, 'group': 1, 'id': 'fe627367-6445-4ca1-83da-f7664df41351', 'managerCount': None, 'name': 'Charles', 'recommend': 0, 'status': None, 'topicManagers': None, 'topicType': None, 'typeId': 'c938403e-268b-43ac-a2ad-5291fc2fca3b', 'usedCount': 64, 'watchedCount': None}, {'attachmentIdPath': None, 'deleteFlag': None, 'description': None, 'expertCount': None, 'group': 1, 'id': '41bc2946-a7b4-44af-bcff-885f9ed6bfde', 'managerCount': None, 'name': 'Github', 'recommend': 0, 'status': None, 'topicManagers': None, 'topicType': None, 'typeId': 'c938403e-268b-43ac-a2ad-5291fc2fca3b', 'usedCount': 64, 'watchedCount': None}, {'attachmentIdPath': None, 'deleteFlag': None, 'description': None, 'expertCount': None, 'group': 1, 'id': '1ca2abfd-732e-4638-8d85-8f0a01dd3332', 'managerCount': None, 'name': 'Postman', 'recommend': 0, 'status': None, 'topicManagers': None, 'topicType': None, 'typeId': 'c938403e-268b-43ac-a2ad-5291fc2fca3b', 'usedCount': 64, 'watchedCount': None}, {'attachmentIdPath': None, 'deleteFlag': None, 'description': None, 'expertCount': None, 'group': 1, 'id': '150b6d5e-7f81-4bdf-a0e4-249d61c161fb', 'managerCount': None, 'name': 'Jmeter', 'recommend': 0, 'status': None, 'topicManagers': None, 'topicType': None, 'typeId': 'c938403e-268b-43ac-a2ad-5291fc2fca3b', 'usedCount': 64, 'watchedCount': None}, {'attachmentIdPath': None, 'deleteFlag': None, 'description': None, 'expertCount': None, 'group': 1, 'id': '0a25d886-cf57-48d0-83ca-209c09aa2ed1', 'managerCount': None, 'name': 'Python', 'recommend': 0, 'status': None, 'topicManagers': None, 'topicType': None, 'typeId': 'c938403e-268b-43ac-a2ad-5291fc2fca3b', 'usedCount': 64, 'watchedCount': None}]
+
+2022-01-25 11:16:36,867 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '200' 实际值: '200', 断言成功!

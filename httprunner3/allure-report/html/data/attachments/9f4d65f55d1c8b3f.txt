@@ -1,0 +1,51 @@
+2022-01-25 14:07:26.765 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/exam/question-analyze/answer-summary?examId=801a6800-06ba-49c4-ad3d-8775030eeadc&questionCopyId=e14294cd-3a1d-46bd-9daf-ccf01eadb61c&answerType=1&orderType=0&page=1&pageSize=10
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__d47752064eceb10c9bdde411d492369b",
+    "uri": "exam/exam"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 14:07:26.766 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:07:27 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "280",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "answeredCount": 1,
+    "attrs": [
+        {
+            "count": 1,
+            "name": "8",
+            "rate": 10000,
+            "type": 0,
+            "value": "0|1|2|3|"
+        }
+    ],
+    "content": "【排序题】试题信息2022-01-25 14:06:58",
+    "errorCount": 0,
+    "questionCopyId": "e14294cd-3a1d-46bd-9daf-ccf01eadb61c",
+    "rightCount": 1,
+    "score": 1000,
+    "type": 8,
+    "unansweredCount": 0
+}
+
+2022-01-25 14:07:26,766 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: 'e14294cd-3a1d-46bd-9daf-ccf01eadb61c' 实际值: 'e14294cd-3a1d-46bd-9daf-ccf01eadb61c', 断言成功!

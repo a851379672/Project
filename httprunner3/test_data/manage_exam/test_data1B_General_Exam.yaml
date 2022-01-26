@@ -1,0 +1,473 @@
+allure:
+    {
+      'allure_descrption': '',
+      'allure_suite': '管理端',
+      'allure_sub_suite': '考试模块',
+      'allure_feature': '管理端',
+      'allure_story': '考试模块'
+    }
+test:
+-   name: 【普通考试】——考试详情-受众报名考试
+    request:
+        url: api/v1/exam/sign-auth
+        method: POST
+        headers:
+            Authorization: Bearer__${student_token}
+            Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+        body:
+          {
+            examId: '${examId}',
+            organizationId: '${organizationId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq: ['$.signUp.status', '2']
+
+-   name: 【普通考试】——考试详情-生成考试记录
+    request:
+        url: api/v1/exam/exam/front/user-record/${examId}
+        method: GET
+        headers:
+            Authorization: Bearer__${student_token}
+        body:
+            {
+                examId: '${examId}',
+                organizationId: '${organizationId}'
+            }
+    sql_statement:
+    extract:
+      examRecordId: $.examRecord.id
+    validate:
+        -   eq: ['$.status', '5']
+
+-   name: 【普通考试】——考试详情-检查考试密码
+    request:
+        url: api/v1/exam/exam/front/check-code
+        method: POST
+        headers:
+          Authorization: Bearer__${student_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+        body:
+          {
+            accessSecret: 'A12345',
+            needCheckPersonalCode: 0,
+            examId: '${examId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq: ['$.type', '1']
+
+-   name: 【普通考试】——考试答题-获取试卷
+    request:
+        url: api/v1/exam/exam/front/exam-paper/v2
+        method: GET
+        headers:
+          Authorization: Bearer__${student_token}
+        body:
+          {
+            clientType: 1,
+            examId: '${examId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq: ['$.error', '0']
+
+-   name: 【普通考试】——考试答题-触发人脸前置
+    request:
+        url: api/v1/exam/exam/front/simple-data//${examId}
+        method: GET
+        headers:
+          Authorization: Bearer__${student_token}
+        body:
+    sql_statement:
+    extract:
+    validate:
+        -   eq: ['$.status', '5']
+
+-   name: 【普通考试】——考试答题-注册人脸信息
+    request:
+        url: api/v1/human/face/accessSecret-validate
+        method: PUT
+        headers:
+          Authorization: Bearer__${student_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+        body:
+          {
+            accessSecret: '0GrD6MYSpX0BOZW15fev2w=='
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq: ['$.status', '1']
+
+-   name: 【普通考试】——考试答题-查询人脸识别配置
+    request:
+        url: api/v1/system/rule-config/key
+        method: GET
+        headers:
+          Authorization: Bearer__${student_token}
+        body:
+          {
+            key: 'FACE_CONFIG'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq: ['$.status', '1']
+
+-   name: 【普通考试】——考试答题-人脸图片上传
+    request:
+        url: api/v1/system/file/cropper-upload
+        method: POST
+        headers:
+          Authorization: Bearer__${student_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+        body:
+          {
+            image: 'data:image/png;base64,$base_64{exam/人脸图片.jpg}'
+          }
+    sql_statement:
+    extract:
+        imgurl: $.path
+    validate:
+        -   eq: ['$.msg', 'success']
+
+-   name: 【普通考试】——考试答题-添加更新人脸
+    request:
+        url: api/v1/human/face/addOrUpdate-face
+        method: PUT
+        headers:
+          Authorization: Bearer__${student_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+        body:
+          {
+            imageStr: '$base_64{exam/人脸图片.jpg}'
+          }
+    sql_statement:
+    extract:
+        log_id: $.log_id
+    validate:
+        -   eq: ['$.error_msg', 'SUCCESS']
+
+-   name: 【普通考试】——考试答题-查询自定义配置
+    request:
+        url: scripts/custom/config.json
+        method: GET
+        headers:
+          Authorization: Bearer__${student_token}
+        body:
+    sql_statement:
+    extract:
+    validate:
+        -   eq: [Status Code, 200]
+
+-   name: 【普通考试】——考试答题-查询前置配置
+    request:
+        url: api/v1/system/custom-config/front
+        method: GET
+        headers:
+          Authorization: Bearer__${student_token}
+        body:
+    sql_statement:
+    extract:
+    validate:
+        -   eq: [Status Code, 200]
+
+-   name: 【普通考试】——考试答题-查询系统配置
+    request:
+        url: api/v1/system/setting/config
+        method: GET
+        headers:
+          Authorization: Bearer__${student_token}
+        body:
+    sql_statement:
+    extract:
+    validate:
+        -   eq: ['$.websiteTitle', '${organizationName}']
+
+-   name: 【普通考试】——考试答题-查询规则配置
+    request:
+        url: scorm-file/${organizationId}/rule-config.json
+        method: GET
+        headers:
+          Authorization: Bearer__${student_token}
+        body:
+    sql_statement:
+    extract:
+    validate:
+        -   eq: [Status Code, 404]
+
+-   name: 【普通考试】——考试答题-查询logo配置
+    request:
+        url: api/v1/system/rule-config/getkey
+        method: GET
+        headers:
+          Authorization: Bearer__${student_token}
+        body:
+          {
+            key: 'ADMIN_LOGO',
+            organizationId: '${organizationId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq: ['$.status', '1']
+
+-   name: 【普通考试】——考试答题-查询公司配置
+    request:
+        url: api/v1/system/file-cloud/get-company-config
+        method: GET
+        headers:
+          Authorization: Bearer__${student_token}
+        body:
+          {
+            companyId: '${organizationId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq: ['$.configs', '${env_url}']
+
+-   name: 【普通考试】——考试答题-查询音视频规则
+    request:
+        url: api/v1/system/rule-config/key
+        method: GET
+        headers:
+          Authorization: Bearer__${student_token}
+        body:
+          {
+            key: 'COURSE_COMPLETE_RULE'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq: ['$.status', '1']
+
+-   name: 【普通考试】——考试答题-查询防录屏配置
+    request:
+        url: api/v1/system/rule-config/key
+        method: GET
+        headers:
+          Authorization: Bearer__${student_token}
+        body:
+          {
+            key: 'PREVENT_SCREENSHOT_CONFIG'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq: ['$.status', '1']
+
+-   name: 【普通考试】——考试答题-获取试卷-人脸校验
+    request:
+        url: api/v1/exam/exam/front/exam-paper/v2
+        method: GET
+        headers:
+          Authorization: Bearer__${student_token}
+        body:
+          {
+            examId: '${examId}',
+            clientType: 1,
+            imageType: 1,
+            image: '${env_url}${imgurl}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq: ['$.type', '1']
+
+-   name: 【普通考试】——考试答题-播放音频文件
+    request:
+        url: api/v1/course-study/file/safe/${audioId}
+        method: GET
+        headers:
+          Authorization: Bearer__${student_token}
+        body:
+    sql_statement:
+    extract:
+    validate:
+        -   eq: ['$.contentType', 'audio/mpeg']
+
+-   name: 【普通考试】——考试答题-播放视频文件
+    request:
+        url: api/v1/course-study/file/safe/${videoId}
+        method: GET
+        headers:
+          Authorization: Bearer__${student_token}
+        body:
+    sql_statement:
+    extract:
+    validate:
+        -   eq: ['$.filename', 'mp4']
+
+-   name: 【普通考试】——考试答题-上传答题图片
+    request:
+        url: api/v1/human/file/auth/upload-parse-file
+        method: POST
+        headers:
+          Authorization: Bearer__${student_token}
+        body:
+        files:
+          {
+            file: 'exam/答题图片.jpg'
+          }
+    sql_statement:
+    extract:
+        attachmentId: $.[0].id
+        attachmentPath: $.[0].path
+    validate:
+        -   eq: ['$.[0].filename', 'jpg']
+
+-   name: 【普通考试】——考试答题-触发切换屏幕
+    request:
+        url: api/v1/exam/exam-record/front/switch-screen
+        method: POST
+        headers:
+          Authorization: Bearer__${student_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+        body:
+          {
+            examId: '${examId}',
+            examRecordId: '${examRecordId}',
+            times: 1
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq: ['$.status', '1']
+
+-   name: 【普通考试】——考试答题-触发网络断开
+    request:
+        url: images/zxy_network.png
+        method: GET
+        headers:
+          Authorization: Bearer__${student_token}
+        body:
+    sql_statement:
+    extract:
+    validate:
+        -   eq: [Status Code, 200]
+
+-   name: 【普通考试】——考试答题-触发网络恢复
+    request:
+        url: api/v1/exam/exam-record/front/netstat
+        method: POST
+        headers:
+          Authorization: Bearer__${student_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+        body:
+          {
+            examId: '${examId}',
+            examRecordId: '${examRecordId}',
+            type: 1,
+            clientType: 1,
+            eventTime: '$date_time{}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq: ['$.msg', 'success']
+
+-   name: 【普通考试】——考试答题-触发暂停考试
+    request:
+        url: api/v1/exam/exam-record/front/pause
+        method: POST
+        headers:
+          Authorization: Bearer__${student_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+        body:
+          {
+            examRecordId: '${examRecordId}'
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq: ['$.isPause', '1']
+
+-   name: 【普通考试】——考试答题-校验答题记录
+    request:
+        url: api/v1/exam/exam/front/answer-record/v2
+        method: GET
+        headers:
+          Authorization: Bearer__${student_token}
+        body:
+          {
+            examId: '${examId}'
+          }
+    sql_statement:
+        -  danxuantiId_copy:  ['SELECT f_id FROM exam.t_question_copy WHERE f_question_id = "${danxuantiId}"', 1]
+        -  duoxuantiId_copy:  ['SELECT f_id FROM exam.t_question_copy WHERE f_question_id = "${duoxuantiId}"', 1]
+        -  panduantiId_copy:  ['SELECT f_id FROM exam.t_question_copy WHERE f_question_id = "${panduantiId}"', 1]
+        -  paixutiId_copy:  ['SELECT f_id FROM exam.t_question_copy WHERE f_question_id = "${paixutiId}"', 1]
+        -  tiankongtiId_copy:  ['SELECT f_id FROM exam.t_question_copy WHERE f_question_id = "${tiankongtiId}"', 1]
+        -  wendatiId_copy:  ['SELECT f_id FROM exam.t_question_copy WHERE f_question_id = "${wendatiId}"', 1]
+        -  yuedulijie_zitiId1_copy:  ['SELECT f_id FROM exam.t_question_copy WHERE f_question_id = "${yuedulijie_zitiId1}"', 1]
+        -  yuedulijie_zitiId2_copy:  ['SELECT f_id FROM exam.t_question_copy WHERE f_question_id = "${yuedulijie_zitiId2}"', 1]
+        -  yuedulijie_zitiId3_copy:  ['SELECT f_id FROM exam.t_question_copy WHERE f_question_id = "${yuedulijie_zitiId3}"', 1]
+    extract:
+    validate:
+        -   eq: [Status Code, 200]
+
+-   name: 【普通考试】——考试答题-提交试卷
+    request:
+        url: api/v1/exam/exam-record/front/submitPaper
+        method: POST
+        headers:
+          Authorization: Bearer__${student_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+        body:
+          {
+            examId: '${examId}',
+            examRecordId: '${examRecordId}',
+            submitType: 'Hand',
+            answerRecords:
+              [
+                  {questionId: '${danxuantiId_copy_value}',answer: ''},
+                  {questionId: '${duoxuantiId_copy_value}',answer: '2,3'},
+                  {questionId: '${panduantiId_copy_value}',answer: '1'},
+                  {questionId: '${paixutiId_copy_value}',answer: '0|1|2|3|'},
+                  {questionId: '${tiankongtiId_copy_value}',answer: '填空题答案'},
+                  {questionId: '${wendatiId_copy_value}',answer: '问答题答案','answerImageList': ''},
+                  {questionId: '${yuedulijie_zitiId1_copy_value}',answer: '0'},
+                  {questionId: '${yuedulijie_zitiId2_copy_value}',answer: '0,1'},
+                  {questionId: '${yuedulijie_zitiId3_copy_value}',answer: '阅读理解题-问答题答案',answerImageList:[{attachmentId: '${attachmentId}',path: '${attachmentPath}',sort: 0}]}
+              ],
+            fullAnswerRecords:
+              [
+                  {questionId: '${danxuantiId_copy_value}',answer: ''},
+                  {questionId: '${duoxuantiId_copy_value}',answer: '2,3'},
+                  {questionId: '${panduantiId_copy_value}',answer: '1'},
+                  {questionId: '${paixutiId_copy_value}',answer: '0|1|2|3|'},
+                  {questionId: '${tiankongtiId_copy_value}',answer: '填空题答案'},
+                  {questionId: '${wendatiId_copy_value}',answer: '问答题答案','answerImageList': ''},
+                  {questionId: '${yuedulijie_zitiId1_copy_value}',answer: '0'},
+                  {questionId: '${yuedulijie_zitiId2_copy_value}',answer: '0,1'},
+                  {questionId: '${yuedulijie_zitiId3_copy_value}',answer: '阅读理解题-问答题答案',answerImageList: [{attachmentId: '${attachmentId}',path: '${attachmentPath}',sort: 0}]}
+              ],
+            clientType: 1,
+            lastCacheTime: '$time_stamp{$date_time{}}',
+            submitDetailType: 2,
+            clientVersion: 'Edge/97.0.1072.55',
+            noAnswerCount: 0,
+            answeredCount: 7,
+            checkings: []
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq: ['$.msg', 'success']
+
+-   name: 【普通考试】——考试答题-删除人脸记录
+    request:
+        url: api/v1/human/face/empty-face
+        method: GET
+        headers:
+          Authorization: Bearer__${student_token}
+        body:
+    sql_statement:
+    extract:
+    validate:
+        -   eq: ['$.error_msg', 'SUCCESS']

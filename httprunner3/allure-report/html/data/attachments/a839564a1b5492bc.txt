@@ -1,0 +1,3 @@
+INFO     root:data_depend.py:37 提取变量：copyPaperId: a92d4bf5-0105-48ef-bea0-46f43c7b385c
+INFO     root:data_depend.py:37 提取变量：copyPaperName: 【试卷】2022-01-25 14:40:29[复制]
+INFO     root:validate.py:76 响应断言:  预期值: '0' 实际值: '0', 断言成功!

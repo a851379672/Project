@@ -1,0 +1,43 @@
+2022-01-25 14:07:29.711 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : PUT
+url      : https://tester1.zhixueyun.com/api/v1/exam/exam/change-time/801a6800-06ba-49c4-ad3d-8775030eeadc
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__d47752064eceb10c9bdde411d492369b",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "uri": "exam/exam",
+    "Content-Length": "102"
+}
+cookies  : {}
+body     : id=801a6800-06ba-49c4-ad3d-8775030eeadc&applicantEndTime=2022-01-25+14%3A07&endTime=2022-01-25+14%3A07
+
+2022-01-25 14:07:29.712 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:07:30 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "211",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "duration": 60,
+    "id": "801a6800-06ba-49c4-ad3d-8775030eeadc",
+    "name": "【普通考试】2022-01-25 14:06:58",
+    "paperClassId": "c33320f0-5e47-4d4c-862d-e7c3c879e992",
+    "paperShowRule": 2,
+    "paperSortRule": 1,
+    "passScore": 54
+}
+
+2022-01-25 14:07:29,712 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '801a6800-06ba-49c4-ad3d-8775030eeadc' 实际值: '801a6800-06ba-49c4-ad3d-8775030eeadc', 断言成功!

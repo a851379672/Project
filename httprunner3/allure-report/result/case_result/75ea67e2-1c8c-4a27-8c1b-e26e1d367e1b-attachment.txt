@@ -1,2 +1,0 @@
-INFO     root:data_depend.py:40 提取变量：fileid_2: 69b08355-9b34-4960-b33f-8da0a69572b8
-INFO     root:validate.py:57 响应断言： 预期值：'试题批量更新模板.xlsx' 实际值：'试题批量更新模板.xlsx', 断言成功!

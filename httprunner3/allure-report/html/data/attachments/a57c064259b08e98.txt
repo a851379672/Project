@@ -1,0 +1,38 @@
+2022-01-25 18:45:47.171 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://pre-202108-10.zhixueyun.com/scorm-file/9bcad76a-ba7e-4ace-9f92-f6e086a29cec/rule-config.json
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__bd5308de3bbd763ea5274f65356a9ae9"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 18:45:47.171 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 404
+headers  : {
+    "Date": "Tue, 25 Jan 2022 10:45:48 GMT",
+    "Content-Type": "text/html",
+    "Content-Length": "166",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : ISO-8859-1
+content_type : text/html
+body     : <html>
+<head><title>404 Not Found</title></head>
+<body bgcolor="white">
+<center><h1>404 Not Found</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+
+2022-01-25 18:45:47,171 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '404' 实际值: '404', 断言成功!

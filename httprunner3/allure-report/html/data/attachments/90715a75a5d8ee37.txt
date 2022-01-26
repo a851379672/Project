@@ -1,0 +1,38 @@
+2022-01-25 14:39:22.194 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/system/topic/select?typeId=c938403e-268b-43ac-a2ad-5291fc2fca3b
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__c7fc72caf066b114b1fe7f418ac2c8f1",
+    "uri": "exam/exam"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 14:39:22.194 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:39:22 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "1523",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : [{'attachmentIdPath': None, 'deleteFlag': 0, 'description': None, 'expertCount': 0, 'group': 1, 'id': 'fe627367-6445-4ca1-83da-f7664df41351', 'managerCount': 0, 'name': 'Charles', 'recommend': 0, 'status': 1, 'topicTypeName': '正式标签', 'typeId': 'c938403e-268b-43ac-a2ad-5291fc2fca3b', 'usedCount': None, 'watchedCount': None}, {'attachmentIdPath': None, 'deleteFlag': 0, 'description': None, 'expertCount': 0, 'group': 1, 'id': '41bc2946-a7b4-44af-bcff-885f9ed6bfde', 'managerCount': 0, 'name': 'Github', 'recommend': 0, 'status': 1, 'topicTypeName': '正式标签', 'typeId': 'c938403e-268b-43ac-a2ad-5291fc2fca3b', 'usedCount': None, 'watchedCount': None}, {'attachmentIdPath': None, 'deleteFlag': 0, 'description': None, 'expertCount': 0, 'group': 1, 'id': '1ca2abfd-732e-4638-8d85-8f0a01dd3332', 'managerCount': 0, 'name': 'Postman', 'recommend': 0, 'status': 1, 'topicTypeName': '正式标签', 'typeId': 'c938403e-268b-43ac-a2ad-5291fc2fca3b', 'usedCount': None, 'watchedCount': None}, {'attachmentIdPath': None, 'deleteFlag': 0, 'description': None, 'expertCount': 0, 'group': 1, 'id': '150b6d5e-7f81-4bdf-a0e4-249d61c161fb', 'managerCount': 0, 'name': 'Jmeter', 'recommend': 0, 'status': 1, 'topicTypeName': '正式标签', 'typeId': 'c938403e-268b-43ac-a2ad-5291fc2fca3b', 'usedCount': None, 'watchedCount': None}, {'attachmentIdPath': None, 'deleteFlag': 0, 'description': None, 'expertCount': 0, 'group': 1, 'id': '0a25d886-cf57-48d0-83ca-209c09aa2ed1', 'managerCount': 0, 'name': 'Python', 'recommend': 0, 'status': 1, 'topicTypeName': '正式标签', 'typeId': 'c938403e-268b-43ac-a2ad-5291fc2fca3b', 'usedCount': None, 'watchedCount': None}]
+
+2022-01-25 14:39:22,195 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：topicId1: fe627367-6445-4ca1-83da-f7664df41351
+2022-01-25 14:39:22,195 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：topicId2: 41bc2946-a7b4-44af-bcff-885f9ed6bfde
+2022-01-25 14:39:22,196 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：topicId3: 1ca2abfd-732e-4638-8d85-8f0a01dd3332
+2022-01-25 14:39:22,196 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：topicId4: 150b6d5e-7f81-4bdf-a0e4-249d61c161fb
+2022-01-25 14:39:22,197 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：topicId5: 0a25d886-cf57-48d0-83ca-209c09aa2ed1
+2022-01-25 14:39:22,197 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '正式标签' 实际值: '正式标签', 断言成功!

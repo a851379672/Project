@@ -1,0 +1,3 @@
+INFO     root:data_depend.py:37 提取变量：path: default/M00/00/D5/wKgLQGHv1QyAQCSdAAdftfhVfXQ366.jpg
+INFO     root:data_depend.py:37 提取变量：attachmentId: 673b88de-d410-4985-b14d-90759ca7a6c4
+INFO     root:validate.py:76 响应断言:  预期值: 'jpg' 实际值: '广告封面_1115.jpg', 断言成功!

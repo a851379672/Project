@@ -1,0 +1,39 @@
+2022-01-25 11:14:10.654 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/human/face/empty-face
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__76ba88c18f354efefc11e3817996b852"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 11:14:10.654 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:14:11 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "105",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "result": null,
+    "log_id": 851346284,
+    "error_msg": "SUCCESS",
+    "cached": 0,
+    "error_code": 0,
+    "timestamp": 1643080451
+}
+
+2022-01-25 11:14:10,654 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: 'success' 实际值: 'success', 断言成功!

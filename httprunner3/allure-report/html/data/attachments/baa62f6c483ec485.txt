@@ -1,0 +1,2 @@
+INFO     root:data_depend.py:37 提取变量：erroranswer: d7a3df89-6cc5-44eb-9d2b-f67a865c5f3f
+INFO     root:validate.py:76 响应断言:  预期值: '200' 实际值: '200', 断言成功!

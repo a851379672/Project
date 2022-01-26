@@ -1,0 +1,287 @@
+2022-01-25 11:14:35.878 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/exam/certificate-record?page=1&pageSize=10
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__8282fe0727e597a9fde0b2768b3de476",
+    "uri": "exam/certificate-record"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 11:14:35.879 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:14:36 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "5843",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "items": [
+        {
+            "createTime": 1643080212002,
+            "effectiveTime": null,
+            "id": "b5274045-9634-4b03-87a4-4dd6dd66ac6a",
+            "issueTime": 1640793600000,
+            "member": {
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "fullName": "xuesheng1",
+                "id": "00f8266a-1ff2-4ab3-97e0-307621501005",
+                "name": "test_1",
+                "organization": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "name": "tester",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                }
+            },
+            "memberId": "00f8266a-1ff2-4ab3-97e0-307621501005",
+            "name": "tester_证书名称",
+            "num": "00120220125testerSD000020",
+            "passStatus": 1,
+            "reason": null,
+            "revokeFlag": null,
+            "score": 10000,
+            "type": 0
+        },
+        {
+            "createTime": 1643080211503,
+            "effectiveTime": null,
+            "id": "54182ce6-3178-4dd0-87f8-5358321e18ba",
+            "issueTime": 1643040000000,
+            "member": {
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "fullName": "xuesheng1",
+                "id": "00f8266a-1ff2-4ab3-97e0-307621501005",
+                "name": "test_1",
+                "organization": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "name": "tester",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                }
+            },
+            "memberId": "00f8266a-1ff2-4ab3-97e0-307621501005",
+            "name": "考试证书2022-01-25 11:10:10",
+            "num": "00120220125testerSD000019",
+            "passStatus": 1,
+            "reason": "考得不错",
+            "revokeFlag": 1,
+            "score": 10000,
+            "type": 0
+        },
+        {
+            "createTime": 1643079533701,
+            "effectiveTime": null,
+            "id": "59acda8f-9698-482b-abe2-1b40b9f495a2",
+            "issueTime": 1640793600000,
+            "member": {
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "fullName": "xuesheng1",
+                "id": "00f8266a-1ff2-4ab3-97e0-307621501005",
+                "name": "test_1",
+                "organization": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "name": "tester",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                }
+            },
+            "memberId": "00f8266a-1ff2-4ab3-97e0-307621501005",
+            "name": "tester_证书名称",
+            "num": "00120220125testerSD000018",
+            "passStatus": 1,
+            "reason": null,
+            "revokeFlag": null,
+            "score": 10000,
+            "type": 0
+        },
+        {
+            "createTime": 1643079533195,
+            "effectiveTime": null,
+            "id": "a6729207-6288-4cc9-b9b5-c41cecc180e3",
+            "issueTime": 1643040000000,
+            "member": {
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "fullName": "xuesheng1",
+                "id": "00f8266a-1ff2-4ab3-97e0-307621501005",
+                "name": "test_1",
+                "organization": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "name": "tester",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                }
+            },
+            "memberId": "00f8266a-1ff2-4ab3-97e0-307621501005",
+            "name": "考试证书2022-01-25 10:58:52",
+            "num": "00120220125testerSD000017",
+            "passStatus": 1,
+            "reason": "考得不错",
+            "revokeFlag": 1,
+            "score": 10000,
+            "type": 0
+        },
+        {
+            "createTime": 1643079195200,
+            "effectiveTime": null,
+            "id": "6a7ac30e-732f-4c24-9cf6-069bb62c19e1",
+            "issueTime": 1640793600000,
+            "member": {
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "fullName": "xuesheng1",
+                "id": "00f8266a-1ff2-4ab3-97e0-307621501005",
+                "name": "test_1",
+                "organization": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "name": "tester",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                }
+            },
+            "memberId": "00f8266a-1ff2-4ab3-97e0-307621501005",
+            "name": "tester_证书名称",
+            "num": "00120220125testerSD000015",
+            "passStatus": 1,
+            "reason": null,
+            "revokeFlag": null,
+            "score": 10000,
+            "type": 0
+        },
+        {
+            "createTime": 1643079194703,
+            "effectiveTime": null,
+            "id": "c5d9c3f9-0c1f-44c2-a242-a38e02821c56",
+            "issueTime": 1643040000000,
+            "member": {
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "fullName": "xuesheng1",
+                "id": "00f8266a-1ff2-4ab3-97e0-307621501005",
+                "name": "test_1",
+                "organization": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "name": "tester",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                }
+            },
+            "memberId": "00f8266a-1ff2-4ab3-97e0-307621501005",
+            "name": "考试证书2022-01-25 10:53:13",
+            "num": "00120220125testerSD000014",
+            "passStatus": 1,
+            "reason": "考得不错",
+            "revokeFlag": 1,
+            "score": 10000,
+            "type": 0
+        },
+        {
+            "createTime": 1643077086340,
+            "effectiveTime": null,
+            "id": "36521152-7718-4f5c-84c9-8e431931f631",
+            "issueTime": 1640793600000,
+            "member": {
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "fullName": "xuesheng1",
+                "id": "00f8266a-1ff2-4ab3-97e0-307621501005",
+                "name": "test_1",
+                "organization": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "name": "tester",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                }
+            },
+            "memberId": "00f8266a-1ff2-4ab3-97e0-307621501005",
+            "name": "tester_证书名称",
+            "num": "00120220125testerSD000012",
+            "passStatus": 1,
+            "reason": null,
+            "revokeFlag": null,
+            "score": 10000,
+            "type": 0
+        },
+        {
+            "createTime": 1643077085818,
+            "effectiveTime": null,
+            "id": "6c809757-6ef0-41e2-95a9-4f8f8014cfbd",
+            "issueTime": 1643040000000,
+            "member": {
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "fullName": "xuesheng1",
+                "id": "00f8266a-1ff2-4ab3-97e0-307621501005",
+                "name": "test_1",
+                "organization": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "name": "tester",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                }
+            },
+            "memberId": "00f8266a-1ff2-4ab3-97e0-307621501005",
+            "name": "考试证书2022-01-25 10:18:04",
+            "num": "00120220125testerSD000011",
+            "passStatus": 1,
+            "reason": "考得不错",
+            "revokeFlag": 1,
+            "score": 10000,
+            "type": 0
+        },
+        {
+            "createTime": 1643076865889,
+            "effectiveTime": null,
+            "id": "151d032d-9bea-49a9-b52e-3be47af55180",
+            "issueTime": 1640793600000,
+            "member": {
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "fullName": "xuesheng1",
+                "id": "00f8266a-1ff2-4ab3-97e0-307621501005",
+                "name": "test_1",
+                "organization": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "name": "tester",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                }
+            },
+            "memberId": "00f8266a-1ff2-4ab3-97e0-307621501005",
+            "name": "tester_证书名称",
+            "num": "00120220125testerSD000009",
+            "passStatus": 1,
+            "reason": null,
+            "revokeFlag": null,
+            "score": 10000,
+            "type": 0
+        },
+        {
+            "createTime": 1643076865386,
+            "effectiveTime": null,
+            "id": "b84c1ba1-c0d1-435a-a3db-653190c75a96",
+            "issueTime": 1643040000000,
+            "member": {
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "fullName": "xuesheng1",
+                "id": "00f8266a-1ff2-4ab3-97e0-307621501005",
+                "name": "test_1",
+                "organization": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "name": "tester",
+                    "path": "cc861919-b7fb-4582-b755-48b2eb0e5203,"
+                }
+            },
+            "memberId": "00f8266a-1ff2-4ab3-97e0-307621501005",
+            "name": "考试证书2022-01-25 10:14:24",
+            "num": "00120220125testerSD000008",
+            "passStatus": 1,
+            "reason": "考得不错",
+            "revokeFlag": 1,
+            "score": 10000,
+            "type": 0
+        }
+    ],
+    "recordCount": 64
+}
+
+2022-01-25 11:14:35,880 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '200' 实际值: '200', 断言成功!

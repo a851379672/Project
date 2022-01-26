@@ -1,0 +1,191 @@
+{
+  "uid" : "fb23b6bb7f2ae8ba",
+  "name" : "【普通考试】——考试配置-发布考试",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "71bf0c6955f11dd1e908cb2af816944f",
+  "time" : {
+    "start" : 1643080820283,
+    "stop" : 1643080820446,
+    "duration" : 163
+  },
+  "description" : "\n        :param api_data\n        :return: report_content\n        ",
+  "descriptionHtml" : "<pre><code>    :param api_data\n    :return: report_content\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "file_fixture",
+    "time" : {
+      "start" : 1643080808357,
+      "stop" : 1643080808364,
+      "duration" : 7
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "xunit_setup_class_fixture_TestClass",
+    "time" : {
+      "start" : 1643080808619,
+      "stop" : 1643080808624,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "fsetup_tear_down",
+    "time" : {
+      "start" : 1643080808365,
+      "stop" : 1643080808365,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1643080808365,
+      "stop" : 1643080808619,
+      "duration" : 254
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param api_data\n        :return: report_content\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a61965497bbd3d57",
+      "name" : "log",
+      "source" : "a61965497bbd3d57.txt",
+      "type" : "text/plain",
+      "size" : 92
+    }, {
+      "uid" : "188e72a3c9acd839",
+      "name" : "stderr",
+      "source" : "188e72a3c9acd839.txt",
+      "type" : "text/plain",
+      "size" : 4923
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestClass::0",
+    "time" : {
+      "start" : 1643080876999,
+      "stop" : 1643080876999,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "fsetup_tear_down::0",
+    "time" : {
+      "start" : 1643080877005,
+      "stop" : 1643080877010,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【普通考试】——考试配置-发布考试"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=3, reruns_delay=5)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "28248-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "api_data",
+    "value" : "{'name': '【普通考试】——考试配置-发布考试', 'request': {'url': 'api/v1/exam/exam/${examId}', 'method': 'PUT', 'headers': {'Authorization': 'Bearer__${admin_token}', 'content-type': 'application/x-www-form-urlencoded; charset=UTF-8', 'uri': 'exam/exam'}, 'data': {'publish': 1, 'isAllowSwitch': 1, 'accessSecret': 'A12345', 'admissionTicket': 1, 'allowExamTimes': 1, 'allowSwitchTimes': 3, 'anonymityMark': 0, 'applicantEndTime': '$time_stamp{$diy_time{*, *, +1, *, *, *}}', 'applicantNeedAudit': 0, 'applicantStartTime': '$time_stamp{$diy_time{*, *, -1, *, *, *}}', 'belongAuditTime': 'false', 'certificateId': '${certificateId}', 'certificateType': 0, 'clientType': 0, 'coverId': '${coverId}', 'coverIdPath': '${coverIdPath}', 'credit': 1000, 'endTime': '$diy_time{*, *, +2, *, *}', 'duration': 60, 'evalutionRule': '{\"passLess\": 54,\"passGreater\": 72,\"goodLess\": 72,\"goodGreater\": 81,\"excellentLess\": 81,\"noPassGreater\": 54}', 'examNotes': '请考生仔细阅读，并参照执行，如遇特殊情况，请联系监考老师或拨打客服电话。', 'faceFailedRule': 0, 'faceLimitTimes': 3, 'faceMode': 1, 'hasCert': 1, 'id': '${examId}', 'isCreditNeedPass': 1, 'isMakeUp': 0, 'isPermitViewCode': 1, 'isRepeat': 1, 'isSetAccessSecret': 1, 'isSetPassScore': 1, 'isSetPersonalCode': 0, 'issueFlag': 0, 'joinNumber': 0, 'makeUpCount': 0, 'name': '${examName}', 'needApplicant': 1, 'needFillOutInfo': 0, 'paperClassId': '${paperId}', 'paperShowRule': 2, 'paperSortRule': 1, 'paperViewRule': 1, 'passScore': 54, 'sendToCenter': 1, 'showAnswerRule': 3, 'sourceType': 1, 'startTime': '$diy_time{*, *, *, *, *}', 'status': 1, 'supportApp': '1,2', 'type': 1, 'isCredit': 1, 'client': 1, 'topicIds': '${topicId1},${topicId2},${topicId3}，${topicId4}，${topicId5}', 'organizationId-text': '${organizationName}', 'organizationId': '${organizationId}', 'publisherId': '${adminId}', 'publishOrganizationId': '${organizationId}', 'isShowScore': 'false', 'markConfig': {'markPapers': [{'id': '${paperId}', 'name': '${examName}', 'markMembers': [{'id': '${studentId}', 'name': '${studentName}'}]}]}, 'audienceItems': [{'joinId': '${studentId}', 'joinType': 5, 'joinName': '${studentName}'}], 'addItems': [{'joinId': '${studentId}', 'joinType': 5, 'joinName': '${studentName}'}], 'topic': [{'topicId': '${topicId1}'}, {'topicId': '${topicId2}'}, {'topicId': '${topicId3}'}, {'topicId': '${topicId4}'}, {'topicId': '${topicId5}'}], 'noticeUser': 0, 'noticeTeacher': 0, 'noticeInvigilator': 0, 'website': '${organizationName}'}}, 'sql_statement': None, 'extract': None, 'validate': [{'eq': ['$.supportApp', '1,2']}], 'allure': {'allure_descrption': '【普通考试】——考试配置-发布考试', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}"
+  } ],
+  "links" : [ {
+    "name" : "https://tester1.zhixueyun.com/api/v1/exam/exam/${examId}",
+    "url" : "https://tester1.zhixueyun.com/api/v1/exam/exam/${examId}",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=3, reruns_delay=5)" ]
+  },
+  "source" : "fb23b6bb7f2ae8ba.json",
+  "parameterValues" : [ "{'name': '【普通考试】——考试配置-发布考试', 'request': {'url': 'api/v1/exam/exam/${examId}', 'method': 'PUT', 'headers': {'Authorization': 'Bearer__${admin_token}', 'content-type': 'application/x-www-form-urlencoded; charset=UTF-8', 'uri': 'exam/exam'}, 'data': {'publish': 1, 'isAllowSwitch': 1, 'accessSecret': 'A12345', 'admissionTicket': 1, 'allowExamTimes': 1, 'allowSwitchTimes': 3, 'anonymityMark': 0, 'applicantEndTime': '$time_stamp{$diy_time{*, *, +1, *, *, *}}', 'applicantNeedAudit': 0, 'applicantStartTime': '$time_stamp{$diy_time{*, *, -1, *, *, *}}', 'belongAuditTime': 'false', 'certificateId': '${certificateId}', 'certificateType': 0, 'clientType': 0, 'coverId': '${coverId}', 'coverIdPath': '${coverIdPath}', 'credit': 1000, 'endTime': '$diy_time{*, *, +2, *, *}', 'duration': 60, 'evalutionRule': '{\"passLess\": 54,\"passGreater\": 72,\"goodLess\": 72,\"goodGreater\": 81,\"excellentLess\": 81,\"noPassGreater\": 54}', 'examNotes': '请考生仔细阅读，并参照执行，如遇特殊情况，请联系监考老师或拨打客服电话。', 'faceFailedRule': 0, 'faceLimitTimes': 3, 'faceMode': 1, 'hasCert': 1, 'id': '${examId}', 'isCreditNeedPass': 1, 'isMakeUp': 0, 'isPermitViewCode': 1, 'isRepeat': 1, 'isSetAccessSecret': 1, 'isSetPassScore': 1, 'isSetPersonalCode': 0, 'issueFlag': 0, 'joinNumber': 0, 'makeUpCount': 0, 'name': '${examName}', 'needApplicant': 1, 'needFillOutInfo': 0, 'paperClassId': '${paperId}', 'paperShowRule': 2, 'paperSortRule': 1, 'paperViewRule': 1, 'passScore': 54, 'sendToCenter': 1, 'showAnswerRule': 3, 'sourceType': 1, 'startTime': '$diy_time{*, *, *, *, *}', 'status': 1, 'supportApp': '1,2', 'type': 1, 'isCredit': 1, 'client': 1, 'topicIds': '${topicId1},${topicId2},${topicId3}，${topicId4}，${topicId5}', 'organizationId-text': '${organizationName}', 'organizationId': '${organizationId}', 'publisherId': '${adminId}', 'publishOrganizationId': '${organizationId}', 'isShowScore': 'false', 'markConfig': {'markPapers': [{'id': '${paperId}', 'name': '${examName}', 'markMembers': [{'id': '${studentId}', 'name': '${studentName}'}]}]}, 'audienceItems': [{'joinId': '${studentId}', 'joinType': 5, 'joinName': '${studentName}'}], 'addItems': [{'joinId': '${studentId}', 'joinType': 5, 'joinName': '${studentName}'}], 'topic': [{'topicId': '${topicId1}'}, {'topicId': '${topicId2}'}, {'topicId': '${topicId3}'}, {'topicId': '${topicId4}'}, {'topicId': '${topicId5}'}], 'noticeUser': 0, 'noticeTeacher': 0, 'noticeInvigilator': 0, 'website': '${organizationName}'}}, 'sql_statement': None, 'extract': None, 'validate': [{'eq': ['$.supportApp', '1,2']}], 'allure': {'allure_descrption': '【普通考试】——考试配置-发布考试', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}" ]
+}

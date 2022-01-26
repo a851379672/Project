@@ -3,9 +3,10 @@ import json
 import pytest
 import yaml
 import logging
-
 from settings import *
 from base import base_token
+from base import base_debug
+from base import base_file
 
 
 def pytest_addoption(parser):
@@ -13,13 +14,13 @@ def pytest_addoption(parser):
     添加命令行参数
     """
     parser.addoption(
-        "--config", action="store", default="test_config.yaml", help="配置文件"
+        "--config", action="store", default="pre_config.yaml", help="配置文件"
     )
 
 
 @pytest.fixture(scope="session", autouse=True)
 def get_config(request):
-    """测试环境预处理"""
+    """环境预处理"""
     config = request.config.getoption("config")
     config_path = os.path.join(CONFIG_PATH, f'{config}')
     with open(config_path, "r", encoding="utf-8") as f:
@@ -29,6 +30,13 @@ def get_config(request):
             f.write(json.dumps(config_dict))
     base_token.get_admin_token(config_dict)
     base_token.get_student_token(config_dict)
+    # base_debug.base_debug(base_token.get_admin_token(config_dict))
+
+
+@pytest.fixture(scope="session", autouse=True)
+def file_fixture():
+    """文件预处理"""
+    base_file.base_testfile()
 
 
 @pytest.fixture(scope="session", autouse=True)
@@ -43,17 +51,11 @@ def fsetup_tear_down(request):
         config_contents = yaml.safe_load(f)
     config_contents["environment"] = os.path.splitext(f'{config}')[0]
     environment_content = ''
-    for k, v in config_contents.items():
-        environment_content += f"{k}={v}\n"
+    for key, value in config_contents.items():
+        environment_content += f"{key}={value}\n"
     with open(ENV_PRO, "w", encoding="utf-8") as f:
         f.write(environment_content)
     logging.info("后置处理完成.")
-
-
-@pytest.fixture(scope="session", autouse=True)
-def file_fixture():
-    """测试文件预处理,os.path.splitext(file)"""
-    pass
 
 
 if __name__ == '__main__':

@@ -1,0 +1,32 @@
+2022-01-25 18:45:44.570 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : http://pre-202108-10.zhixueyun.com/api/v1/human/file/find-by-ids?ids=e5822e8b-b89b-40c7-9a5a-f17d57d3fce8%2C1132086d-cdee-4fbe-b1bf-1a9768602fef
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__5162aae81b0783802661ab1b21b0a987",
+    "uri": "exam/exam"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 18:45:44.570 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 10:45:45 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "677",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : [{'contentType': 'video/mp4', 'createTime': 1643107537823, 'duration': None, 'extention': 'mp4', 'filename': '试题视频_1113.mp4', 'id': '1132086d-cdee-4fbe-b1bf-1a9768602fef', 'path': 'default/M00/00/D5/wKgLQGHv1NGEDTteAAAAALg_VbI396.mp4', 'size': 2299387, 'thumbPath': None, 'thumbStatus': None, 'translateFlag': 3, 'translateId': None, 'translateLevel': 0}, {'contentType': 'audio/mpeg', 'createTime': 1643107537083, 'duration': 70000, 'extention': 'mp3', 'filename': '试题音频_1112.mp3', 'id': 'e5822e8b-b89b-40c7-9a5a-f17d57d3fce8', 'path': 'default/M00/00/D5/wKgLQGHv1NGEKq5tAAAAANpF7CU811.mp3', 'size': 1200080, 'thumbPath': None, 'thumbStatus': None, 'translateFlag': 1, 'translateId': None, 'translateLevel': 0}]
+
+2022-01-25 18:45:44,571 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '200' 实际值: '200', 断言成功!

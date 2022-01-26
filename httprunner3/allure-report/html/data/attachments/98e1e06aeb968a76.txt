@@ -1,0 +1,80 @@
+2022-01-25 11:20:16.760 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/exam/invigilator/page/config-list?examId=d2b32a87-0aeb-4319-a48a-520e9739d508&page=1&pageSize=10
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__c0909a02d4a8aa71f02b2f2c302f1894",
+    "uri": "exam/exam"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 11:20:16.761 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:20:17 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "882",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "items": [
+        {
+            "exam": {
+                "id": "21a26b91-ae28-414e-8553-577e3072e49f",
+                "name": null
+            },
+            "id": "21a26b91-ae28-414e-8553-577e3072e49f",
+            "invigilatorGrants": null,
+            "invigilatorOrgStr": "全部人员",
+            "member": {
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "email": null,
+                "fullName": "xuesheng1",
+                "id": "00f8266a-1ff2-4ab3-97e0-307621501005",
+                "name": "test_1",
+                "organization": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "name": "tester"
+                },
+                "phoneNumber": null
+            }
+        },
+        {
+            "exam": {
+                "id": "3071105e-b920-42ef-9bd9-6ecb585468e7",
+                "name": null
+            },
+            "id": "3071105e-b920-42ef-9bd9-6ecb585468e7",
+            "invigilatorGrants": null,
+            "invigilatorOrgStr": "全部人员",
+            "member": {
+                "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                "email": null,
+                "fullName": "超级管理员",
+                "id": "5f0870a7-d55d-4a31-8782-1ac8d9690efc",
+                "name": "admin",
+                "organization": {
+                    "id": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+                    "name": "tester"
+                },
+                "phoneNumber": null
+            }
+        }
+    ],
+    "recordCount": 2
+}
+
+2022-01-25 11:20:16,761 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：invigilatorId: 21a26b91-ae28-414e-8553-577e3072e49f
+2022-01-25 11:20:16,762 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '2' 实际值: '2', 断言成功!

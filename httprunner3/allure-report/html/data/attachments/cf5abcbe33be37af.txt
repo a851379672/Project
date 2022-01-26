@@ -1,0 +1,1 @@
+INFO     root:validate.py:76 响应断言:  预期值: 'fda4502e-7808-4ce2-ab4b-4c68d46b14ab' 实际值: 'fda4502e-7808-4ce2-ab4b-4c68d46b14ab', 断言成功!

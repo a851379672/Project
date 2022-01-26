@@ -1,0 +1,2 @@
+INFO     root:data_depend.py:37 提取变量：ids: 24be4ede-96d1-47d3-80f7-66d8b3aa8407
+INFO     root:validate.py:76 响应断言:  预期值: '200' 实际值: '200', 断言成功!

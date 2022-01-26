@@ -1,0 +1,38 @@
+2022-01-25 14:07:04.782 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/exam/exam/front/exam-paper/v2?clientType=1&examId=801a6800-06ba-49c4-ad3d-8775030eeadc
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__952100744d93ee98c41357f829c92311"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 14:07:04.783 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 422
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:07:05 GMT",
+    "Content-Length": "78",
+    "Connection": "keep-alive",
+    "Content-Language": "en-US",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : None
+content_type : 
+body     : {
+    "extend": {},
+    "errorCode": 130006,
+    "message": "Invalid input.",
+    "error": 0,
+    "url": ""
+}
+
+2022-01-25 14:07:04,783 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '0' 实际值: '0', 断言成功!

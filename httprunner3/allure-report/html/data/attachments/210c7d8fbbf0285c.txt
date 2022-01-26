@@ -1,0 +1,4 @@
+INFO     root:data_depend.py:37 提取变量：errorFileId: f2a23bae-110a-4ae1-8519-ecf6182cc6ad
+INFO     root:validate.py:76 响应断言:  预期值: '1' 实际值: '1', 断言成功!
+INFO     root:validate.py:76 响应断言:  预期值: '1' 实际值: '1', 断言成功!
+INFO     root:validate.py:76 响应断言:  预期值: '1' 实际值: '1', 断言成功!

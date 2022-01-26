@@ -1,0 +1,63 @@
+2022-01-25 18:41:31.683 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : http://pre-202108-10.zhixueyun.com/api/v1/exam/invigilator/import-exam
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__85e43964274f4735315f924b26fc2818",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "uri": "exam/exam",
+    "Content-Length": "87"
+}
+cookies  : {}
+body     : fileId=df8b9602-a1b0-445d-b252-cd445df5c2b0&examId=53556691-6b4e-4b15-a8fd-a35a6607d046
+
+2022-01-25 18:41:31.684 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 10:41:32 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "341",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "errorFileId": "378819dc-28f6-4039-8043-6092f7540a43",
+    "correctInsertList": [],
+    "updateCount": 1,
+    "failCount": 1,
+    "correctUpdateList": [
+        {
+            "exam": {
+                "name": null
+            },
+            "id": "9a4ce3b9-b523-4b57-a7a9-99d4224d7e18",
+            "invigilatorOrgStr": "preer",
+            "member": {
+                "fullName": "超级管理员",
+                "name": "admin"
+            }
+        }
+    ],
+    "successCount": 1,
+    "errors": [
+        {
+            "code": 31102,
+            "column": 0,
+            "row": 2
+        }
+    ]
+}
+
+2022-01-25 18:41:31,685 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：errorFileId: 378819dc-28f6-4039-8043-6092f7540a43
+2022-01-25 18:41:31,685 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '1' 实际值: '1', 断言成功!
+2022-01-25 18:41:31,686 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '1' 实际值: '1', 断言成功!
+2022-01-25 18:41:31,686 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '1' 实际值: '1', 断言成功!

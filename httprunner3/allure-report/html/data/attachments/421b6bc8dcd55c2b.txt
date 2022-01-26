@@ -1,0 +1,41 @@
+2022-01-25 11:21:08.735 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://tester1.zhixueyun.com/api/v1/system/file/simple-upload-auth
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__c0909a02d4a8aa71f02b2f2c302f1894",
+    "Content-Length": "71885",
+    "Content-Type": "multipart/form-data; boundary=5725f9a801d9c4319bc73eb2152efe81"
+}
+cookies  : {}
+body     : upload file stream (OMITTED)
+
+2022-01-25 11:21:08.735 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 03:21:09 GMT",
+    "Content-Type": "text/html;charset=UTF-8",
+    "Content-Length": "137",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : text/html;charset=UTF-8
+body     : {
+    "msg": "success",
+    "path": "default/M00/0B/08/wKgLTWHvbKWAL7zmAAEXVn_kUs0056.jpg",
+    "code": 200,
+    "imgId": "42dbadaf-11fb-4d68-b2e7-4c9b4f8fb0a6"
+}
+
+2022-01-25 11:21:08,735 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：coverId: 42dbadaf-11fb-4d68-b2e7-4c9b4f8fb0a6
+2022-01-25 11:21:08,735 | D:\PyCharm\project\httprunner3\common\data_depend.py[line:37] | INFO: 提取变量：coverPath: default/M00/0B/08/wKgLTWHvbKWAL7zmAAEXVn_kUs0056.jpg
+2022-01-25 11:21:08,736 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: 'success' 实际值: 'success', 断言成功!

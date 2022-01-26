@@ -1,0 +1,3 @@
+INFO     root:data_depend.py:37 提取变量：questionDepotId: 9fd77df6-5d05-4278-a42c-e0f588235401
+INFO     root:data_depend.py:37 提取变量：questionDepotName: 试题目录2022-01-25 18:46:30
+INFO     root:validate.py:76 响应断言:  预期值: '9bcad76a-ba7e-4ace-9f92-f6e086a29cec' 实际值: '9bcad76a-ba7e-4ace-9f92-f6e086a29cec', 断言成功!

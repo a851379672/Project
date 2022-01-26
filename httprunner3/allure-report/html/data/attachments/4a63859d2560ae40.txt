@@ -1,0 +1,37 @@
+2022-01-25 14:30:08.252 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://tester1.zhixueyun.com/api/v1/system/file-cloud/get-company-config?companyId=cc861919-b7fb-4582-b755-48b2eb0e5203
+headers  : {
+    "User-Agent": "python-requests/2.25.1",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "Bearer__1ed5c1ee658ef13aaa49bca09ed78677"
+}
+cookies  : {}
+body     : None
+
+2022-01-25 14:30:08.252 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Date": "Tue, 25 Jan 2022 06:30:09 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Content-Length": "593",
+    "Connection": "keep-alive",
+    "Strict-Transport-Security": "max-age=15724800; includeSubDomains",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Credentials": "true"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "cloudCdnDomain": "https://cdn.zhixueyun.com",
+    "configs": "{\"default\":\"{\\\"cdnSecretKey\\\":\\\"ttianjun\\\",\\\"cdnSecretUrl\\\":\\\"https://cdnsafe.zhixueyun.com\\\",\\\"cdnViewUrl\\\":\\\"https://cdn.zhixueyun.com/\\\",\\\"companyId\\\":\\\"\\\",\\\"deleteFlag\\\":\\\"N\\\",\\\"id\\\":\\\"default\\\",\\\"modifyDate\\\":1626164000000,\\\"name\\\":\\\"默认配置\\\",\\\"organizationId\\\":\\\"default\\\",\\\"trackerServers\\\":\\\"192.168.11.77:10401\\\",\\\"viewUrl\\\":\\\"https://test9.zhixueyun.com/\\\"}\"}",
+    "companyId": "cc861919-b7fb-4582-b755-48b2eb0e5203",
+    "cloudFileOpen": "0"
+}
+
+2022-01-25 14:30:08,253 | D:\PyCharm\project\httprunner3\common\validate.py[line:76] | INFO: 响应断言:  预期值: '0' 实际值: '0', 断言成功!

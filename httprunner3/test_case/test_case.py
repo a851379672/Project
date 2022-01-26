@@ -2,11 +2,11 @@
 import pytest
 import requests
 import json
-import data_depend
 
 from base import base_config
 from common.parse_yaml import ReadData
 from common.data_depend import DataDepend
+from common.file_depend import *
 from common.validate import Validate
 from common.mysql_operate import MysqlOperate
 from common.lib_ import *
@@ -29,6 +29,7 @@ class TestClass:
         """
         base_config.get_config_json(self.file, self.deal_with)
 
+    @pytest.mark.flaky(reruns=5, reruns_delay=5)
     @pytest.mark.parametrize('api_data', ReadData().return_data())
     def test_run(self, api_data):
         """
@@ -40,8 +41,8 @@ class TestClass:
         request_data = eval(self.deal_with.replace_(api_data['request']))
         request_data['url'] = f"{self.file['ent_url']}{request_data['url']}"
         if request_data.get('files'):
-            request_data['files'] = data_depend.file_depend(request_data)
-        if request_data['headers'].get('content-type') and 'urlencoded' in request_data['headers']['content-type']:
+            request_data['files'] = FileDepend().file_dispose(request_data['files'])
+        if request_data['headers'].get('content-type') and 'urlencoded' in request_data['headers'].get('content-type'):
             request_data['data'] = urlencode(request_data['data'])
         allure_(api_data, self.file['ent_url'])
 
@@ -52,8 +53,8 @@ class TestClass:
         """sql执行"""
         sql_statement = api_data.get('sql_statement')
         if sql_statement:
-            [MysqlOperate(value[0]).execute_sql(value[1], self.deal_with) for sql in sql_statement
-             for value in sql.values()]
+            [MysqlOperate(key, value[0]).execute_sql(value[1], self.deal_with) for sql in sql_statement
+             for key, value in sql.items()]
 
         """参数提取"""
         extract = api_data.get('extract')
@@ -68,4 +69,4 @@ class TestClass:
 
 
 if __name__ == '__main__':
-    pytest.main(['-s', '-v'])
+    pytest.main(['-vs'])

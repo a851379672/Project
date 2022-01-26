@@ -1,0 +1,4 @@
+INFO     root:data_depend.py:37 提取变量：tiankongtiId: 1691b74c-c857-4112-b968-b6e04e48640a
+INFO     root:data_depend.py:37 提取变量：tiankongtiName: 【填空题】试题信息()2022-01-25 14:29:58
+INFO     root:data_depend.py:37 提取变量：tiankongtiDifficulty: 3
+INFO     root:validate.py:76 响应断言:  预期值: '4' 实际值: '4', 断言成功!

@@ -1,0 +1,1 @@
+INFO     root:validate.py:76 响应断言:  预期值: 'ok' 实际值: 'ok', 断言成功!

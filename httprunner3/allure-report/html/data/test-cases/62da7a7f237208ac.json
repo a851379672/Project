@@ -1,0 +1,191 @@
+{
+  "uid" : "62da7a7f237208ac",
+  "name" : "【普通试题】——新增试题-新增阅读理解",
+  "fullName" : "test_case.test_case.TestClass#test_run",
+  "historyId" : "ced07a81cb818c23f832f33126c0fdaa",
+  "time" : {
+    "start" : 1643092233946,
+    "stop" : 1643092234149,
+    "duration" : 203
+  },
+  "description" : "\n        :param api_data\n        :return: report_content\n        ",
+  "descriptionHtml" : "<pre><code>    :param api_data\n    :return: report_content\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestClass",
+    "time" : {
+      "start" : 1643092193504,
+      "stop" : 1643092193508,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "fsetup_tear_down",
+    "time" : {
+      "start" : 1643092193212,
+      "stop" : 1643092193212,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "get_config",
+    "time" : {
+      "start" : 1643092193212,
+      "stop" : 1643092193504,
+      "duration" : 292
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "file_fixture",
+    "time" : {
+      "start" : 1643092193205,
+      "stop" : 1643092193212,
+      "duration" : 7
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        :param api_data\n        :return: report_content\n        ",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "8346e7abe4696bd4",
+      "name" : "log",
+      "source" : "8346e7abe4696bd4.txt",
+      "type" : "text/plain",
+      "size" : 1584
+    }, {
+      "uid" : "f460c5c085ef815b",
+      "name" : "stderr",
+      "source" : "f460c5c085ef815b.txt",
+      "type" : "text/plain",
+      "size" : 14088
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestClass::0",
+    "time" : {
+      "start" : 1643092259928,
+      "stop" : 1643092259928,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "fsetup_tear_down::0",
+    "time" : {
+      "start" : 1643092259939,
+      "stop" : 1643092259943,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "【普通试题】——新增试题-新增阅读理解"
+  }, {
+    "name" : "subSuite",
+    "value" : "考试模块"
+  }, {
+    "name" : "feature",
+    "value" : "管理端"
+  }, {
+    "name" : "story",
+    "value" : "考试模块"
+  }, {
+    "name" : "tag",
+    "value" : "flaky(reruns=3, reruns_delay=5)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_case"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "SZLX"
+  }, {
+    "name" : "thread",
+    "value" : "29784-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_case"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "api_data",
+    "value" : "{'name': '【普通试题】——新增试题-新增阅读理解', 'request': {'url': 'api/v1/exam/question', 'method': 'POST', 'headers': {'Authorization': 'Bearer__${admin_token}', 'uri': 'exam/question-depot', 'content-type': 'application/x-www-form-urlencoded; charset=UTF-8'}, 'data': {'value': [{'questionAttrs': [{'value': 'A', 'valueText': 'A', 'name': 0, 'type': 0}, {'value': 'B', 'valueText': 'B', 'name': 1, 'type': 1}, {'value': 'C', 'valueText': 'C', 'name': 2, 'type': 1}, {'value': 'D', 'valueText': 'D', 'name': 3, 'type': 1}], 'content': '单选题1', 'contentText': '单选题1', 'difficulty': '3', 'score': '1000', 'id': 'q-1', 'parsing': '试题解析1', 'parsingText': '试题解析1', 'type': '1', 'order': 1}, {'questionAttrs': [{'value': 'A', 'valueText': 'A', 'name': 0, 'type': 0}, {'value': 'B', 'valueText': 'B', 'name': 1, 'type': 0}, {'value': 'C', 'valueText': 'C', 'name': 2, 'type': 2}, {'value': 'D', 'valueText': 'D', 'name': 3, 'type': 2}], 'content': '多选题2', 'contentText': '多选题2', 'difficulty': '3', 'score': '1000', 'id': 'q-2', 'parsing': '试题解析2', 'parsingText': '试题解析2', 'type': '2', 'order': 2}, {'questionAttrs': [{'value': '参考答案', 'name': '参考答案', 'type': 5}], 'content': '问答题3', 'contentText': '问答题3', 'score': '1000', 'parsing': '试题解析3', 'parsingText': '试题解析3', 'type': '5', 'id': 'q-3', 'difficulty': '3', 'order': 3}], 'questionAttrs[ 0 ][ questionAttrs ][ 0 ][ value ]': 'A', 'questionAttrs[ 0 ][ questionAttrs ][ 0 ][ valueText ]': 'A', 'questionAttrs[ 0 ][ questionAttrs ][ 0 ][ name ]': 0, 'questionAttrs[ 0 ][ questionAttrs ][ 0 ][ type ]': 0, 'questionAttrs[ 0 ][ questionAttrs ][ 1 ][ value ]': 'B', 'questionAttrs[ 0 ][ questionAttrs ][ 1 ][ valueText ]': 'B', 'questionAttrs[ 0 ][ questionAttrs ][ 1 ][ name ]': 1, 'questionAttrs[ 0 ][ questionAttrs ][ 1 ][ type ]': 1, 'questionAttrs[ 0 ][ questionAttrs ][ 2 ][ value ]': 'C', 'questionAttrs[ 0 ][ questionAttrs ][ 2 ][ valueText ]': 'C', 'questionAttrs[ 0 ][ questionAttrs ][ 2 ][ name ]': 2, 'questionAttrs[ 0 ][ questionAttrs ][ 2 ][ type ]': 1, 'questionAttrs[ 0 ][ questionAttrs ][ 3 ][ value ]': 'D', 'questionAttrs[ 0 ][ questionAttrs ][ 3 ][ valueText ]': 'D', 'questionAttrs[ 0 ][ questionAttrs ][ 3 ][ name ]': 3, 'questionAttrs[ 0 ][ questionAttrs ][ 3 ][ type ]': 1, 'questionAttrs[ 0 ][ content ]': '单选题1', 'questionAttrs[ 0 ][ contentText ]': '单选题1', 'questionAttrs[ 0 ][ difficulty ]': 3, 'questionAttrs[ 0 ][ score ]': 1000, 'questionAttrs[ 0 ][ id ]': 'q-1', 'questionAttrs[ 0 ][ parsing ]': '试题解析1', 'questionAttrs[ 0 ][ parsingText ]': '试题解析1', 'questionAttrs[ 0 ][ type ]': 1, 'questionAttrs[ 0 ][ order ]': 1, 'questionAttrs[ 1 ][ questionAttrs ][ 0 ][ value ]': 'A', 'questionAttrs[ 1 ][ questionAttrs ][ 0 ][ valueText ]': 'A', 'questionAttrs[ 1 ][ questionAttrs ][ 0 ][ name ]': 0, 'questionAttrs[ 1 ][ questionAttrs ][ 0 ][ type ]': 0, 'questionAttrs[ 1 ][ questionAttrs ][ 1 ][ value ]': 'B', 'questionAttrs[ 1 ][ questionAttrs ][ 1 ][ valueText ]': 'B', 'questionAttrs[ 1 ][ questionAttrs ][ 1 ][ name ]': 1, 'questionAttrs[ 1 ][ questionAttrs ][ 1 ][ type ]': 0, 'questionAttrs[ 1 ][ questionAttrs ][ 2 ][ value ]': 'C', 'questionAttrs[ 1 ][ questionAttrs ][ 2 ][ valueText ]': 'C', 'questionAttrs[ 1 ][ questionAttrs ][ 2 ][ name ]': 2, 'questionAttrs[ 1 ][ questionAttrs ][ 2 ][ type ]': 2, 'questionAttrs[ 1 ][ questionAttrs ][ 3 ][ value ]': 'D', 'questionAttrs[ 1 ][ questionAttrs ][ 3 ][ valueText ]': 'D', 'questionAttrs[ 1 ][ questionAttrs ][ 3 ][ name ]': 3, 'questionAttrs[ 1 ][ questionAttrs ][ 3 ][ type ]': 2, 'questionAttrs[ 1 ][ content ]': '多选题2', 'questionAttrs[ 1 ][ contentText ]': '多选题2', 'questionAttrs[ 1 ][ difficulty ]': 3, 'questionAttrs[ 1 ][ score ]': 1000, 'questionAttrs[ 1 ][ id ]': 'q-2', 'questionAttrs[ 1 ][ parsing ]': '试题解析2', 'questionAttrs[ 1 ][ parsingText ]': '试题解析2', 'questionAttrs[ 1 ][ type ]': 2, 'questionAttrs[ 1 ][ order ]': 2, 'questionAttrs[ 2 ][ questionAttrs ][ 0 ][ value ]': '参考答案', 'questionAttrs[ 2 ][ questionAttrs ][ 0 ][ name ]': '参考答案', 'questionAttrs[ 2 ][ questionAttrs ][ 0 ][ type ]': 5, 'questionAttrs[ 2 ][ content ]': '问答题3', 'questionAttrs[ 2 ][ contentText ]': '问答题3', 'questionAttrs[ 2 ][ score ]': 1000, 'questionAttrs[ 2 ][ parsing ]': '试题解析3', 'questionAttrs[ 2 ][ parsingText ]': '试题解析3', 'questionAttrs[ 2 ][ type ]': 5, 'questionAttrs[ 2 ][ id ]': 'q-3', 'questionAttrs[ 2 ][ difficulty ]': 3, 'questionAttrs[ 2 ][ order ]': 3, 'content': '${questionDepotName}-阅读裂解题1', 'contentText': '${questionDepotName}-阅读裂解题1', 'score': 3000, 'type': 6, 'questionDepotId': '${questionDepotId}', 'questionDepot[ id ]': '${questionDepotId}', 'questionDepot[ name ]': '${questionDepotName}', 'organizationId': '${organizationId}', 'organization[ id ]': '${organizationId}', 'organization[ name ]': '${organizationName}', 'difficulty': 3, 'depotEdit': 0}}, 'extract': {'yuedulijieid': '$.id', 'yuedulijiename': '$.content', 'yuedulijie_danxuanid': '$.subs[0].id', 'yuedulijie_danxuanid_1': '$.subs[0].questionAttrs[0].id', 'yuedulijie_danxuanid_2': '$.subs[0].questionAttrs[1].id', 'yuedulijie_danxuanid_3': '$.subs[0].questionAttrs[2].id', 'yuedulijie_danxuanid_4': '$.subs[0].questionAttrs[3].id', 'yuedulijie_duoxuanid': '$.subs[1].id', 'yuedulijie_duoxuanid_1': '$.subs[1].questionAttrs[0].id', 'yuedulijie_duoxuanid_2': '$.subs[1].questionAttrs[1].id', 'yuedulijie_duoxuanid_3': '$.subs[1].questionAttrs[2].id', 'yuedulijie_duoxuanid_4': '$.subs[1].questionAttrs[3].id', 'yuedulijie_wendaid': '$.subs[2].id', 'yuedulijie_wendaid_1': '$.subs[2].questionAttrs[0].id'}, 'validate': [{'eq': ['$.type', '6']}], 'allure': {'allure_descrption': '【普通试题】——新增试题-新增阅读理解', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}"
+  } ],
+  "links" : [ {
+    "name" : "https://tester1.zhixueyun.com/api/v1/exam/question",
+    "url" : "https://tester1.zhixueyun.com/api/v1/exam/question",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "flaky(reruns=3, reruns_delay=5)" ]
+  },
+  "source" : "62da7a7f237208ac.json",
+  "parameterValues" : [ "{'name': '【普通试题】——新增试题-新增阅读理解', 'request': {'url': 'api/v1/exam/question', 'method': 'POST', 'headers': {'Authorization': 'Bearer__${admin_token}', 'uri': 'exam/question-depot', 'content-type': 'application/x-www-form-urlencoded; charset=UTF-8'}, 'data': {'value': [{'questionAttrs': [{'value': 'A', 'valueText': 'A', 'name': 0, 'type': 0}, {'value': 'B', 'valueText': 'B', 'name': 1, 'type': 1}, {'value': 'C', 'valueText': 'C', 'name': 2, 'type': 1}, {'value': 'D', 'valueText': 'D', 'name': 3, 'type': 1}], 'content': '单选题1', 'contentText': '单选题1', 'difficulty': '3', 'score': '1000', 'id': 'q-1', 'parsing': '试题解析1', 'parsingText': '试题解析1', 'type': '1', 'order': 1}, {'questionAttrs': [{'value': 'A', 'valueText': 'A', 'name': 0, 'type': 0}, {'value': 'B', 'valueText': 'B', 'name': 1, 'type': 0}, {'value': 'C', 'valueText': 'C', 'name': 2, 'type': 2}, {'value': 'D', 'valueText': 'D', 'name': 3, 'type': 2}], 'content': '多选题2', 'contentText': '多选题2', 'difficulty': '3', 'score': '1000', 'id': 'q-2', 'parsing': '试题解析2', 'parsingText': '试题解析2', 'type': '2', 'order': 2}, {'questionAttrs': [{'value': '参考答案', 'name': '参考答案', 'type': 5}], 'content': '问答题3', 'contentText': '问答题3', 'score': '1000', 'parsing': '试题解析3', 'parsingText': '试题解析3', 'type': '5', 'id': 'q-3', 'difficulty': '3', 'order': 3}], 'questionAttrs[ 0 ][ questionAttrs ][ 0 ][ value ]': 'A', 'questionAttrs[ 0 ][ questionAttrs ][ 0 ][ valueText ]': 'A', 'questionAttrs[ 0 ][ questionAttrs ][ 0 ][ name ]': 0, 'questionAttrs[ 0 ][ questionAttrs ][ 0 ][ type ]': 0, 'questionAttrs[ 0 ][ questionAttrs ][ 1 ][ value ]': 'B', 'questionAttrs[ 0 ][ questionAttrs ][ 1 ][ valueText ]': 'B', 'questionAttrs[ 0 ][ questionAttrs ][ 1 ][ name ]': 1, 'questionAttrs[ 0 ][ questionAttrs ][ 1 ][ type ]': 1, 'questionAttrs[ 0 ][ questionAttrs ][ 2 ][ value ]': 'C', 'questionAttrs[ 0 ][ questionAttrs ][ 2 ][ valueText ]': 'C', 'questionAttrs[ 0 ][ questionAttrs ][ 2 ][ name ]': 2, 'questionAttrs[ 0 ][ questionAttrs ][ 2 ][ type ]': 1, 'questionAttrs[ 0 ][ questionAttrs ][ 3 ][ value ]': 'D', 'questionAttrs[ 0 ][ questionAttrs ][ 3 ][ valueText ]': 'D', 'questionAttrs[ 0 ][ questionAttrs ][ 3 ][ name ]': 3, 'questionAttrs[ 0 ][ questionAttrs ][ 3 ][ type ]': 1, 'questionAttrs[ 0 ][ content ]': '单选题1', 'questionAttrs[ 0 ][ contentText ]': '单选题1', 'questionAttrs[ 0 ][ difficulty ]': 3, 'questionAttrs[ 0 ][ score ]': 1000, 'questionAttrs[ 0 ][ id ]': 'q-1', 'questionAttrs[ 0 ][ parsing ]': '试题解析1', 'questionAttrs[ 0 ][ parsingText ]': '试题解析1', 'questionAttrs[ 0 ][ type ]': 1, 'questionAttrs[ 0 ][ order ]': 1, 'questionAttrs[ 1 ][ questionAttrs ][ 0 ][ value ]': 'A', 'questionAttrs[ 1 ][ questionAttrs ][ 0 ][ valueText ]': 'A', 'questionAttrs[ 1 ][ questionAttrs ][ 0 ][ name ]': 0, 'questionAttrs[ 1 ][ questionAttrs ][ 0 ][ type ]': 0, 'questionAttrs[ 1 ][ questionAttrs ][ 1 ][ value ]': 'B', 'questionAttrs[ 1 ][ questionAttrs ][ 1 ][ valueText ]': 'B', 'questionAttrs[ 1 ][ questionAttrs ][ 1 ][ name ]': 1, 'questionAttrs[ 1 ][ questionAttrs ][ 1 ][ type ]': 0, 'questionAttrs[ 1 ][ questionAttrs ][ 2 ][ value ]': 'C', 'questionAttrs[ 1 ][ questionAttrs ][ 2 ][ valueText ]': 'C', 'questionAttrs[ 1 ][ questionAttrs ][ 2 ][ name ]': 2, 'questionAttrs[ 1 ][ questionAttrs ][ 2 ][ type ]': 2, 'questionAttrs[ 1 ][ questionAttrs ][ 3 ][ value ]': 'D', 'questionAttrs[ 1 ][ questionAttrs ][ 3 ][ valueText ]': 'D', 'questionAttrs[ 1 ][ questionAttrs ][ 3 ][ name ]': 3, 'questionAttrs[ 1 ][ questionAttrs ][ 3 ][ type ]': 2, 'questionAttrs[ 1 ][ content ]': '多选题2', 'questionAttrs[ 1 ][ contentText ]': '多选题2', 'questionAttrs[ 1 ][ difficulty ]': 3, 'questionAttrs[ 1 ][ score ]': 1000, 'questionAttrs[ 1 ][ id ]': 'q-2', 'questionAttrs[ 1 ][ parsing ]': '试题解析2', 'questionAttrs[ 1 ][ parsingText ]': '试题解析2', 'questionAttrs[ 1 ][ type ]': 2, 'questionAttrs[ 1 ][ order ]': 2, 'questionAttrs[ 2 ][ questionAttrs ][ 0 ][ value ]': '参考答案', 'questionAttrs[ 2 ][ questionAttrs ][ 0 ][ name ]': '参考答案', 'questionAttrs[ 2 ][ questionAttrs ][ 0 ][ type ]': 5, 'questionAttrs[ 2 ][ content ]': '问答题3', 'questionAttrs[ 2 ][ contentText ]': '问答题3', 'questionAttrs[ 2 ][ score ]': 1000, 'questionAttrs[ 2 ][ parsing ]': '试题解析3', 'questionAttrs[ 2 ][ parsingText ]': '试题解析3', 'questionAttrs[ 2 ][ type ]': 5, 'questionAttrs[ 2 ][ id ]': 'q-3', 'questionAttrs[ 2 ][ difficulty ]': 3, 'questionAttrs[ 2 ][ order ]': 3, 'content': '${questionDepotName}-阅读裂解题1', 'contentText': '${questionDepotName}-阅读裂解题1', 'score': 3000, 'type': 6, 'questionDepotId': '${questionDepotId}', 'questionDepot[ id ]': '${questionDepotId}', 'questionDepot[ name ]': '${questionDepotName}', 'organizationId': '${organizationId}', 'organization[ id ]': '${organizationId}', 'organization[ name ]': '${organizationName}', 'difficulty': 3, 'depotEdit': 0}}, 'extract': {'yuedulijieid': '$.id', 'yuedulijiename': '$.content', 'yuedulijie_danxuanid': '$.subs[0].id', 'yuedulijie_danxuanid_1': '$.subs[0].questionAttrs[0].id', 'yuedulijie_danxuanid_2': '$.subs[0].questionAttrs[1].id', 'yuedulijie_danxuanid_3': '$.subs[0].questionAttrs[2].id', 'yuedulijie_danxuanid_4': '$.subs[0].questionAttrs[3].id', 'yuedulijie_duoxuanid': '$.subs[1].id', 'yuedulijie_duoxuanid_1': '$.subs[1].questionAttrs[0].id', 'yuedulijie_duoxuanid_2': '$.subs[1].questionAttrs[1].id', 'yuedulijie_duoxuanid_3': '$.subs[1].questionAttrs[2].id', 'yuedulijie_duoxuanid_4': '$.subs[1].questionAttrs[3].id', 'yuedulijie_wendaid': '$.subs[2].id', 'yuedulijie_wendaid_1': '$.subs[2].questionAttrs[0].id'}, 'validate': [{'eq': ['$.type', '6']}], 'allure': {'allure_descrption': '【普通试题】——新增试题-新增阅读理解', 'allure_suite': '管理端', 'allure_sub_suite': '考试模块', 'allure_feature': '管理端', 'allure_story': '考试模块'}}" ]
+}

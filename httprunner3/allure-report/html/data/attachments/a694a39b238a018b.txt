@@ -1,0 +1,2 @@
+INFO     root:data_depend.py:37 提取变量：admin_examrecord: 0e7a76a0-6034-4adc-ba94-5028f4342f6a
+INFO     root:validate.py:76 响应断言:  预期值: '200' 实际值: '200', 断言成功!

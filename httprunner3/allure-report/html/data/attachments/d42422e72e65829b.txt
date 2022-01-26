@@ -1,0 +1,2 @@
+INFO     root:data_depend.py:37 提取变量：examRecordId: d8e1790e-0dbe-4047-b1df-811a71159e81
+INFO     root:validate.py:76 响应断言:  预期值: '5' 实际值: '5', 断言成功!
