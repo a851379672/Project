@@ -15,32 +15,28 @@ class DateTime:
             'sec': 0 and ''
         }
 
-    @staticmethod
-    def date_today():
+    def date_today(self):
         """
         获取当前日期
         :return: "YYYY-MM-DD"
         """
         return date.today()
 
-    @staticmethod
-    def date_time():
+    def date_time(self):
         """
         获取当前时间
         :return: YYYY-MM-DD HH:MM:SS
         """
         return datetime.datetime.now().replace(microsecond=0)
 
-    @staticmethod
-    def msec_sec(time_):
+    def msec_sec(self, time_):
         """
         毫秒转秒
         :return: int(sec)
         """
         return int(time_ / 60)
 
-    @staticmethod
-    def time_stamp(datetime_):
+    def time_stamp(self, datetime_):
         """
         时间格式转时间戳 ：2013-10-10 23:40:00 转 1381419600000
         :param: datetime
@@ -52,8 +48,7 @@ class DateTime:
             time_array = time.strptime(datetime_, "%Y-%m-%d %H:%M")
         return round(time.mktime(time_array) * 1000)
 
-    @staticmethod
-    def stamp_time(timestamp):
+    def stamp_time(self, timestamp):
         """
         时间戳转时间格式 ；1381419600 转 2013-10-10 23:40:00
         :param timestamp
