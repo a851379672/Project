@@ -3,7 +3,6 @@ import pytest
 import requests
 import json
 
-from base import base_config
 from common.parse_yaml import ReadData
 from common.data_depend import DataDepend
 from common.file_depend import *
@@ -27,7 +26,7 @@ class TestClass:
         """
         :return: extract_data
         """
-        base_config.get_config_json(self.file, self.deal_with)
+        [self.deal_with.extract_(key, str(value), None, self.deal_with) for key, value in self.file.items()]
 
     @pytest.mark.flaky(reruns=5, reruns_delay=5)
     @pytest.mark.parametrize('api_data', ReadData().return_data())
