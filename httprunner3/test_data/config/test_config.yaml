@@ -4,7 +4,7 @@ allure:
       'allure_suite': 'saas',
       'allure_sub_suite': '初始化',
       'allure_feature': 'saas',
-      'allure_story': '登录初始化'
+      'allure_story': '企业初始化'
     }
 test:
 -   name: 【企业初始化】——admin登录初始化
@@ -39,3 +39,88 @@ test:
         studentName: $.currentUser.fullName
     validate:
         -   eq:  [$.redirectUri, '${ent_url}']
+
+-   name: 【企业初始化】——查询人脸配置
+    request:
+        url: api/v1/system/rule-config/key
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+        body:
+          {
+            key: 'FACE_CONFIG'
+          }
+    sql_statement:
+    extract:
+        faceId: $.id
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【企业初始化】——开启人脸配置
+    request:
+        url: api/v1/system/rule-config/${faceId}
+        method: PUT
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+          uri: system/rule
+        body:
+          {
+            id: '${faceId}',
+            name: '对人脸识别的应用场景进行开关配置',
+            key: 'FACE_CONFIG',
+            value: {'faceContrastLogin':1,faceContrastLoginShow: 'true',faceContrastSwitch: 2,similarity: 80,facePhotographSwitch: 1,faceContrastExamShow: 'true',faceContrastExam: 1,facePhotographExamShow: 'true',facePhotographExam: 1}
+          }
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['(.*)', '1']
+
+-   name: 【企业初始化】——查询防录屏配置
+    request:
+        url: api/v1/system/rule-config/key
+        method: GET
+        headers:
+          Authorization: Bearer__${admin_token}
+        body:
+          {
+            key: 'PREVENT_SCREENSHOT_CONFIG'
+          }
+    sql_statement:
+    extract:
+        preventId: $.id
+    validate:
+        -   eq:  [Status Code, 200]
+
+-   name: 【企业初始化】——开启防录屏配置
+    request:
+        url: api/v1/system/rule-config/${preventId}
+        method: PUT
+        headers:
+          Authorization: Bearer__${admin_token}
+          content-type: application/x-www-form-urlencoded; charset=UTF-8
+        body:
+          {
+            id: '${preventId}',
+            name: '对防录屏的影响范围和显示方式进行配置',
+            key: 'PREVENT_SCREENSHOT_CONFIG',
+            appscreen: 'on',
+            videoSwitch: 'on',
+            watermarkType1: 0,
+            watermarkType2: 0,
+            filePath: 'images/system/watermark-new.jpg',
+            docSwitch: 'on',
+            docImgOpacity: 0,
+            docType: 2,
+            watermarkType3: 0,
+            docTextOpacity: 0,
+            examSwitch: 'on',
+            examImgOpacity: 0,
+            examType: 2,
+            watermarkType4: 0,
+            examTextOpacity: 0,
+            value: {'influence':['course','knowledge','exam'],'appscreen':'true','video':{'open':'true','barrage':{'preType':'0','text':'',select: 'false'},'horseRaceLamp':{'preType':'0','text':'',select: 'false'},'imageWatermark':{'file':'images/system/watermark-new.jpg','opacity':'', select: 'false'}},'fileBookImag':{'open':'true','type':'2','file':'images/system/watermark-new.jpg','preType':'0','text':'', opacityText: '0','opacityImg':'0'},'examPaper':{'open':'true','type':'2','file':'images/system/watermark-new.jpg','preType':'0','text':'', opacityText: '0','opacityImg':'0'}}}
+    sql_statement:
+    extract:
+    validate:
+        -   eq:  ['(.*)', '1']
