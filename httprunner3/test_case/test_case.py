@@ -26,7 +26,7 @@ class TestClass:
         """
         :return: extract_data
         """
-        [self.deal_with.extract_(key, str(value), None, self.deal_with) for key, value in self.file.items()]
+        [self.deal_with.extract_(key, value.__str__(), None, self.deal_with) for key, value in self.file.items()]
 
     @pytest.mark.flaky(reruns=5, reruns_delay=5)
     @pytest.mark.parametrize('api_data', ReadData().return_data())
