@@ -2,7 +2,6 @@
 import requests
 import logging
 import json
-
 from settings import *
 from httprunner.client import get_req_resp_record
 
