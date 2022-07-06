@@ -1,15 +1,11 @@
 import jsonpath
 from mysql_operate import *
 
-logger = logging
-
 
 class Validate:
 
     def __init__(self):
-        self.judge = JsonPath()
-        status_code = StatusCode()
-        reg_exp = RegExp()
+        self.judge, status_code, reg_exp = JsonPath(), StatusCode(), RegExp()
         self.judge.next_handler(status_code)
         status_code.next_handler(reg_exp)
 
@@ -19,7 +15,7 @@ class Validate:
         :param expect: 预期值
         :param response: response
         :param deal_with: deal_with
-        :return: logger info
+        :return: output log
         """
         if deal_with.replace_(expect):
             expect = deal_with.replace_(expect)
@@ -72,10 +68,16 @@ class RegExp(Manager):
 
 
 def assert_(actual, expect):
+    """
+    响应断言
+    :param actual: 实际值
+    :param expect: 预期值
+    :return: output log
+    """
     if expect in actual:
-        logger.info(f"响应断言:  预期值: '{expect}' 实际值: '{actual}', 断言成功!")
+        logging.info(f"响应断言:  预期值: '{expect}' 实际值: '{actual}', 断言成功!")
     else:
-        logger.info(f"响应断言:  预期值: '{expect}' 实际值: '{actual}', 断言失败!")
+        logging.info(f"响应断言:  预期值: '{expect}' 实际值: '{actual}', 断言失败!")
         assert expect.__str__().lower() in actual.__str__().lower()
 
 

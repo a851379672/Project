@@ -1,13 +1,14 @@
-import allure
 import base64
 import hashlib
+import allure
+from settings import *
 
 
 def allure_(allure_data, ent_url):
     """
+    allure数据参数化
     :param allure_data: allure_data
     :param ent_url: ent_url
-    :return:
     """
     allure.dynamic.suite(allure_data['allure']['allure_descrption'])
     allure.dynamic.link(f"{ent_url}{allure_data['request']['url']}")
@@ -42,9 +43,9 @@ def md_5(encrypt_data):
 
 
 if __name__ == '__main__':
-    with open(r'D:\PyCharm\project\httprunner3\test_file\考试封面.jpg', 'rb') as f:
+    with open(rf'{BASE_PATH}\test_file\exam\考试封面_1195.jpg', 'rb') as f:
         md5_file = md_5(f)
         print(md5_file)
-    with open(r'D:\PyCharm\project\httprunner3\test_file\考试封面.jpg', 'rb') as f:
+    with open(rf'{BASE_PATH}\test_file\exam\考试封面_1195.jpg', 'rb') as f:
         base_64_file = base_64(f)
         print(base_64_file)

@@ -12,25 +12,19 @@ class FileDepend:
         self.audio_video_file = [
             '.mp3', '.mp4', '.mpg', '.mpeg', '.mpe', '.avi', '.rm', '.3gp', '.rmvb', '.wmv', '.mov', '.flv', '.mkv']
         self.document_file = [
-            'xls', 'xlsx', 'doc', 'docx', 'ppt', 'pptx', 'zip', 'rar', 'pdf', 'txt', 'epub'
-        ]
-
+            'xls', 'xlsx', 'doc', 'docx', 'ppt', 'pptx', 'zip', 'rar', 'pdf', 'txt', 'epub']
         self.file_path = FILE_PATH
 
-    def file_dispose(self, file_):
+    def file_dispose(self, file_: str):
         """文件处理（文件读取后不关闭）"""
-        if type(file_) == dict:
-            return self.file_dict(file_)
-        else:
-            return self.file_content(file_)
+        return self.file_dict(file_) if isinstance(file_, dict) else self.file_content(file_)
 
     def check_type(self, file_):
         """
         检查字段内容类型
         :param file_: file_
-        :return:
+        :return: True or False
         """
-
         def image_file(x): return any(
             x.endswith(extension) for extension in self.image_file)
 
@@ -41,8 +35,7 @@ class FileDepend:
                                               for extension in self.document_file)
 
         try:
-            if image_file(file_) or audio_video_file(file_) or document_file_file(file_):
-                return True
+            return True if image_file(file_) or audio_video_file(file_) or document_file_file(file_) else False
         except AttributeError:
             return False
 
@@ -77,9 +70,7 @@ class FileDepend:
         文件内容处理
         :return: file_content
         """
-        if self.check_type(file_):
-            file = self.path_name(file_)
-            return open(file, 'rb')
+        return open(self.path_name(file_), 'rb') if self.check_type(file_) else False
 
     def file_size(self, file_):
         """获取文件大小"""
@@ -119,10 +110,16 @@ def file_encryption(content, replace_data, method):
 
 if __name__ == '__main__':
     file_depend = FileDepend()
+    data_ = "{'url': 'https://paastest.zhixueyun.com/api/v1/system/file-cloud/check-file-key'," \
+            "'method': 'POST'," \
+            "'headers': {'authorization': 'Bearer__8312bf357de2d2eb46a6b35e412aa944'}," \
+            "'data': {'fileKey': '$md_5{exam/考试封面.jpg, path_name(), file_size()}', 'companyId': 1}}"
+    file_key = eval(file_encryption('exam/考试封面.jpg, path_name(), file_size()', data_, 'md_5'))
+    dicts = {'picSize': 512000, 'access_token': '7a4f5829780ef091b3d0cfa912a98c6b', 'file': 'exam/练习图标.jpg'}
     # =====================================================
-    print(file_depend.file_dict(
-        {'picSize': 512000, 'access_token': '7a4f5829780ef091b3d0cfa912a98c6b', 'file': 'exam/练习图标.jpg'}))
+    print(f"文件加密：{file_key['data']['fileKey']}")
+    print(f"请求字典：{file_depend.file_dict(dicts)}")
     print(f"文件大小：{file_depend.file_size('study/课程视频.mp4')}")
     print(f"文件路径：{file_depend.path_name('exam/试题音频.mp3')}")
     print(f"文件名称：{file_depend.file_name('exam/试题音频.mp3')}")
-    print(f"文件读取：{file_depend.file_dispose('exam/试题音频.mp3')}")
+    print(f"文件读取：{file_depend.file_dispose(f'exam/试题音频.mp3')}")

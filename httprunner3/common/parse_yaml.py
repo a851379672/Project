@@ -46,14 +46,13 @@ class ReadData:
             for test in test_data[num]:
                 allure['allure_descrption'] = test['name']
                 test['allure'] = copy.deepcopy(allure)
-                list_data.append(test)
                 if test['request'].get('body'):
-                    if test['request']['method'] == 'GET':
-                        test['request']['params'] = test['request'].pop('body')
-                    else:
-                        test['request']['data'] = test['request'].pop('body')
+                    test['request'].update({'params': test['request'].pop('body')}) \
+                        if test['request']['method'] == 'GET' \
+                        else test['request'].update({'data': test['request'].pop('body')})
                 elif test['request'].get('body') is None:
                     del test['request']['body']
+                list_data.append(test)
             num += 1
         return list_data
 

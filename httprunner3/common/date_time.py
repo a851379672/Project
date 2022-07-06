@@ -93,9 +93,7 @@ class DateTime:
         datetime_format = {'year': '-', 'month': '-', 'day': ' ', 'hour': ':', 'min': ':', 'sec': ''}
         for key in date_.keys():
             result_time += datetime_[key].__str__() + datetime_format[key]
-        if len(args) < 6:
-            result_time = result_time[:-1]
-        return result_time
+        return result_time if len(args) > 6 else result_time[:-1]
 
     def get_year(self, n):
         """
@@ -171,10 +169,10 @@ if __name__ == "__main__":
     # diy时间 2021-9-19 18:3:30
     print(object_.time_stamp(object_.date_time().__str__()))  # 当前时间转时间戳 1643160050000
     print(object_.stamp_time('1381419600'))  # 2013-10-10 23:40:00
-    print(object_.diy_time(('*, *, +02, +03')))  # 2022-01-28 11:40:30
+    print(object_.diy_time(('*, *, *, +02, +03')))  # 2022-01-28 11:40:30
     object_ = DateTime()
     print(object_.time_stamp(
         object_.diy_time(('*, +09, -02, +03, -40, 30'))))  # diy时间转时间戳 1661522790000
     print(object_.date_today())  # 获取当前日期, 2021-09-17
-    print(object_.date_time())   # 2021-09-17 15:43:19.892563
+    print(object_.date_time())   # 2021-09-17 15:43:19
     print(object_.msec_sec(3600))   # 60

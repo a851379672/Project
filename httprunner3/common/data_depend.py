@@ -16,28 +16,20 @@ class DataDepend:
         self.expr2 = r'\$[a-z]+[+\-*/_-]+[a-z]+{\$.*?}'
         self.expr3 = r'\$(.*?){(.*?)}'
         self.expr4 = r'\$(.*?){}'
-        self.datetime_ = date_time.DateTime
 
-    def extract_(self, key, value, response, deal_with):
+    def extract_(self, key, value, response):
         """
         :param key: extract_key
         :param value: extract_value
         :param response: response
-        :param deal_with: deal_with
-        :return: log info
+        :return: output log
         """
-        replace_data = deal_with.replace_(value)
+        replace_data = self.replace_(value)
         if replace_data:
             value = replace_data
-        if value.startswith('$.'):
-            values = {key: jsonpath.jsonpath(response.json(), value)[0]}.get(key)
-            if values:
-                self.dicts.update({key: values.__str__()})
-                logging.info(f'提取变量：{key}: {values}')
-                return values
-        else:
-            self.dicts.update({key: value.__str__()})
-            logging.info(f'提取变量：{key}: {value}')
+        values = {key: jsonpath.jsonpath(response.json(), value)[0]}.get(key) if value.startswith('$.') else ''
+        self.dicts.update({key: values.__str__()}) if values else self.dicts.update({key: value.__str__()})
+        logging.info(f'提取变量：{key}: {value}')
 
     def replace_(self, replace_data):
         """
@@ -45,17 +37,17 @@ class DataDepend:
         :return: eval(build_data)
         """
         replace_copy = copy.copy(replace_data.__str__())
-        keys1 = re.findall(self.expr1, replace_copy)
+        keys1 = set(re.findall(self.expr1, replace_copy))
         if keys1:
             replace_copy = self.get_replace(keys1, replace_copy)
-        keys2 = re.findall(self.expr2, replace_copy)
+        keys2 = set(re.findall(self.expr2, replace_copy))
         if keys2:
             replace_copy = self.get_replace(keys2, replace_copy)
-        keys3 = re.findall(self.expr3, replace_copy)
+        keys3 = set(re.findall(self.expr3, replace_copy))
         if keys3:
             for key in keys3:
                 replace_copy = self.get_replace([key[0], key[1]], replace_copy)
-        keys4 = re.findall(self.expr4, replace_copy)
+        keys4 = set(re.findall(self.expr4, replace_copy))
         if keys4:
             replace_copy = self.get_replace(keys4, replace_copy)
         if replace_copy is not replace_data:
@@ -65,7 +57,7 @@ class DataDepend:
         """
         :param keys: keys
         :param replace_data: replace_data
-        :return:
+        :return: replace_data
         """
         for key in keys:
             if key.startswith('$'):
@@ -81,13 +73,14 @@ class DataDepend:
                 replace_data = replace_data.replace('${' + key + '}', value)
         return replace_data
 
-    def in_getattr(self, func):
+    @staticmethod
+    def in_getattr(func):
         """
         :param func: 函数
         :return: objects
         """
-        if func in dir(self.datetime_):
-            return self.datetime_
+        if func in dir(date_time.DateTime):
+            return date_time.DateTime
         elif func in dir(lib_):
             return lib_
         elif func in dir(file_depend.FileDepend()):
@@ -100,7 +93,7 @@ class DataDepend:
         :param objects: 对象
         :param func: 函数
         :param func_params: 参数
-        :return:
+        :return: value
         """
         if func_params:
             try:
@@ -127,12 +120,8 @@ class DataDepend:
             func_params = self.getattr_(objects, func_gather[0], func_replace)
         else:
             func_params = None
-        if self.in_getattr(func):
-            objects = self.in_getattr(func)
-            return self.getattr_(objects, func, func_params.__str__())
-        else:
-            objects = self.in_getattr(func)
-            return self.getattr_(objects, key)
+        return self.getattr_(self.in_getattr(func), func, func_params.__str__()) \
+            if self.in_getattr(func) else self.getattr_(self.in_getattr(func), key)
 
     def definition(self, keys, key, replace_data):
         """
@@ -140,7 +129,7 @@ class DataDepend:
         :param keys: processing_keys
         :param key: processing_method
         :param replace_data: replace_data
-        :return:
+        :return: replace_data
         """
         method = keys[-1]
         objects = self.in_getattr(key)
@@ -149,20 +138,23 @@ class DataDepend:
             keys[1] = file_depend.FileDepend().file_dispose(keys[1])
         if len(keys) > 1:
             eval_replace_data = eval(replace_data).get('params') or eval(replace_data).get('data')
-            if eval_replace_data and eval_replace_data.get('fileKey') and len(eval_replace_data) == 1:
-                #   文件加密上传
-                return file_depend.file_encryption(method, replace_data, key)
-            else:
-                value = self.getattr_(objects, key, keys[1])
-                return replace_data.replace('$' + key + '{' + method + '}', value.__str__())
+            #   文件加密上传
+            return file_depend.file_encryption(method, replace_data, key) \
+                if eval_replace_data and eval_replace_data.get('fileKey') and len(eval_replace_data) == 1 \
+                else replace_data.replace('$' + key + '{' + method + '}',
+                                          self.getattr_(objects, key, keys[1]).__str__())
         else:
             value = self.getattr_(objects, key)
             return replace_data.replace('$' + key + '{}', value.__str__())
 
 
 if __name__ == '__main__':
+    import pprint
     data_depend = DataDepend()
-    data_depend.dicts['admin_token'] = '123'
-    print(data_depend.replace_("{'url': 'api/v1/system/file/simple-upload-auth', 'method': 'POST', 'headers': {'Author"
-                               "ization': 'Bearer__${admin_token}', 'uri': 'exam/exam-game'}, 'data': {'picSize': 51200"
-                               "0, 'access_token': '${admin_token}', 'file': '$file_content{exam/练习图标.jpg}'}}"))
+    data_depend.dicts.update({'admin_token': '123', 'data_id': 'abc'})
+    pprint.pprint(data_depend.replace_("{'url': 'api/v1/system/file/simple-upload-auth/${admin_token}',"
+                                       " 'method': 'POST/${data_id}',"
+                                       " 'headers': {'Authorization': 'Bearer__${admin_token}',"
+                                       " 'uri': 'exam/exam-game/${data_id}'},"
+                                       " 'data': {'picSize': '${admin_token}', 'access_token': '${data_id}', 'file':"
+                                       " '$file_content{exam/练习图标.jpg}'}}"))
