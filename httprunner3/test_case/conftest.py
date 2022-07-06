@@ -3,9 +3,8 @@ import json
 import pytest
 import yaml
 import logging
-from settings import *
+from common.settings import *
 from base import base_token
-from base import base_debug
 from base import base_file
 
 
@@ -14,7 +13,7 @@ def pytest_addoption(parser):
     添加命令行参数
     """
     parser.addoption(
-        "--config", action="store", default="pre_config.yaml", help="配置文件"
+        "--config", action="store", default="test_config.yaml", help="配置文件"
     )
 
 

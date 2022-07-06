@@ -9,9 +9,17 @@ from common.file_depend import *
 from common.validate import Validate
 from common.mysql_operate import MysqlOperate
 from common.lib_ import *
-from settings import *
+from common.settings import *
 from urllib.parse import urlencode
 from httprunner.client import get_req_resp_record
+import logging
+
+
+# @pytest.fixture(autouse=True)
+# def my_fixture():
+#     logging.info('\n''---------前置执行--------')
+#     yield
+#     logging.info('\n''---------后置执行--------')
 
 
 class TestClass:
@@ -24,9 +32,9 @@ class TestClass:
 
     def test_config(self):
         """
-        :return: extract_data
+        :return: output log.info
         """
-        [self.deal_with.extract_(key, value.__str__(), None, self.deal_with) for key, value in self.file.items()]
+        [self.deal_with.extract_(key, value.__str__(), None) for key, value in self.file.items()]
 
     @pytest.mark.flaky(reruns=5, reruns_delay=5)
     @pytest.mark.parametrize('api_data', ReadData().return_data())
@@ -35,7 +43,6 @@ class TestClass:
         :param api_data
         :return: report_content
         """
-
         """数据处理"""
         request_data = eval(self.deal_with.replace_(api_data['request']))
         request_data['url'] = f"{self.file['ent_url']}{request_data['url']}"
@@ -45,20 +52,20 @@ class TestClass:
             request_data['data'] = urlencode(request_data['data'])
         allure_(api_data, self.file['ent_url'])
 
-        """日志输出"""
+        """执行输出"""
         response = requests.session().request(**request_data, timeout=10)
         get_req_resp_record(response)
 
         """sql执行"""
         sql_statement = api_data.get('sql_statement')
         if sql_statement:
-            [MysqlOperate(key, value[0]).execute_sql(value[1], self.deal_with) for sql in sql_statement
+            [MysqlOperate(value[0]).execute_sql(key, value[1], self.deal_with) for sql in sql_statement
              for key, value in sql.items()]
 
         """参数提取"""
         extract = api_data.get('extract')
         if extract:
-            [self.deal_with.extract_(key, value, response, self.deal_with) for key, value in extract.items()]
+            [self.deal_with.extract_(key, value, response) for key, value in extract.items()]
 
         """响应断言"""
         validate = api_data.get('validate')
