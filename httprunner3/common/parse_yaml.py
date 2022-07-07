@@ -21,14 +21,12 @@ class ReadData:
         :return: list_data
         """
         list_data = []
-        num = 0
-        for file_path in self.folder:
-            file_list = self.file_name[num]
+        for (index, file_path) in enumerate(self.folder):
+            file_list = self.file_name[index]
             for file_name in file_list:
                 with open(os.path.join(file_path, file_name), 'r', encoding='UTF-8') as f:
                     data = yaml.load(f, Loader=yaml.FullLoader)  # 读取文件内容
                     list_data.append(data)
-            num += 1
         return list_data
 
     @staticmethod
@@ -41,9 +39,8 @@ class ReadData:
         allure_data = [data.get('allure') for data in separation_data if data]
         test_data = [data.get('test') for data in separation_data if data]
         list_data = []
-        num = 0
-        for allure in allure_data:
-            for test in test_data[num]:
+        for (index, allure) in enumerate(allure_data):
+            for test in test_data[index]:
                 allure['allure_descrption'] = test['name']
                 test['allure'] = copy.deepcopy(allure)
                 if test['request'].get('body'):
@@ -53,7 +50,6 @@ class ReadData:
                 elif test['request'].get('body') is None:
                     del test['request']['body']
                 list_data.append(test)
-            num += 1
         return list_data
 
     def return_data(self):
